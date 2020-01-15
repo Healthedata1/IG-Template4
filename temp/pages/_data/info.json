@@ -1,8 +1,0 @@
-{
-  "ballotstatus":"CI Build",
-  "copyrightyear":"2015+",
-  "excludexml":"${excludexml}",
-  "excludejson":"${excludejson}",
-  "excludettl":"${excludettl}",
-  "excludemaps":"${excludemaps}"
-}
