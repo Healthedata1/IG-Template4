@@ -1,0 +1,9 @@
+{
+  "name": "healthedata.fhir.template",
+  "version": "0.0.0",
+  "type": "fhir.template",
+  "license": "CC0-1.0",
+  "description": "Health eData Inc FHIR Test Template",
+  "author": "mailto::healthedatainc.com",
+  "canonical": "http://www.fhir.org/guides/test3"
+}
