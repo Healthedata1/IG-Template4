@@ -1,11 +1,11 @@
 {
   "resourceType": "ImplementationGuide",
-  "id": "healthedatainc.ig-template2-0.0.0",
+  "id": "healthedatainc.ig-template4-0.0.0",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>IGTest3</h2><p>The official URL for this implementation guide is: </p><pre>http://www.fhir.org/guides/test3/ImplementationGuide/healthedatainc.ig-template2-0.0.0</pre></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>IGTest3</h2><p>The official URL for this implementation guide is: </p><pre>http://www.fhir.org/guides/test3/ImplementationGuide/healthedatainc.ig-template4-0.0.0</pre></div>"
   },
-  "url": "http://www.fhir.org/guides/test3/ImplementationGuide/healthedatainc.ig-template2-0.0.0",
+  "url": "http://www.fhir.org/guides/test3/ImplementationGuide/healthedatainc.ig-template4-0.0.0",
   "version": "0.0.0",
   "name": "IGTest3",
   "title": "IG Test3",
@@ -31,10 +31,10 @@
     }
   ],
   "copyright": "Used by permission of Health eData Inc, all rights reserved Creative Commons License",
-  "packageId": "healthedatainc.ig-template2",
+  "packageId": "healthedatainc.ig-template4",
   "license": "CC0-1.0",
   "fhirVersion": [
-    "4.0.0"
+    "4.0.1"
   ],
   "definition": {
     "grouping": [

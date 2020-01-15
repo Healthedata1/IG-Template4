@@ -1,7 +1,7 @@
 {
-  "package": "healthedatainc.ig-template2",
+  "package": "healthedatainc.ig-template4",
   "version": "0.0.0",
-  "fhirVersion": "4.0.0",
+  "fhirVersion": "4.0.1",
   "extensions": [
     {
       "url": "http://www.fhir.org/guides/test3/StructureDefinition/extension-blah",

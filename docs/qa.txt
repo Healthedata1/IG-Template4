@@ -3,7 +3,7 @@
 
 err = 16, warn = 18, info = 0
 IG Publisher Version: v0.9.88-SNAPSHOT
-Generated Wed Oct 30 17:57:40 PDT 2019. FHIR version 4.0.0 for healthedatainc.ig-template2#0.0.0 (canonical = http://www.fhir.org/guides/test3)
+Generated Wed Oct 30 17:57:40 PDT 2019. FHIR version 4.0.1 for healthedatainc.ig-template4#0.0.0 (canonical = http://www.fhir.org/guides/test3)
 
  Build Errors : 32 / 1
  /Users/ehaas/Documents/FHIR/IG-Template2/source/examples/basic-example1 : 1 / 0
@@ -22,7 +22,7 @@ Generated Wed Oct 30 17:57:40 PDT 2019. FHIR version 4.0.0 for healthedatainc.ig
  Template-basic : 0 / 4
 </table>
 == n/a ==
-WARNING: ImplementationGuide.id: The Implementation Guide Resource id should be healthedatainc.ig-template2
+WARNING: ImplementationGuide.id: The Implementation Guide Resource id should be healthedatainc.ig-template4
 ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/Patient-example2.html#/html/head/body/div/div/div/div/div/div/div/p/a at Line 270, column 1165: The link 'Organization/1' for "Organization/1" cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/a at Line 454, column 8: The link 'StructureDefinition-extension-blah.html#Extension.valueCode' for "valueCode" cannot be resolved (valid targets: [page-content-wrapper, tbl-snap-inner, Extension.extension, publish-box, copy-button, tabs, segment-post-footer, Extension.id, json-inner, all-tbl-diff, all-tbl-snap, stripe, segment-footer, json, Extension.url, tabs-snap, introduction, tbl-snap, all-tbl-snap-inner, segment-header, profile, tabs-diff, tbl-diff, Extension, Extension.value_x_, tabs-json, tabs-all, back-to-top, tbl-diff-inner, all-tbl-diff-inner, segment-navbar, project-status])
 ERROR: /Users/ehaas/Documents/FHIR/IG-Template2/docs/StructureDefinition-extension-blah.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/span/a at Line 454, column 496: The link 'http://build.fhir.org/null.html' for "Value of extension" cannot be resolved

@@ -12,7 +12,7 @@
   "status": "active",
   "experimental": false,
   "date": "2017-02-15T00:00:00-08:00",
-  "fhirVersion": "4.0.0",
+  "fhirVersion": "4.0.1",
   "mapping": [
     {
       "identity": "foo",
@@ -624,7 +624,7 @@
           ],
           "strength": "required",
           "description": "Identifies the purpose for this identifier, if known .",
-          "valueSet": "http://hl7.org/fhir/ValueSet/identifier-use|4.0.0"
+          "valueSet": "http://hl7.org/fhir/ValueSet/identifier-use|4.0.1"
         },
         "mapping": [
           {
@@ -1034,7 +1034,7 @@
           ],
           "strength": "required",
           "description": "The use of a human name.",
-          "valueSet": "http://hl7.org/fhir/ValueSet/name-use|4.0.0"
+          "valueSet": "http://hl7.org/fhir/ValueSet/name-use|4.0.1"
         },
         "mapping": [
           {
@@ -1933,7 +1933,7 @@
           ],
           "strength": "required",
           "description": "The gender of a person used for administrative purposes.",
-          "valueSet": "http://hl7.org/fhir/ValueSet/administrative-gender|4.0.0"
+          "valueSet": "http://hl7.org/fhir/ValueSet/administrative-gender|4.0.1"
         },
         "mapping": [
           {
@@ -2537,7 +2537,7 @@
           ],
           "strength": "required",
           "description": "The type of link between this patient resource and another patient resource.",
-          "valueSet": "http://hl7.org/fhir/ValueSet/link-type|4.0.0"
+          "valueSet": "http://hl7.org/fhir/ValueSet/link-type|4.0.1"
         },
         "mapping": [
           {

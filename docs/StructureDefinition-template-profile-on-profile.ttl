@@ -19,7 +19,7 @@
   fhir:StructureDefinition.status [ fhir:value "active"];
   fhir:StructureDefinition.experimental [ fhir:value "false"^^xsd:boolean];
   fhir:StructureDefinition.date [ fhir:value "2017-02-15T00:00:00-08:00"^^xsd:dateTime];
-  fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.0"];
+  fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"];
   fhir:StructureDefinition.mapping [
      fhir:index 0;
      fhir:StructureDefinition.mapping.identity [ fhir:value "foo" ];
@@ -635,8 +635,8 @@
          fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
          fhir:ElementDefinition.binding.description [ fhir:value "Identifies the purpose for this identifier, if known ." ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/ValueSet/identifier-use|4.0.0";
-           fhir:link <http://hl7.org/fhir/ValueSet/identifier-use|4.0.0>
+           fhir:value "http://hl7.org/fhir/ValueSet/identifier-use|4.0.1";
+           fhir:link <http://hl7.org/fhir/ValueSet/identifier-use|4.0.1>
          ]
        ];
        fhir:ElementDefinition.mapping [
@@ -1032,8 +1032,8 @@
          fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
          fhir:ElementDefinition.binding.description [ fhir:value "The use of a human name." ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/ValueSet/name-use|4.0.0";
-           fhir:link <http://hl7.org/fhir/ValueSet/name-use|4.0.0>
+           fhir:value "http://hl7.org/fhir/ValueSet/name-use|4.0.1";
+           fhir:link <http://hl7.org/fhir/ValueSet/name-use|4.0.1>
          ]
        ];
        fhir:ElementDefinition.mapping [
@@ -1905,8 +1905,8 @@
          fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
          fhir:ElementDefinition.binding.description [ fhir:value "The gender of a person used for administrative purposes." ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/ValueSet/administrative-gender|4.0.0";
-           fhir:link <http://hl7.org/fhir/ValueSet/administrative-gender|4.0.0>
+           fhir:value "http://hl7.org/fhir/ValueSet/administrative-gender|4.0.1";
+           fhir:link <http://hl7.org/fhir/ValueSet/administrative-gender|4.0.1>
          ]
        ];
        fhir:ElementDefinition.mapping [
@@ -2518,8 +2518,8 @@
          fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
          fhir:ElementDefinition.binding.description [ fhir:value "The type of link between this patient resource and another patient resource." ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://hl7.org/fhir/ValueSet/link-type|4.0.0";
-           fhir:link <http://hl7.org/fhir/ValueSet/link-type|4.0.0>
+           fhir:value "http://hl7.org/fhir/ValueSet/link-type|4.0.1";
+           fhir:link <http://hl7.org/fhir/ValueSet/link-type|4.0.1>
          ]
        ];
        fhir:ElementDefinition.mapping [

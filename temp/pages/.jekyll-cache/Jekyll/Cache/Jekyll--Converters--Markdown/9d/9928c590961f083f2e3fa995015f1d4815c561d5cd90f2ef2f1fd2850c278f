@@ -1,0 +1,23 @@
+I"
+<div class="markdown-toc">
+
+</div>
+
+<!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->
+
+<ul>
+  <li>Do not remove this line (it will not be displayed)</li>
+</ul>
+
+<!-- end TOC -->
+
+<li>
+  <p><a href="CapabilityStatement-server.html">Server</a> This resource defines the expected capabilities &lt;/li&gt;</p>
+  <li>
+    <p><a href="CapabilityStatement-client.html">Client</a> This resource defines the expected capabilities &lt;/li&gt;</p>
+
+    <p><br /></p>
+
+  </li>
+</li>
+:ET

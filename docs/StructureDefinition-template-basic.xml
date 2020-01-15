@@ -21,7 +21,7 @@
   <experimental value="false"/>
   <date value="2017-02-15T00:00:00-08:00"/>
   <publisher value="Health eData Inc"/>
-  <fhirVersion value="4.0.0"/>
+  <fhirVersion value="4.0.1"/>
   <mapping>
     <identity value="rim"/>
     <uri value="http://hl7.org/v3"/>
