@@ -1,0 +1,44 @@
+{
+  "defaults": {
+    "_documentation": "this object contains the default publishing policy for different types. Anything not mentioned i.e. not a conformance resource defaults to true",
+    "Any": {
+      "template-base": "ex.html",
+      "template-format": "format.html"
+    },
+    "CapabilityStatement": {
+      "template-base": "base.html"
+    },
+    "CodeSystem": {
+      "template-base": "base.html"
+    },
+    "ConceptMap": {
+      "template-base": "base.html"
+    },
+    "GraphDefinition": {
+      "template-base": "base.html"
+    },
+    "MessageDefinition": {
+      "template-base": "base.html"
+    },
+    "OperationDefinition": {
+      "template-base": "base.html"
+    },
+    "SearchParameter": {
+      "template-base": "base.html"
+    },
+    "StructureDefinition": {
+      "template-base": "sd.html",
+      "template-defns": "sd-definitions.html",
+      "template-mappings": "sd-mappings.html"
+    },
+    "StructureMap": {
+      "content": false,
+      "profiles": false,
+      "script": false,
+      "template-base": "ex.html"
+    },
+    "ValueSet": {
+      "template-base": "base.html"
+    }
+  }
+}
