@@ -1,8 +1,8 @@
 [IG]
 ig = source/resources/ig.xml
 #template = hl7.fhir.template to load from repository
-#template = /Users/ehaas/Documents/FHIR/IG-Template2 # to load from loca directory
-template = /Users/ehaas/Documents/FHIR/IG-Template4/template
+#template = /Users/ehaas/Documents/FHIR/IG-Template2 # to load locally
+template = /Users/ehaas/Documents/FHIR/IG-Template4/my_framework
 usage-stats-opt-out = true
 #guidename must match the id of the implementation guide
 guidename=healthedatainc.ig-template4-0.0.0

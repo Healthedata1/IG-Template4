@@ -1,7 +1,7 @@
 #!/bin/bash
 # exit when any command fails
 set -e
-while getopts ds:twoplu option
+while getopts twoplu: option
 do
  case "${option}"
  in
@@ -10,7 +10,7 @@ do
  o) PUB=1;;
  p) UPDATE=1;;
  l) LOAD_TEMPLATE=1;;
- u) TEST_TEMPLATE=1;;
+ u) TEST_TEMPLATE=$OPTARG;;
  esac
 done
 echo "================================================================="
@@ -22,7 +22,7 @@ echo '-w parameter for using watch on igpublisher from source default is off = '
 echo '-o parameter for running previous version of the igpublisher= ' $PUB
 echo '-p parameter for downloading latest version of the igpublisher from source = ' $UPDATE
 echo '-l parameter for downloading HL7 ig template from source = ' $LOAD_TEMPLATE
-echo '-u parameter for running from local test template = ' $TEST_TEMPLATE
+echo '-u parameter for running from local test template file= ' $TEST_TEMPLATE
 echo ' current directory =' $PWD
 echo "================================================================="
 echo getting rid of .DS_Store files since they gum up the igpublisher....
@@ -40,18 +40,20 @@ curl -L https://github.com/FHIR/latest-ig-publisher/raw/master/org.hl7.fhir.publ
 echo "===========================   Done  ===================================="
 sleep 3
 fi
-
-template=$PWD/template
+# default is to use local my_framework as template
+template=$PWD/my_framework
 if [[ $LOAD_TEMPLATE ]]; then
 template=hl7.fhir.template
 fi
 
 if [[ $TEST_TEMPLATE ]]; then
-template=/Users/ehaas/Documents/FHIR/FHIR-IG-Template
+template=$TEST_TEMPLATE
 fi
 
 echo "================================================================="
-echo load the hl7 template by setting $PWD/ig.ini template = $template
+echo === load the hl7 template by setting $PWD/ig.ini ===
+echo === template parameter to .................................... ===
+echo === $template ===
 echo "================================================================="
 sed -i'.bak' -e "s|^template = .*|template = ${template}|" $PWD/ig.ini
 
@@ -62,7 +64,7 @@ fi
 
 if [[ $WATCH ]]; then
   echo "================================================================="
-  echo ===run most recent version of the igpublisher with watch on ===
+  echo === run most recent version of the igpublisher with watch on ===
   echo "================================================================="
   java -jar ${path} -ig ig.ini -watch -tx $NA
 else
