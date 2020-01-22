@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--Hidden IG for de facto IG publishing-->
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-
-<!--extension for spreadsheets that go in ig.xml-->
-  <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-spreadsheet">
-  <valueUri value="patient-on-usprofile-spreadsheet.xml"/>
-</extension>
-
-<extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-spreadsheet">
-  <valueUri value="template-profile-spreadsheet.xml"/>
-</extension>
-
-<!-- ****************************** -->
-
   <id value="healthedatainc.ig-template4-0.0.0"/>
-  <url value="http://www.fhir.org/guides/test3/ImplementationGuide/healthedatainc.ig-template4-0.0.0"/>
+
+  <!--extension for spreadsheets that go in ig.xml-->
+  <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-spreadsheet">
+    <valueUri value="patient-on-usprofile-spreadsheet.xml"/>
+  </extension>
+
+  <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-spreadsheet">
+    <valueUri value="template-profile-spreadsheet.xml"/>
+  </extension>
+
+  <!-- ****************************** -->
+
+  <url value="http://www.fhir.org/guides/test4/ImplementationGuide/healthedatainc.ig-template4-0.0.0"/>
   <version value="0.0.0"/>
   <name value="IGTest3"/>
   <title value="IG Test3"/>
@@ -45,20 +45,23 @@
   <fhirVersion value="4.0.1"/>
   <!-- 0..1 FHIR Version this Implementation Guide targets -->
   <!-- insert dependency -->
-<dependsOn id="uscore">  <!-- 0..* Another Implementation guide this depends on -->
- <uri value="http://hl7.org/fhir/us/core"><!-- 1..1 canonical(ImplementationGuide) Identity of the IG that this depends on --></uri>
- <packageId value="hl7.fhir.us.core"/><!-- 0..1 NPM Package name for IG this depends on -->
- <version value="3.1.0"/><!-- 0..1 Version of the IG -->
-</dependsOn>
-<dependsOn id="qicore">  <!-- 0..* Another Implementation guide this depends on -->
- <uri value="http://hl7.org/fhir/us/qicore"><!-- 1..1 canonical(ImplementationGuide) Identity of the IG that this depends on --></uri>
- <packageId value="hl7.fhir.us.qicore"/><!-- 0..1 NPM Package name for IG this depends on -->
- <version value="current"/><!-- 0..1 Version of the IG -->
-</dependsOn>
-<!-- <global>  0..* Profiles that apply globally
- <type value="[code]"/> 1..1 Type this profile applies to
- <profile> 1..1 canonical(StructureDefinition) Profile that all resources must conform to</profile>
-</global> -->
+  <dependsOn id="uscore">
+    <!-- 0..* Another Implementation guide this depends on -->
+    <uri value="http://hl7.org/fhir/us/core">
+      <!-- 1..1 canonical(ImplementationGuide) Identity of the IG that this depends on -->
+    </uri>
+    <packageId value="hl7.fhir.us.core"/>
+    <!-- 0..1 NPM Package name for IG this depends on -->
+    <version value="3.1.0"/><!-- 0..1 Version of the IG --></dependsOn>
+  <dependsOn id="qicore">
+    <!-- 0..* Another Implementation guide this depends on -->
+    <uri value="http://hl7.org/fhir/us/qicore">
+      <!-- 1..1 canonical(ImplementationGuide) Identity of the IG that this depends on -->
+    </uri>
+    <packageId value="hl7.fhir.us.qicore"/>
+    <!-- 0..1 NPM Package name for IG this depends on -->
+    <version value="current"/><!-- 0..1 Version of the IG --></dependsOn>
+  <!-- <global> 0..* Profiles that apply globally <type value="[code]"/> 1..1 Type this profile applies to <profile> 1..1 canonical(StructureDefinition) Profile that all resources must conform to</profile> </global> -->
 
   <definition>
     <!-- <grouping> 0..* Grouping used to present related resources in the IG -->
@@ -83,7 +86,7 @@
     <resource>
       <reference><reference value="StructureDefinition/extension-blah"/></reference><exampleBoolean value="false"/></resource>
     <resource>
-      <reference><reference value="OperationDefinition/example"/></reference><exampleBoolean value="false"/></resource>
+      <reference><reference value="OperationDefinition/opdef-test"/></reference><exampleBoolean value="false"/></resource>
     <resource>
       <reference><reference value="StructureDefinition/ifr"/></reference><exampleBoolean value="false"/></resource>
     <resource>
@@ -187,5 +190,61 @@
       <page><nameUrl value="toc.html"/><title value="Table of Contents"/><generation value="html"/></page>
 
     </page>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="source/examples"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="source/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="source/pages"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="template/content/pages"/>
+    </parameter>
+    <parameter>
+      <code value="path-qa"/>
+      <value value="generated_output/qa"/>
+    </parameter>
+        <!-- for Narrative Generation?
+    <parameter>
+      <code value="path-liquid"/>
+      <value value="template/templates"/>
+    </parameter>
+      -->
+    <parameter>
+      <code value="path-temp"/>
+      <value value="generated_output/temp"/>
+    </parameter>
+    <parameter>
+      <code value="path-tx-cache"/>
+      <value value="generated_output/txCache"/>
+    </parameter>
+    <parameter>
+      <code value="path-output"/>
+      <value value="docs"/>
+      <!-- <value value="/output"/> -->
+    </parameter>
+
+  <!--<for ???
+    <parameter>
+      <code value="template-html"/>
+      <value value="template/templates"/>
+    </parameter>
+
+
+    <parameter>
+      <code value="template-md"/>
+      <value value="template/templates/"/>
+    </parameter>
+  -->
+    <parameter>
+      <code value="path-history"/>
+      <value value="http://www.fhir.org/guides/test4/history.html"/>
+    </parameter>
   </definition>
 </ImplementationGuide>

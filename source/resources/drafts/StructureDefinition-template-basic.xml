@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file:///C:/Users/Eric/Documents/HL7/FHIR/BUILD_EDIT_FILES/fhir-all-xsd%20-STU3/fhir-all.xsd">
 	<id value="template-basic"/>
-	<url value="http://www.fhir.org/guides/test3/StructureDefinition/template-basic"/>
+	<url value="http://www.fhir.org/guides/test4/StructureDefinition/template-basic"/>
 	<version value="0.0.0"/>
 	<name value="Profile template-basic"/>
 	<status value="active"/>
@@ -50,7 +50,7 @@
 			<definition value="This is a simple extension applied to a Profile."/>
 			<type>
 				<code value="Extension"/>
-				<profile value="http://www.fhir.org/guides/test3/StructureDefinition/extension-blah"/>
+				<profile value="http://www.fhir.org/guides/test4/StructureDefinition/extension-blah"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
@@ -61,7 +61,7 @@
 			<definition value="This is a complex extension applied to a Profile."/>
 			<type>
 				<code value="Extension"/>
-				<profile value="http://www.fhir.org/guides/test3/StructureDefinition/extension-complex"/>
+				<profile value="http://www.fhir.org/guides/test4/StructureDefinition/extension-complex"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
@@ -83,7 +83,7 @@
 					<valueUri value="http://hl7.org/fhir/ValueSet/basic-resource-type"/>
 				</extension>
 				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-minValueSet">
-					<valueUri value="http://www.fhir.org/guides/test3/StructureDefinition/minvs"/>
+					<valueUri value="http://www.fhir.org/guides/test4/StructureDefinition/minvs"/>
 				</extension>
 				<strength value="required"></strength>
 					<valueSetUri value="http://hl7.org/fhir/ValueSet/basic-resource-type"/>

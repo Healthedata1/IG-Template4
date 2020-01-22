@@ -2,7 +2,7 @@
 
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="ifr"/>
-  <url value="http://www.fhir.org/guides/test3/StructureDefinition/ifr"/>
+  <url value="http://www.fhir.org/guides/test4/StructureDefinition/ifr"/>
   <version value="0.0.0"/>
   <name value="Identifer Free Reference Data Type"/>
   <status value="draft"/>

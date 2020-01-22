@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir http://build.fhir.org/device.xsd">
 	<id value="extension-complex"/>
-	<url value="http://www.fhir.org/guides/test3/StructureDefinition/extension-complex"/>
+	<url value="http://www.fhir.org/guides/test4/StructureDefinition/extension-complex"/>
 	<version value="0.0.0"/>
 	<name value="Complex Extension"/>
 	<title value="Complex Extension"/>
@@ -64,7 +64,7 @@
 			<binding>
 				<strength value="required"/>
 				<description value="A bunch of example codes"/>
-				<valueSetUri value="http://www.fhir.org/guides/test3/ValueSet/blah-codes"/>
+				<valueSetUri value="http://www.fhir.org/guides/test4/ValueSet/blah-codes"/>
 			</binding>
 		</element>
 		<element id="Extension.extension:text">
@@ -87,7 +87,7 @@
 		</element>
 		<element id="Extension.url">
 			<path value="Extension.url"/>
-			<fixedUri value="http://www.fhir.org/guides/test3/StructureDefinition/extension-complex"/>
+			<fixedUri value="http://www.fhir.org/guides/test4/StructureDefinition/extension-complex"/>
 		</element>
 		<element id="Extension.value[x]">
 			<path value="Extension.value[x]"/>

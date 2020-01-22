@@ -1,7 +1,7 @@
 {
   "resourceType": "SearchParameter",
   "id": "searchparameter-qualification-code",
-  "url": "http://www.fhir.org/guides/test3/SearchParameter/searchparameter-qualification-code",
+  "url": "http://www.fhir.org/guides/test4/SearchParameter/searchparameter-qualification-code",
   "version": "0.0.0",
   "name": "VHDir Qualification Code Search Parameter",
   "status": "draft",

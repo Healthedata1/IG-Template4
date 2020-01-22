@@ -5,7 +5,8 @@ ig = source/resources/ig.xml
 template = /Users/ehaas/Documents/FHIR/IG-Template4/my_framework
 usage-stats-opt-out = true
 #guidename must match the id of the implementation guide
-guidename=healthedatainc.ig-template4-0.0.0
+guidename=healtheda
+tainc.ig-template4-0.0.0
 copyrightyear=2015+
 license=CC0-1.0
 version=0.0.0

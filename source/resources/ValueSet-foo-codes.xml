@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="foo-codes"/>
-<url value="http://www.fhir.org/guides/test3/ValueSet/foo-codes"/>
+<url value="http://www.fhir.org/guides/test4/ValueSet/foo-codes"/>
 <version value="0.0.0"/>
 <name value="FooCodes"/>
 <title value="Foo Value Set"/>
@@ -44,7 +44,7 @@ markdown list:
 <immutable value="true"/>
 <compose>
   <include>
-    <system value="http://www.fhir.org/guides/test3/CodeSystem/blah-codes"/>
+    <system value="http://www.fhir.org/guides/test4/CodeSystem/blah-codes"/>
     <concept>
       <code value="foo">
       </code>

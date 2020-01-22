@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file://Mac/Home/Documents/FHIR/FHIR%20tools/STU3Schema/fhir-all.xsd">
 	<id value="template-basic2"/>
-	<url value="http://www.fhir.org/guides/test3/StructureDefinition/template-basic2"/>
+	<url value="http://www.fhir.org/guides/test4/StructureDefinition/template-basic2"/>
 	<version value="0.0.0"/>
 	<name value="Profile template-basic2"/>
 	<status value="draft"/>
@@ -45,7 +45,7 @@
 			<max value="1"/>
 			<type>
 				<code value="Extension"/>
-				<profile value="http://www.fhir.org/guides/test3/StructureDefinition/template-blah"/>
+				<profile value="http://www.fhir.org/guides/test4/StructureDefinition/template-blah"/>
 			</type>
 			<mustSupport value="true"/>
 			<isModifier value="false"/>
@@ -59,7 +59,7 @@
 			<max value="1"/>
 			<type>
 				<code value="Extension"/>
-				<profile value="http://www.fhir.org/guides/test3/StructureDefinition/template-complex"/>
+				<profile value="http://www.fhir.org/guides/test4/StructureDefinition/template-complex"/>
 			</type>
 			<mustSupport value="true"/>
 			<isModifier value="false"/>
@@ -118,7 +118,7 @@
 			<max value="1"/>
 			<type>
 				<code value="Reference"/>
-				<profile value="http://www.fhir.org/guides/test3/StructureDefinition/ifr"/>
+				<profile value="http://www.fhir.org/guides/test4/StructureDefinition/ifr"/>
 				<targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
 			</type>
 			<mustSupport value="true"/>

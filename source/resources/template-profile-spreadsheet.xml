@@ -1045,8 +1045,8 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s74"><Data ss:Type="String">extension.uri</Data></Cell>
-    <Cell ss:StyleID="s80" ss:HRef="http://www.fhir.org/guides/test3/StructureDefinition/template-extension-"><Data
-      ss:Type="String">http://www.fhir.org/guides/test3/StructureDefinition/extension-</Data></Cell>
+    <Cell ss:StyleID="s80" ss:HRef="http://www.fhir.org/guides/test4/StructureDefinition/template-extension-"><Data
+      ss:Type="String">http://www.fhir.org/guides/test4/StructureDefinition/extension-</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s81"><Data ss:Type="String">introduction</Data></Cell>
@@ -1378,7 +1378,7 @@
     <Cell ss:StyleID="s109"><Data ss:Type="String">1..1</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s109"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s109"><Data ss:Type="String">Extension{http://www.fhir.org/guides/test3/StructureDefinition/extension-identifier-status}</Data><NamedCell
+    <Cell ss:StyleID="s109"><Data ss:Type="String">Extension{http://www.fhir.org/guides/test4/StructureDefinition/extension-identifier-status}</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s109"><Data ss:Type="String">Y</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
@@ -6804,7 +6804,7 @@
     <Cell ss:StyleID="s151"><Data ss:Type="String">value set</Data></Cell>
     <Cell ss:StyleID="s151"><Data ss:Type="String">required</Data></Cell>
     <Cell ss:StyleID="s151"><Data ss:Type="String">no</Data></Cell>
-    <Cell ss:StyleID="s151"><Data ss:Type="String">http://www.fhir.org/guides/test3/ValueSet/blah-codes</Data></Cell>
+    <Cell ss:StyleID="s151"><Data ss:Type="String">http://www.fhir.org/guides/test4/ValueSet/blah-codes</Data></Cell>
     <Cell ss:StyleID="s151"/>
     <Cell ss:StyleID="s151"/>
     <Cell ss:StyleID="s151"/>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="c05207ab-91a9-4b17-b039-5860bad5b593"/>
+  <id value="3e9551dd-57b9-439f-9d4e-7e3f6c21fce1"/>
   <meta>
-    <lastUpdated value="2019-10-30T17:56:53.732-07:00"/>
+    <lastUpdated value="2020-01-21T16:34:14.453-08:00"/>
   </meta>
   <type value="collection"/>
   <entry>
-    <fullUrl value="http://www.fhir.org/guides/test3/ValueSet/bar-codes"/>
+    <fullUrl value="http://www.fhir.org/guides/test4/ValueSet/bar-codes"/>
     <resource>
       <ValueSet>
         <id value="bar-codes"/>
@@ -15,10 +15,10 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 1 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px">Expansion based on http://www.fhir.org/guides/test3/CodeSystem/blah-codes version 0.0.0</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px">Expansion based on http://www.fhir.org/guides/test4/CodeSystem/blah-codes version 0.0.0</p>
             <p>All codes from system 
-              <a href="CodeSystem-blah-codes.html">
-                <code>http://www.fhir.org/guides/test3/CodeSystem/blah-codes</code>
+              <a href="CodeSystem/blah-codes.html">
+                <code>http://www.fhir.org/guides/test4/CodeSystem/blah-codes</code>
               </a>
             </p>
             <table class="codes">
@@ -35,8 +35,8 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---www.fhir.org-guides-test3-CodeSystem-blah-codes-bar"> </a>
-                  <a href="CodeSystem-blah-codes.html#blah-codes-bar">bar</a>
+                  <a name="http---www.fhir.org-guides-test4-CodeSystem-blah-codes-bar"> </a>
+                  <a href="CodeSystem/blah-codes.html#blah-codes-bar">bar</a>
                 </td>
                 <td>Bar</td>
                 <td>example code 3</td>
@@ -44,7 +44,7 @@
             </table>
           </div>
         </text>
-        <url value="http://www.fhir.org/guides/test3/ValueSet/bar-codes"/>
+        <url value="http://www.fhir.org/guides/test4/ValueSet/bar-codes"/>
         <version value="0.0.0"/>
         <name value="BarCodes"/>
         <title value="Bar Value Set"/>
@@ -69,8 +69,8 @@
         <immutable value="true"/>
         <copyright value="markdown link: [American Medical Association](https://www.ama-assn.org/)&#xA;&#xA;  use &amp;#xA; to create a new line for markdown.. markdown new paragraph: All rights reserved. This value set includes content from SNOMED CT, which is copyright &#xA9; 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement&#xA;&#xA;  ## header2&#xA;  ### header3&#xA;  ### header4 &#xA; *emphasis* &#xA; **bold** &#xA; unordered markdown list:&#xA; - list 1&#xA; - list 2&#xA;&#xA;  ordered markdown list:&#xA; 1. list1&#xA; 1. list2"/>
         <expansion>
-          <identifier value="urn:uuid:2ab6de86-44ae-48c6-bbe4-44c62d15242d"/>
-          <timestamp value="2019-10-30T17:57:17-07:00"/>
+          <identifier value="urn:uuid:318ac4e3-fdb3-4ae9-9c90-ea98d6a4906f"/>
+          <timestamp value="2020-01-21T16:34:38-08:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
@@ -78,10 +78,10 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://www.fhir.org/guides/test3/CodeSystem/blah-codes|0.0.0"/>
+            <valueUri value="http://www.fhir.org/guides/test4/CodeSystem/blah-codes|0.0.0"/>
           </parameter>
           <contains>
-            <system value="http://www.fhir.org/guides/test3/CodeSystem/blah-codes"/>
+            <system value="http://www.fhir.org/guides/test4/CodeSystem/blah-codes"/>
             <code value="bar"/>
             <display value="Bar"/>
           </contains>
@@ -90,7 +90,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://www.fhir.org/guides/test3/ValueSet/foo-codes"/>
+    <fullUrl value="http://www.fhir.org/guides/test4/ValueSet/foo-codes"/>
     <resource>
       <ValueSet>
         <id value="foo-codes"/>
@@ -98,10 +98,10 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 1 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px">Expansion based on http://www.fhir.org/guides/test3/CodeSystem/blah-codes version 0.0.0</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px">Expansion based on http://www.fhir.org/guides/test4/CodeSystem/blah-codes version 0.0.0</p>
             <p>All codes from system 
-              <a href="CodeSystem-blah-codes.html">
-                <code>http://www.fhir.org/guides/test3/CodeSystem/blah-codes</code>
+              <a href="CodeSystem/blah-codes.html">
+                <code>http://www.fhir.org/guides/test4/CodeSystem/blah-codes</code>
               </a>
             </p>
             <table class="codes">
@@ -118,8 +118,8 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---www.fhir.org-guides-test3-CodeSystem-blah-codes-foo"> </a>
-                  <a href="CodeSystem-blah-codes.html#blah-codes-foo">foo</a>
+                  <a name="http---www.fhir.org-guides-test4-CodeSystem-blah-codes-foo"> </a>
+                  <a href="CodeSystem/blah-codes.html#blah-codes-foo">foo</a>
                 </td>
                 <td>Foo</td>
                 <td>example code 2</td>
@@ -127,7 +127,7 @@
             </table>
           </div>
         </text>
-        <url value="http://www.fhir.org/guides/test3/ValueSet/foo-codes"/>
+        <url value="http://www.fhir.org/guides/test4/ValueSet/foo-codes"/>
         <version value="0.0.0"/>
         <name value="FooCodes"/>
         <title value="Foo Value Set"/>
@@ -152,8 +152,8 @@
         <immutable value="true"/>
         <copyright value="markdown link: [American Medical Association](https://www.ama-assn.org/)  markdown new paragraph: All rights reserved. This value set includes content from SNOMED CT, which is copyright &#xA9; 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement  ## header2 ### header3 ### header4  *emphasis*  **bold**  markdown list: - list 1 - list 2  1. list1 1. list2"/>
         <expansion>
-          <identifier value="urn:uuid:ca67a453-4beb-42ee-8dd6-1373e9659ce2"/>
-          <timestamp value="2019-10-30T17:57:17-07:00"/>
+          <identifier value="urn:uuid:af4c2ac4-41a0-46d1-a16e-33df33f22c34"/>
+          <timestamp value="2020-01-21T16:34:38-08:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
@@ -161,10 +161,10 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://www.fhir.org/guides/test3/CodeSystem/blah-codes|0.0.0"/>
+            <valueUri value="http://www.fhir.org/guides/test4/CodeSystem/blah-codes|0.0.0"/>
           </parameter>
           <contains>
-            <system value="http://www.fhir.org/guides/test3/CodeSystem/blah-codes"/>
+            <system value="http://www.fhir.org/guides/test4/CodeSystem/blah-codes"/>
             <code value="foo"/>
             <display value="Foo"/>
           </contains>
@@ -173,7 +173,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://www.fhir.org/guides/test3/ValueSet/blah-codes"/>
+    <fullUrl value="http://www.fhir.org/guides/test4/ValueSet/blah-codes"/>
     <resource>
       <ValueSet>
         <id value="blah-codes"/>
@@ -181,10 +181,10 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 3 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px">Expansion based on http://www.fhir.org/guides/test3/CodeSystem/blah-codes version 0.0.0</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px">Expansion based on http://www.fhir.org/guides/test4/CodeSystem/blah-codes version 0.0.0</p>
             <p>All codes from system 
-              <a href="CodeSystem-blah-codes.html">
-                <code>http://www.fhir.org/guides/test3/CodeSystem/blah-codes</code>
+              <a href="CodeSystem/blah-codes.html">
+                <code>http://www.fhir.org/guides/test4/CodeSystem/blah-codes</code>
               </a>
             </p>
             <table class="codes">
@@ -201,24 +201,24 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---www.fhir.org-guides-test3-CodeSystem-blah-codes-blah"> </a>
-                  <a href="CodeSystem-blah-codes.html#blah-codes-blah">blah</a>
+                  <a name="http---www.fhir.org-guides-test4-CodeSystem-blah-codes-blah"> </a>
+                  <a href="CodeSystem/blah-codes.html#blah-codes-blah">blah</a>
                 </td>
                 <td>Blah</td>
                 <td>example code 1</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---www.fhir.org-guides-test3-CodeSystem-blah-codes-foo"> </a>
-                  <a href="CodeSystem-blah-codes.html#blah-codes-foo">foo</a>
+                  <a name="http---www.fhir.org-guides-test4-CodeSystem-blah-codes-foo"> </a>
+                  <a href="CodeSystem/blah-codes.html#blah-codes-foo">foo</a>
                 </td>
                 <td>Foo</td>
                 <td>example code 2</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---www.fhir.org-guides-test3-CodeSystem-blah-codes-bar"> </a>
-                  <a href="CodeSystem-blah-codes.html#blah-codes-bar">bar</a>
+                  <a name="http---www.fhir.org-guides-test4-CodeSystem-blah-codes-bar"> </a>
+                  <a href="CodeSystem/blah-codes.html#blah-codes-bar">bar</a>
                 </td>
                 <td>Bar</td>
                 <td>example code 3</td>
@@ -226,7 +226,7 @@
             </table>
           </div>
         </text>
-        <url value="http://www.fhir.org/guides/test3/ValueSet/blah-codes"/>
+        <url value="http://www.fhir.org/guides/test4/ValueSet/blah-codes"/>
         <version value="0.0.0"/>
         <name value="BlahCodes"/>
         <status value="draft"/>
@@ -250,8 +250,8 @@
         <immutable value="true"/>
         <copyright value="markdown link: [American Medical Association](https://www.ama-assn.org/)  markdown new paragraph: All rights reserved. This value set includes content from SNOMED CT, which is copyright &#xA9; 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement  ## header2 ### header3 ### header4  *emphasis*  **bold**  markdown list: - list 1 - list 2  1. list1 1. list2"/>
         <expansion>
-          <identifier value="urn:uuid:8fd1f152-6aeb-4fe7-936a-69bb066bdf4f"/>
-          <timestamp value="2019-10-30T17:57:17-07:00"/>
+          <identifier value="urn:uuid:45479af6-3440-453c-bc2e-8de331e9ced5"/>
+          <timestamp value="2020-01-21T16:34:38-08:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -259,20 +259,20 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://www.fhir.org/guides/test3/CodeSystem/blah-codes|0.0.0"/>
+            <valueUri value="http://www.fhir.org/guides/test4/CodeSystem/blah-codes|0.0.0"/>
           </parameter>
           <contains>
-            <system value="http://www.fhir.org/guides/test3/CodeSystem/blah-codes"/>
+            <system value="http://www.fhir.org/guides/test4/CodeSystem/blah-codes"/>
             <code value="blah"/>
             <display value="Blah"/>
           </contains>
           <contains>
-            <system value="http://www.fhir.org/guides/test3/CodeSystem/blah-codes"/>
+            <system value="http://www.fhir.org/guides/test4/CodeSystem/blah-codes"/>
             <code value="foo"/>
             <display value="Foo"/>
           </contains>
           <contains>
-            <system value="http://www.fhir.org/guides/test3/CodeSystem/blah-codes"/>
+            <system value="http://www.fhir.org/guides/test4/CodeSystem/blah-codes"/>
             <code value="bar"/>
             <display value="Bar"/>
           </contains>

@@ -2,7 +2,7 @@
 <!--Hidden IG for de facto IG publishing-->
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="ig"/>
-  <url value="http://www.fhir.org/guides/test3/ImplementationGuide/ig"/>
+  <url value="http://www.fhir.org/guides/test4/ImplementationGuide/ig"/>
   <version value="8.8.8"/>
   <name value="IG_Test3FOO"/>
   <status value="draft"/>

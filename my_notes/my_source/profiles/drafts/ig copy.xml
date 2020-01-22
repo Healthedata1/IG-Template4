@@ -3,7 +3,7 @@
   <!-- from Resource: id, meta, implicitRules, and language -->
   <!-- from DomainResource: text, contained, extension, and modifierExtension -->
   <id value='ig'/>
-  <url value="http://www.fhir.org/guides/test3/ImplementationGuide/ig"/>
+  <url value="http://www.fhir.org/guides/test4/ImplementationGuide/ig"/>
   <!-- 1..1 Canonical identifier for this implementation guide, represented as a URI (globally unique) -->
   <version value="0.0.0"/>
   <!-- 0..1 Business version of the implementation guide -->

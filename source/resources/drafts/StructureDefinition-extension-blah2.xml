@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="extension-blah2"/>
-  <url value="http://www.fhir.org/guides/test3/StructureDefinition/extension-blah2"/>
+  <url value="http://www.fhir.org/guides/test4/StructureDefinition/extension-blah2"/>
   <version value="0.0.0"/>
   <name value="Example Extension"/>
   <title value="Simple Extension"/>
@@ -38,7 +38,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url"/>
-      <fixedUri value="http://www.fhir.org/guides/test3/StructureDefinition/extension-blah2"/>
+      <fixedUri value="http://www.fhir.org/guides/test4/StructureDefinition/extension-blah2"/>
     </element>
     <element id="Extension.valueCode">
       <path value="Extension.valueCode"/>
@@ -48,7 +48,7 @@
       <binding>
         <strength value="required"/>
         <description value="A bunch of example codes"/>
-        <valueSet value="http://www.fhir.org/guides/test3/ValueSet/blah-codes"/>
+        <valueSet value="http://www.fhir.org/guides/test4/ValueSet/blah-codes"/>
       </binding>
     </element>
   </differential>

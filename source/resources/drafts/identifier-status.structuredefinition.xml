@@ -4,7 +4,7 @@
   <meta>
     <lastUpdated value="2017-11-20T11:48:37.913-05:00" />
   </meta>
-  <url value="http://www.fhir.org/guides/test3/StructureDefinition/identifier-status" />
+  <url value="http://www.fhir.org/guides/test4/StructureDefinition/identifier-status" />
   <name value="identifier-status" />
   <status value="draft" />
   <date value="2017-11-20T11:33:43.51-05:00" />
@@ -28,7 +28,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://www.fhir.org/guides/test3/StructureDefinition/identifier-status" />
+      <fixedUri value="http://www.fhir.org/guides/test4/StructureDefinition/identifier-status" />
     </element>
     <element id="Extension.value[x]:valueCode">
       <path value="Extension.valueCode" />
@@ -42,7 +42,7 @@
       </type>
       <binding>
         <strength value="example"/>
-        <valueSetUri value="http://www.fhir.org/guides/test3/ValueSet/valueset-identifierstatus"/>
+        <valueSetUri value="http://www.fhir.org/guides/test4/ValueSet/valueset-identifierstatus"/>
       </binding>
     </element>
   </differential>
