@@ -6,6 +6,9 @@
   <li>
     <a href="guidance.html">General Guidance</a>
   </li>
+  <li>
+    <a href="more-guidance.html">More General Guidance</a>
+  </li>
   <li class="dropdown">
     <a href="#" data-toggle="dropdown" class="dropdown-toggle">FHIR Artifacts<b class="caret">
     </b>

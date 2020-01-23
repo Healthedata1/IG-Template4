@@ -1,16 +1,8 @@
 ---
-title: General Guidance and Definitions
+title: General Guidance and Definitions in Markdown
 layout: default
-active: guidance
-f: http://build.fhir.org/
+toc: True
 ---
-
-{:.no_toc}
-
-<!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->
-
-* Do not remove this line (it will not be displayed)
-{:toc}
 
 ### Introduction
 {:.self-link}

@@ -1,16 +1,17 @@
 ---
 title: General Guidance and Definitions
 layout: default
-active: guidance
-f: http://build.fhir.org/
+toc: True
 ---
 
+{% comment %}
 {:.no_toc}
 
 <!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->
 
 * Do not remove this line (it will not be displayed)
 {:toc}
+{% endcomment %}
 
 ### Introduction
 {:.self-link}

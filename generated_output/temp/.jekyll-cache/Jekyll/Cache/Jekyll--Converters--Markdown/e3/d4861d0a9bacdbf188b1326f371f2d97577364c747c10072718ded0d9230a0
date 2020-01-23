@@ -1,10 +1,13 @@
-I"ç<?xml version="1.0" encoding="UTF-8"?>
+I"1<?xml version="1.0" encoding="UTF-8"?>
 <ul class="nav navbar-nav">
   <li>
     <a href="index.html">Home</a>
   </li>
   <li>
     <a href="guidance.html">General Guidance</a>
+  </li>
+  <li>
+    <a href="more-guidance.html">More General Guidance</a>
   </li>
   <li class="dropdown">
     <a href="#" data-toggle="dropdown" class="dropdown-toggle">FHIR Artifacts<b class="caret">

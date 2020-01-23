@@ -1,7 +1,6 @@
 ---
 title: Profiles defined as part of this Guide
 layout: default
-active: profiles
 ---
 ### Resource Profiles
 

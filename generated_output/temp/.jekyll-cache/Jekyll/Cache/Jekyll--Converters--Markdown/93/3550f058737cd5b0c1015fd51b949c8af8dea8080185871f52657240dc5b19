@@ -1,15 +1,4 @@
-I"á<!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->
-
-<ul id="markdown-toc">
-  <li><a href="#cat-facts" id="markdown-toc-cat-facts">Cat Facts (To Show How the Text Wraps around the Contents Block)</a></li>
-  <li><a href="#variables" id="markdown-toc-variables">Jekyll Site Variables</a></li>
-  <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
-  <li><a href="#more-stuff" id="markdown-toc-more-stuff">More Stuff</a>    <ul>
-      <li><a href="#and-more-stuff" id="markdown-toc-and-more-stuff">And More Stuff</a></li>
-    </ul>
-  </li>
-</ul>
-
+I"~
 <!-- end TOC -->
 
 <h3 id="cat-facts">Cat Facts (To Show How the Text Wraps around the Contents Block)</h3>
@@ -107,10 +96,10 @@
     <p>totalFiles : total number of files found by the build -   {{site.data.fhir.totalFiles}}  = 14</p>
   </li>
   <li>
-    <p>processedFiles : number of files genrated by the build -   {{site.data.fhir.processedFiles}}  = 90</p>
+    <p>processedFiles : number of files genrated by the build -   {{site.data.fhir.processedFiles}}  = 91</p>
   </li>
   <li>
-    <p>genDate : date of generation (so date stamps in the pages can match those in the conformance resources) -   {{site.data.fhir.genDate}}  = Wed, Jan 22, 2020 21:20-0800</p>
+    <p>genDate : date of generation (so date stamps in the pages can match those in the conformance resources) -   {{site.data.fhir.genDate}}  = Wed, Jan 22, 2020 22:33-0800</p>
   </li>
 </ul>
 

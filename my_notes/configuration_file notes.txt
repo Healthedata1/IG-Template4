@@ -28,7 +28,7 @@ Erics-Air-2:IG-Template4 ehaas$ tree -L 2 -I '*.png|*.gif|*.js|docs|my_notes'
 │   ├── history
 │   ├── html_pages
 │   ├── pages
-│   └── resources  5. ig resource which will treat like the grandaddy confi file
+│   └── resources  5. ig resource which will treat like the grandaddy config file
 ├── temp
 │   ├── _data
 │   ├── _includes
@@ -161,9 +161,11 @@ build via:
 1. spreadsheet
 2. YAML
 
-autoload_resources  - test this native functionality does it load the pages
-autoload_pages - test if pages load natively from directory that mimics the menu
-autoload resource into pages - file name based
-check if html works too.
-check out all parameters or extra Parameters - error on qa
-bash should error if no front matter in pages
+for narrative use YAML code block
+
+- autoload_resources  - test this native functionality does it load the pages
+- autoload_pages - test if pages load natively from directory that mimics the menu - no relative links get messed up.
+- autoload resource into pages - file name based
+- check if html works too.
+- check out all parameters or extra Parameters - error on qa
+- bash should error if no front matter in pages

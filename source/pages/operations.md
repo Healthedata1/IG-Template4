@@ -1,6 +1,5 @@
 ---
 # jekyll header
-active: operations
 title: Operations
 layout: default
 ---

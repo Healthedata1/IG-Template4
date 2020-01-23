@@ -1,7 +1,6 @@
 ---
 title: ValueSets and CodeSystems defined as part of this Implementation Guide
 layout: default
-active: terminology
 ---
 ### Value Sets
 

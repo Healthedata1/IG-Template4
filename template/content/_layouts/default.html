@@ -29,7 +29,9 @@
 
 <!-- page source: {{ page.path }}  -->
 
-
+{% if page.toc %}
+{% include toc.html html=content class="markdown-toc" id="markdown-toc" %}
+{% endif %}
 
 {{ content }}
 

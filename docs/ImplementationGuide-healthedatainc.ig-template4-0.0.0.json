@@ -20,7 +20,7 @@
   "name": "IGTest3",
   "title": "IG Test3",
   "status": "draft",
-  "date": "2020-01-22T21:20:08-08:00",
+  "date": "2020-01-22T22:33:06-08:00",
   "publisher": "Health eData Inc",
   "contact": [
     {
@@ -356,6 +356,11 @@
           "nameUrl": "guidance.html",
           "title": "General Guidance",
           "generation": "markdown"
+        },
+        {
+          "nameUrl": "more-guidance.html",
+          "title": "More General Guidance",
+          "generation": "html"
         },
         {
           "nameUrl": "profiles.html",

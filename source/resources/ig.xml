@@ -111,6 +111,7 @@
 
       <!-- ============ Guidance Page =============== -->
       <page><nameUrl value="guidance.html"/><title value="General Guidance"/><generation value="markdown"/></page>
+      <page><nameUrl value="more-guidance.html"/><title value="More General Guidance"/><generation value="html"/></page>
 
       <!-- ============ Profiles Page =============== -->
       <page><nameUrl value="profiles.html"/><title value="Profiles and Extensions"/><generation value="markdown"/>
