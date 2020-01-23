@@ -4,10 +4,6 @@ layout: default
 toc: True
 ---
 
-{% if page.path contains 'index' %}
-FOO
-{% endif %}
-
 ### Cat Facts (To Show How the Text Wraps around the Contents Block) {#cat-facts}
 
  The domestic cat[1][5] (Latin: Felis catus) is a small, typically furry, carnivorous mammal. They are often called house cats when kept as indoor pets or simply cats when there is no need to distinguish them from other felids and felines.[6] Cats are often valued by humans for companionship and for their ability to hunt vermin. There are more than 70 cat breeds, though different associations proclaim different numbers according to their standards.

@@ -56,14 +56,14 @@ link = <a href = "{{ p.path }}">{{ p.name }}</a>,
   &lt;kind
 
 {% assign kind = "page" %}
-{% for e in site.example_types %}
+{% for e in site.data.types.example_types %}
 {% if {{p.name}} contains e %}
 {% assign kind = "example" %}
 {% else %}
 {% endif %}
 {% endfor %}
 
-{% for c in site.conformance_types %}
+{% for c in site.data.types.conformance_types %}
 {% if {{p.name}} contains c %}
 {% assign kind = "resource" %}
 {% endif %}

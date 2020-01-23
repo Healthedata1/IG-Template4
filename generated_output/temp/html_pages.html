@@ -103,13 +103,13 @@ value=&quot;{{ p.path | replace: ".md" , ".html" }}&quot;/&gt;&lt;title
 value=&quot;{% for word in title %}{{ word | capitalize }} {% endfor %}&quot;/&gt;&lt;kind
 
 {% assign kind = "page" %}
-{% for e in site.example_types %}
+{% for e in site.data.types.example_types %}
 {% if title contains e %}
 {% assign kind = "example" %}
 {% endif %}
 {% endfor %}
 
-{% for c in site.conformance_types %}
+{% for c in site.data.types.conformance_types %}
 {% if p.name contains c %}
 {% assign kind = "resource" %}
 {% endif %}
