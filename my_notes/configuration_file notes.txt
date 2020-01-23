@@ -1,0 +1,78 @@
+license and version now go in the corresponding 'core' elements in the IG
+fhirspec gets dropped (we don't need it as a parameter anymore)
+copyrightyear becomes a parameter with code "copyrightyear"
+ballotstatus becomes a parameter with code "releaselabel"
+the various 'exclude' values become parameters with a code of the same name
+
+get all parameters in ig and test.
+
+list the static and dynamic configs.
+
+Erics-Air-2:IG-Template4 ehaas$ tree -L 2 -I '*.png|*.gif|*.js|docs|my_notes'
+.
+├── generated_output
+│   ├── qa
+│   ├── temp
+│   └── txCache
+├── ig.ini  **** dynamic from bash
+├── ig.ini.bak
+├── my_framework
+│   ├── _config.yml *** add parameters from ig resource or let data file do this?
+│   ├── config.json *** this should be static based on templates
+│   ├── content
+│   ├── package
+│   └── templates
+├── publish.sh
+├── source
+│   ├── examples
+│   ├── history
+│   ├── html_pages
+│   ├── pages
+│   └── resources
+├── temp
+│   ├── _data
+│   ├── _includes
+│   ├── fhir.css
+│   └── link.svg
+└── template
+    ├── _config.yml
+    ├── config.json
+    ├── content
+    ├── package
+    └── templates  -->
+
+
+ig.ini  modified by bash file locally
+
+[IG]
+ig = source/resources/ig.xml  # fixed location
+#template = hl7.fhir.template to load from repository  # based on publish.sh for standard template
+#template = /Users/ehaas/Documents/FHIR/IG-Template2  # based on publish.sh  to load locally for local dev
+template = /Users/ehaas/Documents/FHIR/IG-Template4/my_framework  # based on publish.sh default dev option
+usage-stats-opt-out = true  # not sure if works but make option from publish.sh
+#guidename must match the id of the implementation guide
+guidename=healthedatainc.ig-template4-0.0.0
+#copyrightyear=2015+  # move to ig.xml
+#license=CC0-1.0  # move to ig.xml
+#version=0.0.0  # move to ig.xml
+#ballotstatus=CI Build  # move to ig.xml
+#fhirspec=http://build.fhir.org/ # not needed
+#excludexml=Yes  # move to ig.xml
+#excludejson=No  # move to ig.xml
+#excludettl=Yes  # move to ig.xml
+
+
+options
+
+all config parameters in ig resource
+
+build via:
+1. spreadsheet
+2. YAML
+
+autoload_resources  - test this native functionality does it load the pages
+autoload_pages - test if pages load natively from directory that mimics the menu
+autoload resource into pages - file name based
+check if html works too.
+check out all parameters or extra Parameters - error on qa
+bash should error if no front matter in pages

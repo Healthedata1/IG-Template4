@@ -210,12 +210,7 @@
       <code value="path-qa"/>
       <value value="generated_output/qa"/>
     </parameter>
-        <!-- for Narrative Generation?
-    <parameter>
-      <code value="path-liquid"/>
-      <value value="template/templates"/>
-    </parameter>
-      -->
+
     <parameter>
       <code value="path-temp"/>
       <value value="generated_output/temp"/>
@@ -230,18 +225,26 @@
       <!-- <value value="/output"/> -->
     </parameter>
 
+    <!-- for Narrative Generation?
+<parameter>
+  <code value="path-liquid"/>
+  <value value="template/templates"/>
+</parameter>
+  -->
+
   <!--<for ???
     <parameter>
       <code value="template-html"/>
       <value value="template/templates"/>
     </parameter>
 
-
     <parameter>
       <code value="template-md"/>
       <value value="template/templates/"/>
     </parameter>
   -->
+
+
     <parameter>
       <code value="path-history"/>
       <value value="http://www.fhir.org/guides/test4/history.html"/>

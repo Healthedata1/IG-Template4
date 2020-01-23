@@ -13,8 +13,8 @@
   "toolingVersionFull": "4.2.0 (3)",
   "totalFiles": 14,
   "processedFiles": 90,
-  "genDate": "Tue, Jan 21, 2020 16:34-0800",
-  "genDay": "21/01/2020",
+  "genDate": "Wed, Jan 22, 2020 20:24-0800",
+  "genDay": "22/01/2020",
   "ig": {
     "id": "healthedatainc.ig-template4-0.0.0",
     "name": "IGTest3",
@@ -36,7 +36,7 @@
         ]
       }
     ],
-    "date": "2020-01-21T16:34:14-08:00",
+    "date": "2020-01-22T20:24:40-08:00",
     "copyright": "Used by permission of Health eData Inc, all rights reserved Creative Commons License",
     "fhirVersion": "4.0.1"
   },

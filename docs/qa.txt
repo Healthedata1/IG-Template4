@@ -2,8 +2,8 @@
 =========================================
 
 err = 34, warn = 42, info = 2
-IG Publisher Version: v1.0.46-SNAPSHOT
-Generated Tue Jan 21 16:35:05 PST 2020. FHIR version 4.0.1 for healthedatainc.ig-template4# (canonical = http://www.fhir.org/guides/test4)
+IG Publisher Version: v1.0.46-SNAPSHOT Out of date - current version is v1.0.47-SNAPSHOT
+Generated Wed Jan 22 20:25:21 PST 2020. FHIR version 4.0.1 for healthedatainc.ig-template4# (canonical = http://www.fhir.org/guides/test4)
 
  Build Errors : 276 / 5
  /Users/ehaas/Documents/FHIR/IG-Template4/source/examples/basic-diet : 1 / 0
