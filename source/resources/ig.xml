@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--Hidden IG for de facto IG publishing-->
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-  <id value="healthedatainc.ig-template4-0.0.0"/>
+  <id value="healthedatainc.ig-template4"/>
 
   <!--extension for spreadsheets that go in ig.xml-->
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-spreadsheet">
@@ -14,10 +14,10 @@
 
   <!-- ****************************** -->
 
-  <url value="http://www.fhir.org/guides/test4/ImplementationGuide/healthedatainc.ig-template4-0.0.0"/>
+  <url value="http://www.fhir.org/guides/test4/ImplementationGuide/healthedatainc.ig-template4"/>
   <version value="0.0.0"/>
-  <name value="IGTest3"/>
-  <title value="IG Test3"/>
+  <name value="IGTest4"/>
+  <title value="IG Test4"/>
   <status value="draft"/>
   <publisher value="Health eData Inc"/>
 
@@ -47,7 +47,7 @@
   <!-- insert dependency -->
   <dependsOn id="uscore">
     <!-- 0..* Another Implementation guide this depends on -->
-    <uri value="http://hl7.org/fhir/us/core">
+    <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core">
       <!-- 1..1 canonical(ImplementationGuide) Identity of the IG that this depends on -->
     </uri>
     <packageId value="hl7.fhir.us.core"/>
@@ -55,7 +55,7 @@
     <version value="3.1.0"/><!-- 0..1 Version of the IG --></dependsOn>
   <dependsOn id="qicore">
     <!-- 0..* Another Implementation guide this depends on -->
-    <uri value="http://hl7.org/fhir/us/qicore">
+    <uri value="http://hl7.org/fhir/us/qicore/ImplementationGuide/hl7.fhir.us.qicore">
       <!-- 1..1 canonical(ImplementationGuide) Identity of the IG that this depends on -->
     </uri>
     <packageId value="hl7.fhir.us.qicore"/>

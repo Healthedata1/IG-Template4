@@ -51,7 +51,18 @@
 
 
  <!-- org logo -->
-             {% include logo.md %}
+{% assign org_logo = 'assets/images/org_logo.jpg' %}
+{% assign org_logo_link = 'http://www.hl7.org/' %}
+{% for static_file in site.static_files %}
+  {% if static_file.path == '/assets/images/custom_org_logo.jpg' %}
+      {% assign org_logo = 'assets/images/custom_org_logo.jpg' %}
+      {% assign org_logo_link = site.org_logo_link %}
+  {% endif %}
+{% endfor %}
+
+ <a no-external="true" href="{{org_logo_link}}">
+ <img alt="visit our website" class="img-responsive project-logo" src="{{org_logo}}"/>
+ </a>
   <!-- end org logo -->
 
 

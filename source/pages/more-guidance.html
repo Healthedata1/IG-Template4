@@ -47,4 +47,198 @@ and it looks like this.
 
 {% endhighlight %}
 
-<h4 id="and-more-stuff">And More Stuff</h4>
+<h2>Page and Site Variables</h2>
+<pre>
+{% raw %}
+page.title = {{page.title}}<br />
+{% assign pagepath = page.path %}
+pagepath = {{pagepath}}<br />
+page.url= {{page.url}}<br />
+page.name = {{page.name}}<br />
+page.next = {{page.next}}<br />
+page.previous = {{page.previous}}<br />
+{% endraw %}
+</pre>
+page.title = {{page.title}}<br />
+{% assign pagepath = page.path %}
+pagepath = {{pagepath}}<br />
+page.url= {{page.url}}<br />
+page.name = {{page.name}}<br />
+page.next = {{page.next}}<br />
+page.previous = {{page.previous}}<br />
+
+<h2>all site files are available via site.static_files</h2>
+<pre>
+{% raw %}
+{% for static_file in site.static_files %}
+      {{static_file.path}}
+      <br />
+{% endfor %}
+{% endraw %}
+</pre>
+{% for static_file in site.static_files %}
+      {{static_file.path}}
+      <br />
+{% endfor %}
+<h2>site page variable example</h2>
+
+<h3>list of pages</h3>
+<pre>
+{% raw %}
+{% for p in site.pages %}
+{{p.name}},{{p.path}}
+<br />
+{% endfor %}
+{% endraw %}
+</pre>
+
+{% for p in site.pages %}
+{{p.name}},{{p.path}}
+<br />
+{% endfor %}
+<h3>list of static pages</h3>
+
+<h3>list of valuesets from pages</h3>
+<pre>
+{% raw %}
+{% assign html_pages = site.html_pages | sort: 'name' %}
+{% for p in html_pages %}
+{% assign html_frag = p.name | split: '.' | size %}
+{% if p.name contains "ValueSet" and html_frag == 2 %}
+  <li><a href="{{p.name}}">{{p.name |  remove: ".html" | replace: '-', ' ' }}</a></li>
+{% endif %}
+{% endfor %}
+{% endraw %}
+</pre>
+
+{% assign html_pages = site.html_pages | sort: 'name' %}
+{% for p in html_pages %}
+{% assign html_frag = p.name | split: '.' | size %}
+{% if p.name contains "ValueSet" and html_frag == 2 %}
+  <li><a href="{{p.name}}">{{p.name |  remove: ".html" | replace: '-', ' ' }}</a></li>
+{% endif %}
+{% endfor %}
+
+
+<h4 nocount="true"> Table of Contents </h4>
+<p>in markdown</p>
+<pre>
+{% raw %}
+{% for p in site.data.pages %}{% assign pagepath = p[0] %}{% assign pagelabel = site.data.pages[pagepath].label | remove: ".0" %}{% assign pagetitle = site.data.pages[pagepath].title %}{% assign depth = pagelabel | split: '.' %}{% unless pagepath contains 'ttl' or pagepath contains 'json' or  pagepath contains 'xml' or  pagepath contains 'definitions' or pagepath contains 'mappings'%}
+{% for i in depth %}&nbsp;&nbsp;{% endfor %}- {{pagelabel | plus: 1 }} - [{{pagetitle | remove: ".html"}}]({{pagepath}}){% endunless %}{% endfor %}
+{% endraw %}
+</pre>
+
+<pre>
+{% for p in site.data.pages %}{% assign pagepath = p[0] %}{% assign pagelabel = site.data.pages[pagepath].label | remove: ".0" %}{% assign pagetitle = site.data.pages[pagepath].title %}{% assign depth = pagelabel | split: '.' %}{% unless pagepath contains 'ttl' or pagepath contains 'json' or  pagepath contains 'xml' or  pagepath contains 'definitions' or pagepath contains 'mappings'%}
+{% for i in depth %}&nbsp;&nbsp;{% endfor %}- {{pagelabel | plus: 1 }} - [{{pagetitle | remove: ".html"}}]({{pagepath}}){% endunless %}{% endfor %}
+</pre>
+
+{% for p in site.data.pages %}
+p = {{p}}
+<br />
+{% assign pagepath = p[0] %}
+pagepath = {{pagepath}}
+<br />
+p.title = {{site.data.pages[pagepath].title}}
+<br />
+p.label = {{site.data.pages[pagepath].label | remove: ".0" | plus: 1 }}
+<br />
+p.breadcrumb = <pre>{{site.data.pages[pagepath].breadcrumb}}</pre>
+
+
+{% endfor %}
+
+
+site.historypath = {{ site.historypath }}
+<br />
+
+{% for p in site.html_pages %}
+
+{% unless p.name contains 'ttl' or p.name contains 'json' or  p.name contains 'xml' or  p.name contains 'definitions' or p.name contains 'mappings'%}
+
+{% increment n %},
+{% assign title = p.name | remove: ".html" | remove: ".md" | split: '-' %}
+
+<em>title</em> = {% for word in title %}{{ word | capitalize }} {% endfor %}
+<em>path</em> = {{ p.path }},
+<em>url</em> = {{ p.url }},
+<em>link</em> = <a href = "{{ path }}">{% for word in title %}{{ word | capitalize }} {% endfor %}</a>
+<br />
+
+
+
+
+{% endunless %}
+
+{% endfor %}
+
+<br /><br />
+<hr />
+
+<h3>R3 IG pages</h3>
+{% for p in site.html_pages %}
+
+{% unless p.name contains 'ttl' or p.name contains 'json' or  p.name contains 'xml' or  p.name contains 'definitions' or p.name contains 'mappings'%}
+
+
+{% assign title = p.name | remove: ".html" | remove: ".md" | split: '-' %}
+
+&lt;page&gt;&lt;source
+value=&quot;{{ p.path | replace: ".md" , ".html" }}&quot;/&gt;&lt;title
+value=&quot;{% for word in title %}{{ word | capitalize }} {% endfor %}&quot;/&gt;&lt;kind
+
+{% assign kind = "page" %}
+{% for e in site.data.types.example_types %}
+{% if title contains e %}
+{% assign kind = "example" %}
+{% endif %}
+{% endfor %}
+
+{% for c in site.data.types.conformance_types %}
+{% if p.name contains c %}
+{% assign kind = "resource" %}
+{% endif %}
+{% endfor %}
+
+
+value=&quot;{{ kind }}&quot;/&gt;&lt;/page&gt;
+<br />
+<br />
+
+
+{% endunless %}
+
+{% endfor %}
+<br /><br />
+<hr />
+
+<h3>R4 IG pages</h3>
+{% for p in site.html_pages %}
+
+{% unless p.name contains 'ttl' or p.name contains 'json' or  p.name contains 'xml' or  p.name contains 'definitions' or p.name contains 'mappings'%}
+
+
+{% assign title = p.name | remove: ".html" | remove: ".md" | split: '-' %}
+
+
+&lt;page&gt;&lt;nameUrl
+value=&quot;{{ p.path | replace: ".md" , ".html" }}&quot;/&gt;&lt;title
+value=&quot;{% for word in title %}{{ word | capitalize }} {% endfor %}&quot;/&gt;&lt;generation
+
+{% assign generation = "markdown" %}
+{% for e in site.resource_types %}
+{% if title contains e %}
+{% assign generation = "generated" %}
+
+{% endif %}
+{% endfor %}
+
+value=&quot;{{ generation }}&quot;/&gt;&lt;/page&gt;
+<br />
+<br />
+
+
+{% endunless %}
+
+{% endfor %}

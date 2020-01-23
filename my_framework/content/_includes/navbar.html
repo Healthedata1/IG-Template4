@@ -25,6 +25,9 @@
 
            <ul class="nav navbar-nav">
                {% assign links = site.data.navigation %}
+               {% if site.data.ig_navigation %}
+               {% assign links = site.data.ig_navigation %}
+               {% endif %}
                {% for link in links %}
                    {% assign class = nil %}
                    {% if page.url contains link.url %}

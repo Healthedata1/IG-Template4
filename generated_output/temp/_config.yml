@@ -1,4 +1,3 @@
-
 exclude:
   - templates
   - README.md
@@ -12,7 +11,6 @@ build: ci  # choice of ci|ballot|commentballot|version
 ballot:    #STU version of IG ( if needed for publishing HL7 guides)
 hl7_version:  # not sure what this is for
 hl7_ig: #  'true'  if HL7 ig
-
 showXML: true  #'true' if want xml tab'
 showTTL: true  #'true' if want ttl tab'
 showMappings: false  # 'true' if want to display mappings tab'
@@ -23,5 +21,4 @@ showPsuedoXML: true # 'true' if want to display Psuedo JSON profile view'
 showIntro:  # 'true' if want to display Custom Introduction in profile view'
 showQuickStart:  # 'true' if want to display QuickStarts in profile view'
 showDevView: # 'true' if only want to display summary view in profile view'
-
 default_profile_view: 1  # choice of 0|1|2|3 for summary|differential|full|all views in profile

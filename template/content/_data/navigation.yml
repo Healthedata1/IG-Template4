@@ -1,16 +1,11 @@
-
-
 - title: Home
   url: index.html
 - title: General Guidance
   url: guidance.html
 - title: More General Guidance
-
   url: more-guidance.html
-
 - title: FHIR Artifacts
   url: "#"
-
   sublinks:
     - title: Profiles and Extensions
       url: profiles.html

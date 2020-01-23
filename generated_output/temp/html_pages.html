@@ -1,13 +1,19 @@
 ---
-### jekyll header
+title: HTML Page and Site Variables
+layout: default
+toc: True
 ---
-{% include header.html %}
-
-
-{% include container-start.html %}
-
 
   <!-- ============CONTENT CONTENT=============== -->
+
+<h2>all site files are available via site.static_files</h2>
+
+{% for static_file in site.static_files %}
+      {{static_file.path}}
+      <br />
+{% endfor %}
+
+
 <h2>site page variable example</h2>
 
 
@@ -156,10 +162,3 @@ value=&quot;{{ generation }}&quot;/&gt;&lt;/page&gt;
 {% endunless %}
 
 {% endfor %}
-
-
-  <!-- ==============END CONTENT END CONTENT=================== -->
-
-{% include container-end.html %}
-
-    {% include footer.html %}

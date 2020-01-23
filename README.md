@@ -1,71 +1,80 @@
 see https://wiki.hl7.org/FHIR_IG_publisher_templates
 
+## TODOS
+1. autoload_resources  - test this native functionality does it load the pages test pending
+1. autoload_pages - test if pages load natively from directory that mimics the menu - no relative links get messed up.
+1. autoload resource into pages - file name based - test pending
+1. check if html works too. - it does indeed and fixed toc-for-pages to work in the layout
+1. check out all parameters or extra Parameters -  todo error on qa
+1. bash should error if no front matter in pages - todo
+1. menu should have fixed and variable parts. - done see below
+   -  use yaml file to define menu. variable parts of it?
+1. fix markdown friendly images in lloyd's template
+   - issue with not following boot strap and spurious tags - discuss
+1. add logo variable - done
+1. Discuss with Lloyd:
+    1. update css to test modify locally
+    2. add section numbering for ie - todo
+    3. update look and feel -
+    4. add copy me, and external and download icons
+    5. update and simplify layout
+    6. suggest new file tree structure
 
-framework  no ant
-use bash script tooling on the front end to create and install the
+
+## Using Lloyds template
+-  need to rename directories:
+  - `source` to `include`
+  - `_includes` to `includes` and move to input dir  this is not how Jekyll spec defines this!
+  - 'pages' to 'pagecontent'
+  - this file to input folder 'ignoreWarnings.tx'
+  - note that temp/input-cache all outside of generated_files directory
+- need to add extensions for each spreadsheet to ig.xml (need to do this for for my template as well )
+     -add extensions for spreadsheets that go in ig.xml or ig.yml
+
+    ~~~
+    <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-spreadsheet">
+      <valueUri value="structuredefinition-sdc-profile-spreadsheet.xml"/>
+    </extension>
+    ~~~
+
+- file names need to match ids !!  stoopid!!
+- remove toc.html from IG since being created 2x by lloyd scripts Arggghhhh...
+- menu.xml is missing since is menu.md changed to xml and add a stupid namespace !!!
+    - see my solution using yaml
+- moved example-list-generator.md and schematron-list-generator example button files and image files to includes directory  these are framework things that should not be mixed with the user data
+- strip out front matter
+  - antipattern to Jekyll
+- ### Result is IG with several rendering issues.
+- ### saved as branch and start over with my own templates :-)
+
+## JKL branch
+
+The approach here is to use my existing framework and no ant scripting.
+Use bash script tooling on the front end to create and install the
 config files and run ig-pub without internal scripting
 
-note to use publish.sh
+notes to using publish.sh:
+- to use load template use -l parameter
+- to use local (test) template use -u parameter
+- to use loaded template no -l or -u parameters
 
-to use load template use -l parameter
-to use local (test) template use -u parameter
-to use loaded template no -l or -u parameters
+Assemble all the configuration and menu on the front using scripting tools and/or hand editing of source files and default menu (navigation.yml).  To use online scripts will need to be able to access files from a GitRepro or upload files to the online tool.  file will need to be downloaded locally to update your ig.
 
-task list
+*NOTE can't overwrite _data files in source. need create separate file and use control logic in templates.. *
 
-1. fix markdown friendly images
- issue with not following boot strap and spurious tags
+**project logo**
 
-1. add logo variable
-1. update css as test
-2. add section numbering for ie
-3. update look and feel
-4. add copy me
-5. update and simplify layout
-6. suggest new file tree structure and way to autogen menu.
+Default template logo can't be overwritten locally. Add custom logo as "source/pages/assets/images/custom_org_logo.jpg" and the template will use it instead of default template project logo. Also need a paramenter for the logo url.  not sure that is always  {{site.data.fhir.ig.contact[0].telecom[0]}}
 
+See header.html for liquid code
 
-in order to get templates to work out of the box for my templates...
+**custom menu**
 
-Using Lloyds template to start
+Default template menu can't be overwritten locally. Add custom menu in source as "source/pages/_data/ig_navigation.yml" and the template will use it instead of default template project menu.
 
-### need to rename directories:
+See navbar.html for liquid code
 
-- `source` to `include`
-- `_includes` to `includes` and move to input dir  this is not how Jekyll spec defines this!
-- 'pages' to 'pagecontent'
-- this file to input folder 'ignoreWarnings.tx'
-- note that temp/input-cache all outside of generated_files directory
-
-### need to add extensions for each spreadsheet to ig.xml
-
-
-
- -add extensions for spreadsheets that go in ig.xml or ig.yml
-~~~
-<extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-spreadsheet">
-  <valueUri value="structuredefinition-sdc-profile-spreadsheet.xml"/>
-</extension>
-~~~
-
-### file names need to match ids !!  stoopid!!
-
-### What is docs folder for?
-
-### remove toc.html from IG since being created 2x by scripts Arggghhhh...
-
-### menu.xml is missing since is menu.md  changed to xml  and add a stupid namespace !!!
-
-## This is no easier than what had before....!!!
-
-## moved example-list-generator.md and schematron-list-generator example button files and image files to includes directory  these are framework things that should not be mixed with the user data
-
-## strip out front matter - antipattern to Jekyll
-
-- created IG with several rendering issues.
-- saved as branch and start over with my own templates :-)
-
-## get all parameters in ig and test.
+### get all parameters in ig and test.
 
 #### list the static and dynamic configs.
 ~~~
@@ -105,7 +114,7 @@ Erics-Air-2:IG-Template4 ehaas$ tree -L 2 -I '*.png|*.gif|*.js|docs|my_notes'
     └── templates  -->
 ~~~
 
-1. ig.ini  modified by bash file locally
+1. ig.ini  modified by bash file publish.sh locally
 
     ~~~
     [IG]
@@ -180,9 +189,58 @@ Erics-Air-2:IG-Template4 ehaas$ tree -L 2 -I '*.png|*.gif|*.js|docs|my_notes'
 
    - enter all config parameters in ig resource
 
-      - IG Parameters:
-
-
+    - IG Parameters:
+      ~~~
+      logging:
+      - init
+      - progess
+      - tx
+      - generate
+      - html
+      generate:
+      - example-narratives
+      - genExamples
+      path_resources: []
+      path_liquid: []
+      path_html: []
+      path_md: []
+      path_pages: []
+      path_qa: []
+      path_tx_cache: []
+      path_output: []
+      path_temp: []
+      path_history: []
+      path_expansion_params: []
+      path_suppressed_warnings: []
+      autoload_resources: false
+      codesystem_property: []
+      html_exempt: []
+      extension_domain: []
+      active_tables: false
+      ig_expansion_parameters: []
+      special_url: []
+      template_openapi: null
+      template_html: null
+      template_md: null
+      apply_contact: false
+      apply_copyright: false
+      apply_context: false
+      apply_jurisdiction: false
+      apply_license: false
+      apply_publisher: false
+      apply_version: false
+      validation:
+      - check-must-support
+      - allow-any-extensions
+      - check-aggregation
+      - no-broken-links
+      - show-reference-messages
+      copyrightyear: 2015+
+      releaselabel: CI Build
+      excludexml: 'Yes'
+      excludejson: 'No'
+      excludettl: 'Yes'
+      ~~~
 
       - add my parameters in here from _config.yml too:
 
@@ -218,18 +276,6 @@ Erics-Air-2:IG-Template4 ehaas$ tree -L 2 -I '*.png|*.gif|*.js|docs|my_notes'
       2. YAML
 
    - for narrative use YAML code block
-
-
-## TODOS
-    - autoload_resources  - test this native functionality does it load the pages test pending
-    - autoload_pages - test if pages load natively from directory that mimics the menu - no relative links get messed up.
-    - autoload resource into pages - file name based - test pending
-    - check if html works too. - it does indeed and fixed toc for pages to work in the layout
-    - check out all parameters or extra Parameters - error on qa
-    - bash should error if no front matter in pages - todo
-    menu should have fixed and variable parts. - separate app for that?   use yaml file to define. variable parts of it
-    logo too.
-
 
 ## ig package manifest:
 

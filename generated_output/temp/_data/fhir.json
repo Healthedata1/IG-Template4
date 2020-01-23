@@ -1,8 +1,8 @@
 {
   "path": "http://hl7.org/fhir/R4/",
   "canonical": "http://www.fhir.org/guides/test4",
-  "igId": "healthedatainc.ig-template4-0.0.0",
-  "igName": "IGTest3",
+  "igId": "healthedatainc.ig-template4",
+  "igName": "IGTest4",
   "packageId": "healthedatainc.ig-template4",
   "errorCount": 17,
   "version": "4.0.1",
@@ -12,14 +12,14 @@
   "toolingRevision": "3",
   "toolingVersionFull": "4.2.0 (3)",
   "totalFiles": 14,
-  "processedFiles": 91,
-  "genDate": "Thu, Jan 23, 2020 08:25-0800",
+  "processedFiles": 90,
+  "genDate": "Thu, Jan 23, 2020 11:32-0800",
   "genDay": "23/01/2020",
   "ig": {
-    "id": "healthedatainc.ig-template4-0.0.0",
-    "name": "IGTest3",
-    "title": "IG Test3",
-    "url": "http://www.fhir.org/guides/test4/ImplementationGuide/healthedatainc.ig-template4-0.0.0",
+    "id": "healthedatainc.ig-template4",
+    "name": "IGTest4",
+    "title": "IG Test4",
+    "url": "http://www.fhir.org/guides/test4/ImplementationGuide/healthedatainc.ig-template4",
     "version": "0.0.0",
     "status": "draft",
     "experimental": false,
@@ -36,7 +36,7 @@
         ]
       }
     ],
-    "date": "2020-01-23T08:25:17-08:00",
+    "date": "2020-01-23T11:32:55-08:00",
     "copyright": "Used by permission of Health eData Inc, all rights reserved Creative Commons License",
     "fhirVersion": "4.0.1"
   },
