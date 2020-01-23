@@ -60,7 +60,7 @@ notes to using publish.sh:
 
 Assemble all the configuration and menu on the front using scripting tools and/or hand editing of source files and default menu (navigation.yml).  To use online scripts will need to be able to access files from a GitRepro or upload files to the online tool.  file will need to be downloaded locally to update your ig.
 
-*NOTE can't overwrite _data files in source. need create separate file and use control logic in templates.. *
+*NOTE can't overwrite _data files in source. need create separate file and use control logic in templates...*
 
 **project logo**
 
@@ -82,36 +82,38 @@ Erics-Air-2:IG-Template4 ehaas$ tree -L 2 -I '*.png|*.gif|*.js|docs|my_notes'
 .
 ├── generated_output
 │   ├── qa
-│   ├── temp
+│   ├── temp  ** everything that gos into building the static web pages ends up
+|   |   |          here all nice a pretty like thanks to the ig-pub **
+│   │   ├── _data
+│   │   ├── _includes
+│   │   ├── fhir.css
+│   │   └── link.svg
 │   └── txCache
-├── ig.ini  **** 1. dynamic from bash
-├── ig.ini.bak
-├── my_framework
-│   ├── config.json 3. *** this should be static based on templates
+├── ig.ini  **** 1. dynamically updated from bash and the first place the
+|                 ig-pub looks to for where to grab the template ****
+├── ig.ini.bak  **** little bash feature to save the last ini file
+├── my_framework  ****  This is the static "templated folder and where
+|   |            all the magic happens from a templating standpoint****
+│   ├── config.json 3. *** this should be static based on templates ***
 │   ├── content
-│   │   ├── 2._config.yml add parameters from ig resource or let data file do this?
+│   │   ├── *** 2._config.yml add parameters from ig resource or
+|   |   |        let data file do this?  ***
 │   │   └── _data
-│   │   │   └── 5. navigation.yml - defines top bar menu using YML - define at beginning along with ig resource
-│   ├── package 4. package.json file  -this is template specific and static
+│   │       └── *** 5. navigation.yml - defines default top bar menu using YML
+|   |               can overide with custom menue ****
+│   ├── package *** 4. package.json is template specific and static****
 │   └── templates
-├── publish.sh
-├── source
+├── publish.sh  ** bash script for starting off the build - lots of parameters
+|                  to optimize your exerience **
+├── source  - *** this is where all the authoring and editing is done ***
 │   ├── examples
 │   ├── history
-│   ├── html_pages
+│   ├── html_pages ** a file for liquid testing only in my test IG
 │   ├── pages
-│   └── resources  5. ig resource which will treat like the grandaddy config file
-├── temp
-│   ├── _data
-│   ├── _includes
-│   ├── fhir.css
-│   └── link.svg
-└── template
-    ├── _config.yml
-    ├── config.json
-    ├── content
-    ├── package
-    └── templates  -->
+│   └── resources  **** 5. ig resource which will treat like the
+|                      grandaddy config file ****
+└── template **** this folder is reloaded with each and every build from the nominated template in ig.ini ****
+
 ~~~
 
 1. ig.ini  modified by bash file publish.sh locally
@@ -187,95 +189,401 @@ Erics-Air-2:IG-Template4 ehaas$ tree -L 2 -I '*.png|*.gif|*.js|docs|my_notes'
 
 5. ImplementationGuide (ig.xml) resource
 
-   - enter all config parameters in ig resource
+This resource is essentially a big ole configuration file for generating an ig. Hence using a format like yaml to represent it and enter the data is natural fit ( see example below).  Will also provide a spreadsheet version for entering the data as well.
 
-    - IG Parameters:
-      ~~~
-      logging:
-      - init
-      - progess
-      - tx
-      - generate
-      - html
-      generate:
-      - example-narratives
-      - genExamples
-      path_resources: []
-      path_liquid: []
-      path_html: []
-      path_md: []
-      path_pages: []
-      path_qa: []
-      path_tx_cache: []
-      path_output: []
-      path_temp: []
-      path_history: []
-      path_expansion_params: []
-      path_suppressed_warnings: []
-      autoload_resources: false
-      codesystem_property: []
-      html_exempt: []
-      extension_domain: []
-      active_tables: false
-      ig_expansion_parameters: []
-      special_url: []
-      template_openapi: null
-      template_html: null
-      template_md: null
-      apply_contact: false
-      apply_copyright: false
-      apply_context: false
-      apply_jurisdiction: false
-      apply_license: false
-      apply_publisher: false
-      apply_version: false
-      validation:
-      - check-must-support
-      - allow-any-extensions
-      - check-aggregation
-      - no-broken-links
-      - show-reference-messages
-      copyrightyear: 2015+
-      releaselabel: CI Build
-      excludexml: 'Yes'
-      excludejson: 'No'
-      excludettl: 'Yes'
-      ~~~
+Enter all config parameters in ig resource either manually or with aid of tooling to input data from YAML files, spreadsheets and/or scraping directories.
 
-      - add my parameters in here from _config.yml too:
+  - There will be a default ig.xml (shown below) that should get you going with minimal data entry.
+  - build ig.xml via script using as input either:
+     1. spreadsheet
+     2. YAML  
+  - data consists of:
+       - meta data
+         - manually entered
+       - dependencies data
+         - manually entered
+       - conformance resources
+         - manually entered or scraped from a directory
+       - non-conformance  in other words examples
+         - manually entered or scraped from a directory
+       - pages
+         - manually entered or scraped from a directory
+       - IG Parameters:
+          - manually entered
 
         ~~~
-        exclude:
-        - templates
-        - README.md
-        title: IG-Template2
-        copyrightyear: "2019" # copyright date for footer
-        historypath: "#" # complete path to IG history file use "history" for an example of what this page would look like
-        changelink: https://github.com/Healthedata1/IG-Template2/issues #http://hl7.org/fhir-issues  # for hl7 guides
-        summaries: false #true if want custom profile summaries in summary tab
-        diff2: false # true if want to show intermediate differentials - probably never use this.
-        build: ci  # choice of ci|ballot|commentballot|version
-        ballot:    #STU version of IG ( if needed for publishing HL7 guides)
-        hl7_version:  # not sure what this is for
-        hl7_ig: #  'true'  if HL7 ig
-        showXML: true  #'true' if want xml tab'
-        showTTL: true  #'true' if want ttl tab'
-        showMappings: false  # 'true' if want to display mappings tab'
-        showDefs: false  # 'true' if want to display Definitions tab'
-        showExamples: false  # 'true' if want to display Examples tab -currently no template for it'
-        showPsuedoJson: true # 'true' if want to display Psuedo JSON profile view'
-        showPsuedoXML: true # 'true' if want to display Psuedo JSON profile view'
-        showIntro:  # 'true' if want to display Custom Introduction in profile view'
-        showQuickStart:  # 'true' if want to display QuickStarts in profile view'
-        showDevView: # 'true' if only want to display summary view in profile view'
-        default_profile_view: 1  # choice of 0|1|2|3 for summary|differential|full|all views in profile
+        logging:
+        - init
+        - progess
+        - tx
+        - generate
+        - html
+        generate:
+        - example-narratives
+        - genExamples
+        path_resources: []
+        path_liquid: []
+        path_html: []
+        path_md: []
+        path_pages: []
+        path_qa: []
+        path_tx_cache: []
+        path_output: []
+        path_temp: []
+        path_history: []
+        path_expansion_params: []
+        path_suppressed_warnings: []
+        autoload_resources: false
+        codesystem_property: []
+        html_exempt: []
+        extension_domain: []
+        active_tables: false
+        ig_expansion_parameters: []
+        special_url: []
+        template_openapi: null
+        template_html: null
+        template_md: null
+        apply_contact: false
+        apply_copyright: false
+        apply_context: false
+        apply_jurisdiction: false
+        apply_license: false
+        apply_publisher: false
+        apply_version: false
+        validation:
+        - check-must-support
+        - allow-any-extensions
+        - check-aggregation
+        - no-broken-links
+        - show-reference-messages
+        copyrightyear: 2015+
+        releaselabel: CI Build
+        excludexml: 'Yes'
+        excludejson: 'No'
+        excludettl: 'Yes'
         ~~~
 
-   - build ig.xml via script using as input either:
-      1. spreadsheet
-      2. YAML
+        - add my parameters in here from _config.yml too:
+
+          ~~~
+          exclude:
+          - templates
+          - README.md
+          title: IG-Template2
+          copyrightyear: "2019" # copyright date for footer
+          historypath: "#" # complete path to IG history file use "history" for an example of what this page would look like
+          changelink: https://github.com/Healthedata1/IG-Template2/issues #http://hl7.org/fhir-issues  # for hl7 guides
+          summaries: false #true if want custom profile summaries in summary tab
+          diff2: false # true if want to show intermediate differentials - probably never use this.
+          build: ci  # choice of ci|ballot|commentballot|version
+          ballot:    #STU version of IG ( if needed for publishing HL7 guides)
+          hl7_version:  # not sure what this is for
+          hl7_ig: #  'true'  if HL7 ig
+          showXML: true  #'true' if want xml tab'
+          showTTL: true  #'true' if want ttl tab'
+          showMappings: false  # 'true' if want to display mappings tab'
+          showDefs: false  # 'true' if want to display Definitions tab'
+          showExamples: false  # 'true' if want to display Examples tab -currently no template for it'
+          showPsuedoJson: true # 'true' if want to display Psuedo JSON profile view'
+          showPsuedoXML: true # 'true' if want to display Psuedo JSON profile view'
+          showIntro:  # 'true' if want to display Custom Introduction in profile view'
+          showQuickStart:  # 'true' if want to display QuickStarts in profile view'
+          showDevView: # 'true' if only want to display summary view in profile view'
+          default_profile_view: 1  # choice of 0|1|2|3 for summary|differential|full|all views in profile
+          ~~~
 
    - for narrative use YAML code block
+
+### Exampe ImplementationGuide in YAML format:
+~~~
+resourceType: ImplementationGuide
+id: healthedatainc.ig-template4-0.0.0
+text:
+  status: generated
+  div: '<div xmlns="http://www.w3.org/1999/xhtml"><h2>IGTest3</h2><p>The official
+    URL for this implementation guide is: </p><pre>http://www.fhir.org/guides/test4/ImplementationGuide/healthedatainc.ig-template4-0.0.0</pre></div>'
+extension:
+- url: http://hl7.org/fhir/StructureDefinition/igpublisher-spreadsheet
+  valueUri: patient-on-usprofile-spreadsheet.xml
+- url: http://hl7.org/fhir/StructureDefinition/igpublisher-spreadsheet
+  valueUri: template-profile-spreadsheet.xml
+url: http://www.fhir.org/guides/test4/ImplementationGuide/healthedatainc.ig-template4-0.0.0
+version: 0.0.0
+name: IGTest3
+title: IG Test3
+status: draft
+date: '2020-01-21T16:34:14-08:00'
+publisher: Health eData Inc
+contact:
+- telecom:
+  - system: email
+    value: mailto:ehaas@healthedatainc.com
+- telecom:
+  - system: url
+    value: http://foobar.com
+copyright: Used by permission of Health eData Inc, all rights reserved Creative Commons
+  License
+packageId: healthedatainc.ig-template4
+license: CC0-1.0
+fhirVersion:
+- 4.0.1
+dependsOn:
+- id: uscore
+  uri: http://hl7.org/fhir/us/core
+  packageId: hl7.fhir.us.core
+  version: 3.1.0
+- id: qicore
+  uri: http://hl7.org/fhir/us/qicore
+  packageId: hl7.fhir.us.qicore
+  version: current
+definition:
+  grouping:
+  - name: base
+  - id: template-profile-spreadsheet.xml
+    name: Template-basic
+  resource:
+  - extension:
+    - url: http://hl7.org/fhir/tools/StructureDefinition/resource-information
+      valueString: Basic
+    - url: http://hl7.org/fhir/StructureDefinition/implementationguide-page
+      valueUri: Basic-diet.html
+    reference:
+      reference: Basic/diet
+    exampleBoolean: true
+  - extension:
+    - url: http://hl7.org/fhir/tools/StructureDefinition/resource-information
+      valueString: Patient
+    - url: http://hl7.org/fhir/StructureDefinition/implementationguide-page
+      valueUri: Patient-example.html
+    reference:
+      reference: Patient/example
+    exampleBoolean: true
+  - extension:
+    - url: http://hl7.org/fhir/tools/StructureDefinition/resource-information
+      valueString: Patient
+    - url: http://hl7.org/fhir/StructureDefinition/implementationguide-page
+      valueUri: Patient-example2.html
+    reference:
+      reference: Patient/example2
+    exampleBoolean: true
+  - extension:
+    - url: http://hl7.org/fhir/tools/StructureDefinition/resource-information
+      valueString: StructureDefinition:extension
+    - url: http://hl7.org/fhir/StructureDefinition/implementationguide-page
+      valueUri: StructureDefinition-extension-complex.html
+    reference:
+      reference: StructureDefinition/extension-complex
+    name: Complex Extension
+    description: an example of a complex extension.
+    exampleBoolean: false
+  - extension:
+    - url: http://hl7.org/fhir/tools/StructureDefinition/resource-information
+      valueString: StructureDefinition:extension
+    - url: http://hl7.org/fhir/StructureDefinition/implementationguide-page
+      valueUri: StructureDefinition-extension-blah.html
+    reference:
+      reference: StructureDefinition/extension-blah
+    name: Simple Extension
+    description: an example of a simple extension.
+    exampleBoolean: false
+  - extension:
+    - url: http://hl7.org/fhir/tools/StructureDefinition/resource-information
+      valueString: OperationDefinition
+    - url: http://hl7.org/fhir/StructureDefinition/implementationguide-page
+      valueUri: OperationDefinition-opdef-test.html
+    reference:
+      reference: OperationDefinition/opdef-test
+    description: Limited implementation of the Populate Questionnaire implementation
+    exampleBoolean: false
+  - extension:
+    - url: http://hl7.org/fhir/tools/StructureDefinition/resource-information
+      valueString: StructureDefinition:complex-type
+    - url: http://hl7.org/fhir/StructureDefinition/implementationguide-page
+      valueUri: StructureDefinition-ifr.html
+    reference:
+      reference: StructureDefinition/ifr
+    exampleBoolean: false
+  - extension:
+    - url: http://hl7.org/fhir/tools/StructureDefinition/resource-information
+      valueString: ValueSet
+    - url: http://hl7.org/fhir/StructureDefinition/implementationguide-page
+      valueUri: ValueSet-bar-codes.html
+    reference:
+      reference: ValueSet/bar-codes
+    name: Bar Value Set
+    description: A bunch of example codes
+    exampleBoolean: false
+  - extension:
+    - url: http://hl7.org/fhir/tools/StructureDefinition/resource-information
+      valueString: CapabilityStatement
+    - url: http://hl7.org/fhir/StructureDefinition/implementationguide-page
+      valueUri: CapabilityStatement-server.html
+    reference:
+      reference: CapabilityStatement/server
+    description: 'This resource defines the expected capabilities '
+    exampleBoolean: false
+  - extension:
+    - url: http://hl7.org/fhir/tools/StructureDefinition/resource-information
+      valueString: CodeSystem
+    - url: http://hl7.org/fhir/StructureDefinition/implementationguide-page
+      valueUri: CodeSystem-blah-codes.html
+    reference:
+      reference: CodeSystem/blah-codes
+    description: A bunch of example codes
+    exampleBoolean: false
+  - extension:
+    - url: http://hl7.org/fhir/tools/StructureDefinition/resource-information
+      valueString: CapabilityStatement
+    - url: http://hl7.org/fhir/StructureDefinition/implementationguide-page
+      valueUri: CapabilityStatement-client.html
+    reference:
+      reference: CapabilityStatement/client
+    description: 'This resource defines the expected capabilities '
+    exampleBoolean: false
+  - extension:
+    - url: http://hl7.org/fhir/tools/StructureDefinition/resource-information
+      valueString: StructureDefinition:resource
+    - url: http://hl7.org/fhir/StructureDefinition/implementationguide-page
+      valueUri: StructureDefinition-template-profile-on-profile.html
+    reference:
+      reference: StructureDefinition/template-profile-on-profile
+    name: Template Profile on Profile
+    description: Template-Profile-on-Profile
+    exampleBoolean: false
+  - extension:
+    - url: http://hl7.org/fhir/tools/StructureDefinition/resource-information
+      valueString: ValueSet
+    - url: http://hl7.org/fhir/StructureDefinition/implementationguide-page
+      valueUri: ValueSet-foo-codes.html
+    reference:
+      reference: ValueSet/foo-codes
+    name: Foo Value Set
+    description: A bunch of example codes
+    exampleBoolean: false
+  - extension:
+    - url: http://hl7.org/fhir/tools/StructureDefinition/resource-information
+      valueString: StructureDefinition:resource
+    - url: http://hl7.org/fhir/StructureDefinition/implementationguide-page
+      valueUri: StructureDefinition-template-basic.html
+    reference:
+      reference: StructureDefinition/template-basic
+    name: Health eData Template Profile
+    description: This is a simple example Template
+    exampleBoolean: false
+  - extension:
+    - url: http://hl7.org/fhir/tools/StructureDefinition/resource-information
+      valueString: ValueSet
+    - url: http://hl7.org/fhir/StructureDefinition/implementationguide-page
+      valueUri: ValueSet-blah-codes.html
+    reference:
+      reference: ValueSet/blah-codes
+    description: A bunch of example codes
+    exampleBoolean: false
+  - extension:
+    - url: http://hl7.org/fhir/tools/StructureDefinition/resource-information
+      valueString: StructureDefinition:extension
+    - url: http://hl7.org/fhir/StructureDefinition/implementationguide-page
+      valueUri: StructureDefinition-extension-blah2.html
+    reference:
+      reference: StructureDefinition/extension-blah2
+    name: blah2
+    description: an example of a simple extension.
+    groupingId: template-profile-spreadsheet.xml
+  page:
+    nameUrl: index.html
+    title: Home
+    generation: markdown
+    page:
+    - nameUrl: guidance.html
+      title: General Guidance
+      generation: markdown
+    - nameUrl: profiles.html
+      title: Profiles and Extensions
+      generation: markdown
+      page:
+      - nameUrl: StructureDefinition-ifr.html
+        title: StructureDefinition Ifr
+        generation: generated
+      - nameUrl: StructureDefinition-template-profile-on-profile.html
+        title: StructureDefinition Template Profile On Profile
+        generation: generated
+      - nameUrl: StructureDefinition-template-basic.html
+        title: StructureDefinition Template Basic
+        generation: generated
+      - nameUrl: StructureDefinition-extension-complex.html
+        title: StructureDefinition Extension Complex
+        generation: generated
+      - nameUrl: StructureDefinition-extension-blah.html
+        title: StructureDefinition Extension Blah
+        generation: generated
+    - nameUrl: operations.html
+      title: Operations
+      generation: markdown
+      page:
+      - nameUrl: OperationDefinition-opdef-test.html
+        title: OperationDefinition Opdef Test
+        generation: generated
+    - nameUrl: terminology.html
+      title: Terminology
+      generation: markdown
+      page:
+      - nameUrl: ValueSet-bar-codes.html
+        title: ValueSet Bar Codes
+        generation: generated
+      - nameUrl: ValueSet-foo-codes.html
+        title: ValueSet Foo Codes
+        generation: generated
+      - nameUrl: ValueSet-blah-codes.html
+        title: ValueSet Blah Codes
+        generation: generated
+      - nameUrl: CodeSystem-blah-codes.html
+        title: CodeSystem Blah Codes
+        generation: generated
+    - nameUrl: searchparameters.html
+      title: Search Parameters
+      generation: markdown
+    - nameUrl: capstatements.html
+      title: Capability Statements
+      generation: markdown
+      page:
+      - nameUrl: CapabilityStatement-server.html
+        title: CapabilityStatement Server
+        generation: generated
+      - nameUrl: CapabilityStatement-client.html
+        title: CapabilityStatement Client
+        generation: generated
+    - nameUrl: security.html
+      title: Security
+      generation: markdown
+    - nameUrl: downloads.html
+      title: Downloads
+      generation: markdown
+    - nameUrl: all-examples.html
+      title: All Examples
+      generation: markdown
+    - nameUrl: toc.html
+      title: Table of Contents
+      generation: html
+  parameter:
+  - code: path-resource
+    value: source/examples
+  - code: path-resource
+    value: source/resources
+  - code: path-pages
+    value: source/pages
+  - code: path-pages
+    value: template/content/pages
+  - code: path-qa
+    value: generated_output/qa
+  - code: path-temp
+    value: generated_output/temp
+  - code: path-tx-cache
+    value: generated_output/txCache
+  - code: path-output
+    value: docs
+  - code: path-history
+    value: http://www.fhir.org/guides/test4/history.html
+~~~
 
 ## ig package manifest:
 
@@ -307,6 +615,7 @@ Erics-Air-2:IG-Template4 ehaas$ tree -L 2 -I '*.png|*.gif|*.js|docs|my_notes'
 }
 ~~~
 
+## Other FYI information (from confluence):
 Package Manifest properties for IGs:  
 - name = ImplementationGuide.packageId
 - version = ImplementationGuide.version - note: Semver SHALL be used for packages published by HL7 or the FHIR Foundation
