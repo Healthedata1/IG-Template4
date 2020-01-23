@@ -14,13 +14,13 @@ Erics-Air-2:IG-Template4 ehaas$ tree -L 2 -I '*.png|*.gif|*.js|docs|my_notes'
 │   ├── qa
 │   ├── temp
 │   └── txCache
-├── ig.ini  **** dynamic from bash
+├── ig.ini  **** 1. dynamic from bash
 ├── ig.ini.bak
 ├── my_framework
-│   ├── _config.yml *** add parameters from ig resource or let data file do this?
-│   ├── config.json *** this should be static based on templates
+│   ├── _config.yml 2. *** add parameters from ig resource or let data file do this?
+│   ├── config.json 3. *** this should be static based on templates
 │   ├── content
-│   ├── package
+│   ├── package 4. package.json file  - is this even needed
 │   └── templates
 ├── publish.sh
 ├── source
@@ -28,7 +28,7 @@ Erics-Air-2:IG-Template4 ehaas$ tree -L 2 -I '*.png|*.gif|*.js|docs|my_notes'
 │   ├── history
 │   ├── html_pages
 │   ├── pages
-│   └── resources
+│   └── resources  5. ig resource which will treat like the grandaddy confi file
 ├── temp
 │   ├── _data
 │   ├── _includes
@@ -42,6 +42,8 @@ Erics-Air-2:IG-Template4 ehaas$ tree -L 2 -I '*.png|*.gif|*.js|docs|my_notes'
     └── templates  -->
 
 
+1.
+
 ig.ini  modified by bash file locally
 
 [IG]
@@ -51,7 +53,7 @@ ig = source/resources/ig.xml  # fixed location
 template = /Users/ehaas/Documents/FHIR/IG-Template4/my_framework  # based on publish.sh default dev option
 usage-stats-opt-out = true  # not sure if works but make option from publish.sh
 #guidename must match the id of the implementation guide
-guidename=healthedatainc.ig-template4-0.0.0
+guidename=healthedatainc.ig-template4-0.0.0  ???do we really need this seems to work without it?
 #copyrightyear=2015+  # move to ig.xml
 #license=CC0-1.0  # move to ig.xml
 #version=0.0.0  # move to ig.xml
@@ -61,6 +63,95 @@ guidename=healthedatainc.ig-template4-0.0.0
 #excludejson=No  # move to ig.xml
 #excludettl=Yes  # move to ig.xml
 
+2.  _config.yml
+
+add parameters from ig resource or let data file do this?
+need to see whether parameter populate the data files or not
+  - assume not and populate this as well
+  - may need to update template accordingly depending if is site or site.data...
+
+3. config.json
+
+*** this should be static based on set of templates
+
+4.  package.json  - this is needed - what does it do , it is not even preserved and the values
+don't matter  - see Zulip chat.
+
+see https://wiki.hl7.org/FHIR_IG_publisher_templates
+
+{
+  "name": "healthedata.fhir.template",
+  "version": "0.0.0",
+  "type": "fhir.template",
+  "license": "CC0-1.0",
+  "description": "Health eData Inc FHIR Test Template",
+  "author": "mailto::healthedatainc.com",
+  "canonical": "http://www.fhir.org/guides/test3"
+}
+
+works
+but so does...
+
+{
+  "name": "[package-id]",
+  "version": "[ver]",
+  "type": "fhir.template",
+  "license": "[license]",
+  "description": "[description]",
+  "author": "[url]",
+  "canonical" : "[canonical]"
+}
+
+[package-id] must be chosen in accordance with the FHIR package naming convention
+[ver] is under manual control of the author. Use semver. You will have to update the version to get IG publisher to pick up new versions
+[license] - license of author's choice. Use CC0-1.0 for HL7 published templates
+[description] - whatever
+[url] - project website (e.g. contact details)
+[canonical] - For IGs authored in GitHub, the GitHub repository URL.
+
+from confluence
+Package manifest
+A package manifest is a json file called 'package.json'. It conforms to the npm package.json format, but contains only a subset of properties. Other properties are allowed, but should be ignored by a FHIR package consumer.
+
+{
+ "name": "hl7.fhir.us.acme",
+ "version" : "0.1.0",
+ "canonical" : "http://hl7.org/fhir/us/acme",
+ "url" : "http://hl7.org/fhir/us/acme/Draft1",
+ "title" : "ACME project IG",
+ "description": "Describes how the ACME project uses FHIR for it's primary API",
+ "dependencies": {
+    "hl7.fhir.core": "3.0.0",
+    "hl7.fhir.us.core": "1.1.0"
+ },
+ "keywords": [
+   "us",
+   "United States",
+   "ACME"
+ ],
+ "author": "hl7",
+ "maintainers": [
+   {
+     "name": "US Steering Committee",
+     "email": "ussc@lists.hl7.com"
+   }
+ ],
+ "license": "CC0-1.0"
+}
+
+Package Manifest properties for IGs
+name = ImplementationGuide.packageId
+version = ImplementationGuide.version - note: Semver SHALL be used for packages published by HL7 or the FHIR Foundation
+canonical = ImplementationGuide.url - required for IGs. This matches the name, and is constant through the life cycle of the IG
+url = ImplementationGuide.manifest.rendering - required for IGs
+title = ImplementationGuide.title
+description = ImplementationGuide.description
+dependencies = from ImplementationGuide.dependsOn
+author = ImplementationGuide.publisher
+maintainers = ImplementationGuide.contacts
+license = ImplementationGuide.license - mandatory for packages published by HL7 or the FHIR Foundation
+
+5. ig resource
 
 options
 

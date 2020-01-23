@@ -10,7 +10,7 @@ template = /Users/ehaas/Documents/FHIR/IG-Template4/my_framework
 usage-stats-opt-out = true  # not sure if works but make option from publish.sh
 #guidename must match the id of the implementation guide
 # load from bash file??
-guidename=healthedatainc.ig-template4-0.0.0
+# guidename=healthedatainc.ig-template4-0.0.0
 #copyrightyear=2015+  # move to ig.xml
 #license=CC0-1.0  # move to ig.xml
 #version=0.0.0  # move to ig.xml
