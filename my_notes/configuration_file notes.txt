@@ -1,9 +1,3 @@
-license and version now go in the corresponding 'core' elements in the IG
-fhirspec gets dropped (we don't need it as a parameter anymore)
-copyrightyear becomes a parameter with code "copyrightyear"
-ballotstatus becomes a parameter with code "releaselabel"
-the various 'exclude' values become parameters with a code of the same name
-
 get all parameters in ig and test.
 
 list the static and dynamic configs.
@@ -159,12 +153,18 @@ options
 
 all config parameters in ig resource
 
+Parameters:
+
+
+
 build via:
 1. spreadsheet
 2. YAML
 
 for narrative use YAML code block
 
+
+TODOS
 - autoload_resources  - test this native functionality does it load the pages test pending
 - autoload_pages - test if pages load natively from directory that mimics the menu - no relative links get messed up.
 - autoload resource into pages - file name based - test pending
