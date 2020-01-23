@@ -17,10 +17,12 @@ Erics-Air-2:IG-Template4 ehaas$ tree -L 2 -I '*.png|*.gif|*.js|docs|my_notes'
 ├── ig.ini  **** 1. dynamic from bash
 ├── ig.ini.bak
 ├── my_framework
-│   ├── _config.yml 2. *** add parameters from ig resource or let data file do this?
 │   ├── config.json 3. *** this should be static based on templates
 │   ├── content
-│   ├── package 4. package.json file  - is this even needed
+│   │   ├── 2._config.yml add parameters from ig resource or let data file do this?
+│   │   └── _data
+│   │   │   └── 5. navigation.yml - defines top bar menu using YML - define at beginning along with ig resource
+│   ├── package 4. package.json file  -this is template specific and static
 │   └── templates
 ├── publish.sh
 ├── source
@@ -86,7 +88,7 @@ see https://wiki.hl7.org/FHIR_IG_publisher_templates
   "license": "CC0-1.0",
   "description": "Health eData Inc FHIR Test Template",
   "author": "mailto::healthedatainc.com",
-  "canonical": "http://www.fhir.org/guides/test3"
+  "canonical": "http://www.fhir.org/guides/test4"
 }
 
 works
