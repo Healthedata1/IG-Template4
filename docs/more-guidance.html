@@ -265,12 +265,12 @@ can only resize using html  or css ;-( -->
   <!-- ============CONTENT CONTENT=============== -->
 
 
-<h2>More General Guidance and Definitions</h2>
+<h2>More General Guidance and Definitions in HTML</h2>
 
   <!-- page source: more-guidance.html -->
 
 
-<ul id="markdown-toc" class="markdown-toc">
+<ul id="markdown-toc">
   <li><a href="#introduction">Introduction</a></li>
   <li><a href="#more-stuff">More Stuff</a>
     <ul>
@@ -282,7 +282,31 @@ can only resize using html  or css ;-( -->
 
 
 <h3 id="introduction">Introduction</h3>
-<p>This is based on index.html</p>
+<p>This is how html is rendered using this set of templates
+<br/><br/>
+the YAML frontmatter include these parameters:
+</p>
+<ul>
+  <li>title -  the title for this page </li>
+  <li>layout - fixed to 'default' which tells the Jekyll publisher where to insert this content into the page</li>
+  <li>toc - which if True toggles on the page Contents to appear at the top</li>
+  </ul>
+<p>
+and it looks like this.
+</p>
+<pre>
+  ---
+  title: More General Guidance and Definitions in HTML
+  layout: default
+  toc: True
+  ---
+</pre>
+
+<p>Note that to remove a header from the page toc, we apply a class called no_toc.  This is done below...
+</p>
+
+<h4 class="no_toc"> Here is an example button to accordion fold the long example for easier page navigation: </h4>
+
 <p>
 <p>
   <button data-target="#example" data-toggle="collapse" aria-controls="collapseExample" aria-expanded="false" type="button" title="Click to Open or Close Example" class="btn btn-info btn-lg btn-block">
@@ -335,13 +359,18 @@ example for button bar
 </div>
 <br/>
 </p>
-<p>blah blah blah</p>
-<h3 id="more-stuff">More Stuff</h3>
-<p>inline json example exploiting Rouge to highlight inline comment (errors in json):</p>
-<pre class="editor-colors lang-json"><div class="line"><span class="syntax--source syntax--json"><span class="syntax--meta syntax--structure syntax--dictionary syntax--json"><span class="syntax--punctuation syntax--definition syntax--dictionary syntax--begin">{</span></span></span></div><div class="line"><span class="syntax--source syntax--json"><span class="syntax--meta syntax--structure syntax--dictionary syntax--json"><span class="syntax--string syntax--quoted syntax--double syntax--dictionary syntax--key syntax--json"><span class="syntax--punctuation syntax--definition syntax--string syntax--json">"</span>foo<span class="syntax--punctuation syntax--definition syntax--string syntax--json">"</span></span><span class="syntax--punctuation syntax--separator syntax--dictionary syntax--key-value">:</span>  <span class="syntax--string syntax--quoted syntax--double"><span class="syntax--punctuation syntax--definition syntax--string syntax--json">"</span>bar<span class="syntax--punctuation syntax--definition syntax--string syntax--json">"</span></span>  \\adding comment here is shown as a error in jekyll<span class="syntax--punctuation syntax--separator syntax--dictionary syntax--pair">,</span></span></span></div><div class="line"><span class="syntax--source syntax--json"><span class="syntax--meta syntax--structure syntax--dictionary syntax--json"><span class="syntax--string syntax--quoted syntax--double syntax--dictionary syntax--key syntax--json"><span class="syntax--punctuation syntax--definition syntax--string syntax--json">"</span>foo2<span class="syntax--punctuation syntax--definition syntax--string syntax--json">"</span></span><span class="syntax--punctuation syntax--separator syntax--dictionary syntax--key-value">:</span>  <span class="syntax--string syntax--quoted syntax--double"><span class="syntax--punctuation syntax--definition syntax--string syntax--json">"</span>bar2<span class="syntax--punctuation syntax--definition syntax--string syntax--json">"</span></span></span></span></div><div class="line"><span class="syntax--source syntax--json"><span class="syntax--meta syntax--structure syntax--dictionary syntax--json"><span class="syntax--punctuation syntax--definition syntax--dictionary syntax--end">}</span></span></span></div></pre>
-<h4 id="and-more-stuff">And More Stuff</h4>
 
-file:///Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#cat-facts
+<p>blah blah blah</p>
+
+<h3 id="more-stuff">More Stuff</h3>
+<p>inline json example exploiting Rouge and using the liquid highlight command  to highlight inline comment (errors in json):</p>
+
+<figure class="highlight"><pre><code data-lang="json" class="language-json"><span class="w">  </span><span class="p">{</span><span class="w">
+  </span><span class="nl">"foo"</span><span class="p">:</span><span class="w">  </span><span class="s2">"bar"</span><span class="w">  </span><span class="err">\\adding</span><span class="w"> </span><span class="err">comment</span><span class="w"> </span><span class="err">here</span><span class="w"> </span><span class="err">is</span><span class="w"> </span><span class="err">shown</span><span class="w"> </span><span class="err">as</span><span class="w"> </span><span class="err">a</span><span class="w"> </span><span class="err">error</span><span class="w"> </span><span class="err">in</span><span class="w"> </span><span class="err">jekyll</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"foo2"</span><span class="p">:</span><span class="w">  </span><span class="s2">"bar2"</span><span class="w">
+  </span><span class="p">}</span></code></pre></figure>
+
+<h4 id="and-more-stuff">And More Stuff</h4>
 
 
     <!-- ==============END CONTENT END CONTENT=================== -->
@@ -371,8 +400,8 @@ file:///Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#cat-fact
 <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
   <div class="container">    <!-- container -->
    <div class="inner-wrapper">
-    <p><a name="19bf0fb6-c92e-4985-8f6d-01701e5d05db">​</a>
-     <a href="mailto:ehaas@healthedatainc.com">Health eData Inc </a> healthedatainc.ig-template4# based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/index.html">FHIR 4.0.1</a> created <span data-toggle="tooltip" data-placement="top" href="#" title="Wed, Jan 22, 2020 22:33-0800">2020-01-22</span>. <br/>
+    <p><a name="27dbee59-32dd-402b-ac18-72b847ad3beb">​</a>
+     <a href="mailto:ehaas@healthedatainc.com">Health eData Inc </a> healthedatainc.ig-template4# based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/index.html">FHIR 4.0.1</a> created <span data-toggle="tooltip" data-placement="top" href="#" title="Wed, Jan 22, 2020 23:39-0800">2020-01-22</span>. <br/>
       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a>
       | <a style="color: #81BEF7" href="qa.html">QA Report</a>
       | <a style="color: #81BEF7" href="null">Version History</a>

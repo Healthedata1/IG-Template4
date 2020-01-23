@@ -1,27 +1,36 @@
 ---
-title: General Guidance and Definitions
+title: General Guidance and Definitions in Markdown
 layout: default
 toc: True
 ---
 
-{% comment %}
-{:.no_toc}
-
-<!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->
-
-* Do not remove this line (it will not be displayed)
-{:toc}
-{% endcomment %}
-
 ### Introduction
 {:.self-link}
 
-This is based on {{page.f}}index.html
+This is how an html is rendered using this set of templates
 
+The YAML frontmatter include the:
+
+- title -  the title for this page
+- layout - fixed to 'default' which tells the Jekyll publisher where to insert this content into the page
+- toc - which if True toggles on the page Contents to appear at the top
+
+and it looks like this.
+
+~~~
+  ---
+  title: More General Guidance and Definitions in HTML
+  layout: default
+  toc: True
+  ---
+~~~
+
+Note that to remove a header from the page toc, we apply a class called no_toc, in Kramdown  as "\{:.no_toc\}" right after the header.  This is done below...
+
+#### Here is an example button to accordion fold the long example for easier page navigation:
+{:.no_toc}
 
 {% include examplebutton.html example="example" b_title = "Example Button bar" %}
-
-
 
 blah blah blah
 

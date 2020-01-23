@@ -99,7 +99,7 @@
     <p>processedFiles : number of files genrated by the build -   {{site.data.fhir.processedFiles}}  = 91</p>
   </li>
   <li>
-    <p>genDate : date of generation (so date stamps in the pages can match those in the conformance resources) -   {{site.data.fhir.genDate}}  = Wed, Jan 22, 2020 22:33-0800</p>
+    <p>genDate : date of generation (so date stamps in the pages can match those in the conformance resources) -   {{site.data.fhir.genDate}}  = Wed, Jan 22, 2020 23:39-0800</p>
   </li>
 </ul>
 

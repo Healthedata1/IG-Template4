@@ -1,8 +1,27 @@
-I"�
+I"}<h3 class="self-link" id="introduction">Introduction</h3>
 
-<h3 class="self-link" id="introduction">Introduction</h3>
+<p>This is how an html is rendered using this set of templates</p>
 
-<p>This is based on index.html</p>
+<p>The YAML frontmatter include the:</p>
+
+<ul>
+  <li>title -  the title for this page</li>
+  <li>layout - fixed to ‘default’ which tells the Jekyll publisher where to insert this content into the page</li>
+  <li>toc - which if True toggles on the page Contents to appear at the top</li>
+</ul>
+
+<p>and it looks like this.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  ---
+  title: More General Guidance and Definitions in HTML
+  layout: default
+  toc: True
+  ---
+</code></pre></div></div>
+
+<p>Note that to remove a header from the page toc, we apply a class called no_toc, in Kramdown  as “{:.no_toc}” right after the header.  This is done below…</p>
+
+<h4 class="no_toc" id="here-is-an-example-button-to-accordion-fold-the-long-example-for-easier-page-navigation">Here is an example button to accordion fold the long example for easier page navigation:</h4>
 
 <p>
   <button class="btn btn-info btn-lg btn-block" type="button" title="Click to Open or Close Example" data-toggle="collapse" data-target="#example" aria-expanded="false" aria-controls="collapseExample">

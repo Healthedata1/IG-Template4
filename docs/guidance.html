@@ -265,12 +265,12 @@ can only resize using html  or css ;-( -->
   <!-- ============CONTENT CONTENT=============== -->
 
 
-<h2>General Guidance and Definitions</h2>
+<h2>General Guidance and Definitions in Markdown</h2>
 
   <!-- page source: guidance.md -->
 
 
-<ul id="markdown-toc" class="markdown-toc">
+<ul id="markdown-toc">
   <li><a href="#introduction">Introduction</a></li>
   <li><a href="#more-stuff">More Stuff</a>
     <ul>
@@ -281,10 +281,30 @@ can only resize using html  or css ;-( -->
 
 
 
-
 <h3 id="introduction" class="self-link">Introduction</h3>
 
-<p>This is based on index.html</p>
+<p>This is how an html is rendered using this set of templates</p>
+
+<p>The YAML frontmatter include the:</p>
+
+<ul>
+  <li>title -  the title for this page</li>
+  <li>layout - fixed to ‘default’ which tells the Jekyll publisher where to insert this content into the page</li>
+  <li>toc - which if True toggles on the page Contents to appear at the top</li>
+</ul>
+
+<p>and it looks like this.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  ---
+  title: More General Guidance and Definitions in HTML
+  layout: default
+  toc: True
+  ---
+</code></pre></div></div>
+
+<p>Note that to remove a header from the page toc, we apply a class called no_toc, in Kramdown  as “{:.no_toc}” right after the header.  This is done below…</p>
+
+<h4 id="here-is-an-example-button-to-accordion-fold-the-long-example-for-easier-page-navigation" class="no_toc">Here is an example button to accordion fold the long example for easier page navigation:</h4>
 
 <p>
   <button data-target="#example" data-toggle="collapse" aria-controls="collapseExample" aria-expanded="false" type="button" title="Click to Open or Close Example" class="btn btn-info btn-lg btn-block">
@@ -379,8 +399,8 @@ example for button bar
 <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
   <div class="container">    <!-- container -->
    <div class="inner-wrapper">
-    <p><a name="2a44b83c-08dc-480c-ab41-4c9d5d129850">​</a>
-     <a href="mailto:ehaas@healthedatainc.com">Health eData Inc </a> healthedatainc.ig-template4# based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/index.html">FHIR 4.0.1</a> created <span data-toggle="tooltip" data-placement="top" href="#" title="Wed, Jan 22, 2020 22:33-0800">2020-01-22</span>. <br/>
+    <p><a name="9d2b8ead-d719-4777-9385-17e44f0495fb">​</a>
+     <a href="mailto:ehaas@healthedatainc.com">Health eData Inc </a> healthedatainc.ig-template4# based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/index.html">FHIR 4.0.1</a> created <span data-toggle="tooltip" data-placement="top" href="#" title="Wed, Jan 22, 2020 23:39-0800">2020-01-22</span>. <br/>
       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a>
       | <a style="color: #81BEF7" href="qa.html">QA Report</a>
       | <a style="color: #81BEF7" href="null">Version History</a>
