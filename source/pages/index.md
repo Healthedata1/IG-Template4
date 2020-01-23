@@ -3,14 +3,6 @@ title: Home Page
 layout: default
 toc: True
 ---
-{% comment %}
-<!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->
-
-* Do not remove this line (it will not be displayed)
-{:toc}
-{% endcomment %}
-
-<!-- end TOC -->
 
 ### Cat Facts (To Show How the Text Wraps around the Contents Block) {#cat-facts}
 

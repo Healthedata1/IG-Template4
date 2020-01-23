@@ -1,13 +1,13 @@
-I"}<h3 class="self-link" id="introduction">Introduction</h3>
+I"<h3 class="self-link" id="introduction">Introduction</h3>
 
-<p>This is how an html is rendered using this set of templates</p>
+<p>This is how an markdown file is rendered using this set of templates</p>
 
-<p>The YAML frontmatter include the:</p>
+<p>The YAML frontmatter include the following parameters:</p>
 
 <ul>
-  <li>title -  the title for this page</li>
-  <li>layout - fixed to ‘default’ which tells the Jekyll publisher where to insert this content into the page</li>
-  <li>toc - which if True toggles on the page Contents to appear at the top</li>
+  <li><code class="highlighter-rouge">title</code> -  the title for this page</li>
+  <li><code class="highlighter-rouge">layout</code> - fixed to ‘default’ which tells the Jekyll publisher where to insert this content into the page</li>
+  <li><code class="highlighter-rouge">toc</code> - which if True toggles on the page Contents to appear at the top</li>
 </ul>
 
 <p>and it looks like this.</p>

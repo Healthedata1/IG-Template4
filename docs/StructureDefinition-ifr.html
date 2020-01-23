@@ -72,7 +72,7 @@ can only resize using html  or css ;-( -->
         <b>IG Test3 Implementation Guide</b>
         
         
-        (Release 0.0.0)
+        CI Build
         
     </div>  <!-- end ig title text -->
 
@@ -104,65 +104,111 @@ can only resize using html  or css ;-( -->
         <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
         <div class="nav-collapse collapse navbar-inverse-collapse">
 
-         <!-- ?xml version="1.0" encoding="UTF-8"? -->
-<ul class="nav navbar-nav">
-  <li>
-    <a href="index.html">Home</a>
-  </li>
-  <li>
-    <a href="guidance.html">General Guidance</a>
-  </li>
-  <li>
-    <a href="more-guidance.html">More General Guidance</a>
-  </li>
-  <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">FHIR Artifacts<b class="caret">
-    </b>
-  </a>
-  <ul class="dropdown-menu">
 
-    <li>
-      <a href="profiles.html">Profiles and Logical Models</a>
-    </li>
+  <!-- ***** Menu bar  content based on the used defined navigation.yml input ****** -->
 
-      <!-- <li>
-    <a href="extensions.html">Extensions</a>
-  </li> -->
+           <ul class="nav navbar-nav">
+               
+               
+                   
+                   
+                   
+                       <li class="null">
+                           <a href="index.html">Home</a>
+                       </li>
+                   
+               
+                   
+                   
+                   
+                       <li class="null">
+                           <a href="guidance.html">General Guidance</a>
+                       </li>
+                   
+               
+                   
+                   
+                   
+                       <li class="null">
+                           <a href="more-guidance.html">More General Guidance</a>
+                       </li>
+                   
+               
+                   
+                   
+                   
+                   
+                       <li class="dropdown ">
+                           <a data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" href="#" class="dropdown-toggle">FHIR Artifacts <span class="caret"></span></a>
+                           <ul class="dropdown-menu">
+                               
+                                   
+                                       <li>
+                                           <a href="profiles.html">Profiles and Extensions</a>
+                                       </li>
+                                   
+                               
+                                   
+                                       <li>
+                                           <a href="searchparameters.html">Search Parameters</a>
+                                       </li>
+                                   
+                               
+                                   
+                                       <li>
+                                           <a href="operations.html">Operations</a>
+                                       </li>
+                                   
+                               
+                                   
+                                       <li>
+                                           <a href="terminology.html">Terminology</a>
+                                       </li>
+                                   
+                               
+                                   
+                                       <li>
+                                           <a href="searchparameters.html">Search Parameters</a>
+                                       </li>
+                                   
+                               
+                                   
+                                       <li>
+                                           <a href="capstatements.html">CapabilityStatements</a>
+                                       </li>
+                                   
+                               
+                           </ul>
+                       </li>
+                   
+               
+                   
+                   
+                   
+                       <li class="null">
+                           <a href="security.html">Security</a>
+                       </li>
+                   
+               
+                   
+                   
+                   
+                       <li class="null">
+                           <a href="all-examples.html">Examples</a>
+                       </li>
+                   
+               
+                   
+                   
+                   
+                       <li class="null">
+                           <a href="downloads.html">Downloads</a>
+                       </li>
+                   
+               
+           </ul>
 
-  <li>
-    <a href="searchparameters.html">Search Parameters</a>
-  </li>
-
-  <li>
-    <a href="operations.html">Operations</a>
-  </li>
-
-    <!-- <li>
-  <a href="structuremaps.html">Mappings</a>
-</li> -->
-
-<li>
-  <a href="terminology.html">Terminology</a>
-</li>
-
-<li>
-<a href="capstatements.html">CapabilityStatements</a>
-
-</li>
-
-</ul>
-</li>
-<li>
-  <a href="security.html">Security</a>
-</li>
-<li>
-  <a href="all-examples.html">Examples</a>
-</li>
-<li>
-  <a href="downloads.html">Downloads</a>
-</li>
-</ul>
-
+  <!-- ***** Menu bar content ****** -->
 
       </div>
         <!-- /.nav-collapse -->
@@ -280,11 +326,19 @@ can only resize using html  or css ;-( -->
 
 
 
+	
+	<li><a href="StructureDefinition-ifr.xml.html">XML</a></li>
+	
+
 
 
 	<li><a href="StructureDefinition-ifr.json.html">JSON</a></li>
 
 
+
+	
+		<li><a href="StructureDefinition-ifr.ttl.html">Turtle</a></li>
+	
 
 
 </ul>
@@ -351,8 +405,8 @@ This profile builds on <a href="http://hl7.org/fhir/R4/references.html#Reference
   <li><a href="#tabs-summ">Text Summary</a></li>
   <li><a href="#tabs-diff">Differential View</a></li>
   <li><a href="#tabs-snap">Full View</a></li>
-  
-  
+  <li><a href="#tabs-xml">XML Template</a></li>
+  <li><a href="#tabs-json">JSON Template</a></li>
   <li><a href="#tabs-all">All Views</a></li>
 
  </ul>
@@ -401,8 +455,42 @@ The type is the Canonical URL of Resource Definition that is the type this refer
 
   <!-- =======XML and JSON ======== -->
 
+ <div id="tabs-xml">
+  <div id="xml">
+      <!-- ***todo get copy button to behave inside tab *******
+       <button id="copy-button" class="btn-default btn-sm" data-clipboard-target="#json-inner">Copy</button> -->
+   <div id="xml-inner">
+<p><span style="color: maroon; font-weight: bold">yet to be done: Xml template</span></p>
+
+   </div>
+  </div>
+ </div>
 
 
+
+
+ <div id="tabs-json">
+  <div id="json">
+      <!-- ***todo get copy button to behave inside tab *******
+       <button id="copy-button" class="btn-default btn-sm" data-clipboard-target="#json-inner">Copy</button> -->
+   <div id="json-inner">
+     <pre class="spec"><a name="a57c07d7-0ba3-45ae-bd9e-8eac69406941">​</a>
+       // <span style="color: navy; opacity: 0.8"></span>
+ {
+    "<a href="StructureDefinition/ifr.html#Reference.id" title="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces" class="dict"><span style="text-decoration: underline">id</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Unique id for inter-element referencing</span>
+    "extension": [
+    ],
+    "<a href="StructureDefinition/ifr.html#Reference.reference" title="A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources" class="dict"><span style="text-decoration: underline">reference</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Literal reference, Relative, internal or absolute URL</span>
+    "<a href="StructureDefinition/ifr.html#Reference.type" title="The expected type of the target of the reference. If both Reference.type and Reference.reference are populated and Reference.reference is a FHIR URL, both SHALL be consistent.
+
+The type is the Canonical URL of Resource Definition that is the type this reference refers to. References are URLs that are relative to http://hl7.org/fhir/StructureDefinition/ e.g. &quot;Patient&quot; is a reference to http://hl7.org/fhir/StructureDefinition/Patient. Absolute URLs are only allowed for logical models (and can only be used in references in logical models, not resources)" class="dict"><span style="text-decoration: underline">type</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#uri">uri</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8"><a name="25ff9131-094e-4cdd-8f4d-cbf2124faa51">​</a><a style="color: navy" href="http://hl7.org/fhir/R4/null.html">Type the reference refers to (e.g. "Patient")</a></span>
+    "<a href="StructureDefinition/ifr.html#Reference.display" title="Plain text narrative that identifies the resource in addition to the resource reference" class="dict"><span style="text-decoration: underline">display</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></span>&gt;" <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Text alternative for the resource</span>
+  }
+
+     </pre>
+   </div>
+  </div>
+ </div>
 
 
 
@@ -456,7 +544,37 @@ The type is the Canonical URL of Resource Definition that is the type this refer
   <!-- =======XML and JSON ======== -->
 
     
+        <div id="all-xml">
+         <p><b>XML Template</b></p>
+         <div id="all-xml-inner">
+            <pre class="spec">
+             <p><span style="color: maroon; font-weight: bold">yet to be done: Xml template</span></p>
 
+            </pre>
+        </div>
+      </div>
+    
+
+    
+        <div id="all-json">
+         <p><b>JSON Template</b></p>
+         <div id="all-json-inner">
+      <pre class="spec"><a name="80e4daf9-f7f4-444b-a633-867ead3e0f05">​</a>
+       // <span style="color: navy; opacity: 0.8"></span>
+ {
+    "<a href="StructureDefinition/ifr.html#Reference.id" title="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces" class="dict"><span style="text-decoration: underline">id</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Unique id for inter-element referencing</span>
+    "extension": [
+    ],
+    "<a href="StructureDefinition/ifr.html#Reference.reference" title="A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources" class="dict"><span style="text-decoration: underline">reference</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Literal reference, Relative, internal or absolute URL</span>
+    "<a href="StructureDefinition/ifr.html#Reference.type" title="The expected type of the target of the reference. If both Reference.type and Reference.reference are populated and Reference.reference is a FHIR URL, both SHALL be consistent.
+
+The type is the Canonical URL of Resource Definition that is the type this reference refers to. References are URLs that are relative to http://hl7.org/fhir/StructureDefinition/ e.g. &quot;Patient&quot; is a reference to http://hl7.org/fhir/StructureDefinition/Patient. Absolute URLs are only allowed for logical models (and can only be used in references in logical models, not resources)" class="dict"><span style="text-decoration: underline">type</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#uri">uri</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8"><a name="3423edae-9bc4-4edb-a509-40b96716d2e8">​</a><a style="color: navy" href="http://hl7.org/fhir/R4/null.html">Type the reference refers to (e.g. "Patient")</a></span>
+    "<a href="StructureDefinition/ifr.html#Reference.display" title="Plain text narrative that identifies the resource in addition to the resource reference" class="dict"><span style="text-decoration: underline">display</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></span>&gt;" <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Text alternative for the resource</span>
+  }
+
+      </pre>
+         </div>
+        </div>
     
  </div>
 </div>
@@ -536,13 +654,13 @@ $( '#tabs' ).tabs({
 <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
   <div class="container">    <!-- container -->
    <div class="inner-wrapper">
-    <p><a name="7ebaa8bf-06ed-42bc-819c-1eb096913146">​</a>
-     <a href="mailto:ehaas@healthedatainc.com">Health eData Inc </a> healthedatainc.ig-template4# based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/index.html">FHIR 4.0.1</a> created <span data-toggle="tooltip" data-placement="top" href="#" title="Wed, Jan 22, 2020 23:39-0800">2020-01-22</span>. <br/>
+    <p>
+     <a href="mailto:ehaas@healthedatainc.com">Health eData Inc </a> healthedatainc.ig-template4# based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/index.html">FHIR 4.0.1</a> created <span data-toggle="tooltip" data-placement="top" href="#" title="Thu, Jan 23, 2020 02:56-0800">2020-01-23</span>. <br/>
       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a>
       | <a style="color: #81BEF7" href="qa.html">QA Report</a>
-      | <a style="color: #81BEF7" href="null">Version History</a>
+      | <a style="color: #81BEF7" href="#">Version History</a>
       | <a rel="license" style="color: #81BEF7" href="http://hl7.org/fhir/R4/license.html"><img src="cc0.png" alt="CC0" style="border-style: none;"/></a>
-      | <a style="color: #81BEF7" href="null" target="_blank">Propose a change</a>
+      | <a style="color: #81BEF7" href="https://github.com/Healthedata1/IG-Template2/issues" target="_blank">Propose a change</a>
         </p>
    </div>    <!-- /inner-wrapper -->
   </div>    <!-- /container -->

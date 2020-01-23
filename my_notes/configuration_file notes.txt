@@ -163,9 +163,11 @@ build via:
 
 for narrative use YAML code block
 
-- autoload_resources  - test this native functionality does it load the pages
+- autoload_resources  - test this native functionality does it load the pages test pending
 - autoload_pages - test if pages load natively from directory that mimics the menu - no relative links get messed up.
-- autoload resource into pages - file name based
-- check if html works too.
+- autoload resource into pages - file name based - test pending
+- check if html works too. - it does indeed and fixed toc for pages to work in the layout
 - check out all parameters or extra Parameters - error on qa
-- bash should error if no front matter in pages
+- bash should error if no front matter in pages - todo
+menu should have fixed and variable parts. - separate app for that?   use yaml file to define. variable parts of it
+logo too.

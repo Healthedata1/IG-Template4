@@ -7,13 +7,13 @@ toc: True
 ### Introduction
 {:.self-link}
 
-This is how an html is rendered using this set of templates
+This is how an markdown file is rendered using this set of templates
 
-The YAML frontmatter include the:
+The YAML frontmatter include the following parameters:
 
-- title -  the title for this page
-- layout - fixed to 'default' which tells the Jekyll publisher where to insert this content into the page
-- toc - which if True toggles on the page Contents to appear at the top
+- `title` -  the title for this page
+- `layout` - fixed to 'default' which tells the Jekyll publisher where to insert this content into the page
+- `toc` - which if True toggles on the page Contents to appear at the top
 
 and it looks like this.
 
