@@ -577,6 +577,10 @@
       {
         "code": "path-history",
         "value": "http://www.fhir.org/guides/test4/history.html"
+      },
+      {
+        "code": "foo",
+        "value": "bar"
       }
     ]
   }

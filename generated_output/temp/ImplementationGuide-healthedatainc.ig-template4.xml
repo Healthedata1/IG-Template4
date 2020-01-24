@@ -466,5 +466,9 @@
       <code value="path-history"/>
       <value value="http://www.fhir.org/guides/test4/history.html"/>
     </parameter>
+    <parameter>
+      <code value="foo"/>
+      <value value="bar"/>
+    </parameter>
   </definition>
 </ImplementationGuide>

@@ -3,8 +3,26 @@ see https://wiki.hl7.org/FHIR_IG_publisher_templates
 ## TODOS
 1. create IG resource tooling
 1. autoload_resources  - test this native functionality does it load the pages test pending
+>If true, scan the locations in which resources might be found (above) looking for resources, and auto-loading them. Else, only load what is in the IG.
+
+**It seems to work well with resources!!!**  
+
+**!!! need spreadsheet extensions if use them**
+
+**weird groupings generated as well?  keep base**
+
 1. autoload_pages - test if pages load natively from directory that mimics the menu - no relative links get messed up.
-1. autoload resource into pages - file name based - test pending
+1. autoload resource into pages - file name based - tested and working well but doesn't become part of the data files so ig is incomplete.
+    - need to add the spreadsheet extension for all spreadsheets though - by hand or by inspecting the directory
+    - keep the base group as default`
+    - doesn't autoload the pages but has extensions?
+Generate IG resources and pages before run
+    - hand update ( YML template/Spreadsheets )
+    - run script to update ig resource and pages like now.
+      - have a default page layout like now
+      - source - directly from directory as do now.
+      - alternatatively from package.json after run the first time after autoload ?
+      - ant-script
 1. check if html works too. - it does indeed and fixed toc-for-pages to work in the layout
 1. check out all parameters or extra Parameters -  todo error on qa
 1. bash should error if no front matter in pages - todo
@@ -223,9 +241,7 @@ Use FHIR R5 Model in Python... _ make sure is up to date otherwise use a diction
 >  ...or... just write a new one each time
 >
 
-  ...or... just use the ig.json as a data file or strip out the meta and or text and convert to yaml or not and use as the _config.yml file.
-
-  all the site variable are now available out of the box... :-)
+  ...or... just use the ig.json as a data file or strip out the meta and or text and convert to yaml and get rid of _config.yml. So all the site variable are now available out of the box... :-)
 
   to get parameter for list of name value pairs using liquid
 
