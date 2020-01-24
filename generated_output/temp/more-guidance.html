@@ -47,7 +47,7 @@ and it looks like this.
 
 {% endhighlight %}
 
-<h2>Page and Site Variables</h2>
+<h3>Page and Site Variables</h3>
 <pre>
 {% raw %}
 page.title = {{page.title}}<br />
@@ -67,7 +67,7 @@ page.name = {{page.name}}<br />
 page.next = {{page.next}}<br />
 page.previous = {{page.previous}}<br />
 
-<h2>all site files are available via site.static_files</h2>
+<h3 id="site_stuff">all site files are available via site.static_files</h3>
 <pre>
 {% raw %}
 {% for static_file in site.static_files %}
@@ -76,11 +76,13 @@ page.previous = {{page.previous}}<br />
 {% endfor %}
 {% endraw %}
 </pre>
+
 {% for static_file in site.static_files %}
       {{static_file.path}}
       <br />
 {% endfor %}
-<h2>site page variable example</h2>
+
+<h3 id="site_pages">site page variable example</h3>
 
 <h3>list of pages</h3>
 <pre>
@@ -120,7 +122,7 @@ page.previous = {{page.previous}}<br />
 {% endfor %}
 
 
-<h4 nocount="true"> Table of Contents </h4>
+<h3 nocount="true"> Table of Contents </h3>
 <p>in markdown</p>
 <pre>
 {% raw %}
@@ -242,3 +244,22 @@ value=&quot;{{ generation }}&quot;/&gt;&lt;/page&gt;
 {% endunless %}
 
 {% endfor %}
+
+<h3 id="testing-accessing-parameters">Testing Accessing Parameters</h3>
+
+<p>
+  to get parameter for list of name value pairs using liquid
+
+e.g.:
+</p>
+<li>
+  code: path-resource
+</li>
+<li>
+  value: source/examples
+</li>
+
+<pre>
+{% raw %}{% assign param = site.data.ig.definition.parameter | where: "code", "path-resource" | first %}{{ param.value }}{% endraw %}
+  = {% assign param = site.data.ig.definition.parameter | where: "code", "path-resource" | first %}{{ param.value }}
+</pre>

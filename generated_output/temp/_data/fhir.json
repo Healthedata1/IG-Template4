@@ -4,7 +4,7 @@
   "igId": "healthedatainc.ig-template4",
   "igName": "IGTest4",
   "packageId": "healthedatainc.ig-template4",
-  "errorCount": 17,
+  "errorCount": 644,
   "version": "4.0.1",
   "revision": "a53ec6ee1b",
   "versionFull": "4.0.1-a53ec6ee1b",
@@ -12,8 +12,8 @@
   "toolingRevision": "3",
   "toolingVersionFull": "4.2.0 (3)",
   "totalFiles": 14,
-  "processedFiles": 90,
-  "genDate": "Thu, Jan 23, 2020 11:32-0800",
+  "processedFiles": 11,
+  "genDate": "Thu, Jan 23, 2020 18:39-0800",
   "genDay": "23/01/2020",
   "ig": {
     "id": "healthedatainc.ig-template4",
@@ -36,7 +36,7 @@
         ]
       }
     ],
-    "date": "2020-01-23T11:32:55-08:00",
+    "date": "2020-01-23T16:30:49-08:00",
     "copyright": "Used by permission of Health eData Inc, all rights reserved Creative Commons License",
     "fhirVersion": "4.0.1"
   },

@@ -38,7 +38,7 @@
   <!-- ?xml version="1.0" encoding="UTF-8"? -->
 <div id="segment-header" class="segment">
     <!-- segment-header -->
-  <div class="container"><a name="603b4a9f-f6fb-45db-95e1-a5b2e5d7bb4d">​</a>  <!-- container -->
+  <div class="container"><a name="ae8044de-89a8-4876-8769-29c686070496">​</a>  <!-- container -->
 
   <!-- hl7 logo -->
     <a no-external="true" href="http://hl7.org/fhir">
@@ -310,7 +310,7 @@
 
 <ul id="markdown-toc">
   <li><a href="#cat-facts">Cat Facts (To Show How the Text Wraps around the Contents Block)</a></li>
-  <li><a href="#variables">Jekyll Site Variables</a></li>
+  <li><a href="#jekyll-site-variables">Jekyll Site Variables</a></li>
   <li><a href="#introduction">Introduction</a></li>
   <li><a href="#more-stuff">More Stuff</a>
     <ul>
@@ -348,80 +348,172 @@
 <p></p>
 </div>
 
-<h3 id="variables">Jekyll Site Variables</h3>
+<h3 id="jekyll-site-variables">Jekyll Site Variables</h3>
 
-<p>These are the site variables defined <a href="http://wiki.hl7.org/index.php?title=IG_Publisher_Documentation# Jekyll">here</a>:</p>
+<p>Now can use variables directly based on the ImplementationGuide Resource since the resource is represented in Jekyll as a <a href="https://jekyllrb.com/docs/datafiles/">Jekyll Data File</a>.  The are the (old) site variables defined <a href="http://wiki.hl7.org/index.php?title=IG_Publisher_Documentation# Jekyll">here</a>.
+We can replace them directly with the data from the ImplementationGuide Resource:</p>
 
-<ul>
-  <li>
-    <p>IG Package ID (defined in ig.json)- {{site.data.fhir.packageId}}  = healthedatainc.ig-template4</p>
-  </li>
-  <li>
-    <p>IG Business version specification (defined in ig.json)- {{site.data.fhir.ig.version}}  = 0.0.0</p>
-  </li>
-  <li>
-    <p>IG status (defined in ig.xml)- {{site.data.fhir.ig.status}}  = draft</p>
-  </li>
-  <li>
-    <p>Whether is experimental IG (defined in ig.xml) - {{site.data.fhir.ig.experimental}}  = false</p>
-  </li>
-  <li>
-    <p>IG Publisher name (defined in ig.xml) - {{site.data.fhir.ig.publisher}}  = Health eData Inc</p>
-  </li>
-  <li>
-    <p>dependency url - e.g. “uscore” : Base url of a dependency implementation Guide (defined in ig.json) -   {{site.data.fhir.uscore}} = http://hl7.org/fhir/us/core</p>
+<p><strong>The following table summarizes the current and new way to access variables using  {{liquid object syntax}} .</strong></p>
+
+<div class="row">
+<div style="background-color: Lightcyan;" class="col-sm-6">
+
+    <p><strong>Currently accessed via data.fhir data file which is derived from both the configuration file (‘ig.json’) and the ImplementationGuide Resource</strong></p>
 
     <ul>
       <li>
-        <p>link to http://hl7.org/fhir/us/core in markdown is  [{{site.data.fhir.uscore}}]({{site.data.fhir.uscore}}) = <a href="http://hl7.org/fhir/us/core">http://hl7.org/fhir/us/core</a></p>
+        <p>IG Package ID (defined in ig.json config file)- {{site.data.fhir.packageId}} = healthedatainc.ig-template4</p>
       </li>
       <li>
-        <p>current link to http://hl7.org/fhir/us/core home in markdown is  [{{site.data.fhir.uscore}}index.html]({{site.data.fhir.uscore}}index.html) = <a href="http://hl7.org/fhir/us/coreindex.html">http://hl7.org/fhir/us/coreindex.html</a></p>
+        <p>IG Business version specification (defined in ig.json)- {{site.data.fhir.ig.version}}  = 0.0.0</p>
+      </li>
+      <li>
+        <p>IG status (defined in ig.xml)- {{site.data.fhir.ig.status}}  = draft</p>
+      </li>
+      <li>
+        <p>Whether is experimental IG (defined in ig.xml) - {{site.data.fhir.ig.experimental}}  = false</p>
+      </li>
+      <li>
+        <p>IG Publisher name (defined in ig.xml) - {{site.data.fhir.ig.publisher}}  = Health eData Inc</p>
+      </li>
+      <li>
+        <p>dependency url - e.g. “uscore” : Base url of a dependency implementation Guide (defined in ig.json) -   {{site.data.fhir.uscore}} = http://hl7.org/fhir/us/core</p>
+
+        <ul>
+          <li>
+            <p>link to http://hl7.org/fhir/us/core in markdown is  [{{site.data.fhir.uscore}}]({{site.data.fhir.uscore}}) = <a href="http://hl7.org/fhir/us/core">http://hl7.org/fhir/us/core</a></p>
+          </li>
+          <li>
+            <p>current link to http://hl7.org/fhir/us/core home in markdown is  [{{site.data.fhir.uscore}}index.html]({{site.data.fhir.uscore}}index.html) = <a href="http://hl7.org/fhir/us/coreindex.html">http://hl7.org/fhir/us/coreindex.html</a></p>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p>ig Name : computer friendly name of the implementation Guide - used as human friendly name in STU3 (defined in ig.xml) -   {{site.data.fhir.ig.name}} = IGTest4</p>
+      </li>
+      <li>
+        <p>ig Title : human friendly name of the implementation Guide - R4 and above (defined in ig.xml) -   {{site.data.fhir.ig.title}} = IG Test4</p>
+      </li>
+      <li>
+        <p>path : path to the main FHIR specification (defined in ig.json)-   {{site.data.fhir.path}} = http://hl7.org/fhir/R4/</p>
+
+        <ul>
+          <li>link to http://hl7.org/fhir/R4/ in markdown is  [{{site.data.fhir.path}}index.html]({{site.data.fhir.path}}index.html) = <a href="http://hl7.org/fhir/R4/index.html">http://hl7.org/fhir/R4/index.html</a></li>
+        </ul>
+      </li>
+      <li>
+        <p>canonical : canonical path to this specification (defined in ig.json)-   {{site.data.fhir.canonical}}  = http://www.fhir.org/guides/test4</p>
+
+        <ul>
+          <li>link to http://www.fhir.org/guides/test4 in markdown is  [{{site.data.fhir.canonical}}]({{site.data.fhir.canonical}}) = <a href="http://www.fhir.org/guides/test4">http://www.fhir.org/guides/test4</a></li>
+        </ul>
+      </li>
+      <li>
+        <p>errorCount : number of errors in the build file (not including HTML validation errors) -   {{site.data.fhir.errorCount}}  = 644</p>
+      </li>
+      <li>
+        <p>version : version of FHIR -   {{site.data.fhir.version}}  = 4.0.1</p>
+      </li>
+      <li>
+        <p>revision : revision of FHIR -   {{site.data.fhir.revision}}  = a53ec6ee1b</p>
+      </li>
+      <li>
+        <p>versionFull : version-revision -   {{site.data.fhir.versionFull}}  = 4.0.1-a53ec6ee1b</p>
+      </li>
+      <li>
+        <p>totalFiles : total number of files found by the build -   {{site.data.fhir.totalFiles}}  = 14</p>
+      </li>
+      <li>
+        <p>processedFiles : number of files genrated by the build -   {{site.data.fhir.processedFiles}}  = 11</p>
+      </li>
+      <li>
+        <p>genDate : date of generation (so date stamps in the pages can match those in the conformance resources) -   {{site.data.fhir.genDate}}  = Thu, Jan 23, 2020 18:39-0800</p>
       </li>
     </ul>
-  </li>
-  <li>
-    <p>ig Name : computer friendly name of the implementation Guide - used as human friendly name in STU3 (defined in ig.xml) -   {{site.data.fhir.ig.name}} = IGTest4</p>
-  </li>
-  <li>
-    <p>ig Title : human friendly name of the implementation Guide - R4 and above (defined in ig.xml) -   {{site.data.fhir.ig.title}} = IG Test4</p>
-  </li>
-  <li>
-    <p>path : path to the main FHIR specification (defined in ig.json)-   {{site.data.fhir.path}} = http://hl7.org/fhir/R4/</p>
+
+    <hr/>
+
+  </div>
+<div style="background-color: WhiteSmoke;" class="col-sm-6">
+
+    <p><strong>New Way accessed directly from the ImplementationGuide Resource which represented as the ig.fhir data file in the Jekyll build</strong></p>
 
     <ul>
-      <li>link to http://hl7.org/fhir/R4/ in markdown is  [{{site.data.fhir.path}}index.html]({{site.data.fhir.path}}index.html) = <a href="http://hl7.org/fhir/R4/index.html">http://hl7.org/fhir/R4/index.html</a></li>
-    </ul>
-  </li>
-  <li>
-    <p>canonical : canonical path to this specification (defined in ig.json)-   {{site.data.fhir.canonical}}  = http://www.fhir.org/guides/test4</p>
+      <li>
+        <p>IG Package ID - {{site.data.ig.packageId}} = healthedatainc.ig-template4</p>
+      </li>
+      <li>
+        <p>IG Business version specification- {{site.data.ig.version}}  = 0.0.0</p>
+      </li>
+      <li>
+        <p>IG status - {{site.dat.ig.status}}  = draft</p>
+      </li>
+      <li>
+        <p>Whether is experimental IG - {{site.ig.experimental}}  =</p>
+      </li>
+      <li>
+        <p>IG Publisher name  - {{site.data.ig.publisher}}  = Health eData Inc</p>
+      </li>
+      <li>
+        <p>dependency url - e.g. “uscore” : Base url of a dependency implementation Guide  -  {% assign var = site.data.ig.dependsOn | where: “id”, “uscore” %}{{ var[0].uri }}= http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core</p>
 
-    <ul>
-      <li>link to http://www.fhir.org/guides/test4 in markdown is  [{{site.data.fhir.canonical}}]({{site.data.fhir.canonical}}) = <a href="http://www.fhir.org/guides/test4">http://www.fhir.org/guides/test4</a></li>
+        <ul>
+          <li>
+            <p>link to http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core in markdown is  [{{ var[0].uri }}]({{ var[0].uri }}) = <a href="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core">http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core</a></p>
+          </li>
+          <li>
+            <p><a name="eebb3a16-0b68-4c9e-a6c4-22bcca5d1183">​</a>current link to http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core home in markdown is  [{{{ var[0].uri }}index.html]({{ var[0].uri }}/index.html) = <a href="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core/index.html">http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.coreindex.html</a></p>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p>ig Name : computer friendly name of the implementation Guide(used as human friendly name STU3) -   {{site.data.ig.name}} = IGTest4</p>
+      </li>
+      <li>
+        <p>ig Title : human friendly name of the implementation Guide - R4 and above  -   {{site.data.ig.title}} = IG Test4</p>
+      </li>
+      <li>
+        <p><em>this is still the best way</em> path : path to the main FHIR specification-   {{site.data.fhir.path}} = http://hl7.org/fhir/R4/</p>
+
+        <ul>
+          <li>link to http://hl7.org/fhir/R4/ in markdown is  [{{site.data.fhir.path}}index.html]({{site.data.fhir.path}}index.html) = <a href="http://hl7.org/fhir/R4/index.html">http://hl7.org/fhir/R4/index.html</a></li>
+        </ul>
+      </li>
+      <li>
+        <p><em>this is still the best way</em> canonical : canonical path to this specification -   {{site.data.fhir.canonical}}  = http://www.fhir.org/guides/test4</p>
+
+        <ul>
+          <li>link to http://www.fhir.org/guides/test4 in markdown is  [{{site.data.fhir.canonical}}]({{site.data.fhir.canonical}}) = <a href="http://www.fhir.org/guides/test4">http://www.fhir.org/guides/test4</a></li>
+        </ul>
+      </li>
+      <li>
+        <p><em>this is still the only way</em> errorCount : number of errors in the build file (not including HTML validation errors) -   {{site.data.fhir.errorCount}}  = 644</p>
+      </li>
+      <li>
+        <p>version : version of FHIR -   {{site.data.ig.fhirVersion}}  = 4.0.1</p>
+      </li>
+      <li>
+        <p><em>this is still the only way</em> revision : revision of FHIR -   {{site.data.fhir.revision}}  = a53ec6ee1b</p>
+      </li>
+      <li>
+        <p><em>this is still the only way</em> versionFull : version-revision -   {{site.data.fhir.versionFull}}  = 4.0.1-a53ec6ee1b</p>
+      </li>
+      <li>
+        <p><em>this is still the only way</em> totalFiles : total number of files found by the build -   {{site.data.fhir.totalFiles}}  = 14</p>
+      </li>
+      <li>
+        <p><em>this is still the only way</em> processedFiles : number of files genrated by the build -   {{site.data.fhir.processedFiles}}  = 11</p>
+      </li>
+      <li>
+        <p><em>this is still the only way</em> genDate : date of generation (so date stamps in the pages can match those in the conformance resources) -   {{site.data.fhir.genDate}}  = Thu, Jan 23, 2020 18:39-0800</p>
+      </li>
     </ul>
-  </li>
-  <li>
-    <p>errorCount : number of errors in the build file (not including HTML validation errors) -   {{site.data.fhir.errorCount}}  = 17</p>
-  </li>
-  <li>
-    <p>version : version of FHIR -   {{site.data.fhir.version}}  = 4.0.1</p>
-  </li>
-  <li>
-    <p>revision : revision of FHIR -   {{site.data.fhir.revision}}  = a53ec6ee1b</p>
-  </li>
-  <li>
-    <p>versionFull : version-revision -   {{site.data.fhir.versionFull}}  = 4.0.1-a53ec6ee1b</p>
-  </li>
-  <li>
-    <p>totalFiles : total number of files found by the build -   {{site.data.fhir.totalFiles}}  = 14</p>
-  </li>
-  <li>
-    <p>processedFiles : number of files genrated by the build -   {{site.data.fhir.processedFiles}}  = 90</p>
-  </li>
-  <li>
-    <p>genDate : date of generation (so date stamps in the pages can match those in the conformance resources) -   {{site.data.fhir.genDate}}  = Thu, Jan 23, 2020 11:32-0800</p>
-  </li>
-</ul>
+
+    <hr/>
+
+  </div>
+
+</div>
 
 <h3 id="introduction">Introduction</h3>
 
@@ -466,7 +558,7 @@
   <div class="container">    <!-- container -->
    <div class="inner-wrapper">
     <p>
-     <a href="mailto:ehaas@healthedatainc.com">Health eData Inc </a> healthedatainc.ig-template4# based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/index.html">FHIR 4.0.1</a> created <span data-toggle="tooltip" data-placement="top" href="#" title="Thu, Jan 23, 2020 11:32-0800">2020-01-23</span>. <br/>
+     <a href="mailto:ehaas@healthedatainc.com">Health eData Inc </a> healthedatainc.ig-template4# based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/index.html">FHIR 4.0.1</a> created <span data-toggle="tooltip" data-placement="top" href="#" title="Thu, Jan 23, 2020 18:39-0800">2020-01-23</span>. <br/>
       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a>
       | <a style="color: #81BEF7" href="qa.html">QA Report</a>
       | <a style="color: #81BEF7" href="#">Version History</a>

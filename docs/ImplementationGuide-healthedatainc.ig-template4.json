@@ -20,7 +20,7 @@
   "name": "IGTest4",
   "title": "IG Test4",
   "status": "draft",
-  "date": "2020-01-23T11:32:55-08:00",
+  "date": "2020-01-23T16:30:49-08:00",
   "publisher": "Health eData Inc",
   "contact": [
     {
@@ -80,6 +80,10 @@
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "Basic-diet.html"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Basic-diet.html"
           }
         ],
         "reference": {
@@ -92,6 +96,10 @@
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Patient"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Patient-example.html"
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
@@ -112,6 +120,10 @@
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "Patient-example2.html"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Patient-example2.html"
           }
         ],
         "reference": {
@@ -124,6 +136,10 @@
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:extension"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-extension-complex.html"
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
@@ -146,6 +162,10 @@
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "StructureDefinition-extension-blah.html"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-extension-blah.html"
           }
         ],
         "reference": {
@@ -160,6 +180,10 @@
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "OperationDefinition"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "OperationDefinition-opdef-test.html"
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
@@ -181,6 +205,10 @@
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "StructureDefinition-ifr.html"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-ifr.html"
           }
         ],
         "reference": {
@@ -193,6 +221,10 @@
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "ValueSet"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ValueSet-bar-codes.html"
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
@@ -215,6 +247,10 @@
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "CapabilityStatement-server.html"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "CapabilityStatement-server.html"
           }
         ],
         "reference": {
@@ -228,6 +264,10 @@
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "CodeSystem"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "CodeSystem-blah-codes.html"
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
@@ -249,6 +289,10 @@
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "CapabilityStatement-client.html"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "CapabilityStatement-client.html"
           }
         ],
         "reference": {
@@ -262,6 +306,10 @@
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-template-profile-on-profile.html"
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
@@ -284,6 +332,10 @@
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "ValueSet-foo-codes.html"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ValueSet-foo-codes.html"
           }
         ],
         "reference": {
@@ -298,6 +350,10 @@
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-template-basic.html"
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
@@ -320,6 +376,10 @@
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "ValueSet-blah-codes.html"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ValueSet-blah-codes.html"
           }
         ],
         "reference": {
@@ -333,6 +393,10 @@
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:extension"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-extension-blah2.html"
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",

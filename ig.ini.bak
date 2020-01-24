@@ -1,6 +1,6 @@
 [IG]
 # ig.xml in fixed location
-ig = source/resources/ig.xml
+ig = source/pages/_data/ig.json
 # based on publish.sh parameter for using standard template
 #template = hl7.fhir.template to load from repository
 # based on publish.sh parameter for to load local file for local dev

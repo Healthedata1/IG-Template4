@@ -1,19 +1,19 @@
 ﻿IGTest4 : Validation Results
 =========================================
 
-err = 34, warn = 42, info = 2
+err = 98, warn = 42, info = 2
 IG Publisher Version: v1.0.46-SNAPSHOT Out of date - current version is v1.0.47-SNAPSHOT
-Generated Thu Jan 23 11:34:29 PST 2020. FHIR version 4.0.1 for healthedatainc.ig-template4# (canonical = http://www.fhir.org/guides/test4)
+Generated Thu Jan 23 18:39:41 PST 2020. FHIR version 4.0.1 for healthedatainc.ig-template4# (canonical = http://www.fhir.org/guides/test4)
 
- Build Errors : 464 / 0
+ Build Errors : 595 / 0
  /Users/ehaas/Documents/FHIR/IG-Template4/source/examples/basic-diet : 1 / 0
  /Users/ehaas/Documents/FHIR/IG-Template4/source/examples/patient-example : 3 / 0
  /Users/ehaas/Documents/FHIR/IG-Template4/source/examples/patient-example2 : 1 / 0
+ /Users/ehaas/Documents/FHIR/IG-Template4/source/pages/_data/ig : 41 / 2
  /Users/ehaas/Documents/FHIR/IG-Template4/source/resources/capabilitystatement-client : 0 / 0
  /Users/ehaas/Documents/FHIR/IG-Template4/source/resources/capabilitystatement-server : 0 / 0
  /Users/ehaas/Documents/FHIR/IG-Template4/source/resources/codesystem-blah-codes : 0 / 0
- /Users/ehaas/Documents/FHIR/IG-Template4/source/resources/ig : 8 / 2
- /Users/ehaas/Documents/FHIR/IG-Template4/source/resources/operationdefinition-opdef-test : 1 / 4
+ /Users/ehaas/Documents/FHIR/IG-Template4/source/resources/operationdefinition-opdef-test : 0 / 4
  /Users/ehaas/Documents/FHIR/IG-Template4/source/resources/patient-on-usprofile-spreadsheet : 0 / 3
  /Users/ehaas/Documents/FHIR/IG-Template4/source/resources/structuredefinition-ifr : 0 / 2
  /Users/ehaas/Documents/FHIR/IG-Template4/source/resources/valueset-bar-codes : 1 / 0
@@ -426,40 +426,41 @@ ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/
 ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5224, column 18: The link '' for "Todo" cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5242, column 18: The link '' for "Todo" cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/index.html#/html/head/body/div/div/a at Line 58, column 4: The link '' for "null" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/index.html#/html/head/body/div/div/div/div/div/div/div/div/ul/li/ul/li/p/a at Line 470, column 180: The link 'http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core/index.html' for "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.coreindex.html" cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/a at Line 58, column 4: The link '' for "null" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/pre/li/a at Line 2048, column 8: The link '{{p.name}}' for "{{p.name | remove: ".html" | replace: '-', ' ' }}" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3320, column 18: The link '' for "Basic Diet" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3350, column 18: The link '' for "Capabilitystatement Client" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3380, column 18: The link '' for "Capabilitystatement Server" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3410, column 18: The link '' for "Codesystem Blah Codes" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3440, column 18: The link '' for "Implementationguide Healthedatainc.ig Template4" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3470, column 18: The link '' for "Operationdefinition Opdef Test" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3500, column 18: The link '' for "Patient Example" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3530, column 18: The link '' for "Patient Example2" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3564, column 18: The link '' for "Structuredefinition Extension Blah" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3598, column 18: The link '' for "Structuredefinition Extension Blah2" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3632, column 18: The link '' for "Structuredefinition Extension Complex" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3666, column 18: The link '' for "Structuredefinition Ifr" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3700, column 18: The link '' for "Structuredefinition Template Basic" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3734, column 18: The link '' for "Structuredefinition Template Profile On Profile" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3764, column 18: The link '' for "Valueset Bar Codes" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3794, column 18: The link '' for "Valueset Blah Codes" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3824, column 18: The link '' for "Valueset Foo Codes" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3854, column 18: The link '' for "All Examples" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3872, column 18: The link '' for "Capstatements" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3890, column 18: The link '' for "Downloads" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3908, column 18: The link '' for "Guidance" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3926, column 18: The link '' for "Html_pages" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3944, column 18: The link '' for "Index" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3962, column 18: The link '' for "More Guidance" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3980, column 18: The link '' for "Operations" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3998, column 18: The link '' for "Profiles" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4016, column 18: The link '' for "Searchparameters" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4034, column 18: The link '' for "Security" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4052, column 18: The link '' for "Terminology" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4070, column 18: The link '' for "Toc" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4088, column 18: The link '' for "Todo" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4106, column 18: The link '' for "Todo" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/pre/li/a at Line 2047, column 8: The link '{{p.name}}' for "{{p.name | remove: ".html" | replace: '-', ' ' }}" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3319, column 18: The link '' for "Basic Diet" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3349, column 18: The link '' for "Capabilitystatement Client" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3379, column 18: The link '' for "Capabilitystatement Server" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3409, column 18: The link '' for "Codesystem Blah Codes" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3439, column 18: The link '' for "Implementationguide Healthedatainc.ig Template4" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3469, column 18: The link '' for "Operationdefinition Opdef Test" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3499, column 18: The link '' for "Patient Example" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3529, column 18: The link '' for "Patient Example2" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3563, column 18: The link '' for "Structuredefinition Extension Blah" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3597, column 18: The link '' for "Structuredefinition Extension Blah2" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3631, column 18: The link '' for "Structuredefinition Extension Complex" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3665, column 18: The link '' for "Structuredefinition Ifr" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3699, column 18: The link '' for "Structuredefinition Template Basic" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3733, column 18: The link '' for "Structuredefinition Template Profile On Profile" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3763, column 18: The link '' for "Valueset Bar Codes" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3793, column 18: The link '' for "Valueset Blah Codes" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3823, column 18: The link '' for "Valueset Foo Codes" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3853, column 18: The link '' for "All Examples" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3871, column 18: The link '' for "Capstatements" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3889, column 18: The link '' for "Downloads" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3907, column 18: The link '' for "Guidance" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3925, column 18: The link '' for "Html_pages" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3943, column 18: The link '' for "Index" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3961, column 18: The link '' for "More Guidance" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3979, column 18: The link '' for "Operations" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3997, column 18: The link '' for "Profiles" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4015, column 18: The link '' for "Searchparameters" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4033, column 18: The link '' for "Security" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4051, column 18: The link '' for "Terminology" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4069, column 18: The link '' for "Toc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4087, column 18: The link '' for "Todo" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4105, column 18: The link '' for "Todo" cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/operations.html#/html/head/body/div/div/a at Line 58, column 4: The link '' for "null" cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/pages/todo.html#/html/head/body/div/div/a/img at Line 48, column 9: The image source 'assets/images/fhir-logo-www.png' cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/pages/todo.html#/html/head/body/div/div/a at Line 58, column 4: The link '' for "null" cannot be resolved
@@ -486,6 +487,136 @@ ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/security.html#/html/head/bo
 ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/terminology.html#/html/head/body/div/div/a at Line 58, column 4: The link '' for "null" cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/toc.html#/html/head/body/div/div/a at Line 58, column 4: The link '' for "null" cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/todo.html#/html/head/body/div/div/a at Line 58, column 4: The link '' for "null" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 4414, column 18: The link '' for "Basic Diet" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 4444, column 18: The link '' for "Capabilitystatement Client" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 4474, column 18: The link '' for "Capabilitystatement Server" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 4504, column 18: The link '' for "Codesystem Blah Codes" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 4534, column 18: The link '' for "Implementationguide Healthedatainc.ig Template4" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 4564, column 18: The link '' for "Operationdefinition Opdef Test" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 4594, column 18: The link '' for "Patient Example" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 4624, column 18: The link '' for "Patient Example2" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 4658, column 18: The link '' for "Structuredefinition Extension Blah" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 4692, column 18: The link '' for "Structuredefinition Extension Blah2" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 4726, column 18: The link '' for "Structuredefinition Extension Complex" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 4760, column 18: The link '' for "Structuredefinition Ifr" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 4794, column 18: The link '' for "Structuredefinition Template Basic" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 4828, column 18: The link '' for "Structuredefinition Template Profile On Profile" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 4858, column 18: The link '' for "Valueset Bar Codes" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 4888, column 18: The link '' for "Valueset Blah Codes" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 4918, column 18: The link '' for "Valueset Foo Codes" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 4948, column 18: The link '' for "All Examples" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 4966, column 18: The link '' for "Capstatements" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 4984, column 18: The link '' for "Downloads" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5002, column 18: The link '' for "Guidance" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5020, column 18: The link '' for "Html_pages" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5038, column 18: The link '' for "Index" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5056, column 18: The link '' for "More Guidance" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5074, column 18: The link '' for "Operations" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5092, column 18: The link '' for "Profiles" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5110, column 18: The link '' for "Searchparameters" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5128, column 18: The link '' for "Security" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5146, column 18: The link '' for "Terminology" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5164, column 18: The link '' for "Toc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5182, column 18: The link '' for "Todo" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5200, column 18: The link '' for "Todo" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/pre/li/a at Line 2028, column 8: The link '{{p.name}}' for "{{p.name | remove: ".html" | replace: '-', ' ' }}" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3300, column 18: The link '' for "Basic Diet" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3330, column 18: The link '' for "Capabilitystatement Client" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3360, column 18: The link '' for "Capabilitystatement Server" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3390, column 18: The link '' for "Codesystem Blah Codes" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3420, column 18: The link '' for "Implementationguide Healthedatainc.ig Template4" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3450, column 18: The link '' for "Operationdefinition Opdef Test" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3480, column 18: The link '' for "Patient Example" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3510, column 18: The link '' for "Patient Example2" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3544, column 18: The link '' for "Structuredefinition Extension Blah" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3578, column 18: The link '' for "Structuredefinition Extension Blah2" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3612, column 18: The link '' for "Structuredefinition Extension Complex" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3646, column 18: The link '' for "Structuredefinition Ifr" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3680, column 18: The link '' for "Structuredefinition Template Basic" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3714, column 18: The link '' for "Structuredefinition Template Profile On Profile" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3744, column 18: The link '' for "Valueset Bar Codes" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3774, column 18: The link '' for "Valueset Blah Codes" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3804, column 18: The link '' for "Valueset Foo Codes" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3834, column 18: The link '' for "All Examples" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3852, column 18: The link '' for "Capstatements" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3870, column 18: The link '' for "Downloads" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3888, column 18: The link '' for "Guidance" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3906, column 18: The link '' for "Html_pages" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3924, column 18: The link '' for "Index" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3942, column 18: The link '' for "More Guidance" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3960, column 18: The link '' for "Operations" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3978, column 18: The link '' for "Profiles" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3996, column 18: The link '' for "Searchparameters" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4014, column 18: The link '' for "Security" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4032, column 18: The link '' for "Terminology" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4050, column 18: The link '' for "Toc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4068, column 18: The link '' for "Todo" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4086, column 18: The link '' for "Todo" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/pre/li/a at Line 2029, column 8: The link '{{p.name}}' for "{{p.name | remove: ".html" | replace: '-', ' ' }}" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3301, column 18: The link '' for "Basic Diet" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3331, column 18: The link '' for "Capabilitystatement Client" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3361, column 18: The link '' for "Capabilitystatement Server" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3391, column 18: The link '' for "Codesystem Blah Codes" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3421, column 18: The link '' for "Implementationguide Healthedatainc.ig Template4" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3451, column 18: The link '' for "Operationdefinition Opdef Test" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3481, column 18: The link '' for "Patient Example" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3511, column 18: The link '' for "Patient Example2" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3545, column 18: The link '' for "Structuredefinition Extension Blah" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3579, column 18: The link '' for "Structuredefinition Extension Blah2" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3613, column 18: The link '' for "Structuredefinition Extension Complex" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3647, column 18: The link '' for "Structuredefinition Ifr" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3681, column 18: The link '' for "Structuredefinition Template Basic" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3715, column 18: The link '' for "Structuredefinition Template Profile On Profile" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3745, column 18: The link '' for "Valueset Bar Codes" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3775, column 18: The link '' for "Valueset Blah Codes" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3805, column 18: The link '' for "Valueset Foo Codes" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3835, column 18: The link '' for "All Examples" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3853, column 18: The link '' for "Capstatements" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3871, column 18: The link '' for "Downloads" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3889, column 18: The link '' for "Guidance" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3907, column 18: The link '' for "Html_pages" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3925, column 18: The link '' for "Index" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3943, column 18: The link '' for "More Guidance" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3961, column 18: The link '' for "Operations" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3979, column 18: The link '' for "Profiles" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3997, column 18: The link '' for "Searchparameters" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4015, column 18: The link '' for "Security" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4033, column 18: The link '' for "Terminology" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4051, column 18: The link '' for "Toc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4069, column 18: The link '' for "Todo" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/pre/li/a at Line 2030, column 8: The link '{{p.name}}' for "{{p.name | remove: ".html" | replace: '-', ' ' }}" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3302, column 18: The link '' for "Basic Diet" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3332, column 18: The link '' for "Capabilitystatement Client" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3362, column 18: The link '' for "Capabilitystatement Server" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3392, column 18: The link '' for "Codesystem Blah Codes" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3422, column 18: The link '' for "Implementationguide Healthedatainc.ig Template4" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3452, column 18: The link '' for "Operationdefinition Opdef Test" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3482, column 18: The link '' for "Patient Example" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3512, column 18: The link '' for "Patient Example2" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3546, column 18: The link '' for "Structuredefinition Extension Blah" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3580, column 18: The link '' for "Structuredefinition Extension Blah2" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3614, column 18: The link '' for "Structuredefinition Extension Complex" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3648, column 18: The link '' for "Structuredefinition Ifr" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3682, column 18: The link '' for "Structuredefinition Template Basic" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3716, column 18: The link '' for "Structuredefinition Template Profile On Profile" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3746, column 18: The link '' for "Valueset Bar Codes" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3776, column 18: The link '' for "Valueset Blah Codes" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3806, column 18: The link '' for "Valueset Foo Codes" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3836, column 18: The link '' for "All Examples" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3854, column 18: The link '' for "Capstatements" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3872, column 18: The link '' for "Downloads" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3890, column 18: The link '' for "Guidance" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3908, column 18: The link '' for "Html_pages" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3926, column 18: The link '' for "Index" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3944, column 18: The link '' for "More Guidance" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3962, column 18: The link '' for "Operations" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3980, column 18: The link '' for "Profiles" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3998, column 18: The link '' for "Searchparameters" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4016, column 18: The link '' for "Security" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4034, column 18: The link '' for "Terminology" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4052, column 18: The link '' for "Toc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4070, column 18: The link '' for "Todo" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4088, column 18: The link '' for "Todo" cannot be resolved
 == /Users/ehaas/Documents/FHIR/IG-Template4/source/examples/Basic-diet.xml ==
 ERROR: Basic/diet: Basic: temp-1: Identifier SHALL be greater than 5 characters [Identifier.value.length() > 5]
 == /Users/ehaas/Documents/FHIR/IG-Template4/source/examples/patient-example.xml ==
@@ -494,22 +625,54 @@ ERROR: Patient/example: Patient.identifier[0].type.coding[0].system: URL value '
 ERROR: Patient/example: Patient.generalPractitioner[0]: Unable to resolve resource 'http://hl7.org/fhir/us/core/Practitioner/practitioner-1'
 == /Users/ehaas/Documents/FHIR/IG-Template4/source/examples/patient-example2.xml ==
 ERROR: Patient/example2: Patient.managingOrganization: Unable to resolve resource 'Organization/1'
-== /Users/ehaas/Documents/FHIR/IG-Template4/source/resources/capabilitystatement-client.xml ==
-== /Users/ehaas/Documents/FHIR/IG-Template4/source/resources/capabilitystatement-server.xml ==
-== /Users/ehaas/Documents/FHIR/IG-Template4/source/resources/CodeSystem-blah-codes.xml ==
-== /Users/ehaas/Documents/FHIR/IG-Template4/source/resources/ig.xml ==
+== /Users/ehaas/Documents/FHIR/IG-Template4/source/pages/_data/ig.json ==
 ERROR: ImplementationGuide/healthedatainc.ig-template4: ImplementationGuide.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/igpublisher-spreadsheet is unknown, and not allowed here
 ERROR: ImplementationGuide/healthedatainc.ig-template4: ImplementationGuide.extension[0].url: URL value 'http://hl7.org/fhir/StructureDefinition/igpublisher-spreadsheet' does not resolve
 ERROR: ImplementationGuide/healthedatainc.ig-template4: ImplementationGuide.extension[1]: The extension http://hl7.org/fhir/StructureDefinition/igpublisher-spreadsheet is unknown, and not allowed here
 ERROR: ImplementationGuide/healthedatainc.ig-template4: ImplementationGuide.extension[1].url: URL value 'http://hl7.org/fhir/StructureDefinition/igpublisher-spreadsheet' does not resolve
+ERROR: ImplementationGuide/healthedatainc.ig-template4: ImplementationGuide.definition.resource[0].extension[1]: The extension http://hl7.org/fhir/StructureDefinition/implementationguide-page is unknown, and not allowed here
+ERROR: ImplementationGuide/healthedatainc.ig-template4: ImplementationGuide.definition.resource[0].extension[1].url: URL value 'http://hl7.org/fhir/StructureDefinition/implementationguide-page' does not resolve
+ERROR: ImplementationGuide/healthedatainc.ig-template4: ImplementationGuide.definition.resource[1].extension[1]: The extension http://hl7.org/fhir/StructureDefinition/implementationguide-page is unknown, and not allowed here
+ERROR: ImplementationGuide/healthedatainc.ig-template4: ImplementationGuide.definition.resource[1].extension[1].url: URL value 'http://hl7.org/fhir/StructureDefinition/implementationguide-page' does not resolve
+ERROR: ImplementationGuide/healthedatainc.ig-template4: ImplementationGuide.definition.resource[2].extension[1]: The extension http://hl7.org/fhir/StructureDefinition/implementationguide-page is unknown, and not allowed here
+ERROR: ImplementationGuide/healthedatainc.ig-template4: ImplementationGuide.definition.resource[2].extension[1].url: URL value 'http://hl7.org/fhir/StructureDefinition/implementationguide-page' does not resolve
+ERROR: ImplementationGuide/healthedatainc.ig-template4: ImplementationGuide.definition.resource[3].extension[1]: The extension http://hl7.org/fhir/StructureDefinition/implementationguide-page is unknown, and not allowed here
+ERROR: ImplementationGuide/healthedatainc.ig-template4: ImplementationGuide.definition.resource[3].extension[1].url: URL value 'http://hl7.org/fhir/StructureDefinition/implementationguide-page' does not resolve
+ERROR: ImplementationGuide/healthedatainc.ig-template4: ImplementationGuide.definition.resource[4].extension[1]: The extension http://hl7.org/fhir/StructureDefinition/implementationguide-page is unknown, and not allowed here
+ERROR: ImplementationGuide/healthedatainc.ig-template4: ImplementationGuide.definition.resource[4].extension[1].url: URL value 'http://hl7.org/fhir/StructureDefinition/implementationguide-page' does not resolve
+ERROR: ImplementationGuide/healthedatainc.ig-template4: ImplementationGuide.definition.resource[5].extension[1]: The extension http://hl7.org/fhir/StructureDefinition/implementationguide-page is unknown, and not allowed here
+ERROR: ImplementationGuide/healthedatainc.ig-template4: ImplementationGuide.definition.resource[5].extension[1].url: URL value 'http://hl7.org/fhir/StructureDefinition/implementationguide-page' does not resolve
+ERROR: ImplementationGuide/healthedatainc.ig-template4: ImplementationGuide.definition.resource[6].extension[1]: The extension http://hl7.org/fhir/StructureDefinition/implementationguide-page is unknown, and not allowed here
+ERROR: ImplementationGuide/healthedatainc.ig-template4: ImplementationGuide.definition.resource[6].extension[1].url: URL value 'http://hl7.org/fhir/StructureDefinition/implementationguide-page' does not resolve
+ERROR: ImplementationGuide/healthedatainc.ig-template4: ImplementationGuide.definition.resource[7].extension[1]: The extension http://hl7.org/fhir/StructureDefinition/implementationguide-page is unknown, and not allowed here
+ERROR: ImplementationGuide/healthedatainc.ig-template4: ImplementationGuide.definition.resource[7].extension[1].url: URL value 'http://hl7.org/fhir/StructureDefinition/implementationguide-page' does not resolve
+ERROR: ImplementationGuide/healthedatainc.ig-template4: ImplementationGuide.definition.resource[8].extension[1]: The extension http://hl7.org/fhir/StructureDefinition/implementationguide-page is unknown, and not allowed here
+ERROR: ImplementationGuide/healthedatainc.ig-template4: ImplementationGuide.definition.resource[8].extension[1].url: URL value 'http://hl7.org/fhir/StructureDefinition/implementationguide-page' does not resolve
 WARNING: ImplementationGuide/healthedatainc.ig-template4: ImplementationGuide.definition.resource[8].description: value should not start or finish with whitespace
+ERROR: ImplementationGuide/healthedatainc.ig-template4: ImplementationGuide.definition.resource[9].extension[1]: The extension http://hl7.org/fhir/StructureDefinition/implementationguide-page is unknown, and not allowed here
+ERROR: ImplementationGuide/healthedatainc.ig-template4: ImplementationGuide.definition.resource[9].extension[1].url: URL value 'http://hl7.org/fhir/StructureDefinition/implementationguide-page' does not resolve
+ERROR: ImplementationGuide/healthedatainc.ig-template4: ImplementationGuide.definition.resource[10].extension[1]: The extension http://hl7.org/fhir/StructureDefinition/implementationguide-page is unknown, and not allowed here
+ERROR: ImplementationGuide/healthedatainc.ig-template4: ImplementationGuide.definition.resource[10].extension[1].url: URL value 'http://hl7.org/fhir/StructureDefinition/implementationguide-page' does not resolve
 WARNING: ImplementationGuide/healthedatainc.ig-template4: ImplementationGuide.definition.resource[10].description: value should not start or finish with whitespace
+ERROR: ImplementationGuide/healthedatainc.ig-template4: ImplementationGuide.definition.resource[11].extension[1]: The extension http://hl7.org/fhir/StructureDefinition/implementationguide-page is unknown, and not allowed here
+ERROR: ImplementationGuide/healthedatainc.ig-template4: ImplementationGuide.definition.resource[11].extension[1].url: URL value 'http://hl7.org/fhir/StructureDefinition/implementationguide-page' does not resolve
+ERROR: ImplementationGuide/healthedatainc.ig-template4: ImplementationGuide.definition.resource[12].extension[1]: The extension http://hl7.org/fhir/StructureDefinition/implementationguide-page is unknown, and not allowed here
+ERROR: ImplementationGuide/healthedatainc.ig-template4: ImplementationGuide.definition.resource[12].extension[1].url: URL value 'http://hl7.org/fhir/StructureDefinition/implementationguide-page' does not resolve
+ERROR: ImplementationGuide/healthedatainc.ig-template4: ImplementationGuide.definition.resource[13].extension[1]: The extension http://hl7.org/fhir/StructureDefinition/implementationguide-page is unknown, and not allowed here
+ERROR: ImplementationGuide/healthedatainc.ig-template4: ImplementationGuide.definition.resource[13].extension[1].url: URL value 'http://hl7.org/fhir/StructureDefinition/implementationguide-page' does not resolve
+ERROR: ImplementationGuide/healthedatainc.ig-template4: ImplementationGuide.definition.resource[14].extension[1]: The extension http://hl7.org/fhir/StructureDefinition/implementationguide-page is unknown, and not allowed here
+ERROR: ImplementationGuide/healthedatainc.ig-template4: ImplementationGuide.definition.resource[14].extension[1].url: URL value 'http://hl7.org/fhir/StructureDefinition/implementationguide-page' does not resolve
+ERROR: ImplementationGuide/healthedatainc.ig-template4: ImplementationGuide.definition.resource[15].extension[1]: The extension http://hl7.org/fhir/StructureDefinition/implementationguide-page is unknown, and not allowed here
+ERROR: ImplementationGuide/healthedatainc.ig-template4: ImplementationGuide.definition.resource[15].extension[1].url: URL value 'http://hl7.org/fhir/StructureDefinition/implementationguide-page' does not resolve
 ERROR: ImplementationGuide/healthedatainc.ig-template4: ImplementationGuide.definition.parameter[4].code: The value provided ('path-qa') is not in the value set http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.1 (http://hl7.org/fhir/ValueSet/guide-parameter-code, and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/guide-parameter-code#path-qa in http://hl7.org/fhir/guide-parameter-code)
 ERROR: ImplementationGuide/healthedatainc.ig-template4: ImplementationGuide.definition.parameter[5].code: The value provided ('path-temp') is not in the value set http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.1 (http://hl7.org/fhir/ValueSet/guide-parameter-code, and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/guide-parameter-code#path-temp in http://hl7.org/fhir/guide-parameter-code)
 ERROR: ImplementationGuide/healthedatainc.ig-template4: ImplementationGuide.definition.parameter[7].code: The value provided ('path-output') is not in the value set http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.1 (http://hl7.org/fhir/ValueSet/guide-parameter-code, and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/guide-parameter-code#path-output in http://hl7.org/fhir/guide-parameter-code)
 ERROR: ImplementationGuide/healthedatainc.ig-template4: ImplementationGuide.definition.parameter[8].code: The value provided ('path-history') is not in the value set http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.1 (http://hl7.org/fhir/ValueSet/guide-parameter-code, and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/guide-parameter-code#path-history in http://hl7.org/fhir/guide-parameter-code)
+ERROR: ImplementationGuide/healthedatainc.ig-template4: ImplementationGuide.definition.parameter[9].code: The value provided ('foo') is not in the value set http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.1 (http://hl7.org/fhir/ValueSet/guide-parameter-code, and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/guide-parameter-code#foo in http://hl7.org/fhir/guide-parameter-code)
+== /Users/ehaas/Documents/FHIR/IG-Template4/source/resources/capabilitystatement-client.xml ==
+== /Users/ehaas/Documents/FHIR/IG-Template4/source/resources/capabilitystatement-server.xml ==
+== /Users/ehaas/Documents/FHIR/IG-Template4/source/resources/CodeSystem-blah-codes.xml ==
 == /Users/ehaas/Documents/FHIR/IG-Template4/source/resources/operationdefinition-opdef-test.json ==
-ERROR: OperationDefinition.url: Resource id/url mismatch: opdef-test/http://www.fhir.org/guides/test4/OperationDefinition/example
 WARNING: OperationDefinition/opdef-test: OperationDefinition: opd-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
 INFORMATION: OperationDefinition/opdef-test: OperationDefinition.useContext[0].code: Code System URI 'http://build.fhir.org/codesystem-usage-context-type' is unknown so the code cannot be validated
 WARNING: OperationDefinition/opdef-test: OperationDefinition.useContext[0].code: The Coding provided is not in the value set http://hl7.org/fhir/ValueSet/usage-context-type, and a code should come from this value set unless it has no suitable code.  (error message = The code system "http://build.fhir.org/codesystem-usage-context-type" is not known (encountered paired with code = "venue"); The code provided (http://build.fhir.org/codesystem-usage-context-type#venue) is not  valid in the value set UsageContextType)

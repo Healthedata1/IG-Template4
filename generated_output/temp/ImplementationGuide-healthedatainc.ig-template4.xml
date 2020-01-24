@@ -16,7 +16,7 @@
   <name value="IGTest4"/>
   <title value="IG Test4"/>
   <status value="draft"/>
-  <date value="2020-01-23T11:32:55-08:00"/>
+  <date value="2020-01-23T16:30:49-08:00"/>
   <publisher value="Health eData Inc"/>
   <contact>
     <telecom>
@@ -58,6 +58,9 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="Basic-diet.html"/>
       </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Basic-diet.html"/>
+      </extension>
       <reference>
         <reference value="Basic/diet"/>
       </reference>
@@ -66,6 +69,9 @@
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Patient"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Patient-example.html"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="Patient-example.html"/>
@@ -82,6 +88,9 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="Patient-example2.html"/>
       </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Patient-example2.html"/>
+      </extension>
       <reference>
         <reference value="Patient/example2"/>
       </reference>
@@ -90,6 +99,9 @@
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-extension-complex.html"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-extension-complex.html"/>
@@ -108,6 +120,9 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-extension-blah.html"/>
       </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-extension-blah.html"/>
+      </extension>
       <reference>
         <reference value="StructureDefinition/extension-blah"/>
       </reference>
@@ -118,6 +133,9 @@
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="OperationDefinition"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="OperationDefinition-opdef-test.html"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="OperationDefinition-opdef-test.html"/>
@@ -135,6 +153,9 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-ifr.html"/>
       </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-ifr.html"/>
+      </extension>
       <reference>
         <reference value="StructureDefinition/ifr"/>
       </reference>
@@ -143,6 +164,9 @@
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-bar-codes.html"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="ValueSet-bar-codes.html"/>
@@ -161,6 +185,9 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="CapabilityStatement-server.html"/>
       </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CapabilityStatement-server.html"/>
+      </extension>
       <reference>
         <reference value="CapabilityStatement/server"/>
       </reference>
@@ -170,6 +197,9 @@
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CodeSystem"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CodeSystem-blah-codes.html"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="CodeSystem-blah-codes.html"/>
@@ -187,6 +217,9 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="CapabilityStatement-client.html"/>
       </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CapabilityStatement-client.html"/>
+      </extension>
       <reference>
         <reference value="CapabilityStatement/client"/>
       </reference>
@@ -196,6 +229,9 @@
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-template-profile-on-profile.html"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-template-profile-on-profile.html"/>
@@ -214,6 +250,9 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="ValueSet-foo-codes.html"/>
       </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-foo-codes.html"/>
+      </extension>
       <reference>
         <reference value="ValueSet/foo-codes"/>
       </reference>
@@ -224,6 +263,9 @@
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-template-basic.html"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-template-basic.html"/>
@@ -242,6 +284,9 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="ValueSet-blah-codes.html"/>
       </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-blah-codes.html"/>
+      </extension>
       <reference>
         <reference value="ValueSet/blah-codes"/>
       </reference>
@@ -251,6 +296,9 @@
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-extension-blah2.html"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-extension-blah2.html"/>

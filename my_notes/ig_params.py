@@ -39,10 +39,6 @@ ig_params = dict(  # note:change to '_' to '-' in serialized format
     excludettl='Yes',# from ig.ini
 )
 
-
-
-
-
 #sorted
 new_dict ={k:v for k,v in sorted(ig_params.items())}
 from pprint import pprint
@@ -101,10 +97,10 @@ print(yig_params)
 
 ig_json = {
   "resourceType": "ImplementationGuide",
-  "id": "healthedatainc.ig-template4-0.0.0",
+  "id": "healthedatainc.ig-template4",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>IGTest3</h2><p>The official URL for this implementation guide is: </p><pre>http://www.fhir.org/guides/test4/ImplementationGuide/healthedatainc.ig-template4-0.0.0</pre></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>IGTest4</h2><p>The official URL for this implementation guide is: </p><pre>http://www.fhir.org/guides/test4/ImplementationGuide/healthedatainc.ig-template4</pre></div>"
   },
   "extension": [
     {
@@ -116,12 +112,12 @@ ig_json = {
       "valueUri": "template-profile-spreadsheet.xml"
     }
   ],
-  "url": "http://www.fhir.org/guides/test4/ImplementationGuide/healthedatainc.ig-template4-0.0.0",
+  "url": "http://www.fhir.org/guides/test4/ImplementationGuide/healthedatainc.ig-template4",
   "version": "0.0.0",
-  "name": "IGTest3",
-  "title": "IG Test3",
+  "name": "IGTest4",
+  "title": "IG Test4",
   "status": "draft",
-  "date": "2020-01-21T16:34:14-08:00",
+  "date": "2020-01-23T16:30:49-08:00",
   "publisher": "Health eData Inc",
   "contact": [
     {
@@ -150,13 +146,13 @@ ig_json = {
   "dependsOn": [
     {
       "id": "uscore",
-      "uri": "http://hl7.org/fhir/us/core",
+      "uri": "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core",
       "packageId": "hl7.fhir.us.core",
       "version": "3.1.0"
     },
     {
       "id": "qicore",
-      "uri": "http://hl7.org/fhir/us/qicore",
+      "uri": "http://hl7.org/fhir/us/qicore/ImplementationGuide/hl7.fhir.us.qicore",
       "packageId": "hl7.fhir.us.qicore",
       "version": "current"
     }
@@ -186,7 +182,7 @@ ig_json = {
         "reference": {
           "reference": "Basic/diet"
         },
-        "exampleBoolean": True
+        "exampleBoolean": true
       },
       {
         "extension": [
@@ -202,7 +198,7 @@ ig_json = {
         "reference": {
           "reference": "Patient/example"
         },
-        "exampleBoolean": True
+        "exampleBoolean": true
       },
       {
         "extension": [
@@ -218,7 +214,7 @@ ig_json = {
         "reference": {
           "reference": "Patient/example2"
         },
-        "exampleBoolean": True
+        "exampleBoolean": true
       },
       {
         "extension": [
@@ -236,7 +232,7 @@ ig_json = {
         },
         "name": "Complex Extension",
         "description": "an example of a complex extension.",
-        "exampleBoolean": False
+        "exampleBoolean": false
       },
       {
         "extension": [
@@ -254,7 +250,7 @@ ig_json = {
         },
         "name": "Simple Extension",
         "description": "an example of a simple extension.",
-        "exampleBoolean": False
+        "exampleBoolean": false
       },
       {
         "extension": [
@@ -271,7 +267,7 @@ ig_json = {
           "reference": "OperationDefinition/opdef-test"
         },
         "description": "Limited implementation of the Populate Questionnaire implementation",
-        "exampleBoolean": False
+        "exampleBoolean": false
       },
       {
         "extension": [
@@ -287,7 +283,7 @@ ig_json = {
         "reference": {
           "reference": "StructureDefinition/ifr"
         },
-        "exampleBoolean": False
+        "exampleBoolean": false
       },
       {
         "extension": [
@@ -305,7 +301,7 @@ ig_json = {
         },
         "name": "Bar Value Set",
         "description": "A bunch of example codes",
-        "exampleBoolean": False
+        "exampleBoolean": false
       },
       {
         "extension": [
@@ -322,7 +318,7 @@ ig_json = {
           "reference": "CapabilityStatement/server"
         },
         "description": "This resource defines the expected capabilities ",
-        "exampleBoolean": False
+        "exampleBoolean": false
       },
       {
         "extension": [
@@ -339,7 +335,7 @@ ig_json = {
           "reference": "CodeSystem/blah-codes"
         },
         "description": "A bunch of example codes",
-        "exampleBoolean": False
+        "exampleBoolean": false
       },
       {
         "extension": [
@@ -356,7 +352,7 @@ ig_json = {
           "reference": "CapabilityStatement/client"
         },
         "description": "This resource defines the expected capabilities ",
-        "exampleBoolean": False
+        "exampleBoolean": false
       },
       {
         "extension": [
@@ -374,7 +370,7 @@ ig_json = {
         },
         "name": "Template Profile on Profile",
         "description": "Template-Profile-on-Profile",
-        "exampleBoolean": False
+        "exampleBoolean": false
       },
       {
         "extension": [
@@ -392,7 +388,7 @@ ig_json = {
         },
         "name": "Foo Value Set",
         "description": "A bunch of example codes",
-        "exampleBoolean": False
+        "exampleBoolean": false
       },
       {
         "extension": [
@@ -410,7 +406,7 @@ ig_json = {
         },
         "name": "Health eData Template Profile",
         "description": "This is a simple example Template",
-        "exampleBoolean": False
+        "exampleBoolean": false
       },
       {
         "extension": [
@@ -427,7 +423,7 @@ ig_json = {
           "reference": "ValueSet/blah-codes"
         },
         "description": "A bunch of example codes",
-        "exampleBoolean": False
+        "exampleBoolean": false
       },
       {
         "extension": [
@@ -457,6 +453,11 @@ ig_json = {
           "nameUrl": "guidance.html",
           "title": "General Guidance",
           "generation": "markdown"
+        },
+        {
+          "nameUrl": "more-guidance.html",
+          "title": "More General Guidance",
+          "generation": "html"
         },
         {
           "nameUrl": "profiles.html",
@@ -613,5 +614,6 @@ ig_json = {
     ]
   }
 }
+
 ig_yml = y_dump(ig_json, Dumper=Dumper, sort_keys=False)
 print(ig_yml)

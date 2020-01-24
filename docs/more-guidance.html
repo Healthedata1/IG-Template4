@@ -38,7 +38,7 @@
   <!-- ?xml version="1.0" encoding="UTF-8"? -->
 <div id="segment-header" class="segment">
     <!-- segment-header -->
-  <div class="container"><a name="7a232b44-7f39-4473-896f-8e9570ceb148">​</a>  <!-- container -->
+  <div class="container"><a name="dfee37f1-d9ca-4461-bf75-70209c674d15">​</a>  <!-- container -->
 
   <!-- hl7 logo -->
     <a no-external="true" href="http://hl7.org/fhir">
@@ -224,7 +224,7 @@
     <div class="container">    <!-- container -->
       <div class="row">    <!-- row -->
        <div class="inner-wrapper">   <!-- inner-wrapper -->
-         <div class="col-12"><a name="0202f280-e43d-4843-b02d-0cc5cd12281c">​</a>    <!-- col -->
+         <div class="col-12"><a name="c0085379-e4cf-46b3-9831-5afb39b1908e">​</a>    <!-- col -->
               <!-- content of page -->
 
 
@@ -311,15 +311,16 @@
 <ul id="markdown-toc">
   <li><a href="#introduction">Introduction</a></li>
   <li><a href="#more-stuff">More Stuff</a></li>
+  <li><a href="#">Page and Site Variables</a></li>
+  <li><a href="#site_stuff">all site files are available via site.static_files</a></li>
+  <li><a href="#site_pages">site page variable example</a></li>
   <li><a href="#">list of pages</a></li>
   <li><a href="#">list of static pages</a></li>
-  <li><a href="#">list of valuesets from pages</a>
-    <ul>
-      <li><a href="#"> Table of Contents </a></li>
-    </ul>
-  </li>
+  <li><a href="#">list of valuesets from pages</a></li>
+  <li><a href="#"> Table of Contents </a></li>
   <li><a href="#">R3 IG pages</a></li>
   <li><a href="#">R4 IG pages</a></li>
+  <li><a href="#testing-accessing-parameters">Testing Accessing Parameters</a></li>
 </ul>
 
 
@@ -413,7 +414,7 @@ example for button bar
   </span><span class="nl">"foo2"</span><span class="p">:</span><span class="w">  </span><span class="s2">"bar2"</span><span class="w">
   </span><span class="p">}</span></code></pre></figure>
 
-<h2>Page and Site Variables</h2>
+<h3>Page and Site Variables</h3>
 <pre>
 
 page.title = {{page.title}}<br/>
@@ -433,7 +434,7 @@ page.name = more-guidance.html<br/>
 page.next = <br/>
 page.previous = <br/>
 
-<h2>all site files are available via site.static_files</h2>
+<h3 id="site_stuff">all site files are available via site.static_files</h3>
 <pre>
 
 {% for static_file in site.static_files %}
@@ -442,6 +443,7 @@ page.previous = <br/>
 {% endfor %}
 
 </pre>
+
 
       /Basic-diet.json
       <br/>
@@ -1562,9 +1564,6 @@ page.previous = <br/>
       /tbl_bck111110.png
       <br/>
 
-      /tbl_bck1112.png
-      <br/>
-
       /tbl_bck112.png
       <br/>
 
@@ -1647,24 +1646,6 @@ page.previous = <br/>
       <br/>
 
       /tbl_bck152.png
-      <br/>
-
-      /tbl_bck15200.png
-      <br/>
-
-      /tbl_bck1521.png
-      <br/>
-
-      /tbl_bck15210.png
-      <br/>
-
-      /tbl_bck153.png
-      <br/>
-
-      /tbl_bck1530.png
-      <br/>
-
-      /tbl_bck1532.png
       <br/>
 
       /tbl_bck1540.png
@@ -1751,7 +1732,8 @@ page.previous = <br/>
       /usage-stats.json
       <br/>
 
-<h2>site page variable example</h2>
+
+<h3 id="site_pages">site page variable example</h3>
 
 <h3>list of pages</h3>
 <pre>
@@ -2040,7 +2022,7 @@ todo.md,pages/todo.md
 {% for p in html_pages %}
 {% assign html_frag = p.name | split: '.' | size %}
 {% if p.name contains "ValueSet" and html_frag == 2 %}
-  <li><a name="3c25734a-33ed-4e9e-a680-c84600edf5bf">​</a><a href="{{p.name}}">{{p.name |  remove: ".html" | replace: '-', ' ' }}</a></li>
+  <li><a name="50ba4fae-61e1-44bc-ae3a-c9c9ece96916">​</a><a href="{{p.name}}">{{p.name |  remove: ".html" | replace: '-', ' ' }}</a></li>
 {% endif %}
 {% endfor %}
 
@@ -2323,7 +2305,7 @@ todo.md,pages/todo.md
 
 
 
-<h4 nocount="true"> Table of Contents </h4>
+<h3 nocount="true"> Table of Contents </h3>
 <p>in markdown</p>
 <pre>
 
@@ -6047,6 +6029,25 @@ value="markdown"/&gt;&lt;/page&gt;
 
 
 
+<h3 id="testing-accessing-parameters">Testing Accessing Parameters</h3>
+
+<p>
+  to get parameter for list of name value pairs using liquid
+
+e.g.:
+</p>
+<li>
+  code: path-resource
+</li>
+<li>
+  value: source/examples
+</li>
+
+<pre>
+{% assign param = site.data.ig.definition.parameter | where: "code", "path-resource" | first %}{{ param.value }}
+  = source/examples
+</pre>
+
 
     <!-- ==============END CONTENT END CONTENT=================== -->
 
@@ -6076,7 +6077,7 @@ value="markdown"/&gt;&lt;/page&gt;
   <div class="container">    <!-- container -->
    <div class="inner-wrapper">
     <p>
-     <a href="mailto:ehaas@healthedatainc.com">Health eData Inc </a> healthedatainc.ig-template4# based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/index.html">FHIR 4.0.1</a> created <span data-toggle="tooltip" data-placement="top" href="#" title="Thu, Jan 23, 2020 11:32-0800">2020-01-23</span>. <br/>
+     <a href="mailto:ehaas@healthedatainc.com">Health eData Inc </a> healthedatainc.ig-template4# based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/index.html">FHIR 4.0.1</a> created <span data-toggle="tooltip" data-placement="top" href="#" title="Thu, Jan 23, 2020 18:39-0800">2020-01-23</span>. <br/>
       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a>
       | <a style="color: #81BEF7" href="qa.html">QA Report</a>
       | <a style="color: #81BEF7" href="#">Version History</a>

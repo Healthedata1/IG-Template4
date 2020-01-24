@@ -1,6 +1,7 @@
 see https://wiki.hl7.org/FHIR_IG_publisher_templates
 
 ## TODOS
+1. create IG resource tooling
 1. autoload_resources  - test this native functionality does it load the pages test pending
 1. autoload_pages - test if pages load natively from directory that mimics the menu - no relative links get messed up.
 1. autoload resource into pages - file name based - test pending
@@ -9,6 +10,7 @@ see https://wiki.hl7.org/FHIR_IG_publisher_templates
 1. bash should error if no front matter in pages - todo
 1. menu should have fixed and variable parts. - done see below
    -  use yaml file to define menu. variable parts of it?
+1. Test with various IGs
 1. fix markdown friendly images in lloyd's template
    - issue with not following boot strap and spurious tags - discuss
 1. add logo variable - done
@@ -143,6 +145,7 @@ Erics-Air-2:IG-Template4 ehaas$ tree -L 2 -I '*.png|*.gif|*.js|docs|my_notes'
    - need to see whether parameter populate the data files or not
      - assume not and populate this as well
      - may need to update template accordingly depending if is site or site.data...
+     - or remove and the ImplementationGuide resources directly
 
 3. config.json *** this should be static based on set of templates
 
@@ -194,6 +197,45 @@ This resource is essentially a big ole configuration file for generating an ig. 
 Enter all config parameters in ig resource either manually or with aid of tooling to input data from YAML files, spreadsheets and/or scraping directories.
 
   - There will be a default ig.xml (shown below) that should get you going with minimal data entry.
+
+  ig resource builder
+
+  inputs:
+  YAML, spreadsheets,
+
+  Need default template with full set of parameters
+
+Use FHIR R5 Model in Python... _ make sure is up to date otherwise use a dictionary!!!
+
+>how to populate _config.yml file  ??
+>  need io in ANT ughh.
+>  look at how lloyd is doing it or us js hook to JAva...:-(
+>
+>http://ant.apache.org/manual/Types/filterchain.html#headfilter  - read file
+>
+>  The echo task in ANT is able to write to files
+>  <echo file="output.txt" append="true">
+>     abc=${abc}
+>  </echo>
+>
+>http://ant.apache.org/manual/Tasks/echo.html - write file
+>
+>  ...or... just write a new one each time
+>
+
+  ...or... just use the ig.json as a data file or strip out the meta and or text and convert to yaml or not and use as the _config.yml file.
+
+  all the site variable are now available out of the box... :-)
+
+  to get parameter for list of name value pairs using liquid
+
+e.g.:   
+  code: path-resource  
+  value: source/examples
+~~~
+{% raw %}{% assign param = site.data.ig.definition.parameter \| where: "code", "path-resource" | first %}{{ param.value }}{% endraw %}
+~~~
+
   - build ig.xml via script using as input either:
      1. spreadsheet
      2. YAML  
