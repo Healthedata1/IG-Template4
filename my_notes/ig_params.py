@@ -17,19 +17,19 @@ ig_params = dict(  # note:change to '_' to '-' in serialized format
     codesystem_property = [], # your urls here, default = none
     html_exempt = [], # your masks that identifies specific HTML files exempt from having header / footer etc. here, default = name`
     extension_domain = [],  # your urls here, default = none
-    active_tables = False, # default = false
+    active_tables = False, # default = False
     ig_expansion_parameters = [], # broken
     special_url = [], # your urls here, default = none
     template_openapi = None, # your path here default = none
     template_html = None, # your path here, default = none
     template_md = None, # your path here, default = none
-    apply_contact = False, # default = false
-    apply_copyright = False, # default = false
-    apply_context = False, # default = false
-    apply_jurisdiction = False, # default = false
-    apply_license = False, # default = false
-    apply_publisher = False, # default = false
-    apply_version = False, # default = false
+    apply_contact = False, # default = False
+    apply_copyright = False, # default = False
+    apply_context = False, # default = False
+    apply_jurisdiction = False, # default = False
+    apply_license = False, # default = False
+    apply_publisher = False, # default = False
+    apply_version = False, # default = False
     validation = ['check-must-support','allow-any-extensions','check-aggregation', 'no-broken-links',
     'show-reference-messages'], #default = None
     copyrightyear ='2015+', # from ig.ini
@@ -165,6 +165,283 @@ ig_json = {
       {
         "id": "template-profile-spreadsheet.xml",
         "name": "Template-basic"
+      }
+    ],
+    "resource": [
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Basic"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Basic-diet.html"
+          }
+        ],
+        "reference": {
+          "reference": "Basic/diet"
+        },
+        "exampleBoolean": True
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Patient"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Patient-example.html"
+          }
+        ],
+        "reference": {
+          "reference": "Patient/example"
+        },
+        "exampleBoolean": True
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Patient"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Patient-example2.html"
+          }
+        ],
+        "reference": {
+          "reference": "Patient/example2"
+        },
+        "exampleBoolean": True
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-extension-complex.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/extension-complex"
+        },
+        "name": "Complex Extension",
+        "description": "an example of a complex extension.",
+        "exampleBoolean": False
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-extension-blah.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/extension-blah"
+        },
+        "name": "Simple Extension",
+        "description": "an example of a simple extension.",
+        "exampleBoolean": False
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "OperationDefinition"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "OperationDefinition-opdef-test.html"
+          }
+        ],
+        "reference": {
+          "reference": "OperationDefinition/opdef-test"
+        },
+        "description": "Limited implementation of the Populate Questionnaire implementation",
+        "exampleBoolean": False
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:complex-type"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-ifr.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/ifr"
+        },
+        "exampleBoolean": False
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ValueSet-bar-codes.html"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/bar-codes"
+        },
+        "name": "Bar Value Set",
+        "description": "A bunch of example codes",
+        "exampleBoolean": False
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CapabilityStatement"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "CapabilityStatement-server.html"
+          }
+        ],
+        "reference": {
+          "reference": "CapabilityStatement/server"
+        },
+        "description": "This resource defines the expected capabilities ",
+        "exampleBoolean": False
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "CodeSystem-blah-codes.html"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/blah-codes"
+        },
+        "description": "A bunch of example codes",
+        "exampleBoolean": False
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CapabilityStatement"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "CapabilityStatement-client.html"
+          }
+        ],
+        "reference": {
+          "reference": "CapabilityStatement/client"
+        },
+        "description": "This resource defines the expected capabilities ",
+        "exampleBoolean": False
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-template-profile-on-profile.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/template-profile-on-profile"
+        },
+        "name": "Template Profile on Profile",
+        "description": "Template-Profile-on-Profile",
+        "exampleBoolean": False
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ValueSet-foo-codes.html"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/foo-codes"
+        },
+        "name": "Foo Value Set",
+        "description": "A bunch of example codes",
+        "exampleBoolean": False
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-template-basic.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/template-basic"
+        },
+        "name": "Health eData Template Profile",
+        "description": "This is a simple example Template",
+        "exampleBoolean": False
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ValueSet-blah-codes.html"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/blah-codes"
+        },
+        "description": "A bunch of example codes",
+        "exampleBoolean": False
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-extension-blah2.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/extension-blah2"
+        },
+        "name": "blah2",
+        "description": "an example of a simple extension.",
+        "groupingId": "template-profile-spreadsheet.xml"
       }
     ],
     "page": {
@@ -335,12 +612,13 @@ ig_json = {
         "value": "http://www.fhir.org/guides/test4/history.html"
       },
       {
-        "code": "autoload_resources",
-        "value": "true"
+        "code": "foo",
+        "value": "bar"
       }
     ]
   }
 }
+
 
 ig_yml = y_dump(ig_json, Dumper=Dumper, sort_keys=False)
 print(ig_yml)
