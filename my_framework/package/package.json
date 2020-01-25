@@ -5,5 +5,5 @@
   "license": "CC0-1.0",
   "description": "Health eData Inc FHIR Test Template",
   "author": "mailto::healthedatainc.com",
-  "canonical": "http://www.fhir.org/guides/test4"
+  "canonical": "https://github.com/Healthedata1/hl7-ig-template/tree/IG4-Template"
 }

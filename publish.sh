@@ -22,7 +22,7 @@ echo '-w parameter for using watch on igpublisher from source default is off = '
 echo '-o parameter for running previous version of the igpublisher= ' $PUB
 echo '-p parameter for downloading latest version of the igpublisher from source = ' $UPDATE
 echo '-l parameter for downloading HL7 ig template from source = ' $LOAD_TEMPLATE
-echo '-u parameter for running from local test template file= ' $TEST_TEMPLATE
+echo '-u parameter for downloading test ig template from source or file= ' $TEST_TEMPLATE
 echo ' current directory =' $PWD
 echo "================================================================="
 echo getting rid of .DS_Store files since they gum up the igpublisher....
