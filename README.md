@@ -11,6 +11,7 @@ see https://wiki.hl7.org/FHIR_IG_publisher_templates
 
 **weird groupings generated as well?  keep base**
 
+1. load templates from git hub
 1. autoload_pages - test if pages load natively from directory that mimics the menu - no relative links get messed up.
 1. autoload resource into pages - file name based - tested and working well but doesn't become part of the data files so ig is incomplete.
     - need to add the spreadsheet extension for all spreadsheets though - by hand or by inspecting the directory
