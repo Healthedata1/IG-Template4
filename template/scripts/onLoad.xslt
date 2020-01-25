@@ -179,10 +179,6 @@
       <xsl:with-param name="code" select="'apply-version'"/>
       <xsl:with-param name="value" select="'true'"/>
     </xsl:call-template>
-    <xsl:call-template name="setParameter">
-      <xsl:with-param name="code" select="'active-tables'"/>
-      <xsl:with-param name="value" select="'true'"/>
-    </xsl:call-template>
   </xsl:template>
   <xsl:template name="setParameter">
     <xsl:param name="code"/>

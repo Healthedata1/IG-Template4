@@ -6,7 +6,7 @@
   <a name="root"> </a>
   <h2 id="root">{{site.data.pages[page.path].title}}</h2>
   <p>
-    <a href="{{[type]}}-{{[id]}}.html">(back to description)</a>
+    <a href="{{[id]}}.html">(back to narrative)</a>
   </p>
   <p>
     <a href="{{[type]}}-{{[id]}}.{{[fmt]}}">Raw {{[fmt]}}</a>
@@ -17,10 +17,6 @@
   {% include {{intro}} %}
   </div>
   {% endif %}
-  
-  <p>
-    <b>Source view</b>
-  </p>
   
   {% include {{[type]}}-{{[name]}}.xhtml %}
 
