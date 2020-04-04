@@ -2,13 +2,13 @@
     "resourceType": "Bundle",
     "id": "cdc-c19-groups-20200404070053493066",
     "type": "transaction",
-    "timestamp": "2020-04-04T07:00:53.208624Z",
+    "timestamp": "2020-04-04T08:42:39.946886Z",
     "entry": [
         {
-            "fullUrl": "urn:uuid:065d7ece-7642-11ea-be32-a4d18ccf5172",
+            "fullUrl": "urn:uuid:3e4d5bb6-7650-11ea-a7b5-a4d18ccf5172",
             "resource": {
                 "resourceType": "MeasureReport",
-                "id": "065d7ece-7642-11ea-be32-a4d18ccf5172",
+                "id": "3e4d5bb6-7650-11ea-a7b5-a4d18ccf5172",
                 "status": "complete",
                 "type": "individual",
                 "measure": "http://cdcmeasures.example.org/modules/covid19/20200331/numTotBeds",
@@ -16,14 +16,16 @@
                     "identifier": {
                         "system": "urn:oid:2.16.840.1.113883.6.277",
                         "value": "2.16.840.1.113883.6.277.123"
-                    }
+                    },
+                    "display": "Acme General Hospital"
                 },
-                "date": "2020-04-04T07:00:53.208624Z",
+                "date": "2020-04-04T08:42:39.946886Z",
                 "reporter": {
                     "identifier": {
                         "system": "urn:oid:2.16.840.1.113883.6.277",
                         "value": "2.16.840.1.113883.6.277.123"
-                    }
+                    },
+                    "display": "Acme General Hospital"
                 },
                 "period": {
                     "start": "2020-03-30",
@@ -215,10 +217,10 @@
             }
         },
         {
-            "fullUrl": "urn:uuid:06870a64-7642-11ea-be32-a4d18ccf5172",
+            "fullUrl": "urn:uuid:3e76683a-7650-11ea-a7b5-a4d18ccf5172",
             "resource": {
                 "resourceType": "MeasureReport",
-                "id": "06870a64-7642-11ea-be32-a4d18ccf5172",
+                "id": "3e76683a-7650-11ea-a7b5-a4d18ccf5172",
                 "status": "complete",
                 "type": "individual",
                 "measure": "http://cdcmeasures.example.org/modules/covid19/20200331/numTotBeds",
@@ -226,14 +228,16 @@
                     "identifier": {
                         "system": "urn:oid:2.16.840.1.113883.6.277",
                         "value": "2.16.840.1.113883.6.277.123"
-                    }
+                    },
+                    "display": "Acme General Hospital"
                 },
-                "date": "2020-04-04T07:00:53.208624Z",
+                "date": "2020-04-04T08:42:39.946886Z",
                 "reporter": {
                     "identifier": {
                         "system": "urn:oid:2.16.840.1.113883.6.277",
                         "value": "2.16.840.1.113883.6.277.123"
-                    }
+                    },
+                    "display": "Acme General Hospital"
                 },
                 "period": {
                     "start": "2020-03-31",
@@ -425,10 +429,10 @@
             }
         },
         {
-            "fullUrl": "urn:uuid:06b0840c-7642-11ea-be32-a4d18ccf5172",
+            "fullUrl": "urn:uuid:3e9dc312-7650-11ea-a7b5-a4d18ccf5172",
             "resource": {
                 "resourceType": "MeasureReport",
-                "id": "06b0840c-7642-11ea-be32-a4d18ccf5172",
+                "id": "3e9dc312-7650-11ea-a7b5-a4d18ccf5172",
                 "status": "complete",
                 "type": "individual",
                 "measure": "http://cdcmeasures.example.org/modules/covid19/20200331/numTotBeds",
@@ -436,14 +440,16 @@
                     "identifier": {
                         "system": "urn:oid:2.16.840.1.113883.6.277",
                         "value": "2.16.840.1.113883.6.277.123"
-                    }
+                    },
+                    "display": "Acme General Hospital"
                 },
-                "date": "2020-04-04T07:00:53.208624Z",
+                "date": "2020-04-04T08:42:39.946886Z",
                 "reporter": {
                     "identifier": {
                         "system": "urn:oid:2.16.840.1.113883.6.277",
                         "value": "2.16.840.1.113883.6.277.123"
-                    }
+                    },
+                    "display": "Acme General Hospital"
                 },
                 "period": {
                     "start": "2020-04-01",
@@ -635,10 +641,10 @@
             }
         },
         {
-            "fullUrl": "urn:uuid:06dc071c-7642-11ea-be32-a4d18ccf5172",
+            "fullUrl": "urn:uuid:3ec5f90e-7650-11ea-a7b5-a4d18ccf5172",
             "resource": {
                 "resourceType": "MeasureReport",
-                "id": "06dc071c-7642-11ea-be32-a4d18ccf5172",
+                "id": "3ec5f90e-7650-11ea-a7b5-a4d18ccf5172",
                 "status": "complete",
                 "type": "individual",
                 "measure": "http://cdcmeasures.example.org/modules/covid19/20200331/numTotBeds",
@@ -646,14 +652,16 @@
                     "identifier": {
                         "system": "urn:oid:2.16.840.1.113883.6.277",
                         "value": "2.16.840.1.113883.6.277.123"
-                    }
+                    },
+                    "display": "Acme General Hospital"
                 },
-                "date": "2020-04-04T07:00:53.208624Z",
+                "date": "2020-04-04T08:42:39.946886Z",
                 "reporter": {
                     "identifier": {
                         "system": "urn:oid:2.16.840.1.113883.6.277",
                         "value": "2.16.840.1.113883.6.277.123"
-                    }
+                    },
+                    "display": "Acme General Hospital"
                 },
                 "period": {
                     "start": "2020-04-02",
@@ -845,10 +853,10 @@
             }
         },
         {
-            "fullUrl": "urn:uuid:07061d9a-7642-11ea-be32-a4d18ccf5172",
+            "fullUrl": "urn:uuid:3eef335a-7650-11ea-a7b5-a4d18ccf5172",
             "resource": {
                 "resourceType": "MeasureReport",
-                "id": "07061d9a-7642-11ea-be32-a4d18ccf5172",
+                "id": "3eef335a-7650-11ea-a7b5-a4d18ccf5172",
                 "status": "complete",
                 "type": "individual",
                 "measure": "http://cdcmeasures.example.org/modules/covid19/20200331/numTotBeds",
@@ -856,14 +864,16 @@
                     "identifier": {
                         "system": "urn:oid:2.16.840.1.113883.6.277",
                         "value": "2.16.840.1.113883.6.277.123"
-                    }
+                    },
+                    "display": "Acme General Hospital"
                 },
-                "date": "2020-04-04T07:00:53.208624Z",
+                "date": "2020-04-04T08:42:39.946886Z",
                 "reporter": {
                     "identifier": {
                         "system": "urn:oid:2.16.840.1.113883.6.277",
                         "value": "2.16.840.1.113883.6.277.123"
-                    }
+                    },
+                    "display": "Acme General Hospital"
                 },
                 "period": {
                     "start": "2020-04-03",
@@ -1055,10 +1065,10 @@
             }
         },
         {
-            "fullUrl": "urn:uuid:072ed33e-7642-11ea-be32-a4d18ccf5172",
+            "fullUrl": "urn:uuid:3f169076-7650-11ea-a7b5-a4d18ccf5172",
             "resource": {
                 "resourceType": "MeasureReport",
-                "id": "072ed33e-7642-11ea-be32-a4d18ccf5172",
+                "id": "3f169076-7650-11ea-a7b5-a4d18ccf5172",
                 "status": "complete",
                 "type": "individual",
                 "measure": "http://cdcmeasures.example.org/modules/covid19/20200331/numTotBeds",
@@ -1066,14 +1076,16 @@
                     "identifier": {
                         "system": "urn:oid:2.16.840.1.113883.6.277",
                         "value": "2.16.840.1.113883.6.277.123"
-                    }
+                    },
+                    "display": "Acme General Hospital"
                 },
-                "date": "2020-04-04T07:00:53.208624Z",
+                "date": "2020-04-04T08:42:39.946886Z",
                 "reporter": {
                     "identifier": {
                         "system": "urn:oid:2.16.840.1.113883.6.277",
                         "value": "2.16.840.1.113883.6.277.123"
-                    }
+                    },
+                    "display": "Acme General Hospital"
                 },
                 "period": {
                     "start": "2020-04-04",
@@ -1265,10 +1277,10 @@
             }
         },
         {
-            "fullUrl": "urn:uuid:075c4fb2-7642-11ea-be32-a4d18ccf5172",
+            "fullUrl": "urn:uuid:3f3f35d0-7650-11ea-a7b5-a4d18ccf5172",
             "resource": {
                 "resourceType": "MeasureReport",
-                "id": "075c4fb2-7642-11ea-be32-a4d18ccf5172",
+                "id": "3f3f35d0-7650-11ea-a7b5-a4d18ccf5172",
                 "status": "complete",
                 "type": "individual",
                 "measure": "http://cdcmeasures.example.org/modules/covid19/20200331/numTotBeds",
@@ -1276,14 +1288,16 @@
                     "identifier": {
                         "system": "urn:oid:2.16.840.1.113883.6.277",
                         "value": "2.16.840.1.113883.6.277.123"
-                    }
+                    },
+                    "display": "Acme General Hospital"
                 },
-                "date": "2020-04-04T07:00:53.208624Z",
+                "date": "2020-04-04T08:42:39.946886Z",
                 "reporter": {
                     "identifier": {
                         "system": "urn:oid:2.16.840.1.113883.6.277",
                         "value": "2.16.840.1.113883.6.277.123"
-                    }
+                    },
+                    "display": "Acme General Hospital"
                 },
                 "period": {
                     "start": "2020-04-05",
@@ -1475,10 +1489,10 @@
             }
         },
         {
-            "fullUrl": "urn:uuid:07866220-7642-11ea-be32-a4d18ccf5172",
+            "fullUrl": "urn:uuid:3f6563c2-7650-11ea-a7b5-a4d18ccf5172",
             "resource": {
                 "resourceType": "MeasureReport",
-                "id": "07866220-7642-11ea-be32-a4d18ccf5172",
+                "id": "3f6563c2-7650-11ea-a7b5-a4d18ccf5172",
                 "status": "complete",
                 "type": "individual",
                 "measure": "http://cdcmeasures.example.org/modules/covid19/20200331/numTotBeds",
@@ -1486,14 +1500,16 @@
                     "identifier": {
                         "system": "urn:oid:2.16.840.1.113883.6.277",
                         "value": "2.16.840.1.113883.6.277.123"
-                    }
+                    },
+                    "display": "Acme General Hospital"
                 },
-                "date": "2020-04-04T07:00:53.208624Z",
+                "date": "2020-04-04T08:42:39.946886Z",
                 "reporter": {
                     "identifier": {
                         "system": "urn:oid:2.16.840.1.113883.6.277",
                         "value": "2.16.840.1.113883.6.277.123"
-                    }
+                    },
+                    "display": "Acme General Hospital"
                 },
                 "period": {
                     "start": "2020-04-06",

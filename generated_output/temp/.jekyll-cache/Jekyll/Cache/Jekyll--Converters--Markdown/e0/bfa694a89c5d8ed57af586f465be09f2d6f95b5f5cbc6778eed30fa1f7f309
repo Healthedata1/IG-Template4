@@ -86,7 +86,7 @@ We can replace them directly with the data from the ImplementationGuide Resource
         </ul>
       </li>
       <li>
-        <p>errorCount : number of errors in the build file (not including HTML validation errors) -   {{site.data.fhir.errorCount}}  = 593</p>
+        <p>errorCount : number of errors in the build file (not including HTML validation errors) -   {{site.data.fhir.errorCount}}  = 664</p>
       </li>
       <li>
         <p>version : version of FHIR -   {{site.data.fhir.version}}  = 4.0.1</p>
@@ -104,7 +104,7 @@ We can replace them directly with the data from the ImplementationGuide Resource
         <p>processedFiles : number of files genrated by the build -   {{site.data.fhir.processedFiles}}  = 14</p>
       </li>
       <li>
-        <p>genDate : date of generation (so date stamps in the pages can match those in the conformance resources) -   {{site.data.fhir.genDate}}  = Sat, Apr 4, 2020 01:29-0700</p>
+        <p>genDate : date of generation (so date stamps in the pages can match those in the conformance resources) -   {{site.data.fhir.genDate}}  = Sat, Apr 4, 2020 01:52-0700</p>
       </li>
     </ul>
 
@@ -164,7 +164,7 @@ We can replace them directly with the data from the ImplementationGuide Resource
         </ul>
       </li>
       <li>
-        <p><em>this is still the only way</em> errorCount : number of errors in the build file (not including HTML validation errors) -   {{site.data.fhir.errorCount}}  = 593</p>
+        <p><em>this is still the only way</em> errorCount : number of errors in the build file (not including HTML validation errors) -   {{site.data.fhir.errorCount}}  = 664</p>
       </li>
       <li>
         <p>version : version of FHIR -   {{site.data.ig.fhirVersion}}  = 4.0.1</p>
@@ -182,7 +182,7 @@ We can replace them directly with the data from the ImplementationGuide Resource
         <p><em>this is still the only way</em> processedFiles : number of files genrated by the build -   {{site.data.fhir.processedFiles}}  = 14</p>
       </li>
       <li>
-        <p><em>this is still the only way</em> genDate : date of generation (so date stamps in the pages can match those in the conformance resources) -   {{site.data.fhir.genDate}}  = Sat, Apr 4, 2020 01:29-0700</p>
+        <p><em>this is still the only way</em> genDate : date of generation (so date stamps in the pages can match those in the conformance resources) -   {{site.data.fhir.genDate}}  = Sat, Apr 4, 2020 01:52-0700</p>
       </li>
     </ul>
 
