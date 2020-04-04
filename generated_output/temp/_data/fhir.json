@@ -4,17 +4,17 @@
   "igId": "healthedatainc.ig-template4",
   "igName": "IGTest4",
   "packageId": "healthedatainc.ig-template4",
-  "errorCount": 50,
+  "errorCount": 664,
   "version": "4.0.1",
   "revision": "a53ec6ee1b",
   "versionFull": "4.0.1-a53ec6ee1b",
   "toolingVersion": "4.2.0",
   "toolingRevision": "3",
   "toolingVersionFull": "4.2.0 (3)",
-  "totalFiles": 14,
-  "processedFiles": 91,
-  "genDate": "Fri, Jan 24, 2020 17:26-0800",
-  "genDay": "24/01/2020",
+  "totalFiles": 17,
+  "processedFiles": 14,
+  "genDate": "Sat, Apr 4, 2020 00:58-0700",
+  "genDay": "04/04/2020",
   "ig": {
     "id": "healthedatainc.ig-template4",
     "name": "IGTest4",
@@ -24,6 +24,7 @@
     "status": "draft",
     "experimental": false,
     "publisher": "Health eData Inc",
+    "gitstatus": "jkl-branch",
     "contact": [
       {
         "telecom": [

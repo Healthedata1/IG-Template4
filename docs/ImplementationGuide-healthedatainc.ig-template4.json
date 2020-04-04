@@ -61,6 +61,73 @@
     }
   ],
   "definition": {
+    "extension": [
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "path-qa"
+          },
+          {
+            "url": "value",
+            "valueString": "generated_output/qa"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "path-temp"
+          },
+          {
+            "url": "value",
+            "valueString": "generated_output/temp"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "path-output"
+          },
+          {
+            "url": "value",
+            "valueString": "docs"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "path-history"
+          },
+          {
+            "url": "value",
+            "valueString": "http://www.fhir.org/guides/test4/history.html"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "foo"
+          },
+          {
+            "url": "value",
+            "valueString": "bar"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      }
+    ],
     "grouping": [
       {
         "name": "base"
@@ -128,6 +195,68 @@
         ],
         "reference": {
           "reference": "Patient/example2"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Measure"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Measure-cdc-covid.html"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Measure-cdc-covid.html"
+          }
+        ],
+        "reference": {
+          "reference": "Measure/cdc-covid"
+        },
+        "name": "COVID-19 Patient Impact & Hospital Capacity",
+        "description": "CDC, NHSN COVID-19 Patient Impact & Hospital Capacity Hospital Bed/ICU/Ventilator Capacity. The Centers for Disease Control and Prevention’s (CDC’s) National Healthcare Safety Network (NHSN) is supporting the nation’s COVID-19 response by introducing a new COVID-19 Patient Impact and Hospital Capacity Module within NHSN’s Patient Safety Component. https://www.cdc.gov/nhsn/acute-care-hospital/covid19/index.html",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MeasureReport"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "MeasureReport-ca620d2a-7639-11ea-be32-a4d18ccf5172.html"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "MeasureReport-ca620d2a-7639-11ea-be32-a4d18ccf5172.html"
+          }
+        ],
+        "reference": {
+          "reference": "MeasureReport/ca620d2a-7639-11ea-be32-a4d18ccf5172"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Bundle"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Bundle-cdc-c19-groups-20200404070053493066.html"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Bundle-cdc-c19-groups-20200404070053493066.html"
+          }
+        ],
+        "reference": {
+          "reference": "Bundle/cdc-c19-groups-20200404070053493066"
         },
         "exampleBoolean": true
       },
@@ -559,28 +688,8 @@
         "value": "template/content/pages"
       },
       {
-        "code": "path-qa",
-        "value": "generated_output/qa"
-      },
-      {
-        "code": "path-temp",
-        "value": "generated_output/temp"
-      },
-      {
         "code": "path-tx-cache",
         "value": "generated_output/txCache"
-      },
-      {
-        "code": "path-output",
-        "value": "docs"
-      },
-      {
-        "code": "path-history",
-        "value": "http://www.fhir.org/guides/test4/history.html"
-      },
-      {
-        "code": "foo",
-        "value": "bar"
       }
     ]
   }

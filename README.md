@@ -11,7 +11,7 @@ see https://wiki.hl7.org/FHIR_IG_publisher_templates
 
 **weird groupings generated as well?  keep base**
 
-1. load templates from git hub
+1. load templates from git hub - asking how in Zulip.
 1. autoload_pages - test if pages load natively from directory that mimics the menu - no relative links get messed up.
 1. autoload resource into pages - file name based - tested and working well but doesn't become part of the data files so ig is incomplete.
     - need to add the spreadsheet extension for all spreadsheets though - by hand or by inspecting the directory
@@ -30,6 +30,9 @@ Generate IG resources and pages before run
 1. menu should have fixed and variable parts. - done see below
    -  use yaml file to define menu. variable parts of it?
 1. Test with various IGs
+  - Notifications
+  - Us Core
+  - SDC
 1. fix markdown friendly images in lloyd's template
    - issue with not following boot strap and spurious tags - discuss
 1. add logo variable - done

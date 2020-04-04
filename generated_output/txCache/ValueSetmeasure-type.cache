@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://hl7.org/fhir/ValueSet/measure-type",
+  "code" : "structure"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://hl7.org/fhir/ValueSet/measure-type\" is not known (encountered paired with code = \"structure\"); The code provided (http://hl7.org/fhir/ValueSet/measure-type#structure) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------

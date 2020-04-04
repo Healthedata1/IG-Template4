@@ -1,0 +1,44 @@
+{
+   "defaults":{
+      "_documentation":"this object contains the default publishing policy for different types. Anything not mentioned i.e. not a conformance resource defaults to true",
+      "Any":{
+         "template-base":"template/templates/ex.html",
+         "template-format":"template/templates/format.html"
+      },
+      "CapabilityStatement":{
+         "template-base":"template/templates/base.html"
+      },
+      "CodeSystem":{
+         "template-base":"template/templates/base.html"
+      },
+      "ConceptMap":{
+         "template-base":"template/templates/base.html"
+      },
+      "GraphDefinition":{
+         "template-base":"template/templates/base.html"
+      },
+      "MessageDefinition":{
+         "template-base":"template/templates/base.html"
+      },
+      "OperationDefinition":{
+         "template-base":"template/templates/base.html"
+      },
+      "SearchParameter":{
+         "template-base":"template/templates/base.html"
+      },
+      "StructureDefinition":{
+         "template-base":"template/templates/sd.html",
+         "template-defns":"template/templates/sd-definitions.html",
+         "template-mappings":"template/templates/sd-mappings.html"
+      },
+      "StructureMap":{
+         "templates":false,
+         "profiles":false,
+         "script":false,
+         "template-base":"template/templates/ex.html"
+      },
+      "ValueSet":{
+         "template-base":"template/templates/base.html"
+      }
+   }
+}
