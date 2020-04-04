@@ -1,0 +1,2201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="e71b50b3-2fa4-400f-bf2b-87cadd3abb45"/>
+  <meta>
+    <lastUpdated value="2020-04-04T01:31:38.319-07:00"/>
+  </meta>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="http://www.fhir.org/guides/test4/ValueSet/bar-codes"/>
+    <resource>
+      <ValueSet>
+        <id value="bar-codes"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 1 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px"/>Expansion based on http://www.fhir.org/guides/test4/CodeSystem/blah-codes version 0.0.0
+            <p>All codes from system 
+              <a href="CodeSystem/blah-codes.html">
+                <code>http://www.fhir.org/guides/test4/CodeSystem/blah-codes</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.fhir.org-guides-test4-CodeSystem-blah-codes-bar"> </a>
+                  <a href="CodeSystem/blah-codes.html#blah-codes-bar">bar</a>
+                </td>
+                <td>Bar</td>
+                <td>example code 3</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://www.fhir.org/guides/test4/ValueSet/bar-codes"/>
+        <version value="0.0.0"/>
+        <name value="BarCodes"/>
+        <title value="Bar Value Set"/>
+        <status value="draft"/>
+        <date value="2019-03-13T08:16:34-07:00"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+          </telecom>
+        </contact>
+        <description value="A bunch of example codes"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+          </coding>
+        </jurisdiction>
+        <immutable value="true"/>
+        <copyright value="markdown link: [American Medical Association](https://www.ama-assn.org/)&#xA;&#xA;  use &amp;#xA; to create a new line for markdown.. markdown new paragraph: All rights reserved. This value set includes content from SNOMED CT, which is copyright &#xA9; 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement&#xA;&#xA;  ## header2&#xA;  ### header3&#xA;  ### header4 &#xA; *emphasis* &#xA; **bold** &#xA; unordered markdown list:&#xA; - list 1&#xA; - list 2&#xA;&#xA;  ordered markdown list:&#xA; 1. list1&#xA; 1. list2"/>
+        <expansion>
+          <identifier value="urn:uuid:649bd305-69bc-4819-bb79-ae3dd06b84da"/>
+          <timestamp value="2020-04-04T01:28:23-07:00"/>
+          <total value="1"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://www.fhir.org/guides/test4/CodeSystem/blah-codes|0.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://www.fhir.org/guides/test4/CodeSystem/blah-codes"/>
+            <code value="bar"/>
+            <display value="Bar"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://www.fhir.org/guides/test4/ValueSet/foo-codes"/>
+    <resource>
+      <ValueSet>
+        <id value="foo-codes"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 1 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px"/>Expansion based on http://www.fhir.org/guides/test4/CodeSystem/blah-codes version 0.0.0
+            <p>All codes from system 
+              <a href="CodeSystem/blah-codes.html">
+                <code>http://www.fhir.org/guides/test4/CodeSystem/blah-codes</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.fhir.org-guides-test4-CodeSystem-blah-codes-foo"> </a>
+                  <a href="CodeSystem/blah-codes.html#blah-codes-foo">foo</a>
+                </td>
+                <td>Foo</td>
+                <td>example code 2</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://www.fhir.org/guides/test4/ValueSet/foo-codes"/>
+        <version value="0.0.0"/>
+        <name value="FooCodes"/>
+        <title value="Foo Value Set"/>
+        <status value="draft"/>
+        <date value="2019-03-13T08:16:34-07:00"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+          </telecom>
+        </contact>
+        <description value="A bunch of example codes"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+          </coding>
+        </jurisdiction>
+        <immutable value="true"/>
+        <copyright value="markdown link: [American Medical Association](https://www.ama-assn.org/)  markdown new paragraph: All rights reserved. This value set includes content from SNOMED CT, which is copyright &#xA9; 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement  ## header2 ### header3 ### header4  *emphasis*  **bold**  markdown list: - list 1 - list 2  1. list1 1. list2"/>
+        <expansion>
+          <identifier value="urn:uuid:e1b267d4-a33b-47c3-855d-e386c60e4ca1"/>
+          <timestamp value="2020-04-04T01:28:23-07:00"/>
+          <total value="1"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://www.fhir.org/guides/test4/CodeSystem/blah-codes|0.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://www.fhir.org/guides/test4/CodeSystem/blah-codes"/>
+            <code value="foo"/>
+            <display value="Foo"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://www.fhir.org/guides/test4/ValueSet/blah-codes"/>
+    <resource>
+      <ValueSet>
+        <id value="blah-codes"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 3 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px"/>Expansion based on http://www.fhir.org/guides/test4/CodeSystem/blah-codes version 0.0.0
+            <p>All codes from system 
+              <a href="CodeSystem/blah-codes.html">
+                <code>http://www.fhir.org/guides/test4/CodeSystem/blah-codes</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.fhir.org-guides-test4-CodeSystem-blah-codes-blah"> </a>
+                  <a href="CodeSystem/blah-codes.html#blah-codes-blah">blah</a>
+                </td>
+                <td>Blah</td>
+                <td>example code 1</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.fhir.org-guides-test4-CodeSystem-blah-codes-foo"> </a>
+                  <a href="CodeSystem/blah-codes.html#blah-codes-foo">foo</a>
+                </td>
+                <td>Foo</td>
+                <td>example code 2</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.fhir.org-guides-test4-CodeSystem-blah-codes-bar"> </a>
+                  <a href="CodeSystem/blah-codes.html#blah-codes-bar">bar</a>
+                </td>
+                <td>Bar</td>
+                <td>example code 3</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://www.fhir.org/guides/test4/ValueSet/blah-codes"/>
+        <version value="0.0.0"/>
+        <name value="BlahCodes"/>
+        <status value="draft"/>
+        <date value="2018-03-13T08:16:34-07:00"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+          </telecom>
+        </contact>
+        <description value="A bunch of example codes"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+          </coding>
+        </jurisdiction>
+        <immutable value="true"/>
+        <copyright value="markdown link: [American Medical Association](https://www.ama-assn.org/)  markdown new paragraph: All rights reserved. This value set includes content from SNOMED CT, which is copyright &#xA9; 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement  ## header2 ### header3 ### header4  *emphasis*  **bold**  markdown list: - list 1 - list 2  1. list1 1. list2"/>
+        <expansion>
+          <identifier value="urn:uuid:72aa83ea-727f-47b5-be4c-f17fd170aad7"/>
+          <timestamp value="2020-04-04T01:28:23-07:00"/>
+          <total value="3"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://www.fhir.org/guides/test4/CodeSystem/blah-codes|0.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://www.fhir.org/guides/test4/CodeSystem/blah-codes"/>
+            <code value="blah"/>
+            <display value="Blah"/>
+          </contains>
+          <contains>
+            <system value="http://www.fhir.org/guides/test4/CodeSystem/blah-codes"/>
+            <code value="foo"/>
+            <display value="Foo"/>
+          </contains>
+          <contains>
+            <system value="http://www.fhir.org/guides/test4/CodeSystem/blah-codes"/>
+            <code value="bar"/>
+            <display value="Bar"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://www.fhir.org/guides/test4/ValueSet/bar-codes"/>
+    <resource>
+      <ValueSet>
+        <id value="bar-codes"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 1 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px"/>Expansion based on http://www.fhir.org/guides/test4/CodeSystem/blah-codes version 0.0.0
+            <p>All codes from system 
+              <a href="CodeSystem/blah-codes.html">
+                <code>http://www.fhir.org/guides/test4/CodeSystem/blah-codes</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.fhir.org-guides-test4-CodeSystem-blah-codes-bar"> </a>
+                  <a href="CodeSystem/blah-codes.html#blah-codes-bar">bar</a>
+                </td>
+                <td>Bar</td>
+                <td>example code 3</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://www.fhir.org/guides/test4/ValueSet/bar-codes"/>
+        <version value="0.0.0"/>
+        <name value="BarCodes"/>
+        <title value="Bar Value Set"/>
+        <status value="draft"/>
+        <date value="2019-03-13T08:16:34-07:00"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+          </telecom>
+        </contact>
+        <description value="A bunch of example codes"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+          </coding>
+        </jurisdiction>
+        <immutable value="true"/>
+        <copyright value="markdown link: [American Medical Association](https://www.ama-assn.org/)&#xA;&#xA;  use &amp;#xA; to create a new line for markdown.. markdown new paragraph: All rights reserved. This value set includes content from SNOMED CT, which is copyright &#xA9; 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement&#xA;&#xA;  ## header2&#xA;  ### header3&#xA;  ### header4 &#xA; *emphasis* &#xA; **bold** &#xA; unordered markdown list:&#xA; - list 1&#xA; - list 2&#xA;&#xA;  ordered markdown list:&#xA; 1. list1&#xA; 1. list2"/>
+        <expansion>
+          <identifier value="urn:uuid:649bd305-69bc-4819-bb79-ae3dd06b84da"/>
+          <timestamp value="2020-04-04T01:28:23-07:00"/>
+          <total value="1"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://www.fhir.org/guides/test4/CodeSystem/blah-codes|0.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://www.fhir.org/guides/test4/CodeSystem/blah-codes"/>
+            <code value="bar"/>
+            <display value="Bar"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://www.fhir.org/guides/test4/ValueSet/foo-codes"/>
+    <resource>
+      <ValueSet>
+        <id value="foo-codes"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 1 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px"/>Expansion based on http://www.fhir.org/guides/test4/CodeSystem/blah-codes version 0.0.0
+            <p>All codes from system 
+              <a href="CodeSystem/blah-codes.html">
+                <code>http://www.fhir.org/guides/test4/CodeSystem/blah-codes</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.fhir.org-guides-test4-CodeSystem-blah-codes-foo"> </a>
+                  <a href="CodeSystem/blah-codes.html#blah-codes-foo">foo</a>
+                </td>
+                <td>Foo</td>
+                <td>example code 2</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://www.fhir.org/guides/test4/ValueSet/foo-codes"/>
+        <version value="0.0.0"/>
+        <name value="FooCodes"/>
+        <title value="Foo Value Set"/>
+        <status value="draft"/>
+        <date value="2019-03-13T08:16:34-07:00"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+          </telecom>
+        </contact>
+        <description value="A bunch of example codes"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+          </coding>
+        </jurisdiction>
+        <immutable value="true"/>
+        <copyright value="markdown link: [American Medical Association](https://www.ama-assn.org/)  markdown new paragraph: All rights reserved. This value set includes content from SNOMED CT, which is copyright &#xA9; 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement  ## header2 ### header3 ### header4  *emphasis*  **bold**  markdown list: - list 1 - list 2  1. list1 1. list2"/>
+        <expansion>
+          <identifier value="urn:uuid:e1b267d4-a33b-47c3-855d-e386c60e4ca1"/>
+          <timestamp value="2020-04-04T01:28:23-07:00"/>
+          <total value="1"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://www.fhir.org/guides/test4/CodeSystem/blah-codes|0.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://www.fhir.org/guides/test4/CodeSystem/blah-codes"/>
+            <code value="foo"/>
+            <display value="Foo"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://www.fhir.org/guides/test4/ValueSet/blah-codes"/>
+    <resource>
+      <ValueSet>
+        <id value="blah-codes"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 3 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px"/>Expansion based on http://www.fhir.org/guides/test4/CodeSystem/blah-codes version 0.0.0
+            <p>All codes from system 
+              <a href="CodeSystem/blah-codes.html">
+                <code>http://www.fhir.org/guides/test4/CodeSystem/blah-codes</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.fhir.org-guides-test4-CodeSystem-blah-codes-blah"> </a>
+                  <a href="CodeSystem/blah-codes.html#blah-codes-blah">blah</a>
+                </td>
+                <td>Blah</td>
+                <td>example code 1</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.fhir.org-guides-test4-CodeSystem-blah-codes-foo"> </a>
+                  <a href="CodeSystem/blah-codes.html#blah-codes-foo">foo</a>
+                </td>
+                <td>Foo</td>
+                <td>example code 2</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.fhir.org-guides-test4-CodeSystem-blah-codes-bar"> </a>
+                  <a href="CodeSystem/blah-codes.html#blah-codes-bar">bar</a>
+                </td>
+                <td>Bar</td>
+                <td>example code 3</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://www.fhir.org/guides/test4/ValueSet/blah-codes"/>
+        <version value="0.0.0"/>
+        <name value="BlahCodes"/>
+        <status value="draft"/>
+        <date value="2018-03-13T08:16:34-07:00"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+          </telecom>
+        </contact>
+        <description value="A bunch of example codes"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+          </coding>
+        </jurisdiction>
+        <immutable value="true"/>
+        <copyright value="markdown link: [American Medical Association](https://www.ama-assn.org/)  markdown new paragraph: All rights reserved. This value set includes content from SNOMED CT, which is copyright &#xA9; 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement  ## header2 ### header3 ### header4  *emphasis*  **bold**  markdown list: - list 1 - list 2  1. list1 1. list2"/>
+        <expansion>
+          <identifier value="urn:uuid:72aa83ea-727f-47b5-be4c-f17fd170aad7"/>
+          <timestamp value="2020-04-04T01:28:23-07:00"/>
+          <total value="3"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://www.fhir.org/guides/test4/CodeSystem/blah-codes|0.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://www.fhir.org/guides/test4/CodeSystem/blah-codes"/>
+            <code value="blah"/>
+            <display value="Blah"/>
+          </contains>
+          <contains>
+            <system value="http://www.fhir.org/guides/test4/CodeSystem/blah-codes"/>
+            <code value="foo"/>
+            <display value="Foo"/>
+          </contains>
+          <contains>
+            <system value="http://www.fhir.org/guides/test4/CodeSystem/blah-codes"/>
+            <code value="bar"/>
+            <display value="Bar"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://www.fhir.org/guides/test4/ValueSet/bar-codes"/>
+    <resource>
+      <ValueSet>
+        <id value="bar-codes"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 1 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px"/>Expansion based on http://www.fhir.org/guides/test4/CodeSystem/blah-codes version 0.0.0
+            <p>All codes from system 
+              <a href="CodeSystem/blah-codes.html">
+                <code>http://www.fhir.org/guides/test4/CodeSystem/blah-codes</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.fhir.org-guides-test4-CodeSystem-blah-codes-bar"> </a>
+                  <a href="CodeSystem/blah-codes.html#blah-codes-bar">bar</a>
+                </td>
+                <td>Bar</td>
+                <td>example code 3</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://www.fhir.org/guides/test4/ValueSet/bar-codes"/>
+        <version value="0.0.0"/>
+        <name value="BarCodes"/>
+        <title value="Bar Value Set"/>
+        <status value="draft"/>
+        <date value="2019-03-13T08:16:34-07:00"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+          </telecom>
+        </contact>
+        <description value="A bunch of example codes"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+          </coding>
+        </jurisdiction>
+        <immutable value="true"/>
+        <copyright value="markdown link: [American Medical Association](https://www.ama-assn.org/)&#xA;&#xA;  use &amp;#xA; to create a new line for markdown.. markdown new paragraph: All rights reserved. This value set includes content from SNOMED CT, which is copyright &#xA9; 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement&#xA;&#xA;  ## header2&#xA;  ### header3&#xA;  ### header4 &#xA; *emphasis* &#xA; **bold** &#xA; unordered markdown list:&#xA; - list 1&#xA; - list 2&#xA;&#xA;  ordered markdown list:&#xA; 1. list1&#xA; 1. list2"/>
+        <expansion>
+          <identifier value="urn:uuid:649bd305-69bc-4819-bb79-ae3dd06b84da"/>
+          <timestamp value="2020-04-04T01:28:23-07:00"/>
+          <total value="1"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://www.fhir.org/guides/test4/CodeSystem/blah-codes|0.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://www.fhir.org/guides/test4/CodeSystem/blah-codes"/>
+            <code value="bar"/>
+            <display value="Bar"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://www.fhir.org/guides/test4/ValueSet/foo-codes"/>
+    <resource>
+      <ValueSet>
+        <id value="foo-codes"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 1 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px"/>Expansion based on http://www.fhir.org/guides/test4/CodeSystem/blah-codes version 0.0.0
+            <p>All codes from system 
+              <a href="CodeSystem/blah-codes.html">
+                <code>http://www.fhir.org/guides/test4/CodeSystem/blah-codes</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.fhir.org-guides-test4-CodeSystem-blah-codes-foo"> </a>
+                  <a href="CodeSystem/blah-codes.html#blah-codes-foo">foo</a>
+                </td>
+                <td>Foo</td>
+                <td>example code 2</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://www.fhir.org/guides/test4/ValueSet/foo-codes"/>
+        <version value="0.0.0"/>
+        <name value="FooCodes"/>
+        <title value="Foo Value Set"/>
+        <status value="draft"/>
+        <date value="2019-03-13T08:16:34-07:00"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+          </telecom>
+        </contact>
+        <description value="A bunch of example codes"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+          </coding>
+        </jurisdiction>
+        <immutable value="true"/>
+        <copyright value="markdown link: [American Medical Association](https://www.ama-assn.org/)  markdown new paragraph: All rights reserved. This value set includes content from SNOMED CT, which is copyright &#xA9; 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement  ## header2 ### header3 ### header4  *emphasis*  **bold**  markdown list: - list 1 - list 2  1. list1 1. list2"/>
+        <expansion>
+          <identifier value="urn:uuid:e1b267d4-a33b-47c3-855d-e386c60e4ca1"/>
+          <timestamp value="2020-04-04T01:28:23-07:00"/>
+          <total value="1"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://www.fhir.org/guides/test4/CodeSystem/blah-codes|0.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://www.fhir.org/guides/test4/CodeSystem/blah-codes"/>
+            <code value="foo"/>
+            <display value="Foo"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://www.fhir.org/guides/test4/ValueSet/blah-codes"/>
+    <resource>
+      <ValueSet>
+        <id value="blah-codes"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 3 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px"/>Expansion based on http://www.fhir.org/guides/test4/CodeSystem/blah-codes version 0.0.0
+            <p>All codes from system 
+              <a href="CodeSystem/blah-codes.html">
+                <code>http://www.fhir.org/guides/test4/CodeSystem/blah-codes</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.fhir.org-guides-test4-CodeSystem-blah-codes-blah"> </a>
+                  <a href="CodeSystem/blah-codes.html#blah-codes-blah">blah</a>
+                </td>
+                <td>Blah</td>
+                <td>example code 1</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.fhir.org-guides-test4-CodeSystem-blah-codes-foo"> </a>
+                  <a href="CodeSystem/blah-codes.html#blah-codes-foo">foo</a>
+                </td>
+                <td>Foo</td>
+                <td>example code 2</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.fhir.org-guides-test4-CodeSystem-blah-codes-bar"> </a>
+                  <a href="CodeSystem/blah-codes.html#blah-codes-bar">bar</a>
+                </td>
+                <td>Bar</td>
+                <td>example code 3</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://www.fhir.org/guides/test4/ValueSet/blah-codes"/>
+        <version value="0.0.0"/>
+        <name value="BlahCodes"/>
+        <status value="draft"/>
+        <date value="2018-03-13T08:16:34-07:00"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+          </telecom>
+        </contact>
+        <description value="A bunch of example codes"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+          </coding>
+        </jurisdiction>
+        <immutable value="true"/>
+        <copyright value="markdown link: [American Medical Association](https://www.ama-assn.org/)  markdown new paragraph: All rights reserved. This value set includes content from SNOMED CT, which is copyright &#xA9; 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement  ## header2 ### header3 ### header4  *emphasis*  **bold**  markdown list: - list 1 - list 2  1. list1 1. list2"/>
+        <expansion>
+          <identifier value="urn:uuid:72aa83ea-727f-47b5-be4c-f17fd170aad7"/>
+          <timestamp value="2020-04-04T01:28:23-07:00"/>
+          <total value="3"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://www.fhir.org/guides/test4/CodeSystem/blah-codes|0.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://www.fhir.org/guides/test4/CodeSystem/blah-codes"/>
+            <code value="blah"/>
+            <display value="Blah"/>
+          </contains>
+          <contains>
+            <system value="http://www.fhir.org/guides/test4/CodeSystem/blah-codes"/>
+            <code value="foo"/>
+            <display value="Foo"/>
+          </contains>
+          <contains>
+            <system value="http://www.fhir.org/guides/test4/CodeSystem/blah-codes"/>
+            <code value="bar"/>
+            <display value="Bar"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://www.fhir.org/guides/test4/ValueSet/bar-codes"/>
+    <resource>
+      <ValueSet>
+        <id value="bar-codes"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 1 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px"/>Expansion based on http://www.fhir.org/guides/test4/CodeSystem/blah-codes version 0.0.0
+            <p>All codes from system 
+              <a href="CodeSystem/blah-codes.html">
+                <code>http://www.fhir.org/guides/test4/CodeSystem/blah-codes</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.fhir.org-guides-test4-CodeSystem-blah-codes-bar"> </a>
+                  <a href="CodeSystem/blah-codes.html#blah-codes-bar">bar</a>
+                </td>
+                <td>Bar</td>
+                <td>example code 3</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://www.fhir.org/guides/test4/ValueSet/bar-codes"/>
+        <version value="0.0.0"/>
+        <name value="BarCodes"/>
+        <title value="Bar Value Set"/>
+        <status value="draft"/>
+        <date value="2019-03-13T08:16:34-07:00"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+          </telecom>
+        </contact>
+        <description value="A bunch of example codes"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+          </coding>
+        </jurisdiction>
+        <immutable value="true"/>
+        <copyright value="markdown link: [American Medical Association](https://www.ama-assn.org/)&#xA;&#xA;  use &amp;#xA; to create a new line for markdown.. markdown new paragraph: All rights reserved. This value set includes content from SNOMED CT, which is copyright &#xA9; 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement&#xA;&#xA;  ## header2&#xA;  ### header3&#xA;  ### header4 &#xA; *emphasis* &#xA; **bold** &#xA; unordered markdown list:&#xA; - list 1&#xA; - list 2&#xA;&#xA;  ordered markdown list:&#xA; 1. list1&#xA; 1. list2"/>
+        <expansion>
+          <identifier value="urn:uuid:649bd305-69bc-4819-bb79-ae3dd06b84da"/>
+          <timestamp value="2020-04-04T01:28:23-07:00"/>
+          <total value="1"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://www.fhir.org/guides/test4/CodeSystem/blah-codes|0.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://www.fhir.org/guides/test4/CodeSystem/blah-codes"/>
+            <code value="bar"/>
+            <display value="Bar"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://www.fhir.org/guides/test4/ValueSet/foo-codes"/>
+    <resource>
+      <ValueSet>
+        <id value="foo-codes"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 1 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px"/>Expansion based on http://www.fhir.org/guides/test4/CodeSystem/blah-codes version 0.0.0
+            <p>All codes from system 
+              <a href="CodeSystem/blah-codes.html">
+                <code>http://www.fhir.org/guides/test4/CodeSystem/blah-codes</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.fhir.org-guides-test4-CodeSystem-blah-codes-foo"> </a>
+                  <a href="CodeSystem/blah-codes.html#blah-codes-foo">foo</a>
+                </td>
+                <td>Foo</td>
+                <td>example code 2</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://www.fhir.org/guides/test4/ValueSet/foo-codes"/>
+        <version value="0.0.0"/>
+        <name value="FooCodes"/>
+        <title value="Foo Value Set"/>
+        <status value="draft"/>
+        <date value="2019-03-13T08:16:34-07:00"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+          </telecom>
+        </contact>
+        <description value="A bunch of example codes"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+          </coding>
+        </jurisdiction>
+        <immutable value="true"/>
+        <copyright value="markdown link: [American Medical Association](https://www.ama-assn.org/)  markdown new paragraph: All rights reserved. This value set includes content from SNOMED CT, which is copyright &#xA9; 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement  ## header2 ### header3 ### header4  *emphasis*  **bold**  markdown list: - list 1 - list 2  1. list1 1. list2"/>
+        <expansion>
+          <identifier value="urn:uuid:e1b267d4-a33b-47c3-855d-e386c60e4ca1"/>
+          <timestamp value="2020-04-04T01:28:23-07:00"/>
+          <total value="1"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://www.fhir.org/guides/test4/CodeSystem/blah-codes|0.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://www.fhir.org/guides/test4/CodeSystem/blah-codes"/>
+            <code value="foo"/>
+            <display value="Foo"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://www.fhir.org/guides/test4/ValueSet/blah-codes"/>
+    <resource>
+      <ValueSet>
+        <id value="blah-codes"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 3 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px"/>Expansion based on http://www.fhir.org/guides/test4/CodeSystem/blah-codes version 0.0.0
+            <p>All codes from system 
+              <a href="CodeSystem/blah-codes.html">
+                <code>http://www.fhir.org/guides/test4/CodeSystem/blah-codes</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.fhir.org-guides-test4-CodeSystem-blah-codes-blah"> </a>
+                  <a href="CodeSystem/blah-codes.html#blah-codes-blah">blah</a>
+                </td>
+                <td>Blah</td>
+                <td>example code 1</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.fhir.org-guides-test4-CodeSystem-blah-codes-foo"> </a>
+                  <a href="CodeSystem/blah-codes.html#blah-codes-foo">foo</a>
+                </td>
+                <td>Foo</td>
+                <td>example code 2</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.fhir.org-guides-test4-CodeSystem-blah-codes-bar"> </a>
+                  <a href="CodeSystem/blah-codes.html#blah-codes-bar">bar</a>
+                </td>
+                <td>Bar</td>
+                <td>example code 3</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://www.fhir.org/guides/test4/ValueSet/blah-codes"/>
+        <version value="0.0.0"/>
+        <name value="BlahCodes"/>
+        <status value="draft"/>
+        <date value="2018-03-13T08:16:34-07:00"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+          </telecom>
+        </contact>
+        <description value="A bunch of example codes"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+          </coding>
+        </jurisdiction>
+        <immutable value="true"/>
+        <copyright value="markdown link: [American Medical Association](https://www.ama-assn.org/)  markdown new paragraph: All rights reserved. This value set includes content from SNOMED CT, which is copyright &#xA9; 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement  ## header2 ### header3 ### header4  *emphasis*  **bold**  markdown list: - list 1 - list 2  1. list1 1. list2"/>
+        <expansion>
+          <identifier value="urn:uuid:72aa83ea-727f-47b5-be4c-f17fd170aad7"/>
+          <timestamp value="2020-04-04T01:28:23-07:00"/>
+          <total value="3"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://www.fhir.org/guides/test4/CodeSystem/blah-codes|0.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://www.fhir.org/guides/test4/CodeSystem/blah-codes"/>
+            <code value="blah"/>
+            <display value="Blah"/>
+          </contains>
+          <contains>
+            <system value="http://www.fhir.org/guides/test4/CodeSystem/blah-codes"/>
+            <code value="foo"/>
+            <display value="Foo"/>
+          </contains>
+          <contains>
+            <system value="http://www.fhir.org/guides/test4/CodeSystem/blah-codes"/>
+            <code value="bar"/>
+            <display value="Bar"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://www.fhir.org/guides/test4/ValueSet/bar-codes"/>
+    <resource>
+      <ValueSet>
+        <id value="bar-codes"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 1 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px"/>Expansion based on http://www.fhir.org/guides/test4/CodeSystem/blah-codes version 0.0.0
+            <p>All codes from system 
+              <a href="CodeSystem/blah-codes.html">
+                <code>http://www.fhir.org/guides/test4/CodeSystem/blah-codes</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.fhir.org-guides-test4-CodeSystem-blah-codes-bar"> </a>
+                  <a href="CodeSystem/blah-codes.html#blah-codes-bar">bar</a>
+                </td>
+                <td>Bar</td>
+                <td>example code 3</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://www.fhir.org/guides/test4/ValueSet/bar-codes"/>
+        <version value="0.0.0"/>
+        <name value="BarCodes"/>
+        <title value="Bar Value Set"/>
+        <status value="draft"/>
+        <date value="2019-03-13T08:16:34-07:00"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+          </telecom>
+        </contact>
+        <description value="A bunch of example codes"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+          </coding>
+        </jurisdiction>
+        <immutable value="true"/>
+        <copyright value="markdown link: [American Medical Association](https://www.ama-assn.org/)&#xA;&#xA;  use &amp;#xA; to create a new line for markdown.. markdown new paragraph: All rights reserved. This value set includes content from SNOMED CT, which is copyright &#xA9; 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement&#xA;&#xA;  ## header2&#xA;  ### header3&#xA;  ### header4 &#xA; *emphasis* &#xA; **bold** &#xA; unordered markdown list:&#xA; - list 1&#xA; - list 2&#xA;&#xA;  ordered markdown list:&#xA; 1. list1&#xA; 1. list2"/>
+        <expansion>
+          <identifier value="urn:uuid:649bd305-69bc-4819-bb79-ae3dd06b84da"/>
+          <timestamp value="2020-04-04T01:28:23-07:00"/>
+          <total value="1"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://www.fhir.org/guides/test4/CodeSystem/blah-codes|0.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://www.fhir.org/guides/test4/CodeSystem/blah-codes"/>
+            <code value="bar"/>
+            <display value="Bar"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://www.fhir.org/guides/test4/ValueSet/foo-codes"/>
+    <resource>
+      <ValueSet>
+        <id value="foo-codes"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 1 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px"/>Expansion based on http://www.fhir.org/guides/test4/CodeSystem/blah-codes version 0.0.0
+            <p>All codes from system 
+              <a href="CodeSystem/blah-codes.html">
+                <code>http://www.fhir.org/guides/test4/CodeSystem/blah-codes</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.fhir.org-guides-test4-CodeSystem-blah-codes-foo"> </a>
+                  <a href="CodeSystem/blah-codes.html#blah-codes-foo">foo</a>
+                </td>
+                <td>Foo</td>
+                <td>example code 2</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://www.fhir.org/guides/test4/ValueSet/foo-codes"/>
+        <version value="0.0.0"/>
+        <name value="FooCodes"/>
+        <title value="Foo Value Set"/>
+        <status value="draft"/>
+        <date value="2019-03-13T08:16:34-07:00"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+          </telecom>
+        </contact>
+        <description value="A bunch of example codes"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+          </coding>
+        </jurisdiction>
+        <immutable value="true"/>
+        <copyright value="markdown link: [American Medical Association](https://www.ama-assn.org/)  markdown new paragraph: All rights reserved. This value set includes content from SNOMED CT, which is copyright &#xA9; 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement  ## header2 ### header3 ### header4  *emphasis*  **bold**  markdown list: - list 1 - list 2  1. list1 1. list2"/>
+        <expansion>
+          <identifier value="urn:uuid:e1b267d4-a33b-47c3-855d-e386c60e4ca1"/>
+          <timestamp value="2020-04-04T01:28:23-07:00"/>
+          <total value="1"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://www.fhir.org/guides/test4/CodeSystem/blah-codes|0.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://www.fhir.org/guides/test4/CodeSystem/blah-codes"/>
+            <code value="foo"/>
+            <display value="Foo"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://www.fhir.org/guides/test4/ValueSet/blah-codes"/>
+    <resource>
+      <ValueSet>
+        <id value="blah-codes"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 3 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px"/>Expansion based on http://www.fhir.org/guides/test4/CodeSystem/blah-codes version 0.0.0
+            <p>All codes from system 
+              <a href="CodeSystem/blah-codes.html">
+                <code>http://www.fhir.org/guides/test4/CodeSystem/blah-codes</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.fhir.org-guides-test4-CodeSystem-blah-codes-blah"> </a>
+                  <a href="CodeSystem/blah-codes.html#blah-codes-blah">blah</a>
+                </td>
+                <td>Blah</td>
+                <td>example code 1</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.fhir.org-guides-test4-CodeSystem-blah-codes-foo"> </a>
+                  <a href="CodeSystem/blah-codes.html#blah-codes-foo">foo</a>
+                </td>
+                <td>Foo</td>
+                <td>example code 2</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.fhir.org-guides-test4-CodeSystem-blah-codes-bar"> </a>
+                  <a href="CodeSystem/blah-codes.html#blah-codes-bar">bar</a>
+                </td>
+                <td>Bar</td>
+                <td>example code 3</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://www.fhir.org/guides/test4/ValueSet/blah-codes"/>
+        <version value="0.0.0"/>
+        <name value="BlahCodes"/>
+        <status value="draft"/>
+        <date value="2018-03-13T08:16:34-07:00"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+          </telecom>
+        </contact>
+        <description value="A bunch of example codes"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+          </coding>
+        </jurisdiction>
+        <immutable value="true"/>
+        <copyright value="markdown link: [American Medical Association](https://www.ama-assn.org/)  markdown new paragraph: All rights reserved. This value set includes content from SNOMED CT, which is copyright &#xA9; 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement  ## header2 ### header3 ### header4  *emphasis*  **bold**  markdown list: - list 1 - list 2  1. list1 1. list2"/>
+        <expansion>
+          <identifier value="urn:uuid:72aa83ea-727f-47b5-be4c-f17fd170aad7"/>
+          <timestamp value="2020-04-04T01:28:23-07:00"/>
+          <total value="3"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://www.fhir.org/guides/test4/CodeSystem/blah-codes|0.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://www.fhir.org/guides/test4/CodeSystem/blah-codes"/>
+            <code value="blah"/>
+            <display value="Blah"/>
+          </contains>
+          <contains>
+            <system value="http://www.fhir.org/guides/test4/CodeSystem/blah-codes"/>
+            <code value="foo"/>
+            <display value="Foo"/>
+          </contains>
+          <contains>
+            <system value="http://www.fhir.org/guides/test4/CodeSystem/blah-codes"/>
+            <code value="bar"/>
+            <display value="Bar"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://www.fhir.org/guides/test4/ValueSet/bar-codes"/>
+    <resource>
+      <ValueSet>
+        <id value="bar-codes"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 1 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px"/>Expansion based on http://www.fhir.org/guides/test4/CodeSystem/blah-codes version 0.0.0
+            <p>All codes from system 
+              <a href="CodeSystem/blah-codes.html">
+                <code>http://www.fhir.org/guides/test4/CodeSystem/blah-codes</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.fhir.org-guides-test4-CodeSystem-blah-codes-bar"> </a>
+                  <a href="CodeSystem/blah-codes.html#blah-codes-bar">bar</a>
+                </td>
+                <td>Bar</td>
+                <td>example code 3</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://www.fhir.org/guides/test4/ValueSet/bar-codes"/>
+        <version value="0.0.0"/>
+        <name value="BarCodes"/>
+        <title value="Bar Value Set"/>
+        <status value="draft"/>
+        <date value="2019-03-13T08:16:34-07:00"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+          </telecom>
+        </contact>
+        <description value="A bunch of example codes"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+          </coding>
+        </jurisdiction>
+        <immutable value="true"/>
+        <copyright value="markdown link: [American Medical Association](https://www.ama-assn.org/)&#xA;&#xA;  use &amp;#xA; to create a new line for markdown.. markdown new paragraph: All rights reserved. This value set includes content from SNOMED CT, which is copyright &#xA9; 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement&#xA;&#xA;  ## header2&#xA;  ### header3&#xA;  ### header4 &#xA; *emphasis* &#xA; **bold** &#xA; unordered markdown list:&#xA; - list 1&#xA; - list 2&#xA;&#xA;  ordered markdown list:&#xA; 1. list1&#xA; 1. list2"/>
+        <expansion>
+          <identifier value="urn:uuid:649bd305-69bc-4819-bb79-ae3dd06b84da"/>
+          <timestamp value="2020-04-04T01:28:23-07:00"/>
+          <total value="1"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://www.fhir.org/guides/test4/CodeSystem/blah-codes|0.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://www.fhir.org/guides/test4/CodeSystem/blah-codes"/>
+            <code value="bar"/>
+            <display value="Bar"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://www.fhir.org/guides/test4/ValueSet/foo-codes"/>
+    <resource>
+      <ValueSet>
+        <id value="foo-codes"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 1 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px"/>Expansion based on http://www.fhir.org/guides/test4/CodeSystem/blah-codes version 0.0.0
+            <p>All codes from system 
+              <a href="CodeSystem/blah-codes.html">
+                <code>http://www.fhir.org/guides/test4/CodeSystem/blah-codes</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.fhir.org-guides-test4-CodeSystem-blah-codes-foo"> </a>
+                  <a href="CodeSystem/blah-codes.html#blah-codes-foo">foo</a>
+                </td>
+                <td>Foo</td>
+                <td>example code 2</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://www.fhir.org/guides/test4/ValueSet/foo-codes"/>
+        <version value="0.0.0"/>
+        <name value="FooCodes"/>
+        <title value="Foo Value Set"/>
+        <status value="draft"/>
+        <date value="2019-03-13T08:16:34-07:00"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+          </telecom>
+        </contact>
+        <description value="A bunch of example codes"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+          </coding>
+        </jurisdiction>
+        <immutable value="true"/>
+        <copyright value="markdown link: [American Medical Association](https://www.ama-assn.org/)  markdown new paragraph: All rights reserved. This value set includes content from SNOMED CT, which is copyright &#xA9; 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement  ## header2 ### header3 ### header4  *emphasis*  **bold**  markdown list: - list 1 - list 2  1. list1 1. list2"/>
+        <expansion>
+          <identifier value="urn:uuid:e1b267d4-a33b-47c3-855d-e386c60e4ca1"/>
+          <timestamp value="2020-04-04T01:28:23-07:00"/>
+          <total value="1"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://www.fhir.org/guides/test4/CodeSystem/blah-codes|0.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://www.fhir.org/guides/test4/CodeSystem/blah-codes"/>
+            <code value="foo"/>
+            <display value="Foo"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://www.fhir.org/guides/test4/ValueSet/blah-codes"/>
+    <resource>
+      <ValueSet>
+        <id value="blah-codes"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 3 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px"/>Expansion based on http://www.fhir.org/guides/test4/CodeSystem/blah-codes version 0.0.0
+            <p>All codes from system 
+              <a href="CodeSystem/blah-codes.html">
+                <code>http://www.fhir.org/guides/test4/CodeSystem/blah-codes</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.fhir.org-guides-test4-CodeSystem-blah-codes-blah"> </a>
+                  <a href="CodeSystem/blah-codes.html#blah-codes-blah">blah</a>
+                </td>
+                <td>Blah</td>
+                <td>example code 1</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.fhir.org-guides-test4-CodeSystem-blah-codes-foo"> </a>
+                  <a href="CodeSystem/blah-codes.html#blah-codes-foo">foo</a>
+                </td>
+                <td>Foo</td>
+                <td>example code 2</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.fhir.org-guides-test4-CodeSystem-blah-codes-bar"> </a>
+                  <a href="CodeSystem/blah-codes.html#blah-codes-bar">bar</a>
+                </td>
+                <td>Bar</td>
+                <td>example code 3</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://www.fhir.org/guides/test4/ValueSet/blah-codes"/>
+        <version value="0.0.0"/>
+        <name value="BlahCodes"/>
+        <status value="draft"/>
+        <date value="2018-03-13T08:16:34-07:00"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+          </telecom>
+        </contact>
+        <description value="A bunch of example codes"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+          </coding>
+        </jurisdiction>
+        <immutable value="true"/>
+        <copyright value="markdown link: [American Medical Association](https://www.ama-assn.org/)  markdown new paragraph: All rights reserved. This value set includes content from SNOMED CT, which is copyright &#xA9; 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement  ## header2 ### header3 ### header4  *emphasis*  **bold**  markdown list: - list 1 - list 2  1. list1 1. list2"/>
+        <expansion>
+          <identifier value="urn:uuid:72aa83ea-727f-47b5-be4c-f17fd170aad7"/>
+          <timestamp value="2020-04-04T01:28:23-07:00"/>
+          <total value="3"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://www.fhir.org/guides/test4/CodeSystem/blah-codes|0.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://www.fhir.org/guides/test4/CodeSystem/blah-codes"/>
+            <code value="blah"/>
+            <display value="Blah"/>
+          </contains>
+          <contains>
+            <system value="http://www.fhir.org/guides/test4/CodeSystem/blah-codes"/>
+            <code value="foo"/>
+            <display value="Foo"/>
+          </contains>
+          <contains>
+            <system value="http://www.fhir.org/guides/test4/CodeSystem/blah-codes"/>
+            <code value="bar"/>
+            <display value="Bar"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://www.fhir.org/guides/test4/ValueSet/bar-codes"/>
+    <resource>
+      <ValueSet>
+        <id value="bar-codes"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 1 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px"/>Expansion based on http://www.fhir.org/guides/test4/CodeSystem/blah-codes version 0.0.0
+            <p>All codes from system 
+              <a href="CodeSystem/blah-codes.html">
+                <code>http://www.fhir.org/guides/test4/CodeSystem/blah-codes</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.fhir.org-guides-test4-CodeSystem-blah-codes-bar"> </a>
+                  <a href="CodeSystem/blah-codes.html#blah-codes-bar">bar</a>
+                </td>
+                <td>Bar</td>
+                <td>example code 3</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://www.fhir.org/guides/test4/ValueSet/bar-codes"/>
+        <version value="0.0.0"/>
+        <name value="BarCodes"/>
+        <title value="Bar Value Set"/>
+        <status value="draft"/>
+        <date value="2019-03-13T08:16:34-07:00"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+          </telecom>
+        </contact>
+        <description value="A bunch of example codes"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+          </coding>
+        </jurisdiction>
+        <immutable value="true"/>
+        <copyright value="markdown link: [American Medical Association](https://www.ama-assn.org/)&#xA;&#xA;  use &amp;#xA; to create a new line for markdown.. markdown new paragraph: All rights reserved. This value set includes content from SNOMED CT, which is copyright &#xA9; 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement&#xA;&#xA;  ## header2&#xA;  ### header3&#xA;  ### header4 &#xA; *emphasis* &#xA; **bold** &#xA; unordered markdown list:&#xA; - list 1&#xA; - list 2&#xA;&#xA;  ordered markdown list:&#xA; 1. list1&#xA; 1. list2"/>
+        <expansion>
+          <identifier value="urn:uuid:649bd305-69bc-4819-bb79-ae3dd06b84da"/>
+          <timestamp value="2020-04-04T01:28:23-07:00"/>
+          <total value="1"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://www.fhir.org/guides/test4/CodeSystem/blah-codes|0.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://www.fhir.org/guides/test4/CodeSystem/blah-codes"/>
+            <code value="bar"/>
+            <display value="Bar"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://www.fhir.org/guides/test4/ValueSet/foo-codes"/>
+    <resource>
+      <ValueSet>
+        <id value="foo-codes"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 1 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px"/>Expansion based on http://www.fhir.org/guides/test4/CodeSystem/blah-codes version 0.0.0
+            <p>All codes from system 
+              <a href="CodeSystem/blah-codes.html">
+                <code>http://www.fhir.org/guides/test4/CodeSystem/blah-codes</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.fhir.org-guides-test4-CodeSystem-blah-codes-foo"> </a>
+                  <a href="CodeSystem/blah-codes.html#blah-codes-foo">foo</a>
+                </td>
+                <td>Foo</td>
+                <td>example code 2</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://www.fhir.org/guides/test4/ValueSet/foo-codes"/>
+        <version value="0.0.0"/>
+        <name value="FooCodes"/>
+        <title value="Foo Value Set"/>
+        <status value="draft"/>
+        <date value="2019-03-13T08:16:34-07:00"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+          </telecom>
+        </contact>
+        <description value="A bunch of example codes"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+          </coding>
+        </jurisdiction>
+        <immutable value="true"/>
+        <copyright value="markdown link: [American Medical Association](https://www.ama-assn.org/)  markdown new paragraph: All rights reserved. This value set includes content from SNOMED CT, which is copyright &#xA9; 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement  ## header2 ### header3 ### header4  *emphasis*  **bold**  markdown list: - list 1 - list 2  1. list1 1. list2"/>
+        <expansion>
+          <identifier value="urn:uuid:e1b267d4-a33b-47c3-855d-e386c60e4ca1"/>
+          <timestamp value="2020-04-04T01:28:23-07:00"/>
+          <total value="1"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://www.fhir.org/guides/test4/CodeSystem/blah-codes|0.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://www.fhir.org/guides/test4/CodeSystem/blah-codes"/>
+            <code value="foo"/>
+            <display value="Foo"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://www.fhir.org/guides/test4/ValueSet/blah-codes"/>
+    <resource>
+      <ValueSet>
+        <id value="blah-codes"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 3 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px"/>Expansion based on http://www.fhir.org/guides/test4/CodeSystem/blah-codes version 0.0.0
+            <p>All codes from system 
+              <a href="CodeSystem/blah-codes.html">
+                <code>http://www.fhir.org/guides/test4/CodeSystem/blah-codes</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.fhir.org-guides-test4-CodeSystem-blah-codes-blah"> </a>
+                  <a href="CodeSystem/blah-codes.html#blah-codes-blah">blah</a>
+                </td>
+                <td>Blah</td>
+                <td>example code 1</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.fhir.org-guides-test4-CodeSystem-blah-codes-foo"> </a>
+                  <a href="CodeSystem/blah-codes.html#blah-codes-foo">foo</a>
+                </td>
+                <td>Foo</td>
+                <td>example code 2</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.fhir.org-guides-test4-CodeSystem-blah-codes-bar"> </a>
+                  <a href="CodeSystem/blah-codes.html#blah-codes-bar">bar</a>
+                </td>
+                <td>Bar</td>
+                <td>example code 3</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://www.fhir.org/guides/test4/ValueSet/blah-codes"/>
+        <version value="0.0.0"/>
+        <name value="BlahCodes"/>
+        <status value="draft"/>
+        <date value="2018-03-13T08:16:34-07:00"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+          </telecom>
+        </contact>
+        <description value="A bunch of example codes"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+          </coding>
+        </jurisdiction>
+        <immutable value="true"/>
+        <copyright value="markdown link: [American Medical Association](https://www.ama-assn.org/)  markdown new paragraph: All rights reserved. This value set includes content from SNOMED CT, which is copyright &#xA9; 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement  ## header2 ### header3 ### header4  *emphasis*  **bold**  markdown list: - list 1 - list 2  1. list1 1. list2"/>
+        <expansion>
+          <identifier value="urn:uuid:72aa83ea-727f-47b5-be4c-f17fd170aad7"/>
+          <timestamp value="2020-04-04T01:28:23-07:00"/>
+          <total value="3"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://www.fhir.org/guides/test4/CodeSystem/blah-codes|0.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://www.fhir.org/guides/test4/CodeSystem/blah-codes"/>
+            <code value="blah"/>
+            <display value="Blah"/>
+          </contains>
+          <contains>
+            <system value="http://www.fhir.org/guides/test4/CodeSystem/blah-codes"/>
+            <code value="foo"/>
+            <display value="Foo"/>
+          </contains>
+          <contains>
+            <system value="http://www.fhir.org/guides/test4/CodeSystem/blah-codes"/>
+            <code value="bar"/>
+            <display value="Bar"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://www.fhir.org/guides/test4/ValueSet/bar-codes"/>
+    <resource>
+      <ValueSet>
+        <id value="bar-codes"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 1 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px"/>Expansion based on http://www.fhir.org/guides/test4/CodeSystem/blah-codes version 0.0.0
+            <p>All codes from system 
+              <a href="CodeSystem/blah-codes.html">
+                <code>http://www.fhir.org/guides/test4/CodeSystem/blah-codes</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.fhir.org-guides-test4-CodeSystem-blah-codes-bar"> </a>
+                  <a href="CodeSystem/blah-codes.html#blah-codes-bar">bar</a>
+                </td>
+                <td>Bar</td>
+                <td>example code 3</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://www.fhir.org/guides/test4/ValueSet/bar-codes"/>
+        <version value="0.0.0"/>
+        <name value="BarCodes"/>
+        <title value="Bar Value Set"/>
+        <status value="draft"/>
+        <date value="2019-03-13T08:16:34-07:00"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+          </telecom>
+        </contact>
+        <description value="A bunch of example codes"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+          </coding>
+        </jurisdiction>
+        <immutable value="true"/>
+        <copyright value="markdown link: [American Medical Association](https://www.ama-assn.org/)&#xA;&#xA;  use &amp;#xA; to create a new line for markdown.. markdown new paragraph: All rights reserved. This value set includes content from SNOMED CT, which is copyright &#xA9; 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement&#xA;&#xA;  ## header2&#xA;  ### header3&#xA;  ### header4 &#xA; *emphasis* &#xA; **bold** &#xA; unordered markdown list:&#xA; - list 1&#xA; - list 2&#xA;&#xA;  ordered markdown list:&#xA; 1. list1&#xA; 1. list2"/>
+        <expansion>
+          <identifier value="urn:uuid:649bd305-69bc-4819-bb79-ae3dd06b84da"/>
+          <timestamp value="2020-04-04T01:28:23-07:00"/>
+          <total value="1"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://www.fhir.org/guides/test4/CodeSystem/blah-codes|0.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://www.fhir.org/guides/test4/CodeSystem/blah-codes"/>
+            <code value="bar"/>
+            <display value="Bar"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://www.fhir.org/guides/test4/ValueSet/foo-codes"/>
+    <resource>
+      <ValueSet>
+        <id value="foo-codes"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 1 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px"/>Expansion based on http://www.fhir.org/guides/test4/CodeSystem/blah-codes version 0.0.0
+            <p>All codes from system 
+              <a href="CodeSystem/blah-codes.html">
+                <code>http://www.fhir.org/guides/test4/CodeSystem/blah-codes</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.fhir.org-guides-test4-CodeSystem-blah-codes-foo"> </a>
+                  <a href="CodeSystem/blah-codes.html#blah-codes-foo">foo</a>
+                </td>
+                <td>Foo</td>
+                <td>example code 2</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://www.fhir.org/guides/test4/ValueSet/foo-codes"/>
+        <version value="0.0.0"/>
+        <name value="FooCodes"/>
+        <title value="Foo Value Set"/>
+        <status value="draft"/>
+        <date value="2019-03-13T08:16:34-07:00"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+          </telecom>
+        </contact>
+        <description value="A bunch of example codes"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+          </coding>
+        </jurisdiction>
+        <immutable value="true"/>
+        <copyright value="markdown link: [American Medical Association](https://www.ama-assn.org/)  markdown new paragraph: All rights reserved. This value set includes content from SNOMED CT, which is copyright &#xA9; 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement  ## header2 ### header3 ### header4  *emphasis*  **bold**  markdown list: - list 1 - list 2  1. list1 1. list2"/>
+        <expansion>
+          <identifier value="urn:uuid:e1b267d4-a33b-47c3-855d-e386c60e4ca1"/>
+          <timestamp value="2020-04-04T01:28:23-07:00"/>
+          <total value="1"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://www.fhir.org/guides/test4/CodeSystem/blah-codes|0.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://www.fhir.org/guides/test4/CodeSystem/blah-codes"/>
+            <code value="foo"/>
+            <display value="Foo"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://www.fhir.org/guides/test4/ValueSet/blah-codes"/>
+    <resource>
+      <ValueSet>
+        <id value="blah-codes"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 3 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px"/>Expansion based on http://www.fhir.org/guides/test4/CodeSystem/blah-codes version 0.0.0
+            <p>All codes from system 
+              <a href="CodeSystem/blah-codes.html">
+                <code>http://www.fhir.org/guides/test4/CodeSystem/blah-codes</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.fhir.org-guides-test4-CodeSystem-blah-codes-blah"> </a>
+                  <a href="CodeSystem/blah-codes.html#blah-codes-blah">blah</a>
+                </td>
+                <td>Blah</td>
+                <td>example code 1</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.fhir.org-guides-test4-CodeSystem-blah-codes-foo"> </a>
+                  <a href="CodeSystem/blah-codes.html#blah-codes-foo">foo</a>
+                </td>
+                <td>Foo</td>
+                <td>example code 2</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---www.fhir.org-guides-test4-CodeSystem-blah-codes-bar"> </a>
+                  <a href="CodeSystem/blah-codes.html#blah-codes-bar">bar</a>
+                </td>
+                <td>Bar</td>
+                <td>example code 3</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://www.fhir.org/guides/test4/ValueSet/blah-codes"/>
+        <version value="0.0.0"/>
+        <name value="BlahCodes"/>
+        <status value="draft"/>
+        <date value="2018-03-13T08:16:34-07:00"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+          </telecom>
+        </contact>
+        <description value="A bunch of example codes"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+          </coding>
+        </jurisdiction>
+        <immutable value="true"/>
+        <copyright value="markdown link: [American Medical Association](https://www.ama-assn.org/)  markdown new paragraph: All rights reserved. This value set includes content from SNOMED CT, which is copyright &#xA9; 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement  ## header2 ### header3 ### header4  *emphasis*  **bold**  markdown list: - list 1 - list 2  1. list1 1. list2"/>
+        <expansion>
+          <identifier value="urn:uuid:72aa83ea-727f-47b5-be4c-f17fd170aad7"/>
+          <timestamp value="2020-04-04T01:28:23-07:00"/>
+          <total value="3"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://www.fhir.org/guides/test4/CodeSystem/blah-codes|0.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://www.fhir.org/guides/test4/CodeSystem/blah-codes"/>
+            <code value="blah"/>
+            <display value="Blah"/>
+          </contains>
+          <contains>
+            <system value="http://www.fhir.org/guides/test4/CodeSystem/blah-codes"/>
+            <code value="foo"/>
+            <display value="Foo"/>
+          </contains>
+          <contains>
+            <system value="http://www.fhir.org/guides/test4/CodeSystem/blah-codes"/>
+            <code value="bar"/>
+            <display value="Bar"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+</Bundle>

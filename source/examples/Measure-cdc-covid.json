@@ -88,12 +88,13 @@
       },
       "population": [
         {
+          "id": "numTotBeds",
           "code": {
-            "text": "numTotBeds",
             "coding": [
               {
                 "system": "http://terminology.hl7.org/CodeSystem/measure-population",
-                "code": "initial-population"
+                "code": "initial-population",
+                "display": "Initial Population"
               }
             ]
           },
@@ -105,12 +106,13 @@
           }
         },
         {
+          "id": "Numbeds",
           "code": {
-            "text": "Numbeds",
             "coding": [
               {
                 "system": "http://terminology.hl7.org/CodeSystem/measure-population",
-                "code": "initial-population"
+                "code": "initial-population",
+                "display": "Initial Population"
               }
             ]
           },
@@ -122,12 +124,13 @@
           }
         },
         {
+          "id": "numBedsOcc",
           "code": {
-            "text": "numBedsOcc",
             "coding": [
               {
                 "system": "http://terminology.hl7.org/CodeSystem/measure-population",
-                "code": "initial-population"
+                "code": "initial-population",
+                "display": "Initial Population"
               }
             ]
           },
@@ -139,12 +142,13 @@
           }
         },
         {
+          "id": "numICUBeds",
           "code": {
-            "text": "numICUBeds",
             "coding": [
               {
                 "system": "http://terminology.hl7.org/CodeSystem/measure-population",
-                "code": "initial-population"
+                "code": "initial-population",
+                "display": "Initial Population"
               }
             ]
           },
@@ -156,12 +160,13 @@
           }
         },
         {
+          "id": "numICUBedsOcc",
           "code": {
-            "text": "numICUBedsOcc",
             "coding": [
               {
                 "system": "http://terminology.hl7.org/CodeSystem/measure-population",
-                "code": "initial-population"
+                "code": "initial-population",
+                "display": "Initial Population"
               }
             ]
           },
@@ -180,12 +185,13 @@
       },
       "population": [
         {
+          "id": "numVent",
           "code": {
-            "text": "numVent",
             "coding": [
               {
                 "system": "http://terminology.hl7.org/CodeSystem/measure-population",
-                "code": "initial-population"
+                "code": "initial-population",
+                "display": "Initial Population"
               }
             ]
           },
@@ -197,12 +203,13 @@
           }
         },
         {
+          "id": "numVentUse",
           "code": {
-            "text": "numVentUse",
             "coding": [
               {
                 "system": "http://terminology.hl7.org/CodeSystem/measure-population",
-                "code": "initial-population"
+                "code": "initial-population",
+                "display": "Initial Population"
               }
             ]
           },
@@ -221,12 +228,13 @@
       },
       "population": [
         {
+          "id": "numC19HospPats",
           "code": {
-            "text": "numC19HospPats",
             "coding": [
               {
                 "system": "http://terminology.hl7.org/CodeSystem/measure-population",
-                "code": "initial-population"
+                "code": "initial-population",
+                "display": "Initial Population"
               }
             ]
           },
@@ -238,12 +246,13 @@
           }
         },
         {
+          "id": "numC19MechVentPats",
           "code": {
-            "text": "numC19MechVentPats",
             "coding": [
               {
                 "system": "http://terminology.hl7.org/CodeSystem/measure-population",
-                "code": "initial-population"
+                "code": "initial-population",
+                "display": "Initial Population"
               }
             ]
           },
@@ -255,12 +264,13 @@
           }
         },
         {
+          "id": "numC19HOPats",
           "code": {
-            "text": "numC19HOPats",
             "coding": [
               {
                 "system": "http://terminology.hl7.org/CodeSystem/measure-population",
-                "code": "initial-population"
+                "code": "initial-population",
+                "display": "Initial Population"
               }
             ]
           },
@@ -272,12 +282,13 @@
           }
         },
         {
+          "id": "numC19OverflowPats",
           "code": {
-            "text": "numC19OverflowPats",
             "coding": [
               {
                 "system": "http://terminology.hl7.org/CodeSystem/measure-population",
-                "code": "initial-population"
+                "code": "initial-population",
+                "display": "Initial Population"
               }
             ]
           },
@@ -289,12 +300,13 @@
           }
         },
         {
+          "id": "umC19OFMechVentPats",
           "code": {
-            "text": "numC19OFMechVentPats",
             "coding": [
               {
                 "system": "http://terminology.hl7.org/CodeSystem/measure-population",
-                "code": "initial-population"
+                "code": "initial-population",
+                "display": "Initial Population"
               }
             ]
           },
@@ -306,12 +318,13 @@
           }
         },
         {
+          "id": "numC19Died",
           "code": {
-            "text": "numC19Died",
             "coding": [
               {
                 "system": "http://terminology.hl7.org/CodeSystem/measure-population",
-                "code": "initial-population"
+                "code": "initial-population",
+                "display": "Initial Population"
               }
             ]
           },

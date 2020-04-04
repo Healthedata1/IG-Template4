@@ -104,7 +104,7 @@ We can replace them directly with the data from the ImplementationGuide Resource
         <p>processedFiles : number of files genrated by the build -   {{site.data.fhir.processedFiles}}  = 14</p>
       </li>
       <li>
-        <p>genDate : date of generation (so date stamps in the pages can match those in the conformance resources) -   {{site.data.fhir.genDate}}  = Sat, Apr 4, 2020 00:55-0700</p>
+        <p>genDate : date of generation (so date stamps in the pages can match those in the conformance resources) -   {{site.data.fhir.genDate}}  = Sat, Apr 4, 2020 01:30-0700</p>
       </li>
     </ul>
 
@@ -182,7 +182,7 @@ We can replace them directly with the data from the ImplementationGuide Resource
         <p><em>this is still the only way</em> processedFiles : number of files genrated by the build -   {{site.data.fhir.processedFiles}}  = 14</p>
       </li>
       <li>
-        <p><em>this is still the only way</em> genDate : date of generation (so date stamps in the pages can match those in the conformance resources) -   {{site.data.fhir.genDate}}  = Sat, Apr 4, 2020 00:55-0700</p>
+        <p><em>this is still the only way</em> genDate : date of generation (so date stamps in the pages can match those in the conformance resources) -   {{site.data.fhir.genDate}}  = Sat, Apr 4, 2020 01:30-0700</p>
       </li>
     </ul>
 

@@ -11,7 +11,7 @@
   fhir:Resource.id [ fhir:value "cdc-covid"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: cdc-covid</p><p><b>url</b>: <a href=\"http://cdcmeasures.example.org/modules/covid19/20200331/numTotBeds\">http://cdcmeasures.example.org/modules/covid19/20200331/numTotBeds</a></p><p><b>version</b>: 20200401.06</p><p><b>name</b>: Covid_19PatientImpactHospitalCapacity</p><p><b>title</b>: COVID-19 Patient Impact &amp; Hospital Capacity</p><p><b>status</b>: draft</p><p><b>subject</b>: Location <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/resource-types code 'Location' = 'Location', given as 'Location'})</span></p><p><b>date</b>: Mar 30, 2020, 5:00:00 PM</p><p><b>publisher</b>: SANER-IG</p><p><b>description</b>: CDC, NHSN COVID-19 Patient Impact &amp; Hospital Capacity Hospital Bed/ICU/Ventilator Capacity. The Centers for Disease Control and Prevention’s (CDC’s) National Healthcare Safety Network (NHSN) is supporting the nation’s COVID-19 response by introducing a new COVID-19 Patient Impact and Hospital Capacity Module within NHSN’s Patient Safety Component. https://www.cdc.gov/nhsn/acute-care-hospital/covid19/index.html</p><p><b>useContext</b>: </p><p><b>jurisdiction</b>: United States of America <span style=\"background: LightGoldenRodYellow\">(Details : {urn:iso:std:iso:3166 code 'US' = 'United States of America', given as 'United States of America'})</span></p><p><b>relatedArtifact</b>: , , </p><p><b>scoring</b>: Cohort <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-scoring code 'cohort' = 'Cohort', given as 'Cohort'})</span></p><p><b>type</b>: Structure <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-type code 'structure' = 'Structure', given as 'Structure'})</span></p><blockquote><p><b>group</b></p><p><b>code</b>: Hospital Bed/ICU Capacity <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><blockquote><p><b>population</b></p><p><b>code</b>: numTotBeds <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></p><p><b>description</b>: ALL HOSPITAL BEDS: Total number of all Inpatient and outpatient beds in your hospital, including all staffed, licensed, and overflow surge or expansion beds used for inpatients or for outpatients (includes ICU beds)</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: Numbeds <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></p><p><b>description</b>: HOSPITAL INPATIENT BEDS: Total number of staffed inpatient beds in your hospital, including all staffed, licensed, and overflow and surge or expansion beds used for inpatients (includes ICU beds)</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: numBedsOcc <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></p><p><b>description</b>: HOSPITAL INPATIENT BED OCCUPANCY: Total number of staffed inpatient beds that are currently occupied</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: numICUBeds <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></p><p><b>description</b>: ICU BEDS: Total number of staffed inpatient intensive care unit (ICU) beds</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: numICUBedsOcc <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></p><p><b>description</b>: ICU BED OCCUPANCY: Total number of staffed inpatient ICU beds that are occupied</p><p><b>criteria</b>: </p></blockquote></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: Hospital Ventilator Capacity <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><blockquote><p><b>population</b></p><p><b>code</b>: numVent <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></p><p><b>description</b>: MECHANICAL VENTILATORS: Total number of ventilators available</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: numVentUse <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></p><p><b>description</b>: MECHANICAL VENTILATORS IN USE: Total number of ventilators in use</p><p><b>criteria</b>: </p></blockquote></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: Patient Impact <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><blockquote><p><b>population</b></p><p><b>code</b>: numC19HospPats <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></p><p><b>description</b>: HOSPITALIZED: Patients currently hospitalized in an inpatient bed who have suspected or confirmed COVID-19</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: numC19MechVentPats <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></p><p><b>description</b>: HOSPITALIZED and VENTILATED: Patients currently hospitalized in an inpatient bed who have suspected or confirmed COVID-19 and are on a mechanical ventilator</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: numC19HOPats <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></p><p><b>description</b>: HOSPITAL ONSET: Patients currently hospitalized in an inpatient bed with onset of suspected or confirmed COVID-19 fourteen or more days after hospital admission due to a condition other than COVID-19</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: numC19OverflowPats <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></p><p><b>description</b>: ED/OVERFLOW: Patients with suspected or confirmed COVID-19 who are currently in the Emergency Department (ED) or any overflow location awaiting an inpatient bed</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: numC19OFMechVentPats <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></p><p><b>description</b>: ED/OVERFLOW and VENTILATED: Patients with suspected or confirmed COVID-19 who currently are in the ED or any overflow location awaiting an inpatient bed and on a mechanical ventilator</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>code</b>: numC19Died <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></p><p><b>description</b>: DEATHS: Patients with suspected or confirmed COVID-19 who died in the hospital, ED or any overflow location on the date for which you are reporting</p><p><b>criteria</b>: </p></blockquote></blockquote></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: cdc-covid</p><p><b>url</b>: <a href=\"http://cdcmeasures.example.org/modules/covid19/20200331/numTotBeds\">http://cdcmeasures.example.org/modules/covid19/20200331/numTotBeds</a></p><p><b>version</b>: 20200401.06</p><p><b>name</b>: Covid_19PatientImpactHospitalCapacity</p><p><b>title</b>: COVID-19 Patient Impact &amp; Hospital Capacity</p><p><b>status</b>: draft</p><p><b>subject</b>: Location <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/resource-types code 'Location' = 'Location', given as 'Location'})</span></p><p><b>date</b>: Mar 30, 2020, 5:00:00 PM</p><p><b>publisher</b>: SANER-IG</p><p><b>description</b>: CDC, NHSN COVID-19 Patient Impact &amp; Hospital Capacity Hospital Bed/ICU/Ventilator Capacity. The Centers for Disease Control and Prevention’s (CDC’s) National Healthcare Safety Network (NHSN) is supporting the nation’s COVID-19 response by introducing a new COVID-19 Patient Impact and Hospital Capacity Module within NHSN’s Patient Safety Component. https://www.cdc.gov/nhsn/acute-care-hospital/covid19/index.html</p><p><b>useContext</b>: </p><p><b>jurisdiction</b>: United States of America <span style=\"background: LightGoldenRodYellow\">(Details : {urn:iso:std:iso:3166 code 'US' = 'United States of America', given as 'United States of America'})</span></p><p><b>relatedArtifact</b>: , , </p><p><b>scoring</b>: Cohort <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-scoring code 'cohort' = 'Cohort', given as 'Cohort'})</span></p><p><b>type</b>: Structure <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-type code 'structure' = 'Structure', given as 'Structure'})</span></p><blockquote><p><b>group</b></p><p><b>code</b>: Hospital Bed/ICU Capacity <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><blockquote><p><b>population</b></p><p><b>id</b>: numTotBeds</p><p><b>code</b>: Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population', given as 'Initial Population'})</span></p><p><b>description</b>: ALL HOSPITAL BEDS: Total number of all Inpatient and outpatient beds in your hospital, including all staffed, licensed, and overflow surge or expansion beds used for inpatients or for outpatients (includes ICU beds)</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>id</b>: Numbeds</p><p><b>code</b>: Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population', given as 'Initial Population'})</span></p><p><b>description</b>: HOSPITAL INPATIENT BEDS: Total number of staffed inpatient beds in your hospital, including all staffed, licensed, and overflow and surge or expansion beds used for inpatients (includes ICU beds)</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>id</b>: numBedsOcc</p><p><b>code</b>: Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population', given as 'Initial Population'})</span></p><p><b>description</b>: HOSPITAL INPATIENT BED OCCUPANCY: Total number of staffed inpatient beds that are currently occupied</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>id</b>: numICUBeds</p><p><b>code</b>: Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population', given as 'Initial Population'})</span></p><p><b>description</b>: ICU BEDS: Total number of staffed inpatient intensive care unit (ICU) beds</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>id</b>: numICUBedsOcc</p><p><b>code</b>: Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population', given as 'Initial Population'})</span></p><p><b>description</b>: ICU BED OCCUPANCY: Total number of staffed inpatient ICU beds that are occupied</p><p><b>criteria</b>: </p></blockquote></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: Hospital Ventilator Capacity <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><blockquote><p><b>population</b></p><p><b>id</b>: numVent</p><p><b>code</b>: Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population', given as 'Initial Population'})</span></p><p><b>description</b>: MECHANICAL VENTILATORS: Total number of ventilators available</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>id</b>: numVentUse</p><p><b>code</b>: Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population', given as 'Initial Population'})</span></p><p><b>description</b>: MECHANICAL VENTILATORS IN USE: Total number of ventilators in use</p><p><b>criteria</b>: </p></blockquote></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: Patient Impact <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><blockquote><p><b>population</b></p><p><b>id</b>: numC19HospPats</p><p><b>code</b>: Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population', given as 'Initial Population'})</span></p><p><b>description</b>: HOSPITALIZED: Patients currently hospitalized in an inpatient bed who have suspected or confirmed COVID-19</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>id</b>: numC19MechVentPats</p><p><b>code</b>: Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population', given as 'Initial Population'})</span></p><p><b>description</b>: HOSPITALIZED and VENTILATED: Patients currently hospitalized in an inpatient bed who have suspected or confirmed COVID-19 and are on a mechanical ventilator</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>id</b>: numC19HOPats</p><p><b>code</b>: Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population', given as 'Initial Population'})</span></p><p><b>description</b>: HOSPITAL ONSET: Patients currently hospitalized in an inpatient bed with onset of suspected or confirmed COVID-19 fourteen or more days after hospital admission due to a condition other than COVID-19</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>id</b>: numC19OverflowPats</p><p><b>code</b>: Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population', given as 'Initial Population'})</span></p><p><b>description</b>: ED/OVERFLOW: Patients with suspected or confirmed COVID-19 who are currently in the Emergency Department (ED) or any overflow location awaiting an inpatient bed</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>id</b>: umC19OFMechVentPats</p><p><b>code</b>: Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population', given as 'Initial Population'})</span></p><p><b>description</b>: ED/OVERFLOW and VENTILATED: Patients with suspected or confirmed COVID-19 who currently are in the ED or any overflow location awaiting an inpatient bed and on a mechanical ventilator</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>id</b>: numC19Died</p><p><b>code</b>: Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population', given as 'Initial Population'})</span></p><p><b>description</b>: DEATHS: Patients with suspected or confirmed COVID-19 who died in the hospital, ED or any overflow location on the date for which you are reporting</p><p><b>criteria</b>: </p></blockquote></blockquote></div>"
   ];
   fhir:Measure.url [ fhir:value "http://cdcmeasures.example.org/modules/covid19/20200331/numTotBeds"];
   fhir:Measure.version [ fhir:value "20200401.06"];
@@ -92,13 +92,14 @@
      ];
      fhir:Measure.group.population [
        fhir:index 0;
+       fhir:Element.id [ fhir:value "numTotBeds" ];
        fhir:Measure.group.population.code [
          fhir:CodeableConcept.coding [
            fhir:index 0;
            fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
-           fhir:Coding.code [ fhir:value "initial-population" ]
-         ];
-         fhir:CodeableConcept.text [ fhir:value "numTotBeds" ]
+           fhir:Coding.code [ fhir:value "initial-population" ];
+           fhir:Coding.display [ fhir:value "Initial Population" ]
+         ]
        ];
        fhir:Measure.group.population.description [ fhir:value "ALL HOSPITAL BEDS: Total number of all Inpatient and outpatient beds in your hospital, including all staffed, licensed, and overflow surge or expansion beds used for inpatients or for outpatients (includes ICU beds)" ];
        fhir:Measure.group.population.criteria [
@@ -108,13 +109,14 @@
        ]
      ], [
        fhir:index 1;
+       fhir:Element.id [ fhir:value "Numbeds" ];
        fhir:Measure.group.population.code [
          fhir:CodeableConcept.coding [
            fhir:index 0;
            fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
-           fhir:Coding.code [ fhir:value "initial-population" ]
-         ];
-         fhir:CodeableConcept.text [ fhir:value "Numbeds" ]
+           fhir:Coding.code [ fhir:value "initial-population" ];
+           fhir:Coding.display [ fhir:value "Initial Population" ]
+         ]
        ];
        fhir:Measure.group.population.description [ fhir:value "HOSPITAL INPATIENT BEDS: Total number of staffed inpatient beds in your hospital, including all staffed, licensed, and overflow and surge or expansion beds used for inpatients (includes ICU beds)" ];
        fhir:Measure.group.population.criteria [
@@ -124,13 +126,14 @@
        ]
      ], [
        fhir:index 2;
+       fhir:Element.id [ fhir:value "numBedsOcc" ];
        fhir:Measure.group.population.code [
          fhir:CodeableConcept.coding [
            fhir:index 0;
            fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
-           fhir:Coding.code [ fhir:value "initial-population" ]
-         ];
-         fhir:CodeableConcept.text [ fhir:value "numBedsOcc" ]
+           fhir:Coding.code [ fhir:value "initial-population" ];
+           fhir:Coding.display [ fhir:value "Initial Population" ]
+         ]
        ];
        fhir:Measure.group.population.description [ fhir:value "HOSPITAL INPATIENT BED OCCUPANCY: Total number of staffed inpatient beds that are currently occupied" ];
        fhir:Measure.group.population.criteria [
@@ -140,13 +143,14 @@
        ]
      ], [
        fhir:index 3;
+       fhir:Element.id [ fhir:value "numICUBeds" ];
        fhir:Measure.group.population.code [
          fhir:CodeableConcept.coding [
            fhir:index 0;
            fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
-           fhir:Coding.code [ fhir:value "initial-population" ]
-         ];
-         fhir:CodeableConcept.text [ fhir:value "numICUBeds" ]
+           fhir:Coding.code [ fhir:value "initial-population" ];
+           fhir:Coding.display [ fhir:value "Initial Population" ]
+         ]
        ];
        fhir:Measure.group.population.description [ fhir:value "ICU BEDS: Total number of staffed inpatient intensive care unit (ICU) beds" ];
        fhir:Measure.group.population.criteria [
@@ -156,13 +160,14 @@
        ]
      ], [
        fhir:index 4;
+       fhir:Element.id [ fhir:value "numICUBedsOcc" ];
        fhir:Measure.group.population.code [
          fhir:CodeableConcept.coding [
            fhir:index 0;
            fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
-           fhir:Coding.code [ fhir:value "initial-population" ]
-         ];
-         fhir:CodeableConcept.text [ fhir:value "numICUBedsOcc" ]
+           fhir:Coding.code [ fhir:value "initial-population" ];
+           fhir:Coding.display [ fhir:value "Initial Population" ]
+         ]
        ];
        fhir:Measure.group.population.description [ fhir:value "ICU BED OCCUPANCY: Total number of staffed inpatient ICU beds that are occupied" ];
        fhir:Measure.group.population.criteria [
@@ -178,13 +183,14 @@
      ];
      fhir:Measure.group.population [
        fhir:index 0;
+       fhir:Element.id [ fhir:value "numVent" ];
        fhir:Measure.group.population.code [
          fhir:CodeableConcept.coding [
            fhir:index 0;
            fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
-           fhir:Coding.code [ fhir:value "initial-population" ]
-         ];
-         fhir:CodeableConcept.text [ fhir:value "numVent" ]
+           fhir:Coding.code [ fhir:value "initial-population" ];
+           fhir:Coding.display [ fhir:value "Initial Population" ]
+         ]
        ];
        fhir:Measure.group.population.description [ fhir:value "MECHANICAL VENTILATORS: Total number of ventilators available" ];
        fhir:Measure.group.population.criteria [
@@ -194,13 +200,14 @@
        ]
      ], [
        fhir:index 1;
+       fhir:Element.id [ fhir:value "numVentUse" ];
        fhir:Measure.group.population.code [
          fhir:CodeableConcept.coding [
            fhir:index 0;
            fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
-           fhir:Coding.code [ fhir:value "initial-population" ]
-         ];
-         fhir:CodeableConcept.text [ fhir:value "numVentUse" ]
+           fhir:Coding.code [ fhir:value "initial-population" ];
+           fhir:Coding.display [ fhir:value "Initial Population" ]
+         ]
        ];
        fhir:Measure.group.population.description [ fhir:value "MECHANICAL VENTILATORS IN USE: Total number of ventilators in use" ];
        fhir:Measure.group.population.criteria [
@@ -216,13 +223,14 @@
      ];
      fhir:Measure.group.population [
        fhir:index 0;
+       fhir:Element.id [ fhir:value "numC19HospPats" ];
        fhir:Measure.group.population.code [
          fhir:CodeableConcept.coding [
            fhir:index 0;
            fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
-           fhir:Coding.code [ fhir:value "initial-population" ]
-         ];
-         fhir:CodeableConcept.text [ fhir:value "numC19HospPats" ]
+           fhir:Coding.code [ fhir:value "initial-population" ];
+           fhir:Coding.display [ fhir:value "Initial Population" ]
+         ]
        ];
        fhir:Measure.group.population.description [ fhir:value "HOSPITALIZED: Patients currently hospitalized in an inpatient bed who have suspected or confirmed COVID-19" ];
        fhir:Measure.group.population.criteria [
@@ -232,13 +240,14 @@
        ]
      ], [
        fhir:index 1;
+       fhir:Element.id [ fhir:value "numC19MechVentPats" ];
        fhir:Measure.group.population.code [
          fhir:CodeableConcept.coding [
            fhir:index 0;
            fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
-           fhir:Coding.code [ fhir:value "initial-population" ]
-         ];
-         fhir:CodeableConcept.text [ fhir:value "numC19MechVentPats" ]
+           fhir:Coding.code [ fhir:value "initial-population" ];
+           fhir:Coding.display [ fhir:value "Initial Population" ]
+         ]
        ];
        fhir:Measure.group.population.description [ fhir:value "HOSPITALIZED and VENTILATED: Patients currently hospitalized in an inpatient bed who have suspected or confirmed COVID-19 and are on a mechanical ventilator" ];
        fhir:Measure.group.population.criteria [
@@ -248,13 +257,14 @@
        ]
      ], [
        fhir:index 2;
+       fhir:Element.id [ fhir:value "numC19HOPats" ];
        fhir:Measure.group.population.code [
          fhir:CodeableConcept.coding [
            fhir:index 0;
            fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
-           fhir:Coding.code [ fhir:value "initial-population" ]
-         ];
-         fhir:CodeableConcept.text [ fhir:value "numC19HOPats" ]
+           fhir:Coding.code [ fhir:value "initial-population" ];
+           fhir:Coding.display [ fhir:value "Initial Population" ]
+         ]
        ];
        fhir:Measure.group.population.description [ fhir:value "HOSPITAL ONSET: Patients currently hospitalized in an inpatient bed with onset of suspected or confirmed COVID-19 fourteen or more days after hospital admission due to a condition other than COVID-19" ];
        fhir:Measure.group.population.criteria [
@@ -264,13 +274,14 @@
        ]
      ], [
        fhir:index 3;
+       fhir:Element.id [ fhir:value "numC19OverflowPats" ];
        fhir:Measure.group.population.code [
          fhir:CodeableConcept.coding [
            fhir:index 0;
            fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
-           fhir:Coding.code [ fhir:value "initial-population" ]
-         ];
-         fhir:CodeableConcept.text [ fhir:value "numC19OverflowPats" ]
+           fhir:Coding.code [ fhir:value "initial-population" ];
+           fhir:Coding.display [ fhir:value "Initial Population" ]
+         ]
        ];
        fhir:Measure.group.population.description [ fhir:value "ED/OVERFLOW: Patients with suspected or confirmed COVID-19 who are currently in the Emergency Department (ED) or any overflow location awaiting an inpatient bed" ];
        fhir:Measure.group.population.criteria [
@@ -280,13 +291,14 @@
        ]
      ], [
        fhir:index 4;
+       fhir:Element.id [ fhir:value "umC19OFMechVentPats" ];
        fhir:Measure.group.population.code [
          fhir:CodeableConcept.coding [
            fhir:index 0;
            fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
-           fhir:Coding.code [ fhir:value "initial-population" ]
-         ];
-         fhir:CodeableConcept.text [ fhir:value "numC19OFMechVentPats" ]
+           fhir:Coding.code [ fhir:value "initial-population" ];
+           fhir:Coding.display [ fhir:value "Initial Population" ]
+         ]
        ];
        fhir:Measure.group.population.description [ fhir:value "ED/OVERFLOW and VENTILATED: Patients with suspected or confirmed COVID-19 who currently are in the ED or any overflow location awaiting an inpatient bed and on a mechanical ventilator" ];
        fhir:Measure.group.population.criteria [
@@ -296,13 +308,14 @@
        ]
      ], [
        fhir:index 5;
+       fhir:Element.id [ fhir:value "numC19Died" ];
        fhir:Measure.group.population.code [
          fhir:CodeableConcept.coding [
            fhir:index 0;
            fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
-           fhir:Coding.code [ fhir:value "initial-population" ]
-         ];
-         fhir:CodeableConcept.text [ fhir:value "numC19Died" ]
+           fhir:Coding.code [ fhir:value "initial-population" ];
+           fhir:Coding.display [ fhir:value "Initial Population" ]
+         ]
        ];
        fhir:Measure.group.population.description [ fhir:value "DEATHS: Patients with suspected or confirmed COVID-19 who died in the hospital, ED or any overflow location on the date for which you are reporting" ];
        fhir:Measure.group.population.criteria [
