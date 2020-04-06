@@ -1,0 +1,145 @@
+{
+    "resourceType": "MeasureReport",
+    "id": "fema-c19-proportion",
+    "contained": [
+        {
+            "resourceType": "Location",
+            "id": "loc",
+            "address": {
+                "type": "physical",
+                "text": "Marin, CA",
+                "district": "Marin",
+                "state": "CA"
+            },
+            "physicalType": {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+                        "code": "jdn",
+                        "display": "Jurisdiction"
+                    }
+                ],
+                "text": "US County"
+            }
+        }
+    ],
+    "status": "complete",
+    "type": "individual",
+    "measure": "http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-proportion",
+    "subject": {
+        "reference": "#loc",
+        "display": "Marin, CA"
+    },
+    "date": "2020-04-06T20:54:17.258551Z",
+    "reporter": {
+        "identifier": {
+            "system": "urn:oid:2.16.840.1.113883.6.277",
+            "value": "2.16.840.1.113883.6.277.123"
+        },
+        "display": "Acme General Hospital"
+    },
+    "period": {
+        "start": "2020-04-04",
+        "end": "2020-04-04"
+    },
+    "group": [
+        {
+            "code": {
+                "text": "newPercentPositive"
+            },
+            "population": [
+                {
+                    "id": "newTestsResulted.initial-population",
+                    "code": {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                                "code": "initial-population"
+                            }
+                        ]
+                    },
+                    "count": 80
+                },
+                {
+                    "id": "newTestsResulted.denominator",
+                    "code": {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                                "code": "denominator"
+                            }
+                        ]
+                    },
+                    "count": 80
+                },
+                {
+                    "id": "newPositiveC19Tests.numerator",
+                    "code": {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                                "code": "numerator"
+                            }
+                        ]
+                    },
+                    "count": 8
+                }
+            ],
+            "measureScore": {
+                "value": 0.1,
+                "unit": "%",
+                "system": "http://unitsofmeasure.org",
+                "code": "%"
+            }
+        },
+        {
+            "code": {
+                "text": "cumulativePercentPositive"
+            },
+            "population": [
+                {
+                    "id": "cumulativeTestsPerformed.initial-population",
+                    "code": {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                                "code": "initial-population"
+                            }
+                        ]
+                    },
+                    "count": 800
+                },
+                {
+                    "id": "cumulativeTestsPerformed.denominator",
+                    "code": {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                                "code": "denominator"
+                            }
+                        ]
+                    },
+                    "count": 800
+                },
+                {
+                    "id": "cumulativePositiveC19Tests.numerator",
+                    "code": {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                                "code": "numerator"
+                            }
+                        ]
+                    },
+                    "count": 80
+                }
+            ],
+            "measureScore": {
+                "value": 0.1,
+                "unit": "%",
+                "system": "http://unitsofmeasure.org",
+                "code": "%"
+            }
+        }
+    ]
+}

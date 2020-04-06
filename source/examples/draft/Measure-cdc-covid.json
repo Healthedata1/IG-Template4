@@ -1,7 +1,7 @@
 {
   "resourceType": "Measure",
   "id": "cdc-covid",
-  "url": "http://cdcmeasures.example.org/modules/covid19/20200331/numTotBeds",
+  "url": "http://cdcmeasures.example.org/cdc-covid",
   "version": "20200401.06",
   "name": "Covid_19PatientImpactHospitalCapacity",
   "title": "COVID-19 Patient Impact & Hospital Capacity",

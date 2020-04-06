@@ -1,0 +1,181 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://www.fhir.org/guides/test4/Measure/fema-cohort> a fhir:Measure;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "fema-cohort"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: fema-cohort</p><p><b>url</b>: <a href=\"http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort\">http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort</a></p><p><b>version</b>: 20200404</p><p><b>name</b>: FemaMeasurementGroupCohorts</p><p><b>title</b>: FEMA Measurement Group Cohorts</p><p><b>status</b>: draft</p><p><b>subject</b>: Location <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/resource-types code 'Location' = 'Location', given as 'Location'})</span></p><p><b>date</b>: Apr 6, 2020, 8:37:37 AM</p><p><b>publisher</b>: SANER-IG</p><p><b>description</b>: COVID-19 results from in-house laboratories. The federal government requests that these results should be reported to the Federal Emergency Management Agency (FEMA) using a standardized template by 5 p.m. ET each day, and reflect the results through midnight of the previous day. This Measure defines the Cohort (IPP only) counts for: - New Diagnostic Tests Ordered/Received - Cumulative Diagnostic Tests Ordered/Reciever - Cumulative Specimens Rejected.</p><p><b>useContext</b>: </p><p><b>jurisdiction</b>: United States of America <span style=\"background: LightGoldenRodYellow\">(Details : {urn:iso:std:iso:3166 code 'US' = 'United States of America', given as 'United States of America'})</span></p><p><b>relatedArtifact</b>: , </p><p><b>scoring</b>: Cohort <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-scoring code 'cohort' = 'Cohort', given as 'Cohort'})</span></p><p><b>type</b>: Structure <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-type code 'structure' = 'Structure', given as 'Structure'})</span></p><blockquote><p><b>group</b></p><p><b>code</b>: newDiagnosticTests <span style=\"background: LightGoldenRodYellow\">(Details : {http://build.fhir.org/ig/AudaciousInquiry/saner-ig code 'newDiagnosticTests' = 'newDiagnosticTests)</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Description</b></td><td><b>Criteria</b></td></tr><tr><td>*</td><td>Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population', given as 'Initial Population'})</span></td><td>New Diagnostic Tests Ordered/Received</td><td/></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: cumulativeDiagnosticTests <span style=\"background: LightGoldenRodYellow\">(Details : {http://build.fhir.org/ig/AudaciousInquiry/saner-ig code 'cumulativeDiagnosticTests' = 'cumulativeDiagnosticTests)</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Description</b></td><td><b>Criteria</b></td></tr><tr><td>*</td><td>Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population', given as 'Initial Population'})</span></td><td>Cumulative Diagnostic Tests Ordered/Recieved</td><td/></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: cumulativeSpecimensRejected <span style=\"background: LightGoldenRodYellow\">(Details : {http://build.fhir.org/ig/AudaciousInquiry/saner-ig code 'cumulativeSpecimensRejected' = 'cumulativeSpecimensRejected)</span></p><p><b>description</b>: Cumulative Specimens Rejected*</p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Criteria</b></td></tr><tr><td>*</td><td>Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population', given as 'Initial Population'})</span></td><td/></tr></table></blockquote></div>"
+  ];
+  fhir:Measure.url [ fhir:value "http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort"];
+  fhir:Measure.version [ fhir:value "20200404"];
+  fhir:Measure.name [ fhir:value "FemaMeasurementGroupCohorts"];
+  fhir:Measure.title [ fhir:value "FEMA Measurement Group Cohorts"];
+  fhir:Measure.status [ fhir:value "draft"];
+  fhir:Measure.subjectCodeableConcept [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/resource-types" ];
+       fhir:Coding.code [ fhir:value "Location" ];
+       fhir:Coding.display [ fhir:value "Location" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Location" ]
+  ];
+  fhir:Measure.date [ fhir:value "2020-04-06T08:37:37-07:00"^^xsd:dateTime];
+  fhir:Measure.publisher [ fhir:value "SANER-IG"];
+  fhir:Measure.description [ fhir:value "COVID-19 results from in-house laboratories. The federal government requests that these results should be reported to the Federal Emergency Management Agency (FEMA) using a standardized template by 5 p.m. ET each day, and reflect the results through midnight of the previous day. This Measure defines the Cohort (IPP only) counts for: - New Diagnostic Tests Ordered/Received - Cumulative Diagnostic Tests Ordered/Reciever - Cumulative Specimens Rejected."];
+  fhir:Measure.useContext [
+     fhir:index 0;
+     fhir:UsageContext.code [
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/usage-context-type" ];
+       fhir:Coding.code [ fhir:value "focus" ]
+     ];
+     fhir:UsageContext.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a sct:840539006;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:Coding.code [ fhir:value "840539006" ];
+         fhir:Coding.display [ fhir:value "COVID-19" ]
+       ]
+     ]
+  ];
+  fhir:Measure.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "US" ];
+       fhir:Coding.display [ fhir:value "United States of America" ]
+     ]
+  ];
+  fhir:Measure.relatedArtifact [
+     fhir:index 0;
+     fhir:RelatedArtifact.type [ fhir:value "justification" ];
+     fhir:RelatedArtifact.display [ fhir:value "Hospital Letter Vice President Pence" ];
+     fhir:RelatedArtifact.document [
+       fhir:Attachment.url [ fhir:value "https://www.cms.gov/files/document/32920-hospital-letter-vice-president-pence.pdf" ];
+       fhir:Attachment.creation [ fhir:value "2020-03-29"^^xsd:date ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:RelatedArtifact.type [ fhir:value "derived-from" ];
+     fhir:RelatedArtifact.display [ fhir:value "FEMA Template for Daily Hospital COVID-19 Reporting" ];
+     fhir:RelatedArtifact.document [
+       fhir:Attachment.url [ fhir:value "https://github.com/AudaciousInquiry/saner-ig/blob/master/resources/Template%20for%20Daily%20Hospital%20COVID-19%20Reporting.xlsx" ];
+       fhir:Attachment.creation [ fhir:value "2020-03-29"^^xsd:date ]
+     ]
+  ];
+  fhir:Measure.scoring [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-scoring" ];
+       fhir:Coding.code [ fhir:value "cohort" ];
+       fhir:Coding.display [ fhir:value "Cohort" ]
+     ]
+  ];
+  fhir:Measure.type [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-type" ];
+       fhir:Coding.code [ fhir:value "structure" ];
+       fhir:Coding.display [ fhir:value "Structure" ]
+     ]
+  ];
+  fhir:Measure.group [
+     fhir:index 0;
+     fhir:Measure.group.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://build.fhir.org/ig/AudaciousInquiry/saner-ig" ];
+         fhir:Coding.code [ fhir:value "newDiagnosticTests" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "newDiagnosticTests" ]
+     ];
+     fhir:Measure.group.population [
+       fhir:index 0;
+       fhir:Measure.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ];
+           fhir:Coding.display [ fhir:value "Initial Population" ]
+         ]
+       ];
+       fhir:Measure.group.population.description [ fhir:value "New Diagnostic Tests Ordered/Received" ];
+       fhir:Measure.group.population.criteria [
+         fhir:Expression.description [ fhir:value "FEMA defined field: newDiagnosticTests" ];
+         fhir:Expression.language [ fhir:value "text/plain" ];
+         fhir:Expression.expression [ fhir:value "Midnight to midnight cutoff, tests ordered on previous date queried." ]
+       ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Measure.group.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://build.fhir.org/ig/AudaciousInquiry/saner-ig" ];
+         fhir:Coding.code [ fhir:value "cumulativeDiagnosticTests" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "cumulativeDiagnosticTests" ]
+     ];
+     fhir:Measure.group.population [
+       fhir:index 0;
+       fhir:Measure.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ];
+           fhir:Coding.display [ fhir:value "Initial Population" ]
+         ]
+       ];
+       fhir:Measure.group.population.description [ fhir:value "Cumulative Diagnostic Tests Ordered/Recieved" ];
+       fhir:Measure.group.population.criteria [
+         fhir:Expression.description [ fhir:value "FEMA defined field: cumulativeDiagnosticTests" ];
+         fhir:Expression.language [ fhir:value "text/plain" ];
+         fhir:Expression.expression [ fhir:value "All tests ordered to date." ]
+       ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:Measure.group.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://build.fhir.org/ig/AudaciousInquiry/saner-ig" ];
+         fhir:Coding.code [ fhir:value "cumulativeSpecimensRejected" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "cumulativeSpecimensRejected" ]
+     ];
+     fhir:Measure.group.description [ fhir:value "Cumulative Specimens Rejected*" ];
+     fhir:Measure.group.population [
+       fhir:index 0;
+       fhir:Measure.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ];
+           fhir:Coding.display [ fhir:value "Initial Population" ]
+         ]
+       ];
+       fhir:Measure.group.population.criteria [
+         fhir:Expression.description [ fhir:value "FEMA defined field: cumulativeSpecimensRejected" ];
+         fhir:Expression.language [ fhir:value "text/plain" ];
+         fhir:Expression.expression [ fhir:value "All specimens rejected for testing to date." ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://www.fhir.org/guides/test4/Measure/fema-cohort.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

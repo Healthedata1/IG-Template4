@@ -155,16 +155,95 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Measure"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Measure-fema-cohort.html"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Measure-fema-cohort.html"/>
+      </extension>
+      <reference>
+        <reference value="Measure/fema-cohort"/>
+      </reference>
+      <name value="FEMA Measurement Group Cohorts"/>
+      <description value="COVID-19 results from in-house laboratories. The federal government requests that these results should be reported to the Federal Emergency Management Agency (FEMA) using a standardized template by 5 p.m. ET each day, and reflect the results through midnight of the previous day. This Measure defines the Cohort (IPP only) counts for: - New Diagnostic Tests Ordered/Received - Cumulative Diagnostic Tests Ordered/Reciever - Cumulative Specimens Rejected."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Measure"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Measure-fema-proportion.html"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Measure-fema-proportion.html"/>
+      </extension>
+      <reference>
+        <reference value="Measure/fema-proportion"/>
+      </reference>
+      <name value="FEMA Measurement Group Proportions"/>
+      <description value="COVID-19 results from in-house laboratories. The federal government requests that these results should be reported to the Federal Emergency Management Agency (FEMA) using a standardized template by 5 p.m. ET each day, and reflect the results through midnight of the previous day. This Measure defines the Proportion (IPP,Denominator,Numerator only) counts for:&#xA;- Percent Positive among Newly Resulted Tests&#xA;  - New Tests Resulted&#xA;  - New Positive COVID-19 Tests&#xA;- Cumulative Percent Positive among Resulted Tests&#xA;  - Cumulative Tests Performed&#xA;  - Cumulative Positive COVID-19 Tests"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="MeasureReport"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="MeasureReport-ca620d2a-7639-11ea-be32-a4d18ccf5172.html"/>
+        <valueUri value="MeasureReport-c19-groups-measurereport-max.html"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="MeasureReport-ca620d2a-7639-11ea-be32-a4d18ccf5172.html"/>
+        <valueUri value="MeasureReport-c19-groups-measurereport-max.html"/>
       </extension>
       <reference>
-        <reference value="MeasureReport/ca620d2a-7639-11ea-be32-a4d18ccf5172"/>
+        <reference value="MeasureReport/c19-groups-measurereport-max"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MeasureReport"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="MeasureReport-fema-c19-cohort.html"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="MeasureReport-fema-c19-cohort.html"/>
+      </extension>
+      <reference>
+        <reference value="MeasureReport/fema-c19-cohort"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MeasureReport"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="MeasureReport-fema-c19-proportion.html"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="MeasureReport-fema-c19-proportion.html"/>
+      </extension>
+      <reference>
+        <reference value="MeasureReport/fema-c19-proportion"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MeasureReport"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="MeasureReport-c19-groups-measurereport-min.html"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="MeasureReport-c19-groups-measurereport-min.html"/>
+      </extension>
+      <reference>
+        <reference value="MeasureReport/c19-groups-measurereport-min"/>
       </reference>
       <exampleBoolean value="true"/>
     </resource>
@@ -173,13 +252,58 @@
         <valueString value="Bundle"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Bundle-cdc-c19-groups-20200404070053493066.html"/>
+        <valueUri value="Bundle-cdc-c19-groups-measurereports-max.html"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Bundle-cdc-c19-groups-20200404070053493066.html"/>
+        <valueUri value="Bundle-cdc-c19-groups-measurereports-max.html"/>
       </extension>
       <reference>
-        <reference value="Bundle/cdc-c19-groups-20200404070053493066"/>
+        <reference value="Bundle/cdc-c19-groups-measurereports-max"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Bundle-fema-c19-proportion.html"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Bundle-fema-c19-proportion.html"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/fema-c19-proportion"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Bundle-fema-c19-cohort.html"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Bundle-fema-c19-cohort.html"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/fema-c19-cohort"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Bundle-cdc-c19-groups-measurereports-min.html"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Bundle-cdc-c19-groups-measurereports-min.html"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/cdc-c19-groups-measurereports-min"/>
       </reference>
       <exampleBoolean value="true"/>
     </resource>

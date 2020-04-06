@@ -1,8 +1,8 @@
 {
   "resourceType": "Measure",
   "id": "cdc-covid",
-  "url": "http://cdcmeasures.example.org/modules/covid19/20200331/numTotBeds",
-  "version": "20200401.06",
+  "url": "http://cdcmeasures.example.org/cdc-covid",
+  "version": "20200404",
   "name": "Covid_19PatientImpactHospitalCapacity",
   "title": "COVID-19 Patient Impact & Hospital Capacity",
   "status": "draft",
@@ -50,15 +50,27 @@
   "relatedArtifact": [
     {
       "type": "derived-from",
-      "url": "https://www.cdc.gov/nhsn/pdfs/covid19/57.130-toi-508.pdf"
+      "display": "Instructions for Completion of the COVID-19 Patient Impact and Hospital Capacity Module Form (CDC 57.130)",
+      "document": {
+        "creation": "2020-03",
+        "url": "https://www.cdc.gov/nhsn/pdfs/covid19/57.130-toi-508.pdf"
+      }
     },
     {
       "type": "derived-from",
-      "url": "https://www.cdc.gov/nhsn/pdfs/covid19/import-covid19-data-508.pdf"
+      "display": "Importing COVID-19 Patient Module Denominator data for Patient Safety Component",
+      "document": {
+        "creation": "2020-03",
+        "url": "https://www.cdc.gov/nhsn/pdfs/covid19/import-covid19-data-508.pdf"
+      }
     },
     {
       "type": "justification",
-      "url": "https://www.cdc.gov/nhsn/acute-care-hospital/covid19/index.html"
+      "display": "COVID-19 Patient Impact & Hospital Capacity Module",
+      "document": {
+        "creation": "2020-03-31",
+        "url": "https://www.cdc.gov/nhsn/acute-care-hospital/covid19/index.html"
+      }
     }
   ],
   "scoring": {
@@ -84,11 +96,10 @@
   "group": [
     {
       "code": {
-        "text": "Hospital Bed/ICU Capacity"
+        "text": "numTotBeds"
       },
       "population": [
         {
-          "id": "numTotBeds",
           "code": {
             "coding": [
               {
@@ -104,9 +115,15 @@
             "language": "text/plain",
             "expression": "Requirement: Optional, Values: 0 to 10000, Format: Must be a whole number, Instruction for Data Collection: Enter the total number of all hospital beds, including inpatient and outpatient beds. All staffed, licensed, and overflow and surge/expansion beds used for inpatients or outpatients. This includes ICU beds."
           }
-        },
+        }
+      ]
+    },
+    {
+      "code": {
+        "text": "Numbeds"
+      },
+      "population": [
         {
-          "id": "Numbeds",
           "code": {
             "coding": [
               {
@@ -122,9 +139,15 @@
             "language": "text/plain",
             "expression": "Requirement: Required, Values: 0 to 10000, Format: Must be a whole number Must be <= numTotBeds, Instruction for Data Collection: Required. Enter the total number of all inpatient beds, including all staffed, licensed, and overflow and surge/expansion beds created for inpatient care. This includes intensive care unit (ICU) beds."
           }
-        },
+        }
+      ]
+    },
+    {
+      "code": {
+        "text": "numBedsOcc"
+      },
+      "population": [
         {
-          "id": "numBedsOcc",
           "code": {
             "coding": [
               {
@@ -140,9 +163,15 @@
             "language": "text/plain",
             "expression": "Requirement: Optional, Values: 0 to 10000, Format: Must be a whole number Must be <= numBeds, Instruction for Data Collection: Enter the total number of staffed inpatient beds occupied by patients at the time the data is collected, including all staffed, licensed, and overflow and surge/expansion beds created for inpatient care. This includes ICU beds."
           }
-        },
+        }
+      ]
+    },
+    {
+      "code": {
+        "text": "numICUBeds"
+      },
+      "population": [
         {
-          "id": "numICUBeds",
           "code": {
             "coding": [
               {
@@ -158,9 +187,15 @@
             "language": "text/plain",
             "expression": "Requirement: Optional, Values: 0 to 10000, Format: Must be a whole number Must be <= numBeds, Instruction for Data Collection: Enter the total number of staffed Intensive Care Unit (ICU) beds."
           }
-        },
+        }
+      ]
+    },
+    {
+      "code": {
+        "text": "numICUBedsOcc"
+      },
+      "population": [
         {
-          "id": "numICUBedsOcc",
           "code": {
             "coding": [
               {
@@ -181,11 +216,10 @@
     },
     {
       "code": {
-        "text": "Hospital Ventilator Capacity"
+        "text": "numVent"
       },
       "population": [
         {
-          "id": "numVent",
           "code": {
             "coding": [
               {
@@ -201,9 +235,15 @@
             "language": "text/plain",
             "expression": "Requirement: Optional, Values: 0 to 10000, Format: Must be a whole numbe Must be <= numTotBeds or <= 10,000 , Instruction for Data Collection: Enter the total number of mechanical ventilators, including anesthesia machines and portable/transport ventilators available in the facility. Include BiPAP machines if the hospital uses BiPAP to deliver positive pressure ventilation via artificial airways."
           }
-        },
+        }
+      ]
+    },
+    {
+      "code": {
+        "text": "numVentUse"
+      },
+      "population": [
         {
-          "id": "numVentUse",
           "code": {
             "coding": [
               {
@@ -224,11 +264,10 @@
     },
     {
       "code": {
-        "text": "Patient Impact"
+        "text": "numC19HospPats"
       },
       "population": [
         {
-          "id": "numC19HospPats",
           "code": {
             "coding": [
               {
@@ -244,9 +283,15 @@
             "language": "text/plain",
             "expression": "Requirement: Optional, Values: 0 to 10000, Format: Must be a whole number Must be <= numBedsOcc, Instruction for Data Collection:Enter the number of patients hospitalized in an inpatient bed at the time the data is collected who have suspected or confirmed COVID-19. This includes the patients with laboratory-confirmed or clinically diagnosed COVID-19. Confirmed: A patient with a laboratoryconfirmed COVID-19 diagnosis. Suspected: A patient without a laboratory confirmed COVID-19 diagnosis who, in accordance with CDC’s Interim Public Health Guidance for Evaluating Persons Under Investigation (PUIs), has signs and symptoms compatible with COVID-19 (most patients with confirmed COVID-19 have developed fever and/or symptoms of acute respiratory illness, such as cough, shortness of breath or myalgia/fatigue)."
           }
-        },
+        }
+      ]
+    },
+    {
+      "code": {
+        "text": "numC19MechVentPats"
+      },
+      "population": [
         {
-          "id": "numC19MechVentPats",
           "code": {
             "coding": [
               {
@@ -262,9 +307,15 @@
             "language": "text/plain",
             "expression": "Requirement: Optional, Values: 0 to 10000, Format: Must be a whole number Must be <= numVentUse, Instruction for Data Collection: Enter the number of patients hospitalized in an inpatient bed who have suspected or confirmed COVID-19 and are currently on a mechanical ventilator* at the time the data is collected . This includes the patients with laboratory-confirmed or clinically diagnosed COVID-19. *Ventilator: Any device used to support, assist or control respiration (inclusive of the weaning period) through the application of positive pressure to the airway when delivered via an artificial airway, specifically an oral/nasal endotracheal or tracheostomy tube. Note: Ventilation and lung expansion devices that deliver positive pressure to the airway (for example: CPAP, BiPAP, bi-level, IPPB and PEEP) via non-invasive means (for example: nasal prongs, nasal mask, full face mask, total mask, etc.) are not considered ventilators unless positive pressure is delivered via an artificial airway (oral/nasal endotracheal or tracheostomy tube)."
           }
-        },
+        }
+      ]
+    },
+    {
+      "code": {
+        "text": "numC19HOPats"
+      },
+      "population": [
         {
-          "id": "numC19HOPats",
           "code": {
             "coding": [
               {
@@ -280,9 +331,15 @@
             "language": "text/plain",
             "expression": "Requirement: Optional, Values: 0 to 10000, Format: Must be a whole number Must be <= numBedsOcc, Instruction for Data Collection: Enter the number of patients hospitalized in an inpatient bed at the time the data is collected with onset of suspected or confirmed COVID-19 fourteen or more days after hospitalization (admission date = hospital day 1). This includes laboratory-confirmed or clinically diagnosed COVID-19 cases."
           }
-        },
+        }
+      ]
+    },
+    {
+      "code": {
+        "text": "numC19OverflowPats"
+      },
+      "population": [
         {
-          "id": "numC19OverflowPats",
           "code": {
             "coding": [
               {
@@ -298,9 +355,15 @@
             "language": "text/plain",
             "expression": "Requirement: Optional, Values: 0 to 2000, Format: Must be a whole number Must be <= 2000, Instruction for Data Collection: Enter the number of patients with suspected or confirmed COVID-19 who are in the Emergency Department(ED) or any overflow/expansion location awaiting placement in an inpatient bed at the time the data is collected . This includes patients with laboratory-confirmed or clinically diagnosed COVID-19. Overflow locations include any physical locations created to accommodate patients include but not limited to 24-hour observation units, hallways, parking lots, or tents"
           }
-        },
+        }
+      ]
+    },
+    {
+      "code": {
+        "text": "umC19OFMechVentPats"
+      },
+      "population": [
         {
-          "id": "umC19OFMechVentPats",
           "code": {
             "coding": [
               {
@@ -316,9 +379,15 @@
             "language": "text/plain",
             "expression": "Requirement: Optional, Values: 0 to 10000, Format: Must be a whole number Must be <= numVentUse, Instruction for Data Collection: Enter the number of patients with suspected or confirmed COVID-19 who are in the ED or any overflow/expansion location on a mechanical ventilator* at the time the data is collected . This includes patients with laboratory-confirmed or clinically diagnosed COVID-19. *Ventilator: Any device used to support, assist or control respiration (inclusive of the weaning period) through the application of positive pressure to the airway when delivered via an artificial airway, specifically an oral/nasal endotracheal or tracheostomy tube. Note: Ventilation and lung expansion devices that deliver positive pressure to the airway (for example: CPAP, BiPAP, bi-level, IPPB and PEEP) via non-invasive means (for example: nasal prongs, nasal mask, full face mask, total mask, etc.) are not considered ventilators unless positive pressure is delivered via an artificial airway (oral/nasal endotracheal or tracheostomy tube)."
           }
-        },
+        }
+      ]
+    },
+    {
+      "code": {
+        "text": "numC19Died"
+      },
+      "population": [
         {
-          "id": "numC19Died",
           "code": {
             "coding": [
               {

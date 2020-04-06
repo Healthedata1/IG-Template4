@@ -1,0 +1,45 @@
+﻿<html>
+<head>
+  <title>Measure-sanerFEMA-validation</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<table class="grid">
+<tr><td><b>Level</b></td><td><b>Type</b></td><td><b>Location</b></td><td><b>Message</b></td></tr>
+<tr><td>error</td><td>code-invalid</td><td>Measure/sanerFEMA: Measure.subject.ofType(CodeableConcept).coding[0]</td><td>Coding.system must be an absolute reference, not a local reference</td><td></td></tr>
+<tr><td>error</td><td>code-invalid</td><td>Measure/sanerFEMA: Measure.type[0].coding[0]</td><td>The Coding references a value set, not a code system (&quot;http://hl7.org/fhir/ValueSet/measure-type&quot;)</td><td></td></tr>
+<tr><td>error</td><td>code-invalid</td><td>Measure/sanerFEMA: Measure.type[0].coding[0]</td><td>Unknown Code System &quot;http://hl7.org/fhir/ValueSet/measure-type&quot;</td><td></td></tr>
+<tr><td>warning</td><td>invariant</td><td>Measure/sanerFEMA: Measure</td><td>mea-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]</td><td></td></tr>
+<tr><td>warning</td><td>code-invalid</td><td>Measure/sanerFEMA: Measure.group[0].population[0].criteria.language</td><td>ValueSet http://www.rfc-editor.org/bcp/bcp13.txt not found by validator</td><td></td></tr>
+<tr><td>warning</td><td>code-invalid</td><td>Measure/sanerFEMA: Measure.group[1].population[0].criteria.language</td><td>ValueSet http://www.rfc-editor.org/bcp/bcp13.txt not found by validator</td><td></td></tr>
+<tr><td>warning</td><td>code-invalid</td><td>Measure/sanerFEMA: Measure.group[2].population[0].criteria.language</td><td>ValueSet http://www.rfc-editor.org/bcp/bcp13.txt not found by validator</td><td></td></tr>
+<tr><td>warning</td><td>code-invalid</td><td>Measure/sanerFEMA: Measure.group[3].population[0].criteria.language</td><td>ValueSet http://www.rfc-editor.org/bcp/bcp13.txt not found by validator</td><td></td></tr>
+<tr><td>warning</td><td>code-invalid</td><td>Measure/sanerFEMA: Measure.group[4].population[0].criteria.language</td><td>ValueSet http://www.rfc-editor.org/bcp/bcp13.txt not found by validator</td><td></td></tr>
+<tr><td>warning</td><td>code-invalid</td><td>Measure/sanerFEMA: Measure.group[5].population[0].criteria.language</td><td>ValueSet http://www.rfc-editor.org/bcp/bcp13.txt not found by validator</td><td></td></tr>
+<tr><td>warning</td><td>code-invalid</td><td>Measure/sanerFEMA: Measure.group[6].population[0].criteria.language</td><td>ValueSet http://www.rfc-editor.org/bcp/bcp13.txt not found by validator</td><td></td></tr>
+<tr><td>warning</td><td>code-invalid</td><td>Measure/sanerFEMA: Measure.group[7].population[0].criteria.language</td><td>ValueSet http://www.rfc-editor.org/bcp/bcp13.txt not found by validator</td><td></td></tr>
+<tr><td>warning</td><td>code-invalid</td><td>Measure/sanerFEMA: Measure.group[7].population[1].criteria.language</td><td>ValueSet http://www.rfc-editor.org/bcp/bcp13.txt not found by validator</td><td></td></tr>
+<tr><td>warning</td><td>code-invalid</td><td>Measure/sanerFEMA: Measure.group[8].population[0].criteria.language</td><td>ValueSet http://www.rfc-editor.org/bcp/bcp13.txt not found by validator</td><td></td></tr>
+<tr><td>warning</td><td>code-invalid</td><td>Measure/sanerFEMA: Measure.group[8].population[1].criteria.language</td><td>ValueSet http://www.rfc-editor.org/bcp/bcp13.txt not found by validator</td><td></td></tr>
+<tr><td>warning</td><td>required</td><td>Measure/sanerFEMA: Measure.group[0]</td><td>Measure Groups should have at least one stratifier</td><td></td></tr>
+<tr><td>warning</td><td>required</td><td>Measure/sanerFEMA: Measure.group[1]</td><td>Measure Groups should have at least one stratifier</td><td></td></tr>
+<tr><td>warning</td><td>required</td><td>Measure/sanerFEMA: Measure.group[2]</td><td>Measure Groups should have at least one stratifier</td><td></td></tr>
+<tr><td>warning</td><td>required</td><td>Measure/sanerFEMA: Measure.group[3]</td><td>Measure Groups should have at least one stratifier</td><td></td></tr>
+<tr><td>warning</td><td>required</td><td>Measure/sanerFEMA: Measure.group[4]</td><td>Measure Groups should have at least one stratifier</td><td></td></tr>
+<tr><td>warning</td><td>required</td><td>Measure/sanerFEMA: Measure.group[5]</td><td>Measure Groups should have at least one stratifier</td><td></td></tr>
+<tr><td>warning</td><td>required</td><td>Measure/sanerFEMA: Measure.group[6]</td><td>Measure Groups should have at least one stratifier</td><td></td></tr>
+<tr><td>warning</td><td>required</td><td>Measure/sanerFEMA: Measure.group[7]</td><td>Measure Groups should have at least one stratifier</td><td></td></tr>
+<tr><td>warning</td><td>required</td><td>Measure/sanerFEMA: Measure.group[8]</td><td>Measure Groups should have at least one stratifier</td><td></td></tr>
+<tr><td>information</td><td>unknown</td><td>Measure/sanerFEMA: Measure.subject.ofType(CodeableConcept).coding[0]</td><td>Code System URI &quot;Location&quot; is unknown so the code cannot be validated</td><td></td></tr>
+<tr><td>information</td><td>unknown</td><td>Measure/sanerFEMA: Measure.group[0].code.coding[0]</td><td>Code System URI &quot;http://build.fhir.org/ig/AudaciousInquiry/saner-ig&quot; is unknown so the code cannot be validated</td><td></td></tr>
+<tr><td>information</td><td>unknown</td><td>Measure/sanerFEMA: Measure.group[1].code.coding[0]</td><td>Code System URI &quot;http://build.fhir.org/ig/AudaciousInquiry/saner-ig&quot; is unknown so the code cannot be validated</td><td></td></tr>
+<tr><td>information</td><td>unknown</td><td>Measure/sanerFEMA: Measure.group[2].code.coding[0]</td><td>Code System URI &quot;http://build.fhir.org/ig/AudaciousInquiry/saner-ig&quot; is unknown so the code cannot be validated</td><td></td></tr>
+<tr><td>information</td><td>unknown</td><td>Measure/sanerFEMA: Measure.group[3].code.coding[0]</td><td>Code System URI &quot;http://build.fhir.org/ig/AudaciousInquiry/saner-ig&quot; is unknown so the code cannot be validated</td><td></td></tr>
+<tr><td>information</td><td>unknown</td><td>Measure/sanerFEMA: Measure.group[4].code.coding[0]</td><td>Code System URI &quot;http://build.fhir.org/ig/AudaciousInquiry/saner-ig&quot; is unknown so the code cannot be validated</td><td></td></tr>
+<tr><td>information</td><td>unknown</td><td>Measure/sanerFEMA: Measure.group[5].code.coding[0]</td><td>Code System URI &quot;http://build.fhir.org/ig/AudaciousInquiry/saner-ig&quot; is unknown so the code cannot be validated</td><td></td></tr>
+<tr><td>information</td><td>unknown</td><td>Measure/sanerFEMA: Measure.group[6].code.coding[0]</td><td>Code System URI &quot;http://build.fhir.org/ig/AudaciousInquiry/saner-ig&quot; is unknown so the code cannot be validated</td><td></td></tr>
+<tr><td>information</td><td>unknown</td><td>Measure/sanerFEMA: Measure.group[7].code.coding[0]</td><td>Code System URI &quot;http://build.fhir.org/ig/AudaciousInquiry/saner-ig&quot; is unknown so the code cannot be validated</td><td></td></tr>
+<tr><td>information</td><td>unknown</td><td>Measure/sanerFEMA: Measure.group[8].code.coding[0]</td><td>Code System URI &quot;http://build.fhir.org/ig/AudaciousInquiry/saner-ig&quot; is unknown so the code cannot be validated</td><td></td></tr>
+</table>
+</body>
+</html>

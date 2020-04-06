@@ -1,0 +1,188 @@
+{% raw %}<pre class="rdf">
+@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix sct: &lt;http://snomed.info/id/&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+# - resource -------------------------------------------------------------------
+
+ a fhir:Measure;
+  <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot;
+  <a href="http://hl7.org/fhir/R4/measure.html#Measure.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;fema-proportion&quot;];
+  <a href="http://hl7.org/fhir/R4/measure.html#Measure.text">fhir:DomainResource.text</a> [
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: fema-proportion&lt;/p&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;: &lt;a href=\&quot;http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-proportion\&quot;&gt;http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-proportion&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;version&lt;/b&gt;: 20200404&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: FemaMeasurementGroupProportions&lt;/p&gt;&lt;p&gt;&lt;b&gt;title&lt;/b&gt;: FEMA Measurement Group Proportions&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: draft&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: Location &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {http://hl7.org/fhir/resource-types code 'Location' = 'Location', given as 'Location'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;date&lt;/b&gt;: Apr 6, 2020, 8:37:17 AM&lt;/p&gt;&lt;p&gt;&lt;b&gt;publisher&lt;/b&gt;: SANER-IG&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: COVID-19 results from in-house laboratories. The federal government requests that these results should be reported to the Federal Emergency Management Agency (FEMA) using a standardized template by 5 p.m. ET each day, and reflect the results through midnight of the previous day. This Measure defines the Proportion (IPP,Denominator,Numerator only) counts for:\n- Percent Positive among Newly Resulted Tests\n  - New Tests Resulted\n  - New Positive COVID-19 Tests\n- Cumulative Percent Positive among Resulted Tests\n  - Cumulative Tests Performed\n  - Cumulative Positive COVID-19 Tests&lt;/p&gt;&lt;p&gt;&lt;b&gt;useContext&lt;/b&gt;: &lt;/p&gt;&lt;p&gt;&lt;b&gt;jurisdiction&lt;/b&gt;: United States of America &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {urn:iso:std:iso:3166 code 'US' = 'United States of America', given as 'United States of America'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;relatedArtifact&lt;/b&gt;: , &lt;/p&gt;&lt;p&gt;&lt;b&gt;scoring&lt;/b&gt;: Proportion &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {http://terminology.hl7.org/CodeSystem/measure-scoring code 'proportion' = 'Proportion', given as 'Proportion'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Outcome &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {http://terminology.hl7.org/CodeSystem/measure-type code 'outcome' = 'Outcome', given as 'Outcome'})&lt;/span&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;group&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: newPercentPositive &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {http://build.fhir.org/ig/AudaciousInquiry/saner-ig code 'newPercentPositive' = 'newPercentPositive)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: Percent Positive among Newly Resulted Tests: # of total positive results to released date / # of total test results released to date.&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;population&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: newTestsResulted.initial-population&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Initial Population &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population', given as 'Initial Population'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: New Tests Resulted&lt;/p&gt;&lt;p&gt;&lt;b&gt;criteria&lt;/b&gt;: &lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;population&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: newTestsResulted.denominator&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Denominator &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'denominator' = 'Denominator', given as 'Denominator'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: New Tests Resulted&lt;/p&gt;&lt;p&gt;&lt;b&gt;criteria&lt;/b&gt;: &lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;population&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: newPositiveC19Tests.numerator&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Numerator &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'numerator' = 'Numerator', given as 'Numerator'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: New Positive COVID-19 Tests&lt;/p&gt;&lt;p&gt;&lt;b&gt;criteria&lt;/b&gt;: &lt;/p&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;group&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: cumulativePercentPositive &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {http://build.fhir.org/ig/AudaciousInquiry/saner-ig code 'cumulativePercentPositive' = 'cumulativePercentPositive)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: Cumulative Percent Positive among Resulted Tests: # of total positive results to released date / # of total tests results released to date&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;population&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: cumulativeTestsPerformed.initial-population&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Initial Population &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population', given as 'Initial Population'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;criteria&lt;/b&gt;: &lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;population&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: cumulativeTestsPerformed.denominator&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Denominator &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'denominator' = 'Denominator', given as 'Denominator'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;criteria&lt;/b&gt;: &lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;population&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: cumulativePositiveC19Tests.numerator&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Numerator &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'numerator' = 'Numerator', given as 'Numerator'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;criteria&lt;/b&gt;: &lt;/p&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;/div&gt;&quot;
+  ];
+  <a href="http://hl7.org/fhir/R4/measure.html#Measure.url">fhir:Measure.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-proportion&quot;];
+  <a href="http://hl7.org/fhir/R4/measure.html#Measure.version">fhir:Measure.version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;20200404&quot;];
+  <a href="http://hl7.org/fhir/R4/measure.html#Measure.name">fhir:Measure.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;FemaMeasurementGroupProportions&quot;];
+  <a href="http://hl7.org/fhir/R4/measure.html#Measure.title">fhir:Measure.title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;FEMA Measurement Group Proportions&quot;];
+  <a href="http://hl7.org/fhir/R4/measure.html#Measure.status">fhir:Measure.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;draft&quot;];
+  <a href="http://hl7.org/fhir/R4/measure.html#Measure.subject[x]">fhir:Measure.subjectCodeableConcept</a> [
+     <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/resource-types&quot; ];
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;Location&quot; ];
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Location&quot; ]     ];
+     <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Location&quot; ]
+  ];
+  <a href="http://hl7.org/fhir/R4/measure.html#Measure.date">fhir:Measure.date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2020-04-06T08:37:17-07:00&quot;^^xsd:dateTime];
+  <a href="http://hl7.org/fhir/R4/measure.html#Measure.publisher">fhir:Measure.publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;SANER-IG&quot;];
+  <a href="http://hl7.org/fhir/R4/measure.html#Measure.description">fhir:Measure.description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:value</a> &quot;COVID-19 results from in-house laboratories. The federal government requests that these results should be reported to the Federal Emergency Management Agency (FEMA) using a standardized template by 5 p.m. ET each day, and reflect the results through midnight of the previous day. This Measure defines the Proportion (IPP,Denominator,Numerator only) counts for:\n- Percent Positive among Newly Resulted Tests\n  - New Tests Resulted\n  - New Positive COVID-19 Tests\n- Cumulative Percent Positive among Resulted Tests\n  - Cumulative Tests Performed\n  - Cumulative Positive COVID-19 Tests&quot;];
+  <a href="http://hl7.org/fhir/R4/measure.html#Measure.useContext">fhir:Measure.useContext</a> [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+     <a href="http://hl7.org/fhir/R4/metadatatypes.html#UsageContext#UsageContext.code">fhir:UsageContext.code</a> [
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://terminology.hl7.org/CodeSystem/usage-context-type&quot; ];
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;focus&quot; ]     ];
+     <a href="http://hl7.org/fhir/R4/metadatatypes.html#UsageContext#UsageContext.value[x]">fhir:UsageContext.valueCodeableConcept</a> [
+       <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+         a sct:840539006;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://snomed.info/sct&quot; ];
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;840539006&quot; ];
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;COVID-19&quot; ]       ]     ]
+  ];
+  <a href="http://hl7.org/fhir/R4/measure.html#Measure.jurisdiction">fhir:Measure.jurisdiction</a> [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+     <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;urn:iso:std:iso:3166&quot; ];
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;US&quot; ];
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;United States of America&quot; ]     ]
+  ];
+  <a href="http://hl7.org/fhir/R4/measure.html#Measure.relatedArtifact">fhir:Measure.relatedArtifact</a> [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+     <a href="http://hl7.org/fhir/R4/metadatatypes.html#RelatedArtifact#RelatedArtifact.type">fhir:RelatedArtifact.type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;justification&quot; ];
+     <a href="http://hl7.org/fhir/R4/metadatatypes.html#RelatedArtifact#RelatedArtifact.display">fhir:RelatedArtifact.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Hospital Letter Vice President Pence&quot; ];
+     <a href="http://hl7.org/fhir/R4/metadatatypes.html#RelatedArtifact#RelatedArtifact.document">fhir:RelatedArtifact.document</a> [
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Attachment#Attachment.url">fhir:Attachment.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#url">fhir:value</a> &quot;https://www.cms.gov/files/document/32920-hospital-letter-vice-president-pence.pdf&quot; ];
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Attachment#Attachment.creation">fhir:Attachment.creation</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2020-03-29&quot;^^xsd:date ]     ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1;
+     <a href="http://hl7.org/fhir/R4/metadatatypes.html#RelatedArtifact#RelatedArtifact.type">fhir:RelatedArtifact.type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;derived-from&quot; ];
+     <a href="http://hl7.org/fhir/R4/metadatatypes.html#RelatedArtifact#RelatedArtifact.display">fhir:RelatedArtifact.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;FEMA Template for Daily Hospital COVID-19 Reporting&quot; ];
+     <a href="http://hl7.org/fhir/R4/metadatatypes.html#RelatedArtifact#RelatedArtifact.document">fhir:RelatedArtifact.document</a> [
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Attachment#Attachment.url">fhir:Attachment.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#url">fhir:value</a> &quot;https://github.com/AudaciousInquiry/saner-ig/blob/master/resources/Template%20for%20Daily%20Hospital%20COVID-19%20Reporting.xlsx&quot; ];
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Attachment#Attachment.creation">fhir:Attachment.creation</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2020-03-29&quot;^^xsd:date ]     ]
+  ];
+  <a href="http://hl7.org/fhir/R4/measure.html#Measure.scoring">fhir:Measure.scoring</a> [
+     <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://terminology.hl7.org/CodeSystem/measure-scoring&quot; ];
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;proportion&quot; ];
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Proportion&quot; ]     ]
+  ];
+  <a href="http://hl7.org/fhir/R4/measure.html#Measure.type">fhir:Measure.type</a> [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+     <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://terminology.hl7.org/CodeSystem/measure-type&quot; ];
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;outcome&quot; ];
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Outcome&quot; ]     ]
+  ];
+  <a href="http://hl7.org/fhir/R4/measure.html#Measure.group">fhir:Measure.group</a> [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+     <a href="http://hl7.org/fhir/R4/measure.html#Measure.group.code">fhir:Measure.group.code</a> [
+       <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://build.fhir.org/ig/AudaciousInquiry/saner-ig&quot; ];
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;newPercentPositive&quot; ]       ];
+       <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;newPercentPositive&quot; ]     ];
+     <a href="http://hl7.org/fhir/R4/measure.html#Measure.group.description">fhir:Measure.group.description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Percent Positive among Newly Resulted Tests: # of total positive results to released date / # of total test results released to date.&quot; ];
+     <a href="http://hl7.org/fhir/R4/measure.html#Measure.group.population">fhir:Measure.group.population</a> [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+       <a href="http://hl7.org/fhir/R4/measure.html#Measure.group.population.id">fhir:Element.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;newTestsResulted.initial-population&quot; ];
+       <a href="http://hl7.org/fhir/R4/measure.html#Measure.group.population.code">fhir:Measure.group.population.code</a> [
+         <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+           <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+           <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://terminology.hl7.org/CodeSystem/measure-population&quot; ];
+           <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;initial-population&quot; ];
+           <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Initial Population&quot; ]         ]       ];
+       <a href="http://hl7.org/fhir/R4/measure.html#Measure.group.population.description">fhir:Measure.group.population.description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;New Tests Resulted&quot; ];
+       <a href="http://hl7.org/fhir/R4/measure.html#Measure.group.population.criteria">fhir:Measure.group.population.criteria</a> [
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.description">fhir:Expression.description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;FEMA defined field: newTestsResulted&quot; ];
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.language">fhir:Expression.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;text/plain&quot; ];
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.expression">fhir:Expression.expression</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Midnight to midnight cutoff, test results released on previous date queried.&quot; ]       ]     ], [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1;
+       <a href="http://hl7.org/fhir/R4/measure.html#Measure.group.population.id">fhir:Element.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;newTestsResulted.denominator&quot; ];
+       <a href="http://hl7.org/fhir/R4/measure.html#Measure.group.population.code">fhir:Measure.group.population.code</a> [
+         <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+           <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+           <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://terminology.hl7.org/CodeSystem/measure-population&quot; ];
+           <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;denominator&quot; ];
+           <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Denominator&quot; ]         ]       ];
+       <a href="http://hl7.org/fhir/R4/measure.html#Measure.group.population.description">fhir:Measure.group.population.description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;New Tests Resulted&quot; ];
+       <a href="http://hl7.org/fhir/R4/measure.html#Measure.group.population.criteria">fhir:Measure.group.population.criteria</a> [
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.description">fhir:Expression.description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;FEMA defined field: newTestsResulted&quot; ];
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.language">fhir:Expression.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;text/plain&quot; ];
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.expression">fhir:Expression.expression</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Midnight to midnight cutoff, test results released on previous date queried.&quot; ]       ]     ], [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 2;
+       <a href="http://hl7.org/fhir/R4/measure.html#Measure.group.population.id">fhir:Element.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;newPositiveC19Tests.numerator&quot; ];
+       <a href="http://hl7.org/fhir/R4/measure.html#Measure.group.population.code">fhir:Measure.group.population.code</a> [
+         <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+           <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+           <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://terminology.hl7.org/CodeSystem/measure-population&quot; ];
+           <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;numerator&quot; ];
+           <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Numerator&quot; ]         ]       ];
+       <a href="http://hl7.org/fhir/R4/measure.html#Measure.group.population.description">fhir:Measure.group.population.description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;New Positive COVID-19 Tests&quot; ];
+       <a href="http://hl7.org/fhir/R4/measure.html#Measure.group.population.criteria">fhir:Measure.group.population.criteria</a> [
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.description">fhir:Expression.description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;FEMA defined field: newPositiveC19Tests&quot; ];
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.language">fhir:Expression.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;text/plain&quot; ];
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.expression">fhir:Expression.expression</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Midnight to midnight cutoff, positive test results released on the previous date queried.&quot; ]       ]     ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1;
+     <a href="http://hl7.org/fhir/R4/measure.html#Measure.group.code">fhir:Measure.group.code</a> [
+       <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://build.fhir.org/ig/AudaciousInquiry/saner-ig&quot; ];
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;cumulativePercentPositive&quot; ]       ];
+       <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;cumulativePercentPositive&quot; ]     ];
+     <a href="http://hl7.org/fhir/R4/measure.html#Measure.group.description">fhir:Measure.group.description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Cumulative Percent Positive among Resulted Tests: # of total positive results to released date / # of total tests results released to date&quot; ];
+     <a href="http://hl7.org/fhir/R4/measure.html#Measure.group.population">fhir:Measure.group.population</a> [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+       <a href="http://hl7.org/fhir/R4/measure.html#Measure.group.population.id">fhir:Element.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;cumulativeTestsPerformed.initial-population&quot; ];
+       <a href="http://hl7.org/fhir/R4/measure.html#Measure.group.population.code">fhir:Measure.group.population.code</a> [
+         <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+           <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+           <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://terminology.hl7.org/CodeSystem/measure-population&quot; ];
+           <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;initial-population&quot; ];
+           <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Initial Population&quot; ]         ]       ];
+       <a href="http://hl7.org/fhir/R4/measure.html#Measure.group.population.criteria">fhir:Measure.group.population.criteria</a> [
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.description">fhir:Expression.description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;FEMA defined field: cumulativeTestsPerformed&quot; ];
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.language">fhir:Expression.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;text/plain&quot; ];
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.expression">fhir:Expression.expression</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;All tests with results released to date.&quot; ]       ]     ], [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1;
+       <a href="http://hl7.org/fhir/R4/measure.html#Measure.group.population.id">fhir:Element.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;cumulativeTestsPerformed.denominator&quot; ];
+       <a href="http://hl7.org/fhir/R4/measure.html#Measure.group.population.code">fhir:Measure.group.population.code</a> [
+         <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+           <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+           <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://terminology.hl7.org/CodeSystem/measure-population&quot; ];
+           <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;denominator&quot; ];
+           <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Denominator&quot; ]         ]       ];
+       <a href="http://hl7.org/fhir/R4/measure.html#Measure.group.population.criteria">fhir:Measure.group.population.criteria</a> [
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.description">fhir:Expression.description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;FEMA defined field: cumulativeTestsPerformed&quot; ];
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.language">fhir:Expression.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;text/plain&quot; ];
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.expression">fhir:Expression.expression</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;All tests with results released to date.&quot; ]       ]     ], [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 2;
+       <a href="http://hl7.org/fhir/R4/measure.html#Measure.group.population.id">fhir:Element.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;cumulativePositiveC19Tests.numerator&quot; ];
+       <a href="http://hl7.org/fhir/R4/measure.html#Measure.group.population.code">fhir:Measure.group.population.code</a> [
+         <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+           <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+           <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://terminology.hl7.org/CodeSystem/measure-population&quot; ];
+           <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;numerator&quot; ];
+           <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Numerator&quot; ]         ]       ];
+       <a href="http://hl7.org/fhir/R4/measure.html#Measure.group.population.criteria">fhir:Measure.group.population.criteria</a> [
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.description">fhir:Expression.description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;FEMA defined field: cumulativePositiveC19Tests&quot; ];
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.language">fhir:Expression.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;text/plain&quot; ];
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Expression#Expression.expression">fhir:Expression.expression</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;All positivetest results released to date.&quot; ]       ]     ]
+  ].
+
+# - ontology header ------------------------------------------------------------
+
+ a owl:Ontology;
+  owl:imports fhir:fhir.ttl.
+
+</pre>
+
+{% endraw %}

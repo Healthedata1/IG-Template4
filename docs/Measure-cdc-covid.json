@@ -3,10 +3,10 @@
   "id": "cdc-covid",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: cdc-covid</p><p><b>url</b>: <a href=\"http://cdcmeasures.example.org/modules/covid19/20200331/numTotBeds\">http://cdcmeasures.example.org/modules/covid19/20200331/numTotBeds</a></p><p><b>version</b>: 20200401.06</p><p><b>name</b>: Covid_19PatientImpactHospitalCapacity</p><p><b>title</b>: COVID-19 Patient Impact &amp; Hospital Capacity</p><p><b>status</b>: draft</p><p><b>subject</b>: Location <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/resource-types code 'Location' = 'Location', given as 'Location'})</span></p><p><b>date</b>: Mar 30, 2020, 5:00:00 PM</p><p><b>publisher</b>: SANER-IG</p><p><b>description</b>: CDC, NHSN COVID-19 Patient Impact &amp; Hospital Capacity Hospital Bed/ICU/Ventilator Capacity. The Centers for Disease Control and Prevention’s (CDC’s) National Healthcare Safety Network (NHSN) is supporting the nation’s COVID-19 response by introducing a new COVID-19 Patient Impact and Hospital Capacity Module within NHSN’s Patient Safety Component. https://www.cdc.gov/nhsn/acute-care-hospital/covid19/index.html</p><p><b>useContext</b>: </p><p><b>jurisdiction</b>: United States of America <span style=\"background: LightGoldenRodYellow\">(Details : {urn:iso:std:iso:3166 code 'US' = 'United States of America', given as 'United States of America'})</span></p><p><b>relatedArtifact</b>: , , </p><p><b>scoring</b>: Cohort <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-scoring code 'cohort' = 'Cohort', given as 'Cohort'})</span></p><p><b>type</b>: Structure <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-type code 'structure' = 'Structure', given as 'Structure'})</span></p><blockquote><p><b>group</b></p><p><b>code</b>: Hospital Bed/ICU Capacity <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><blockquote><p><b>population</b></p><p><b>id</b>: numTotBeds</p><p><b>code</b>: Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population', given as 'Initial Population'})</span></p><p><b>description</b>: ALL HOSPITAL BEDS: Total number of all Inpatient and outpatient beds in your hospital, including all staffed, licensed, and overflow surge or expansion beds used for inpatients or for outpatients (includes ICU beds)</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>id</b>: Numbeds</p><p><b>code</b>: Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population', given as 'Initial Population'})</span></p><p><b>description</b>: HOSPITAL INPATIENT BEDS: Total number of staffed inpatient beds in your hospital, including all staffed, licensed, and overflow and surge or expansion beds used for inpatients (includes ICU beds)</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>id</b>: numBedsOcc</p><p><b>code</b>: Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population', given as 'Initial Population'})</span></p><p><b>description</b>: HOSPITAL INPATIENT BED OCCUPANCY: Total number of staffed inpatient beds that are currently occupied</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>id</b>: numICUBeds</p><p><b>code</b>: Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population', given as 'Initial Population'})</span></p><p><b>description</b>: ICU BEDS: Total number of staffed inpatient intensive care unit (ICU) beds</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>id</b>: numICUBedsOcc</p><p><b>code</b>: Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population', given as 'Initial Population'})</span></p><p><b>description</b>: ICU BED OCCUPANCY: Total number of staffed inpatient ICU beds that are occupied</p><p><b>criteria</b>: </p></blockquote></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: Hospital Ventilator Capacity <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><blockquote><p><b>population</b></p><p><b>id</b>: numVent</p><p><b>code</b>: Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population', given as 'Initial Population'})</span></p><p><b>description</b>: MECHANICAL VENTILATORS: Total number of ventilators available</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>id</b>: numVentUse</p><p><b>code</b>: Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population', given as 'Initial Population'})</span></p><p><b>description</b>: MECHANICAL VENTILATORS IN USE: Total number of ventilators in use</p><p><b>criteria</b>: </p></blockquote></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: Patient Impact <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><blockquote><p><b>population</b></p><p><b>id</b>: numC19HospPats</p><p><b>code</b>: Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population', given as 'Initial Population'})</span></p><p><b>description</b>: HOSPITALIZED: Patients currently hospitalized in an inpatient bed who have suspected or confirmed COVID-19</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>id</b>: numC19MechVentPats</p><p><b>code</b>: Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population', given as 'Initial Population'})</span></p><p><b>description</b>: HOSPITALIZED and VENTILATED: Patients currently hospitalized in an inpatient bed who have suspected or confirmed COVID-19 and are on a mechanical ventilator</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>id</b>: numC19HOPats</p><p><b>code</b>: Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population', given as 'Initial Population'})</span></p><p><b>description</b>: HOSPITAL ONSET: Patients currently hospitalized in an inpatient bed with onset of suspected or confirmed COVID-19 fourteen or more days after hospital admission due to a condition other than COVID-19</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>id</b>: numC19OverflowPats</p><p><b>code</b>: Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population', given as 'Initial Population'})</span></p><p><b>description</b>: ED/OVERFLOW: Patients with suspected or confirmed COVID-19 who are currently in the Emergency Department (ED) or any overflow location awaiting an inpatient bed</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>id</b>: umC19OFMechVentPats</p><p><b>code</b>: Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population', given as 'Initial Population'})</span></p><p><b>description</b>: ED/OVERFLOW and VENTILATED: Patients with suspected or confirmed COVID-19 who currently are in the ED or any overflow location awaiting an inpatient bed and on a mechanical ventilator</p><p><b>criteria</b>: </p></blockquote><blockquote><p><b>population</b></p><p><b>id</b>: numC19Died</p><p><b>code</b>: Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population', given as 'Initial Population'})</span></p><p><b>description</b>: DEATHS: Patients with suspected or confirmed COVID-19 who died in the hospital, ED or any overflow location on the date for which you are reporting</p><p><b>criteria</b>: </p></blockquote></blockquote></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: cdc-covid</p><p><b>url</b>: <a href=\"http://cdcmeasures.example.org/cdc-covid\">http://cdcmeasures.example.org/cdc-covid</a></p><p><b>version</b>: 20200404</p><p><b>name</b>: Covid_19PatientImpactHospitalCapacity</p><p><b>title</b>: COVID-19 Patient Impact &amp; Hospital Capacity</p><p><b>status</b>: draft</p><p><b>subject</b>: Location <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/resource-types code 'Location' = 'Location', given as 'Location'})</span></p><p><b>date</b>: Mar 30, 2020, 5:00:00 PM</p><p><b>publisher</b>: SANER-IG</p><p><b>description</b>: CDC, NHSN COVID-19 Patient Impact &amp; Hospital Capacity Hospital Bed/ICU/Ventilator Capacity. The Centers for Disease Control and Prevention’s (CDC’s) National Healthcare Safety Network (NHSN) is supporting the nation’s COVID-19 response by introducing a new COVID-19 Patient Impact and Hospital Capacity Module within NHSN’s Patient Safety Component. https://www.cdc.gov/nhsn/acute-care-hospital/covid19/index.html</p><p><b>useContext</b>: </p><p><b>jurisdiction</b>: United States of America <span style=\"background: LightGoldenRodYellow\">(Details : {urn:iso:std:iso:3166 code 'US' = 'United States of America', given as 'United States of America'})</span></p><p><b>relatedArtifact</b>: , , </p><p><b>scoring</b>: Cohort <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-scoring code 'cohort' = 'Cohort', given as 'Cohort'})</span></p><p><b>type</b>: Structure <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-type code 'structure' = 'Structure', given as 'Structure'})</span></p><blockquote><p><b>group</b></p><p><b>code</b>: numTotBeds <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Description</b></td><td><b>Criteria</b></td></tr><tr><td>*</td><td>Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population', given as 'Initial Population'})</span></td><td>ALL HOSPITAL BEDS: Total number of all Inpatient and outpatient beds in your hospital, including all staffed, licensed, and overflow surge or expansion beds used for inpatients or for outpatients (includes ICU beds)</td><td/></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: Numbeds <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Description</b></td><td><b>Criteria</b></td></tr><tr><td>*</td><td>Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population', given as 'Initial Population'})</span></td><td>HOSPITAL INPATIENT BEDS: Total number of staffed inpatient beds in your hospital, including all staffed, licensed, and overflow and surge or expansion beds used for inpatients (includes ICU beds)</td><td/></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numBedsOcc <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Description</b></td><td><b>Criteria</b></td></tr><tr><td>*</td><td>Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population', given as 'Initial Population'})</span></td><td>HOSPITAL INPATIENT BED OCCUPANCY: Total number of staffed inpatient beds that are currently occupied</td><td/></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numICUBeds <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Description</b></td><td><b>Criteria</b></td></tr><tr><td>*</td><td>Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population', given as 'Initial Population'})</span></td><td>ICU BEDS: Total number of staffed inpatient intensive care unit (ICU) beds</td><td/></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numICUBedsOcc <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Description</b></td><td><b>Criteria</b></td></tr><tr><td>*</td><td>Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population', given as 'Initial Population'})</span></td><td>ICU BED OCCUPANCY: Total number of staffed inpatient ICU beds that are occupied</td><td/></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numVent <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Description</b></td><td><b>Criteria</b></td></tr><tr><td>*</td><td>Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population', given as 'Initial Population'})</span></td><td>MECHANICAL VENTILATORS: Total number of ventilators available</td><td/></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numVentUse <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Description</b></td><td><b>Criteria</b></td></tr><tr><td>*</td><td>Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population', given as 'Initial Population'})</span></td><td>MECHANICAL VENTILATORS IN USE: Total number of ventilators in use</td><td/></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19HospPats <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Description</b></td><td><b>Criteria</b></td></tr><tr><td>*</td><td>Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population', given as 'Initial Population'})</span></td><td>HOSPITALIZED: Patients currently hospitalized in an inpatient bed who have suspected or confirmed COVID-19</td><td/></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19MechVentPats <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Description</b></td><td><b>Criteria</b></td></tr><tr><td>*</td><td>Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population', given as 'Initial Population'})</span></td><td>HOSPITALIZED and VENTILATED: Patients currently hospitalized in an inpatient bed who have suspected or confirmed COVID-19 and are on a mechanical ventilator</td><td/></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19HOPats <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Description</b></td><td><b>Criteria</b></td></tr><tr><td>*</td><td>Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population', given as 'Initial Population'})</span></td><td>HOSPITAL ONSET: Patients currently hospitalized in an inpatient bed with onset of suspected or confirmed COVID-19 fourteen or more days after hospital admission due to a condition other than COVID-19</td><td/></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19OverflowPats <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Description</b></td><td><b>Criteria</b></td></tr><tr><td>*</td><td>Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population', given as 'Initial Population'})</span></td><td>ED/OVERFLOW: Patients with suspected or confirmed COVID-19 who are currently in the Emergency Department (ED) or any overflow location awaiting an inpatient bed</td><td/></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: umC19OFMechVentPats <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Description</b></td><td><b>Criteria</b></td></tr><tr><td>*</td><td>Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population', given as 'Initial Population'})</span></td><td>ED/OVERFLOW and VENTILATED: Patients with suspected or confirmed COVID-19 who currently are in the ED or any overflow location awaiting an inpatient bed and on a mechanical ventilator</td><td/></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19Died <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Description</b></td><td><b>Criteria</b></td></tr><tr><td>*</td><td>Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population', given as 'Initial Population'})</span></td><td>DEATHS: Patients with suspected or confirmed COVID-19 who died in the hospital, ED or any overflow location on the date for which you are reporting</td><td/></tr></table></blockquote></div>"
   },
-  "url": "http://cdcmeasures.example.org/modules/covid19/20200331/numTotBeds",
-  "version": "20200401.06",
+  "url": "http://cdcmeasures.example.org/cdc-covid",
+  "version": "20200404",
   "name": "Covid_19PatientImpactHospitalCapacity",
   "title": "COVID-19 Patient Impact & Hospital Capacity",
   "status": "draft",
@@ -54,15 +54,27 @@
   "relatedArtifact": [
     {
       "type": "derived-from",
-      "url": "https://www.cdc.gov/nhsn/pdfs/covid19/57.130-toi-508.pdf"
+      "display": "Instructions for Completion of the COVID-19 Patient Impact and Hospital Capacity Module Form (CDC 57.130)",
+      "document": {
+        "url": "https://www.cdc.gov/nhsn/pdfs/covid19/57.130-toi-508.pdf",
+        "creation": "2020-03"
+      }
     },
     {
       "type": "derived-from",
-      "url": "https://www.cdc.gov/nhsn/pdfs/covid19/import-covid19-data-508.pdf"
+      "display": "Importing COVID-19 Patient Module Denominator data for Patient Safety Component",
+      "document": {
+        "url": "https://www.cdc.gov/nhsn/pdfs/covid19/import-covid19-data-508.pdf",
+        "creation": "2020-03"
+      }
     },
     {
       "type": "justification",
-      "url": "https://www.cdc.gov/nhsn/acute-care-hospital/covid19/index.html"
+      "display": "COVID-19 Patient Impact & Hospital Capacity Module",
+      "document": {
+        "url": "https://www.cdc.gov/nhsn/acute-care-hospital/covid19/index.html",
+        "creation": "2020-03-31"
+      }
     }
   ],
   "scoring": {
@@ -88,11 +100,10 @@
   "group": [
     {
       "code": {
-        "text": "Hospital Bed/ICU Capacity"
+        "text": "numTotBeds"
       },
       "population": [
         {
-          "id": "numTotBeds",
           "code": {
             "coding": [
               {
@@ -108,9 +119,15 @@
             "language": "text/plain",
             "expression": "Requirement: Optional, Values: 0 to 10000, Format: Must be a whole number, Instruction for Data Collection: Enter the total number of all hospital beds, including inpatient and outpatient beds. All staffed, licensed, and overflow and surge/expansion beds used for inpatients or outpatients. This includes ICU beds."
           }
-        },
+        }
+      ]
+    },
+    {
+      "code": {
+        "text": "Numbeds"
+      },
+      "population": [
         {
-          "id": "Numbeds",
           "code": {
             "coding": [
               {
@@ -126,9 +143,15 @@
             "language": "text/plain",
             "expression": "Requirement: Required, Values: 0 to 10000, Format: Must be a whole number Must be <= numTotBeds, Instruction for Data Collection: Required. Enter the total number of all inpatient beds, including all staffed, licensed, and overflow and surge/expansion beds created for inpatient care. This includes intensive care unit (ICU) beds."
           }
-        },
+        }
+      ]
+    },
+    {
+      "code": {
+        "text": "numBedsOcc"
+      },
+      "population": [
         {
-          "id": "numBedsOcc",
           "code": {
             "coding": [
               {
@@ -144,9 +167,15 @@
             "language": "text/plain",
             "expression": "Requirement: Optional, Values: 0 to 10000, Format: Must be a whole number Must be <= numBeds, Instruction for Data Collection: Enter the total number of staffed inpatient beds occupied by patients at the time the data is collected, including all staffed, licensed, and overflow and surge/expansion beds created for inpatient care. This includes ICU beds."
           }
-        },
+        }
+      ]
+    },
+    {
+      "code": {
+        "text": "numICUBeds"
+      },
+      "population": [
         {
-          "id": "numICUBeds",
           "code": {
             "coding": [
               {
@@ -162,9 +191,15 @@
             "language": "text/plain",
             "expression": "Requirement: Optional, Values: 0 to 10000, Format: Must be a whole number Must be <= numBeds, Instruction for Data Collection: Enter the total number of staffed Intensive Care Unit (ICU) beds."
           }
-        },
+        }
+      ]
+    },
+    {
+      "code": {
+        "text": "numICUBedsOcc"
+      },
+      "population": [
         {
-          "id": "numICUBedsOcc",
           "code": {
             "coding": [
               {
@@ -185,11 +220,10 @@
     },
     {
       "code": {
-        "text": "Hospital Ventilator Capacity"
+        "text": "numVent"
       },
       "population": [
         {
-          "id": "numVent",
           "code": {
             "coding": [
               {
@@ -205,9 +239,15 @@
             "language": "text/plain",
             "expression": "Requirement: Optional, Values: 0 to 10000, Format: Must be a whole numbe Must be <= numTotBeds or <= 10,000 , Instruction for Data Collection: Enter the total number of mechanical ventilators, including anesthesia machines and portable/transport ventilators available in the facility. Include BiPAP machines if the hospital uses BiPAP to deliver positive pressure ventilation via artificial airways."
           }
-        },
+        }
+      ]
+    },
+    {
+      "code": {
+        "text": "numVentUse"
+      },
+      "population": [
         {
-          "id": "numVentUse",
           "code": {
             "coding": [
               {
@@ -228,11 +268,10 @@
     },
     {
       "code": {
-        "text": "Patient Impact"
+        "text": "numC19HospPats"
       },
       "population": [
         {
-          "id": "numC19HospPats",
           "code": {
             "coding": [
               {
@@ -248,9 +287,15 @@
             "language": "text/plain",
             "expression": "Requirement: Optional, Values: 0 to 10000, Format: Must be a whole number Must be <= numBedsOcc, Instruction for Data Collection:Enter the number of patients hospitalized in an inpatient bed at the time the data is collected who have suspected or confirmed COVID-19. This includes the patients with laboratory-confirmed or clinically diagnosed COVID-19. Confirmed: A patient with a laboratoryconfirmed COVID-19 diagnosis. Suspected: A patient without a laboratory confirmed COVID-19 diagnosis who, in accordance with CDC’s Interim Public Health Guidance for Evaluating Persons Under Investigation (PUIs), has signs and symptoms compatible with COVID-19 (most patients with confirmed COVID-19 have developed fever and/or symptoms of acute respiratory illness, such as cough, shortness of breath or myalgia/fatigue)."
           }
-        },
+        }
+      ]
+    },
+    {
+      "code": {
+        "text": "numC19MechVentPats"
+      },
+      "population": [
         {
-          "id": "numC19MechVentPats",
           "code": {
             "coding": [
               {
@@ -266,9 +311,15 @@
             "language": "text/plain",
             "expression": "Requirement: Optional, Values: 0 to 10000, Format: Must be a whole number Must be <= numVentUse, Instruction for Data Collection: Enter the number of patients hospitalized in an inpatient bed who have suspected or confirmed COVID-19 and are currently on a mechanical ventilator* at the time the data is collected . This includes the patients with laboratory-confirmed or clinically diagnosed COVID-19. *Ventilator: Any device used to support, assist or control respiration (inclusive of the weaning period) through the application of positive pressure to the airway when delivered via an artificial airway, specifically an oral/nasal endotracheal or tracheostomy tube. Note: Ventilation and lung expansion devices that deliver positive pressure to the airway (for example: CPAP, BiPAP, bi-level, IPPB and PEEP) via non-invasive means (for example: nasal prongs, nasal mask, full face mask, total mask, etc.) are not considered ventilators unless positive pressure is delivered via an artificial airway (oral/nasal endotracheal or tracheostomy tube)."
           }
-        },
+        }
+      ]
+    },
+    {
+      "code": {
+        "text": "numC19HOPats"
+      },
+      "population": [
         {
-          "id": "numC19HOPats",
           "code": {
             "coding": [
               {
@@ -284,9 +335,15 @@
             "language": "text/plain",
             "expression": "Requirement: Optional, Values: 0 to 10000, Format: Must be a whole number Must be <= numBedsOcc, Instruction for Data Collection: Enter the number of patients hospitalized in an inpatient bed at the time the data is collected with onset of suspected or confirmed COVID-19 fourteen or more days after hospitalization (admission date = hospital day 1). This includes laboratory-confirmed or clinically diagnosed COVID-19 cases."
           }
-        },
+        }
+      ]
+    },
+    {
+      "code": {
+        "text": "numC19OverflowPats"
+      },
+      "population": [
         {
-          "id": "numC19OverflowPats",
           "code": {
             "coding": [
               {
@@ -302,9 +359,15 @@
             "language": "text/plain",
             "expression": "Requirement: Optional, Values: 0 to 2000, Format: Must be a whole number Must be <= 2000, Instruction for Data Collection: Enter the number of patients with suspected or confirmed COVID-19 who are in the Emergency Department(ED) or any overflow/expansion location awaiting placement in an inpatient bed at the time the data is collected . This includes patients with laboratory-confirmed or clinically diagnosed COVID-19. Overflow locations include any physical locations created to accommodate patients include but not limited to 24-hour observation units, hallways, parking lots, or tents"
           }
-        },
+        }
+      ]
+    },
+    {
+      "code": {
+        "text": "umC19OFMechVentPats"
+      },
+      "population": [
         {
-          "id": "umC19OFMechVentPats",
           "code": {
             "coding": [
               {
@@ -320,9 +383,15 @@
             "language": "text/plain",
             "expression": "Requirement: Optional, Values: 0 to 10000, Format: Must be a whole number Must be <= numVentUse, Instruction for Data Collection: Enter the number of patients with suspected or confirmed COVID-19 who are in the ED or any overflow/expansion location on a mechanical ventilator* at the time the data is collected . This includes patients with laboratory-confirmed or clinically diagnosed COVID-19. *Ventilator: Any device used to support, assist or control respiration (inclusive of the weaning period) through the application of positive pressure to the airway when delivered via an artificial airway, specifically an oral/nasal endotracheal or tracheostomy tube. Note: Ventilation and lung expansion devices that deliver positive pressure to the airway (for example: CPAP, BiPAP, bi-level, IPPB and PEEP) via non-invasive means (for example: nasal prongs, nasal mask, full face mask, total mask, etc.) are not considered ventilators unless positive pressure is delivered via an artificial airway (oral/nasal endotracheal or tracheostomy tube)."
           }
-        },
+        }
+      ]
+    },
+    {
+      "code": {
+        "text": "numC19Died"
+      },
+      "population": [
         {
-          "id": "numC19Died",
           "code": {
             "coding": [
               {

@@ -1,0 +1,244 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://www.fhir.org/guides/test4/MeasureReport/c19-groups-measurereport-min> a fhir:MeasureReport;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "c19-groups-measurereport-min"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: c19-groups-measurereport-min</p><p><b>status</b>: complete</p><p><b>type</b>: individual</p><p><b>measure</b>: <a href=\"http://cdcmeasures.example.org/cdc-covid\">http://cdcmeasures.example.org/cdc-covid</a></p><p><b>subject</b>: Acme General Hospital</p><p><b>date</b>: Apr 5, 2020, 4:54:53 PM</p><p><b>reporter</b>: Acme General Hospital</p><p><b>period</b>: Mar 30, 2020, 12:00:00 AM --&gt; Mar 30, 2020, 12:00:00 AM</p><blockquote><p><b>group</b></p><p><b>code</b>: numVent <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td></tr><tr><td>*</td><td>Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numVentUse <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td></tr><tr><td>*</td><td>Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numTotBeds <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td></tr><tr><td>*</td><td>Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numbeds <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>100</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numBedsOcc <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td></tr><tr><td>*</td><td>Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numICUBeds <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td></tr><tr><td>*</td><td>Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numICUBedsOcc <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td></tr><tr><td>*</td><td>Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19HospPats <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td></tr><tr><td>*</td><td>Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19MechVentPats <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td></tr><tr><td>*</td><td>Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19HOPats <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td></tr><tr><td>*</td><td>Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19OverflowPats <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td></tr><tr><td>*</td><td>Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19OFMechVentPats <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td></tr><tr><td>*</td><td>Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: numC19Died <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td></tr><tr><td>*</td><td>Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td></tr></table></blockquote></div>"
+  ];
+  fhir:MeasureReport.status [ fhir:value "complete"];
+  fhir:MeasureReport.type [ fhir:value "individual"];
+  fhir:MeasureReport.measure [
+     fhir:value "http://cdcmeasures.example.org/cdc-covid";
+     fhir:link <http://cdcmeasures.example.org/cdc-covid>
+  ];
+  fhir:MeasureReport.subject [
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "urn:oid:2.16.840.1.113883.6.277" ];
+       fhir:Identifier.value [ fhir:value "2.16.840.1.113883.6.277.123" ]
+     ];
+     fhir:Reference.display [ fhir:value "Acme General Hospital" ]
+  ];
+  fhir:MeasureReport.date [ fhir:value "2020-04-05T23:54:53.646021Z"^^xsd:dateTime];
+  fhir:MeasureReport.reporter [
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "urn:oid:2.16.840.1.113883.6.277" ];
+       fhir:Identifier.value [ fhir:value "2.16.840.1.113883.6.277.123" ]
+     ];
+     fhir:Reference.display [ fhir:value "Acme General Hospital" ]
+  ];
+  fhir:MeasureReport.period [
+     fhir:Period.start [ fhir:value "2020-03-30"^^xsd:date ];
+     fhir:Period.end [ fhir:value "2020-03-30"^^xsd:date ]
+  ];
+  fhir:MeasureReport.group [
+     fhir:index 0;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numVent" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numVentUse" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numTotBeds" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ]
+     ]
+  ], [
+     fhir:index 3;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numbeds" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "100"^^xsd:integer ]
+     ]
+  ], [
+     fhir:index 4;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numBedsOcc" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ]
+     ]
+  ], [
+     fhir:index 5;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numICUBeds" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ]
+     ]
+  ], [
+     fhir:index 6;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numICUBedsOcc" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ]
+     ]
+  ], [
+     fhir:index 7;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numC19HospPats" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ]
+     ]
+  ], [
+     fhir:index 8;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numC19MechVentPats" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ]
+     ]
+  ], [
+     fhir:index 9;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numC19HOPats" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ]
+     ]
+  ], [
+     fhir:index 10;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numC19OverflowPats" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ]
+     ]
+  ], [
+     fhir:index 11;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numC19OFMechVentPats" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ]
+     ]
+  ], [
+     fhir:index 12;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numC19Died" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://www.fhir.org/guides/test4/MeasureReport/c19-groups-measurereport-min.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

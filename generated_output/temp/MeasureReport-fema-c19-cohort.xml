@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MeasureReport xmlns="http://hl7.org/fhir">
+  <id value="fema-c19-cohort"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: fema-c19-cohort</p><p><b>contained</b>: </p><p><b>status</b>: complete</p><p><b>type</b>: individual</p><p><b>measure</b>: <a href="http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort">http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort</a></p><p><b>subject</b>: Marin, CA. Generated Summary: unknown resource contained</p><p><b>date</b>: Apr 6, 2020, 1:58:51 PM</p><p><b>reporter</b>: Acme General Hospital</p><p><b>period</b>: Apr 4, 2020, 12:00:00 AM --&gt; Apr 4, 2020, 12:00:00 AM</p><blockquote><p><b>group</b></p><p><b>code</b>: newDiagnosticTests <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>100</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: cumulativeDiagnosticTests <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>1000</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: cumulativeSpecimensRejected <span style="background: LightGoldenRodYellow">(Details )</span></p><h3>Populations</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>45</td></tr></table></blockquote></div>
+  </text>
+  <contained>
+    <Location>
+      <id value="loc"/>
+      <address>
+        <type value="physical"/>
+        <text value="Marin, CA"/>
+        <district value="Marin"/>
+        <state value="CA"/>
+      </address>
+      <physicalType>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/location-physical-type"/>
+          <code value="jdn"/>
+          <display value="Jurisdiction"/>
+        </coding>
+        <text value="US County"/>
+      </physicalType>
+    </Location>
+  </contained>
+  <status value="complete"/>
+  <type value="individual"/>
+  <measure value="http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort"/>
+  <subject>
+    <reference value="#loc"/>
+    <display value="Marin, CA"/>
+  </subject>
+  <date value="2020-04-06T20:58:51.621702Z"/>
+  <reporter>
+    <identifier>
+      <system value="urn:oid:2.16.840.1.113883.6.277"/>
+      <value value="2.16.840.1.113883.6.277.123"/>
+    </identifier>
+    <display value="Acme General Hospital"/>
+  </reporter>
+  <period>
+    <start value="2020-04-04"/>
+    <end value="2020-04-04"/>
+  </period>
+  <group>
+    <code>
+      <text value="newDiagnosticTests"/>
+    </code>
+    <population>
+      <code>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+          <code value="initial-population"/>
+        </coding>
+      </code>
+      <count value="100"/>
+    </population>
+  </group>
+  <group>
+    <code>
+      <text value="cumulativeDiagnosticTests"/>
+    </code>
+    <population>
+      <code>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+          <code value="initial-population"/>
+        </coding>
+      </code>
+      <count value="1000"/>
+    </population>
+  </group>
+  <group>
+    <code>
+      <text value="cumulativeSpecimensRejected"/>
+    </code>
+    <population>
+      <code>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+          <code value="initial-population"/>
+        </coding>
+      </code>
+      <count value="45"/>
+    </population>
+  </group>
+</MeasureReport>

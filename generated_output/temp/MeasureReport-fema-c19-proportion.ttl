@@ -1,0 +1,155 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://www.fhir.org/guides/test4/MeasureReport/fema-c19-proportion> a fhir:MeasureReport;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "fema-c19-proportion"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: fema-c19-proportion</p><p><b>contained</b>: </p><p><b>status</b>: complete</p><p><b>type</b>: individual</p><p><b>measure</b>: <a href=\"http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-proportion\">http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-proportion</a></p><p><b>subject</b>: Marin, CA. Generated Summary: unknown resource contained</p><p><b>date</b>: Apr 6, 2020, 1:54:17 PM</p><p><b>reporter</b>: Acme General Hospital</p><p><b>period</b>: Apr 4, 2020, 12:00:00 AM --&gt; Apr 4, 2020, 12:00:00 AM</p><blockquote><p><b>group</b></p><p><b>code</b>: newPercentPositive <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><blockquote><p><b>population</b></p><p><b>id</b>: newTestsResulted.initial-population</p><p><b>code</b>: Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></p><p><b>count</b>: 80</p></blockquote><blockquote><p><b>population</b></p><p><b>id</b>: newTestsResulted.denominator</p><p><b>code</b>: Denominator <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'denominator' = 'Denominator)</span></p><p><b>count</b>: 80</p></blockquote><blockquote><p><b>population</b></p><p><b>id</b>: newPositiveC19Tests.numerator</p><p><b>code</b>: Numerator <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'numerator' = 'Numerator)</span></p><p><b>count</b>: 8</p></blockquote><p><b>measureScore</b>: 0.1 %<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code % = '%')</span></p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: cumulativePercentPositive <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><blockquote><p><b>population</b></p><p><b>id</b>: cumulativeTestsPerformed.initial-population</p><p><b>code</b>: Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></p><p><b>count</b>: 800</p></blockquote><blockquote><p><b>population</b></p><p><b>id</b>: cumulativeTestsPerformed.denominator</p><p><b>code</b>: Denominator <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'denominator' = 'Denominator)</span></p><p><b>count</b>: 800</p></blockquote><blockquote><p><b>population</b></p><p><b>id</b>: cumulativePositiveC19Tests.numerator</p><p><b>code</b>: Numerator <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'numerator' = 'Numerator)</span></p><p><b>count</b>: 80</p></blockquote><p><b>measureScore</b>: 0.1 %<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code % = '%')</span></p></blockquote></div>"
+  ];
+  fhir:DomainResource.contained [
+     a fhir:Location;
+     fhir:index 0;
+     fhir:Resource.id [ fhir:value "loc" ];
+     fhir:Location.address [
+       fhir:Address.type [ fhir:value "physical" ];
+       fhir:Address.text [ fhir:value "Marin, CA" ];
+       fhir:Address.district [ fhir:value "Marin" ];
+       fhir:Address.state [ fhir:value "CA" ]
+     ];
+     fhir:Location.physicalType [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/location-physical-type" ];
+         fhir:Coding.code [ fhir:value "jdn" ];
+         fhir:Coding.display [ fhir:value "Jurisdiction" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "US County" ]
+     ]
+  ];
+  fhir:MeasureReport.status [ fhir:value "complete"];
+  fhir:MeasureReport.type [ fhir:value "individual"];
+  fhir:MeasureReport.measure [
+     fhir:value "http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-proportion";
+     fhir:link <http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-proportion>
+  ];
+  fhir:MeasureReport.subject [
+     fhir:Reference.reference [ fhir:value "#loc" ];
+     fhir:Reference.display [ fhir:value "Marin, CA" ]
+  ];
+  fhir:MeasureReport.date [ fhir:value "2020-04-06T20:54:17.258551Z"^^xsd:dateTime];
+  fhir:MeasureReport.reporter [
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "urn:oid:2.16.840.1.113883.6.277" ];
+       fhir:Identifier.value [ fhir:value "2.16.840.1.113883.6.277.123" ]
+     ];
+     fhir:Reference.display [ fhir:value "Acme General Hospital" ]
+  ];
+  fhir:MeasureReport.period [
+     fhir:Period.start [ fhir:value "2020-04-04"^^xsd:date ];
+     fhir:Period.end [ fhir:value "2020-04-04"^^xsd:date ]
+  ];
+  fhir:MeasureReport.group [
+     fhir:index 0;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "newPercentPositive" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:Element.id [ fhir:value "newTestsResulted.initial-population" ];
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "80"^^xsd:integer ]
+     ], [
+       fhir:index 1;
+       fhir:Element.id [ fhir:value "newTestsResulted.denominator" ];
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "denominator" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "80"^^xsd:integer ]
+     ], [
+       fhir:index 2;
+       fhir:Element.id [ fhir:value "newPositiveC19Tests.numerator" ];
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "numerator" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "8"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "0.1"^^xsd:decimal ];
+       fhir:Quantity.unit [ fhir:value "%" ];
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+       fhir:Quantity.code [ fhir:value "%" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "cumulativePercentPositive" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:Element.id [ fhir:value "cumulativeTestsPerformed.initial-population" ];
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "800"^^xsd:integer ]
+     ], [
+       fhir:index 1;
+       fhir:Element.id [ fhir:value "cumulativeTestsPerformed.denominator" ];
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "denominator" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "800"^^xsd:integer ]
+     ], [
+       fhir:index 2;
+       fhir:Element.id [ fhir:value "cumulativePositiveC19Tests.numerator" ];
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "numerator" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "80"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "0.1"^^xsd:decimal ];
+       fhir:Quantity.unit [ fhir:value "%" ];
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+       fhir:Quantity.code [ fhir:value "%" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://www.fhir.org/guides/test4/MeasureReport/fema-c19-proportion.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

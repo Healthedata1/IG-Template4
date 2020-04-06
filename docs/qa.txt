@@ -1,18 +1,26 @@
 ﻿IGTest4 : Validation Results
 =========================================
 
-err = 220, warn = 74, info = 2
-IG Publisher Version: v1.0.77-SNAPSHOT
-Generated Sat Apr 04 01:54:25 PDT 2020. FHIR version 4.0.1 for healthedatainc.ig-template4# (canonical = http://www.fhir.org/guides/test4)
+err = 1240, warn = 122, info = 12
+IG Publisher Version: v1.0.77-SNAPSHOT Out of date - current version is v1.0.78-SNAPSHOT
+Generated Mon Apr 06 15:33:53 PDT 2020. FHIR version 4.0.1 for healthedatainc.ig-template4# (canonical = http://www.fhir.org/guides/test4)
 
- Build Errors : 554 / 0
+ Build Errors : 618 / 0
  /Users/ehaas/Documents/FHIR/IG-Template4/source/examples/basic-diet : 1 / 0
- /Users/ehaas/Documents/FHIR/IG-Template4/source/examples/bundle-cdc-c19-groups-20200404070053493066 : 48 / 0
- /Users/ehaas/Documents/FHIR/IG-Template4/source/examples/measure-cdc-covid : 0 / 16
- /Users/ehaas/Documents/FHIR/IG-Template4/source/examples/measurereport-ca620d2a-7639-11ea-be32-a4d18ccf5172 : 6 / 0
+ /Users/ehaas/Documents/FHIR/IG-Template4/source/examples/bundle-cdc-c19-groups-measurereports-max : 208 / 0
+ /Users/ehaas/Documents/FHIR/IG-Template4/source/examples/bundle-cdc-c19-groups-measurereports-min : 208 / 0
+ /Users/ehaas/Documents/FHIR/IG-Template4/source/examples/bundle-fema-c19-cohort : 42 / 0
+ /Users/ehaas/Documents/FHIR/IG-Template4/source/examples/bundle-fema-c19-proportion : 28 / 0
+ /Users/ehaas/Documents/FHIR/IG-Template4/source/examples/measure-cdc-covid : 0 / 26
+ /Users/ehaas/Documents/FHIR/IG-Template4/source/examples/measure-fema-cohort : 0 / 9
+ /Users/ehaas/Documents/FHIR/IG-Template4/source/examples/measure-fema-proportion : 0 / 10
+ /Users/ehaas/Documents/FHIR/IG-Template4/source/examples/measurereport-c19-groups-measurereport-max : 26 / 0
+ /Users/ehaas/Documents/FHIR/IG-Template4/source/examples/measurereport-c19-groups-measurereport-min : 26 / 0
+ /Users/ehaas/Documents/FHIR/IG-Template4/source/examples/measurereport-fema-c19-cohort : 6 / 0
+ /Users/ehaas/Documents/FHIR/IG-Template4/source/examples/measurereport-fema-c19-proportion : 4 / 0
  /Users/ehaas/Documents/FHIR/IG-Template4/source/examples/patient-example : 3 / 0
  /Users/ehaas/Documents/FHIR/IG-Template4/source/examples/patient-example2 : 1 / 0
- /Users/ehaas/Documents/FHIR/IG-Template4/source/pages/_data/ig : 47 / 2
+ /Users/ehaas/Documents/FHIR/IG-Template4/source/pages/_data/ig : 63 / 2
  /Users/ehaas/Documents/FHIR/IG-Template4/source/resources/capabilitystatement-client : 0 / 0
  /Users/ehaas/Documents/FHIR/IG-Template4/source/resources/capabilitystatement-server : 0 / 0
  /Users/ehaas/Documents/FHIR/IG-Template4/source/resources/codesystem-blah-codes : 0 / 0
@@ -29,10 +37,22 @@ ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/Basic-diet.html#/html/head/
 ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/Basic-diet.json.html#/html/head/body/div/div/a at Line 58, column 4: The link '' for "null" cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/Basic-diet.ttl.html#/html/head/body/div/div/a at Line 58, column 4: The link '' for "null" cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/Basic-diet.xml.html#/html/head/body/div/div/a at Line 58, column 4: The link '' for "null" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/Bundle-cdc-c19-groups-20200404070053493066.html#/html/head/body/div/div/a at Line 58, column 4: The link '' for "null" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/Bundle-cdc-c19-groups-20200404070053493066.json.html#/html/head/body/div/div/a at Line 58, column 4: The link '' for "null" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/Bundle-cdc-c19-groups-20200404070053493066.ttl.html#/html/head/body/div/div/a at Line 58, column 4: The link '' for "null" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/Bundle-cdc-c19-groups-20200404070053493066.xml.html#/html/head/body/div/div/a at Line 58, column 4: The link '' for "null" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/Bundle-cdc-c19-groups-measurereports-max.html#/html/head/body/div/div/a at Line 58, column 4: The link '' for "null" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/Bundle-cdc-c19-groups-measurereports-max.json.html#/html/head/body/div/div/a at Line 58, column 4: The link '' for "null" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/Bundle-cdc-c19-groups-measurereports-max.ttl.html#/html/head/body/div/div/a at Line 58, column 4: The link '' for "null" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/Bundle-cdc-c19-groups-measurereports-max.xml.html#/html/head/body/div/div/a at Line 58, column 4: The link '' for "null" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/Bundle-cdc-c19-groups-measurereports-min.html#/html/head/body/div/div/a at Line 58, column 4: The link '' for "null" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/Bundle-cdc-c19-groups-measurereports-min.json.html#/html/head/body/div/div/a at Line 58, column 4: The link '' for "null" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/Bundle-cdc-c19-groups-measurereports-min.ttl.html#/html/head/body/div/div/a at Line 58, column 4: The link '' for "null" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/Bundle-cdc-c19-groups-measurereports-min.xml.html#/html/head/body/div/div/a at Line 58, column 4: The link '' for "null" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/Bundle-fema-c19-cohort.html#/html/head/body/div/div/a at Line 58, column 4: The link '' for "null" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/Bundle-fema-c19-cohort.json.html#/html/head/body/div/div/a at Line 58, column 4: The link '' for "null" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/Bundle-fema-c19-cohort.ttl.html#/html/head/body/div/div/a at Line 58, column 4: The link '' for "null" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/Bundle-fema-c19-cohort.xml.html#/html/head/body/div/div/a at Line 58, column 4: The link '' for "null" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/Bundle-fema-c19-proportion.html#/html/head/body/div/div/a at Line 58, column 4: The link '' for "null" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/Bundle-fema-c19-proportion.json.html#/html/head/body/div/div/a at Line 58, column 4: The link '' for "null" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/Bundle-fema-c19-proportion.ttl.html#/html/head/body/div/div/a at Line 58, column 4: The link '' for "null" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/Bundle-fema-c19-proportion.xml.html#/html/head/body/div/div/a at Line 58, column 4: The link '' for "null" cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/CapabilityStatement-client.html#/html/head/body/div/div/a at Line 58, column 4: The link '' for "null" cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/CapabilityStatement-client.json.html#/html/head/body/div/div/a at Line 58, column 4: The link '' for "null" cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/CapabilityStatement-client.ttl.html#/html/head/body/div/div/a at Line 58, column 4: The link '' for "null" cannot be resolved
@@ -53,10 +73,30 @@ ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/Measure-cdc-covid.html#/htm
 ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/Measure-cdc-covid.json.html#/html/head/body/div/div/a at Line 58, column 4: The link '' for "null" cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/Measure-cdc-covid.ttl.html#/html/head/body/div/div/a at Line 58, column 4: The link '' for "null" cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/Measure-cdc-covid.xml.html#/html/head/body/div/div/a at Line 58, column 4: The link '' for "null" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/MeasureReport-ca620d2a-7639-11ea-be32-a4d18ccf5172.html#/html/head/body/div/div/a at Line 58, column 4: The link '' for "null" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/MeasureReport-ca620d2a-7639-11ea-be32-a4d18ccf5172.json.html#/html/head/body/div/div/a at Line 58, column 4: The link '' for "null" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/MeasureReport-ca620d2a-7639-11ea-be32-a4d18ccf5172.ttl.html#/html/head/body/div/div/a at Line 58, column 4: The link '' for "null" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/MeasureReport-ca620d2a-7639-11ea-be32-a4d18ccf5172.xml.html#/html/head/body/div/div/a at Line 58, column 4: The link '' for "null" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/Measure-fema-cohort.html#/html/head/body/div/div/a at Line 58, column 4: The link '' for "null" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/Measure-fema-cohort.json.html#/html/head/body/div/div/a at Line 58, column 4: The link '' for "null" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/Measure-fema-cohort.ttl.html#/html/head/body/div/div/a at Line 58, column 4: The link '' for "null" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/Measure-fema-cohort.xml.html#/html/head/body/div/div/a at Line 58, column 4: The link '' for "null" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/Measure-fema-proportion.html#/html/head/body/div/div/a at Line 58, column 4: The link '' for "null" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/Measure-fema-proportion.json.html#/html/head/body/div/div/a at Line 58, column 4: The link '' for "null" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/Measure-fema-proportion.ttl.html#/html/head/body/div/div/a at Line 58, column 4: The link '' for "null" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/Measure-fema-proportion.xml.html#/html/head/body/div/div/a at Line 58, column 4: The link '' for "null" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/MeasureReport-c19-groups-measurereport-max.html#/html/head/body/div/div/a at Line 58, column 4: The link '' for "null" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/MeasureReport-c19-groups-measurereport-max.json.html#/html/head/body/div/div/a at Line 58, column 4: The link '' for "null" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/MeasureReport-c19-groups-measurereport-max.ttl.html#/html/head/body/div/div/a at Line 58, column 4: The link '' for "null" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/MeasureReport-c19-groups-measurereport-max.xml.html#/html/head/body/div/div/a at Line 58, column 4: The link '' for "null" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/MeasureReport-c19-groups-measurereport-min.html#/html/head/body/div/div/a at Line 58, column 4: The link '' for "null" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/MeasureReport-c19-groups-measurereport-min.json.html#/html/head/body/div/div/a at Line 58, column 4: The link '' for "null" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/MeasureReport-c19-groups-measurereport-min.ttl.html#/html/head/body/div/div/a at Line 58, column 4: The link '' for "null" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/MeasureReport-c19-groups-measurereport-min.xml.html#/html/head/body/div/div/a at Line 58, column 4: The link '' for "null" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/MeasureReport-fema-c19-cohort.html#/html/head/body/div/div/a at Line 58, column 4: The link '' for "null" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/MeasureReport-fema-c19-cohort.json.html#/html/head/body/div/div/a at Line 58, column 4: The link '' for "null" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/MeasureReport-fema-c19-cohort.ttl.html#/html/head/body/div/div/a at Line 58, column 4: The link '' for "null" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/MeasureReport-fema-c19-cohort.xml.html#/html/head/body/div/div/a at Line 58, column 4: The link '' for "null" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/MeasureReport-fema-c19-proportion.html#/html/head/body/div/div/a at Line 58, column 4: The link '' for "null" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/MeasureReport-fema-c19-proportion.json.html#/html/head/body/div/div/a at Line 58, column 4: The link '' for "null" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/MeasureReport-fema-c19-proportion.ttl.html#/html/head/body/div/div/a at Line 58, column 4: The link '' for "null" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/MeasureReport-fema-c19-proportion.xml.html#/html/head/body/div/div/a at Line 58, column 4: The link '' for "null" cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/OperationDefinition-opdef-test.html#/html/head/body/div/div/a at Line 58, column 4: The link '' for "null" cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/OperationDefinition-opdef-test.json.html#/html/head/body/div/div/a at Line 58, column 4: The link '' for "null" cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/OperationDefinition-opdef-test.ttl.html#/html/head/body/div/div/a at Line 58, column 4: The link '' for "null" cannot be resolved
@@ -408,80 +448,96 @@ ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/capstatements.html#/html/he
 ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/downloads.html#/html/head/body/div/div/a at Line 58, column 4: The link '' for "null" cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/guidance.html#/html/head/body/div/div/a at Line 58, column 4: The link '' for "null" cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/a at Line 58, column 4: The link '' for "null" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 4588, column 18: The link '' for "Basic Diet" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 4618, column 18: The link '' for "Bundle Cdc C19 Groups 20200404070053493066" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 4648, column 18: The link '' for "Capabilitystatement Client" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 4678, column 18: The link '' for "Capabilitystatement Server" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 4708, column 18: The link '' for "Codesystem Blah Codes" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 4738, column 18: The link '' for "Implementationguide Healthedatainc.ig Template4" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 4768, column 18: The link '' for "Measure Cdc Covid" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 4798, column 18: The link '' for "Measurereport Ca620d2a 7639 11ea Be32 A4d18ccf5172" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 4828, column 18: The link '' for "Operationdefinition Opdef Test" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 4858, column 18: The link '' for "Patient Example" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 4888, column 18: The link '' for "Patient Example2" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 4922, column 18: The link '' for "Structuredefinition Extension Blah" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 4956, column 18: The link '' for "Structuredefinition Extension Blah2" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 4990, column 18: The link '' for "Structuredefinition Extension Complex" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5024, column 18: The link '' for "Structuredefinition Ifr" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5058, column 18: The link '' for "Structuredefinition Template Basic" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5092, column 18: The link '' for "Structuredefinition Template Profile On Profile" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5122, column 18: The link '' for "Valueset Bar Codes" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5152, column 18: The link '' for "Valueset Blah Codes" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5182, column 18: The link '' for "Valueset Foo Codes" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5212, column 18: The link '' for "All Examples" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5230, column 18: The link '' for "Capstatements" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5248, column 18: The link '' for "Downloads" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5266, column 18: The link '' for "Guidance" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5284, column 18: The link '' for "Html_pages" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5302, column 18: The link '' for "Index" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5320, column 18: The link '' for "More Guidance" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5338, column 18: The link '' for "Operations" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5356, column 18: The link '' for "Profiles" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5374, column 18: The link '' for "Searchparameters" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5392, column 18: The link '' for "Security" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5410, column 18: The link '' for "Terminology" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5428, column 18: The link '' for "Toc" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5446, column 18: The link '' for "Todo" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5464, column 18: The link '' for "Todo" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 4924, column 18: The link '' for "Basic Diet" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 4954, column 18: The link '' for "Bundle Cdc C19 Groups Measurereports Max" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 4984, column 18: The link '' for "Bundle Cdc C19 Groups Measurereports Min" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5014, column 18: The link '' for "Bundle Fema C19 Cohort" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5044, column 18: The link '' for "Bundle Fema C19 Proportion" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5074, column 18: The link '' for "Capabilitystatement Client" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5104, column 18: The link '' for "Capabilitystatement Server" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5134, column 18: The link '' for "Codesystem Blah Codes" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5164, column 18: The link '' for "Implementationguide Healthedatainc.ig Template4" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5194, column 18: The link '' for "Measure Cdc Covid" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5224, column 18: The link '' for "Measure Fema Cohort" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5254, column 18: The link '' for "Measure Fema Proportion" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5284, column 18: The link '' for "Measurereport C19 Groups Measurereport Max" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5314, column 18: The link '' for "Measurereport C19 Groups Measurereport Min" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5344, column 18: The link '' for "Measurereport Fema C19 Cohort" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5374, column 18: The link '' for "Measurereport Fema C19 Proportion" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5404, column 18: The link '' for "Operationdefinition Opdef Test" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5434, column 18: The link '' for "Patient Example" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5464, column 18: The link '' for "Patient Example2" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5498, column 18: The link '' for "Structuredefinition Extension Blah" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5532, column 18: The link '' for "Structuredefinition Extension Blah2" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5566, column 18: The link '' for "Structuredefinition Extension Complex" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5600, column 18: The link '' for "Structuredefinition Ifr" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5634, column 18: The link '' for "Structuredefinition Template Basic" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5668, column 18: The link '' for "Structuredefinition Template Profile On Profile" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5698, column 18: The link '' for "Valueset Bar Codes" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5728, column 18: The link '' for "Valueset Blah Codes" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5758, column 18: The link '' for "Valueset Foo Codes" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5788, column 18: The link '' for "All Examples" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5806, column 18: The link '' for "Capstatements" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5824, column 18: The link '' for "Downloads" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5842, column 18: The link '' for "Guidance" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5860, column 18: The link '' for "Html_pages" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5878, column 18: The link '' for "Index" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5896, column 18: The link '' for "More Guidance" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5914, column 18: The link '' for "Operations" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5932, column 18: The link '' for "Profiles" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5950, column 18: The link '' for "Searchparameters" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5968, column 18: The link '' for "Security" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5986, column 18: The link '' for "Terminology" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 6004, column 18: The link '' for "Toc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 6022, column 18: The link '' for "Todo" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 6040, column 18: The link '' for "Todo" cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/index.html#/html/head/body/div/div/a at Line 58, column 4: The link '' for "null" cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/index.html#/html/head/body/div/div/div/div/div/div/div/div/ul/li/ul/li/p/a at Line 470, column 180: The link 'http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core/index.html' for "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.coreindex.html" cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/a at Line 58, column 4: The link '' for "null" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/pre/li/a at Line 2117, column 8: The link '{{p.name}}' for "{{p.name | remove: ".html" | replace: '-', ' ' }}" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3425, column 18: The link '' for "Basic Diet" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3455, column 18: The link '' for "Bundle Cdc C19 Groups 20200404070053493066" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3485, column 18: The link '' for "Capabilitystatement Client" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3515, column 18: The link '' for "Capabilitystatement Server" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3545, column 18: The link '' for "Codesystem Blah Codes" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3575, column 18: The link '' for "Implementationguide Healthedatainc.ig Template4" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3605, column 18: The link '' for "Measure Cdc Covid" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3635, column 18: The link '' for "Measurereport Ca620d2a 7639 11ea Be32 A4d18ccf5172" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3665, column 18: The link '' for "Operationdefinition Opdef Test" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3695, column 18: The link '' for "Patient Example" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3725, column 18: The link '' for "Patient Example2" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3759, column 18: The link '' for "Structuredefinition Extension Blah" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3793, column 18: The link '' for "Structuredefinition Extension Blah2" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3827, column 18: The link '' for "Structuredefinition Extension Complex" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3861, column 18: The link '' for "Structuredefinition Ifr" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3895, column 18: The link '' for "Structuredefinition Template Basic" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3929, column 18: The link '' for "Structuredefinition Template Profile On Profile" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3959, column 18: The link '' for "Valueset Bar Codes" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3989, column 18: The link '' for "Valueset Blah Codes" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4019, column 18: The link '' for "Valueset Foo Codes" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4049, column 18: The link '' for "All Examples" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4067, column 18: The link '' for "Capstatements" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4085, column 18: The link '' for "Downloads" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4103, column 18: The link '' for "Guidance" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4121, column 18: The link '' for "Html_pages" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4139, column 18: The link '' for "Index" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4157, column 18: The link '' for "More Guidance" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4175, column 18: The link '' for "Operations" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4193, column 18: The link '' for "Profiles" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4211, column 18: The link '' for "Searchparameters" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4229, column 18: The link '' for "Security" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4247, column 18: The link '' for "Terminology" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4265, column 18: The link '' for "Toc" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4283, column 18: The link '' for "Todo" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4301, column 18: The link '' for "Todo" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/pre/li/a at Line 2285, column 8: The link '{{p.name}}' for "{{p.name | remove: ".html" | replace: '-', ' ' }}" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3689, column 18: The link '' for "Basic Diet" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3719, column 18: The link '' for "Bundle Cdc C19 Groups Measurereports Max" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3749, column 18: The link '' for "Bundle Cdc C19 Groups Measurereports Min" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3779, column 18: The link '' for "Bundle Fema C19 Cohort" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3809, column 18: The link '' for "Bundle Fema C19 Proportion" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3839, column 18: The link '' for "Capabilitystatement Client" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3869, column 18: The link '' for "Capabilitystatement Server" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3899, column 18: The link '' for "Codesystem Blah Codes" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3929, column 18: The link '' for "Implementationguide Healthedatainc.ig Template4" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3959, column 18: The link '' for "Measure Cdc Covid" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3989, column 18: The link '' for "Measure Fema Cohort" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4019, column 18: The link '' for "Measure Fema Proportion" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4049, column 18: The link '' for "Measurereport C19 Groups Measurereport Max" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4079, column 18: The link '' for "Measurereport C19 Groups Measurereport Min" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4109, column 18: The link '' for "Measurereport Fema C19 Cohort" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4139, column 18: The link '' for "Measurereport Fema C19 Proportion" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4169, column 18: The link '' for "Operationdefinition Opdef Test" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4199, column 18: The link '' for "Patient Example" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4229, column 18: The link '' for "Patient Example2" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4263, column 18: The link '' for "Structuredefinition Extension Blah" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4297, column 18: The link '' for "Structuredefinition Extension Blah2" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4331, column 18: The link '' for "Structuredefinition Extension Complex" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4365, column 18: The link '' for "Structuredefinition Ifr" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4399, column 18: The link '' for "Structuredefinition Template Basic" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4433, column 18: The link '' for "Structuredefinition Template Profile On Profile" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4463, column 18: The link '' for "Valueset Bar Codes" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4493, column 18: The link '' for "Valueset Blah Codes" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4523, column 18: The link '' for "Valueset Foo Codes" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4553, column 18: The link '' for "All Examples" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4571, column 18: The link '' for "Capstatements" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4589, column 18: The link '' for "Downloads" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4607, column 18: The link '' for "Guidance" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4625, column 18: The link '' for "Html_pages" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4643, column 18: The link '' for "Index" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4661, column 18: The link '' for "More Guidance" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4679, column 18: The link '' for "Operations" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4697, column 18: The link '' for "Profiles" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4715, column 18: The link '' for "Searchparameters" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4733, column 18: The link '' for "Security" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4751, column 18: The link '' for "Terminology" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4769, column 18: The link '' for "Toc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4787, column 18: The link '' for "Todo" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4805, column 18: The link '' for "Todo" cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/operations.html#/html/head/body/div/div/a at Line 58, column 4: The link '' for "null" cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/pages/todo.html#/html/head/body/div/div/a/img at Line 48, column 9: The image source 'assets/images/fhir-logo-www.png' cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/pages/todo.html#/html/head/body/div/div/a at Line 58, column 4: The link '' for "null" cannot be resolved
@@ -508,152 +564,699 @@ ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/security.html#/html/head/bo
 ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/terminology.html#/html/head/body/div/div/a at Line 58, column 4: The link '' for "null" cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/toc.html#/html/head/body/div/div/a at Line 58, column 4: The link '' for "null" cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/todo.html#/html/head/body/div/div/a at Line 58, column 4: The link '' for "null" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 4546, column 18: The link '' for "Basic Diet" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 4576, column 18: The link '' for "Bundle Cdc C19 Groups 20200404070053493066" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 4606, column 18: The link '' for "Capabilitystatement Client" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 4636, column 18: The link '' for "Capabilitystatement Server" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 4666, column 18: The link '' for "Codesystem Blah Codes" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 4696, column 18: The link '' for "Implementationguide Healthedatainc.ig Template4" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 4726, column 18: The link '' for "Measure Cdc Covid" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 4756, column 18: The link '' for "Measurereport Ca620d2a 7639 11ea Be32 A4d18ccf5172" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 4786, column 18: The link '' for "Operationdefinition Opdef Test" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 4816, column 18: The link '' for "Patient Example" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 4846, column 18: The link '' for "Patient Example2" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 4880, column 18: The link '' for "Structuredefinition Extension Blah" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 4914, column 18: The link '' for "Structuredefinition Extension Blah2" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 4948, column 18: The link '' for "Structuredefinition Extension Complex" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 4982, column 18: The link '' for "Structuredefinition Ifr" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5016, column 18: The link '' for "Structuredefinition Template Basic" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5050, column 18: The link '' for "Structuredefinition Template Profile On Profile" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5080, column 18: The link '' for "Valueset Bar Codes" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5110, column 18: The link '' for "Valueset Blah Codes" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5140, column 18: The link '' for "Valueset Foo Codes" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5170, column 18: The link '' for "All Examples" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5188, column 18: The link '' for "Capstatements" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5206, column 18: The link '' for "Downloads" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5224, column 18: The link '' for "Guidance" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5242, column 18: The link '' for "Html_pages" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5260, column 18: The link '' for "Index" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5278, column 18: The link '' for "More Guidance" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5296, column 18: The link '' for "Operations" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5314, column 18: The link '' for "Profiles" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5332, column 18: The link '' for "Searchparameters" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5350, column 18: The link '' for "Security" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5368, column 18: The link '' for "Terminology" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5386, column 18: The link '' for "Toc" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5404, column 18: The link '' for "Todo" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5422, column 18: The link '' for "Todo" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/pre/li/a at Line 2096, column 8: The link '{{p.name}}' for "{{p.name | remove: ".html" | replace: '-', ' ' }}" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3404, column 18: The link '' for "Basic Diet" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3434, column 18: The link '' for "Bundle Cdc C19 Groups 20200404070053493066" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3464, column 18: The link '' for "Capabilitystatement Client" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3494, column 18: The link '' for "Capabilitystatement Server" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3524, column 18: The link '' for "Codesystem Blah Codes" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3554, column 18: The link '' for "Implementationguide Healthedatainc.ig Template4" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3584, column 18: The link '' for "Measure Cdc Covid" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3614, column 18: The link '' for "Measurereport Ca620d2a 7639 11ea Be32 A4d18ccf5172" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3644, column 18: The link '' for "Operationdefinition Opdef Test" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3674, column 18: The link '' for "Patient Example" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3704, column 18: The link '' for "Patient Example2" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3738, column 18: The link '' for "Structuredefinition Extension Blah" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3772, column 18: The link '' for "Structuredefinition Extension Blah2" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3806, column 18: The link '' for "Structuredefinition Extension Complex" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3840, column 18: The link '' for "Structuredefinition Ifr" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3874, column 18: The link '' for "Structuredefinition Template Basic" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3908, column 18: The link '' for "Structuredefinition Template Profile On Profile" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3938, column 18: The link '' for "Valueset Bar Codes" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3968, column 18: The link '' for "Valueset Blah Codes" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3998, column 18: The link '' for "Valueset Foo Codes" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4028, column 18: The link '' for "All Examples" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4046, column 18: The link '' for "Capstatements" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4064, column 18: The link '' for "Downloads" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4082, column 18: The link '' for "Guidance" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4100, column 18: The link '' for "Html_pages" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4118, column 18: The link '' for "Index" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4136, column 18: The link '' for "More Guidance" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4154, column 18: The link '' for "Operations" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4172, column 18: The link '' for "Profiles" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4190, column 18: The link '' for "Searchparameters" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4208, column 18: The link '' for "Security" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4226, column 18: The link '' for "Terminology" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4244, column 18: The link '' for "Toc" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4262, column 18: The link '' for "Todo" cannot be resolved
-ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4280, column 18: The link '' for "Todo" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 4882, column 18: The link '' for "Basic Diet" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 4912, column 18: The link '' for "Bundle Cdc C19 Groups Measurereports Max" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 4942, column 18: The link '' for "Bundle Cdc C19 Groups Measurereports Min" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 4972, column 18: The link '' for "Bundle Fema C19 Cohort" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5002, column 18: The link '' for "Bundle Fema C19 Proportion" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5032, column 18: The link '' for "Capabilitystatement Client" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5062, column 18: The link '' for "Capabilitystatement Server" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5092, column 18: The link '' for "Codesystem Blah Codes" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5122, column 18: The link '' for "Implementationguide Healthedatainc.ig Template4" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5152, column 18: The link '' for "Measure Cdc Covid" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5182, column 18: The link '' for "Measure Fema Cohort" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5212, column 18: The link '' for "Measure Fema Proportion" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5242, column 18: The link '' for "Measurereport C19 Groups Measurereport Max" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5272, column 18: The link '' for "Measurereport C19 Groups Measurereport Min" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5302, column 18: The link '' for "Measurereport Fema C19 Cohort" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5332, column 18: The link '' for "Measurereport Fema C19 Proportion" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5362, column 18: The link '' for "Operationdefinition Opdef Test" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5392, column 18: The link '' for "Patient Example" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5422, column 18: The link '' for "Patient Example2" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5456, column 18: The link '' for "Structuredefinition Extension Blah" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5490, column 18: The link '' for "Structuredefinition Extension Blah2" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5524, column 18: The link '' for "Structuredefinition Extension Complex" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5558, column 18: The link '' for "Structuredefinition Ifr" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5592, column 18: The link '' for "Structuredefinition Template Basic" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5626, column 18: The link '' for "Structuredefinition Template Profile On Profile" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5656, column 18: The link '' for "Valueset Bar Codes" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5686, column 18: The link '' for "Valueset Blah Codes" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5716, column 18: The link '' for "Valueset Foo Codes" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5746, column 18: The link '' for "All Examples" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5764, column 18: The link '' for "Capstatements" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5782, column 18: The link '' for "Downloads" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5800, column 18: The link '' for "Guidance" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5818, column 18: The link '' for "Html_pages" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5836, column 18: The link '' for "Index" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5854, column 18: The link '' for "More Guidance" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5872, column 18: The link '' for "Operations" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5890, column 18: The link '' for "Profiles" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5908, column 18: The link '' for "Searchparameters" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5926, column 18: The link '' for "Security" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5944, column 18: The link '' for "Terminology" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5962, column 18: The link '' for "Toc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5980, column 18: The link '' for "Todo" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 5998, column 18: The link '' for "Todo" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/pre/li/a at Line 2264, column 8: The link '{{p.name}}' for "{{p.name | remove: ".html" | replace: '-', ' ' }}" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3668, column 18: The link '' for "Basic Diet" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3698, column 18: The link '' for "Bundle Cdc C19 Groups Measurereports Max" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3728, column 18: The link '' for "Bundle Cdc C19 Groups Measurereports Min" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3758, column 18: The link '' for "Bundle Fema C19 Cohort" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3788, column 18: The link '' for "Bundle Fema C19 Proportion" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3818, column 18: The link '' for "Capabilitystatement Client" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3848, column 18: The link '' for "Capabilitystatement Server" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3878, column 18: The link '' for "Codesystem Blah Codes" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3908, column 18: The link '' for "Implementationguide Healthedatainc.ig Template4" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3938, column 18: The link '' for "Measure Cdc Covid" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3968, column 18: The link '' for "Measure Fema Cohort" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 3998, column 18: The link '' for "Measure Fema Proportion" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4028, column 18: The link '' for "Measurereport C19 Groups Measurereport Max" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4058, column 18: The link '' for "Measurereport C19 Groups Measurereport Min" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4088, column 18: The link '' for "Measurereport Fema C19 Cohort" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4118, column 18: The link '' for "Measurereport Fema C19 Proportion" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4148, column 18: The link '' for "Operationdefinition Opdef Test" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4178, column 18: The link '' for "Patient Example" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4208, column 18: The link '' for "Patient Example2" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4242, column 18: The link '' for "Structuredefinition Extension Blah" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4276, column 18: The link '' for "Structuredefinition Extension Blah2" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4310, column 18: The link '' for "Structuredefinition Extension Complex" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4344, column 18: The link '' for "Structuredefinition Ifr" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4378, column 18: The link '' for "Structuredefinition Template Basic" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4412, column 18: The link '' for "Structuredefinition Template Profile On Profile" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4442, column 18: The link '' for "Valueset Bar Codes" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4472, column 18: The link '' for "Valueset Blah Codes" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4502, column 18: The link '' for "Valueset Foo Codes" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4532, column 18: The link '' for "All Examples" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4550, column 18: The link '' for "Capstatements" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4568, column 18: The link '' for "Downloads" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4586, column 18: The link '' for "Guidance" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4604, column 18: The link '' for "Html_pages" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4622, column 18: The link '' for "Index" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4640, column 18: The link '' for "More Guidance" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4658, column 18: The link '' for "Operations" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4676, column 18: The link '' for "Profiles" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4694, column 18: The link '' for "Searchparameters" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4712, column 18: The link '' for "Security" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4730, column 18: The link '' for "Terminology" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4748, column 18: The link '' for "Toc" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4766, column 18: The link '' for "Todo" cannot be resolved
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/more-guidance.html#/html/head/body/div/div/div/div/div/div/a at Line 4784, column 18: The link '' for "Todo" cannot be resolved
 == /Users/ehaas/Documents/FHIR/IG-Template4/source/examples/Basic-diet.xml ==
 ERROR: Basic/diet: Basic: temp-1: Identifier SHALL be greater than 5 characters [Identifier.value.length() > 5]
-== /Users/ehaas/Documents/FHIR/IG-Template4/source/examples/Bundle-cdc-c19-groups-20200404070053493066.json ==
-ERROR: Bundle/cdc-c19-groups-20200404070053493066: Bundle.entry[0].resource.group[0]: The code for this group has no match in the measure definition
-ERROR: Bundle/cdc-c19-groups-20200404070053493066: Bundle.entry[0].resource.group[1]: The code for this group has no match in the measure definition
-ERROR: Bundle/cdc-c19-groups-20200404070053493066: Bundle.entry[0].resource.group[2]: The code for this group has no match in the measure definition
-ERROR: Bundle/cdc-c19-groups-20200404070053493066: Bundle.entry[0].resource: The MeasureReport does not include a group for the group Hospital Bed/ICU Capacity 
-ERROR: Bundle/cdc-c19-groups-20200404070053493066: Bundle.entry[0].resource: The MeasureReport does not include a group for the group Hospital Ventilator Capacity 
-ERROR: Bundle/cdc-c19-groups-20200404070053493066: Bundle.entry[0].resource: The MeasureReport does not include a group for the group Patient Impact 
-ERROR: Bundle/cdc-c19-groups-20200404070053493066: Bundle.entry[1].resource.group[0]: The code for this group has no match in the measure definition
-ERROR: Bundle/cdc-c19-groups-20200404070053493066: Bundle.entry[1].resource.group[1]: The code for this group has no match in the measure definition
-ERROR: Bundle/cdc-c19-groups-20200404070053493066: Bundle.entry[1].resource.group[2]: The code for this group has no match in the measure definition
-ERROR: Bundle/cdc-c19-groups-20200404070053493066: Bundle.entry[1].resource: The MeasureReport does not include a group for the group Hospital Bed/ICU Capacity 
-ERROR: Bundle/cdc-c19-groups-20200404070053493066: Bundle.entry[1].resource: The MeasureReport does not include a group for the group Hospital Ventilator Capacity 
-ERROR: Bundle/cdc-c19-groups-20200404070053493066: Bundle.entry[1].resource: The MeasureReport does not include a group for the group Patient Impact 
-ERROR: Bundle/cdc-c19-groups-20200404070053493066: Bundle.entry[2].resource.group[0]: The code for this group has no match in the measure definition
-ERROR: Bundle/cdc-c19-groups-20200404070053493066: Bundle.entry[2].resource.group[1]: The code for this group has no match in the measure definition
-ERROR: Bundle/cdc-c19-groups-20200404070053493066: Bundle.entry[2].resource.group[2]: The code for this group has no match in the measure definition
-ERROR: Bundle/cdc-c19-groups-20200404070053493066: Bundle.entry[2].resource: The MeasureReport does not include a group for the group Hospital Bed/ICU Capacity 
-ERROR: Bundle/cdc-c19-groups-20200404070053493066: Bundle.entry[2].resource: The MeasureReport does not include a group for the group Hospital Ventilator Capacity 
-ERROR: Bundle/cdc-c19-groups-20200404070053493066: Bundle.entry[2].resource: The MeasureReport does not include a group for the group Patient Impact 
-ERROR: Bundle/cdc-c19-groups-20200404070053493066: Bundle.entry[3].resource.group[0]: The code for this group has no match in the measure definition
-ERROR: Bundle/cdc-c19-groups-20200404070053493066: Bundle.entry[3].resource.group[1]: The code for this group has no match in the measure definition
-ERROR: Bundle/cdc-c19-groups-20200404070053493066: Bundle.entry[3].resource.group[2]: The code for this group has no match in the measure definition
-ERROR: Bundle/cdc-c19-groups-20200404070053493066: Bundle.entry[3].resource: The MeasureReport does not include a group for the group Hospital Bed/ICU Capacity 
-ERROR: Bundle/cdc-c19-groups-20200404070053493066: Bundle.entry[3].resource: The MeasureReport does not include a group for the group Hospital Ventilator Capacity 
-ERROR: Bundle/cdc-c19-groups-20200404070053493066: Bundle.entry[3].resource: The MeasureReport does not include a group for the group Patient Impact 
-ERROR: Bundle/cdc-c19-groups-20200404070053493066: Bundle.entry[4].resource.group[0]: The code for this group has no match in the measure definition
-ERROR: Bundle/cdc-c19-groups-20200404070053493066: Bundle.entry[4].resource.group[1]: The code for this group has no match in the measure definition
-ERROR: Bundle/cdc-c19-groups-20200404070053493066: Bundle.entry[4].resource.group[2]: The code for this group has no match in the measure definition
-ERROR: Bundle/cdc-c19-groups-20200404070053493066: Bundle.entry[4].resource: The MeasureReport does not include a group for the group Hospital Bed/ICU Capacity 
-ERROR: Bundle/cdc-c19-groups-20200404070053493066: Bundle.entry[4].resource: The MeasureReport does not include a group for the group Hospital Ventilator Capacity 
-ERROR: Bundle/cdc-c19-groups-20200404070053493066: Bundle.entry[4].resource: The MeasureReport does not include a group for the group Patient Impact 
-ERROR: Bundle/cdc-c19-groups-20200404070053493066: Bundle.entry[5].resource.group[0]: The code for this group has no match in the measure definition
-ERROR: Bundle/cdc-c19-groups-20200404070053493066: Bundle.entry[5].resource.group[1]: The code for this group has no match in the measure definition
-ERROR: Bundle/cdc-c19-groups-20200404070053493066: Bundle.entry[5].resource.group[2]: The code for this group has no match in the measure definition
-ERROR: Bundle/cdc-c19-groups-20200404070053493066: Bundle.entry[5].resource: The MeasureReport does not include a group for the group Hospital Bed/ICU Capacity 
-ERROR: Bundle/cdc-c19-groups-20200404070053493066: Bundle.entry[5].resource: The MeasureReport does not include a group for the group Hospital Ventilator Capacity 
-ERROR: Bundle/cdc-c19-groups-20200404070053493066: Bundle.entry[5].resource: The MeasureReport does not include a group for the group Patient Impact 
-ERROR: Bundle/cdc-c19-groups-20200404070053493066: Bundle.entry[6].resource.group[0]: The code for this group has no match in the measure definition
-ERROR: Bundle/cdc-c19-groups-20200404070053493066: Bundle.entry[6].resource.group[1]: The code for this group has no match in the measure definition
-ERROR: Bundle/cdc-c19-groups-20200404070053493066: Bundle.entry[6].resource.group[2]: The code for this group has no match in the measure definition
-ERROR: Bundle/cdc-c19-groups-20200404070053493066: Bundle.entry[6].resource: The MeasureReport does not include a group for the group Hospital Bed/ICU Capacity 
-ERROR: Bundle/cdc-c19-groups-20200404070053493066: Bundle.entry[6].resource: The MeasureReport does not include a group for the group Hospital Ventilator Capacity 
-ERROR: Bundle/cdc-c19-groups-20200404070053493066: Bundle.entry[6].resource: The MeasureReport does not include a group for the group Patient Impact 
-ERROR: Bundle/cdc-c19-groups-20200404070053493066: Bundle.entry[7].resource.group[0]: The code for this group has no match in the measure definition
-ERROR: Bundle/cdc-c19-groups-20200404070053493066: Bundle.entry[7].resource.group[1]: The code for this group has no match in the measure definition
-ERROR: Bundle/cdc-c19-groups-20200404070053493066: Bundle.entry[7].resource.group[2]: The code for this group has no match in the measure definition
-ERROR: Bundle/cdc-c19-groups-20200404070053493066: Bundle.entry[7].resource: The MeasureReport does not include a group for the group Hospital Bed/ICU Capacity 
-ERROR: Bundle/cdc-c19-groups-20200404070053493066: Bundle.entry[7].resource: The MeasureReport does not include a group for the group Hospital Ventilator Capacity 
-ERROR: Bundle/cdc-c19-groups-20200404070053493066: Bundle.entry[7].resource: The MeasureReport does not include a group for the group Patient Impact 
+== /Users/ehaas/Documents/FHIR/IG-Template4/source/examples/Bundle-cdc-c19-groups-measurereports-max.json ==
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[0].resource.group[0]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[0].resource.group[1]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[0].resource.group[2]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[0].resource.group[3]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[0].resource.group[4]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[0].resource.group[5]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[0].resource.group[6]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[0].resource.group[7]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[0].resource.group[8]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[0].resource.group[9]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[0].resource.group[10]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[0].resource.group[11]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[0].resource.group[12]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[0].resource: The MeasureReport does not include a group for the group numTotBeds 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[0].resource: The MeasureReport does not include a group for the group Numbeds 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[0].resource: The MeasureReport does not include a group for the group numBedsOcc 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[0].resource: The MeasureReport does not include a group for the group numICUBeds 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[0].resource: The MeasureReport does not include a group for the group numICUBedsOcc 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[0].resource: The MeasureReport does not include a group for the group numVent 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[0].resource: The MeasureReport does not include a group for the group numVentUse 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[0].resource: The MeasureReport does not include a group for the group numC19HospPats 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[0].resource: The MeasureReport does not include a group for the group numC19MechVentPats 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[0].resource: The MeasureReport does not include a group for the group numC19HOPats 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[0].resource: The MeasureReport does not include a group for the group numC19OverflowPats 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[0].resource: The MeasureReport does not include a group for the group umC19OFMechVentPats 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[0].resource: The MeasureReport does not include a group for the group numC19Died 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[1].resource.group[0]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[1].resource.group[1]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[1].resource.group[2]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[1].resource.group[3]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[1].resource.group[4]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[1].resource.group[5]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[1].resource.group[6]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[1].resource.group[7]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[1].resource.group[8]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[1].resource.group[9]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[1].resource.group[10]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[1].resource.group[11]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[1].resource.group[12]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[1].resource: The MeasureReport does not include a group for the group numTotBeds 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[1].resource: The MeasureReport does not include a group for the group Numbeds 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[1].resource: The MeasureReport does not include a group for the group numBedsOcc 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[1].resource: The MeasureReport does not include a group for the group numICUBeds 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[1].resource: The MeasureReport does not include a group for the group numICUBedsOcc 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[1].resource: The MeasureReport does not include a group for the group numVent 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[1].resource: The MeasureReport does not include a group for the group numVentUse 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[1].resource: The MeasureReport does not include a group for the group numC19HospPats 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[1].resource: The MeasureReport does not include a group for the group numC19MechVentPats 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[1].resource: The MeasureReport does not include a group for the group numC19HOPats 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[1].resource: The MeasureReport does not include a group for the group numC19OverflowPats 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[1].resource: The MeasureReport does not include a group for the group umC19OFMechVentPats 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[1].resource: The MeasureReport does not include a group for the group numC19Died 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[2].resource.group[0]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[2].resource.group[1]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[2].resource.group[2]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[2].resource.group[3]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[2].resource.group[4]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[2].resource.group[5]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[2].resource.group[6]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[2].resource.group[7]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[2].resource.group[8]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[2].resource.group[9]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[2].resource.group[10]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[2].resource.group[11]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[2].resource.group[12]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[2].resource: The MeasureReport does not include a group for the group numTotBeds 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[2].resource: The MeasureReport does not include a group for the group Numbeds 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[2].resource: The MeasureReport does not include a group for the group numBedsOcc 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[2].resource: The MeasureReport does not include a group for the group numICUBeds 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[2].resource: The MeasureReport does not include a group for the group numICUBedsOcc 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[2].resource: The MeasureReport does not include a group for the group numVent 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[2].resource: The MeasureReport does not include a group for the group numVentUse 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[2].resource: The MeasureReport does not include a group for the group numC19HospPats 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[2].resource: The MeasureReport does not include a group for the group numC19MechVentPats 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[2].resource: The MeasureReport does not include a group for the group numC19HOPats 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[2].resource: The MeasureReport does not include a group for the group numC19OverflowPats 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[2].resource: The MeasureReport does not include a group for the group umC19OFMechVentPats 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[2].resource: The MeasureReport does not include a group for the group numC19Died 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[3].resource.group[0]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[3].resource.group[1]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[3].resource.group[2]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[3].resource.group[3]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[3].resource.group[4]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[3].resource.group[5]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[3].resource.group[6]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[3].resource.group[7]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[3].resource.group[8]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[3].resource.group[9]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[3].resource.group[10]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[3].resource.group[11]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[3].resource.group[12]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[3].resource: The MeasureReport does not include a group for the group numTotBeds 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[3].resource: The MeasureReport does not include a group for the group Numbeds 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[3].resource: The MeasureReport does not include a group for the group numBedsOcc 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[3].resource: The MeasureReport does not include a group for the group numICUBeds 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[3].resource: The MeasureReport does not include a group for the group numICUBedsOcc 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[3].resource: The MeasureReport does not include a group for the group numVent 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[3].resource: The MeasureReport does not include a group for the group numVentUse 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[3].resource: The MeasureReport does not include a group for the group numC19HospPats 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[3].resource: The MeasureReport does not include a group for the group numC19MechVentPats 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[3].resource: The MeasureReport does not include a group for the group numC19HOPats 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[3].resource: The MeasureReport does not include a group for the group numC19OverflowPats 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[3].resource: The MeasureReport does not include a group for the group umC19OFMechVentPats 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[3].resource: The MeasureReport does not include a group for the group numC19Died 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[4].resource.group[0]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[4].resource.group[1]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[4].resource.group[2]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[4].resource.group[3]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[4].resource.group[4]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[4].resource.group[5]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[4].resource.group[6]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[4].resource.group[7]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[4].resource.group[8]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[4].resource.group[9]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[4].resource.group[10]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[4].resource.group[11]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[4].resource.group[12]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[4].resource: The MeasureReport does not include a group for the group numTotBeds 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[4].resource: The MeasureReport does not include a group for the group Numbeds 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[4].resource: The MeasureReport does not include a group for the group numBedsOcc 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[4].resource: The MeasureReport does not include a group for the group numICUBeds 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[4].resource: The MeasureReport does not include a group for the group numICUBedsOcc 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[4].resource: The MeasureReport does not include a group for the group numVent 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[4].resource: The MeasureReport does not include a group for the group numVentUse 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[4].resource: The MeasureReport does not include a group for the group numC19HospPats 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[4].resource: The MeasureReport does not include a group for the group numC19MechVentPats 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[4].resource: The MeasureReport does not include a group for the group numC19HOPats 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[4].resource: The MeasureReport does not include a group for the group numC19OverflowPats 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[4].resource: The MeasureReport does not include a group for the group umC19OFMechVentPats 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[4].resource: The MeasureReport does not include a group for the group numC19Died 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[5].resource.group[0]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[5].resource.group[1]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[5].resource.group[2]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[5].resource.group[3]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[5].resource.group[4]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[5].resource.group[5]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[5].resource.group[6]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[5].resource.group[7]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[5].resource.group[8]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[5].resource.group[9]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[5].resource.group[10]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[5].resource.group[11]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[5].resource.group[12]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[5].resource: The MeasureReport does not include a group for the group numTotBeds 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[5].resource: The MeasureReport does not include a group for the group Numbeds 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[5].resource: The MeasureReport does not include a group for the group numBedsOcc 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[5].resource: The MeasureReport does not include a group for the group numICUBeds 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[5].resource: The MeasureReport does not include a group for the group numICUBedsOcc 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[5].resource: The MeasureReport does not include a group for the group numVent 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[5].resource: The MeasureReport does not include a group for the group numVentUse 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[5].resource: The MeasureReport does not include a group for the group numC19HospPats 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[5].resource: The MeasureReport does not include a group for the group numC19MechVentPats 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[5].resource: The MeasureReport does not include a group for the group numC19HOPats 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[5].resource: The MeasureReport does not include a group for the group numC19OverflowPats 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[5].resource: The MeasureReport does not include a group for the group umC19OFMechVentPats 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[5].resource: The MeasureReport does not include a group for the group numC19Died 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[6].resource.group[0]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[6].resource.group[1]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[6].resource.group[2]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[6].resource.group[3]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[6].resource.group[4]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[6].resource.group[5]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[6].resource.group[6]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[6].resource.group[7]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[6].resource.group[8]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[6].resource.group[9]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[6].resource.group[10]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[6].resource.group[11]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[6].resource.group[12]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[6].resource: The MeasureReport does not include a group for the group numTotBeds 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[6].resource: The MeasureReport does not include a group for the group Numbeds 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[6].resource: The MeasureReport does not include a group for the group numBedsOcc 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[6].resource: The MeasureReport does not include a group for the group numICUBeds 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[6].resource: The MeasureReport does not include a group for the group numICUBedsOcc 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[6].resource: The MeasureReport does not include a group for the group numVent 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[6].resource: The MeasureReport does not include a group for the group numVentUse 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[6].resource: The MeasureReport does not include a group for the group numC19HospPats 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[6].resource: The MeasureReport does not include a group for the group numC19MechVentPats 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[6].resource: The MeasureReport does not include a group for the group numC19HOPats 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[6].resource: The MeasureReport does not include a group for the group numC19OverflowPats 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[6].resource: The MeasureReport does not include a group for the group umC19OFMechVentPats 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[6].resource: The MeasureReport does not include a group for the group numC19Died 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[7].resource.group[0]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[7].resource.group[1]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[7].resource.group[2]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[7].resource.group[3]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[7].resource.group[4]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[7].resource.group[5]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[7].resource.group[6]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[7].resource.group[7]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[7].resource.group[8]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[7].resource.group[9]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[7].resource.group[10]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[7].resource.group[11]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[7].resource.group[12]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[7].resource: The MeasureReport does not include a group for the group numTotBeds 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[7].resource: The MeasureReport does not include a group for the group Numbeds 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[7].resource: The MeasureReport does not include a group for the group numBedsOcc 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[7].resource: The MeasureReport does not include a group for the group numICUBeds 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[7].resource: The MeasureReport does not include a group for the group numICUBedsOcc 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[7].resource: The MeasureReport does not include a group for the group numVent 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[7].resource: The MeasureReport does not include a group for the group numVentUse 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[7].resource: The MeasureReport does not include a group for the group numC19HospPats 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[7].resource: The MeasureReport does not include a group for the group numC19MechVentPats 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[7].resource: The MeasureReport does not include a group for the group numC19HOPats 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[7].resource: The MeasureReport does not include a group for the group numC19OverflowPats 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[7].resource: The MeasureReport does not include a group for the group umC19OFMechVentPats 
+ERROR: Bundle/cdc-c19-groups-measurereports-max: Bundle.entry[7].resource: The MeasureReport does not include a group for the group numC19Died 
+== /Users/ehaas/Documents/FHIR/IG-Template4/source/examples/Bundle-cdc-c19-groups-measurereports-min.json ==
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[0].resource.group[0]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[0].resource.group[1]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[0].resource.group[2]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[0].resource.group[3]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[0].resource.group[4]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[0].resource.group[5]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[0].resource.group[6]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[0].resource.group[7]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[0].resource.group[8]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[0].resource.group[9]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[0].resource.group[10]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[0].resource.group[11]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[0].resource.group[12]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[0].resource: The MeasureReport does not include a group for the group numTotBeds 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[0].resource: The MeasureReport does not include a group for the group Numbeds 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[0].resource: The MeasureReport does not include a group for the group numBedsOcc 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[0].resource: The MeasureReport does not include a group for the group numICUBeds 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[0].resource: The MeasureReport does not include a group for the group numICUBedsOcc 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[0].resource: The MeasureReport does not include a group for the group numVent 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[0].resource: The MeasureReport does not include a group for the group numVentUse 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[0].resource: The MeasureReport does not include a group for the group numC19HospPats 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[0].resource: The MeasureReport does not include a group for the group numC19MechVentPats 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[0].resource: The MeasureReport does not include a group for the group numC19HOPats 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[0].resource: The MeasureReport does not include a group for the group numC19OverflowPats 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[0].resource: The MeasureReport does not include a group for the group umC19OFMechVentPats 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[0].resource: The MeasureReport does not include a group for the group numC19Died 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[1].resource.group[0]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[1].resource.group[1]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[1].resource.group[2]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[1].resource.group[3]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[1].resource.group[4]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[1].resource.group[5]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[1].resource.group[6]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[1].resource.group[7]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[1].resource.group[8]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[1].resource.group[9]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[1].resource.group[10]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[1].resource.group[11]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[1].resource.group[12]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[1].resource: The MeasureReport does not include a group for the group numTotBeds 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[1].resource: The MeasureReport does not include a group for the group Numbeds 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[1].resource: The MeasureReport does not include a group for the group numBedsOcc 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[1].resource: The MeasureReport does not include a group for the group numICUBeds 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[1].resource: The MeasureReport does not include a group for the group numICUBedsOcc 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[1].resource: The MeasureReport does not include a group for the group numVent 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[1].resource: The MeasureReport does not include a group for the group numVentUse 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[1].resource: The MeasureReport does not include a group for the group numC19HospPats 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[1].resource: The MeasureReport does not include a group for the group numC19MechVentPats 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[1].resource: The MeasureReport does not include a group for the group numC19HOPats 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[1].resource: The MeasureReport does not include a group for the group numC19OverflowPats 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[1].resource: The MeasureReport does not include a group for the group umC19OFMechVentPats 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[1].resource: The MeasureReport does not include a group for the group numC19Died 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[2].resource.group[0]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[2].resource.group[1]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[2].resource.group[2]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[2].resource.group[3]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[2].resource.group[4]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[2].resource.group[5]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[2].resource.group[6]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[2].resource.group[7]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[2].resource.group[8]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[2].resource.group[9]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[2].resource.group[10]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[2].resource.group[11]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[2].resource.group[12]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[2].resource: The MeasureReport does not include a group for the group numTotBeds 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[2].resource: The MeasureReport does not include a group for the group Numbeds 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[2].resource: The MeasureReport does not include a group for the group numBedsOcc 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[2].resource: The MeasureReport does not include a group for the group numICUBeds 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[2].resource: The MeasureReport does not include a group for the group numICUBedsOcc 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[2].resource: The MeasureReport does not include a group for the group numVent 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[2].resource: The MeasureReport does not include a group for the group numVentUse 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[2].resource: The MeasureReport does not include a group for the group numC19HospPats 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[2].resource: The MeasureReport does not include a group for the group numC19MechVentPats 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[2].resource: The MeasureReport does not include a group for the group numC19HOPats 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[2].resource: The MeasureReport does not include a group for the group numC19OverflowPats 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[2].resource: The MeasureReport does not include a group for the group umC19OFMechVentPats 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[2].resource: The MeasureReport does not include a group for the group numC19Died 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[3].resource.group[0]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[3].resource.group[1]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[3].resource.group[2]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[3].resource.group[3]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[3].resource.group[4]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[3].resource.group[5]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[3].resource.group[6]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[3].resource.group[7]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[3].resource.group[8]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[3].resource.group[9]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[3].resource.group[10]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[3].resource.group[11]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[3].resource.group[12]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[3].resource: The MeasureReport does not include a group for the group numTotBeds 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[3].resource: The MeasureReport does not include a group for the group Numbeds 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[3].resource: The MeasureReport does not include a group for the group numBedsOcc 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[3].resource: The MeasureReport does not include a group for the group numICUBeds 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[3].resource: The MeasureReport does not include a group for the group numICUBedsOcc 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[3].resource: The MeasureReport does not include a group for the group numVent 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[3].resource: The MeasureReport does not include a group for the group numVentUse 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[3].resource: The MeasureReport does not include a group for the group numC19HospPats 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[3].resource: The MeasureReport does not include a group for the group numC19MechVentPats 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[3].resource: The MeasureReport does not include a group for the group numC19HOPats 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[3].resource: The MeasureReport does not include a group for the group numC19OverflowPats 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[3].resource: The MeasureReport does not include a group for the group umC19OFMechVentPats 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[3].resource: The MeasureReport does not include a group for the group numC19Died 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[4].resource.group[0]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[4].resource.group[1]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[4].resource.group[2]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[4].resource.group[3]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[4].resource.group[4]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[4].resource.group[5]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[4].resource.group[6]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[4].resource.group[7]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[4].resource.group[8]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[4].resource.group[9]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[4].resource.group[10]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[4].resource.group[11]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[4].resource.group[12]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[4].resource: The MeasureReport does not include a group for the group numTotBeds 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[4].resource: The MeasureReport does not include a group for the group Numbeds 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[4].resource: The MeasureReport does not include a group for the group numBedsOcc 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[4].resource: The MeasureReport does not include a group for the group numICUBeds 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[4].resource: The MeasureReport does not include a group for the group numICUBedsOcc 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[4].resource: The MeasureReport does not include a group for the group numVent 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[4].resource: The MeasureReport does not include a group for the group numVentUse 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[4].resource: The MeasureReport does not include a group for the group numC19HospPats 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[4].resource: The MeasureReport does not include a group for the group numC19MechVentPats 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[4].resource: The MeasureReport does not include a group for the group numC19HOPats 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[4].resource: The MeasureReport does not include a group for the group numC19OverflowPats 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[4].resource: The MeasureReport does not include a group for the group umC19OFMechVentPats 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[4].resource: The MeasureReport does not include a group for the group numC19Died 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[5].resource.group[0]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[5].resource.group[1]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[5].resource.group[2]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[5].resource.group[3]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[5].resource.group[4]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[5].resource.group[5]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[5].resource.group[6]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[5].resource.group[7]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[5].resource.group[8]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[5].resource.group[9]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[5].resource.group[10]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[5].resource.group[11]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[5].resource.group[12]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[5].resource: The MeasureReport does not include a group for the group numTotBeds 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[5].resource: The MeasureReport does not include a group for the group Numbeds 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[5].resource: The MeasureReport does not include a group for the group numBedsOcc 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[5].resource: The MeasureReport does not include a group for the group numICUBeds 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[5].resource: The MeasureReport does not include a group for the group numICUBedsOcc 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[5].resource: The MeasureReport does not include a group for the group numVent 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[5].resource: The MeasureReport does not include a group for the group numVentUse 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[5].resource: The MeasureReport does not include a group for the group numC19HospPats 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[5].resource: The MeasureReport does not include a group for the group numC19MechVentPats 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[5].resource: The MeasureReport does not include a group for the group numC19HOPats 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[5].resource: The MeasureReport does not include a group for the group numC19OverflowPats 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[5].resource: The MeasureReport does not include a group for the group umC19OFMechVentPats 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[5].resource: The MeasureReport does not include a group for the group numC19Died 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[6].resource.group[0]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[6].resource.group[1]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[6].resource.group[2]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[6].resource.group[3]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[6].resource.group[4]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[6].resource.group[5]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[6].resource.group[6]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[6].resource.group[7]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[6].resource.group[8]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[6].resource.group[9]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[6].resource.group[10]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[6].resource.group[11]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[6].resource.group[12]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[6].resource: The MeasureReport does not include a group for the group numTotBeds 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[6].resource: The MeasureReport does not include a group for the group Numbeds 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[6].resource: The MeasureReport does not include a group for the group numBedsOcc 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[6].resource: The MeasureReport does not include a group for the group numICUBeds 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[6].resource: The MeasureReport does not include a group for the group numICUBedsOcc 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[6].resource: The MeasureReport does not include a group for the group numVent 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[6].resource: The MeasureReport does not include a group for the group numVentUse 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[6].resource: The MeasureReport does not include a group for the group numC19HospPats 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[6].resource: The MeasureReport does not include a group for the group numC19MechVentPats 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[6].resource: The MeasureReport does not include a group for the group numC19HOPats 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[6].resource: The MeasureReport does not include a group for the group numC19OverflowPats 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[6].resource: The MeasureReport does not include a group for the group umC19OFMechVentPats 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[6].resource: The MeasureReport does not include a group for the group numC19Died 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[7].resource.group[0]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[7].resource.group[1]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[7].resource.group[2]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[7].resource.group[3]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[7].resource.group[4]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[7].resource.group[5]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[7].resource.group[6]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[7].resource.group[7]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[7].resource.group[8]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[7].resource.group[9]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[7].resource.group[10]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[7].resource.group[11]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[7].resource.group[12]: The code for this group has no match in the measure definition
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[7].resource: The MeasureReport does not include a group for the group numTotBeds 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[7].resource: The MeasureReport does not include a group for the group Numbeds 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[7].resource: The MeasureReport does not include a group for the group numBedsOcc 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[7].resource: The MeasureReport does not include a group for the group numICUBeds 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[7].resource: The MeasureReport does not include a group for the group numICUBedsOcc 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[7].resource: The MeasureReport does not include a group for the group numVent 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[7].resource: The MeasureReport does not include a group for the group numVentUse 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[7].resource: The MeasureReport does not include a group for the group numC19HospPats 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[7].resource: The MeasureReport does not include a group for the group numC19MechVentPats 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[7].resource: The MeasureReport does not include a group for the group numC19HOPats 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[7].resource: The MeasureReport does not include a group for the group numC19OverflowPats 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[7].resource: The MeasureReport does not include a group for the group umC19OFMechVentPats 
+ERROR: Bundle/cdc-c19-groups-measurereports-min: Bundle.entry[7].resource: The MeasureReport does not include a group for the group numC19Died 
+== /Users/ehaas/Documents/FHIR/IG-Template4/source/examples/Bundle-fema-c19-cohort.json ==
+ERROR: Bundle/fema-c19-cohort: Bundle.entry[0].resource.group[0]: The code for this group has no match in the measure definition
+ERROR: Bundle/fema-c19-cohort: Bundle.entry[0].resource.group[1]: The code for this group has no match in the measure definition
+ERROR: Bundle/fema-c19-cohort: Bundle.entry[0].resource.group[2]: The code for this group has no match in the measure definition
+ERROR: Bundle/fema-c19-cohort: Bundle.entry[0].resource: The MeasureReport does not include a group for the group newDiagnosticTests 
+ERROR: Bundle/fema-c19-cohort: Bundle.entry[0].resource: The MeasureReport does not include a group for the group cumulativeDiagnosticTests 
+ERROR: Bundle/fema-c19-cohort: Bundle.entry[0].resource: The MeasureReport does not include a group for the group cumulativeSpecimensRejected 
+ERROR: Bundle/fema-c19-cohort: Bundle.entry[1].resource.group[0]: The code for this group has no match in the measure definition
+ERROR: Bundle/fema-c19-cohort: Bundle.entry[1].resource.group[1]: The code for this group has no match in the measure definition
+ERROR: Bundle/fema-c19-cohort: Bundle.entry[1].resource.group[2]: The code for this group has no match in the measure definition
+ERROR: Bundle/fema-c19-cohort: Bundle.entry[1].resource: The MeasureReport does not include a group for the group newDiagnosticTests 
+ERROR: Bundle/fema-c19-cohort: Bundle.entry[1].resource: The MeasureReport does not include a group for the group cumulativeDiagnosticTests 
+ERROR: Bundle/fema-c19-cohort: Bundle.entry[1].resource: The MeasureReport does not include a group for the group cumulativeSpecimensRejected 
+ERROR: Bundle/fema-c19-cohort: Bundle.entry[2].resource.group[0]: The code for this group has no match in the measure definition
+ERROR: Bundle/fema-c19-cohort: Bundle.entry[2].resource.group[1]: The code for this group has no match in the measure definition
+ERROR: Bundle/fema-c19-cohort: Bundle.entry[2].resource.group[2]: The code for this group has no match in the measure definition
+ERROR: Bundle/fema-c19-cohort: Bundle.entry[2].resource: The MeasureReport does not include a group for the group newDiagnosticTests 
+ERROR: Bundle/fema-c19-cohort: Bundle.entry[2].resource: The MeasureReport does not include a group for the group cumulativeDiagnosticTests 
+ERROR: Bundle/fema-c19-cohort: Bundle.entry[2].resource: The MeasureReport does not include a group for the group cumulativeSpecimensRejected 
+ERROR: Bundle/fema-c19-cohort: Bundle.entry[3].resource.group[0]: The code for this group has no match in the measure definition
+ERROR: Bundle/fema-c19-cohort: Bundle.entry[3].resource.group[1]: The code for this group has no match in the measure definition
+ERROR: Bundle/fema-c19-cohort: Bundle.entry[3].resource.group[2]: The code for this group has no match in the measure definition
+ERROR: Bundle/fema-c19-cohort: Bundle.entry[3].resource: The MeasureReport does not include a group for the group newDiagnosticTests 
+ERROR: Bundle/fema-c19-cohort: Bundle.entry[3].resource: The MeasureReport does not include a group for the group cumulativeDiagnosticTests 
+ERROR: Bundle/fema-c19-cohort: Bundle.entry[3].resource: The MeasureReport does not include a group for the group cumulativeSpecimensRejected 
+ERROR: Bundle/fema-c19-cohort: Bundle.entry[4].resource.group[0]: The code for this group has no match in the measure definition
+ERROR: Bundle/fema-c19-cohort: Bundle.entry[4].resource.group[1]: The code for this group has no match in the measure definition
+ERROR: Bundle/fema-c19-cohort: Bundle.entry[4].resource.group[2]: The code for this group has no match in the measure definition
+ERROR: Bundle/fema-c19-cohort: Bundle.entry[4].resource: The MeasureReport does not include a group for the group newDiagnosticTests 
+ERROR: Bundle/fema-c19-cohort: Bundle.entry[4].resource: The MeasureReport does not include a group for the group cumulativeDiagnosticTests 
+ERROR: Bundle/fema-c19-cohort: Bundle.entry[4].resource: The MeasureReport does not include a group for the group cumulativeSpecimensRejected 
+ERROR: Bundle/fema-c19-cohort: Bundle.entry[5].resource.group[0]: The code for this group has no match in the measure definition
+ERROR: Bundle/fema-c19-cohort: Bundle.entry[5].resource.group[1]: The code for this group has no match in the measure definition
+ERROR: Bundle/fema-c19-cohort: Bundle.entry[5].resource.group[2]: The code for this group has no match in the measure definition
+ERROR: Bundle/fema-c19-cohort: Bundle.entry[5].resource: The MeasureReport does not include a group for the group newDiagnosticTests 
+ERROR: Bundle/fema-c19-cohort: Bundle.entry[5].resource: The MeasureReport does not include a group for the group cumulativeDiagnosticTests 
+ERROR: Bundle/fema-c19-cohort: Bundle.entry[5].resource: The MeasureReport does not include a group for the group cumulativeSpecimensRejected 
+ERROR: Bundle/fema-c19-cohort: Bundle.entry[6].resource.group[0]: The code for this group has no match in the measure definition
+ERROR: Bundle/fema-c19-cohort: Bundle.entry[6].resource.group[1]: The code for this group has no match in the measure definition
+ERROR: Bundle/fema-c19-cohort: Bundle.entry[6].resource.group[2]: The code for this group has no match in the measure definition
+ERROR: Bundle/fema-c19-cohort: Bundle.entry[6].resource: The MeasureReport does not include a group for the group newDiagnosticTests 
+ERROR: Bundle/fema-c19-cohort: Bundle.entry[6].resource: The MeasureReport does not include a group for the group cumulativeDiagnosticTests 
+ERROR: Bundle/fema-c19-cohort: Bundle.entry[6].resource: The MeasureReport does not include a group for the group cumulativeSpecimensRejected 
+== /Users/ehaas/Documents/FHIR/IG-Template4/source/examples/Bundle-fema-c19-proportion.json ==
+ERROR: Bundle/fema-c19-proportion: Bundle.entry[0].resource.group[0]: The code for this group has no match in the measure definition
+ERROR: Bundle/fema-c19-proportion: Bundle.entry[0].resource.group[1]: The code for this group has no match in the measure definition
+ERROR: Bundle/fema-c19-proportion: Bundle.entry[0].resource: The MeasureReport does not include a group for the group newPercentPositive 
+ERROR: Bundle/fema-c19-proportion: Bundle.entry[0].resource: The MeasureReport does not include a group for the group cumulativePercentPositive 
+ERROR: Bundle/fema-c19-proportion: Bundle.entry[1].resource.group[0]: The code for this group has no match in the measure definition
+ERROR: Bundle/fema-c19-proportion: Bundle.entry[1].resource.group[1]: The code for this group has no match in the measure definition
+ERROR: Bundle/fema-c19-proportion: Bundle.entry[1].resource: The MeasureReport does not include a group for the group newPercentPositive 
+ERROR: Bundle/fema-c19-proportion: Bundle.entry[1].resource: The MeasureReport does not include a group for the group cumulativePercentPositive 
+ERROR: Bundle/fema-c19-proportion: Bundle.entry[2].resource.group[0]: The code for this group has no match in the measure definition
+ERROR: Bundle/fema-c19-proportion: Bundle.entry[2].resource.group[1]: The code for this group has no match in the measure definition
+ERROR: Bundle/fema-c19-proportion: Bundle.entry[2].resource: The MeasureReport does not include a group for the group newPercentPositive 
+ERROR: Bundle/fema-c19-proportion: Bundle.entry[2].resource: The MeasureReport does not include a group for the group cumulativePercentPositive 
+ERROR: Bundle/fema-c19-proportion: Bundle.entry[3].resource.group[0]: The code for this group has no match in the measure definition
+ERROR: Bundle/fema-c19-proportion: Bundle.entry[3].resource.group[1]: The code for this group has no match in the measure definition
+ERROR: Bundle/fema-c19-proportion: Bundle.entry[3].resource: The MeasureReport does not include a group for the group newPercentPositive 
+ERROR: Bundle/fema-c19-proportion: Bundle.entry[3].resource: The MeasureReport does not include a group for the group cumulativePercentPositive 
+ERROR: Bundle/fema-c19-proportion: Bundle.entry[4].resource.group[0]: The code for this group has no match in the measure definition
+ERROR: Bundle/fema-c19-proportion: Bundle.entry[4].resource.group[1]: The code for this group has no match in the measure definition
+ERROR: Bundle/fema-c19-proportion: Bundle.entry[4].resource: The MeasureReport does not include a group for the group newPercentPositive 
+ERROR: Bundle/fema-c19-proportion: Bundle.entry[4].resource: The MeasureReport does not include a group for the group cumulativePercentPositive 
+ERROR: Bundle/fema-c19-proportion: Bundle.entry[5].resource.group[0]: The code for this group has no match in the measure definition
+ERROR: Bundle/fema-c19-proportion: Bundle.entry[5].resource.group[1]: The code for this group has no match in the measure definition
+ERROR: Bundle/fema-c19-proportion: Bundle.entry[5].resource: The MeasureReport does not include a group for the group newPercentPositive 
+ERROR: Bundle/fema-c19-proportion: Bundle.entry[5].resource: The MeasureReport does not include a group for the group cumulativePercentPositive 
+ERROR: Bundle/fema-c19-proportion: Bundle.entry[6].resource.group[0]: The code for this group has no match in the measure definition
+ERROR: Bundle/fema-c19-proportion: Bundle.entry[6].resource.group[1]: The code for this group has no match in the measure definition
+ERROR: Bundle/fema-c19-proportion: Bundle.entry[6].resource: The MeasureReport does not include a group for the group newPercentPositive 
+ERROR: Bundle/fema-c19-proportion: Bundle.entry[6].resource: The MeasureReport does not include a group for the group cumulativePercentPositive 
 == /Users/ehaas/Documents/FHIR/IG-Template4/source/examples/Measure-cdc-covid.json ==
 WARNING: Measure/cdc-covid: Measure.group[0].population[0].criteria.language: ValueSet http://www.rfc-editor.org/bcp/bcp13.txt not found by validator
-WARNING: Measure/cdc-covid: Measure.group[0].population[1].criteria.language: ValueSet http://www.rfc-editor.org/bcp/bcp13.txt not found by validator
-WARNING: Measure/cdc-covid: Measure.group[0].population[2].criteria.language: ValueSet http://www.rfc-editor.org/bcp/bcp13.txt not found by validator
-WARNING: Measure/cdc-covid: Measure.group[0].population[3].criteria.language: ValueSet http://www.rfc-editor.org/bcp/bcp13.txt not found by validator
-WARNING: Measure/cdc-covid: Measure.group[0].population[4].criteria.language: ValueSet http://www.rfc-editor.org/bcp/bcp13.txt not found by validator
 WARNING: Measure/cdc-covid: Measure.group[1].population[0].criteria.language: ValueSet http://www.rfc-editor.org/bcp/bcp13.txt not found by validator
-WARNING: Measure/cdc-covid: Measure.group[1].population[1].criteria.language: ValueSet http://www.rfc-editor.org/bcp/bcp13.txt not found by validator
 WARNING: Measure/cdc-covid: Measure.group[2].population[0].criteria.language: ValueSet http://www.rfc-editor.org/bcp/bcp13.txt not found by validator
-WARNING: Measure/cdc-covid: Measure.group[2].population[1].criteria.language: ValueSet http://www.rfc-editor.org/bcp/bcp13.txt not found by validator
-WARNING: Measure/cdc-covid: Measure.group[2].population[2].criteria.language: ValueSet http://www.rfc-editor.org/bcp/bcp13.txt not found by validator
-WARNING: Measure/cdc-covid: Measure.group[2].population[3].criteria.language: ValueSet http://www.rfc-editor.org/bcp/bcp13.txt not found by validator
-WARNING: Measure/cdc-covid: Measure.group[2].population[4].criteria.language: ValueSet http://www.rfc-editor.org/bcp/bcp13.txt not found by validator
-WARNING: Measure/cdc-covid: Measure.group[2].population[5].criteria.language: ValueSet http://www.rfc-editor.org/bcp/bcp13.txt not found by validator
+WARNING: Measure/cdc-covid: Measure.group[3].population[0].criteria.language: ValueSet http://www.rfc-editor.org/bcp/bcp13.txt not found by validator
+WARNING: Measure/cdc-covid: Measure.group[4].population[0].criteria.language: ValueSet http://www.rfc-editor.org/bcp/bcp13.txt not found by validator
+WARNING: Measure/cdc-covid: Measure.group[5].population[0].criteria.language: ValueSet http://www.rfc-editor.org/bcp/bcp13.txt not found by validator
+WARNING: Measure/cdc-covid: Measure.group[6].population[0].criteria.language: ValueSet http://www.rfc-editor.org/bcp/bcp13.txt not found by validator
+WARNING: Measure/cdc-covid: Measure.group[7].population[0].criteria.language: ValueSet http://www.rfc-editor.org/bcp/bcp13.txt not found by validator
+WARNING: Measure/cdc-covid: Measure.group[8].population[0].criteria.language: ValueSet http://www.rfc-editor.org/bcp/bcp13.txt not found by validator
+WARNING: Measure/cdc-covid: Measure.group[9].population[0].criteria.language: ValueSet http://www.rfc-editor.org/bcp/bcp13.txt not found by validator
+WARNING: Measure/cdc-covid: Measure.group[10].population[0].criteria.language: ValueSet http://www.rfc-editor.org/bcp/bcp13.txt not found by validator
+WARNING: Measure/cdc-covid: Measure.group[11].population[0].criteria.language: ValueSet http://www.rfc-editor.org/bcp/bcp13.txt not found by validator
+WARNING: Measure/cdc-covid: Measure.group[12].population[0].criteria.language: ValueSet http://www.rfc-editor.org/bcp/bcp13.txt not found by validator
 WARNING: Measure/cdc-covid: Measure.group[0]: Measure Groups should have at least one stratifier
 WARNING: Measure/cdc-covid: Measure.group[1]: Measure Groups should have at least one stratifier
 WARNING: Measure/cdc-covid: Measure.group[2]: Measure Groups should have at least one stratifier
-== /Users/ehaas/Documents/FHIR/IG-Template4/source/examples/MeasureReport-ca620d2a-7639-11ea-be32-a4d18ccf5172.json ==
-ERROR: MeasureReport/ca620d2a-7639-11ea-be32-a4d18ccf5172: MeasureReport.group[0]: The code for this group has no match in the measure definition
-ERROR: MeasureReport/ca620d2a-7639-11ea-be32-a4d18ccf5172: MeasureReport.group[1]: The code for this group has no match in the measure definition
-ERROR: MeasureReport/ca620d2a-7639-11ea-be32-a4d18ccf5172: MeasureReport.group[2]: The code for this group has no match in the measure definition
-ERROR: MeasureReport/ca620d2a-7639-11ea-be32-a4d18ccf5172: MeasureReport: The MeasureReport does not include a group for the group Hospital Bed/ICU Capacity 
-ERROR: MeasureReport/ca620d2a-7639-11ea-be32-a4d18ccf5172: MeasureReport: The MeasureReport does not include a group for the group Hospital Ventilator Capacity 
-ERROR: MeasureReport/ca620d2a-7639-11ea-be32-a4d18ccf5172: MeasureReport: The MeasureReport does not include a group for the group Patient Impact 
+WARNING: Measure/cdc-covid: Measure.group[3]: Measure Groups should have at least one stratifier
+WARNING: Measure/cdc-covid: Measure.group[4]: Measure Groups should have at least one stratifier
+WARNING: Measure/cdc-covid: Measure.group[5]: Measure Groups should have at least one stratifier
+WARNING: Measure/cdc-covid: Measure.group[6]: Measure Groups should have at least one stratifier
+WARNING: Measure/cdc-covid: Measure.group[7]: Measure Groups should have at least one stratifier
+WARNING: Measure/cdc-covid: Measure.group[8]: Measure Groups should have at least one stratifier
+WARNING: Measure/cdc-covid: Measure.group[9]: Measure Groups should have at least one stratifier
+WARNING: Measure/cdc-covid: Measure.group[10]: Measure Groups should have at least one stratifier
+WARNING: Measure/cdc-covid: Measure.group[11]: Measure Groups should have at least one stratifier
+WARNING: Measure/cdc-covid: Measure.group[12]: Measure Groups should have at least one stratifier
+== /Users/ehaas/Documents/FHIR/IG-Template4/source/examples/Measure-fema-cohort.json ==
+INFORMATION: Measure/fema-cohort: Measure.group[0].code.coding[0]: Code System URI "http://build.fhir.org/ig/AudaciousInquiry/saner-ig" is unknown so the code cannot be validated
+WARNING: Measure/fema-cohort: Measure.group[0].population[0].criteria.language: ValueSet http://www.rfc-editor.org/bcp/bcp13.txt not found by validator
+INFORMATION: Measure/fema-cohort: Measure.group[1].code.coding[0]: Code System URI "http://build.fhir.org/ig/AudaciousInquiry/saner-ig" is unknown so the code cannot be validated
+WARNING: Measure/fema-cohort: Measure.group[1].population[0].criteria.language: ValueSet http://www.rfc-editor.org/bcp/bcp13.txt not found by validator
+INFORMATION: Measure/fema-cohort: Measure.group[2].code.coding[0]: Code System URI "http://build.fhir.org/ig/AudaciousInquiry/saner-ig" is unknown so the code cannot be validated
+WARNING: Measure/fema-cohort: Measure.group[2].population[0].criteria.language: ValueSet http://www.rfc-editor.org/bcp/bcp13.txt not found by validator
+WARNING: Measure/fema-cohort: Measure.group[0]: Measure Groups should have at least one stratifier
+WARNING: Measure/fema-cohort: Measure.group[1]: Measure Groups should have at least one stratifier
+WARNING: Measure/fema-cohort: Measure.group[2]: Measure Groups should have at least one stratifier
+== /Users/ehaas/Documents/FHIR/IG-Template4/source/examples/Measure-fema-proportion.json ==
+INFORMATION: Measure/fema-proportion: Measure.group[0].code.coding[0]: Code System URI "http://build.fhir.org/ig/AudaciousInquiry/saner-ig" is unknown so the code cannot be validated
+WARNING: Measure/fema-proportion: Measure.group[0].population[0].criteria.language: ValueSet http://www.rfc-editor.org/bcp/bcp13.txt not found by validator
+WARNING: Measure/fema-proportion: Measure.group[0].population[1].criteria.language: ValueSet http://www.rfc-editor.org/bcp/bcp13.txt not found by validator
+WARNING: Measure/fema-proportion: Measure.group[0].population[2].criteria.language: ValueSet http://www.rfc-editor.org/bcp/bcp13.txt not found by validator
+INFORMATION: Measure/fema-proportion: Measure.group[1].code.coding[0]: Code System URI "http://build.fhir.org/ig/AudaciousInquiry/saner-ig" is unknown so the code cannot be validated
+WARNING: Measure/fema-proportion: Measure.group[1].population[0].criteria.language: ValueSet http://www.rfc-editor.org/bcp/bcp13.txt not found by validator
+WARNING: Measure/fema-proportion: Measure.group[1].population[1].criteria.language: ValueSet http://www.rfc-editor.org/bcp/bcp13.txt not found by validator
+WARNING: Measure/fema-proportion: Measure.group[1].population[2].criteria.language: ValueSet http://www.rfc-editor.org/bcp/bcp13.txt not found by validator
+WARNING: Measure/fema-proportion: Measure.group[0]: Measure Groups should have at least one stratifier
+WARNING: Measure/fema-proportion: Measure.group[1]: Measure Groups should have at least one stratifier
+== /Users/ehaas/Documents/FHIR/IG-Template4/source/examples/MeasureReport-c19-groups-measurereport-max.json ==
+ERROR: MeasureReport/c19-groups-measurereport-max: MeasureReport.group[0]: The code for this group has no match in the measure definition
+ERROR: MeasureReport/c19-groups-measurereport-max: MeasureReport.group[1]: The code for this group has no match in the measure definition
+ERROR: MeasureReport/c19-groups-measurereport-max: MeasureReport.group[2]: The code for this group has no match in the measure definition
+ERROR: MeasureReport/c19-groups-measurereport-max: MeasureReport.group[3]: The code for this group has no match in the measure definition
+ERROR: MeasureReport/c19-groups-measurereport-max: MeasureReport.group[4]: The code for this group has no match in the measure definition
+ERROR: MeasureReport/c19-groups-measurereport-max: MeasureReport.group[5]: The code for this group has no match in the measure definition
+ERROR: MeasureReport/c19-groups-measurereport-max: MeasureReport.group[6]: The code for this group has no match in the measure definition
+ERROR: MeasureReport/c19-groups-measurereport-max: MeasureReport.group[7]: The code for this group has no match in the measure definition
+ERROR: MeasureReport/c19-groups-measurereport-max: MeasureReport.group[8]: The code for this group has no match in the measure definition
+ERROR: MeasureReport/c19-groups-measurereport-max: MeasureReport.group[9]: The code for this group has no match in the measure definition
+ERROR: MeasureReport/c19-groups-measurereport-max: MeasureReport.group[10]: The code for this group has no match in the measure definition
+ERROR: MeasureReport/c19-groups-measurereport-max: MeasureReport.group[11]: The code for this group has no match in the measure definition
+ERROR: MeasureReport/c19-groups-measurereport-max: MeasureReport.group[12]: The code for this group has no match in the measure definition
+ERROR: MeasureReport/c19-groups-measurereport-max: MeasureReport: The MeasureReport does not include a group for the group numTotBeds 
+ERROR: MeasureReport/c19-groups-measurereport-max: MeasureReport: The MeasureReport does not include a group for the group Numbeds 
+ERROR: MeasureReport/c19-groups-measurereport-max: MeasureReport: The MeasureReport does not include a group for the group numBedsOcc 
+ERROR: MeasureReport/c19-groups-measurereport-max: MeasureReport: The MeasureReport does not include a group for the group numICUBeds 
+ERROR: MeasureReport/c19-groups-measurereport-max: MeasureReport: The MeasureReport does not include a group for the group numICUBedsOcc 
+ERROR: MeasureReport/c19-groups-measurereport-max: MeasureReport: The MeasureReport does not include a group for the group numVent 
+ERROR: MeasureReport/c19-groups-measurereport-max: MeasureReport: The MeasureReport does not include a group for the group numVentUse 
+ERROR: MeasureReport/c19-groups-measurereport-max: MeasureReport: The MeasureReport does not include a group for the group numC19HospPats 
+ERROR: MeasureReport/c19-groups-measurereport-max: MeasureReport: The MeasureReport does not include a group for the group numC19MechVentPats 
+ERROR: MeasureReport/c19-groups-measurereport-max: MeasureReport: The MeasureReport does not include a group for the group numC19HOPats 
+ERROR: MeasureReport/c19-groups-measurereport-max: MeasureReport: The MeasureReport does not include a group for the group numC19OverflowPats 
+ERROR: MeasureReport/c19-groups-measurereport-max: MeasureReport: The MeasureReport does not include a group for the group umC19OFMechVentPats 
+ERROR: MeasureReport/c19-groups-measurereport-max: MeasureReport: The MeasureReport does not include a group for the group numC19Died 
+== /Users/ehaas/Documents/FHIR/IG-Template4/source/examples/MeasureReport-c19-groups-measurereport-min.json ==
+ERROR: MeasureReport/c19-groups-measurereport-min: MeasureReport.group[0]: The code for this group has no match in the measure definition
+ERROR: MeasureReport/c19-groups-measurereport-min: MeasureReport.group[1]: The code for this group has no match in the measure definition
+ERROR: MeasureReport/c19-groups-measurereport-min: MeasureReport.group[2]: The code for this group has no match in the measure definition
+ERROR: MeasureReport/c19-groups-measurereport-min: MeasureReport.group[3]: The code for this group has no match in the measure definition
+ERROR: MeasureReport/c19-groups-measurereport-min: MeasureReport.group[4]: The code for this group has no match in the measure definition
+ERROR: MeasureReport/c19-groups-measurereport-min: MeasureReport.group[5]: The code for this group has no match in the measure definition
+ERROR: MeasureReport/c19-groups-measurereport-min: MeasureReport.group[6]: The code for this group has no match in the measure definition
+ERROR: MeasureReport/c19-groups-measurereport-min: MeasureReport.group[7]: The code for this group has no match in the measure definition
+ERROR: MeasureReport/c19-groups-measurereport-min: MeasureReport.group[8]: The code for this group has no match in the measure definition
+ERROR: MeasureReport/c19-groups-measurereport-min: MeasureReport.group[9]: The code for this group has no match in the measure definition
+ERROR: MeasureReport/c19-groups-measurereport-min: MeasureReport.group[10]: The code for this group has no match in the measure definition
+ERROR: MeasureReport/c19-groups-measurereport-min: MeasureReport.group[11]: The code for this group has no match in the measure definition
+ERROR: MeasureReport/c19-groups-measurereport-min: MeasureReport.group[12]: The code for this group has no match in the measure definition
+ERROR: MeasureReport/c19-groups-measurereport-min: MeasureReport: The MeasureReport does not include a group for the group numTotBeds 
+ERROR: MeasureReport/c19-groups-measurereport-min: MeasureReport: The MeasureReport does not include a group for the group Numbeds 
+ERROR: MeasureReport/c19-groups-measurereport-min: MeasureReport: The MeasureReport does not include a group for the group numBedsOcc 
+ERROR: MeasureReport/c19-groups-measurereport-min: MeasureReport: The MeasureReport does not include a group for the group numICUBeds 
+ERROR: MeasureReport/c19-groups-measurereport-min: MeasureReport: The MeasureReport does not include a group for the group numICUBedsOcc 
+ERROR: MeasureReport/c19-groups-measurereport-min: MeasureReport: The MeasureReport does not include a group for the group numVent 
+ERROR: MeasureReport/c19-groups-measurereport-min: MeasureReport: The MeasureReport does not include a group for the group numVentUse 
+ERROR: MeasureReport/c19-groups-measurereport-min: MeasureReport: The MeasureReport does not include a group for the group numC19HospPats 
+ERROR: MeasureReport/c19-groups-measurereport-min: MeasureReport: The MeasureReport does not include a group for the group numC19MechVentPats 
+ERROR: MeasureReport/c19-groups-measurereport-min: MeasureReport: The MeasureReport does not include a group for the group numC19HOPats 
+ERROR: MeasureReport/c19-groups-measurereport-min: MeasureReport: The MeasureReport does not include a group for the group numC19OverflowPats 
+ERROR: MeasureReport/c19-groups-measurereport-min: MeasureReport: The MeasureReport does not include a group for the group umC19OFMechVentPats 
+ERROR: MeasureReport/c19-groups-measurereport-min: MeasureReport: The MeasureReport does not include a group for the group numC19Died 
+== /Users/ehaas/Documents/FHIR/IG-Template4/source/examples/MeasureReport-fema-c19-cohort.json ==
+ERROR: MeasureReport/fema-c19-cohort: MeasureReport.group[0]: The code for this group has no match in the measure definition
+ERROR: MeasureReport/fema-c19-cohort: MeasureReport.group[1]: The code for this group has no match in the measure definition
+ERROR: MeasureReport/fema-c19-cohort: MeasureReport.group[2]: The code for this group has no match in the measure definition
+ERROR: MeasureReport/fema-c19-cohort: MeasureReport: The MeasureReport does not include a group for the group newDiagnosticTests 
+ERROR: MeasureReport/fema-c19-cohort: MeasureReport: The MeasureReport does not include a group for the group cumulativeDiagnosticTests 
+ERROR: MeasureReport/fema-c19-cohort: MeasureReport: The MeasureReport does not include a group for the group cumulativeSpecimensRejected 
+== /Users/ehaas/Documents/FHIR/IG-Template4/source/examples/MeasureReport-fema-c19-proportion.json ==
+ERROR: MeasureReport/fema-c19-proportion: MeasureReport.group[0]: The code for this group has no match in the measure definition
+ERROR: MeasureReport/fema-c19-proportion: MeasureReport.group[1]: The code for this group has no match in the measure definition
+ERROR: MeasureReport/fema-c19-proportion: MeasureReport: The MeasureReport does not include a group for the group newPercentPositive 
+ERROR: MeasureReport/fema-c19-proportion: MeasureReport: The MeasureReport does not include a group for the group cumulativePercentPositive 
 == /Users/ehaas/Documents/FHIR/IG-Template4/source/examples/patient-example.xml ==
 ERROR: Patient/example: Patient.identifier[0].type.coding[0]: Unknown Code System "http://hl7.org/fhir/v2/0203"
 ERROR: Patient/example: Patient.identifier[0].type.coding[0].system: URL value "http://hl7.org/fhir/v2/0203" does not resolve
@@ -689,12 +1292,10 @@ ERROR: ImplementationGuide/healthedatainc.ig-template4: ImplementationGuide.defi
 ERROR: ImplementationGuide/healthedatainc.ig-template4: ImplementationGuide.definition.resource[10].extension[1].url: URL value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" does not resolve
 ERROR: ImplementationGuide/healthedatainc.ig-template4: ImplementationGuide.definition.resource[11].extension[1]: The extension http://hl7.org/fhir/StructureDefinition/implementationguide-page is unknown, and not allowed here
 ERROR: ImplementationGuide/healthedatainc.ig-template4: ImplementationGuide.definition.resource[11].extension[1].url: URL value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" does not resolve
-WARNING: ImplementationGuide/healthedatainc.ig-template4: ImplementationGuide.definition.resource[11].description: value should not start or finish with whitespace
 ERROR: ImplementationGuide/healthedatainc.ig-template4: ImplementationGuide.definition.resource[12].extension[1]: The extension http://hl7.org/fhir/StructureDefinition/implementationguide-page is unknown, and not allowed here
 ERROR: ImplementationGuide/healthedatainc.ig-template4: ImplementationGuide.definition.resource[12].extension[1].url: URL value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" does not resolve
 ERROR: ImplementationGuide/healthedatainc.ig-template4: ImplementationGuide.definition.resource[13].extension[1]: The extension http://hl7.org/fhir/StructureDefinition/implementationguide-page is unknown, and not allowed here
 ERROR: ImplementationGuide/healthedatainc.ig-template4: ImplementationGuide.definition.resource[13].extension[1].url: URL value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" does not resolve
-WARNING: ImplementationGuide/healthedatainc.ig-template4: ImplementationGuide.definition.resource[13].description: value should not start or finish with whitespace
 ERROR: ImplementationGuide/healthedatainc.ig-template4: ImplementationGuide.definition.resource[14].extension[1]: The extension http://hl7.org/fhir/StructureDefinition/implementationguide-page is unknown, and not allowed here
 ERROR: ImplementationGuide/healthedatainc.ig-template4: ImplementationGuide.definition.resource[14].extension[1].url: URL value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" does not resolve
 ERROR: ImplementationGuide/healthedatainc.ig-template4: ImplementationGuide.definition.resource[15].extension[1]: The extension http://hl7.org/fhir/StructureDefinition/implementationguide-page is unknown, and not allowed here
@@ -705,6 +1306,24 @@ ERROR: ImplementationGuide/healthedatainc.ig-template4: ImplementationGuide.defi
 ERROR: ImplementationGuide/healthedatainc.ig-template4: ImplementationGuide.definition.resource[17].extension[1].url: URL value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" does not resolve
 ERROR: ImplementationGuide/healthedatainc.ig-template4: ImplementationGuide.definition.resource[18].extension[1]: The extension http://hl7.org/fhir/StructureDefinition/implementationguide-page is unknown, and not allowed here
 ERROR: ImplementationGuide/healthedatainc.ig-template4: ImplementationGuide.definition.resource[18].extension[1].url: URL value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" does not resolve
+ERROR: ImplementationGuide/healthedatainc.ig-template4: ImplementationGuide.definition.resource[19].extension[1]: The extension http://hl7.org/fhir/StructureDefinition/implementationguide-page is unknown, and not allowed here
+ERROR: ImplementationGuide/healthedatainc.ig-template4: ImplementationGuide.definition.resource[19].extension[1].url: URL value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" does not resolve
+WARNING: ImplementationGuide/healthedatainc.ig-template4: ImplementationGuide.definition.resource[19].description: value should not start or finish with whitespace
+ERROR: ImplementationGuide/healthedatainc.ig-template4: ImplementationGuide.definition.resource[20].extension[1]: The extension http://hl7.org/fhir/StructureDefinition/implementationguide-page is unknown, and not allowed here
+ERROR: ImplementationGuide/healthedatainc.ig-template4: ImplementationGuide.definition.resource[20].extension[1].url: URL value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" does not resolve
+ERROR: ImplementationGuide/healthedatainc.ig-template4: ImplementationGuide.definition.resource[21].extension[1]: The extension http://hl7.org/fhir/StructureDefinition/implementationguide-page is unknown, and not allowed here
+ERROR: ImplementationGuide/healthedatainc.ig-template4: ImplementationGuide.definition.resource[21].extension[1].url: URL value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" does not resolve
+WARNING: ImplementationGuide/healthedatainc.ig-template4: ImplementationGuide.definition.resource[21].description: value should not start or finish with whitespace
+ERROR: ImplementationGuide/healthedatainc.ig-template4: ImplementationGuide.definition.resource[22].extension[1]: The extension http://hl7.org/fhir/StructureDefinition/implementationguide-page is unknown, and not allowed here
+ERROR: ImplementationGuide/healthedatainc.ig-template4: ImplementationGuide.definition.resource[22].extension[1].url: URL value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" does not resolve
+ERROR: ImplementationGuide/healthedatainc.ig-template4: ImplementationGuide.definition.resource[23].extension[1]: The extension http://hl7.org/fhir/StructureDefinition/implementationguide-page is unknown, and not allowed here
+ERROR: ImplementationGuide/healthedatainc.ig-template4: ImplementationGuide.definition.resource[23].extension[1].url: URL value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" does not resolve
+ERROR: ImplementationGuide/healthedatainc.ig-template4: ImplementationGuide.definition.resource[24].extension[1]: The extension http://hl7.org/fhir/StructureDefinition/implementationguide-page is unknown, and not allowed here
+ERROR: ImplementationGuide/healthedatainc.ig-template4: ImplementationGuide.definition.resource[24].extension[1].url: URL value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" does not resolve
+ERROR: ImplementationGuide/healthedatainc.ig-template4: ImplementationGuide.definition.resource[25].extension[1]: The extension http://hl7.org/fhir/StructureDefinition/implementationguide-page is unknown, and not allowed here
+ERROR: ImplementationGuide/healthedatainc.ig-template4: ImplementationGuide.definition.resource[25].extension[1].url: URL value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" does not resolve
+ERROR: ImplementationGuide/healthedatainc.ig-template4: ImplementationGuide.definition.resource[26].extension[1]: The extension http://hl7.org/fhir/StructureDefinition/implementationguide-page is unknown, and not allowed here
+ERROR: ImplementationGuide/healthedatainc.ig-template4: ImplementationGuide.definition.resource[26].extension[1].url: URL value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" does not resolve
 ERROR: ImplementationGuide/healthedatainc.ig-template4: ImplementationGuide.definition.parameter[4].code: The value provided ("path-qa") is not in the value set http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.1 (http://hl7.org/fhir/ValueSet/guide-parameter-code, and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/guide-parameter-code#path-qa in http://hl7.org/fhir/guide-parameter-code)
 ERROR: ImplementationGuide/healthedatainc.ig-template4: ImplementationGuide.definition.parameter[5].code: The value provided ("path-temp") is not in the value set http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.1 (http://hl7.org/fhir/ValueSet/guide-parameter-code, and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/guide-parameter-code#path-temp in http://hl7.org/fhir/guide-parameter-code)
 ERROR: ImplementationGuide/healthedatainc.ig-template4: ImplementationGuide.definition.parameter[7].code: The value provided ("path-output") is not in the value set http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.1 (http://hl7.org/fhir/ValueSet/guide-parameter-code, and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/guide-parameter-code#path-output in http://hl7.org/fhir/guide-parameter-code)

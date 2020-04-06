@@ -1,0 +1,792 @@
+{
+  "resourceType": "Bundle",
+  "id": "fema-c19-cohort",
+  "type": "transaction",
+  "timestamp": "2020-04-06T20:58:51.621702Z",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:6b9f827e-7849-11ea-a0e3-a4d18ccf5172",
+      "resource": {
+        "resourceType": "MeasureReport",
+        "id": "6b9f827e-7849-11ea-a0e3-a4d18ccf5172",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 6b9f827e-7849-11ea-a0e3-a4d18ccf5172</p><p><b>contained</b>: </p><p><b>status</b>: complete</p><p><b>type</b>: individual</p><p><b>measure</b>: <a href=\"http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort\">http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort</a></p><p><b>subject</b>: Marin, CA. Generated Summary: unknown resource contained</p><p><b>date</b>: Apr 6, 2020, 1:58:51 PM</p><p><b>reporter</b>: Acme General Hospital</p><p><b>period</b>: Apr 4, 2020, 12:00:00 AM --&gt; Apr 4, 2020, 12:00:00 AM</p><blockquote><p><b>group</b></p><p><b>code</b>: newDiagnosticTests <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>100</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: cumulativeDiagnosticTests <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>1000</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: cumulativeSpecimensRejected <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>45</td></tr></table></blockquote></div>"
+        },
+        "contained": [
+          {
+            "resourceType": "Location",
+            "id": "loc",
+            "address": {
+              "type": "physical",
+              "text": "Marin, CA",
+              "district": "Marin",
+              "state": "CA"
+            },
+            "physicalType": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+                  "code": "jdn",
+                  "display": "Jurisdiction"
+                }
+              ],
+              "text": "US County"
+            }
+          }
+        ],
+        "status": "complete",
+        "type": "individual",
+        "measure": "http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort",
+        "subject": {
+          "reference": "#loc",
+          "display": "Marin, CA"
+        },
+        "date": "2020-04-06T20:58:51.621702Z",
+        "reporter": {
+          "identifier": {
+            "system": "urn:oid:2.16.840.1.113883.6.277",
+            "value": "2.16.840.1.113883.6.277.123"
+          },
+          "display": "Acme General Hospital"
+        },
+        "period": {
+          "start": "2020-04-04",
+          "end": "2020-04-04"
+        },
+        "group": [
+          {
+            "code": {
+              "text": "newDiagnosticTests"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                },
+                "count": 100
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "cumulativeDiagnosticTests"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                },
+                "count": 1000
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "cumulativeSpecimensRejected"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                },
+                "count": 45
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "MeasureReport"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:6bc96db4-7849-11ea-a0e3-a4d18ccf5172",
+      "resource": {
+        "resourceType": "MeasureReport",
+        "id": "6bc96db4-7849-11ea-a0e3-a4d18ccf5172",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 6bc96db4-7849-11ea-a0e3-a4d18ccf5172</p><p><b>contained</b>: </p><p><b>status</b>: complete</p><p><b>type</b>: individual</p><p><b>measure</b>: <a href=\"http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort\">http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort</a></p><p><b>subject</b>: Marin, CA. Generated Summary: unknown resource contained</p><p><b>date</b>: Apr 6, 2020, 1:58:51 PM</p><p><b>reporter</b>: Acme General Hospital</p><p><b>period</b>: Apr 5, 2020, 12:00:00 AM --&gt; Apr 5, 2020, 12:00:00 AM</p><blockquote><p><b>group</b></p><p><b>code</b>: newDiagnosticTests <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>100</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: cumulativeDiagnosticTests <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>1100</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: cumulativeSpecimensRejected <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>55</td></tr></table></blockquote></div>"
+        },
+        "contained": [
+          {
+            "resourceType": "Location",
+            "id": "loc",
+            "address": {
+              "type": "physical",
+              "text": "Marin, CA",
+              "district": "Marin",
+              "state": "CA"
+            },
+            "physicalType": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+                  "code": "jdn",
+                  "display": "Jurisdiction"
+                }
+              ],
+              "text": "US County"
+            }
+          }
+        ],
+        "status": "complete",
+        "type": "individual",
+        "measure": "http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort",
+        "subject": {
+          "reference": "#loc",
+          "display": "Marin, CA"
+        },
+        "date": "2020-04-06T20:58:51.621702Z",
+        "reporter": {
+          "identifier": {
+            "system": "urn:oid:2.16.840.1.113883.6.277",
+            "value": "2.16.840.1.113883.6.277.123"
+          },
+          "display": "Acme General Hospital"
+        },
+        "period": {
+          "start": "2020-04-05",
+          "end": "2020-04-05"
+        },
+        "group": [
+          {
+            "code": {
+              "text": "newDiagnosticTests"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                },
+                "count": 100
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "cumulativeDiagnosticTests"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                },
+                "count": 1100
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "cumulativeSpecimensRejected"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                },
+                "count": 55
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "MeasureReport"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:6beeb880-7849-11ea-a0e3-a4d18ccf5172",
+      "resource": {
+        "resourceType": "MeasureReport",
+        "id": "6beeb880-7849-11ea-a0e3-a4d18ccf5172",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 6beeb880-7849-11ea-a0e3-a4d18ccf5172</p><p><b>contained</b>: </p><p><b>status</b>: complete</p><p><b>type</b>: individual</p><p><b>measure</b>: <a href=\"http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort\">http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort</a></p><p><b>subject</b>: Marin, CA. Generated Summary: unknown resource contained</p><p><b>date</b>: Apr 6, 2020, 1:58:51 PM</p><p><b>reporter</b>: Acme General Hospital</p><p><b>period</b>: Apr 6, 2020, 12:00:00 AM --&gt; Apr 6, 2020, 12:00:00 AM</p><blockquote><p><b>group</b></p><p><b>code</b>: newDiagnosticTests <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>100</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: cumulativeDiagnosticTests <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>1200</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: cumulativeSpecimensRejected <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>65</td></tr></table></blockquote></div>"
+        },
+        "contained": [
+          {
+            "resourceType": "Location",
+            "id": "loc",
+            "address": {
+              "type": "physical",
+              "text": "Marin, CA",
+              "district": "Marin",
+              "state": "CA"
+            },
+            "physicalType": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+                  "code": "jdn",
+                  "display": "Jurisdiction"
+                }
+              ],
+              "text": "US County"
+            }
+          }
+        ],
+        "status": "complete",
+        "type": "individual",
+        "measure": "http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort",
+        "subject": {
+          "reference": "#loc",
+          "display": "Marin, CA"
+        },
+        "date": "2020-04-06T20:58:51.621702Z",
+        "reporter": {
+          "identifier": {
+            "system": "urn:oid:2.16.840.1.113883.6.277",
+            "value": "2.16.840.1.113883.6.277.123"
+          },
+          "display": "Acme General Hospital"
+        },
+        "period": {
+          "start": "2020-04-06",
+          "end": "2020-04-06"
+        },
+        "group": [
+          {
+            "code": {
+              "text": "newDiagnosticTests"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                },
+                "count": 100
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "cumulativeDiagnosticTests"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                },
+                "count": 1200
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "cumulativeSpecimensRejected"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                },
+                "count": 65
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "MeasureReport"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:6c1494f6-7849-11ea-a0e3-a4d18ccf5172",
+      "resource": {
+        "resourceType": "MeasureReport",
+        "id": "6c1494f6-7849-11ea-a0e3-a4d18ccf5172",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 6c1494f6-7849-11ea-a0e3-a4d18ccf5172</p><p><b>contained</b>: </p><p><b>status</b>: complete</p><p><b>type</b>: individual</p><p><b>measure</b>: <a href=\"http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort\">http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort</a></p><p><b>subject</b>: Marin, CA. Generated Summary: unknown resource contained</p><p><b>date</b>: Apr 6, 2020, 1:58:51 PM</p><p><b>reporter</b>: Acme General Hospital</p><p><b>period</b>: Apr 7, 2020, 12:00:00 AM --&gt; Apr 7, 2020, 12:00:00 AM</p><blockquote><p><b>group</b></p><p><b>code</b>: newDiagnosticTests <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>100</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: cumulativeDiagnosticTests <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>1300</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: cumulativeSpecimensRejected <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>75</td></tr></table></blockquote></div>"
+        },
+        "contained": [
+          {
+            "resourceType": "Location",
+            "id": "loc",
+            "address": {
+              "type": "physical",
+              "text": "Marin, CA",
+              "district": "Marin",
+              "state": "CA"
+            },
+            "physicalType": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+                  "code": "jdn",
+                  "display": "Jurisdiction"
+                }
+              ],
+              "text": "US County"
+            }
+          }
+        ],
+        "status": "complete",
+        "type": "individual",
+        "measure": "http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort",
+        "subject": {
+          "reference": "#loc",
+          "display": "Marin, CA"
+        },
+        "date": "2020-04-06T20:58:51.621702Z",
+        "reporter": {
+          "identifier": {
+            "system": "urn:oid:2.16.840.1.113883.6.277",
+            "value": "2.16.840.1.113883.6.277.123"
+          },
+          "display": "Acme General Hospital"
+        },
+        "period": {
+          "start": "2020-04-07",
+          "end": "2020-04-07"
+        },
+        "group": [
+          {
+            "code": {
+              "text": "newDiagnosticTests"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                },
+                "count": 100
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "cumulativeDiagnosticTests"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                },
+                "count": 1300
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "cumulativeSpecimensRejected"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                },
+                "count": 75
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "MeasureReport"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:6c39823e-7849-11ea-a0e3-a4d18ccf5172",
+      "resource": {
+        "resourceType": "MeasureReport",
+        "id": "6c39823e-7849-11ea-a0e3-a4d18ccf5172",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 6c39823e-7849-11ea-a0e3-a4d18ccf5172</p><p><b>contained</b>: </p><p><b>status</b>: complete</p><p><b>type</b>: individual</p><p><b>measure</b>: <a href=\"http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort\">http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort</a></p><p><b>subject</b>: Marin, CA. Generated Summary: unknown resource contained</p><p><b>date</b>: Apr 6, 2020, 1:58:51 PM</p><p><b>reporter</b>: Acme General Hospital</p><p><b>period</b>: Apr 8, 2020, 12:00:00 AM --&gt; Apr 8, 2020, 12:00:00 AM</p><blockquote><p><b>group</b></p><p><b>code</b>: newDiagnosticTests <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>100</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: cumulativeDiagnosticTests <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>1400</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: cumulativeSpecimensRejected <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>85</td></tr></table></blockquote></div>"
+        },
+        "contained": [
+          {
+            "resourceType": "Location",
+            "id": "loc",
+            "address": {
+              "type": "physical",
+              "text": "Marin, CA",
+              "district": "Marin",
+              "state": "CA"
+            },
+            "physicalType": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+                  "code": "jdn",
+                  "display": "Jurisdiction"
+                }
+              ],
+              "text": "US County"
+            }
+          }
+        ],
+        "status": "complete",
+        "type": "individual",
+        "measure": "http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort",
+        "subject": {
+          "reference": "#loc",
+          "display": "Marin, CA"
+        },
+        "date": "2020-04-06T20:58:51.621702Z",
+        "reporter": {
+          "identifier": {
+            "system": "urn:oid:2.16.840.1.113883.6.277",
+            "value": "2.16.840.1.113883.6.277.123"
+          },
+          "display": "Acme General Hospital"
+        },
+        "period": {
+          "start": "2020-04-08",
+          "end": "2020-04-08"
+        },
+        "group": [
+          {
+            "code": {
+              "text": "newDiagnosticTests"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                },
+                "count": 100
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "cumulativeDiagnosticTests"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                },
+                "count": 1400
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "cumulativeSpecimensRejected"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                },
+                "count": 85
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "MeasureReport"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:6c61764a-7849-11ea-a0e3-a4d18ccf5172",
+      "resource": {
+        "resourceType": "MeasureReport",
+        "id": "6c61764a-7849-11ea-a0e3-a4d18ccf5172",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 6c61764a-7849-11ea-a0e3-a4d18ccf5172</p><p><b>contained</b>: </p><p><b>status</b>: complete</p><p><b>type</b>: individual</p><p><b>measure</b>: <a href=\"http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort\">http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort</a></p><p><b>subject</b>: Marin, CA. Generated Summary: unknown resource contained</p><p><b>date</b>: Apr 6, 2020, 1:58:51 PM</p><p><b>reporter</b>: Acme General Hospital</p><p><b>period</b>: Apr 9, 2020, 12:00:00 AM --&gt; Apr 9, 2020, 12:00:00 AM</p><blockquote><p><b>group</b></p><p><b>code</b>: newDiagnosticTests <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>100</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: cumulativeDiagnosticTests <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>1500</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: cumulativeSpecimensRejected <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>95</td></tr></table></blockquote></div>"
+        },
+        "contained": [
+          {
+            "resourceType": "Location",
+            "id": "loc",
+            "address": {
+              "type": "physical",
+              "text": "Marin, CA",
+              "district": "Marin",
+              "state": "CA"
+            },
+            "physicalType": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+                  "code": "jdn",
+                  "display": "Jurisdiction"
+                }
+              ],
+              "text": "US County"
+            }
+          }
+        ],
+        "status": "complete",
+        "type": "individual",
+        "measure": "http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort",
+        "subject": {
+          "reference": "#loc",
+          "display": "Marin, CA"
+        },
+        "date": "2020-04-06T20:58:51.621702Z",
+        "reporter": {
+          "identifier": {
+            "system": "urn:oid:2.16.840.1.113883.6.277",
+            "value": "2.16.840.1.113883.6.277.123"
+          },
+          "display": "Acme General Hospital"
+        },
+        "period": {
+          "start": "2020-04-09",
+          "end": "2020-04-09"
+        },
+        "group": [
+          {
+            "code": {
+              "text": "newDiagnosticTests"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                },
+                "count": 100
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "cumulativeDiagnosticTests"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                },
+                "count": 1500
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "cumulativeSpecimensRejected"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                },
+                "count": 95
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "MeasureReport"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:6c86e48e-7849-11ea-a0e3-a4d18ccf5172",
+      "resource": {
+        "resourceType": "MeasureReport",
+        "id": "6c86e48e-7849-11ea-a0e3-a4d18ccf5172",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 6c86e48e-7849-11ea-a0e3-a4d18ccf5172</p><p><b>contained</b>: </p><p><b>status</b>: complete</p><p><b>type</b>: individual</p><p><b>measure</b>: <a href=\"http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort\">http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort</a></p><p><b>subject</b>: Marin, CA. Generated Summary: unknown resource contained</p><p><b>date</b>: Apr 6, 2020, 1:58:51 PM</p><p><b>reporter</b>: Acme General Hospital</p><p><b>period</b>: Apr 10, 2020, 12:00:00 AM --&gt; Apr 10, 2020, 12:00:00 AM</p><blockquote><p><b>group</b></p><p><b>code</b>: newDiagnosticTests <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>100</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: cumulativeDiagnosticTests <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>1600</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: cumulativeSpecimensRejected <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>105</td></tr></table></blockquote></div>"
+        },
+        "contained": [
+          {
+            "resourceType": "Location",
+            "id": "loc",
+            "address": {
+              "type": "physical",
+              "text": "Marin, CA",
+              "district": "Marin",
+              "state": "CA"
+            },
+            "physicalType": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+                  "code": "jdn",
+                  "display": "Jurisdiction"
+                }
+              ],
+              "text": "US County"
+            }
+          }
+        ],
+        "status": "complete",
+        "type": "individual",
+        "measure": "http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort",
+        "subject": {
+          "reference": "#loc",
+          "display": "Marin, CA"
+        },
+        "date": "2020-04-06T20:58:51.621702Z",
+        "reporter": {
+          "identifier": {
+            "system": "urn:oid:2.16.840.1.113883.6.277",
+            "value": "2.16.840.1.113883.6.277.123"
+          },
+          "display": "Acme General Hospital"
+        },
+        "period": {
+          "start": "2020-04-10",
+          "end": "2020-04-10"
+        },
+        "group": [
+          {
+            "code": {
+              "text": "newDiagnosticTests"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                },
+                "count": 100
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "cumulativeDiagnosticTests"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                },
+                "count": 1600
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "cumulativeSpecimensRejected"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                },
+                "count": 105
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "MeasureReport"
+      }
+    }
+  ]
+}

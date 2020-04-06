@@ -1,0 +1,763 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://www.fhir.org/guides/test4/Bundle/fema-c19-cohort> a fhir:Bundle;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "fema-c19-cohort"];
+  fhir:Bundle.type [ fhir:value "transaction"];
+  fhir:Bundle.timestamp [ fhir:value "2020-04-06T20:58:51.621702Z"^^xsd:dateTime];
+  fhir:Bundle.entry [
+     fhir:index 0;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:6b9f827e-7849-11ea-a0e3-a4d18ccf5172" ];
+     fhir:Bundle.entry.resource <urn:uuid:6b9f827e-7849-11ea-a0e3-a4d18ccf5172>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "POST" ];
+       fhir:Bundle.entry.request.url [ fhir:value "MeasureReport" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:6bc96db4-7849-11ea-a0e3-a4d18ccf5172" ];
+     fhir:Bundle.entry.resource <urn:uuid:6bc96db4-7849-11ea-a0e3-a4d18ccf5172>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "POST" ];
+       fhir:Bundle.entry.request.url [ fhir:value "MeasureReport" ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:6beeb880-7849-11ea-a0e3-a4d18ccf5172" ];
+     fhir:Bundle.entry.resource <urn:uuid:6beeb880-7849-11ea-a0e3-a4d18ccf5172>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "POST" ];
+       fhir:Bundle.entry.request.url [ fhir:value "MeasureReport" ]
+     ]
+  ], [
+     fhir:index 3;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:6c1494f6-7849-11ea-a0e3-a4d18ccf5172" ];
+     fhir:Bundle.entry.resource <urn:uuid:6c1494f6-7849-11ea-a0e3-a4d18ccf5172>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "POST" ];
+       fhir:Bundle.entry.request.url [ fhir:value "MeasureReport" ]
+     ]
+  ], [
+     fhir:index 4;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:6c39823e-7849-11ea-a0e3-a4d18ccf5172" ];
+     fhir:Bundle.entry.resource <urn:uuid:6c39823e-7849-11ea-a0e3-a4d18ccf5172>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "POST" ];
+       fhir:Bundle.entry.request.url [ fhir:value "MeasureReport" ]
+     ]
+  ], [
+     fhir:index 5;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:6c61764a-7849-11ea-a0e3-a4d18ccf5172" ];
+     fhir:Bundle.entry.resource <urn:uuid:6c61764a-7849-11ea-a0e3-a4d18ccf5172>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "POST" ];
+       fhir:Bundle.entry.request.url [ fhir:value "MeasureReport" ]
+     ]
+  ], [
+     fhir:index 6;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:6c86e48e-7849-11ea-a0e3-a4d18ccf5172" ];
+     fhir:Bundle.entry.resource <urn:uuid:6c86e48e-7849-11ea-a0e3-a4d18ccf5172>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "POST" ];
+       fhir:Bundle.entry.request.url [ fhir:value "MeasureReport" ]
+     ]
+  ] .
+
+<urn:uuid:6b9f827e-7849-11ea-a0e3-a4d18ccf5172> a fhir:MeasureReport;
+  fhir:Resource.id [ fhir:value "6b9f827e-7849-11ea-a0e3-a4d18ccf5172"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 6b9f827e-7849-11ea-a0e3-a4d18ccf5172</p><p><b>contained</b>: </p><p><b>status</b>: complete</p><p><b>type</b>: individual</p><p><b>measure</b>: <a href=\"http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort\">http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort</a></p><p><b>subject</b>: Marin, CA. Generated Summary: unknown resource contained</p><p><b>date</b>: Apr 6, 2020, 1:58:51 PM</p><p><b>reporter</b>: Acme General Hospital</p><p><b>period</b>: Apr 4, 2020, 12:00:00 AM --&gt; Apr 4, 2020, 12:00:00 AM</p><blockquote><p><b>group</b></p><p><b>code</b>: newDiagnosticTests <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>100</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: cumulativeDiagnosticTests <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>1000</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: cumulativeSpecimensRejected <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>45</td></tr></table></blockquote></div>"
+  ];
+  fhir:DomainResource.contained [
+     a fhir:Location;
+     fhir:index 0;
+     fhir:Resource.id [ fhir:value "loc" ];
+     fhir:Location.address [
+       fhir:Address.type [ fhir:value "physical" ];
+       fhir:Address.text [ fhir:value "Marin, CA" ];
+       fhir:Address.district [ fhir:value "Marin" ];
+       fhir:Address.state [ fhir:value "CA" ]
+     ];
+     fhir:Location.physicalType [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/location-physical-type" ];
+         fhir:Coding.code [ fhir:value "jdn" ];
+         fhir:Coding.display [ fhir:value "Jurisdiction" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "US County" ]
+     ]
+  ];
+  fhir:MeasureReport.status [ fhir:value "complete"];
+  fhir:MeasureReport.type [ fhir:value "individual"];
+  fhir:MeasureReport.measure [
+     fhir:value "http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort";
+     fhir:link <http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort>
+  ];
+  fhir:MeasureReport.subject [
+     fhir:Reference.reference [ fhir:value "#loc" ];
+     fhir:Reference.display [ fhir:value "Marin, CA" ]
+  ];
+  fhir:MeasureReport.date [ fhir:value "2020-04-06T20:58:51.621702Z"^^xsd:dateTime];
+  fhir:MeasureReport.reporter [
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "urn:oid:2.16.840.1.113883.6.277" ];
+       fhir:Identifier.value [ fhir:value "2.16.840.1.113883.6.277.123" ]
+     ];
+     fhir:Reference.display [ fhir:value "Acme General Hospital" ]
+  ];
+  fhir:MeasureReport.period [
+     fhir:Period.start [ fhir:value "2020-04-04"^^xsd:date ];
+     fhir:Period.end [ fhir:value "2020-04-04"^^xsd:date ]
+  ];
+  fhir:MeasureReport.group [
+     fhir:index 0;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "newDiagnosticTests" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "100"^^xsd:integer ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "cumulativeDiagnosticTests" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "1000"^^xsd:integer ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "cumulativeSpecimensRejected" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "45"^^xsd:integer ]
+     ]
+  ] .
+
+<urn:uuid:6bc96db4-7849-11ea-a0e3-a4d18ccf5172> a fhir:MeasureReport;
+  fhir:Resource.id [ fhir:value "6bc96db4-7849-11ea-a0e3-a4d18ccf5172"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 6bc96db4-7849-11ea-a0e3-a4d18ccf5172</p><p><b>contained</b>: </p><p><b>status</b>: complete</p><p><b>type</b>: individual</p><p><b>measure</b>: <a href=\"http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort\">http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort</a></p><p><b>subject</b>: Marin, CA. Generated Summary: unknown resource contained</p><p><b>date</b>: Apr 6, 2020, 1:58:51 PM</p><p><b>reporter</b>: Acme General Hospital</p><p><b>period</b>: Apr 5, 2020, 12:00:00 AM --&gt; Apr 5, 2020, 12:00:00 AM</p><blockquote><p><b>group</b></p><p><b>code</b>: newDiagnosticTests <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>100</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: cumulativeDiagnosticTests <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>1100</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: cumulativeSpecimensRejected <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>55</td></tr></table></blockquote></div>"
+  ];
+  fhir:DomainResource.contained [
+     a fhir:Location;
+     fhir:index 0;
+     fhir:Resource.id [ fhir:value "loc" ];
+     fhir:Location.address [
+       fhir:Address.type [ fhir:value "physical" ];
+       fhir:Address.text [ fhir:value "Marin, CA" ];
+       fhir:Address.district [ fhir:value "Marin" ];
+       fhir:Address.state [ fhir:value "CA" ]
+     ];
+     fhir:Location.physicalType [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/location-physical-type" ];
+         fhir:Coding.code [ fhir:value "jdn" ];
+         fhir:Coding.display [ fhir:value "Jurisdiction" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "US County" ]
+     ]
+  ];
+  fhir:MeasureReport.status [ fhir:value "complete"];
+  fhir:MeasureReport.type [ fhir:value "individual"];
+  fhir:MeasureReport.measure [
+     fhir:value "http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort";
+     fhir:link <http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort>
+  ];
+  fhir:MeasureReport.subject [
+     fhir:Reference.reference [ fhir:value "#loc" ];
+     fhir:Reference.display [ fhir:value "Marin, CA" ]
+  ];
+  fhir:MeasureReport.date [ fhir:value "2020-04-06T20:58:51.621702Z"^^xsd:dateTime];
+  fhir:MeasureReport.reporter [
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "urn:oid:2.16.840.1.113883.6.277" ];
+       fhir:Identifier.value [ fhir:value "2.16.840.1.113883.6.277.123" ]
+     ];
+     fhir:Reference.display [ fhir:value "Acme General Hospital" ]
+  ];
+  fhir:MeasureReport.period [
+     fhir:Period.start [ fhir:value "2020-04-05"^^xsd:date ];
+     fhir:Period.end [ fhir:value "2020-04-05"^^xsd:date ]
+  ];
+  fhir:MeasureReport.group [
+     fhir:index 0;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "newDiagnosticTests" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "100"^^xsd:integer ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "cumulativeDiagnosticTests" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "1100"^^xsd:integer ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "cumulativeSpecimensRejected" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "55"^^xsd:integer ]
+     ]
+  ] .
+
+<urn:uuid:6beeb880-7849-11ea-a0e3-a4d18ccf5172> a fhir:MeasureReport;
+  fhir:Resource.id [ fhir:value "6beeb880-7849-11ea-a0e3-a4d18ccf5172"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 6beeb880-7849-11ea-a0e3-a4d18ccf5172</p><p><b>contained</b>: </p><p><b>status</b>: complete</p><p><b>type</b>: individual</p><p><b>measure</b>: <a href=\"http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort\">http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort</a></p><p><b>subject</b>: Marin, CA. Generated Summary: unknown resource contained</p><p><b>date</b>: Apr 6, 2020, 1:58:51 PM</p><p><b>reporter</b>: Acme General Hospital</p><p><b>period</b>: Apr 6, 2020, 12:00:00 AM --&gt; Apr 6, 2020, 12:00:00 AM</p><blockquote><p><b>group</b></p><p><b>code</b>: newDiagnosticTests <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>100</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: cumulativeDiagnosticTests <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>1200</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: cumulativeSpecimensRejected <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>65</td></tr></table></blockquote></div>"
+  ];
+  fhir:DomainResource.contained [
+     a fhir:Location;
+     fhir:index 0;
+     fhir:Resource.id [ fhir:value "loc" ];
+     fhir:Location.address [
+       fhir:Address.type [ fhir:value "physical" ];
+       fhir:Address.text [ fhir:value "Marin, CA" ];
+       fhir:Address.district [ fhir:value "Marin" ];
+       fhir:Address.state [ fhir:value "CA" ]
+     ];
+     fhir:Location.physicalType [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/location-physical-type" ];
+         fhir:Coding.code [ fhir:value "jdn" ];
+         fhir:Coding.display [ fhir:value "Jurisdiction" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "US County" ]
+     ]
+  ];
+  fhir:MeasureReport.status [ fhir:value "complete"];
+  fhir:MeasureReport.type [ fhir:value "individual"];
+  fhir:MeasureReport.measure [
+     fhir:value "http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort";
+     fhir:link <http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort>
+  ];
+  fhir:MeasureReport.subject [
+     fhir:Reference.reference [ fhir:value "#loc" ];
+     fhir:Reference.display [ fhir:value "Marin, CA" ]
+  ];
+  fhir:MeasureReport.date [ fhir:value "2020-04-06T20:58:51.621702Z"^^xsd:dateTime];
+  fhir:MeasureReport.reporter [
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "urn:oid:2.16.840.1.113883.6.277" ];
+       fhir:Identifier.value [ fhir:value "2.16.840.1.113883.6.277.123" ]
+     ];
+     fhir:Reference.display [ fhir:value "Acme General Hospital" ]
+  ];
+  fhir:MeasureReport.period [
+     fhir:Period.start [ fhir:value "2020-04-06"^^xsd:date ];
+     fhir:Period.end [ fhir:value "2020-04-06"^^xsd:date ]
+  ];
+  fhir:MeasureReport.group [
+     fhir:index 0;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "newDiagnosticTests" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "100"^^xsd:integer ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "cumulativeDiagnosticTests" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "1200"^^xsd:integer ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "cumulativeSpecimensRejected" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "65"^^xsd:integer ]
+     ]
+  ] .
+
+<urn:uuid:6c1494f6-7849-11ea-a0e3-a4d18ccf5172> a fhir:MeasureReport;
+  fhir:Resource.id [ fhir:value "6c1494f6-7849-11ea-a0e3-a4d18ccf5172"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 6c1494f6-7849-11ea-a0e3-a4d18ccf5172</p><p><b>contained</b>: </p><p><b>status</b>: complete</p><p><b>type</b>: individual</p><p><b>measure</b>: <a href=\"http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort\">http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort</a></p><p><b>subject</b>: Marin, CA. Generated Summary: unknown resource contained</p><p><b>date</b>: Apr 6, 2020, 1:58:51 PM</p><p><b>reporter</b>: Acme General Hospital</p><p><b>period</b>: Apr 7, 2020, 12:00:00 AM --&gt; Apr 7, 2020, 12:00:00 AM</p><blockquote><p><b>group</b></p><p><b>code</b>: newDiagnosticTests <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>100</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: cumulativeDiagnosticTests <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>1300</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: cumulativeSpecimensRejected <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>75</td></tr></table></blockquote></div>"
+  ];
+  fhir:DomainResource.contained [
+     a fhir:Location;
+     fhir:index 0;
+     fhir:Resource.id [ fhir:value "loc" ];
+     fhir:Location.address [
+       fhir:Address.type [ fhir:value "physical" ];
+       fhir:Address.text [ fhir:value "Marin, CA" ];
+       fhir:Address.district [ fhir:value "Marin" ];
+       fhir:Address.state [ fhir:value "CA" ]
+     ];
+     fhir:Location.physicalType [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/location-physical-type" ];
+         fhir:Coding.code [ fhir:value "jdn" ];
+         fhir:Coding.display [ fhir:value "Jurisdiction" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "US County" ]
+     ]
+  ];
+  fhir:MeasureReport.status [ fhir:value "complete"];
+  fhir:MeasureReport.type [ fhir:value "individual"];
+  fhir:MeasureReport.measure [
+     fhir:value "http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort";
+     fhir:link <http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort>
+  ];
+  fhir:MeasureReport.subject [
+     fhir:Reference.reference [ fhir:value "#loc" ];
+     fhir:Reference.display [ fhir:value "Marin, CA" ]
+  ];
+  fhir:MeasureReport.date [ fhir:value "2020-04-06T20:58:51.621702Z"^^xsd:dateTime];
+  fhir:MeasureReport.reporter [
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "urn:oid:2.16.840.1.113883.6.277" ];
+       fhir:Identifier.value [ fhir:value "2.16.840.1.113883.6.277.123" ]
+     ];
+     fhir:Reference.display [ fhir:value "Acme General Hospital" ]
+  ];
+  fhir:MeasureReport.period [
+     fhir:Period.start [ fhir:value "2020-04-07"^^xsd:date ];
+     fhir:Period.end [ fhir:value "2020-04-07"^^xsd:date ]
+  ];
+  fhir:MeasureReport.group [
+     fhir:index 0;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "newDiagnosticTests" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "100"^^xsd:integer ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "cumulativeDiagnosticTests" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "1300"^^xsd:integer ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "cumulativeSpecimensRejected" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "75"^^xsd:integer ]
+     ]
+  ] .
+
+<urn:uuid:6c39823e-7849-11ea-a0e3-a4d18ccf5172> a fhir:MeasureReport;
+  fhir:Resource.id [ fhir:value "6c39823e-7849-11ea-a0e3-a4d18ccf5172"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 6c39823e-7849-11ea-a0e3-a4d18ccf5172</p><p><b>contained</b>: </p><p><b>status</b>: complete</p><p><b>type</b>: individual</p><p><b>measure</b>: <a href=\"http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort\">http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort</a></p><p><b>subject</b>: Marin, CA. Generated Summary: unknown resource contained</p><p><b>date</b>: Apr 6, 2020, 1:58:51 PM</p><p><b>reporter</b>: Acme General Hospital</p><p><b>period</b>: Apr 8, 2020, 12:00:00 AM --&gt; Apr 8, 2020, 12:00:00 AM</p><blockquote><p><b>group</b></p><p><b>code</b>: newDiagnosticTests <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>100</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: cumulativeDiagnosticTests <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>1400</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: cumulativeSpecimensRejected <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>85</td></tr></table></blockquote></div>"
+  ];
+  fhir:DomainResource.contained [
+     a fhir:Location;
+     fhir:index 0;
+     fhir:Resource.id [ fhir:value "loc" ];
+     fhir:Location.address [
+       fhir:Address.type [ fhir:value "physical" ];
+       fhir:Address.text [ fhir:value "Marin, CA" ];
+       fhir:Address.district [ fhir:value "Marin" ];
+       fhir:Address.state [ fhir:value "CA" ]
+     ];
+     fhir:Location.physicalType [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/location-physical-type" ];
+         fhir:Coding.code [ fhir:value "jdn" ];
+         fhir:Coding.display [ fhir:value "Jurisdiction" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "US County" ]
+     ]
+  ];
+  fhir:MeasureReport.status [ fhir:value "complete"];
+  fhir:MeasureReport.type [ fhir:value "individual"];
+  fhir:MeasureReport.measure [
+     fhir:value "http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort";
+     fhir:link <http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort>
+  ];
+  fhir:MeasureReport.subject [
+     fhir:Reference.reference [ fhir:value "#loc" ];
+     fhir:Reference.display [ fhir:value "Marin, CA" ]
+  ];
+  fhir:MeasureReport.date [ fhir:value "2020-04-06T20:58:51.621702Z"^^xsd:dateTime];
+  fhir:MeasureReport.reporter [
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "urn:oid:2.16.840.1.113883.6.277" ];
+       fhir:Identifier.value [ fhir:value "2.16.840.1.113883.6.277.123" ]
+     ];
+     fhir:Reference.display [ fhir:value "Acme General Hospital" ]
+  ];
+  fhir:MeasureReport.period [
+     fhir:Period.start [ fhir:value "2020-04-08"^^xsd:date ];
+     fhir:Period.end [ fhir:value "2020-04-08"^^xsd:date ]
+  ];
+  fhir:MeasureReport.group [
+     fhir:index 0;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "newDiagnosticTests" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "100"^^xsd:integer ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "cumulativeDiagnosticTests" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "1400"^^xsd:integer ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "cumulativeSpecimensRejected" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "85"^^xsd:integer ]
+     ]
+  ] .
+
+<urn:uuid:6c61764a-7849-11ea-a0e3-a4d18ccf5172> a fhir:MeasureReport;
+  fhir:Resource.id [ fhir:value "6c61764a-7849-11ea-a0e3-a4d18ccf5172"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 6c61764a-7849-11ea-a0e3-a4d18ccf5172</p><p><b>contained</b>: </p><p><b>status</b>: complete</p><p><b>type</b>: individual</p><p><b>measure</b>: <a href=\"http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort\">http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort</a></p><p><b>subject</b>: Marin, CA. Generated Summary: unknown resource contained</p><p><b>date</b>: Apr 6, 2020, 1:58:51 PM</p><p><b>reporter</b>: Acme General Hospital</p><p><b>period</b>: Apr 9, 2020, 12:00:00 AM --&gt; Apr 9, 2020, 12:00:00 AM</p><blockquote><p><b>group</b></p><p><b>code</b>: newDiagnosticTests <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>100</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: cumulativeDiagnosticTests <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>1500</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: cumulativeSpecimensRejected <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>95</td></tr></table></blockquote></div>"
+  ];
+  fhir:DomainResource.contained [
+     a fhir:Location;
+     fhir:index 0;
+     fhir:Resource.id [ fhir:value "loc" ];
+     fhir:Location.address [
+       fhir:Address.type [ fhir:value "physical" ];
+       fhir:Address.text [ fhir:value "Marin, CA" ];
+       fhir:Address.district [ fhir:value "Marin" ];
+       fhir:Address.state [ fhir:value "CA" ]
+     ];
+     fhir:Location.physicalType [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/location-physical-type" ];
+         fhir:Coding.code [ fhir:value "jdn" ];
+         fhir:Coding.display [ fhir:value "Jurisdiction" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "US County" ]
+     ]
+  ];
+  fhir:MeasureReport.status [ fhir:value "complete"];
+  fhir:MeasureReport.type [ fhir:value "individual"];
+  fhir:MeasureReport.measure [
+     fhir:value "http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort";
+     fhir:link <http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort>
+  ];
+  fhir:MeasureReport.subject [
+     fhir:Reference.reference [ fhir:value "#loc" ];
+     fhir:Reference.display [ fhir:value "Marin, CA" ]
+  ];
+  fhir:MeasureReport.date [ fhir:value "2020-04-06T20:58:51.621702Z"^^xsd:dateTime];
+  fhir:MeasureReport.reporter [
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "urn:oid:2.16.840.1.113883.6.277" ];
+       fhir:Identifier.value [ fhir:value "2.16.840.1.113883.6.277.123" ]
+     ];
+     fhir:Reference.display [ fhir:value "Acme General Hospital" ]
+  ];
+  fhir:MeasureReport.period [
+     fhir:Period.start [ fhir:value "2020-04-09"^^xsd:date ];
+     fhir:Period.end [ fhir:value "2020-04-09"^^xsd:date ]
+  ];
+  fhir:MeasureReport.group [
+     fhir:index 0;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "newDiagnosticTests" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "100"^^xsd:integer ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "cumulativeDiagnosticTests" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "1500"^^xsd:integer ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "cumulativeSpecimensRejected" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "95"^^xsd:integer ]
+     ]
+  ] .
+
+<urn:uuid:6c86e48e-7849-11ea-a0e3-a4d18ccf5172> a fhir:MeasureReport;
+  fhir:Resource.id [ fhir:value "6c86e48e-7849-11ea-a0e3-a4d18ccf5172"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 6c86e48e-7849-11ea-a0e3-a4d18ccf5172</p><p><b>contained</b>: </p><p><b>status</b>: complete</p><p><b>type</b>: individual</p><p><b>measure</b>: <a href=\"http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort\">http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort</a></p><p><b>subject</b>: Marin, CA. Generated Summary: unknown resource contained</p><p><b>date</b>: Apr 6, 2020, 1:58:51 PM</p><p><b>reporter</b>: Acme General Hospital</p><p><b>period</b>: Apr 10, 2020, 12:00:00 AM --&gt; Apr 10, 2020, 12:00:00 AM</p><blockquote><p><b>group</b></p><p><b>code</b>: newDiagnosticTests <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>100</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: cumulativeDiagnosticTests <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>1600</td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: cumulativeSpecimensRejected <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td>Initial Population <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></td><td>105</td></tr></table></blockquote></div>"
+  ];
+  fhir:DomainResource.contained [
+     a fhir:Location;
+     fhir:index 0;
+     fhir:Resource.id [ fhir:value "loc" ];
+     fhir:Location.address [
+       fhir:Address.type [ fhir:value "physical" ];
+       fhir:Address.text [ fhir:value "Marin, CA" ];
+       fhir:Address.district [ fhir:value "Marin" ];
+       fhir:Address.state [ fhir:value "CA" ]
+     ];
+     fhir:Location.physicalType [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/location-physical-type" ];
+         fhir:Coding.code [ fhir:value "jdn" ];
+         fhir:Coding.display [ fhir:value "Jurisdiction" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "US County" ]
+     ]
+  ];
+  fhir:MeasureReport.status [ fhir:value "complete"];
+  fhir:MeasureReport.type [ fhir:value "individual"];
+  fhir:MeasureReport.measure [
+     fhir:value "http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort";
+     fhir:link <http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort>
+  ];
+  fhir:MeasureReport.subject [
+     fhir:Reference.reference [ fhir:value "#loc" ];
+     fhir:Reference.display [ fhir:value "Marin, CA" ]
+  ];
+  fhir:MeasureReport.date [ fhir:value "2020-04-06T20:58:51.621702Z"^^xsd:dateTime];
+  fhir:MeasureReport.reporter [
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "urn:oid:2.16.840.1.113883.6.277" ];
+       fhir:Identifier.value [ fhir:value "2.16.840.1.113883.6.277.123" ]
+     ];
+     fhir:Reference.display [ fhir:value "Acme General Hospital" ]
+  ];
+  fhir:MeasureReport.period [
+     fhir:Period.start [ fhir:value "2020-04-10"^^xsd:date ];
+     fhir:Period.end [ fhir:value "2020-04-10"^^xsd:date ]
+  ];
+  fhir:MeasureReport.group [
+     fhir:index 0;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "newDiagnosticTests" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "100"^^xsd:integer ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "cumulativeDiagnosticTests" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "1600"^^xsd:integer ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "cumulativeSpecimensRejected" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "105"^^xsd:integer ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://www.fhir.org/guides/test4/Bundle/fema-c19-cohort.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

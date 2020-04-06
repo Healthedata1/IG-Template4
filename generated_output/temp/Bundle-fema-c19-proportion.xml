@@ -1,0 +1,910 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="fema-c19-proportion"/>
+  <type value="transaction"/>
+  <timestamp value="2020-04-06T20:54:17.258551Z"/>
+  <entry>
+    <fullUrl value="urn:uuid:c819bc6e-7848-11ea-a0e3-a4d18ccf5172"/>
+    <resource>
+      <MeasureReport>
+        <id value="c819bc6e-7848-11ea-a0e3-a4d18ccf5172"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: c819bc6e-7848-11ea-a0e3-a4d18ccf5172</p><p><b>contained</b>: </p><p><b>status</b>: complete</p><p><b>type</b>: individual</p><p><b>measure</b>: <a href="http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-proportion">http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-proportion</a></p><p><b>subject</b>: Marin, CA. Generated Summary: unknown resource contained</p><p><b>date</b>: Apr 6, 2020, 1:54:17 PM</p><p><b>reporter</b>: Acme General Hospital</p><p><b>period</b>: Apr 4, 2020, 12:00:00 AM --&gt; Apr 4, 2020, 12:00:00 AM</p><blockquote><p><b>group</b></p><p><b>code</b>: newPercentPositive <span style="background: LightGoldenRodYellow">(Details )</span></p><blockquote><p><b>population</b></p><p><b>id</b>: newTestsResulted.initial-population</p><p><b>code</b>: Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></p><p><b>count</b>: 80</p></blockquote><blockquote><p><b>population</b></p><p><b>id</b>: newTestsResulted.denominator</p><p><b>code</b>: Denominator <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'denominator' = 'Denominator)</span></p><p><b>count</b>: 80</p></blockquote><blockquote><p><b>population</b></p><p><b>id</b>: newPositiveC19Tests.numerator</p><p><b>code</b>: Numerator <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'numerator' = 'Numerator)</span></p><p><b>count</b>: 8</p></blockquote><p><b>measureScore</b>: 0.1 %<span style="background: LightGoldenRodYellow"> (Details: UCUM code % = '%')</span></p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: cumulativePercentPositive <span style="background: LightGoldenRodYellow">(Details )</span></p><blockquote><p><b>population</b></p><p><b>id</b>: cumulativeTestsPerformed.initial-population</p><p><b>code</b>: Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></p><p><b>count</b>: 800</p></blockquote><blockquote><p><b>population</b></p><p><b>id</b>: cumulativeTestsPerformed.denominator</p><p><b>code</b>: Denominator <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'denominator' = 'Denominator)</span></p><p><b>count</b>: 800</p></blockquote><blockquote><p><b>population</b></p><p><b>id</b>: cumulativePositiveC19Tests.numerator</p><p><b>code</b>: Numerator <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'numerator' = 'Numerator)</span></p><p><b>count</b>: 80</p></blockquote><p><b>measureScore</b>: 0.1 %<span style="background: LightGoldenRodYellow"> (Details: UCUM code % = '%')</span></p></blockquote></div>
+        </text>
+        <contained>
+          <Location>
+            <id value="loc"/>
+            <address>
+              <type value="physical"/>
+              <text value="Marin, CA"/>
+              <district value="Marin"/>
+              <state value="CA"/>
+            </address>
+            <physicalType>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/location-physical-type"/>
+                <code value="jdn"/>
+                <display value="Jurisdiction"/>
+              </coding>
+              <text value="US County"/>
+            </physicalType>
+          </Location>
+        </contained>
+        <status value="complete"/>
+        <type value="individual"/>
+        <measure value="http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-proportion"/>
+        <subject>
+          <reference value="#loc"/>
+          <display value="Marin, CA"/>
+        </subject>
+        <date value="2020-04-06T20:54:17.258551Z"/>
+        <reporter>
+          <identifier>
+            <system value="urn:oid:2.16.840.1.113883.6.277"/>
+            <value value="2.16.840.1.113883.6.277.123"/>
+          </identifier>
+          <display value="Acme General Hospital"/>
+        </reporter>
+        <period>
+          <start value="2020-04-04"/>
+          <end value="2020-04-04"/>
+        </period>
+        <group>
+          <code>
+            <text value="newPercentPositive"/>
+          </code>
+          <population id="newTestsResulted.initial-population">
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+            <count value="80"/>
+          </population>
+          <population id="newTestsResulted.denominator">
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="denominator"/>
+              </coding>
+            </code>
+            <count value="80"/>
+          </population>
+          <population id="newPositiveC19Tests.numerator">
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="numerator"/>
+              </coding>
+            </code>
+            <count value="8"/>
+          </population>
+          <measureScore>
+            <value value="0.1"/>
+            <unit value="%"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="%"/>
+          </measureScore>
+        </group>
+        <group>
+          <code>
+            <text value="cumulativePercentPositive"/>
+          </code>
+          <population id="cumulativeTestsPerformed.initial-population">
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+            <count value="800"/>
+          </population>
+          <population id="cumulativeTestsPerformed.denominator">
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="denominator"/>
+              </coding>
+            </code>
+            <count value="800"/>
+          </population>
+          <population id="cumulativePositiveC19Tests.numerator">
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="numerator"/>
+              </coding>
+            </code>
+            <count value="80"/>
+          </population>
+          <measureScore>
+            <value value="0.1"/>
+            <unit value="%"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="%"/>
+          </measureScore>
+        </group>
+      </MeasureReport>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="MeasureReport"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:c84405dc-7848-11ea-a0e3-a4d18ccf5172"/>
+    <resource>
+      <MeasureReport>
+        <id value="c84405dc-7848-11ea-a0e3-a4d18ccf5172"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: c84405dc-7848-11ea-a0e3-a4d18ccf5172</p><p><b>contained</b>: </p><p><b>status</b>: complete</p><p><b>type</b>: individual</p><p><b>measure</b>: <a href="http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-proportion">http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-proportion</a></p><p><b>subject</b>: Marin, CA. Generated Summary: unknown resource contained</p><p><b>date</b>: Apr 6, 2020, 1:54:17 PM</p><p><b>reporter</b>: Acme General Hospital</p><p><b>period</b>: Apr 5, 2020, 12:00:00 AM --&gt; Apr 5, 2020, 12:00:00 AM</p><blockquote><p><b>group</b></p><p><b>code</b>: newPercentPositive <span style="background: LightGoldenRodYellow">(Details )</span></p><blockquote><p><b>population</b></p><p><b>id</b>: newTestsResulted.initial-population</p><p><b>code</b>: Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></p><p><b>count</b>: 90</p></blockquote><blockquote><p><b>population</b></p><p><b>id</b>: newTestsResulted.denominator</p><p><b>code</b>: Denominator <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'denominator' = 'Denominator)</span></p><p><b>count</b>: 90</p></blockquote><blockquote><p><b>population</b></p><p><b>id</b>: newPositiveC19Tests.numerator</p><p><b>code</b>: Numerator <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'numerator' = 'Numerator)</span></p><p><b>count</b>: 9</p></blockquote><p><b>measureScore</b>: 0.1 %<span style="background: LightGoldenRodYellow"> (Details: UCUM code % = '%')</span></p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: cumulativePercentPositive <span style="background: LightGoldenRodYellow">(Details )</span></p><blockquote><p><b>population</b></p><p><b>id</b>: cumulativeTestsPerformed.initial-population</p><p><b>code</b>: Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></p><p><b>count</b>: 890</p></blockquote><blockquote><p><b>population</b></p><p><b>id</b>: cumulativeTestsPerformed.denominator</p><p><b>code</b>: Denominator <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'denominator' = 'Denominator)</span></p><p><b>count</b>: 890</p></blockquote><blockquote><p><b>population</b></p><p><b>id</b>: cumulativePositiveC19Tests.numerator</p><p><b>code</b>: Numerator <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'numerator' = 'Numerator)</span></p><p><b>count</b>: 89</p></blockquote><p><b>measureScore</b>: 0.1 %<span style="background: LightGoldenRodYellow"> (Details: UCUM code % = '%')</span></p></blockquote></div>
+        </text>
+        <contained>
+          <Location>
+            <id value="loc"/>
+            <address>
+              <type value="physical"/>
+              <text value="Marin, CA"/>
+              <district value="Marin"/>
+              <state value="CA"/>
+            </address>
+            <physicalType>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/location-physical-type"/>
+                <code value="jdn"/>
+                <display value="Jurisdiction"/>
+              </coding>
+              <text value="US County"/>
+            </physicalType>
+          </Location>
+        </contained>
+        <status value="complete"/>
+        <type value="individual"/>
+        <measure value="http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-proportion"/>
+        <subject>
+          <reference value="#loc"/>
+          <display value="Marin, CA"/>
+        </subject>
+        <date value="2020-04-06T20:54:17.258551Z"/>
+        <reporter>
+          <identifier>
+            <system value="urn:oid:2.16.840.1.113883.6.277"/>
+            <value value="2.16.840.1.113883.6.277.123"/>
+          </identifier>
+          <display value="Acme General Hospital"/>
+        </reporter>
+        <period>
+          <start value="2020-04-05"/>
+          <end value="2020-04-05"/>
+        </period>
+        <group>
+          <code>
+            <text value="newPercentPositive"/>
+          </code>
+          <population id="newTestsResulted.initial-population">
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+            <count value="90"/>
+          </population>
+          <population id="newTestsResulted.denominator">
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="denominator"/>
+              </coding>
+            </code>
+            <count value="90"/>
+          </population>
+          <population id="newPositiveC19Tests.numerator">
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="numerator"/>
+              </coding>
+            </code>
+            <count value="9"/>
+          </population>
+          <measureScore>
+            <value value="0.1"/>
+            <unit value="%"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="%"/>
+          </measureScore>
+        </group>
+        <group>
+          <code>
+            <text value="cumulativePercentPositive"/>
+          </code>
+          <population id="cumulativeTestsPerformed.initial-population">
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+            <count value="890"/>
+          </population>
+          <population id="cumulativeTestsPerformed.denominator">
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="denominator"/>
+              </coding>
+            </code>
+            <count value="890"/>
+          </population>
+          <population id="cumulativePositiveC19Tests.numerator">
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="numerator"/>
+              </coding>
+            </code>
+            <count value="89"/>
+          </population>
+          <measureScore>
+            <value value="0.1"/>
+            <unit value="%"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="%"/>
+          </measureScore>
+        </group>
+      </MeasureReport>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="MeasureReport"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:c86dcebc-7848-11ea-a0e3-a4d18ccf5172"/>
+    <resource>
+      <MeasureReport>
+        <id value="c86dcebc-7848-11ea-a0e3-a4d18ccf5172"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: c86dcebc-7848-11ea-a0e3-a4d18ccf5172</p><p><b>contained</b>: </p><p><b>status</b>: complete</p><p><b>type</b>: individual</p><p><b>measure</b>: <a href="http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-proportion">http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-proportion</a></p><p><b>subject</b>: Marin, CA. Generated Summary: unknown resource contained</p><p><b>date</b>: Apr 6, 2020, 1:54:17 PM</p><p><b>reporter</b>: Acme General Hospital</p><p><b>period</b>: Apr 6, 2020, 12:00:00 AM --&gt; Apr 6, 2020, 12:00:00 AM</p><blockquote><p><b>group</b></p><p><b>code</b>: newPercentPositive <span style="background: LightGoldenRodYellow">(Details )</span></p><blockquote><p><b>population</b></p><p><b>id</b>: newTestsResulted.initial-population</p><p><b>code</b>: Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></p><p><b>count</b>: 100</p></blockquote><blockquote><p><b>population</b></p><p><b>id</b>: newTestsResulted.denominator</p><p><b>code</b>: Denominator <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'denominator' = 'Denominator)</span></p><p><b>count</b>: 100</p></blockquote><blockquote><p><b>population</b></p><p><b>id</b>: newPositiveC19Tests.numerator</p><p><b>code</b>: Numerator <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'numerator' = 'Numerator)</span></p><p><b>count</b>: 9</p></blockquote><p><b>measureScore</b>: 0.09 %<span style="background: LightGoldenRodYellow"> (Details: UCUM code % = '%')</span></p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: cumulativePercentPositive <span style="background: LightGoldenRodYellow">(Details )</span></p><blockquote><p><b>population</b></p><p><b>id</b>: cumulativeTestsPerformed.initial-population</p><p><b>code</b>: Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></p><p><b>count</b>: 990</p></blockquote><blockquote><p><b>population</b></p><p><b>id</b>: cumulativeTestsPerformed.denominator</p><p><b>code</b>: Denominator <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'denominator' = 'Denominator)</span></p><p><b>count</b>: 990</p></blockquote><blockquote><p><b>population</b></p><p><b>id</b>: cumulativePositiveC19Tests.numerator</p><p><b>code</b>: Numerator <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'numerator' = 'Numerator)</span></p><p><b>count</b>: 98</p></blockquote><p><b>measureScore</b>: 0.09898989898989899 %<span style="background: LightGoldenRodYellow"> (Details: UCUM code % = '%')</span></p></blockquote></div>
+        </text>
+        <contained>
+          <Location>
+            <id value="loc"/>
+            <address>
+              <type value="physical"/>
+              <text value="Marin, CA"/>
+              <district value="Marin"/>
+              <state value="CA"/>
+            </address>
+            <physicalType>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/location-physical-type"/>
+                <code value="jdn"/>
+                <display value="Jurisdiction"/>
+              </coding>
+              <text value="US County"/>
+            </physicalType>
+          </Location>
+        </contained>
+        <status value="complete"/>
+        <type value="individual"/>
+        <measure value="http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-proportion"/>
+        <subject>
+          <reference value="#loc"/>
+          <display value="Marin, CA"/>
+        </subject>
+        <date value="2020-04-06T20:54:17.258551Z"/>
+        <reporter>
+          <identifier>
+            <system value="urn:oid:2.16.840.1.113883.6.277"/>
+            <value value="2.16.840.1.113883.6.277.123"/>
+          </identifier>
+          <display value="Acme General Hospital"/>
+        </reporter>
+        <period>
+          <start value="2020-04-06"/>
+          <end value="2020-04-06"/>
+        </period>
+        <group>
+          <code>
+            <text value="newPercentPositive"/>
+          </code>
+          <population id="newTestsResulted.initial-population">
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+            <count value="100"/>
+          </population>
+          <population id="newTestsResulted.denominator">
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="denominator"/>
+              </coding>
+            </code>
+            <count value="100"/>
+          </population>
+          <population id="newPositiveC19Tests.numerator">
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="numerator"/>
+              </coding>
+            </code>
+            <count value="9"/>
+          </population>
+          <measureScore>
+            <value value="0.09"/>
+            <unit value="%"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="%"/>
+          </measureScore>
+        </group>
+        <group>
+          <code>
+            <text value="cumulativePercentPositive"/>
+          </code>
+          <population id="cumulativeTestsPerformed.initial-population">
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+            <count value="990"/>
+          </population>
+          <population id="cumulativeTestsPerformed.denominator">
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="denominator"/>
+              </coding>
+            </code>
+            <count value="990"/>
+          </population>
+          <population id="cumulativePositiveC19Tests.numerator">
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="numerator"/>
+              </coding>
+            </code>
+            <count value="98"/>
+          </population>
+          <measureScore>
+            <value value="0.09898989898989899"/>
+            <unit value="%"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="%"/>
+          </measureScore>
+        </group>
+      </MeasureReport>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="MeasureReport"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:c89a0ed2-7848-11ea-a0e3-a4d18ccf5172"/>
+    <resource>
+      <MeasureReport>
+        <id value="c89a0ed2-7848-11ea-a0e3-a4d18ccf5172"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: c89a0ed2-7848-11ea-a0e3-a4d18ccf5172</p><p><b>contained</b>: </p><p><b>status</b>: complete</p><p><b>type</b>: individual</p><p><b>measure</b>: <a href="http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-proportion">http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-proportion</a></p><p><b>subject</b>: Marin, CA. Generated Summary: unknown resource contained</p><p><b>date</b>: Apr 6, 2020, 1:54:17 PM</p><p><b>reporter</b>: Acme General Hospital</p><p><b>period</b>: Apr 7, 2020, 12:00:00 AM --&gt; Apr 7, 2020, 12:00:00 AM</p><blockquote><p><b>group</b></p><p><b>code</b>: newPercentPositive <span style="background: LightGoldenRodYellow">(Details )</span></p><blockquote><p><b>population</b></p><p><b>id</b>: newTestsResulted.initial-population</p><p><b>code</b>: Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></p><p><b>count</b>: 100</p></blockquote><blockquote><p><b>population</b></p><p><b>id</b>: newTestsResulted.denominator</p><p><b>code</b>: Denominator <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'denominator' = 'Denominator)</span></p><p><b>count</b>: 100</p></blockquote><blockquote><p><b>population</b></p><p><b>id</b>: newPositiveC19Tests.numerator</p><p><b>code</b>: Numerator <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'numerator' = 'Numerator)</span></p><p><b>count</b>: 11</p></blockquote><p><b>measureScore</b>: 0.11 %<span style="background: LightGoldenRodYellow"> (Details: UCUM code % = '%')</span></p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: cumulativePercentPositive <span style="background: LightGoldenRodYellow">(Details )</span></p><blockquote><p><b>population</b></p><p><b>id</b>: cumulativeTestsPerformed.initial-population</p><p><b>code</b>: Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></p><p><b>count</b>: 1090</p></blockquote><blockquote><p><b>population</b></p><p><b>id</b>: cumulativeTestsPerformed.denominator</p><p><b>code</b>: Denominator <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'denominator' = 'Denominator)</span></p><p><b>count</b>: 1090</p></blockquote><blockquote><p><b>population</b></p><p><b>id</b>: cumulativePositiveC19Tests.numerator</p><p><b>code</b>: Numerator <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'numerator' = 'Numerator)</span></p><p><b>count</b>: 109</p></blockquote><p><b>measureScore</b>: 0.1 %<span style="background: LightGoldenRodYellow"> (Details: UCUM code % = '%')</span></p></blockquote></div>
+        </text>
+        <contained>
+          <Location>
+            <id value="loc"/>
+            <address>
+              <type value="physical"/>
+              <text value="Marin, CA"/>
+              <district value="Marin"/>
+              <state value="CA"/>
+            </address>
+            <physicalType>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/location-physical-type"/>
+                <code value="jdn"/>
+                <display value="Jurisdiction"/>
+              </coding>
+              <text value="US County"/>
+            </physicalType>
+          </Location>
+        </contained>
+        <status value="complete"/>
+        <type value="individual"/>
+        <measure value="http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-proportion"/>
+        <subject>
+          <reference value="#loc"/>
+          <display value="Marin, CA"/>
+        </subject>
+        <date value="2020-04-06T20:54:17.258551Z"/>
+        <reporter>
+          <identifier>
+            <system value="urn:oid:2.16.840.1.113883.6.277"/>
+            <value value="2.16.840.1.113883.6.277.123"/>
+          </identifier>
+          <display value="Acme General Hospital"/>
+        </reporter>
+        <period>
+          <start value="2020-04-07"/>
+          <end value="2020-04-07"/>
+        </period>
+        <group>
+          <code>
+            <text value="newPercentPositive"/>
+          </code>
+          <population id="newTestsResulted.initial-population">
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+            <count value="100"/>
+          </population>
+          <population id="newTestsResulted.denominator">
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="denominator"/>
+              </coding>
+            </code>
+            <count value="100"/>
+          </population>
+          <population id="newPositiveC19Tests.numerator">
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="numerator"/>
+              </coding>
+            </code>
+            <count value="11"/>
+          </population>
+          <measureScore>
+            <value value="0.11"/>
+            <unit value="%"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="%"/>
+          </measureScore>
+        </group>
+        <group>
+          <code>
+            <text value="cumulativePercentPositive"/>
+          </code>
+          <population id="cumulativeTestsPerformed.initial-population">
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+            <count value="1090"/>
+          </population>
+          <population id="cumulativeTestsPerformed.denominator">
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="denominator"/>
+              </coding>
+            </code>
+            <count value="1090"/>
+          </population>
+          <population id="cumulativePositiveC19Tests.numerator">
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="numerator"/>
+              </coding>
+            </code>
+            <count value="109"/>
+          </population>
+          <measureScore>
+            <value value="0.1"/>
+            <unit value="%"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="%"/>
+          </measureScore>
+        </group>
+      </MeasureReport>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="MeasureReport"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:c8c46ba0-7848-11ea-a0e3-a4d18ccf5172"/>
+    <resource>
+      <MeasureReport>
+        <id value="c8c46ba0-7848-11ea-a0e3-a4d18ccf5172"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: c8c46ba0-7848-11ea-a0e3-a4d18ccf5172</p><p><b>contained</b>: </p><p><b>status</b>: complete</p><p><b>type</b>: individual</p><p><b>measure</b>: <a href="http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-proportion">http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-proportion</a></p><p><b>subject</b>: Marin, CA. Generated Summary: unknown resource contained</p><p><b>date</b>: Apr 6, 2020, 1:54:17 PM</p><p><b>reporter</b>: Acme General Hospital</p><p><b>period</b>: Apr 8, 2020, 12:00:00 AM --&gt; Apr 8, 2020, 12:00:00 AM</p><blockquote><p><b>group</b></p><p><b>code</b>: newPercentPositive <span style="background: LightGoldenRodYellow">(Details )</span></p><blockquote><p><b>population</b></p><p><b>id</b>: newTestsResulted.initial-population</p><p><b>code</b>: Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></p><p><b>count</b>: 90</p></blockquote><blockquote><p><b>population</b></p><p><b>id</b>: newTestsResulted.denominator</p><p><b>code</b>: Denominator <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'denominator' = 'Denominator)</span></p><p><b>count</b>: 90</p></blockquote><blockquote><p><b>population</b></p><p><b>id</b>: newPositiveC19Tests.numerator</p><p><b>code</b>: Numerator <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'numerator' = 'Numerator)</span></p><p><b>count</b>: 10</p></blockquote><p><b>measureScore</b>: 0.1111111111111111 %<span style="background: LightGoldenRodYellow"> (Details: UCUM code % = '%')</span></p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: cumulativePercentPositive <span style="background: LightGoldenRodYellow">(Details )</span></p><blockquote><p><b>population</b></p><p><b>id</b>: cumulativeTestsPerformed.initial-population</p><p><b>code</b>: Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></p><p><b>count</b>: 1180</p></blockquote><blockquote><p><b>population</b></p><p><b>id</b>: cumulativeTestsPerformed.denominator</p><p><b>code</b>: Denominator <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'denominator' = 'Denominator)</span></p><p><b>count</b>: 1180</p></blockquote><blockquote><p><b>population</b></p><p><b>id</b>: cumulativePositiveC19Tests.numerator</p><p><b>code</b>: Numerator <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'numerator' = 'Numerator)</span></p><p><b>count</b>: 119</p></blockquote><p><b>measureScore</b>: 0.10084745762711865 %<span style="background: LightGoldenRodYellow"> (Details: UCUM code % = '%')</span></p></blockquote></div>
+        </text>
+        <contained>
+          <Location>
+            <id value="loc"/>
+            <address>
+              <type value="physical"/>
+              <text value="Marin, CA"/>
+              <district value="Marin"/>
+              <state value="CA"/>
+            </address>
+            <physicalType>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/location-physical-type"/>
+                <code value="jdn"/>
+                <display value="Jurisdiction"/>
+              </coding>
+              <text value="US County"/>
+            </physicalType>
+          </Location>
+        </contained>
+        <status value="complete"/>
+        <type value="individual"/>
+        <measure value="http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-proportion"/>
+        <subject>
+          <reference value="#loc"/>
+          <display value="Marin, CA"/>
+        </subject>
+        <date value="2020-04-06T20:54:17.258551Z"/>
+        <reporter>
+          <identifier>
+            <system value="urn:oid:2.16.840.1.113883.6.277"/>
+            <value value="2.16.840.1.113883.6.277.123"/>
+          </identifier>
+          <display value="Acme General Hospital"/>
+        </reporter>
+        <period>
+          <start value="2020-04-08"/>
+          <end value="2020-04-08"/>
+        </period>
+        <group>
+          <code>
+            <text value="newPercentPositive"/>
+          </code>
+          <population id="newTestsResulted.initial-population">
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+            <count value="90"/>
+          </population>
+          <population id="newTestsResulted.denominator">
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="denominator"/>
+              </coding>
+            </code>
+            <count value="90"/>
+          </population>
+          <population id="newPositiveC19Tests.numerator">
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="numerator"/>
+              </coding>
+            </code>
+            <count value="10"/>
+          </population>
+          <measureScore>
+            <value value="0.1111111111111111"/>
+            <unit value="%"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="%"/>
+          </measureScore>
+        </group>
+        <group>
+          <code>
+            <text value="cumulativePercentPositive"/>
+          </code>
+          <population id="cumulativeTestsPerformed.initial-population">
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+            <count value="1180"/>
+          </population>
+          <population id="cumulativeTestsPerformed.denominator">
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="denominator"/>
+              </coding>
+            </code>
+            <count value="1180"/>
+          </population>
+          <population id="cumulativePositiveC19Tests.numerator">
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="numerator"/>
+              </coding>
+            </code>
+            <count value="119"/>
+          </population>
+          <measureScore>
+            <value value="0.10084745762711865"/>
+            <unit value="%"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="%"/>
+          </measureScore>
+        </group>
+      </MeasureReport>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="MeasureReport"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:c8f472f0-7848-11ea-a0e3-a4d18ccf5172"/>
+    <resource>
+      <MeasureReport>
+        <id value="c8f472f0-7848-11ea-a0e3-a4d18ccf5172"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: c8f472f0-7848-11ea-a0e3-a4d18ccf5172</p><p><b>contained</b>: </p><p><b>status</b>: complete</p><p><b>type</b>: individual</p><p><b>measure</b>: <a href="http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-proportion">http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-proportion</a></p><p><b>subject</b>: Marin, CA. Generated Summary: unknown resource contained</p><p><b>date</b>: Apr 6, 2020, 1:54:17 PM</p><p><b>reporter</b>: Acme General Hospital</p><p><b>period</b>: Apr 9, 2020, 12:00:00 AM --&gt; Apr 9, 2020, 12:00:00 AM</p><blockquote><p><b>group</b></p><p><b>code</b>: newPercentPositive <span style="background: LightGoldenRodYellow">(Details )</span></p><blockquote><p><b>population</b></p><p><b>id</b>: newTestsResulted.initial-population</p><p><b>code</b>: Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></p><p><b>count</b>: 80</p></blockquote><blockquote><p><b>population</b></p><p><b>id</b>: newTestsResulted.denominator</p><p><b>code</b>: Denominator <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'denominator' = 'Denominator)</span></p><p><b>count</b>: 80</p></blockquote><blockquote><p><b>population</b></p><p><b>id</b>: newPositiveC19Tests.numerator</p><p><b>code</b>: Numerator <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'numerator' = 'Numerator)</span></p><p><b>count</b>: 10</p></blockquote><p><b>measureScore</b>: 0.125 %<span style="background: LightGoldenRodYellow"> (Details: UCUM code % = '%')</span></p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: cumulativePercentPositive <span style="background: LightGoldenRodYellow">(Details )</span></p><blockquote><p><b>population</b></p><p><b>id</b>: cumulativeTestsPerformed.initial-population</p><p><b>code</b>: Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></p><p><b>count</b>: 1260</p></blockquote><blockquote><p><b>population</b></p><p><b>id</b>: cumulativeTestsPerformed.denominator</p><p><b>code</b>: Denominator <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'denominator' = 'Denominator)</span></p><p><b>count</b>: 1260</p></blockquote><blockquote><p><b>population</b></p><p><b>id</b>: cumulativePositiveC19Tests.numerator</p><p><b>code</b>: Numerator <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'numerator' = 'Numerator)</span></p><p><b>count</b>: 129</p></blockquote><p><b>measureScore</b>: 0.10238095238095238 %<span style="background: LightGoldenRodYellow"> (Details: UCUM code % = '%')</span></p></blockquote></div>
+        </text>
+        <contained>
+          <Location>
+            <id value="loc"/>
+            <address>
+              <type value="physical"/>
+              <text value="Marin, CA"/>
+              <district value="Marin"/>
+              <state value="CA"/>
+            </address>
+            <physicalType>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/location-physical-type"/>
+                <code value="jdn"/>
+                <display value="Jurisdiction"/>
+              </coding>
+              <text value="US County"/>
+            </physicalType>
+          </Location>
+        </contained>
+        <status value="complete"/>
+        <type value="individual"/>
+        <measure value="http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-proportion"/>
+        <subject>
+          <reference value="#loc"/>
+          <display value="Marin, CA"/>
+        </subject>
+        <date value="2020-04-06T20:54:17.258551Z"/>
+        <reporter>
+          <identifier>
+            <system value="urn:oid:2.16.840.1.113883.6.277"/>
+            <value value="2.16.840.1.113883.6.277.123"/>
+          </identifier>
+          <display value="Acme General Hospital"/>
+        </reporter>
+        <period>
+          <start value="2020-04-09"/>
+          <end value="2020-04-09"/>
+        </period>
+        <group>
+          <code>
+            <text value="newPercentPositive"/>
+          </code>
+          <population id="newTestsResulted.initial-population">
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+            <count value="80"/>
+          </population>
+          <population id="newTestsResulted.denominator">
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="denominator"/>
+              </coding>
+            </code>
+            <count value="80"/>
+          </population>
+          <population id="newPositiveC19Tests.numerator">
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="numerator"/>
+              </coding>
+            </code>
+            <count value="10"/>
+          </population>
+          <measureScore>
+            <value value="0.125"/>
+            <unit value="%"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="%"/>
+          </measureScore>
+        </group>
+        <group>
+          <code>
+            <text value="cumulativePercentPositive"/>
+          </code>
+          <population id="cumulativeTestsPerformed.initial-population">
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+            <count value="1260"/>
+          </population>
+          <population id="cumulativeTestsPerformed.denominator">
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="denominator"/>
+              </coding>
+            </code>
+            <count value="1260"/>
+          </population>
+          <population id="cumulativePositiveC19Tests.numerator">
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="numerator"/>
+              </coding>
+            </code>
+            <count value="129"/>
+          </population>
+          <measureScore>
+            <value value="0.10238095238095238"/>
+            <unit value="%"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="%"/>
+          </measureScore>
+        </group>
+      </MeasureReport>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="MeasureReport"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:c9258e08-7848-11ea-a0e3-a4d18ccf5172"/>
+    <resource>
+      <MeasureReport>
+        <id value="c9258e08-7848-11ea-a0e3-a4d18ccf5172"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: c9258e08-7848-11ea-a0e3-a4d18ccf5172</p><p><b>contained</b>: </p><p><b>status</b>: complete</p><p><b>type</b>: individual</p><p><b>measure</b>: <a href="http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-proportion">http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-proportion</a></p><p><b>subject</b>: Marin, CA. Generated Summary: unknown resource contained</p><p><b>date</b>: Apr 6, 2020, 1:54:17 PM</p><p><b>reporter</b>: Acme General Hospital</p><p><b>period</b>: Apr 10, 2020, 12:00:00 AM --&gt; Apr 10, 2020, 12:00:00 AM</p><blockquote><p><b>group</b></p><p><b>code</b>: newPercentPositive <span style="background: LightGoldenRodYellow">(Details )</span></p><blockquote><p><b>population</b></p><p><b>id</b>: newTestsResulted.initial-population</p><p><b>code</b>: Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></p><p><b>count</b>: 70</p></blockquote><blockquote><p><b>population</b></p><p><b>id</b>: newTestsResulted.denominator</p><p><b>code</b>: Denominator <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'denominator' = 'Denominator)</span></p><p><b>count</b>: 70</p></blockquote><blockquote><p><b>population</b></p><p><b>id</b>: newPositiveC19Tests.numerator</p><p><b>code</b>: Numerator <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'numerator' = 'Numerator)</span></p><p><b>count</b>: 8</p></blockquote><p><b>measureScore</b>: 0.11428571428571428 %<span style="background: LightGoldenRodYellow"> (Details: UCUM code % = '%')</span></p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: cumulativePercentPositive <span style="background: LightGoldenRodYellow">(Details )</span></p><blockquote><p><b>population</b></p><p><b>id</b>: cumulativeTestsPerformed.initial-population</p><p><b>code</b>: Initial Population <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'initial-population' = 'Initial Population)</span></p><p><b>count</b>: 1330</p></blockquote><blockquote><p><b>population</b></p><p><b>id</b>: cumulativeTestsPerformed.denominator</p><p><b>code</b>: Denominator <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'denominator' = 'Denominator)</span></p><p><b>count</b>: 1330</p></blockquote><blockquote><p><b>population</b></p><p><b>id</b>: cumulativePositiveC19Tests.numerator</p><p><b>code</b>: Numerator <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/measure-population code 'numerator' = 'Numerator)</span></p><p><b>count</b>: 137</p></blockquote><p><b>measureScore</b>: 0.10300751879699248 %<span style="background: LightGoldenRodYellow"> (Details: UCUM code % = '%')</span></p></blockquote></div>
+        </text>
+        <contained>
+          <Location>
+            <id value="loc"/>
+            <address>
+              <type value="physical"/>
+              <text value="Marin, CA"/>
+              <district value="Marin"/>
+              <state value="CA"/>
+            </address>
+            <physicalType>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/location-physical-type"/>
+                <code value="jdn"/>
+                <display value="Jurisdiction"/>
+              </coding>
+              <text value="US County"/>
+            </physicalType>
+          </Location>
+        </contained>
+        <status value="complete"/>
+        <type value="individual"/>
+        <measure value="http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-proportion"/>
+        <subject>
+          <reference value="#loc"/>
+          <display value="Marin, CA"/>
+        </subject>
+        <date value="2020-04-06T20:54:17.258551Z"/>
+        <reporter>
+          <identifier>
+            <system value="urn:oid:2.16.840.1.113883.6.277"/>
+            <value value="2.16.840.1.113883.6.277.123"/>
+          </identifier>
+          <display value="Acme General Hospital"/>
+        </reporter>
+        <period>
+          <start value="2020-04-10"/>
+          <end value="2020-04-10"/>
+        </period>
+        <group>
+          <code>
+            <text value="newPercentPositive"/>
+          </code>
+          <population id="newTestsResulted.initial-population">
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+            <count value="70"/>
+          </population>
+          <population id="newTestsResulted.denominator">
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="denominator"/>
+              </coding>
+            </code>
+            <count value="70"/>
+          </population>
+          <population id="newPositiveC19Tests.numerator">
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="numerator"/>
+              </coding>
+            </code>
+            <count value="8"/>
+          </population>
+          <measureScore>
+            <value value="0.11428571428571428"/>
+            <unit value="%"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="%"/>
+          </measureScore>
+        </group>
+        <group>
+          <code>
+            <text value="cumulativePercentPositive"/>
+          </code>
+          <population id="cumulativeTestsPerformed.initial-population">
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+            <count value="1330"/>
+          </population>
+          <population id="cumulativeTestsPerformed.denominator">
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="denominator"/>
+              </coding>
+            </code>
+            <count value="1330"/>
+          </population>
+          <population id="cumulativePositiveC19Tests.numerator">
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="numerator"/>
+              </coding>
+            </code>
+            <count value="137"/>
+          </population>
+          <measureScore>
+            <value value="0.10300751879699248"/>
+            <unit value="%"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="%"/>
+          </measureScore>
+        </group>
+      </MeasureReport>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="MeasureReport"/>
+    </request>
+  </entry>
+</Bundle>
