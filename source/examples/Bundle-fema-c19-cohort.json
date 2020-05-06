@@ -2,22 +2,34 @@
     "resourceType": "Bundle",
     "id": "fema-c19-cohort",
     "type": "transaction",
-    "timestamp": "2020-04-06T20:58:51.621702Z",
+    "timestamp": "2020-04-12T04:56:03.530613Z",
     "entry": [
         {
-            "fullUrl": "urn:uuid:6b9f827e-7849-11ea-a0e3-a4d18ccf5172",
+            "fullUrl": "urn:uuid:eaf1bdf6-7c79-11ea-bcad-a4d18ccf5172",
             "resource": {
                 "resourceType": "MeasureReport",
-                "id": "6b9f827e-7849-11ea-a0e3-a4d18ccf5172",
+                "id": "eaf1bdf6-7c79-11ea-bcad-a4d18ccf5172",
                 "contained": [
                     {
                         "resourceType": "Location",
                         "id": "loc",
+                        "identifier": [
+                            {
+                                "system": "urn:oid:2.16.840.1.113883.6.277",
+                                "value": "2.16.840.1.113883.6.277.123"
+                            },
+                            {
+                                "system": "http://example.org/cms_cert_system",
+                                "value": "1234567"
+                            }
+                        ],
+                        "name": "Marin General",
                         "address": {
                             "type": "physical",
-                            "text": "Marin, CA",
+                            "text": "Marin, CA 94965",
                             "district": "Marin",
-                            "state": "CA"
+                            "state": "CA",
+                            "postalCode": "94965"
                         },
                         "physicalType": {
                             "coding": [
@@ -36,15 +48,12 @@
                 "measure": "http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort",
                 "subject": {
                     "reference": "#loc",
-                    "display": "Marin, CA"
+                    "display": "Marin General Marin, CA 94965"
                 },
-                "date": "2020-04-06T20:58:51.621702Z",
+                "date": "2020-04-12T04:56:03.530613Z",
                 "reporter": {
-                    "identifier": {
-                        "system": "urn:oid:2.16.840.1.113883.6.277",
-                        "value": "2.16.840.1.113883.6.277.123"
-                    },
-                    "display": "Acme General Hospital"
+                    "reference": "#loc",
+                    "display": "Marin General Marin, CA 94965"
                 },
                 "period": {
                     "start": "2020-04-04",
@@ -67,7 +76,10 @@
                                 },
                                 "count": 100
                             }
-                        ]
+                        ],
+                        "measureScore": {
+                            "value": 100
+                        }
                     },
                     {
                         "code": {
@@ -85,7 +97,10 @@
                                 },
                                 "count": 1000
                             }
-                        ]
+                        ],
+                        "measureScore": {
+                            "value": 1000
+                        }
                     },
                     {
                         "code": {
@@ -103,7 +118,10 @@
                                 },
                                 "count": 45
                             }
-                        ]
+                        ],
+                        "measureScore": {
+                            "value": 45
+                        }
                     }
                 ]
             },
@@ -113,19 +131,31 @@
             }
         },
         {
-            "fullUrl": "urn:uuid:6bc96db4-7849-11ea-a0e3-a4d18ccf5172",
+            "fullUrl": "urn:uuid:eb1502f2-7c79-11ea-bcad-a4d18ccf5172",
             "resource": {
                 "resourceType": "MeasureReport",
-                "id": "6bc96db4-7849-11ea-a0e3-a4d18ccf5172",
+                "id": "eb1502f2-7c79-11ea-bcad-a4d18ccf5172",
                 "contained": [
                     {
                         "resourceType": "Location",
                         "id": "loc",
+                        "identifier": [
+                            {
+                                "system": "urn:oid:2.16.840.1.113883.6.277",
+                                "value": "2.16.840.1.113883.6.277.123"
+                            },
+                            {
+                                "system": "http://example.org/cms_cert_system",
+                                "value": "1234567"
+                            }
+                        ],
+                        "name": "Marin General",
                         "address": {
                             "type": "physical",
-                            "text": "Marin, CA",
+                            "text": "Marin, CA 94965",
                             "district": "Marin",
-                            "state": "CA"
+                            "state": "CA",
+                            "postalCode": "94965"
                         },
                         "physicalType": {
                             "coding": [
@@ -144,15 +174,12 @@
                 "measure": "http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort",
                 "subject": {
                     "reference": "#loc",
-                    "display": "Marin, CA"
+                    "display": "Marin General Marin, CA 94965"
                 },
-                "date": "2020-04-06T20:58:51.621702Z",
+                "date": "2020-04-12T04:56:03.530613Z",
                 "reporter": {
-                    "identifier": {
-                        "system": "urn:oid:2.16.840.1.113883.6.277",
-                        "value": "2.16.840.1.113883.6.277.123"
-                    },
-                    "display": "Acme General Hospital"
+                    "reference": "#loc",
+                    "display": "Marin General Marin, CA 94965"
                 },
                 "period": {
                     "start": "2020-04-05",
@@ -175,7 +202,10 @@
                                 },
                                 "count": 100
                             }
-                        ]
+                        ],
+                        "measureScore": {
+                            "value": 100
+                        }
                     },
                     {
                         "code": {
@@ -193,7 +223,10 @@
                                 },
                                 "count": 1100
                             }
-                        ]
+                        ],
+                        "measureScore": {
+                            "value": 1100
+                        }
                     },
                     {
                         "code": {
@@ -211,7 +244,10 @@
                                 },
                                 "count": 55
                             }
-                        ]
+                        ],
+                        "measureScore": {
+                            "value": 55
+                        }
                     }
                 ]
             },
@@ -221,19 +257,31 @@
             }
         },
         {
-            "fullUrl": "urn:uuid:6beeb880-7849-11ea-a0e3-a4d18ccf5172",
+            "fullUrl": "urn:uuid:eb3625f4-7c79-11ea-bcad-a4d18ccf5172",
             "resource": {
                 "resourceType": "MeasureReport",
-                "id": "6beeb880-7849-11ea-a0e3-a4d18ccf5172",
+                "id": "eb3625f4-7c79-11ea-bcad-a4d18ccf5172",
                 "contained": [
                     {
                         "resourceType": "Location",
                         "id": "loc",
+                        "identifier": [
+                            {
+                                "system": "urn:oid:2.16.840.1.113883.6.277",
+                                "value": "2.16.840.1.113883.6.277.123"
+                            },
+                            {
+                                "system": "http://example.org/cms_cert_system",
+                                "value": "1234567"
+                            }
+                        ],
+                        "name": "Marin General",
                         "address": {
                             "type": "physical",
-                            "text": "Marin, CA",
+                            "text": "Marin, CA 94965",
                             "district": "Marin",
-                            "state": "CA"
+                            "state": "CA",
+                            "postalCode": "94965"
                         },
                         "physicalType": {
                             "coding": [
@@ -252,15 +300,12 @@
                 "measure": "http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort",
                 "subject": {
                     "reference": "#loc",
-                    "display": "Marin, CA"
+                    "display": "Marin General Marin, CA 94965"
                 },
-                "date": "2020-04-06T20:58:51.621702Z",
+                "date": "2020-04-12T04:56:03.530613Z",
                 "reporter": {
-                    "identifier": {
-                        "system": "urn:oid:2.16.840.1.113883.6.277",
-                        "value": "2.16.840.1.113883.6.277.123"
-                    },
-                    "display": "Acme General Hospital"
+                    "reference": "#loc",
+                    "display": "Marin General Marin, CA 94965"
                 },
                 "period": {
                     "start": "2020-04-06",
@@ -283,7 +328,10 @@
                                 },
                                 "count": 100
                             }
-                        ]
+                        ],
+                        "measureScore": {
+                            "value": 100
+                        }
                     },
                     {
                         "code": {
@@ -301,7 +349,10 @@
                                 },
                                 "count": 1200
                             }
-                        ]
+                        ],
+                        "measureScore": {
+                            "value": 1200
+                        }
                     },
                     {
                         "code": {
@@ -319,7 +370,10 @@
                                 },
                                 "count": 65
                             }
-                        ]
+                        ],
+                        "measureScore": {
+                            "value": 65
+                        }
                     }
                 ]
             },
@@ -329,19 +383,31 @@
             }
         },
         {
-            "fullUrl": "urn:uuid:6c1494f6-7849-11ea-a0e3-a4d18ccf5172",
+            "fullUrl": "urn:uuid:eb59caa4-7c79-11ea-bcad-a4d18ccf5172",
             "resource": {
                 "resourceType": "MeasureReport",
-                "id": "6c1494f6-7849-11ea-a0e3-a4d18ccf5172",
+                "id": "eb59caa4-7c79-11ea-bcad-a4d18ccf5172",
                 "contained": [
                     {
                         "resourceType": "Location",
                         "id": "loc",
+                        "identifier": [
+                            {
+                                "system": "urn:oid:2.16.840.1.113883.6.277",
+                                "value": "2.16.840.1.113883.6.277.123"
+                            },
+                            {
+                                "system": "http://example.org/cms_cert_system",
+                                "value": "1234567"
+                            }
+                        ],
+                        "name": "Marin General",
                         "address": {
                             "type": "physical",
-                            "text": "Marin, CA",
+                            "text": "Marin, CA 94965",
                             "district": "Marin",
-                            "state": "CA"
+                            "state": "CA",
+                            "postalCode": "94965"
                         },
                         "physicalType": {
                             "coding": [
@@ -360,15 +426,12 @@
                 "measure": "http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort",
                 "subject": {
                     "reference": "#loc",
-                    "display": "Marin, CA"
+                    "display": "Marin General Marin, CA 94965"
                 },
-                "date": "2020-04-06T20:58:51.621702Z",
+                "date": "2020-04-12T04:56:03.530613Z",
                 "reporter": {
-                    "identifier": {
-                        "system": "urn:oid:2.16.840.1.113883.6.277",
-                        "value": "2.16.840.1.113883.6.277.123"
-                    },
-                    "display": "Acme General Hospital"
+                    "reference": "#loc",
+                    "display": "Marin General Marin, CA 94965"
                 },
                 "period": {
                     "start": "2020-04-07",
@@ -391,7 +454,10 @@
                                 },
                                 "count": 100
                             }
-                        ]
+                        ],
+                        "measureScore": {
+                            "value": 100
+                        }
                     },
                     {
                         "code": {
@@ -409,7 +475,10 @@
                                 },
                                 "count": 1300
                             }
-                        ]
+                        ],
+                        "measureScore": {
+                            "value": 1300
+                        }
                     },
                     {
                         "code": {
@@ -427,7 +496,10 @@
                                 },
                                 "count": 75
                             }
-                        ]
+                        ],
+                        "measureScore": {
+                            "value": 75
+                        }
                     }
                 ]
             },
@@ -437,19 +509,31 @@
             }
         },
         {
-            "fullUrl": "urn:uuid:6c39823e-7849-11ea-a0e3-a4d18ccf5172",
+            "fullUrl": "urn:uuid:eb7dd8fe-7c79-11ea-bcad-a4d18ccf5172",
             "resource": {
                 "resourceType": "MeasureReport",
-                "id": "6c39823e-7849-11ea-a0e3-a4d18ccf5172",
+                "id": "eb7dd8fe-7c79-11ea-bcad-a4d18ccf5172",
                 "contained": [
                     {
                         "resourceType": "Location",
                         "id": "loc",
+                        "identifier": [
+                            {
+                                "system": "urn:oid:2.16.840.1.113883.6.277",
+                                "value": "2.16.840.1.113883.6.277.123"
+                            },
+                            {
+                                "system": "http://example.org/cms_cert_system",
+                                "value": "1234567"
+                            }
+                        ],
+                        "name": "Marin General",
                         "address": {
                             "type": "physical",
-                            "text": "Marin, CA",
+                            "text": "Marin, CA 94965",
                             "district": "Marin",
-                            "state": "CA"
+                            "state": "CA",
+                            "postalCode": "94965"
                         },
                         "physicalType": {
                             "coding": [
@@ -468,15 +552,12 @@
                 "measure": "http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort",
                 "subject": {
                     "reference": "#loc",
-                    "display": "Marin, CA"
+                    "display": "Marin General Marin, CA 94965"
                 },
-                "date": "2020-04-06T20:58:51.621702Z",
+                "date": "2020-04-12T04:56:03.530613Z",
                 "reporter": {
-                    "identifier": {
-                        "system": "urn:oid:2.16.840.1.113883.6.277",
-                        "value": "2.16.840.1.113883.6.277.123"
-                    },
-                    "display": "Acme General Hospital"
+                    "reference": "#loc",
+                    "display": "Marin General Marin, CA 94965"
                 },
                 "period": {
                     "start": "2020-04-08",
@@ -499,7 +580,10 @@
                                 },
                                 "count": 100
                             }
-                        ]
+                        ],
+                        "measureScore": {
+                            "value": 100
+                        }
                     },
                     {
                         "code": {
@@ -517,7 +601,10 @@
                                 },
                                 "count": 1400
                             }
-                        ]
+                        ],
+                        "measureScore": {
+                            "value": 1400
+                        }
                     },
                     {
                         "code": {
@@ -535,7 +622,10 @@
                                 },
                                 "count": 85
                             }
-                        ]
+                        ],
+                        "measureScore": {
+                            "value": 85
+                        }
                     }
                 ]
             },
@@ -545,19 +635,31 @@
             }
         },
         {
-            "fullUrl": "urn:uuid:6c61764a-7849-11ea-a0e3-a4d18ccf5172",
+            "fullUrl": "urn:uuid:eba27f60-7c79-11ea-bcad-a4d18ccf5172",
             "resource": {
                 "resourceType": "MeasureReport",
-                "id": "6c61764a-7849-11ea-a0e3-a4d18ccf5172",
+                "id": "eba27f60-7c79-11ea-bcad-a4d18ccf5172",
                 "contained": [
                     {
                         "resourceType": "Location",
                         "id": "loc",
+                        "identifier": [
+                            {
+                                "system": "urn:oid:2.16.840.1.113883.6.277",
+                                "value": "2.16.840.1.113883.6.277.123"
+                            },
+                            {
+                                "system": "http://example.org/cms_cert_system",
+                                "value": "1234567"
+                            }
+                        ],
+                        "name": "Marin General",
                         "address": {
                             "type": "physical",
-                            "text": "Marin, CA",
+                            "text": "Marin, CA 94965",
                             "district": "Marin",
-                            "state": "CA"
+                            "state": "CA",
+                            "postalCode": "94965"
                         },
                         "physicalType": {
                             "coding": [
@@ -576,15 +678,12 @@
                 "measure": "http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort",
                 "subject": {
                     "reference": "#loc",
-                    "display": "Marin, CA"
+                    "display": "Marin General Marin, CA 94965"
                 },
-                "date": "2020-04-06T20:58:51.621702Z",
+                "date": "2020-04-12T04:56:03.530613Z",
                 "reporter": {
-                    "identifier": {
-                        "system": "urn:oid:2.16.840.1.113883.6.277",
-                        "value": "2.16.840.1.113883.6.277.123"
-                    },
-                    "display": "Acme General Hospital"
+                    "reference": "#loc",
+                    "display": "Marin General Marin, CA 94965"
                 },
                 "period": {
                     "start": "2020-04-09",
@@ -607,7 +706,10 @@
                                 },
                                 "count": 100
                             }
-                        ]
+                        ],
+                        "measureScore": {
+                            "value": 100
+                        }
                     },
                     {
                         "code": {
@@ -625,7 +727,10 @@
                                 },
                                 "count": 1500
                             }
-                        ]
+                        ],
+                        "measureScore": {
+                            "value": 1500
+                        }
                     },
                     {
                         "code": {
@@ -643,7 +748,10 @@
                                 },
                                 "count": 95
                             }
-                        ]
+                        ],
+                        "measureScore": {
+                            "value": 95
+                        }
                     }
                 ]
             },
@@ -653,19 +761,31 @@
             }
         },
         {
-            "fullUrl": "urn:uuid:6c86e48e-7849-11ea-a0e3-a4d18ccf5172",
+            "fullUrl": "urn:uuid:ebc5b642-7c79-11ea-bcad-a4d18ccf5172",
             "resource": {
                 "resourceType": "MeasureReport",
-                "id": "6c86e48e-7849-11ea-a0e3-a4d18ccf5172",
+                "id": "ebc5b642-7c79-11ea-bcad-a4d18ccf5172",
                 "contained": [
                     {
                         "resourceType": "Location",
                         "id": "loc",
+                        "identifier": [
+                            {
+                                "system": "urn:oid:2.16.840.1.113883.6.277",
+                                "value": "2.16.840.1.113883.6.277.123"
+                            },
+                            {
+                                "system": "http://example.org/cms_cert_system",
+                                "value": "1234567"
+                            }
+                        ],
+                        "name": "Marin General",
                         "address": {
                             "type": "physical",
-                            "text": "Marin, CA",
+                            "text": "Marin, CA 94965",
                             "district": "Marin",
-                            "state": "CA"
+                            "state": "CA",
+                            "postalCode": "94965"
                         },
                         "physicalType": {
                             "coding": [
@@ -684,15 +804,12 @@
                 "measure": "http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort",
                 "subject": {
                     "reference": "#loc",
-                    "display": "Marin, CA"
+                    "display": "Marin General Marin, CA 94965"
                 },
-                "date": "2020-04-06T20:58:51.621702Z",
+                "date": "2020-04-12T04:56:03.530613Z",
                 "reporter": {
-                    "identifier": {
-                        "system": "urn:oid:2.16.840.1.113883.6.277",
-                        "value": "2.16.840.1.113883.6.277.123"
-                    },
-                    "display": "Acme General Hospital"
+                    "reference": "#loc",
+                    "display": "Marin General Marin, CA 94965"
                 },
                 "period": {
                     "start": "2020-04-10",
@@ -715,7 +832,10 @@
                                 },
                                 "count": 100
                             }
-                        ]
+                        ],
+                        "measureScore": {
+                            "value": 100
+                        }
                     },
                     {
                         "code": {
@@ -733,7 +853,10 @@
                                 },
                                 "count": 1600
                             }
-                        ]
+                        ],
+                        "measureScore": {
+                            "value": 1600
+                        }
                     },
                     {
                         "code": {
@@ -751,7 +874,892 @@
                                 },
                                 "count": 105
                             }
-                        ]
+                        ],
+                        "measureScore": {
+                            "value": 105
+                        }
+                    }
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "MeasureReport"
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:f39d181a-7c79-11ea-bcad-a4d18ccf5172",
+            "resource": {
+                "resourceType": "MeasureReport",
+                "id": "f39d181a-7c79-11ea-bcad-a4d18ccf5172",
+                "contained": [
+                    {
+                        "resourceType": "Location",
+                        "id": "loc",
+                        "identifier": [
+                            {
+                                "system": "urn:oid:2.16.840.1.113883.6.277",
+                                "value": "2.16.840.1.113883.6.277.123"
+                            },
+                            {
+                                "system": "http://example.org/cms_cert_system",
+                                "value": "1234567"
+                            }
+                        ],
+                        "name": "Marin General",
+                        "address": {
+                            "type": "physical",
+                            "text": "Marin, CA 94965",
+                            "district": "Marin",
+                            "state": "CA",
+                            "postalCode": "94965"
+                        },
+                        "physicalType": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+                                    "code": "jdn",
+                                    "display": "Jurisdiction"
+                                }
+                            ],
+                            "text": "US County"
+                        }
+                    }
+                ],
+                "status": "complete",
+                "type": "individual",
+                "measure": "http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort",
+                "subject": {
+                    "reference": "#loc",
+                    "display": "Marin General Marin, CA 94965"
+                },
+                "date": "2020-04-12T04:56:03.530613Z",
+                "reporter": {
+                    "reference": "#loc",
+                    "display": "Marin General Marin, CA 94965"
+                },
+                "period": {
+                    "start": "2020-04-04",
+                    "end": "2020-04-04"
+                },
+                "group": [
+                    {
+                        "code": {
+                            "text": "newDiagnosticTests"
+                        },
+                        "population": [
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                                            "code": "initial-population"
+                                        }
+                                    ]
+                                },
+                                "count": 100
+                            }
+                        ],
+                        "measureScore": {
+                            "value": 100
+                        }
+                    },
+                    {
+                        "code": {
+                            "text": "cumulativeDiagnosticTests"
+                        },
+                        "population": [
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                                            "code": "initial-population"
+                                        }
+                                    ]
+                                },
+                                "count": 1000
+                            }
+                        ],
+                        "measureScore": {
+                            "value": 1000
+                        }
+                    },
+                    {
+                        "code": {
+                            "text": "cumulativeSpecimensRejected"
+                        },
+                        "population": [
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                                            "code": "initial-population"
+                                        }
+                                    ]
+                                },
+                                "count": 45
+                            }
+                        ],
+                        "measureScore": {
+                            "value": 45
+                        }
+                    }
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "MeasureReport"
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:f3c33324-7c79-11ea-bcad-a4d18ccf5172",
+            "resource": {
+                "resourceType": "MeasureReport",
+                "id": "f3c33324-7c79-11ea-bcad-a4d18ccf5172",
+                "contained": [
+                    {
+                        "resourceType": "Location",
+                        "id": "loc",
+                        "identifier": [
+                            {
+                                "system": "urn:oid:2.16.840.1.113883.6.277",
+                                "value": "2.16.840.1.113883.6.277.123"
+                            },
+                            {
+                                "system": "http://example.org/cms_cert_system",
+                                "value": "1234567"
+                            }
+                        ],
+                        "name": "Marin General",
+                        "address": {
+                            "type": "physical",
+                            "text": "Marin, CA 94965",
+                            "district": "Marin",
+                            "state": "CA",
+                            "postalCode": "94965"
+                        },
+                        "physicalType": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+                                    "code": "jdn",
+                                    "display": "Jurisdiction"
+                                }
+                            ],
+                            "text": "US County"
+                        }
+                    }
+                ],
+                "status": "complete",
+                "type": "individual",
+                "measure": "http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort",
+                "subject": {
+                    "reference": "#loc",
+                    "display": "Marin General Marin, CA 94965"
+                },
+                "date": "2020-04-12T04:56:03.530613Z",
+                "reporter": {
+                    "reference": "#loc",
+                    "display": "Marin General Marin, CA 94965"
+                },
+                "period": {
+                    "start": "2020-04-05",
+                    "end": "2020-04-05"
+                },
+                "group": [
+                    {
+                        "code": {
+                            "text": "newDiagnosticTests"
+                        },
+                        "population": [
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                                            "code": "initial-population"
+                                        }
+                                    ]
+                                },
+                                "count": 100
+                            }
+                        ],
+                        "measureScore": {
+                            "value": 100
+                        }
+                    },
+                    {
+                        "code": {
+                            "text": "cumulativeDiagnosticTests"
+                        },
+                        "population": [
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                                            "code": "initial-population"
+                                        }
+                                    ]
+                                },
+                                "count": 1100
+                            }
+                        ],
+                        "measureScore": {
+                            "value": 1100
+                        }
+                    },
+                    {
+                        "code": {
+                            "text": "cumulativeSpecimensRejected"
+                        },
+                        "population": [
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                                            "code": "initial-population"
+                                        }
+                                    ]
+                                },
+                                "count": 55
+                            }
+                        ],
+                        "measureScore": {
+                            "value": 55
+                        }
+                    }
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "MeasureReport"
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:f3e7f75e-7c79-11ea-bcad-a4d18ccf5172",
+            "resource": {
+                "resourceType": "MeasureReport",
+                "id": "f3e7f75e-7c79-11ea-bcad-a4d18ccf5172",
+                "contained": [
+                    {
+                        "resourceType": "Location",
+                        "id": "loc",
+                        "identifier": [
+                            {
+                                "system": "urn:oid:2.16.840.1.113883.6.277",
+                                "value": "2.16.840.1.113883.6.277.123"
+                            },
+                            {
+                                "system": "http://example.org/cms_cert_system",
+                                "value": "1234567"
+                            }
+                        ],
+                        "name": "Marin General",
+                        "address": {
+                            "type": "physical",
+                            "text": "Marin, CA 94965",
+                            "district": "Marin",
+                            "state": "CA",
+                            "postalCode": "94965"
+                        },
+                        "physicalType": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+                                    "code": "jdn",
+                                    "display": "Jurisdiction"
+                                }
+                            ],
+                            "text": "US County"
+                        }
+                    }
+                ],
+                "status": "complete",
+                "type": "individual",
+                "measure": "http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort",
+                "subject": {
+                    "reference": "#loc",
+                    "display": "Marin General Marin, CA 94965"
+                },
+                "date": "2020-04-12T04:56:03.530613Z",
+                "reporter": {
+                    "reference": "#loc",
+                    "display": "Marin General Marin, CA 94965"
+                },
+                "period": {
+                    "start": "2020-04-06",
+                    "end": "2020-04-06"
+                },
+                "group": [
+                    {
+                        "code": {
+                            "text": "newDiagnosticTests"
+                        },
+                        "population": [
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                                            "code": "initial-population"
+                                        }
+                                    ]
+                                },
+                                "count": 100
+                            }
+                        ],
+                        "measureScore": {
+                            "value": 100
+                        }
+                    },
+                    {
+                        "code": {
+                            "text": "cumulativeDiagnosticTests"
+                        },
+                        "population": [
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                                            "code": "initial-population"
+                                        }
+                                    ]
+                                },
+                                "count": 1200
+                            }
+                        ],
+                        "measureScore": {
+                            "value": 1200
+                        }
+                    },
+                    {
+                        "code": {
+                            "text": "cumulativeSpecimensRejected"
+                        },
+                        "population": [
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                                            "code": "initial-population"
+                                        }
+                                    ]
+                                },
+                                "count": 65
+                            }
+                        ],
+                        "measureScore": {
+                            "value": 65
+                        }
+                    }
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "MeasureReport"
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:f40ace5a-7c79-11ea-bcad-a4d18ccf5172",
+            "resource": {
+                "resourceType": "MeasureReport",
+                "id": "f40ace5a-7c79-11ea-bcad-a4d18ccf5172",
+                "contained": [
+                    {
+                        "resourceType": "Location",
+                        "id": "loc",
+                        "identifier": [
+                            {
+                                "system": "urn:oid:2.16.840.1.113883.6.277",
+                                "value": "2.16.840.1.113883.6.277.123"
+                            },
+                            {
+                                "system": "http://example.org/cms_cert_system",
+                                "value": "1234567"
+                            }
+                        ],
+                        "name": "Marin General",
+                        "address": {
+                            "type": "physical",
+                            "text": "Marin, CA 94965",
+                            "district": "Marin",
+                            "state": "CA",
+                            "postalCode": "94965"
+                        },
+                        "physicalType": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+                                    "code": "jdn",
+                                    "display": "Jurisdiction"
+                                }
+                            ],
+                            "text": "US County"
+                        }
+                    }
+                ],
+                "status": "complete",
+                "type": "individual",
+                "measure": "http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort",
+                "subject": {
+                    "reference": "#loc",
+                    "display": "Marin General Marin, CA 94965"
+                },
+                "date": "2020-04-12T04:56:03.530613Z",
+                "reporter": {
+                    "reference": "#loc",
+                    "display": "Marin General Marin, CA 94965"
+                },
+                "period": {
+                    "start": "2020-04-07",
+                    "end": "2020-04-07"
+                },
+                "group": [
+                    {
+                        "code": {
+                            "text": "newDiagnosticTests"
+                        },
+                        "population": [
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                                            "code": "initial-population"
+                                        }
+                                    ]
+                                },
+                                "count": 100
+                            }
+                        ],
+                        "measureScore": {
+                            "value": 100
+                        }
+                    },
+                    {
+                        "code": {
+                            "text": "cumulativeDiagnosticTests"
+                        },
+                        "population": [
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                                            "code": "initial-population"
+                                        }
+                                    ]
+                                },
+                                "count": 1300
+                            }
+                        ],
+                        "measureScore": {
+                            "value": 1300
+                        }
+                    },
+                    {
+                        "code": {
+                            "text": "cumulativeSpecimensRejected"
+                        },
+                        "population": [
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                                            "code": "initial-population"
+                                        }
+                                    ]
+                                },
+                                "count": 75
+                            }
+                        ],
+                        "measureScore": {
+                            "value": 75
+                        }
+                    }
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "MeasureReport"
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:f42dddbe-7c79-11ea-bcad-a4d18ccf5172",
+            "resource": {
+                "resourceType": "MeasureReport",
+                "id": "f42dddbe-7c79-11ea-bcad-a4d18ccf5172",
+                "contained": [
+                    {
+                        "resourceType": "Location",
+                        "id": "loc",
+                        "identifier": [
+                            {
+                                "system": "urn:oid:2.16.840.1.113883.6.277",
+                                "value": "2.16.840.1.113883.6.277.123"
+                            },
+                            {
+                                "system": "http://example.org/cms_cert_system",
+                                "value": "1234567"
+                            }
+                        ],
+                        "name": "Marin General",
+                        "address": {
+                            "type": "physical",
+                            "text": "Marin, CA 94965",
+                            "district": "Marin",
+                            "state": "CA",
+                            "postalCode": "94965"
+                        },
+                        "physicalType": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+                                    "code": "jdn",
+                                    "display": "Jurisdiction"
+                                }
+                            ],
+                            "text": "US County"
+                        }
+                    }
+                ],
+                "status": "complete",
+                "type": "individual",
+                "measure": "http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort",
+                "subject": {
+                    "reference": "#loc",
+                    "display": "Marin General Marin, CA 94965"
+                },
+                "date": "2020-04-12T04:56:03.530613Z",
+                "reporter": {
+                    "reference": "#loc",
+                    "display": "Marin General Marin, CA 94965"
+                },
+                "period": {
+                    "start": "2020-04-08",
+                    "end": "2020-04-08"
+                },
+                "group": [
+                    {
+                        "code": {
+                            "text": "newDiagnosticTests"
+                        },
+                        "population": [
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                                            "code": "initial-population"
+                                        }
+                                    ]
+                                },
+                                "count": 100
+                            }
+                        ],
+                        "measureScore": {
+                            "value": 100
+                        }
+                    },
+                    {
+                        "code": {
+                            "text": "cumulativeDiagnosticTests"
+                        },
+                        "population": [
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                                            "code": "initial-population"
+                                        }
+                                    ]
+                                },
+                                "count": 1400
+                            }
+                        ],
+                        "measureScore": {
+                            "value": 1400
+                        }
+                    },
+                    {
+                        "code": {
+                            "text": "cumulativeSpecimensRejected"
+                        },
+                        "population": [
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                                            "code": "initial-population"
+                                        }
+                                    ]
+                                },
+                                "count": 85
+                            }
+                        ],
+                        "measureScore": {
+                            "value": 85
+                        }
+                    }
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "MeasureReport"
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:f45045ca-7c79-11ea-bcad-a4d18ccf5172",
+            "resource": {
+                "resourceType": "MeasureReport",
+                "id": "f45045ca-7c79-11ea-bcad-a4d18ccf5172",
+                "contained": [
+                    {
+                        "resourceType": "Location",
+                        "id": "loc",
+                        "identifier": [
+                            {
+                                "system": "urn:oid:2.16.840.1.113883.6.277",
+                                "value": "2.16.840.1.113883.6.277.123"
+                            },
+                            {
+                                "system": "http://example.org/cms_cert_system",
+                                "value": "1234567"
+                            }
+                        ],
+                        "name": "Marin General",
+                        "address": {
+                            "type": "physical",
+                            "text": "Marin, CA 94965",
+                            "district": "Marin",
+                            "state": "CA",
+                            "postalCode": "94965"
+                        },
+                        "physicalType": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+                                    "code": "jdn",
+                                    "display": "Jurisdiction"
+                                }
+                            ],
+                            "text": "US County"
+                        }
+                    }
+                ],
+                "status": "complete",
+                "type": "individual",
+                "measure": "http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort",
+                "subject": {
+                    "reference": "#loc",
+                    "display": "Marin General Marin, CA 94965"
+                },
+                "date": "2020-04-12T04:56:03.530613Z",
+                "reporter": {
+                    "reference": "#loc",
+                    "display": "Marin General Marin, CA 94965"
+                },
+                "period": {
+                    "start": "2020-04-09",
+                    "end": "2020-04-09"
+                },
+                "group": [
+                    {
+                        "code": {
+                            "text": "newDiagnosticTests"
+                        },
+                        "population": [
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                                            "code": "initial-population"
+                                        }
+                                    ]
+                                },
+                                "count": 100
+                            }
+                        ],
+                        "measureScore": {
+                            "value": 100
+                        }
+                    },
+                    {
+                        "code": {
+                            "text": "cumulativeDiagnosticTests"
+                        },
+                        "population": [
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                                            "code": "initial-population"
+                                        }
+                                    ]
+                                },
+                                "count": 1500
+                            }
+                        ],
+                        "measureScore": {
+                            "value": 1500
+                        }
+                    },
+                    {
+                        "code": {
+                            "text": "cumulativeSpecimensRejected"
+                        },
+                        "population": [
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                                            "code": "initial-population"
+                                        }
+                                    ]
+                                },
+                                "count": 95
+                            }
+                        ],
+                        "measureScore": {
+                            "value": 95
+                        }
+                    }
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "MeasureReport"
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:f479b93c-7c79-11ea-bcad-a4d18ccf5172",
+            "resource": {
+                "resourceType": "MeasureReport",
+                "id": "f479b93c-7c79-11ea-bcad-a4d18ccf5172",
+                "contained": [
+                    {
+                        "resourceType": "Location",
+                        "id": "loc",
+                        "identifier": [
+                            {
+                                "system": "urn:oid:2.16.840.1.113883.6.277",
+                                "value": "2.16.840.1.113883.6.277.123"
+                            },
+                            {
+                                "system": "http://example.org/cms_cert_system",
+                                "value": "1234567"
+                            }
+                        ],
+                        "name": "Marin General",
+                        "address": {
+                            "type": "physical",
+                            "text": "Marin, CA 94965",
+                            "district": "Marin",
+                            "state": "CA",
+                            "postalCode": "94965"
+                        },
+                        "physicalType": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+                                    "code": "jdn",
+                                    "display": "Jurisdiction"
+                                }
+                            ],
+                            "text": "US County"
+                        }
+                    }
+                ],
+                "status": "complete",
+                "type": "individual",
+                "measure": "http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort",
+                "subject": {
+                    "reference": "#loc",
+                    "display": "Marin General Marin, CA 94965"
+                },
+                "date": "2020-04-12T04:56:03.530613Z",
+                "reporter": {
+                    "reference": "#loc",
+                    "display": "Marin General Marin, CA 94965"
+                },
+                "period": {
+                    "start": "2020-04-10",
+                    "end": "2020-04-10"
+                },
+                "group": [
+                    {
+                        "code": {
+                            "text": "newDiagnosticTests"
+                        },
+                        "population": [
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                                            "code": "initial-population"
+                                        }
+                                    ]
+                                },
+                                "count": 100
+                            }
+                        ],
+                        "measureScore": {
+                            "value": 100
+                        }
+                    },
+                    {
+                        "code": {
+                            "text": "cumulativeDiagnosticTests"
+                        },
+                        "population": [
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                                            "code": "initial-population"
+                                        }
+                                    ]
+                                },
+                                "count": 1600
+                            }
+                        ],
+                        "measureScore": {
+                            "value": 1600
+                        }
+                    },
+                    {
+                        "code": {
+                            "text": "cumulativeSpecimensRejected"
+                        },
+                        "population": [
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                                            "code": "initial-population"
+                                        }
+                                    ]
+                                },
+                                "count": 105
+                            }
+                        ],
+                        "measureScore": {
+                            "value": 105
+                        }
                     }
                 ]
             },

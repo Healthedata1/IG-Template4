@@ -452,6 +452,20 @@
         "exampleBoolean": false
       },
       {
+        "reference": {
+          "reference": "StructureDefinition/devdef"
+        },
+        "name": "DeviceDefinition Reference Extension",
+        "description": "A reference to the [DeviceDefinition](http://build.fhir.org/devicedefinition.html) resource."
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/test"
+        },
+        "name": "Test Supply Request",
+        "description": "A profile to test implementation of R5 elements."
+      },
+      {
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
@@ -671,7 +685,7 @@
         "value": "template/content/pages"
       },
       {
-        "code": "path-qa",
+        "code": "pat9h-qa",
         "value": "generated_output/qa"
       },
       {

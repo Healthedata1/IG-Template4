@@ -5,11 +5,23 @@
         {
             "resourceType": "Location",
             "id": "loc",
+            "identifier": [
+                {
+                    "system": "urn:oid:2.16.840.1.113883.6.277",
+                    "value": "2.16.840.1.113883.6.277.123"
+                },
+                {
+                    "system": "http://example.org/cms_cert_system",
+                    "value": "1234567"
+                }
+            ],
+            "name": "Marin General",
             "address": {
                 "type": "physical",
-                "text": "Marin, CA",
+                "text": "Marin, CA 94965",
                 "district": "Marin",
-                "state": "CA"
+                "state": "CA",
+                "postalCode": "94965"
             },
             "physicalType": {
                 "coding": [
@@ -28,15 +40,12 @@
     "measure": "http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort",
     "subject": {
         "reference": "#loc",
-        "display": "Marin, CA"
+        "display": "Marin General Marin, CA 94965"
     },
-    "date": "2020-04-06T20:58:51.621702Z",
+    "date": "2020-04-12T04:56:03.530613Z",
     "reporter": {
-        "identifier": {
-            "system": "urn:oid:2.16.840.1.113883.6.277",
-            "value": "2.16.840.1.113883.6.277.123"
-        },
-        "display": "Acme General Hospital"
+        "reference": "#loc",
+        "display": "Marin General Marin, CA 94965"
     },
     "period": {
         "start": "2020-04-04",
@@ -59,7 +68,10 @@
                     },
                     "count": 100
                 }
-            ]
+            ],
+            "measureScore": {
+                "value": 100
+            }
         },
         {
             "code": {
@@ -77,7 +89,10 @@
                     },
                     "count": 1000
                 }
-            ]
+            ],
+            "measureScore": {
+                "value": 1000
+            }
         },
         {
             "code": {
@@ -95,7 +110,10 @@
                     },
                     "count": 45
                 }
-            ]
+            ],
+            "measureScore": {
+                "value": 45
+            }
         }
     ]
 }

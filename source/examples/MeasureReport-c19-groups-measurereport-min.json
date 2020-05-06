@@ -1,27 +1,55 @@
 {
     "resourceType": "MeasureReport",
     "id": "c19-groups-measurereport-min",
+    "contained": [
+        {
+            "resourceType": "Location",
+            "id": "loc",
+            "identifier": [
+                {
+                    "system": "urn:oid:2.16.840.1.113883.6.277",
+                    "value": "2.16.840.1.113883.6.277.123"
+                },
+                {
+                    "system": "http://example.org/cms_cert_system",
+                    "value": "1234567"
+                }
+            ],
+            "name": "Marin General",
+            "address": {
+                "type": "physical",
+                "text": "Marin, CA 94965",
+                "district": "Marin",
+                "state": "CA",
+                "postalCode": "94965"
+            },
+            "physicalType": {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+                        "code": "jdn",
+                        "display": "Jurisdiction"
+                    }
+                ],
+                "text": "US County"
+            }
+        }
+    ],
     "status": "complete",
     "type": "individual",
     "measure": "http://cdcmeasures.example.org/cdc-covid",
     "subject": {
-        "identifier": {
-            "system": "urn:oid:2.16.840.1.113883.6.277",
-            "value": "2.16.840.1.113883.6.277.123"
-        },
-        "display": "Acme General Hospital"
+        "reference": "#loc",
+        "display": "Marin General Marin, CA 94965"
     },
-    "date": "2020-04-05T23:54:53.646021Z",
+    "date": "2020-04-12T04:51:06.556448Z",
     "reporter": {
-        "identifier": {
-            "system": "urn:oid:2.16.840.1.113883.6.277",
-            "value": "2.16.840.1.113883.6.277.123"
-        },
-        "display": "Acme General Hospital"
+        "reference": "#loc",
+        "display": "Marin General Marin, CA 94965"
     },
     "period": {
-        "start": "2020-03-30",
-        "end": "2020-03-30"
+        "start": "2020-03-31",
+        "end": "2020-03-31"
     },
     "group": [
         {
@@ -91,7 +119,10 @@
                     },
                     "count": 100
                 }
-            ]
+            ],
+            "measureScore": {
+                "value": 100
+            }
         },
         {
             "code": {
@@ -232,6 +263,23 @@
         {
             "code": {
                 "text": "numC19Died"
+            },
+            "population": [
+                {
+                    "code": {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                                "code": "initial-population"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "code": {
+                "text": "surgicalMasks"
             },
             "population": [
                 {

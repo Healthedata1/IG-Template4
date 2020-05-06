@@ -2,30 +2,58 @@
     "resourceType": "Bundle",
     "id": "cdc-c19-groups-measurereports-min",
     "type": "transaction",
-    "timestamp": "2020-04-05T23:54:53.646021Z",
+    "timestamp": "2020-04-12T04:51:06.556448Z",
     "entry": [
         {
-            "fullUrl": "urn:uuid:d88b930c-7798-11ea-9979-a4d18ccf5172",
+            "fullUrl": "urn:uuid:3a3f8aba-7c79-11ea-bcad-a4d18ccf5172",
             "resource": {
                 "resourceType": "MeasureReport",
-                "id": "d88b930c-7798-11ea-9979-a4d18ccf5172",
+                "id": "3a3f8aba-7c79-11ea-bcad-a4d18ccf5172",
+                "contained": [
+                    {
+                        "resourceType": "Location",
+                        "id": "loc",
+                        "identifier": [
+                            {
+                                "system": "urn:oid:2.16.840.1.113883.6.277",
+                                "value": "2.16.840.1.113883.6.277.123"
+                            },
+                            {
+                                "system": "http://example.org/cms_cert_system",
+                                "value": "1234567"
+                            }
+                        ],
+                        "name": "Marin General",
+                        "address": {
+                            "type": "physical",
+                            "text": "Marin, CA 94965",
+                            "district": "Marin",
+                            "state": "CA",
+                            "postalCode": "94965"
+                        },
+                        "physicalType": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+                                    "code": "jdn",
+                                    "display": "Jurisdiction"
+                                }
+                            ],
+                            "text": "US County"
+                        }
+                    }
+                ],
                 "status": "complete",
                 "type": "individual",
                 "measure": "http://cdcmeasures.example.org/cdc-covid",
                 "subject": {
-                    "identifier": {
-                        "system": "urn:oid:2.16.840.1.113883.6.277",
-                        "value": "2.16.840.1.113883.6.277.123"
-                    },
-                    "display": "Acme General Hospital"
+                    "reference": "#loc",
+                    "display": "Marin General Marin, CA 94965"
                 },
-                "date": "2020-04-05T23:54:53.646021Z",
+                "date": "2020-04-12T04:51:06.556448Z",
                 "reporter": {
-                    "identifier": {
-                        "system": "urn:oid:2.16.840.1.113883.6.277",
-                        "value": "2.16.840.1.113883.6.277.123"
-                    },
-                    "display": "Acme General Hospital"
+                    "reference": "#loc",
+                    "display": "Marin General Marin, CA 94965"
                 },
                 "period": {
                     "start": "2020-03-30",
@@ -99,7 +127,10 @@
                                 },
                                 "count": 100
                             }
-                        ]
+                        ],
+                        "measureScore": {
+                            "value": 100
+                        }
                     },
                     {
                         "code": {
@@ -253,6 +284,23 @@
                                 }
                             }
                         ]
+                    },
+                    {
+                        "code": {
+                            "text": "surgicalMasks"
+                        },
+                        "population": [
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                                            "code": "initial-population"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
                     }
                 ]
             },
@@ -262,27 +310,55 @@
             }
         },
         {
-            "fullUrl": "urn:uuid:d8b9dac8-7798-11ea-9979-a4d18ccf5172",
+            "fullUrl": "urn:uuid:3a6d0d82-7c79-11ea-bcad-a4d18ccf5172",
             "resource": {
                 "resourceType": "MeasureReport",
-                "id": "d8b9dac8-7798-11ea-9979-a4d18ccf5172",
+                "id": "3a6d0d82-7c79-11ea-bcad-a4d18ccf5172",
+                "contained": [
+                    {
+                        "resourceType": "Location",
+                        "id": "loc",
+                        "identifier": [
+                            {
+                                "system": "urn:oid:2.16.840.1.113883.6.277",
+                                "value": "2.16.840.1.113883.6.277.123"
+                            },
+                            {
+                                "system": "http://example.org/cms_cert_system",
+                                "value": "1234567"
+                            }
+                        ],
+                        "name": "Marin General",
+                        "address": {
+                            "type": "physical",
+                            "text": "Marin, CA 94965",
+                            "district": "Marin",
+                            "state": "CA",
+                            "postalCode": "94965"
+                        },
+                        "physicalType": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+                                    "code": "jdn",
+                                    "display": "Jurisdiction"
+                                }
+                            ],
+                            "text": "US County"
+                        }
+                    }
+                ],
                 "status": "complete",
                 "type": "individual",
                 "measure": "http://cdcmeasures.example.org/cdc-covid",
                 "subject": {
-                    "identifier": {
-                        "system": "urn:oid:2.16.840.1.113883.6.277",
-                        "value": "2.16.840.1.113883.6.277.123"
-                    },
-                    "display": "Acme General Hospital"
+                    "reference": "#loc",
+                    "display": "Marin General Marin, CA 94965"
                 },
-                "date": "2020-04-05T23:54:53.646021Z",
+                "date": "2020-04-12T04:51:06.556448Z",
                 "reporter": {
-                    "identifier": {
-                        "system": "urn:oid:2.16.840.1.113883.6.277",
-                        "value": "2.16.840.1.113883.6.277.123"
-                    },
-                    "display": "Acme General Hospital"
+                    "reference": "#loc",
+                    "display": "Marin General Marin, CA 94965"
                 },
                 "period": {
                     "start": "2020-03-31",
@@ -356,7 +432,10 @@
                                 },
                                 "count": 100
                             }
-                        ]
+                        ],
+                        "measureScore": {
+                            "value": 100
+                        }
                     },
                     {
                         "code": {
@@ -510,6 +589,23 @@
                                 }
                             }
                         ]
+                    },
+                    {
+                        "code": {
+                            "text": "surgicalMasks"
+                        },
+                        "population": [
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                                            "code": "initial-population"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
                     }
                 ]
             },
@@ -519,27 +615,55 @@
             }
         },
         {
-            "fullUrl": "urn:uuid:d8e22d48-7798-11ea-9979-a4d18ccf5172",
+            "fullUrl": "urn:uuid:3a9a58e6-7c79-11ea-bcad-a4d18ccf5172",
             "resource": {
                 "resourceType": "MeasureReport",
-                "id": "d8e22d48-7798-11ea-9979-a4d18ccf5172",
+                "id": "3a9a58e6-7c79-11ea-bcad-a4d18ccf5172",
+                "contained": [
+                    {
+                        "resourceType": "Location",
+                        "id": "loc",
+                        "identifier": [
+                            {
+                                "system": "urn:oid:2.16.840.1.113883.6.277",
+                                "value": "2.16.840.1.113883.6.277.123"
+                            },
+                            {
+                                "system": "http://example.org/cms_cert_system",
+                                "value": "1234567"
+                            }
+                        ],
+                        "name": "Marin General",
+                        "address": {
+                            "type": "physical",
+                            "text": "Marin, CA 94965",
+                            "district": "Marin",
+                            "state": "CA",
+                            "postalCode": "94965"
+                        },
+                        "physicalType": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+                                    "code": "jdn",
+                                    "display": "Jurisdiction"
+                                }
+                            ],
+                            "text": "US County"
+                        }
+                    }
+                ],
                 "status": "complete",
                 "type": "individual",
                 "measure": "http://cdcmeasures.example.org/cdc-covid",
                 "subject": {
-                    "identifier": {
-                        "system": "urn:oid:2.16.840.1.113883.6.277",
-                        "value": "2.16.840.1.113883.6.277.123"
-                    },
-                    "display": "Acme General Hospital"
+                    "reference": "#loc",
+                    "display": "Marin General Marin, CA 94965"
                 },
-                "date": "2020-04-05T23:54:53.646021Z",
+                "date": "2020-04-12T04:51:06.556448Z",
                 "reporter": {
-                    "identifier": {
-                        "system": "urn:oid:2.16.840.1.113883.6.277",
-                        "value": "2.16.840.1.113883.6.277.123"
-                    },
-                    "display": "Acme General Hospital"
+                    "reference": "#loc",
+                    "display": "Marin General Marin, CA 94965"
                 },
                 "period": {
                     "start": "2020-04-01",
@@ -613,7 +737,10 @@
                                 },
                                 "count": 100
                             }
-                        ]
+                        ],
+                        "measureScore": {
+                            "value": 100
+                        }
                     },
                     {
                         "code": {
@@ -767,6 +894,23 @@
                                 }
                             }
                         ]
+                    },
+                    {
+                        "code": {
+                            "text": "surgicalMasks"
+                        },
+                        "population": [
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                                            "code": "initial-population"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
                     }
                 ]
             },
@@ -776,27 +920,55 @@
             }
         },
         {
-            "fullUrl": "urn:uuid:d90edae6-7798-11ea-9979-a4d18ccf5172",
+            "fullUrl": "urn:uuid:3acd5372-7c79-11ea-bcad-a4d18ccf5172",
             "resource": {
                 "resourceType": "MeasureReport",
-                "id": "d90edae6-7798-11ea-9979-a4d18ccf5172",
+                "id": "3acd5372-7c79-11ea-bcad-a4d18ccf5172",
+                "contained": [
+                    {
+                        "resourceType": "Location",
+                        "id": "loc",
+                        "identifier": [
+                            {
+                                "system": "urn:oid:2.16.840.1.113883.6.277",
+                                "value": "2.16.840.1.113883.6.277.123"
+                            },
+                            {
+                                "system": "http://example.org/cms_cert_system",
+                                "value": "1234567"
+                            }
+                        ],
+                        "name": "Marin General",
+                        "address": {
+                            "type": "physical",
+                            "text": "Marin, CA 94965",
+                            "district": "Marin",
+                            "state": "CA",
+                            "postalCode": "94965"
+                        },
+                        "physicalType": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+                                    "code": "jdn",
+                                    "display": "Jurisdiction"
+                                }
+                            ],
+                            "text": "US County"
+                        }
+                    }
+                ],
                 "status": "complete",
                 "type": "individual",
                 "measure": "http://cdcmeasures.example.org/cdc-covid",
                 "subject": {
-                    "identifier": {
-                        "system": "urn:oid:2.16.840.1.113883.6.277",
-                        "value": "2.16.840.1.113883.6.277.123"
-                    },
-                    "display": "Acme General Hospital"
+                    "reference": "#loc",
+                    "display": "Marin General Marin, CA 94965"
                 },
-                "date": "2020-04-05T23:54:53.646021Z",
+                "date": "2020-04-12T04:51:06.556448Z",
                 "reporter": {
-                    "identifier": {
-                        "system": "urn:oid:2.16.840.1.113883.6.277",
-                        "value": "2.16.840.1.113883.6.277.123"
-                    },
-                    "display": "Acme General Hospital"
+                    "reference": "#loc",
+                    "display": "Marin General Marin, CA 94965"
                 },
                 "period": {
                     "start": "2020-04-02",
@@ -870,7 +1042,10 @@
                                 },
                                 "count": 100
                             }
-                        ]
+                        ],
+                        "measureScore": {
+                            "value": 100
+                        }
                     },
                     {
                         "code": {
@@ -1024,6 +1199,23 @@
                                 }
                             }
                         ]
+                    },
+                    {
+                        "code": {
+                            "text": "surgicalMasks"
+                        },
+                        "population": [
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                                            "code": "initial-population"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
                     }
                 ]
             },
@@ -1033,27 +1225,55 @@
             }
         },
         {
-            "fullUrl": "urn:uuid:d93f41f4-7798-11ea-9979-a4d18ccf5172",
+            "fullUrl": "urn:uuid:3afbafe2-7c79-11ea-bcad-a4d18ccf5172",
             "resource": {
                 "resourceType": "MeasureReport",
-                "id": "d93f41f4-7798-11ea-9979-a4d18ccf5172",
+                "id": "3afbafe2-7c79-11ea-bcad-a4d18ccf5172",
+                "contained": [
+                    {
+                        "resourceType": "Location",
+                        "id": "loc",
+                        "identifier": [
+                            {
+                                "system": "urn:oid:2.16.840.1.113883.6.277",
+                                "value": "2.16.840.1.113883.6.277.123"
+                            },
+                            {
+                                "system": "http://example.org/cms_cert_system",
+                                "value": "1234567"
+                            }
+                        ],
+                        "name": "Marin General",
+                        "address": {
+                            "type": "physical",
+                            "text": "Marin, CA 94965",
+                            "district": "Marin",
+                            "state": "CA",
+                            "postalCode": "94965"
+                        },
+                        "physicalType": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+                                    "code": "jdn",
+                                    "display": "Jurisdiction"
+                                }
+                            ],
+                            "text": "US County"
+                        }
+                    }
+                ],
                 "status": "complete",
                 "type": "individual",
                 "measure": "http://cdcmeasures.example.org/cdc-covid",
                 "subject": {
-                    "identifier": {
-                        "system": "urn:oid:2.16.840.1.113883.6.277",
-                        "value": "2.16.840.1.113883.6.277.123"
-                    },
-                    "display": "Acme General Hospital"
+                    "reference": "#loc",
+                    "display": "Marin General Marin, CA 94965"
                 },
-                "date": "2020-04-05T23:54:53.646021Z",
+                "date": "2020-04-12T04:51:06.556448Z",
                 "reporter": {
-                    "identifier": {
-                        "system": "urn:oid:2.16.840.1.113883.6.277",
-                        "value": "2.16.840.1.113883.6.277.123"
-                    },
-                    "display": "Acme General Hospital"
+                    "reference": "#loc",
+                    "display": "Marin General Marin, CA 94965"
                 },
                 "period": {
                     "start": "2020-04-03",
@@ -1127,7 +1347,10 @@
                                 },
                                 "count": 100
                             }
-                        ]
+                        ],
+                        "measureScore": {
+                            "value": 100
+                        }
                     },
                     {
                         "code": {
@@ -1281,6 +1504,23 @@
                                 }
                             }
                         ]
+                    },
+                    {
+                        "code": {
+                            "text": "surgicalMasks"
+                        },
+                        "population": [
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                                            "code": "initial-population"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
                     }
                 ]
             },
@@ -1290,27 +1530,55 @@
             }
         },
         {
-            "fullUrl": "urn:uuid:d96ee03a-7798-11ea-9979-a4d18ccf5172",
+            "fullUrl": "urn:uuid:3b283936-7c79-11ea-bcad-a4d18ccf5172",
             "resource": {
                 "resourceType": "MeasureReport",
-                "id": "d96ee03a-7798-11ea-9979-a4d18ccf5172",
+                "id": "3b283936-7c79-11ea-bcad-a4d18ccf5172",
+                "contained": [
+                    {
+                        "resourceType": "Location",
+                        "id": "loc",
+                        "identifier": [
+                            {
+                                "system": "urn:oid:2.16.840.1.113883.6.277",
+                                "value": "2.16.840.1.113883.6.277.123"
+                            },
+                            {
+                                "system": "http://example.org/cms_cert_system",
+                                "value": "1234567"
+                            }
+                        ],
+                        "name": "Marin General",
+                        "address": {
+                            "type": "physical",
+                            "text": "Marin, CA 94965",
+                            "district": "Marin",
+                            "state": "CA",
+                            "postalCode": "94965"
+                        },
+                        "physicalType": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+                                    "code": "jdn",
+                                    "display": "Jurisdiction"
+                                }
+                            ],
+                            "text": "US County"
+                        }
+                    }
+                ],
                 "status": "complete",
                 "type": "individual",
                 "measure": "http://cdcmeasures.example.org/cdc-covid",
                 "subject": {
-                    "identifier": {
-                        "system": "urn:oid:2.16.840.1.113883.6.277",
-                        "value": "2.16.840.1.113883.6.277.123"
-                    },
-                    "display": "Acme General Hospital"
+                    "reference": "#loc",
+                    "display": "Marin General Marin, CA 94965"
                 },
-                "date": "2020-04-05T23:54:53.646021Z",
+                "date": "2020-04-12T04:51:06.556448Z",
                 "reporter": {
-                    "identifier": {
-                        "system": "urn:oid:2.16.840.1.113883.6.277",
-                        "value": "2.16.840.1.113883.6.277.123"
-                    },
-                    "display": "Acme General Hospital"
+                    "reference": "#loc",
+                    "display": "Marin General Marin, CA 94965"
                 },
                 "period": {
                     "start": "2020-04-04",
@@ -1384,7 +1652,10 @@
                                 },
                                 "count": 100
                             }
-                        ]
+                        ],
+                        "measureScore": {
+                            "value": 100
+                        }
                     },
                     {
                         "code": {
@@ -1538,6 +1809,23 @@
                                 }
                             }
                         ]
+                    },
+                    {
+                        "code": {
+                            "text": "surgicalMasks"
+                        },
+                        "population": [
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                                            "code": "initial-population"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
                     }
                 ]
             },
@@ -1547,27 +1835,55 @@
             }
         },
         {
-            "fullUrl": "urn:uuid:d99bedfa-7798-11ea-9979-a4d18ccf5172",
+            "fullUrl": "urn:uuid:3b59258c-7c79-11ea-bcad-a4d18ccf5172",
             "resource": {
                 "resourceType": "MeasureReport",
-                "id": "d99bedfa-7798-11ea-9979-a4d18ccf5172",
+                "id": "3b59258c-7c79-11ea-bcad-a4d18ccf5172",
+                "contained": [
+                    {
+                        "resourceType": "Location",
+                        "id": "loc",
+                        "identifier": [
+                            {
+                                "system": "urn:oid:2.16.840.1.113883.6.277",
+                                "value": "2.16.840.1.113883.6.277.123"
+                            },
+                            {
+                                "system": "http://example.org/cms_cert_system",
+                                "value": "1234567"
+                            }
+                        ],
+                        "name": "Marin General",
+                        "address": {
+                            "type": "physical",
+                            "text": "Marin, CA 94965",
+                            "district": "Marin",
+                            "state": "CA",
+                            "postalCode": "94965"
+                        },
+                        "physicalType": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+                                    "code": "jdn",
+                                    "display": "Jurisdiction"
+                                }
+                            ],
+                            "text": "US County"
+                        }
+                    }
+                ],
                 "status": "complete",
                 "type": "individual",
                 "measure": "http://cdcmeasures.example.org/cdc-covid",
                 "subject": {
-                    "identifier": {
-                        "system": "urn:oid:2.16.840.1.113883.6.277",
-                        "value": "2.16.840.1.113883.6.277.123"
-                    },
-                    "display": "Acme General Hospital"
+                    "reference": "#loc",
+                    "display": "Marin General Marin, CA 94965"
                 },
-                "date": "2020-04-05T23:54:53.646021Z",
+                "date": "2020-04-12T04:51:06.556448Z",
                 "reporter": {
-                    "identifier": {
-                        "system": "urn:oid:2.16.840.1.113883.6.277",
-                        "value": "2.16.840.1.113883.6.277.123"
-                    },
-                    "display": "Acme General Hospital"
+                    "reference": "#loc",
+                    "display": "Marin General Marin, CA 94965"
                 },
                 "period": {
                     "start": "2020-04-05",
@@ -1641,7 +1957,10 @@
                                 },
                                 "count": 100
                             }
-                        ]
+                        ],
+                        "measureScore": {
+                            "value": 100
+                        }
                     },
                     {
                         "code": {
@@ -1795,6 +2114,23 @@
                                 }
                             }
                         ]
+                    },
+                    {
+                        "code": {
+                            "text": "surgicalMasks"
+                        },
+                        "population": [
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                                            "code": "initial-population"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
                     }
                 ]
             },
@@ -1804,27 +2140,55 @@
             }
         },
         {
-            "fullUrl": "urn:uuid:d9c63588-7798-11ea-9979-a4d18ccf5172",
+            "fullUrl": "urn:uuid:3b91342c-7c79-11ea-bcad-a4d18ccf5172",
             "resource": {
                 "resourceType": "MeasureReport",
-                "id": "d9c63588-7798-11ea-9979-a4d18ccf5172",
+                "id": "3b91342c-7c79-11ea-bcad-a4d18ccf5172",
+                "contained": [
+                    {
+                        "resourceType": "Location",
+                        "id": "loc",
+                        "identifier": [
+                            {
+                                "system": "urn:oid:2.16.840.1.113883.6.277",
+                                "value": "2.16.840.1.113883.6.277.123"
+                            },
+                            {
+                                "system": "http://example.org/cms_cert_system",
+                                "value": "1234567"
+                            }
+                        ],
+                        "name": "Marin General",
+                        "address": {
+                            "type": "physical",
+                            "text": "Marin, CA 94965",
+                            "district": "Marin",
+                            "state": "CA",
+                            "postalCode": "94965"
+                        },
+                        "physicalType": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+                                    "code": "jdn",
+                                    "display": "Jurisdiction"
+                                }
+                            ],
+                            "text": "US County"
+                        }
+                    }
+                ],
                 "status": "complete",
                 "type": "individual",
                 "measure": "http://cdcmeasures.example.org/cdc-covid",
                 "subject": {
-                    "identifier": {
-                        "system": "urn:oid:2.16.840.1.113883.6.277",
-                        "value": "2.16.840.1.113883.6.277.123"
-                    },
-                    "display": "Acme General Hospital"
+                    "reference": "#loc",
+                    "display": "Marin General Marin, CA 94965"
                 },
-                "date": "2020-04-05T23:54:53.646021Z",
+                "date": "2020-04-12T04:51:06.556448Z",
                 "reporter": {
-                    "identifier": {
-                        "system": "urn:oid:2.16.840.1.113883.6.277",
-                        "value": "2.16.840.1.113883.6.277.123"
-                    },
-                    "display": "Acme General Hospital"
+                    "reference": "#loc",
+                    "display": "Marin General Marin, CA 94965"
                 },
                 "period": {
                     "start": "2020-04-06",
@@ -1898,7 +2262,10 @@
                                 },
                                 "count": 100
                             }
-                        ]
+                        ],
+                        "measureScore": {
+                            "value": 100
+                        }
                     },
                     {
                         "code": {
@@ -2039,6 +2406,23 @@
                     {
                         "code": {
                             "text": "numC19Died"
+                        },
+                        "population": [
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                                            "code": "initial-population"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "code": {
+                            "text": "surgicalMasks"
                         },
                         "population": [
                             {

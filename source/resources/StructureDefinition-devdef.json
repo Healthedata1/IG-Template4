@@ -1,0 +1,55 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "devdef",
+  "url": "http://example.org/fhir/fish/StructureDefinition/devdef",
+  "version": "0.1.0",
+  "name": "DevDef",
+  "title": "DeviceDefinition Reference Extension",
+  "status": "active",
+  "description": "A reference to the [DeviceDefinition](http://build.fhir.org/devicedefinition.html) resource",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://example.org/fhir/fish/StructureDefinition/devdef"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/DeviceDefinition"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

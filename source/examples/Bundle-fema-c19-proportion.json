@@ -2,22 +2,34 @@
     "resourceType": "Bundle",
     "id": "fema-c19-proportion",
     "type": "transaction",
-    "timestamp": "2020-04-06T20:54:17.258551Z",
+    "timestamp": "2020-04-12T05:04:34.367019Z",
     "entry": [
         {
-            "fullUrl": "urn:uuid:c819bc6e-7848-11ea-a0e3-a4d18ccf5172",
+            "fullUrl": "urn:uuid:1a044f86-7c7b-11ea-bcad-a4d18ccf5172",
             "resource": {
                 "resourceType": "MeasureReport",
-                "id": "c819bc6e-7848-11ea-a0e3-a4d18ccf5172",
+                "id": "1a044f86-7c7b-11ea-bcad-a4d18ccf5172",
                 "contained": [
                     {
                         "resourceType": "Location",
                         "id": "loc",
+                        "identifier": [
+                            {
+                                "system": "urn:oid:2.16.840.1.113883.6.277",
+                                "value": "2.16.840.1.113883.6.277.123"
+                            },
+                            {
+                                "system": "http://example.org/cms_cert_system",
+                                "value": "1234567"
+                            }
+                        ],
+                        "name": "Marin General",
                         "address": {
                             "type": "physical",
-                            "text": "Marin, CA",
+                            "text": "Marin, CA 94965",
                             "district": "Marin",
-                            "state": "CA"
+                            "state": "CA",
+                            "postalCode": "94965"
                         },
                         "physicalType": {
                             "coding": [
@@ -36,15 +48,12 @@
                 "measure": "http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-proportion",
                 "subject": {
                     "reference": "#loc",
-                    "display": "Marin, CA"
+                    "display": "Marin General Marin, CA 94965"
                 },
-                "date": "2020-04-06T20:54:17.258551Z",
+                "date": "2020-04-12T05:04:34.367019Z",
                 "reporter": {
-                    "identifier": {
-                        "system": "urn:oid:2.16.840.1.113883.6.277",
-                        "value": "2.16.840.1.113883.6.277.123"
-                    },
-                    "display": "Acme General Hospital"
+                    "reference": "#loc",
+                    "display": "Marin General Marin, CA 94965"
                 },
                 "period": {
                     "start": "2020-04-04",
@@ -157,19 +166,31 @@
             }
         },
         {
-            "fullUrl": "urn:uuid:c84405dc-7848-11ea-a0e3-a4d18ccf5172",
+            "fullUrl": "urn:uuid:1a3a5d7e-7c7b-11ea-bcad-a4d18ccf5172",
             "resource": {
                 "resourceType": "MeasureReport",
-                "id": "c84405dc-7848-11ea-a0e3-a4d18ccf5172",
+                "id": "1a3a5d7e-7c7b-11ea-bcad-a4d18ccf5172",
                 "contained": [
                     {
                         "resourceType": "Location",
                         "id": "loc",
+                        "identifier": [
+                            {
+                                "system": "urn:oid:2.16.840.1.113883.6.277",
+                                "value": "2.16.840.1.113883.6.277.123"
+                            },
+                            {
+                                "system": "http://example.org/cms_cert_system",
+                                "value": "1234567"
+                            }
+                        ],
+                        "name": "Marin General",
                         "address": {
                             "type": "physical",
-                            "text": "Marin, CA",
+                            "text": "Marin, CA 94965",
                             "district": "Marin",
-                            "state": "CA"
+                            "state": "CA",
+                            "postalCode": "94965"
                         },
                         "physicalType": {
                             "coding": [
@@ -188,15 +209,12 @@
                 "measure": "http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-proportion",
                 "subject": {
                     "reference": "#loc",
-                    "display": "Marin, CA"
+                    "display": "Marin General Marin, CA 94965"
                 },
-                "date": "2020-04-06T20:54:17.258551Z",
+                "date": "2020-04-12T05:04:34.367019Z",
                 "reporter": {
-                    "identifier": {
-                        "system": "urn:oid:2.16.840.1.113883.6.277",
-                        "value": "2.16.840.1.113883.6.277.123"
-                    },
-                    "display": "Acme General Hospital"
+                    "reference": "#loc",
+                    "display": "Marin General Marin, CA 94965"
                 },
                 "period": {
                     "start": "2020-04-05",
@@ -309,19 +327,31 @@
             }
         },
         {
-            "fullUrl": "urn:uuid:c86dcebc-7848-11ea-a0e3-a4d18ccf5172",
+            "fullUrl": "urn:uuid:1a5fa3c2-7c7b-11ea-bcad-a4d18ccf5172",
             "resource": {
                 "resourceType": "MeasureReport",
-                "id": "c86dcebc-7848-11ea-a0e3-a4d18ccf5172",
+                "id": "1a5fa3c2-7c7b-11ea-bcad-a4d18ccf5172",
                 "contained": [
                     {
                         "resourceType": "Location",
                         "id": "loc",
+                        "identifier": [
+                            {
+                                "system": "urn:oid:2.16.840.1.113883.6.277",
+                                "value": "2.16.840.1.113883.6.277.123"
+                            },
+                            {
+                                "system": "http://example.org/cms_cert_system",
+                                "value": "1234567"
+                            }
+                        ],
+                        "name": "Marin General",
                         "address": {
                             "type": "physical",
-                            "text": "Marin, CA",
+                            "text": "Marin, CA 94965",
                             "district": "Marin",
-                            "state": "CA"
+                            "state": "CA",
+                            "postalCode": "94965"
                         },
                         "physicalType": {
                             "coding": [
@@ -340,15 +370,12 @@
                 "measure": "http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-proportion",
                 "subject": {
                     "reference": "#loc",
-                    "display": "Marin, CA"
+                    "display": "Marin General Marin, CA 94965"
                 },
-                "date": "2020-04-06T20:54:17.258551Z",
+                "date": "2020-04-12T05:04:34.367019Z",
                 "reporter": {
-                    "identifier": {
-                        "system": "urn:oid:2.16.840.1.113883.6.277",
-                        "value": "2.16.840.1.113883.6.277.123"
-                    },
-                    "display": "Acme General Hospital"
+                    "reference": "#loc",
+                    "display": "Marin General Marin, CA 94965"
                 },
                 "period": {
                     "start": "2020-04-06",
@@ -461,19 +488,31 @@
             }
         },
         {
-            "fullUrl": "urn:uuid:c89a0ed2-7848-11ea-a0e3-a4d18ccf5172",
+            "fullUrl": "urn:uuid:1a858b96-7c7b-11ea-bcad-a4d18ccf5172",
             "resource": {
                 "resourceType": "MeasureReport",
-                "id": "c89a0ed2-7848-11ea-a0e3-a4d18ccf5172",
+                "id": "1a858b96-7c7b-11ea-bcad-a4d18ccf5172",
                 "contained": [
                     {
                         "resourceType": "Location",
                         "id": "loc",
+                        "identifier": [
+                            {
+                                "system": "urn:oid:2.16.840.1.113883.6.277",
+                                "value": "2.16.840.1.113883.6.277.123"
+                            },
+                            {
+                                "system": "http://example.org/cms_cert_system",
+                                "value": "1234567"
+                            }
+                        ],
+                        "name": "Marin General",
                         "address": {
                             "type": "physical",
-                            "text": "Marin, CA",
+                            "text": "Marin, CA 94965",
                             "district": "Marin",
-                            "state": "CA"
+                            "state": "CA",
+                            "postalCode": "94965"
                         },
                         "physicalType": {
                             "coding": [
@@ -492,15 +531,12 @@
                 "measure": "http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-proportion",
                 "subject": {
                     "reference": "#loc",
-                    "display": "Marin, CA"
+                    "display": "Marin General Marin, CA 94965"
                 },
-                "date": "2020-04-06T20:54:17.258551Z",
+                "date": "2020-04-12T05:04:34.367019Z",
                 "reporter": {
-                    "identifier": {
-                        "system": "urn:oid:2.16.840.1.113883.6.277",
-                        "value": "2.16.840.1.113883.6.277.123"
-                    },
-                    "display": "Acme General Hospital"
+                    "reference": "#loc",
+                    "display": "Marin General Marin, CA 94965"
                 },
                 "period": {
                     "start": "2020-04-07",
@@ -613,19 +649,31 @@
             }
         },
         {
-            "fullUrl": "urn:uuid:c8c46ba0-7848-11ea-a0e3-a4d18ccf5172",
+            "fullUrl": "urn:uuid:1aae3ca8-7c7b-11ea-bcad-a4d18ccf5172",
             "resource": {
                 "resourceType": "MeasureReport",
-                "id": "c8c46ba0-7848-11ea-a0e3-a4d18ccf5172",
+                "id": "1aae3ca8-7c7b-11ea-bcad-a4d18ccf5172",
                 "contained": [
                     {
                         "resourceType": "Location",
                         "id": "loc",
+                        "identifier": [
+                            {
+                                "system": "urn:oid:2.16.840.1.113883.6.277",
+                                "value": "2.16.840.1.113883.6.277.123"
+                            },
+                            {
+                                "system": "http://example.org/cms_cert_system",
+                                "value": "1234567"
+                            }
+                        ],
+                        "name": "Marin General",
                         "address": {
                             "type": "physical",
-                            "text": "Marin, CA",
+                            "text": "Marin, CA 94965",
                             "district": "Marin",
-                            "state": "CA"
+                            "state": "CA",
+                            "postalCode": "94965"
                         },
                         "physicalType": {
                             "coding": [
@@ -644,15 +692,12 @@
                 "measure": "http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-proportion",
                 "subject": {
                     "reference": "#loc",
-                    "display": "Marin, CA"
+                    "display": "Marin General Marin, CA 94965"
                 },
-                "date": "2020-04-06T20:54:17.258551Z",
+                "date": "2020-04-12T05:04:34.367019Z",
                 "reporter": {
-                    "identifier": {
-                        "system": "urn:oid:2.16.840.1.113883.6.277",
-                        "value": "2.16.840.1.113883.6.277.123"
-                    },
-                    "display": "Acme General Hospital"
+                    "reference": "#loc",
+                    "display": "Marin General Marin, CA 94965"
                 },
                 "period": {
                     "start": "2020-04-08",
@@ -765,19 +810,31 @@
             }
         },
         {
-            "fullUrl": "urn:uuid:c8f472f0-7848-11ea-a0e3-a4d18ccf5172",
+            "fullUrl": "urn:uuid:1ad74b20-7c7b-11ea-bcad-a4d18ccf5172",
             "resource": {
                 "resourceType": "MeasureReport",
-                "id": "c8f472f0-7848-11ea-a0e3-a4d18ccf5172",
+                "id": "1ad74b20-7c7b-11ea-bcad-a4d18ccf5172",
                 "contained": [
                     {
                         "resourceType": "Location",
                         "id": "loc",
+                        "identifier": [
+                            {
+                                "system": "urn:oid:2.16.840.1.113883.6.277",
+                                "value": "2.16.840.1.113883.6.277.123"
+                            },
+                            {
+                                "system": "http://example.org/cms_cert_system",
+                                "value": "1234567"
+                            }
+                        ],
+                        "name": "Marin General",
                         "address": {
                             "type": "physical",
-                            "text": "Marin, CA",
+                            "text": "Marin, CA 94965",
                             "district": "Marin",
-                            "state": "CA"
+                            "state": "CA",
+                            "postalCode": "94965"
                         },
                         "physicalType": {
                             "coding": [
@@ -796,15 +853,12 @@
                 "measure": "http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-proportion",
                 "subject": {
                     "reference": "#loc",
-                    "display": "Marin, CA"
+                    "display": "Marin General Marin, CA 94965"
                 },
-                "date": "2020-04-06T20:54:17.258551Z",
+                "date": "2020-04-12T05:04:34.367019Z",
                 "reporter": {
-                    "identifier": {
-                        "system": "urn:oid:2.16.840.1.113883.6.277",
-                        "value": "2.16.840.1.113883.6.277.123"
-                    },
-                    "display": "Acme General Hospital"
+                    "reference": "#loc",
+                    "display": "Marin General Marin, CA 94965"
                 },
                 "period": {
                     "start": "2020-04-09",
@@ -917,19 +971,31 @@
             }
         },
         {
-            "fullUrl": "urn:uuid:c9258e08-7848-11ea-a0e3-a4d18ccf5172",
+            "fullUrl": "urn:uuid:1afc0cee-7c7b-11ea-bcad-a4d18ccf5172",
             "resource": {
                 "resourceType": "MeasureReport",
-                "id": "c9258e08-7848-11ea-a0e3-a4d18ccf5172",
+                "id": "1afc0cee-7c7b-11ea-bcad-a4d18ccf5172",
                 "contained": [
                     {
                         "resourceType": "Location",
                         "id": "loc",
+                        "identifier": [
+                            {
+                                "system": "urn:oid:2.16.840.1.113883.6.277",
+                                "value": "2.16.840.1.113883.6.277.123"
+                            },
+                            {
+                                "system": "http://example.org/cms_cert_system",
+                                "value": "1234567"
+                            }
+                        ],
+                        "name": "Marin General",
                         "address": {
                             "type": "physical",
-                            "text": "Marin, CA",
+                            "text": "Marin, CA 94965",
                             "district": "Marin",
-                            "state": "CA"
+                            "state": "CA",
+                            "postalCode": "94965"
                         },
                         "physicalType": {
                             "coding": [
@@ -948,15 +1014,12 @@
                 "measure": "http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-proportion",
                 "subject": {
                     "reference": "#loc",
-                    "display": "Marin, CA"
+                    "display": "Marin General Marin, CA 94965"
                 },
-                "date": "2020-04-06T20:54:17.258551Z",
+                "date": "2020-04-12T05:04:34.367019Z",
                 "reporter": {
-                    "identifier": {
-                        "system": "urn:oid:2.16.840.1.113883.6.277",
-                        "value": "2.16.840.1.113883.6.277.123"
-                    },
-                    "display": "Acme General Hospital"
+                    "reference": "#loc",
+                    "display": "Marin General Marin, CA 94965"
                 },
                 "period": {
                     "start": "2020-04-10",
