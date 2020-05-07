@@ -3,32 +3,35 @@
 {% include fragment-pagebegin.html %}
 <div class="col-12">
   <!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
-  <a name="vs"> </a>
-  <h2 id="vs">Value Set {{data.fhir.canonical}}/ValueSet/{{[id]}}</h2>
+  <a name="root"> </a>
+  <h2 id="root">{{site.data.pages[page.path].title}}</h2>
+  <p>
+    <b>Summary</b>
+  </p>
+  {%include {{[type]}}-{{[id]}}-summary.xhtml%}
+  
+  <p>
+    <b>References</b>
+  </p>
+  {%include {{[type]}}-{{[id]}}-xref.xhtml%}
+
   {% assign intro = site.data.pages[page.path].intro %}
   {% if site.data.pages[page.path].intro != null %}
   <div style="display:inline-block">
   {% include {{intro}} %}
   </div>
   {% endif %}
-  <p>
-    <b>Summary</b>
-  </p>
-
-  {%include ValueSet-{{[id]}}-summary.xhtml%}
-  
-  {%include ValueSet-{{[id]}}-xref.xhtml%}
 
   <a name="definition"> </a>
   <h3 id="definition">Content Logical Definition</h3>
 
-  {%include ValueSet-{{[id]}}-cld.xhtml%}
+  {%include {{[type]}}-{{[id]}}-cld.xhtml%}
   
   <p>&#160;</p>
   <a name="expansion"> </a>
   <h3 id="expansion">Expansion</h3>
 
-  {%include ValueSet-{{[id]}}-expansion.xhtml%}
+  {%include {{[type]}}-{{[id]}}-expansion.xhtml%}
 
   <hr/>
   <p>
@@ -68,5 +71,6 @@
   {% include {{notes}} %}
   </div>
   {% endif %}
+  {%include {{[type]}}-{{[id]}}-history.xhtml%}
 </div>
 {% include fragment-pageend.html %}

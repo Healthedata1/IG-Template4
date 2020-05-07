@@ -1,8 +1,5 @@
-# test-template
-This template is the test template for the FHIR IG publisher
+# ig-template-fhir
 
-For general documentation about IG templates, see http://wiki.hl7.org/index.php?title=FHIR_IG_publisher_templates
+package hl7.fhir.template
 
-This template should only be used during the automated unit tests for the IG publisher
-
-
+Template used for most HL7-defined FHIR implementation guides (based on ig-template-base - package = hl7.base.template).  Adds HL7 logos.
