@@ -1,0 +1,131 @@
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "extension-complex",
+  "url" : "http://www.fhir.org/guides/test3/StructureDefinition/extension-complex",
+  "version" : "0.0.0",
+  "name" : "complex",
+  "title" : "Complex Extension",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2017-02-15T00:00:00-08:00",
+  "publisher" : "Health eData Inc",
+  "contact" : [
+    {
+      "telecom" : [
+        {
+          "system" : "email",
+          "value" : "mailto:ehaas@healthedatainc.com"
+        }
+      ]
+    },
+    {
+      "telecom" : [
+        {
+          "system" : "url",
+          "value" : "http://foobar.com"
+        }
+      ]
+    }
+  ],
+  "description" : "an example of a complex extension.",
+  "fhirVersion" : "4.0.1",
+  "kind" : "complex-type",
+  "abstract" : false,
+  "context" : [
+    {
+      "type" : "element",
+      "expression" : "Basic"
+    }
+  ],
+  "type" : "Extension",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation" : "constraint",
+  "differential" : {
+    "element" : [
+      {
+        "id" : "Extension",
+        "path" : "Extension",
+        "short" : "Complex Extension",
+        "definition" : "an example of a complex extension.",
+        "min" : 0,
+        "max" : "1"
+      },
+      {
+        "id" : "Extension.extension:code",
+        "path" : "Extension.extension",
+        "sliceName" : "code",
+        "short" : "Code",
+        "definition" : "an example of a complex extension - extension code.",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Extension"
+          }
+        ]
+      },
+      {
+        "id" : "Extension.extension:code.url",
+        "path" : "Extension.extension.url",
+        "fixedUri" : "code"
+      },
+      {
+        "id" : "Extension.extension:code.value[x]",
+        "path" : "Extension.extension.value[x]",
+        "type" : [
+          {
+            "code" : "code"
+          }
+        ],
+        "binding" : {
+          "strength" : "required",
+          "description" : "A bunch of example codes",
+          "valueSet" : "http://www.fhir.org/guides/test3/ValueSet/blah-codes"
+        }
+      },
+      {
+        "id" : "Extension.extension:text",
+        "path" : "Extension.extension",
+        "sliceName" : "text",
+        "short" : "String",
+        "definition" : "an example of a complex extension - extension string.",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Extension"
+          }
+        ]
+      },
+      {
+        "id" : "Extension.extension:text.url",
+        "path" : "Extension.extension.url",
+        "fixedUri" : "text"
+      },
+      {
+        "id" : "Extension.extension:text.value[x]",
+        "path" : "Extension.extension.value[x]",
+        "type" : [
+          {
+            "code" : "string"
+          }
+        ]
+      },
+      {
+        "id" : "Extension.url",
+        "path" : "Extension.url",
+        "type" : [
+          {
+            "code" : "uri"
+          }
+        ],
+        "fixedUri" : "http://www.fhir.org/guides/test3/StructureDefinition/extension-complex"
+      },
+      {
+        "id" : "Extension.value[x]",
+        "path" : "Extension.value[x]",
+        "max" : "0"
+      }
+    ]
+  }
+}

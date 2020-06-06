@@ -1,0 +1,159 @@
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "template-basic",
+  "url" : "http://www.fhir.org/guides/test3/StructureDefinition/template-basic",
+  "version" : "0.0.0",
+  "name" : "TemplateBasic",
+  "title" : "Health eData Template Profile",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2017-02-15T00:00:00-08:00",
+  "publisher" : "Health eData Inc",
+  "contact" : [
+    {
+      "telecom" : [
+        {
+          "system" : "email",
+          "value" : "mailto:ehaas@healthedatainc.com"
+        }
+      ]
+    },
+    {
+      "telecom" : [
+        {
+          "system" : "url",
+          "value" : "http://foobar.com"
+        }
+      ]
+    }
+  ],
+  "description" : "This is a simple example Template",
+  "fhirVersion" : "4.0.1",
+  "kind" : "resource",
+  "abstract" : false,
+  "type" : "Basic",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Basic",
+  "derivation" : "constraint",
+  "differential" : {
+    "element" : [
+      {
+        "id" : "Basic",
+        "path" : "Basic",
+        "definition" : "This is a simple example Template.",
+        "constraint" : [
+          {
+            "key" : "temp-1",
+            "severity" : "error",
+            "human" : "Identifier SHALL be greater than 5 characters",
+            "expression" : "Identifier.value.length()>5",
+            "xpath" : "f:Identifier/f:value/string-length(@value)>5"
+          }
+        ],
+        "mustSupport" : false
+      },
+      {
+        "id" : "Basic.extension:Simple_Extension",
+        "path" : "Basic.extension",
+        "sliceName" : "Simple_Extension",
+        "short" : "Example extension",
+        "definition" : "This is a simple extension applied to a Profile.",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Extension",
+            "profile" : [
+              "http://www.fhir.org/guides/test3/StructureDefinition/extension-blah"
+            ]
+          }
+        ],
+        "mustSupport" : true
+      },
+      {
+        "id" : "Basic.extension:Complex_Extension",
+        "path" : "Basic.extension",
+        "sliceName" : "Complex_Extension",
+        "short" : "Example complex extension",
+        "definition" : "This is a complex extension applied to a Profile.",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Extension",
+            "profile" : [
+              "http://www.fhir.org/guides/test3/StructureDefinition/extension-complex"
+            ]
+          }
+        ],
+        "mustSupport" : true
+      },
+      {
+        "id" : "Basic.identifier",
+        "path" : "Basic.identifier",
+        "min" : 1,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Identifier"
+          }
+        ],
+        "condition" : [
+          "temp-1"
+        ],
+        "mustSupport" : true
+      },
+      {
+        "id" : "Basic.code",
+        "path" : "Basic.code",
+        "min" : 1,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "CodeableConcept"
+          }
+        ],
+        "mustSupport" : false
+      },
+      {
+        "id" : "Basic.code.coding",
+        "path" : "Basic.code.coding",
+        "min" : 1,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Coding"
+          }
+        ],
+        "mustSupport" : true
+      },
+      {
+        "id" : "Basic.code.coding.code",
+        "path" : "Basic.code.coding.code",
+        "min" : 1,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "code"
+          }
+        ],
+        "fixedCode" : "diet",
+        "mustSupport" : true
+      },
+      {
+        "id" : "Basic.subject",
+        "path" : "Basic.subject",
+        "min" : 1,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Reference",
+            "targetProfile" : [
+              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
+            ]
+          }
+        ],
+        "mustSupport" : true
+      }
+    ]
+  }
+}

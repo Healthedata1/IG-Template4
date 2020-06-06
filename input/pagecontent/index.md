@@ -19,8 +19,7 @@ Since cats were venerated in ancient Egypt, they were commonly believed to have 
 
 As of a 2007 study, cats are the second most popular pet in the US by number of pets owned, behind freshwater fish.[17] In a 2010 study they were ranked the third most popular pet in the UK, after fish and dogs, with around 8 million being owned.[18]
 
-Figure 1 is a picture of a cat to show how to insert an image using markdown.
-
+Figure 1 is a picture of a cat to show how to insert an image using liquid include tags instead of markdown or \*gasp\* html:
 {% include img.html img="cat.jpg" caption="Figure 1: Meow" %}
 
 

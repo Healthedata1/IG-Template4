@@ -1,7 +1,7 @@
 #!/bin/bash
 # exit when any command fails
 set -e
-while getopts twoplu: option
+while getopts twophbu: option
 do
  case "${option}"
  in
@@ -9,7 +9,8 @@ do
  w) WATCH=1;;
  o) PUB=1;;
  p) UPDATE=1;;
- l) LOAD_TEMPLATE=1;;
+ h) LOAD_HL7TEMPLATE=1;;
+ b) LOAD_BASETEMPLATE=1;;
  u) TEST_TEMPLATE=$OPTARG;;
  esac
 done
@@ -21,7 +22,8 @@ echo '-t parameter for no terminology server (run faster and offline)= ' $NA
 echo '-w parameter for using watch on igpublisher from source default is off = ' $WATCH
 echo '-o parameter for running previous version of the igpublisher= ' $PUB
 echo '-p parameter for downloading latest version of the igpublisher from source = ' $UPDATE
-echo '-l parameter for downloading HL7 ig template from source = ' $LOAD_TEMPLATE
+echo '-h parameter for downloading HL7 ig template from source = ' $LOAD_HL7TEMPLATE
+echo '-h parameter for downloading BASE ig template from source = ' $LOAD_BASETEMPLATE
 echo '-u parameter for downloading test ig template from source or file= ' $TEST_TEMPLATE
 echo ' current directory =' $PWD
 echo "================================================================="
@@ -46,7 +48,11 @@ sleep 3
 fi
 # default is to use local my_framework as template
 template=$PWD/my_framework
-if [[ $LOAD_TEMPLATE ]]; then
+if [[ $LOAD_HL7TEMPLATE ]]; then
+template=hl7.fhir.template
+fi
+
+if [[ $LOAD_BASETEMPLATE ]]; then
 template=hl7.fhir.template
 fi
 
@@ -65,6 +71,8 @@ path=~/Downloads/org.hl7.fhir.igpublisher.jar
 if [[ $PUB ]]; then
 path=~/Downloads/org.hl7.fhir.igpublisher-old.jar
 fi
+
+rm -rf output docs temp template
 
 if [[ $WATCH ]]; then
   echo "================================================================="

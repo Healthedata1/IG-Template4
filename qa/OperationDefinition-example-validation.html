@@ -1,0 +1,15 @@
+﻿<html>
+<head>
+  <title>OperationDefinition-example-validation</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<table class="grid">
+<tr><td><b>Level</b></td><td><b>Type</b></td><td><b>Location</b></td><td><b>Message</b></td></tr>
+<tr><td>error</td><td>invalid</td><td>OperationDefinition/example: OperationDefinition.base</td><td>Canonical URLs must be absolute URLs if they are not fragment references (OperationDefinition/Questionnaire-populate) </td><td></td></tr>
+<tr><td>warning</td><td>invariant</td><td>OperationDefinition/example: OperationDefinition</td><td>opd-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]</td><td></td></tr>
+<tr><td>warning</td><td>code-invalid</td><td>OperationDefinition/example: OperationDefinition.jurisdiction[0]</td><td>The display &quot;United Kingdom of Great Britain and Northern Ireland (the)&quot; is not a valid display for the code {urn:iso:std:iso:3166}GB - should be one of [&quot;United Kingdom of Great Britain and Northern Ireland&quot;]</td><td></td></tr>
+<tr><td>information</td><td>unknown</td><td>OperationDefinition/example: OperationDefinition.useContext[0].code</td><td>Code System URI &quot;http://build.fhir.org/codesystem-usage-context-type&quot; is unknown so the code cannot be validated</td><td></td></tr>
+</table>
+</body>
+</html>
