@@ -77,7 +77,7 @@
 		<use value="usual"/>
 		<type>
 			<coding>
-				<system value="http://hl7.org/fhir/v2/0203"/>
+				<system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
 				<code value="MR"/>
 				<display value="Medical Record Number"/>
 			</coding>
@@ -112,6 +112,6 @@
 	</address>
 	<generalPractitioner><!-- 0..* Reference(Organization|Practitioner|
     PractitionerRole) Patient's nominated primary care provider -->
-		 <reference value="http://hl7.org/fhir/us/core/Practitioner/practitioner-1"/><!-- ?? 0..1 Literal reference, Relative, internal or absolute URL -->
+		 <display value="Dr Smith"/><!-- ?? 0..1 Literal reference, Relative, internal or absolute URL -->
 	</generalPractitioner>
 </Patient>

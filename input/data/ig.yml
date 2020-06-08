@@ -1,5 +1,5 @@
 resourceType: ImplementationGuide
-id: hl7.fhir.us.healthedatainc.ig-template4-0.0.0
+id: healthedatainc.ig-template4
 #****************for spreadsheets ********************
 #extension:
 #  - url: 'http://hl7.org/fhir/StructureDefinition/igpublisher-spreadsheet'
@@ -8,7 +8,7 @@ id: hl7.fhir.us.healthedatainc.ig-template4-0.0.0
 #    valueUri: template-profile-spreadsheet.xml
 #********************************************************
 url: >-
-  http://www.fhir.org/guides/test3/ImplementationGuide/hl7.fhir.us.healthedatainc.ig-template4-0.0.0
+  http://www.fhir.org/guides/test3/ImplementationGuide/healthedatainc.ig-template4
 version: 0.0.0
 name: IGTest4
 title: IG Test4
@@ -31,11 +31,11 @@ fhirVersion:
   - 4.0.1
 dependsOn:
   - id: uscore
-    uri: 'http://hl7.org/fhir/us/core'
+    uri: 'http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core'
     packageId: hl7.fhir.us.core
     version: 3.1.0
   - id: qicore
-    uri: 'http://hl7.org/fhir/us/qicore'
+    uri: 'http://hl7.org/fhir/us/qicore/ImplementationGuide/hl7.fhir.us.qicore'
     packageId: hl7.fhir.us.qicore
     version: current
 definition:
@@ -45,7 +45,7 @@ definition:
       name: Template-basic
   resource:
     - reference:
-        reference: Basic/diet
+        reference: Basic/diet-example1
       name: Basic Example
       description: an example of a of Basic Profile.
       exampleBoolean: true
@@ -72,9 +72,12 @@ definition:
     - reference:
         reference: OperationDefinition/example
       description: Limited implementation of the Populate Questionnaire implementation
+      name: Populate Questionnaire
       exampleBoolean: false
     - reference:
         reference: StructureDefinition/ifr
+      name: Identifer Free Reference Data Type
+      description: Identifer Free Reference Data Type
       exampleBoolean: false
     - reference:
         reference: ValueSet/bar-codes
@@ -88,6 +91,7 @@ definition:
       exampleBoolean: false
     - reference:
         reference: CodeSystem/blah-codes
+      name: BlahCodes
       description: A bunch of example codes
       exampleBoolean: false
     - reference:
@@ -112,6 +116,7 @@ definition:
       exampleBoolean: false
     - reference:
         reference: ValueSet/blah-codes
+      name: BlahCodes
       description: A bunch of example codes
       exampleBoolean: false
     #- reference:

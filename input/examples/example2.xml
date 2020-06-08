@@ -125,6 +125,6 @@
     </period>
   </contact>
   <managingOrganization>
-    <reference value="Organization/1"/>
+    <display value="Acme Hospital"/>
   </managingOrganization>
 </Patient>

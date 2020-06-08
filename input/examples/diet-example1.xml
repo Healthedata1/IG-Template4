@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><Basic xmlns="http://hl7.org/fhir">
 
-  <id value="diet"/>
+  <id value="diet-example1"/>
 
   <meta>
     <profile value="http://www.fhir.org/guides/test3/StructureDefinition/template-basic"/>
@@ -8,7 +8,7 @@
 
   <identifier>
     <system value="http://goodhealth.org/basic/identifiers"/>
-    <value value="746"/>
+    <value value="7465312"/>
   </identifier>
   <code>
     <coding>
