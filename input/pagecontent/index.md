@@ -1,15 +1,3 @@
----
-layout: default
----
-
-<!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->
-
-* Do not remove this line (it will not be displayed)
-{:toc}
-
-
-<!-- end TOC -->
-
 ### Cat Facts (To Show How the Text Wraps around the Contents Block) {#cat-facts}
 
  The domestic cat[1][5] (Latin: Felis catus) is a small, typically furry, carnivorous mammal. They are often called house cats when kept as indoor pets or simply cats when there is no need to distinguish them from other felids and felines.[6] Cats are often valued by humans for companionship and for their ability to hunt vermin. There are more than 70 cat breeds, though different associations proclaim different numbers according to their standards.
@@ -23,6 +11,7 @@ Since cats were venerated in ancient Egypt, they were commonly believed to have 
 As of a 2007 study, cats are the second most popular pet in the US by number of pets owned, behind freshwater fish.[17] In a 2010 study they were ranked the third most popular pet in the UK, after fish and dogs, with around 8 million being owned.[18]
 
 Figure 1 is a picture of a cat to show how to insert an image using liquid include tags instead of markdown or \*gasp\* html:
+
 {% include img.html img="cat.jpg" caption="Figure 1: Meow" %}
 
 

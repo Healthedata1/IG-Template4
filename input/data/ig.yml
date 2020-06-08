@@ -83,6 +83,7 @@ definition:
       exampleBoolean: false
     - reference:
         reference: CapabilityStatement/server
+      name: Server
       description: This resource defines the expected capabilities
       exampleBoolean: false
     - reference:
@@ -91,6 +92,7 @@ definition:
       exampleBoolean: false
     - reference:
         reference: CapabilityStatement/client
+      name: Client
       description: This resource defines the expected capabilities
       exampleBoolean: false
     - reference:
@@ -182,7 +184,7 @@ definition:
             generation: generated
       - nameUrl: security.html
         title: Security
-        generation: markdown
+        generation: html
       - nameUrl: downloads.html
         title: Downloads
         generation: markdown

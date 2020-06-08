@@ -1,5 +1,5 @@
 
-{% assign id = {{page.id}} %}
+{% assign id = {{[id]}} %}
 source file: source/pages/\_includes/{{id}}-intro.md
 
 {{site.data.structuredefinitions.[id].description}}
@@ -22,4 +22,4 @@ The following data-elements are mandatory (i.e data MUST be present). blah blah 
 
 #### Examples
 
-- list examples here
+{% include list-simple-patients.xhtml %}

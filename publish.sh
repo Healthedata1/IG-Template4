@@ -1,10 +1,12 @@
 #!/bin/bash
 # exit when any command fails
 set -e
-while getopts twophbu: option
+while getopts dtwophbu: option
 do
  case "${option}"
  in
+
+ t) RECONFIG=1;;
  t) NA='N/A';;
  w) WATCH=1;;
  o) PUB=1;;
@@ -18,6 +20,8 @@ echo "================================================================="
 echo === Publish $SOURCE IG!!! $(date -u) ===
 echo see 'local workflow.md' file for how to use
 echo "Optional Parameters"
+echo '-d parameter for updating ig.json file from ig.yml config file (use when changing IG config parameters)= ' $RECONFIG
+echo ' for -d parameter need python 3.7 and PyYAML, json and sys modules installed in your environment'
 echo '-t parameter for no terminology server (run faster and offline)= ' $NA
 echo '-w parameter for using watch on igpublisher from source default is off = ' $WATCH
 echo '-o parameter for running previous version of the igpublisher= ' $PUB
@@ -31,6 +35,15 @@ echo getting rid of .DS_Store files since they gum up the igpublisher....
 find . -name '.DS_Store' -type f -delete
 sleep 1
 # git status
+
+if [[ $RECONFIG ]]; then
+echo "========================================================================"
+echo "updating ig.json file from ig.yml config file"
+echo "Python 3.7 and PyYAML, json and sys modules are required"
+python3.7 -c 'import sys, yaml, json; json.dump(yaml.full_load(sys.stdin), sys.stdout, indent=4)' < input/data/ig.yml > input/ig.json
+echo "========================================================================"
+fi
+
 if [[ $UPDATE ]]; then
 echo "========================================================================"
 echo "Downloading most recent publisher to:"
