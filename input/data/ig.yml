@@ -368,15 +368,15 @@ definition:
     - code: releaselabel
       value: CI Build
     - code: excludexml
-      value: 'true'
+      value: 'false'
     - code: escludejsn
       value: 'false'
     - code: excludettl
-      value: 'true'
+      value: 'false'
     - code: excludemap
-      value: 'true'
+      value: 'false'
     - code: excludeexample
-      value: 'true'
+      value: 'flase'
 
     # ===========================================================
     # =======custom parameters for ig ==========

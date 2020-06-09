@@ -3,7 +3,7 @@
 # see comments below for instructions
 
 ig = input/ig.json
-template = /Users/ehaas/Documents/FHIR/IG-Template4/ig-template-base
+template = https://github.com/Healthedata1/ig-template-base/tree/add-tabs
 
 ##########################
 ### ig.ini parameters: ###

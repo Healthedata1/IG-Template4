@@ -76,6 +76,13 @@ e.g. want to to be 4.1 not 4 etc
 
 do QA on IG Template4
 
+##### Errors:
+1.
+ImplementationGuide.definition.parameter[40].value	error	Supressed messages file is not using the new format (see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters):
+the file: `input/ignoreWarnings.txt` is empty!
+
+
+
 notes and intro are leaking into the output folder...! and I don't know why.
 
 output/StructureDefinition-identifier-status-intro.md
