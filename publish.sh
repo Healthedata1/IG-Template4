@@ -6,7 +6,7 @@ do
  case "${option}"
  in
 
- t) RECONFIG=1;;
+ d) RECONFIG=1;;
  t) NA='N/A';;
  w) WATCH=1;;
  o) PUB=1;;

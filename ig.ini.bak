@@ -3,7 +3,7 @@
 # see comments below for instructions
 
 ig = input/ig.json
-template = https://github.com/Healthedata1/ig-template-base/tree/add-tabs
+template = ig-template-base
 
 ##########################
 ### ig.ini parameters: ###
