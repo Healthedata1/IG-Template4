@@ -247,12 +247,12 @@ definition:
 
     #- code: path-pages #yes
     #  value: #path #"A relative path in which pages can be found. Default = ""\pages"""
-    - code: path-pages
-      value: input/pagecontent
-    - code: path-pages
-      value: template/config
-    - code: path-pages
-      value: input/pagecontent/images
+    #- code: path-pages
+      #value: input/pagecontent
+    #- code: path-pages
+      #value: template/config
+    #- code: path-pages
+      #value: input/pagecontent/images
 
     #- code: path-qa #no
     #  value: #path #"The relative path to the qa folder (generated fragments to check rendering in browser). If not specified, no qa is produced. Default = ""\qc"""
