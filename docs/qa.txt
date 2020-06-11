@@ -1,0 +1,54 @@
+﻿IGTest4 : Validation Results
+=========================================
+
+err = 3, warn = 8, info = 0
+IG Publisher Version: v1.0.100-SNAPSHOT
+Generated Thu Jun 11 13:17:15 PDT 2020. FHIR version 4.0.1 for healthedatainc.ig-template4#0.0.0 (canonical = http://www.fhir.org/guides/test3)
+
+ Build Errors : 2 / 0
+ /Users/ehaas/Documents/FHIR/IG-Template4/input/examples/diet-example1 : 1 / 0
+ /Users/ehaas/Documents/FHIR/IG-Template4/input/examples/example1 : 0 / 0
+ /Users/ehaas/Documents/FHIR/IG-Template4/input/examples/example2 : 0 / 0
+ /Users/ehaas/Documents/FHIR/IG-Template4/input/ig : 0 / 0
+ /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/CodeSystem-blah-codes : 0 / 0
+ /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/StructureDefinition-extension-blah : 0 / 2
+ /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/StructureDefinition-extension-complex : 0 / 2
+ /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/StructureDefinition-ifr : 0 / 2
+ /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/StructureDefinition-template-basic : 0 / 0
+ /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/StructureDefinition-template-profile-on-profile : 0 / 2
+ /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/ValueSet-bar-codes : 0 / 0
+ /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/ValueSet-blah-codes : 0 / 0
+ /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/ValueSet-foo-codes : 0 / 0
+ /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/capabilitystatement-client : 0 / 0
+ /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/capabilitystatement-server : 0 / 0
+ /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/operationdefinition-example : 1 / 0
+</table>
+== n/a ==
+ERROR: ImplementationGuide.definition.parameter[38].value: Supressed messages file is not using the new format (see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters)
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/toc.html#/html/body/div/div/div/div/div/div/table/tbody/tr/td/a at Line 152, column 7498: The link 'OperationDefinition-opdef-test.html' for "4.1 OperationDefinition Opdef Test" cannot be resolved
+== /Users/ehaas/Documents/FHIR/IG-Template4/input/examples/diet-example1.xml ==
+ERROR: Basic/diet-example1: Basic: temp-1: Identifier SHALL be greater than 5 characters [Identifier.value.length() > 5]
+== /Users/ehaas/Documents/FHIR/IG-Template4/input/examples/example1.xml ==
+== /Users/ehaas/Documents/FHIR/IG-Template4/input/examples/example2.xml ==
+== /Users/ehaas/Documents/FHIR/IG-Template4/input/ig.json ==
+== /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/CodeSystem-blah-codes.xml ==
+== /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/StructureDefinition-extension-blah.json ==
+WARNING: StructureDefinition/extension-blah: StructureDefinition: sdf-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
+WARNING: StructureDefinition.where(url = 'http://www.fhir.org/guides/test3/StructureDefinition/extension-blah'): The Implementation Guide contains no examples for this extension
+== /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/StructureDefinition-extension-complex.json ==
+WARNING: StructureDefinition/extension-complex: StructureDefinition: sdf-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
+WARNING: StructureDefinition.where(url = 'http://www.fhir.org/guides/test3/StructureDefinition/extension-complex'): The Implementation Guide contains no examples for this extension
+== /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/StructureDefinition-ifr.xml ==
+WARNING: StructureDefinition/ifr: StructureDefinition: sdf-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
+WARNING: StructureDefinition.where(url = 'http://www.fhir.org/guides/test3/StructureDefinition/ifr'): The Implementation Guide contains no examples for this data type profile
+== /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/StructureDefinition-template-basic.json ==
+== /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/StructureDefinition-template-profile-on-profile.json ==
+WARNING: StructureDefinition/template-profile-on-profile: StructureDefinition: sdf-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
+WARNING: StructureDefinition.where(url = 'http://www.fhir.org/guides/test3/StructureDefinition/template-profile-on-profile'): The Implementation Guide contains no examples for this profile
+== /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/ValueSet-bar-codes.xml ==
+== /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/ValueSet-blah-codes.xml ==
+== /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/ValueSet-foo-codes.xml ==
+== /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/capabilitystatement-client.xml ==
+== /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/capabilitystatement-server.xml ==
+== /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/operationdefinition-example.json ==
+ERROR: OperationDefinition/example: OperationDefinition.base: URL value "http://hl7.org/fhir/uv/sdc/OperationDefinition/Questionnaire-populate" does not resolve

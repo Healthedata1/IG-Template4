@@ -360,14 +360,6 @@
                 "value": "input/pagecontent"
             },
             {
-                "code": "path-pages",
-                "value": "template/config"
-            },
-            {
-                "code": "path-pages",
-                "value": "input/pagecontent/images"
-            },
-            {
                 "code": "path-qa",
                 "value": "qa"
             },
@@ -385,7 +377,7 @@
             },
             {
                 "code": "path-output",
-                "value": "output"
+                "value": "docs"
             },
             {
                 "code": "active-tables",

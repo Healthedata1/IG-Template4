@@ -247,8 +247,8 @@ definition:
 
     #- code: path-pages #yes
     #  value: #path #"A relative path in which pages can be found. Default = ""\pages"""
-    #- code: path-pages
-      #value: input/pagecontent
+    - code: path-pages
+      value: input/pagecontent
     #- code: path-pages
       #value: template/config
     #- code: path-pages
@@ -278,8 +278,8 @@ definition:
     #- code: path-output #no
     #  value: #path #"The relative path where the output is generated. Defaults to ""\output"", which must be the case for the ci-build scripts"
     - code: path-output
-      value:  output #docs
-
+      #value: output
+      value: docs
     #- code: path-history #no
     #  value: #url #"The url where the history file is found (usually ""(canonical)/history.html""). Used when checking links"
 

@@ -20,14 +20,14 @@ echo "================================================================="
 echo === Publish $SOURCE IG!!! $(date -u) ===
 echo see 'local workflow.md' file for how to use
 echo "Optional Parameters"
-echo '-d parameter for updating ig.json file from ig.yml config file (use when changing IG config parameters)= ' $RECONFIG
+echo '-d parameter for updating ig.json file from input/data/ig.yml config file  (use when changing IG config parameters)= ' $RECONFIG
 echo ' for -d parameter need python 3.7 and PyYAML, json and sys modules installed in your environment'
 echo '-t parameter for no terminology server (run faster and offline)= ' $NA
 echo '-w parameter for using watch on igpublisher from source default is off = ' $WATCH
 echo '-o parameter for running previous version of the igpublisher= ' $PUB
 echo '-p parameter for downloading latest version of the igpublisher from source = ' $UPDATE
 echo '-h parameter for downloading HL7 ig template from source = ' $LOAD_HL7TEMPLATE
-echo '-h parameter for downloading BASE ig template from source = ' $LOAD_BASETEMPLATE
+echo '-b parameter for downloading BASE ig template from source = ' $LOAD_BASETEMPLATE
 echo '-u parameter for downloading test ig template from source or file= ' $TEST_TEMPLATE
 echo ' current directory =' $PWD
 echo "================================================================="
@@ -66,7 +66,7 @@ template=hl7.fhir.template
 fi
 
 if [[ $LOAD_BASETEMPLATE ]]; then
-template=hl7.fhir.template
+template=fhir.base.template
 fi
 
 if [[ $TEST_TEMPLATE ]]; then

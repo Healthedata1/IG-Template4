@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>HEALTHEDATAINC.IG-TEMPLATE4\Terminology - FHIR v4.0.1</title>
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+     
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet"/>
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+  
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+  
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body>
+
+    <style type="text/css">h2{--heading-prefix:"5"}
+    h3,h4,h5,h6{--heading-prefix:"5.0"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">IG Test4</span><br/>0.0.0 - CI Build</p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+    
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+    
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="guidance.html">General Guidance</a>
+  </li>
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">FHIR Artifacts<b class="caret">
+    </b>
+  </a>
+  <ul class="dropdown-menu">
+
+    <li>
+      <a href="profiles.html">Profiles and Logical Models</a>
+    </li>
+
+    <!-- <li>
+    <a href="extensions.html">Extensions</a>
+  </li>-->
+
+  <li>
+    <a href="searchparameters.html">Search Parameters</a>
+  </li>
+
+  <li>
+    <a href="operations.html">Operations</a>
+  </li>
+
+  <!--   <li>
+  <a href="structuremaps.html">Mappings</a>
+</li>-->
+
+<li>
+  <a href="terminology.html">Terminology</a>
+</li>
+
+<li>
+<a href="capstatements.html">CapabilityStatements</a>
+
+</li>
+
+</ul>
+</li>
+<li>
+  <a href="security.html">Security</a>
+</li>
+<li>
+  <a href="all-examples.html">Examples</a>
+</li>
+<li>
+  <a href="downloads.html">Downloads</a>
+</li>
+</ul>
+
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->  
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Terminology</b></li>
+        </ul>  
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+    
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">IG Test4 - Local Development build (v0.0.0). See the <a href="http://www.fhir.org/guides/test3/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Terminology</h2>
+  
+  
+  
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#value-sets" id="markdown-toc-value-sets">Value Sets</a></li>
+  <li><a href="#code-systems" id="markdown-toc-code-systems">Code Systems</a></li>
+</ul>
+
+</div>
+
+<h3 id="value-sets">Value Sets</h3>
+
+<h4 id="method-1-is-to-render-a-unsorted-list-of-valuesets-using-the-ig-publisher-generated-simple-list-include-file">Method 1 is to render a <em>unsorted</em> list of valuesets using the IG Publisher generated simple list include file.</h4>
+
+<p>This liquid ‘include’ tag</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{% include list-simple-valuesets.xhtml %}
+</code></pre></div></div>
+
+<p>results in:</p>
+
+<li>
+  <p><a href="ValueSet-blah-codes.html">BlahCodes</a>&lt;/li&gt;</p>
+  <li>
+    <p><a href="ValueSet-foo-codes.html">Foo Value Set</a>&lt;/li&gt;</p>
+    <li>
+      <p><a href="ValueSet-bar-codes.html">Bar Value Set</a>&lt;/li&gt;</p>
+
+      <h4 id="method-2-is-to-render-a-sorted-list-using-a-custom-liquid-script">Method 2 is to render a sorted list using a custom liquid script:</h4>
+
+      <p>This liquid syntax:</p>
+
+      <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{% assign html_pages = site.html_pages | sort: 'name' %}
+{% for p in html_pages %}
+  {% assign html_frag = p.name | split: '.' | size %}
+  {% if p.name contains "ValueSet" and html_frag == 2 %}
+      &lt;li&gt;&lt;a href="{{p.name}}"&gt;{{p.name |  remove: ".html" | replace: '-', ' ' }}&lt;/a&gt;&lt;/li&gt;
+  {% endif %}
+{% endfor %}
+</code></pre></div>      </div>
+
+      <p>results in:</p>
+
+      <li>
+        <p><a href="ValueSet-bar-codes.html">ValueSet bar codes</a>&lt;/li&gt;</p>
+
+        <li>
+          <p><a href="ValueSet-blah-codes.html">ValueSet blah codes</a>&lt;/li&gt;</p>
+
+          <li>
+            <p><a href="ValueSet-foo-codes.html">ValueSet foo codes</a>&lt;/li&gt;</p>
+
+            <h4 id="method-3-is-to-render-a-custom-list-by-manually-creating-the-list-using-markdown">Method 3 is to render a custom list by manually creating the list using Markdown:</h4>
+
+            <p>This markdown:</p>
+
+            <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- [Foo Value Set](ValueSet-foo-codes.html)
+- [Bar Value Set](ValueSet-bar-codes.html)
+- [Blah Value Set](ValueSet-blah-codes.html)
+</code></pre></div>            </div>
+
+            <p>results in:</p>
+
+            <ul>
+              <li><a href="#">Foo Value Set</a></li>
+              <li><a href="#">Bar Value Set</a></li>
+              <li><a href="#">Blah Value Set</a></li>
+            </ul>
+
+            <h3 id="code-systems">Code Systems</h3>
+
+            <p><strong>Code systems published in this IG</strong> - Includes US Core defined code systems and externally defined code systems</p>
+            <li>
+              <p><a href="CodeSystem-blah-codes.html">BlahCodes</a>&lt;/li&gt;</p>
+
+            </li>
+          </li>
+        </li>
+      </li>
+    </li>
+  </li>
+</li>
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package healthedatainc.ig-template4#0.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jun 11, 2020 13:16-0700">2020-06-11</span>
+          <br/>
+          <span style="color: #FFFF77">
+                      Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
+                 <a style="color: #81BEF7" href="qa.html">QA Report</a>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
