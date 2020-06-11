@@ -1,0 +1,21 @@
+---
+# jekyll header
+layout: fhir-artifact
+template: definitions
+type: {{[type]}}
+id: {{[id]}}
+topofpage: True
+---
+
+<!-- div style="counter-reset: section 4" class="col-12" -->
+ <!-- what does the counter reset do -->
+  <h3 id="root" style="counter-reset: sub-section 3;">
+    {% if site.data.structuredefinitions.{{[id]}}.type == "Extension" %}
+    Extension: {{[title]}} - Detailed Descriptions</h3>
+    <p>Definitions for the {{[id]}} Extension</p>
+    {% else %}
+    StructureDefinition: {{[title]}} - Detailed Descriptions</h3>
+  <p>Definitions for the {{[id]}} Profile.</p>
+  {% endif %}
+
+  {%include StructureDefinition-{{[id]}}-dict.xhtml%}

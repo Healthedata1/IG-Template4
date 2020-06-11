@@ -1,0 +1,83 @@
+<!--  - choose what you want  comment out or Change what you don't-->
+
+{% assign excludexml = site.data.info.excludexml | downcase | slice: 0 %}
+{% assign excludejson = site.data.info.excludejson | downcase | slice: 0 %}
+{% assign excludettl = site.data.info.excludettl | downcase | slice: 0 %}
+{% assign excludemaps = site.data.info.excludemap | downcase | slice: 0 %}
+{% assign excludedefs = site.data.info.excludettl | downcase | slice: 0 %}
+{% assign excludeexamples = site.data.info.excludettl | downcase | slice: 0 %}
+{% assign excludeopenapi = site.data.info.excludemap | downcase | slice: 0 %}
+
+<ul class="nav nav-tabs">
+{% if {{include.active}} == "narrative" %}
+	<li class="active"><a href="#">Narrative Content</a></li>
+{% else %}
+	<li><a href="{{include.type}}-{{include.id}}.html">Narrative Content</a></li>
+{% endif %}
+
+{% if {{include.type}} == "StructureDefinition" %}
+	{% unless excludedefs == "y" %}
+		{% if {{include.active}} == "definitions"  %}
+			<li class="active"><a href="#">Detailed Descriptions</a></li>
+		{% else %}
+			<li><a href="{{include.type}}-{{include.id}}-definitions.html">Detailed Descriptions</a></li>
+		{% endif %}
+	{% endunless %}
+
+	{% unless excludemaps == "y" %}
+		{% if {{include.active}} == "mappings"%}
+				<li class="active"><a href="#">Mappings</a></li>
+			{% else %}
+				<li><a href="{{include.type}}-{{include.id}}-mappings.html">Mappings</a></li>
+			{% endif %}
+	{% endunless %}
+
+	{% unless excludeexamples == "y" %}
+		{% if {{include.active}} == "examples" %}
+			<li class="active"><a href="#">Examples</a></li>
+		{% else %}
+			<li><a href="{{include.type}}-{{include.id}}-examples.html">Examples</a></li>
+		{% endif %}
+	{% endunless %}
+{% endif %}
+
+
+{% unless excludexml == "y" %}
+	{% if {{include.active}} == "xml" %}
+		<li class="active"><a href="#">XML</a></li>
+	{% else %}
+	<li><a href="{{include.type}}-{{include.id}}.xml.html">XML</a></li>
+	{% endif %}
+{% endunless %}
+
+{% unless excludejson == "y" %}
+	{% if {{include.active}} == "json" %}
+		<li class="active"><a href="#">JSON</a></li>
+	{% else %}
+		<li><a href="{{include.type}}-{{include.id}}.json.html">JSON</a></li>
+	{% endif %}
+{% endunless %}
+
+{% unless excludettl == "y" %}
+	{% if {{include.active}} == "turtle" %}
+		<li class="active"><a href="#">Turtle</a></li>
+	{% else %}
+		<li><a href="{{include.type}}-{{include.id}}.ttl.html">Turtle</a></li>
+	{% endif %}
+{% endunless %}
+
+<!-- {% raw %} --not ready yet
+{% if {{include.type}} == "CapabilityStatement"  %}
+
+	{% unless excludeswagger == "y" %}
+		{% if {{include.active}} == "swagger"  %}
+			<li class="active"><a href="#">OpenAPI-Swagger Definition file</a></li>
+		{% else %}
+			<li><a href="{{include.type}}-{{include.id}}-definitions.html">OpenAPI-Swagger Definition file</a></li>
+		{% endif %}
+	{% endunless %}
+
+{% endif %}
+{% endraw %}-->
+
+</ul>

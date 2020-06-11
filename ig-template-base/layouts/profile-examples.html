@@ -1,0 +1,26 @@
+---
+# jekyll header
+layout: fhir-artifact
+template: examples
+type: {{[type]}}
+id: {{[id]}}
+topofpage: True
+---
+<h3 id="root" style="counter-reset: sub-section 5;">StructureDefinition: {{[title]}} - Examples</h3>
+{% assign basepath = page.path | replace: '-examples.html', '.html' %}
+{% if site.data.pages[basepath].examples.size > 0 %}
+  <p>Examples for the {{[id]}} Profile.</p>
+  <table style="grid">
+    <tbody>
+      {% for example in site.data.pages[basepath].examples %}
+        <tr>
+          <td>
+            <a href="{{example.url}}">{{example.title}}</a>
+          </td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% else %}
+  <p><b>No examples are currently available for the {{id}} Profile.</b></p>
+{% endif %}

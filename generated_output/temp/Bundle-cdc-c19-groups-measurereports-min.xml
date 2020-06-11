@@ -1,0 +1,1975 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="cdc-c19-groups-measurereports-min"/>
+  <type value="transaction"/>
+  <timestamp value="2020-04-12T04:51:06.556448Z"/>
+  <entry>
+    <fullUrl value="urn:uuid:3a3f8aba-7c79-11ea-bcad-a4d18ccf5172"/>
+    <resource>
+      <MeasureReport>
+        <id value="3a3f8aba-7c79-11ea-bcad-a4d18ccf5172"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p></div>
+        </text>
+        <contained>
+          <Location>
+            <id value="loc"/>
+            <identifier>
+              <system value="urn:oid:2.16.840.1.113883.6.277"/>
+              <value value="2.16.840.1.113883.6.277.123"/>
+            </identifier>
+            <identifier>
+              <system value="http://example.org/cms_cert_system"/>
+              <value value="1234567"/>
+            </identifier>
+            <name value="Marin General"/>
+            <address>
+              <type value="physical"/>
+              <text value="Marin, CA 94965"/>
+              <district value="Marin"/>
+              <state value="CA"/>
+              <postalCode value="94965"/>
+            </address>
+            <physicalType>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/location-physical-type"/>
+                <code value="jdn"/>
+                <display value="Jurisdiction"/>
+              </coding>
+              <text value="US County"/>
+            </physicalType>
+          </Location>
+        </contained>
+        <status value="complete"/>
+        <type value="individual"/>
+        <measure value="http://cdcmeasures.example.org/cdc-covid"/>
+        <subject>
+          <reference value="#loc"/>
+          <display value="Marin General Marin, CA 94965"/>
+        </subject>
+        <date value="2020-04-12T04:51:06.556448Z"/>
+        <reporter>
+          <reference value="#loc"/>
+          <display value="Marin General Marin, CA 94965"/>
+        </reporter>
+        <period>
+          <start value="2020-03-30"/>
+          <end value="2020-03-30"/>
+        </period>
+        <group>
+          <code>
+            <text value="numVent"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numVentUse"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numTotBeds"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numbeds"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+            <count value="100"/>
+          </population>
+          <measureScore>
+            <value value="100"/>
+          </measureScore>
+        </group>
+        <group>
+          <code>
+            <text value="numBedsOcc"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numICUBeds"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numICUBedsOcc"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numC19HospPats"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numC19MechVentPats"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numC19HOPats"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numC19OverflowPats"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numC19OFMechVentPats"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numC19Died"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="surgicalMasks"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+      </MeasureReport>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="MeasureReport"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:3a6d0d82-7c79-11ea-bcad-a4d18ccf5172"/>
+    <resource>
+      <MeasureReport>
+        <id value="3a6d0d82-7c79-11ea-bcad-a4d18ccf5172"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p></div>
+        </text>
+        <contained>
+          <Location>
+            <id value="loc"/>
+            <identifier>
+              <system value="urn:oid:2.16.840.1.113883.6.277"/>
+              <value value="2.16.840.1.113883.6.277.123"/>
+            </identifier>
+            <identifier>
+              <system value="http://example.org/cms_cert_system"/>
+              <value value="1234567"/>
+            </identifier>
+            <name value="Marin General"/>
+            <address>
+              <type value="physical"/>
+              <text value="Marin, CA 94965"/>
+              <district value="Marin"/>
+              <state value="CA"/>
+              <postalCode value="94965"/>
+            </address>
+            <physicalType>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/location-physical-type"/>
+                <code value="jdn"/>
+                <display value="Jurisdiction"/>
+              </coding>
+              <text value="US County"/>
+            </physicalType>
+          </Location>
+        </contained>
+        <status value="complete"/>
+        <type value="individual"/>
+        <measure value="http://cdcmeasures.example.org/cdc-covid"/>
+        <subject>
+          <reference value="#loc"/>
+          <display value="Marin General Marin, CA 94965"/>
+        </subject>
+        <date value="2020-04-12T04:51:06.556448Z"/>
+        <reporter>
+          <reference value="#loc"/>
+          <display value="Marin General Marin, CA 94965"/>
+        </reporter>
+        <period>
+          <start value="2020-03-31"/>
+          <end value="2020-03-31"/>
+        </period>
+        <group>
+          <code>
+            <text value="numVent"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numVentUse"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numTotBeds"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numbeds"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+            <count value="100"/>
+          </population>
+          <measureScore>
+            <value value="100"/>
+          </measureScore>
+        </group>
+        <group>
+          <code>
+            <text value="numBedsOcc"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numICUBeds"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numICUBedsOcc"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numC19HospPats"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numC19MechVentPats"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numC19HOPats"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numC19OverflowPats"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numC19OFMechVentPats"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numC19Died"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="surgicalMasks"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+      </MeasureReport>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="MeasureReport"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:3a9a58e6-7c79-11ea-bcad-a4d18ccf5172"/>
+    <resource>
+      <MeasureReport>
+        <id value="3a9a58e6-7c79-11ea-bcad-a4d18ccf5172"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p></div>
+        </text>
+        <contained>
+          <Location>
+            <id value="loc"/>
+            <identifier>
+              <system value="urn:oid:2.16.840.1.113883.6.277"/>
+              <value value="2.16.840.1.113883.6.277.123"/>
+            </identifier>
+            <identifier>
+              <system value="http://example.org/cms_cert_system"/>
+              <value value="1234567"/>
+            </identifier>
+            <name value="Marin General"/>
+            <address>
+              <type value="physical"/>
+              <text value="Marin, CA 94965"/>
+              <district value="Marin"/>
+              <state value="CA"/>
+              <postalCode value="94965"/>
+            </address>
+            <physicalType>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/location-physical-type"/>
+                <code value="jdn"/>
+                <display value="Jurisdiction"/>
+              </coding>
+              <text value="US County"/>
+            </physicalType>
+          </Location>
+        </contained>
+        <status value="complete"/>
+        <type value="individual"/>
+        <measure value="http://cdcmeasures.example.org/cdc-covid"/>
+        <subject>
+          <reference value="#loc"/>
+          <display value="Marin General Marin, CA 94965"/>
+        </subject>
+        <date value="2020-04-12T04:51:06.556448Z"/>
+        <reporter>
+          <reference value="#loc"/>
+          <display value="Marin General Marin, CA 94965"/>
+        </reporter>
+        <period>
+          <start value="2020-04-01"/>
+          <end value="2020-04-01"/>
+        </period>
+        <group>
+          <code>
+            <text value="numVent"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numVentUse"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numTotBeds"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numbeds"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+            <count value="100"/>
+          </population>
+          <measureScore>
+            <value value="100"/>
+          </measureScore>
+        </group>
+        <group>
+          <code>
+            <text value="numBedsOcc"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numICUBeds"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numICUBedsOcc"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numC19HospPats"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numC19MechVentPats"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numC19HOPats"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numC19OverflowPats"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numC19OFMechVentPats"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numC19Died"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="surgicalMasks"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+      </MeasureReport>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="MeasureReport"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:3acd5372-7c79-11ea-bcad-a4d18ccf5172"/>
+    <resource>
+      <MeasureReport>
+        <id value="3acd5372-7c79-11ea-bcad-a4d18ccf5172"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p></div>
+        </text>
+        <contained>
+          <Location>
+            <id value="loc"/>
+            <identifier>
+              <system value="urn:oid:2.16.840.1.113883.6.277"/>
+              <value value="2.16.840.1.113883.6.277.123"/>
+            </identifier>
+            <identifier>
+              <system value="http://example.org/cms_cert_system"/>
+              <value value="1234567"/>
+            </identifier>
+            <name value="Marin General"/>
+            <address>
+              <type value="physical"/>
+              <text value="Marin, CA 94965"/>
+              <district value="Marin"/>
+              <state value="CA"/>
+              <postalCode value="94965"/>
+            </address>
+            <physicalType>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/location-physical-type"/>
+                <code value="jdn"/>
+                <display value="Jurisdiction"/>
+              </coding>
+              <text value="US County"/>
+            </physicalType>
+          </Location>
+        </contained>
+        <status value="complete"/>
+        <type value="individual"/>
+        <measure value="http://cdcmeasures.example.org/cdc-covid"/>
+        <subject>
+          <reference value="#loc"/>
+          <display value="Marin General Marin, CA 94965"/>
+        </subject>
+        <date value="2020-04-12T04:51:06.556448Z"/>
+        <reporter>
+          <reference value="#loc"/>
+          <display value="Marin General Marin, CA 94965"/>
+        </reporter>
+        <period>
+          <start value="2020-04-02"/>
+          <end value="2020-04-02"/>
+        </period>
+        <group>
+          <code>
+            <text value="numVent"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numVentUse"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numTotBeds"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numbeds"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+            <count value="100"/>
+          </population>
+          <measureScore>
+            <value value="100"/>
+          </measureScore>
+        </group>
+        <group>
+          <code>
+            <text value="numBedsOcc"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numICUBeds"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numICUBedsOcc"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numC19HospPats"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numC19MechVentPats"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numC19HOPats"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numC19OverflowPats"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numC19OFMechVentPats"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numC19Died"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="surgicalMasks"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+      </MeasureReport>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="MeasureReport"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:3afbafe2-7c79-11ea-bcad-a4d18ccf5172"/>
+    <resource>
+      <MeasureReport>
+        <id value="3afbafe2-7c79-11ea-bcad-a4d18ccf5172"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p></div>
+        </text>
+        <contained>
+          <Location>
+            <id value="loc"/>
+            <identifier>
+              <system value="urn:oid:2.16.840.1.113883.6.277"/>
+              <value value="2.16.840.1.113883.6.277.123"/>
+            </identifier>
+            <identifier>
+              <system value="http://example.org/cms_cert_system"/>
+              <value value="1234567"/>
+            </identifier>
+            <name value="Marin General"/>
+            <address>
+              <type value="physical"/>
+              <text value="Marin, CA 94965"/>
+              <district value="Marin"/>
+              <state value="CA"/>
+              <postalCode value="94965"/>
+            </address>
+            <physicalType>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/location-physical-type"/>
+                <code value="jdn"/>
+                <display value="Jurisdiction"/>
+              </coding>
+              <text value="US County"/>
+            </physicalType>
+          </Location>
+        </contained>
+        <status value="complete"/>
+        <type value="individual"/>
+        <measure value="http://cdcmeasures.example.org/cdc-covid"/>
+        <subject>
+          <reference value="#loc"/>
+          <display value="Marin General Marin, CA 94965"/>
+        </subject>
+        <date value="2020-04-12T04:51:06.556448Z"/>
+        <reporter>
+          <reference value="#loc"/>
+          <display value="Marin General Marin, CA 94965"/>
+        </reporter>
+        <period>
+          <start value="2020-04-03"/>
+          <end value="2020-04-03"/>
+        </period>
+        <group>
+          <code>
+            <text value="numVent"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numVentUse"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numTotBeds"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numbeds"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+            <count value="100"/>
+          </population>
+          <measureScore>
+            <value value="100"/>
+          </measureScore>
+        </group>
+        <group>
+          <code>
+            <text value="numBedsOcc"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numICUBeds"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numICUBedsOcc"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numC19HospPats"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numC19MechVentPats"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numC19HOPats"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numC19OverflowPats"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numC19OFMechVentPats"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numC19Died"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="surgicalMasks"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+      </MeasureReport>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="MeasureReport"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:3b283936-7c79-11ea-bcad-a4d18ccf5172"/>
+    <resource>
+      <MeasureReport>
+        <id value="3b283936-7c79-11ea-bcad-a4d18ccf5172"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p></div>
+        </text>
+        <contained>
+          <Location>
+            <id value="loc"/>
+            <identifier>
+              <system value="urn:oid:2.16.840.1.113883.6.277"/>
+              <value value="2.16.840.1.113883.6.277.123"/>
+            </identifier>
+            <identifier>
+              <system value="http://example.org/cms_cert_system"/>
+              <value value="1234567"/>
+            </identifier>
+            <name value="Marin General"/>
+            <address>
+              <type value="physical"/>
+              <text value="Marin, CA 94965"/>
+              <district value="Marin"/>
+              <state value="CA"/>
+              <postalCode value="94965"/>
+            </address>
+            <physicalType>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/location-physical-type"/>
+                <code value="jdn"/>
+                <display value="Jurisdiction"/>
+              </coding>
+              <text value="US County"/>
+            </physicalType>
+          </Location>
+        </contained>
+        <status value="complete"/>
+        <type value="individual"/>
+        <measure value="http://cdcmeasures.example.org/cdc-covid"/>
+        <subject>
+          <reference value="#loc"/>
+          <display value="Marin General Marin, CA 94965"/>
+        </subject>
+        <date value="2020-04-12T04:51:06.556448Z"/>
+        <reporter>
+          <reference value="#loc"/>
+          <display value="Marin General Marin, CA 94965"/>
+        </reporter>
+        <period>
+          <start value="2020-04-04"/>
+          <end value="2020-04-04"/>
+        </period>
+        <group>
+          <code>
+            <text value="numVent"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numVentUse"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numTotBeds"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numbeds"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+            <count value="100"/>
+          </population>
+          <measureScore>
+            <value value="100"/>
+          </measureScore>
+        </group>
+        <group>
+          <code>
+            <text value="numBedsOcc"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numICUBeds"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numICUBedsOcc"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numC19HospPats"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numC19MechVentPats"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numC19HOPats"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numC19OverflowPats"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numC19OFMechVentPats"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numC19Died"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="surgicalMasks"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+      </MeasureReport>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="MeasureReport"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:3b59258c-7c79-11ea-bcad-a4d18ccf5172"/>
+    <resource>
+      <MeasureReport>
+        <id value="3b59258c-7c79-11ea-bcad-a4d18ccf5172"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p></div>
+        </text>
+        <contained>
+          <Location>
+            <id value="loc"/>
+            <identifier>
+              <system value="urn:oid:2.16.840.1.113883.6.277"/>
+              <value value="2.16.840.1.113883.6.277.123"/>
+            </identifier>
+            <identifier>
+              <system value="http://example.org/cms_cert_system"/>
+              <value value="1234567"/>
+            </identifier>
+            <name value="Marin General"/>
+            <address>
+              <type value="physical"/>
+              <text value="Marin, CA 94965"/>
+              <district value="Marin"/>
+              <state value="CA"/>
+              <postalCode value="94965"/>
+            </address>
+            <physicalType>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/location-physical-type"/>
+                <code value="jdn"/>
+                <display value="Jurisdiction"/>
+              </coding>
+              <text value="US County"/>
+            </physicalType>
+          </Location>
+        </contained>
+        <status value="complete"/>
+        <type value="individual"/>
+        <measure value="http://cdcmeasures.example.org/cdc-covid"/>
+        <subject>
+          <reference value="#loc"/>
+          <display value="Marin General Marin, CA 94965"/>
+        </subject>
+        <date value="2020-04-12T04:51:06.556448Z"/>
+        <reporter>
+          <reference value="#loc"/>
+          <display value="Marin General Marin, CA 94965"/>
+        </reporter>
+        <period>
+          <start value="2020-04-05"/>
+          <end value="2020-04-05"/>
+        </period>
+        <group>
+          <code>
+            <text value="numVent"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numVentUse"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numTotBeds"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numbeds"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+            <count value="100"/>
+          </population>
+          <measureScore>
+            <value value="100"/>
+          </measureScore>
+        </group>
+        <group>
+          <code>
+            <text value="numBedsOcc"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numICUBeds"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numICUBedsOcc"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numC19HospPats"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numC19MechVentPats"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numC19HOPats"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numC19OverflowPats"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numC19OFMechVentPats"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numC19Died"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="surgicalMasks"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+      </MeasureReport>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="MeasureReport"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:3b91342c-7c79-11ea-bcad-a4d18ccf5172"/>
+    <resource>
+      <MeasureReport>
+        <id value="3b91342c-7c79-11ea-bcad-a4d18ccf5172"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p></div>
+        </text>
+        <contained>
+          <Location>
+            <id value="loc"/>
+            <identifier>
+              <system value="urn:oid:2.16.840.1.113883.6.277"/>
+              <value value="2.16.840.1.113883.6.277.123"/>
+            </identifier>
+            <identifier>
+              <system value="http://example.org/cms_cert_system"/>
+              <value value="1234567"/>
+            </identifier>
+            <name value="Marin General"/>
+            <address>
+              <type value="physical"/>
+              <text value="Marin, CA 94965"/>
+              <district value="Marin"/>
+              <state value="CA"/>
+              <postalCode value="94965"/>
+            </address>
+            <physicalType>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/location-physical-type"/>
+                <code value="jdn"/>
+                <display value="Jurisdiction"/>
+              </coding>
+              <text value="US County"/>
+            </physicalType>
+          </Location>
+        </contained>
+        <status value="complete"/>
+        <type value="individual"/>
+        <measure value="http://cdcmeasures.example.org/cdc-covid"/>
+        <subject>
+          <reference value="#loc"/>
+          <display value="Marin General Marin, CA 94965"/>
+        </subject>
+        <date value="2020-04-12T04:51:06.556448Z"/>
+        <reporter>
+          <reference value="#loc"/>
+          <display value="Marin General Marin, CA 94965"/>
+        </reporter>
+        <period>
+          <start value="2020-04-06"/>
+          <end value="2020-04-06"/>
+        </period>
+        <group>
+          <code>
+            <text value="numVent"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numVentUse"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numTotBeds"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numbeds"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+            <count value="100"/>
+          </population>
+          <measureScore>
+            <value value="100"/>
+          </measureScore>
+        </group>
+        <group>
+          <code>
+            <text value="numBedsOcc"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numICUBeds"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numICUBedsOcc"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numC19HospPats"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numC19MechVentPats"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numC19HOPats"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numC19OverflowPats"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numC19OFMechVentPats"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="numC19Died"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+        <group>
+          <code>
+            <text value="surgicalMasks"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+          </population>
+        </group>
+      </MeasureReport>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="MeasureReport"/>
+    </request>
+  </entry>
+</Bundle>

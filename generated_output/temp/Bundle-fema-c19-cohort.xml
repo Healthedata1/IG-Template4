@@ -1,0 +1,1561 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="fema-c19-cohort"/>
+  <type value="transaction"/>
+  <timestamp value="2020-04-12T04:56:03.530613Z"/>
+  <entry>
+    <fullUrl value="urn:uuid:eaf1bdf6-7c79-11ea-bcad-a4d18ccf5172"/>
+    <resource>
+      <MeasureReport>
+        <id value="eaf1bdf6-7c79-11ea-bcad-a4d18ccf5172"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p></div>
+        </text>
+        <contained>
+          <Location>
+            <id value="loc"/>
+            <identifier>
+              <system value="urn:oid:2.16.840.1.113883.6.277"/>
+              <value value="2.16.840.1.113883.6.277.123"/>
+            </identifier>
+            <identifier>
+              <system value="http://example.org/cms_cert_system"/>
+              <value value="1234567"/>
+            </identifier>
+            <name value="Marin General"/>
+            <address>
+              <type value="physical"/>
+              <text value="Marin, CA 94965"/>
+              <district value="Marin"/>
+              <state value="CA"/>
+              <postalCode value="94965"/>
+            </address>
+            <physicalType>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/location-physical-type"/>
+                <code value="jdn"/>
+                <display value="Jurisdiction"/>
+              </coding>
+              <text value="US County"/>
+            </physicalType>
+          </Location>
+        </contained>
+        <status value="complete"/>
+        <type value="individual"/>
+        <measure value="http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort"/>
+        <subject>
+          <reference value="#loc"/>
+          <display value="Marin General Marin, CA 94965"/>
+        </subject>
+        <date value="2020-04-12T04:56:03.530613Z"/>
+        <reporter>
+          <reference value="#loc"/>
+          <display value="Marin General Marin, CA 94965"/>
+        </reporter>
+        <period>
+          <start value="2020-04-04"/>
+          <end value="2020-04-04"/>
+        </period>
+        <group>
+          <code>
+            <text value="newDiagnosticTests"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+            <count value="100"/>
+          </population>
+          <measureScore>
+            <value value="100"/>
+          </measureScore>
+        </group>
+        <group>
+          <code>
+            <text value="cumulativeDiagnosticTests"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+            <count value="1000"/>
+          </population>
+          <measureScore>
+            <value value="1000"/>
+          </measureScore>
+        </group>
+        <group>
+          <code>
+            <text value="cumulativeSpecimensRejected"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+            <count value="45"/>
+          </population>
+          <measureScore>
+            <value value="45"/>
+          </measureScore>
+        </group>
+      </MeasureReport>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="MeasureReport"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:eb1502f2-7c79-11ea-bcad-a4d18ccf5172"/>
+    <resource>
+      <MeasureReport>
+        <id value="eb1502f2-7c79-11ea-bcad-a4d18ccf5172"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p></div>
+        </text>
+        <contained>
+          <Location>
+            <id value="loc"/>
+            <identifier>
+              <system value="urn:oid:2.16.840.1.113883.6.277"/>
+              <value value="2.16.840.1.113883.6.277.123"/>
+            </identifier>
+            <identifier>
+              <system value="http://example.org/cms_cert_system"/>
+              <value value="1234567"/>
+            </identifier>
+            <name value="Marin General"/>
+            <address>
+              <type value="physical"/>
+              <text value="Marin, CA 94965"/>
+              <district value="Marin"/>
+              <state value="CA"/>
+              <postalCode value="94965"/>
+            </address>
+            <physicalType>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/location-physical-type"/>
+                <code value="jdn"/>
+                <display value="Jurisdiction"/>
+              </coding>
+              <text value="US County"/>
+            </physicalType>
+          </Location>
+        </contained>
+        <status value="complete"/>
+        <type value="individual"/>
+        <measure value="http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort"/>
+        <subject>
+          <reference value="#loc"/>
+          <display value="Marin General Marin, CA 94965"/>
+        </subject>
+        <date value="2020-04-12T04:56:03.530613Z"/>
+        <reporter>
+          <reference value="#loc"/>
+          <display value="Marin General Marin, CA 94965"/>
+        </reporter>
+        <period>
+          <start value="2020-04-05"/>
+          <end value="2020-04-05"/>
+        </period>
+        <group>
+          <code>
+            <text value="newDiagnosticTests"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+            <count value="100"/>
+          </population>
+          <measureScore>
+            <value value="100"/>
+          </measureScore>
+        </group>
+        <group>
+          <code>
+            <text value="cumulativeDiagnosticTests"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+            <count value="1100"/>
+          </population>
+          <measureScore>
+            <value value="1100"/>
+          </measureScore>
+        </group>
+        <group>
+          <code>
+            <text value="cumulativeSpecimensRejected"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+            <count value="55"/>
+          </population>
+          <measureScore>
+            <value value="55"/>
+          </measureScore>
+        </group>
+      </MeasureReport>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="MeasureReport"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:eb3625f4-7c79-11ea-bcad-a4d18ccf5172"/>
+    <resource>
+      <MeasureReport>
+        <id value="eb3625f4-7c79-11ea-bcad-a4d18ccf5172"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p></div>
+        </text>
+        <contained>
+          <Location>
+            <id value="loc"/>
+            <identifier>
+              <system value="urn:oid:2.16.840.1.113883.6.277"/>
+              <value value="2.16.840.1.113883.6.277.123"/>
+            </identifier>
+            <identifier>
+              <system value="http://example.org/cms_cert_system"/>
+              <value value="1234567"/>
+            </identifier>
+            <name value="Marin General"/>
+            <address>
+              <type value="physical"/>
+              <text value="Marin, CA 94965"/>
+              <district value="Marin"/>
+              <state value="CA"/>
+              <postalCode value="94965"/>
+            </address>
+            <physicalType>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/location-physical-type"/>
+                <code value="jdn"/>
+                <display value="Jurisdiction"/>
+              </coding>
+              <text value="US County"/>
+            </physicalType>
+          </Location>
+        </contained>
+        <status value="complete"/>
+        <type value="individual"/>
+        <measure value="http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort"/>
+        <subject>
+          <reference value="#loc"/>
+          <display value="Marin General Marin, CA 94965"/>
+        </subject>
+        <date value="2020-04-12T04:56:03.530613Z"/>
+        <reporter>
+          <reference value="#loc"/>
+          <display value="Marin General Marin, CA 94965"/>
+        </reporter>
+        <period>
+          <start value="2020-04-06"/>
+          <end value="2020-04-06"/>
+        </period>
+        <group>
+          <code>
+            <text value="newDiagnosticTests"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+            <count value="100"/>
+          </population>
+          <measureScore>
+            <value value="100"/>
+          </measureScore>
+        </group>
+        <group>
+          <code>
+            <text value="cumulativeDiagnosticTests"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+            <count value="1200"/>
+          </population>
+          <measureScore>
+            <value value="1200"/>
+          </measureScore>
+        </group>
+        <group>
+          <code>
+            <text value="cumulativeSpecimensRejected"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+            <count value="65"/>
+          </population>
+          <measureScore>
+            <value value="65"/>
+          </measureScore>
+        </group>
+      </MeasureReport>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="MeasureReport"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:eb59caa4-7c79-11ea-bcad-a4d18ccf5172"/>
+    <resource>
+      <MeasureReport>
+        <id value="eb59caa4-7c79-11ea-bcad-a4d18ccf5172"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p></div>
+        </text>
+        <contained>
+          <Location>
+            <id value="loc"/>
+            <identifier>
+              <system value="urn:oid:2.16.840.1.113883.6.277"/>
+              <value value="2.16.840.1.113883.6.277.123"/>
+            </identifier>
+            <identifier>
+              <system value="http://example.org/cms_cert_system"/>
+              <value value="1234567"/>
+            </identifier>
+            <name value="Marin General"/>
+            <address>
+              <type value="physical"/>
+              <text value="Marin, CA 94965"/>
+              <district value="Marin"/>
+              <state value="CA"/>
+              <postalCode value="94965"/>
+            </address>
+            <physicalType>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/location-physical-type"/>
+                <code value="jdn"/>
+                <display value="Jurisdiction"/>
+              </coding>
+              <text value="US County"/>
+            </physicalType>
+          </Location>
+        </contained>
+        <status value="complete"/>
+        <type value="individual"/>
+        <measure value="http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort"/>
+        <subject>
+          <reference value="#loc"/>
+          <display value="Marin General Marin, CA 94965"/>
+        </subject>
+        <date value="2020-04-12T04:56:03.530613Z"/>
+        <reporter>
+          <reference value="#loc"/>
+          <display value="Marin General Marin, CA 94965"/>
+        </reporter>
+        <period>
+          <start value="2020-04-07"/>
+          <end value="2020-04-07"/>
+        </period>
+        <group>
+          <code>
+            <text value="newDiagnosticTests"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+            <count value="100"/>
+          </population>
+          <measureScore>
+            <value value="100"/>
+          </measureScore>
+        </group>
+        <group>
+          <code>
+            <text value="cumulativeDiagnosticTests"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+            <count value="1300"/>
+          </population>
+          <measureScore>
+            <value value="1300"/>
+          </measureScore>
+        </group>
+        <group>
+          <code>
+            <text value="cumulativeSpecimensRejected"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+            <count value="75"/>
+          </population>
+          <measureScore>
+            <value value="75"/>
+          </measureScore>
+        </group>
+      </MeasureReport>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="MeasureReport"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:eb7dd8fe-7c79-11ea-bcad-a4d18ccf5172"/>
+    <resource>
+      <MeasureReport>
+        <id value="eb7dd8fe-7c79-11ea-bcad-a4d18ccf5172"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p></div>
+        </text>
+        <contained>
+          <Location>
+            <id value="loc"/>
+            <identifier>
+              <system value="urn:oid:2.16.840.1.113883.6.277"/>
+              <value value="2.16.840.1.113883.6.277.123"/>
+            </identifier>
+            <identifier>
+              <system value="http://example.org/cms_cert_system"/>
+              <value value="1234567"/>
+            </identifier>
+            <name value="Marin General"/>
+            <address>
+              <type value="physical"/>
+              <text value="Marin, CA 94965"/>
+              <district value="Marin"/>
+              <state value="CA"/>
+              <postalCode value="94965"/>
+            </address>
+            <physicalType>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/location-physical-type"/>
+                <code value="jdn"/>
+                <display value="Jurisdiction"/>
+              </coding>
+              <text value="US County"/>
+            </physicalType>
+          </Location>
+        </contained>
+        <status value="complete"/>
+        <type value="individual"/>
+        <measure value="http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort"/>
+        <subject>
+          <reference value="#loc"/>
+          <display value="Marin General Marin, CA 94965"/>
+        </subject>
+        <date value="2020-04-12T04:56:03.530613Z"/>
+        <reporter>
+          <reference value="#loc"/>
+          <display value="Marin General Marin, CA 94965"/>
+        </reporter>
+        <period>
+          <start value="2020-04-08"/>
+          <end value="2020-04-08"/>
+        </period>
+        <group>
+          <code>
+            <text value="newDiagnosticTests"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+            <count value="100"/>
+          </population>
+          <measureScore>
+            <value value="100"/>
+          </measureScore>
+        </group>
+        <group>
+          <code>
+            <text value="cumulativeDiagnosticTests"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+            <count value="1400"/>
+          </population>
+          <measureScore>
+            <value value="1400"/>
+          </measureScore>
+        </group>
+        <group>
+          <code>
+            <text value="cumulativeSpecimensRejected"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+            <count value="85"/>
+          </population>
+          <measureScore>
+            <value value="85"/>
+          </measureScore>
+        </group>
+      </MeasureReport>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="MeasureReport"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:eba27f60-7c79-11ea-bcad-a4d18ccf5172"/>
+    <resource>
+      <MeasureReport>
+        <id value="eba27f60-7c79-11ea-bcad-a4d18ccf5172"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p></div>
+        </text>
+        <contained>
+          <Location>
+            <id value="loc"/>
+            <identifier>
+              <system value="urn:oid:2.16.840.1.113883.6.277"/>
+              <value value="2.16.840.1.113883.6.277.123"/>
+            </identifier>
+            <identifier>
+              <system value="http://example.org/cms_cert_system"/>
+              <value value="1234567"/>
+            </identifier>
+            <name value="Marin General"/>
+            <address>
+              <type value="physical"/>
+              <text value="Marin, CA 94965"/>
+              <district value="Marin"/>
+              <state value="CA"/>
+              <postalCode value="94965"/>
+            </address>
+            <physicalType>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/location-physical-type"/>
+                <code value="jdn"/>
+                <display value="Jurisdiction"/>
+              </coding>
+              <text value="US County"/>
+            </physicalType>
+          </Location>
+        </contained>
+        <status value="complete"/>
+        <type value="individual"/>
+        <measure value="http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort"/>
+        <subject>
+          <reference value="#loc"/>
+          <display value="Marin General Marin, CA 94965"/>
+        </subject>
+        <date value="2020-04-12T04:56:03.530613Z"/>
+        <reporter>
+          <reference value="#loc"/>
+          <display value="Marin General Marin, CA 94965"/>
+        </reporter>
+        <period>
+          <start value="2020-04-09"/>
+          <end value="2020-04-09"/>
+        </period>
+        <group>
+          <code>
+            <text value="newDiagnosticTests"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+            <count value="100"/>
+          </population>
+          <measureScore>
+            <value value="100"/>
+          </measureScore>
+        </group>
+        <group>
+          <code>
+            <text value="cumulativeDiagnosticTests"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+            <count value="1500"/>
+          </population>
+          <measureScore>
+            <value value="1500"/>
+          </measureScore>
+        </group>
+        <group>
+          <code>
+            <text value="cumulativeSpecimensRejected"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+            <count value="95"/>
+          </population>
+          <measureScore>
+            <value value="95"/>
+          </measureScore>
+        </group>
+      </MeasureReport>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="MeasureReport"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:ebc5b642-7c79-11ea-bcad-a4d18ccf5172"/>
+    <resource>
+      <MeasureReport>
+        <id value="ebc5b642-7c79-11ea-bcad-a4d18ccf5172"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p></div>
+        </text>
+        <contained>
+          <Location>
+            <id value="loc"/>
+            <identifier>
+              <system value="urn:oid:2.16.840.1.113883.6.277"/>
+              <value value="2.16.840.1.113883.6.277.123"/>
+            </identifier>
+            <identifier>
+              <system value="http://example.org/cms_cert_system"/>
+              <value value="1234567"/>
+            </identifier>
+            <name value="Marin General"/>
+            <address>
+              <type value="physical"/>
+              <text value="Marin, CA 94965"/>
+              <district value="Marin"/>
+              <state value="CA"/>
+              <postalCode value="94965"/>
+            </address>
+            <physicalType>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/location-physical-type"/>
+                <code value="jdn"/>
+                <display value="Jurisdiction"/>
+              </coding>
+              <text value="US County"/>
+            </physicalType>
+          </Location>
+        </contained>
+        <status value="complete"/>
+        <type value="individual"/>
+        <measure value="http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort"/>
+        <subject>
+          <reference value="#loc"/>
+          <display value="Marin General Marin, CA 94965"/>
+        </subject>
+        <date value="2020-04-12T04:56:03.530613Z"/>
+        <reporter>
+          <reference value="#loc"/>
+          <display value="Marin General Marin, CA 94965"/>
+        </reporter>
+        <period>
+          <start value="2020-04-10"/>
+          <end value="2020-04-10"/>
+        </period>
+        <group>
+          <code>
+            <text value="newDiagnosticTests"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+            <count value="100"/>
+          </population>
+          <measureScore>
+            <value value="100"/>
+          </measureScore>
+        </group>
+        <group>
+          <code>
+            <text value="cumulativeDiagnosticTests"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+            <count value="1600"/>
+          </population>
+          <measureScore>
+            <value value="1600"/>
+          </measureScore>
+        </group>
+        <group>
+          <code>
+            <text value="cumulativeSpecimensRejected"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+            <count value="105"/>
+          </population>
+          <measureScore>
+            <value value="105"/>
+          </measureScore>
+        </group>
+      </MeasureReport>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="MeasureReport"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:f39d181a-7c79-11ea-bcad-a4d18ccf5172"/>
+    <resource>
+      <MeasureReport>
+        <id value="f39d181a-7c79-11ea-bcad-a4d18ccf5172"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p></div>
+        </text>
+        <contained>
+          <Location>
+            <id value="loc"/>
+            <identifier>
+              <system value="urn:oid:2.16.840.1.113883.6.277"/>
+              <value value="2.16.840.1.113883.6.277.123"/>
+            </identifier>
+            <identifier>
+              <system value="http://example.org/cms_cert_system"/>
+              <value value="1234567"/>
+            </identifier>
+            <name value="Marin General"/>
+            <address>
+              <type value="physical"/>
+              <text value="Marin, CA 94965"/>
+              <district value="Marin"/>
+              <state value="CA"/>
+              <postalCode value="94965"/>
+            </address>
+            <physicalType>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/location-physical-type"/>
+                <code value="jdn"/>
+                <display value="Jurisdiction"/>
+              </coding>
+              <text value="US County"/>
+            </physicalType>
+          </Location>
+        </contained>
+        <status value="complete"/>
+        <type value="individual"/>
+        <measure value="http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort"/>
+        <subject>
+          <reference value="#loc"/>
+          <display value="Marin General Marin, CA 94965"/>
+        </subject>
+        <date value="2020-04-12T04:56:03.530613Z"/>
+        <reporter>
+          <reference value="#loc"/>
+          <display value="Marin General Marin, CA 94965"/>
+        </reporter>
+        <period>
+          <start value="2020-04-04"/>
+          <end value="2020-04-04"/>
+        </period>
+        <group>
+          <code>
+            <text value="newDiagnosticTests"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+            <count value="100"/>
+          </population>
+          <measureScore>
+            <value value="100"/>
+          </measureScore>
+        </group>
+        <group>
+          <code>
+            <text value="cumulativeDiagnosticTests"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+            <count value="1000"/>
+          </population>
+          <measureScore>
+            <value value="1000"/>
+          </measureScore>
+        </group>
+        <group>
+          <code>
+            <text value="cumulativeSpecimensRejected"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+            <count value="45"/>
+          </population>
+          <measureScore>
+            <value value="45"/>
+          </measureScore>
+        </group>
+      </MeasureReport>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="MeasureReport"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:f3c33324-7c79-11ea-bcad-a4d18ccf5172"/>
+    <resource>
+      <MeasureReport>
+        <id value="f3c33324-7c79-11ea-bcad-a4d18ccf5172"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p></div>
+        </text>
+        <contained>
+          <Location>
+            <id value="loc"/>
+            <identifier>
+              <system value="urn:oid:2.16.840.1.113883.6.277"/>
+              <value value="2.16.840.1.113883.6.277.123"/>
+            </identifier>
+            <identifier>
+              <system value="http://example.org/cms_cert_system"/>
+              <value value="1234567"/>
+            </identifier>
+            <name value="Marin General"/>
+            <address>
+              <type value="physical"/>
+              <text value="Marin, CA 94965"/>
+              <district value="Marin"/>
+              <state value="CA"/>
+              <postalCode value="94965"/>
+            </address>
+            <physicalType>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/location-physical-type"/>
+                <code value="jdn"/>
+                <display value="Jurisdiction"/>
+              </coding>
+              <text value="US County"/>
+            </physicalType>
+          </Location>
+        </contained>
+        <status value="complete"/>
+        <type value="individual"/>
+        <measure value="http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort"/>
+        <subject>
+          <reference value="#loc"/>
+          <display value="Marin General Marin, CA 94965"/>
+        </subject>
+        <date value="2020-04-12T04:56:03.530613Z"/>
+        <reporter>
+          <reference value="#loc"/>
+          <display value="Marin General Marin, CA 94965"/>
+        </reporter>
+        <period>
+          <start value="2020-04-05"/>
+          <end value="2020-04-05"/>
+        </period>
+        <group>
+          <code>
+            <text value="newDiagnosticTests"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+            <count value="100"/>
+          </population>
+          <measureScore>
+            <value value="100"/>
+          </measureScore>
+        </group>
+        <group>
+          <code>
+            <text value="cumulativeDiagnosticTests"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+            <count value="1100"/>
+          </population>
+          <measureScore>
+            <value value="1100"/>
+          </measureScore>
+        </group>
+        <group>
+          <code>
+            <text value="cumulativeSpecimensRejected"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+            <count value="55"/>
+          </population>
+          <measureScore>
+            <value value="55"/>
+          </measureScore>
+        </group>
+      </MeasureReport>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="MeasureReport"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:f3e7f75e-7c79-11ea-bcad-a4d18ccf5172"/>
+    <resource>
+      <MeasureReport>
+        <id value="f3e7f75e-7c79-11ea-bcad-a4d18ccf5172"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p></div>
+        </text>
+        <contained>
+          <Location>
+            <id value="loc"/>
+            <identifier>
+              <system value="urn:oid:2.16.840.1.113883.6.277"/>
+              <value value="2.16.840.1.113883.6.277.123"/>
+            </identifier>
+            <identifier>
+              <system value="http://example.org/cms_cert_system"/>
+              <value value="1234567"/>
+            </identifier>
+            <name value="Marin General"/>
+            <address>
+              <type value="physical"/>
+              <text value="Marin, CA 94965"/>
+              <district value="Marin"/>
+              <state value="CA"/>
+              <postalCode value="94965"/>
+            </address>
+            <physicalType>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/location-physical-type"/>
+                <code value="jdn"/>
+                <display value="Jurisdiction"/>
+              </coding>
+              <text value="US County"/>
+            </physicalType>
+          </Location>
+        </contained>
+        <status value="complete"/>
+        <type value="individual"/>
+        <measure value="http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort"/>
+        <subject>
+          <reference value="#loc"/>
+          <display value="Marin General Marin, CA 94965"/>
+        </subject>
+        <date value="2020-04-12T04:56:03.530613Z"/>
+        <reporter>
+          <reference value="#loc"/>
+          <display value="Marin General Marin, CA 94965"/>
+        </reporter>
+        <period>
+          <start value="2020-04-06"/>
+          <end value="2020-04-06"/>
+        </period>
+        <group>
+          <code>
+            <text value="newDiagnosticTests"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+            <count value="100"/>
+          </population>
+          <measureScore>
+            <value value="100"/>
+          </measureScore>
+        </group>
+        <group>
+          <code>
+            <text value="cumulativeDiagnosticTests"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+            <count value="1200"/>
+          </population>
+          <measureScore>
+            <value value="1200"/>
+          </measureScore>
+        </group>
+        <group>
+          <code>
+            <text value="cumulativeSpecimensRejected"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+            <count value="65"/>
+          </population>
+          <measureScore>
+            <value value="65"/>
+          </measureScore>
+        </group>
+      </MeasureReport>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="MeasureReport"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:f40ace5a-7c79-11ea-bcad-a4d18ccf5172"/>
+    <resource>
+      <MeasureReport>
+        <id value="f40ace5a-7c79-11ea-bcad-a4d18ccf5172"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p></div>
+        </text>
+        <contained>
+          <Location>
+            <id value="loc"/>
+            <identifier>
+              <system value="urn:oid:2.16.840.1.113883.6.277"/>
+              <value value="2.16.840.1.113883.6.277.123"/>
+            </identifier>
+            <identifier>
+              <system value="http://example.org/cms_cert_system"/>
+              <value value="1234567"/>
+            </identifier>
+            <name value="Marin General"/>
+            <address>
+              <type value="physical"/>
+              <text value="Marin, CA 94965"/>
+              <district value="Marin"/>
+              <state value="CA"/>
+              <postalCode value="94965"/>
+            </address>
+            <physicalType>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/location-physical-type"/>
+                <code value="jdn"/>
+                <display value="Jurisdiction"/>
+              </coding>
+              <text value="US County"/>
+            </physicalType>
+          </Location>
+        </contained>
+        <status value="complete"/>
+        <type value="individual"/>
+        <measure value="http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort"/>
+        <subject>
+          <reference value="#loc"/>
+          <display value="Marin General Marin, CA 94965"/>
+        </subject>
+        <date value="2020-04-12T04:56:03.530613Z"/>
+        <reporter>
+          <reference value="#loc"/>
+          <display value="Marin General Marin, CA 94965"/>
+        </reporter>
+        <period>
+          <start value="2020-04-07"/>
+          <end value="2020-04-07"/>
+        </period>
+        <group>
+          <code>
+            <text value="newDiagnosticTests"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+            <count value="100"/>
+          </population>
+          <measureScore>
+            <value value="100"/>
+          </measureScore>
+        </group>
+        <group>
+          <code>
+            <text value="cumulativeDiagnosticTests"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+            <count value="1300"/>
+          </population>
+          <measureScore>
+            <value value="1300"/>
+          </measureScore>
+        </group>
+        <group>
+          <code>
+            <text value="cumulativeSpecimensRejected"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+            <count value="75"/>
+          </population>
+          <measureScore>
+            <value value="75"/>
+          </measureScore>
+        </group>
+      </MeasureReport>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="MeasureReport"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:f42dddbe-7c79-11ea-bcad-a4d18ccf5172"/>
+    <resource>
+      <MeasureReport>
+        <id value="f42dddbe-7c79-11ea-bcad-a4d18ccf5172"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p></div>
+        </text>
+        <contained>
+          <Location>
+            <id value="loc"/>
+            <identifier>
+              <system value="urn:oid:2.16.840.1.113883.6.277"/>
+              <value value="2.16.840.1.113883.6.277.123"/>
+            </identifier>
+            <identifier>
+              <system value="http://example.org/cms_cert_system"/>
+              <value value="1234567"/>
+            </identifier>
+            <name value="Marin General"/>
+            <address>
+              <type value="physical"/>
+              <text value="Marin, CA 94965"/>
+              <district value="Marin"/>
+              <state value="CA"/>
+              <postalCode value="94965"/>
+            </address>
+            <physicalType>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/location-physical-type"/>
+                <code value="jdn"/>
+                <display value="Jurisdiction"/>
+              </coding>
+              <text value="US County"/>
+            </physicalType>
+          </Location>
+        </contained>
+        <status value="complete"/>
+        <type value="individual"/>
+        <measure value="http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort"/>
+        <subject>
+          <reference value="#loc"/>
+          <display value="Marin General Marin, CA 94965"/>
+        </subject>
+        <date value="2020-04-12T04:56:03.530613Z"/>
+        <reporter>
+          <reference value="#loc"/>
+          <display value="Marin General Marin, CA 94965"/>
+        </reporter>
+        <period>
+          <start value="2020-04-08"/>
+          <end value="2020-04-08"/>
+        </period>
+        <group>
+          <code>
+            <text value="newDiagnosticTests"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+            <count value="100"/>
+          </population>
+          <measureScore>
+            <value value="100"/>
+          </measureScore>
+        </group>
+        <group>
+          <code>
+            <text value="cumulativeDiagnosticTests"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+            <count value="1400"/>
+          </population>
+          <measureScore>
+            <value value="1400"/>
+          </measureScore>
+        </group>
+        <group>
+          <code>
+            <text value="cumulativeSpecimensRejected"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+            <count value="85"/>
+          </population>
+          <measureScore>
+            <value value="85"/>
+          </measureScore>
+        </group>
+      </MeasureReport>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="MeasureReport"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:f45045ca-7c79-11ea-bcad-a4d18ccf5172"/>
+    <resource>
+      <MeasureReport>
+        <id value="f45045ca-7c79-11ea-bcad-a4d18ccf5172"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p></div>
+        </text>
+        <contained>
+          <Location>
+            <id value="loc"/>
+            <identifier>
+              <system value="urn:oid:2.16.840.1.113883.6.277"/>
+              <value value="2.16.840.1.113883.6.277.123"/>
+            </identifier>
+            <identifier>
+              <system value="http://example.org/cms_cert_system"/>
+              <value value="1234567"/>
+            </identifier>
+            <name value="Marin General"/>
+            <address>
+              <type value="physical"/>
+              <text value="Marin, CA 94965"/>
+              <district value="Marin"/>
+              <state value="CA"/>
+              <postalCode value="94965"/>
+            </address>
+            <physicalType>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/location-physical-type"/>
+                <code value="jdn"/>
+                <display value="Jurisdiction"/>
+              </coding>
+              <text value="US County"/>
+            </physicalType>
+          </Location>
+        </contained>
+        <status value="complete"/>
+        <type value="individual"/>
+        <measure value="http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort"/>
+        <subject>
+          <reference value="#loc"/>
+          <display value="Marin General Marin, CA 94965"/>
+        </subject>
+        <date value="2020-04-12T04:56:03.530613Z"/>
+        <reporter>
+          <reference value="#loc"/>
+          <display value="Marin General Marin, CA 94965"/>
+        </reporter>
+        <period>
+          <start value="2020-04-09"/>
+          <end value="2020-04-09"/>
+        </period>
+        <group>
+          <code>
+            <text value="newDiagnosticTests"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+            <count value="100"/>
+          </population>
+          <measureScore>
+            <value value="100"/>
+          </measureScore>
+        </group>
+        <group>
+          <code>
+            <text value="cumulativeDiagnosticTests"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+            <count value="1500"/>
+          </population>
+          <measureScore>
+            <value value="1500"/>
+          </measureScore>
+        </group>
+        <group>
+          <code>
+            <text value="cumulativeSpecimensRejected"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+            <count value="95"/>
+          </population>
+          <measureScore>
+            <value value="95"/>
+          </measureScore>
+        </group>
+      </MeasureReport>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="MeasureReport"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:f479b93c-7c79-11ea-bcad-a4d18ccf5172"/>
+    <resource>
+      <MeasureReport>
+        <id value="f479b93c-7c79-11ea-bcad-a4d18ccf5172"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p></div>
+        </text>
+        <contained>
+          <Location>
+            <id value="loc"/>
+            <identifier>
+              <system value="urn:oid:2.16.840.1.113883.6.277"/>
+              <value value="2.16.840.1.113883.6.277.123"/>
+            </identifier>
+            <identifier>
+              <system value="http://example.org/cms_cert_system"/>
+              <value value="1234567"/>
+            </identifier>
+            <name value="Marin General"/>
+            <address>
+              <type value="physical"/>
+              <text value="Marin, CA 94965"/>
+              <district value="Marin"/>
+              <state value="CA"/>
+              <postalCode value="94965"/>
+            </address>
+            <physicalType>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/location-physical-type"/>
+                <code value="jdn"/>
+                <display value="Jurisdiction"/>
+              </coding>
+              <text value="US County"/>
+            </physicalType>
+          </Location>
+        </contained>
+        <status value="complete"/>
+        <type value="individual"/>
+        <measure value="http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort"/>
+        <subject>
+          <reference value="#loc"/>
+          <display value="Marin General Marin, CA 94965"/>
+        </subject>
+        <date value="2020-04-12T04:56:03.530613Z"/>
+        <reporter>
+          <reference value="#loc"/>
+          <display value="Marin General Marin, CA 94965"/>
+        </reporter>
+        <period>
+          <start value="2020-04-10"/>
+          <end value="2020-04-10"/>
+        </period>
+        <group>
+          <code>
+            <text value="newDiagnosticTests"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+            <count value="100"/>
+          </population>
+          <measureScore>
+            <value value="100"/>
+          </measureScore>
+        </group>
+        <group>
+          <code>
+            <text value="cumulativeDiagnosticTests"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+            <count value="1600"/>
+          </population>
+          <measureScore>
+            <value value="1600"/>
+          </measureScore>
+        </group>
+        <group>
+          <code>
+            <text value="cumulativeSpecimensRejected"/>
+          </code>
+          <population>
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+            <count value="105"/>
+          </population>
+          <measureScore>
+            <value value="105"/>
+          </measureScore>
+        </group>
+      </MeasureReport>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="MeasureReport"/>
+    </request>
+  </entry>
+</Bundle>

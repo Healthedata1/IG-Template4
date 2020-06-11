@@ -1,0 +1,1743 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://www.fhir.org/guides/test4/Bundle/fema-c19-cohort> a fhir:Bundle;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "fema-c19-cohort"];
+  fhir:Bundle.type [ fhir:value "transaction"];
+  fhir:Bundle.timestamp [ fhir:value "2020-04-12T04:56:03.530613Z"^^xsd:dateTime];
+  fhir:Bundle.entry [
+     fhir:index 0;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:eaf1bdf6-7c79-11ea-bcad-a4d18ccf5172" ];
+     fhir:Bundle.entry.resource <urn:uuid:eaf1bdf6-7c79-11ea-bcad-a4d18ccf5172>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "POST" ];
+       fhir:Bundle.entry.request.url [ fhir:value "MeasureReport" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:eb1502f2-7c79-11ea-bcad-a4d18ccf5172" ];
+     fhir:Bundle.entry.resource <urn:uuid:eb1502f2-7c79-11ea-bcad-a4d18ccf5172>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "POST" ];
+       fhir:Bundle.entry.request.url [ fhir:value "MeasureReport" ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:eb3625f4-7c79-11ea-bcad-a4d18ccf5172" ];
+     fhir:Bundle.entry.resource <urn:uuid:eb3625f4-7c79-11ea-bcad-a4d18ccf5172>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "POST" ];
+       fhir:Bundle.entry.request.url [ fhir:value "MeasureReport" ]
+     ]
+  ], [
+     fhir:index 3;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:eb59caa4-7c79-11ea-bcad-a4d18ccf5172" ];
+     fhir:Bundle.entry.resource <urn:uuid:eb59caa4-7c79-11ea-bcad-a4d18ccf5172>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "POST" ];
+       fhir:Bundle.entry.request.url [ fhir:value "MeasureReport" ]
+     ]
+  ], [
+     fhir:index 4;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:eb7dd8fe-7c79-11ea-bcad-a4d18ccf5172" ];
+     fhir:Bundle.entry.resource <urn:uuid:eb7dd8fe-7c79-11ea-bcad-a4d18ccf5172>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "POST" ];
+       fhir:Bundle.entry.request.url [ fhir:value "MeasureReport" ]
+     ]
+  ], [
+     fhir:index 5;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:eba27f60-7c79-11ea-bcad-a4d18ccf5172" ];
+     fhir:Bundle.entry.resource <urn:uuid:eba27f60-7c79-11ea-bcad-a4d18ccf5172>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "POST" ];
+       fhir:Bundle.entry.request.url [ fhir:value "MeasureReport" ]
+     ]
+  ], [
+     fhir:index 6;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:ebc5b642-7c79-11ea-bcad-a4d18ccf5172" ];
+     fhir:Bundle.entry.resource <urn:uuid:ebc5b642-7c79-11ea-bcad-a4d18ccf5172>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "POST" ];
+       fhir:Bundle.entry.request.url [ fhir:value "MeasureReport" ]
+     ]
+  ], [
+     fhir:index 7;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:f39d181a-7c79-11ea-bcad-a4d18ccf5172" ];
+     fhir:Bundle.entry.resource <urn:uuid:f39d181a-7c79-11ea-bcad-a4d18ccf5172>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "POST" ];
+       fhir:Bundle.entry.request.url [ fhir:value "MeasureReport" ]
+     ]
+  ], [
+     fhir:index 8;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:f3c33324-7c79-11ea-bcad-a4d18ccf5172" ];
+     fhir:Bundle.entry.resource <urn:uuid:f3c33324-7c79-11ea-bcad-a4d18ccf5172>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "POST" ];
+       fhir:Bundle.entry.request.url [ fhir:value "MeasureReport" ]
+     ]
+  ], [
+     fhir:index 9;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:f3e7f75e-7c79-11ea-bcad-a4d18ccf5172" ];
+     fhir:Bundle.entry.resource <urn:uuid:f3e7f75e-7c79-11ea-bcad-a4d18ccf5172>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "POST" ];
+       fhir:Bundle.entry.request.url [ fhir:value "MeasureReport" ]
+     ]
+  ], [
+     fhir:index 10;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:f40ace5a-7c79-11ea-bcad-a4d18ccf5172" ];
+     fhir:Bundle.entry.resource <urn:uuid:f40ace5a-7c79-11ea-bcad-a4d18ccf5172>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "POST" ];
+       fhir:Bundle.entry.request.url [ fhir:value "MeasureReport" ]
+     ]
+  ], [
+     fhir:index 11;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:f42dddbe-7c79-11ea-bcad-a4d18ccf5172" ];
+     fhir:Bundle.entry.resource <urn:uuid:f42dddbe-7c79-11ea-bcad-a4d18ccf5172>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "POST" ];
+       fhir:Bundle.entry.request.url [ fhir:value "MeasureReport" ]
+     ]
+  ], [
+     fhir:index 12;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:f45045ca-7c79-11ea-bcad-a4d18ccf5172" ];
+     fhir:Bundle.entry.resource <urn:uuid:f45045ca-7c79-11ea-bcad-a4d18ccf5172>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "POST" ];
+       fhir:Bundle.entry.request.url [ fhir:value "MeasureReport" ]
+     ]
+  ], [
+     fhir:index 13;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:f479b93c-7c79-11ea-bcad-a4d18ccf5172" ];
+     fhir:Bundle.entry.resource <urn:uuid:f479b93c-7c79-11ea-bcad-a4d18ccf5172>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "POST" ];
+       fhir:Bundle.entry.request.url [ fhir:value "MeasureReport" ]
+     ]
+  ] .
+
+<urn:uuid:eaf1bdf6-7c79-11ea-bcad-a4d18ccf5172> a fhir:MeasureReport;
+  fhir:Resource.id [ fhir:value "eaf1bdf6-7c79-11ea-bcad-a4d18ccf5172"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p></div>"
+  ];
+  fhir:DomainResource.contained [
+     a fhir:Location;
+     fhir:index 0;
+     fhir:Resource.id [ fhir:value "loc" ];
+     fhir:Location.identifier [
+       fhir:index 0;
+       fhir:Identifier.system [ fhir:value "urn:oid:2.16.840.1.113883.6.277" ];
+       fhir:Identifier.value [ fhir:value "2.16.840.1.113883.6.277.123" ]
+     ], [
+       fhir:index 1;
+       fhir:Identifier.system [ fhir:value "http://example.org/cms_cert_system" ];
+       fhir:Identifier.value [ fhir:value "1234567" ]
+     ];
+     fhir:Location.name [ fhir:value "Marin General" ];
+     fhir:Location.address [
+       fhir:Address.type [ fhir:value "physical" ];
+       fhir:Address.text [ fhir:value "Marin, CA 94965" ];
+       fhir:Address.district [ fhir:value "Marin" ];
+       fhir:Address.state [ fhir:value "CA" ];
+       fhir:Address.postalCode [ fhir:value "94965" ]
+     ];
+     fhir:Location.physicalType [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/location-physical-type" ];
+         fhir:Coding.code [ fhir:value "jdn" ];
+         fhir:Coding.display [ fhir:value "Jurisdiction" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "US County" ]
+     ]
+  ];
+  fhir:MeasureReport.status [ fhir:value "complete"];
+  fhir:MeasureReport.type [ fhir:value "individual"];
+  fhir:MeasureReport.measure [
+     fhir:value "http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort";
+     fhir:link <http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort>
+  ];
+  fhir:MeasureReport.subject [
+     fhir:Reference.reference [ fhir:value "#loc" ];
+     fhir:Reference.display [ fhir:value "Marin General Marin, CA 94965" ]
+  ];
+  fhir:MeasureReport.date [ fhir:value "2020-04-12T04:56:03.530613Z"^^xsd:dateTime];
+  fhir:MeasureReport.reporter [
+     fhir:Reference.reference [ fhir:value "#loc" ];
+     fhir:Reference.display [ fhir:value "Marin General Marin, CA 94965" ]
+  ];
+  fhir:MeasureReport.period [
+     fhir:Period.start [ fhir:value "2020-04-04"^^xsd:date ];
+     fhir:Period.end [ fhir:value "2020-04-04"^^xsd:date ]
+  ];
+  fhir:MeasureReport.group [
+     fhir:index 0;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "newDiagnosticTests" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "100"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "100"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "cumulativeDiagnosticTests" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "1000"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "1000"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "cumulativeSpecimensRejected" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "45"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "45"^^xsd:decimal ]
+     ]
+  ] .
+
+<urn:uuid:eb1502f2-7c79-11ea-bcad-a4d18ccf5172> a fhir:MeasureReport;
+  fhir:Resource.id [ fhir:value "eb1502f2-7c79-11ea-bcad-a4d18ccf5172"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p></div>"
+  ];
+  fhir:DomainResource.contained [
+     a fhir:Location;
+     fhir:index 0;
+     fhir:Resource.id [ fhir:value "loc" ];
+     fhir:Location.identifier [
+       fhir:index 0;
+       fhir:Identifier.system [ fhir:value "urn:oid:2.16.840.1.113883.6.277" ];
+       fhir:Identifier.value [ fhir:value "2.16.840.1.113883.6.277.123" ]
+     ], [
+       fhir:index 1;
+       fhir:Identifier.system [ fhir:value "http://example.org/cms_cert_system" ];
+       fhir:Identifier.value [ fhir:value "1234567" ]
+     ];
+     fhir:Location.name [ fhir:value "Marin General" ];
+     fhir:Location.address [
+       fhir:Address.type [ fhir:value "physical" ];
+       fhir:Address.text [ fhir:value "Marin, CA 94965" ];
+       fhir:Address.district [ fhir:value "Marin" ];
+       fhir:Address.state [ fhir:value "CA" ];
+       fhir:Address.postalCode [ fhir:value "94965" ]
+     ];
+     fhir:Location.physicalType [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/location-physical-type" ];
+         fhir:Coding.code [ fhir:value "jdn" ];
+         fhir:Coding.display [ fhir:value "Jurisdiction" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "US County" ]
+     ]
+  ];
+  fhir:MeasureReport.status [ fhir:value "complete"];
+  fhir:MeasureReport.type [ fhir:value "individual"];
+  fhir:MeasureReport.measure [
+     fhir:value "http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort";
+     fhir:link <http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort>
+  ];
+  fhir:MeasureReport.subject [
+     fhir:Reference.reference [ fhir:value "#loc" ];
+     fhir:Reference.display [ fhir:value "Marin General Marin, CA 94965" ]
+  ];
+  fhir:MeasureReport.date [ fhir:value "2020-04-12T04:56:03.530613Z"^^xsd:dateTime];
+  fhir:MeasureReport.reporter [
+     fhir:Reference.reference [ fhir:value "#loc" ];
+     fhir:Reference.display [ fhir:value "Marin General Marin, CA 94965" ]
+  ];
+  fhir:MeasureReport.period [
+     fhir:Period.start [ fhir:value "2020-04-05"^^xsd:date ];
+     fhir:Period.end [ fhir:value "2020-04-05"^^xsd:date ]
+  ];
+  fhir:MeasureReport.group [
+     fhir:index 0;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "newDiagnosticTests" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "100"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "100"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "cumulativeDiagnosticTests" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "1100"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "1100"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "cumulativeSpecimensRejected" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "55"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "55"^^xsd:decimal ]
+     ]
+  ] .
+
+<urn:uuid:eb3625f4-7c79-11ea-bcad-a4d18ccf5172> a fhir:MeasureReport;
+  fhir:Resource.id [ fhir:value "eb3625f4-7c79-11ea-bcad-a4d18ccf5172"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p></div>"
+  ];
+  fhir:DomainResource.contained [
+     a fhir:Location;
+     fhir:index 0;
+     fhir:Resource.id [ fhir:value "loc" ];
+     fhir:Location.identifier [
+       fhir:index 0;
+       fhir:Identifier.system [ fhir:value "urn:oid:2.16.840.1.113883.6.277" ];
+       fhir:Identifier.value [ fhir:value "2.16.840.1.113883.6.277.123" ]
+     ], [
+       fhir:index 1;
+       fhir:Identifier.system [ fhir:value "http://example.org/cms_cert_system" ];
+       fhir:Identifier.value [ fhir:value "1234567" ]
+     ];
+     fhir:Location.name [ fhir:value "Marin General" ];
+     fhir:Location.address [
+       fhir:Address.type [ fhir:value "physical" ];
+       fhir:Address.text [ fhir:value "Marin, CA 94965" ];
+       fhir:Address.district [ fhir:value "Marin" ];
+       fhir:Address.state [ fhir:value "CA" ];
+       fhir:Address.postalCode [ fhir:value "94965" ]
+     ];
+     fhir:Location.physicalType [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/location-physical-type" ];
+         fhir:Coding.code [ fhir:value "jdn" ];
+         fhir:Coding.display [ fhir:value "Jurisdiction" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "US County" ]
+     ]
+  ];
+  fhir:MeasureReport.status [ fhir:value "complete"];
+  fhir:MeasureReport.type [ fhir:value "individual"];
+  fhir:MeasureReport.measure [
+     fhir:value "http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort";
+     fhir:link <http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort>
+  ];
+  fhir:MeasureReport.subject [
+     fhir:Reference.reference [ fhir:value "#loc" ];
+     fhir:Reference.display [ fhir:value "Marin General Marin, CA 94965" ]
+  ];
+  fhir:MeasureReport.date [ fhir:value "2020-04-12T04:56:03.530613Z"^^xsd:dateTime];
+  fhir:MeasureReport.reporter [
+     fhir:Reference.reference [ fhir:value "#loc" ];
+     fhir:Reference.display [ fhir:value "Marin General Marin, CA 94965" ]
+  ];
+  fhir:MeasureReport.period [
+     fhir:Period.start [ fhir:value "2020-04-06"^^xsd:date ];
+     fhir:Period.end [ fhir:value "2020-04-06"^^xsd:date ]
+  ];
+  fhir:MeasureReport.group [
+     fhir:index 0;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "newDiagnosticTests" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "100"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "100"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "cumulativeDiagnosticTests" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "1200"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "1200"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "cumulativeSpecimensRejected" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "65"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "65"^^xsd:decimal ]
+     ]
+  ] .
+
+<urn:uuid:eb59caa4-7c79-11ea-bcad-a4d18ccf5172> a fhir:MeasureReport;
+  fhir:Resource.id [ fhir:value "eb59caa4-7c79-11ea-bcad-a4d18ccf5172"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p></div>"
+  ];
+  fhir:DomainResource.contained [
+     a fhir:Location;
+     fhir:index 0;
+     fhir:Resource.id [ fhir:value "loc" ];
+     fhir:Location.identifier [
+       fhir:index 0;
+       fhir:Identifier.system [ fhir:value "urn:oid:2.16.840.1.113883.6.277" ];
+       fhir:Identifier.value [ fhir:value "2.16.840.1.113883.6.277.123" ]
+     ], [
+       fhir:index 1;
+       fhir:Identifier.system [ fhir:value "http://example.org/cms_cert_system" ];
+       fhir:Identifier.value [ fhir:value "1234567" ]
+     ];
+     fhir:Location.name [ fhir:value "Marin General" ];
+     fhir:Location.address [
+       fhir:Address.type [ fhir:value "physical" ];
+       fhir:Address.text [ fhir:value "Marin, CA 94965" ];
+       fhir:Address.district [ fhir:value "Marin" ];
+       fhir:Address.state [ fhir:value "CA" ];
+       fhir:Address.postalCode [ fhir:value "94965" ]
+     ];
+     fhir:Location.physicalType [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/location-physical-type" ];
+         fhir:Coding.code [ fhir:value "jdn" ];
+         fhir:Coding.display [ fhir:value "Jurisdiction" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "US County" ]
+     ]
+  ];
+  fhir:MeasureReport.status [ fhir:value "complete"];
+  fhir:MeasureReport.type [ fhir:value "individual"];
+  fhir:MeasureReport.measure [
+     fhir:value "http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort";
+     fhir:link <http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort>
+  ];
+  fhir:MeasureReport.subject [
+     fhir:Reference.reference [ fhir:value "#loc" ];
+     fhir:Reference.display [ fhir:value "Marin General Marin, CA 94965" ]
+  ];
+  fhir:MeasureReport.date [ fhir:value "2020-04-12T04:56:03.530613Z"^^xsd:dateTime];
+  fhir:MeasureReport.reporter [
+     fhir:Reference.reference [ fhir:value "#loc" ];
+     fhir:Reference.display [ fhir:value "Marin General Marin, CA 94965" ]
+  ];
+  fhir:MeasureReport.period [
+     fhir:Period.start [ fhir:value "2020-04-07"^^xsd:date ];
+     fhir:Period.end [ fhir:value "2020-04-07"^^xsd:date ]
+  ];
+  fhir:MeasureReport.group [
+     fhir:index 0;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "newDiagnosticTests" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "100"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "100"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "cumulativeDiagnosticTests" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "1300"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "1300"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "cumulativeSpecimensRejected" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "75"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "75"^^xsd:decimal ]
+     ]
+  ] .
+
+<urn:uuid:eb7dd8fe-7c79-11ea-bcad-a4d18ccf5172> a fhir:MeasureReport;
+  fhir:Resource.id [ fhir:value "eb7dd8fe-7c79-11ea-bcad-a4d18ccf5172"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p></div>"
+  ];
+  fhir:DomainResource.contained [
+     a fhir:Location;
+     fhir:index 0;
+     fhir:Resource.id [ fhir:value "loc" ];
+     fhir:Location.identifier [
+       fhir:index 0;
+       fhir:Identifier.system [ fhir:value "urn:oid:2.16.840.1.113883.6.277" ];
+       fhir:Identifier.value [ fhir:value "2.16.840.1.113883.6.277.123" ]
+     ], [
+       fhir:index 1;
+       fhir:Identifier.system [ fhir:value "http://example.org/cms_cert_system" ];
+       fhir:Identifier.value [ fhir:value "1234567" ]
+     ];
+     fhir:Location.name [ fhir:value "Marin General" ];
+     fhir:Location.address [
+       fhir:Address.type [ fhir:value "physical" ];
+       fhir:Address.text [ fhir:value "Marin, CA 94965" ];
+       fhir:Address.district [ fhir:value "Marin" ];
+       fhir:Address.state [ fhir:value "CA" ];
+       fhir:Address.postalCode [ fhir:value "94965" ]
+     ];
+     fhir:Location.physicalType [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/location-physical-type" ];
+         fhir:Coding.code [ fhir:value "jdn" ];
+         fhir:Coding.display [ fhir:value "Jurisdiction" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "US County" ]
+     ]
+  ];
+  fhir:MeasureReport.status [ fhir:value "complete"];
+  fhir:MeasureReport.type [ fhir:value "individual"];
+  fhir:MeasureReport.measure [
+     fhir:value "http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort";
+     fhir:link <http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort>
+  ];
+  fhir:MeasureReport.subject [
+     fhir:Reference.reference [ fhir:value "#loc" ];
+     fhir:Reference.display [ fhir:value "Marin General Marin, CA 94965" ]
+  ];
+  fhir:MeasureReport.date [ fhir:value "2020-04-12T04:56:03.530613Z"^^xsd:dateTime];
+  fhir:MeasureReport.reporter [
+     fhir:Reference.reference [ fhir:value "#loc" ];
+     fhir:Reference.display [ fhir:value "Marin General Marin, CA 94965" ]
+  ];
+  fhir:MeasureReport.period [
+     fhir:Period.start [ fhir:value "2020-04-08"^^xsd:date ];
+     fhir:Period.end [ fhir:value "2020-04-08"^^xsd:date ]
+  ];
+  fhir:MeasureReport.group [
+     fhir:index 0;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "newDiagnosticTests" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "100"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "100"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "cumulativeDiagnosticTests" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "1400"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "1400"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "cumulativeSpecimensRejected" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "85"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "85"^^xsd:decimal ]
+     ]
+  ] .
+
+<urn:uuid:eba27f60-7c79-11ea-bcad-a4d18ccf5172> a fhir:MeasureReport;
+  fhir:Resource.id [ fhir:value "eba27f60-7c79-11ea-bcad-a4d18ccf5172"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p></div>"
+  ];
+  fhir:DomainResource.contained [
+     a fhir:Location;
+     fhir:index 0;
+     fhir:Resource.id [ fhir:value "loc" ];
+     fhir:Location.identifier [
+       fhir:index 0;
+       fhir:Identifier.system [ fhir:value "urn:oid:2.16.840.1.113883.6.277" ];
+       fhir:Identifier.value [ fhir:value "2.16.840.1.113883.6.277.123" ]
+     ], [
+       fhir:index 1;
+       fhir:Identifier.system [ fhir:value "http://example.org/cms_cert_system" ];
+       fhir:Identifier.value [ fhir:value "1234567" ]
+     ];
+     fhir:Location.name [ fhir:value "Marin General" ];
+     fhir:Location.address [
+       fhir:Address.type [ fhir:value "physical" ];
+       fhir:Address.text [ fhir:value "Marin, CA 94965" ];
+       fhir:Address.district [ fhir:value "Marin" ];
+       fhir:Address.state [ fhir:value "CA" ];
+       fhir:Address.postalCode [ fhir:value "94965" ]
+     ];
+     fhir:Location.physicalType [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/location-physical-type" ];
+         fhir:Coding.code [ fhir:value "jdn" ];
+         fhir:Coding.display [ fhir:value "Jurisdiction" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "US County" ]
+     ]
+  ];
+  fhir:MeasureReport.status [ fhir:value "complete"];
+  fhir:MeasureReport.type [ fhir:value "individual"];
+  fhir:MeasureReport.measure [
+     fhir:value "http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort";
+     fhir:link <http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort>
+  ];
+  fhir:MeasureReport.subject [
+     fhir:Reference.reference [ fhir:value "#loc" ];
+     fhir:Reference.display [ fhir:value "Marin General Marin, CA 94965" ]
+  ];
+  fhir:MeasureReport.date [ fhir:value "2020-04-12T04:56:03.530613Z"^^xsd:dateTime];
+  fhir:MeasureReport.reporter [
+     fhir:Reference.reference [ fhir:value "#loc" ];
+     fhir:Reference.display [ fhir:value "Marin General Marin, CA 94965" ]
+  ];
+  fhir:MeasureReport.period [
+     fhir:Period.start [ fhir:value "2020-04-09"^^xsd:date ];
+     fhir:Period.end [ fhir:value "2020-04-09"^^xsd:date ]
+  ];
+  fhir:MeasureReport.group [
+     fhir:index 0;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "newDiagnosticTests" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "100"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "100"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "cumulativeDiagnosticTests" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "1500"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "1500"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "cumulativeSpecimensRejected" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "95"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "95"^^xsd:decimal ]
+     ]
+  ] .
+
+<urn:uuid:ebc5b642-7c79-11ea-bcad-a4d18ccf5172> a fhir:MeasureReport;
+  fhir:Resource.id [ fhir:value "ebc5b642-7c79-11ea-bcad-a4d18ccf5172"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p></div>"
+  ];
+  fhir:DomainResource.contained [
+     a fhir:Location;
+     fhir:index 0;
+     fhir:Resource.id [ fhir:value "loc" ];
+     fhir:Location.identifier [
+       fhir:index 0;
+       fhir:Identifier.system [ fhir:value "urn:oid:2.16.840.1.113883.6.277" ];
+       fhir:Identifier.value [ fhir:value "2.16.840.1.113883.6.277.123" ]
+     ], [
+       fhir:index 1;
+       fhir:Identifier.system [ fhir:value "http://example.org/cms_cert_system" ];
+       fhir:Identifier.value [ fhir:value "1234567" ]
+     ];
+     fhir:Location.name [ fhir:value "Marin General" ];
+     fhir:Location.address [
+       fhir:Address.type [ fhir:value "physical" ];
+       fhir:Address.text [ fhir:value "Marin, CA 94965" ];
+       fhir:Address.district [ fhir:value "Marin" ];
+       fhir:Address.state [ fhir:value "CA" ];
+       fhir:Address.postalCode [ fhir:value "94965" ]
+     ];
+     fhir:Location.physicalType [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/location-physical-type" ];
+         fhir:Coding.code [ fhir:value "jdn" ];
+         fhir:Coding.display [ fhir:value "Jurisdiction" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "US County" ]
+     ]
+  ];
+  fhir:MeasureReport.status [ fhir:value "complete"];
+  fhir:MeasureReport.type [ fhir:value "individual"];
+  fhir:MeasureReport.measure [
+     fhir:value "http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort";
+     fhir:link <http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort>
+  ];
+  fhir:MeasureReport.subject [
+     fhir:Reference.reference [ fhir:value "#loc" ];
+     fhir:Reference.display [ fhir:value "Marin General Marin, CA 94965" ]
+  ];
+  fhir:MeasureReport.date [ fhir:value "2020-04-12T04:56:03.530613Z"^^xsd:dateTime];
+  fhir:MeasureReport.reporter [
+     fhir:Reference.reference [ fhir:value "#loc" ];
+     fhir:Reference.display [ fhir:value "Marin General Marin, CA 94965" ]
+  ];
+  fhir:MeasureReport.period [
+     fhir:Period.start [ fhir:value "2020-04-10"^^xsd:date ];
+     fhir:Period.end [ fhir:value "2020-04-10"^^xsd:date ]
+  ];
+  fhir:MeasureReport.group [
+     fhir:index 0;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "newDiagnosticTests" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "100"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "100"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "cumulativeDiagnosticTests" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "1600"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "1600"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "cumulativeSpecimensRejected" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "105"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "105"^^xsd:decimal ]
+     ]
+  ] .
+
+<urn:uuid:f39d181a-7c79-11ea-bcad-a4d18ccf5172> a fhir:MeasureReport;
+  fhir:Resource.id [ fhir:value "f39d181a-7c79-11ea-bcad-a4d18ccf5172"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p></div>"
+  ];
+  fhir:DomainResource.contained [
+     a fhir:Location;
+     fhir:index 0;
+     fhir:Resource.id [ fhir:value "loc" ];
+     fhir:Location.identifier [
+       fhir:index 0;
+       fhir:Identifier.system [ fhir:value "urn:oid:2.16.840.1.113883.6.277" ];
+       fhir:Identifier.value [ fhir:value "2.16.840.1.113883.6.277.123" ]
+     ], [
+       fhir:index 1;
+       fhir:Identifier.system [ fhir:value "http://example.org/cms_cert_system" ];
+       fhir:Identifier.value [ fhir:value "1234567" ]
+     ];
+     fhir:Location.name [ fhir:value "Marin General" ];
+     fhir:Location.address [
+       fhir:Address.type [ fhir:value "physical" ];
+       fhir:Address.text [ fhir:value "Marin, CA 94965" ];
+       fhir:Address.district [ fhir:value "Marin" ];
+       fhir:Address.state [ fhir:value "CA" ];
+       fhir:Address.postalCode [ fhir:value "94965" ]
+     ];
+     fhir:Location.physicalType [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/location-physical-type" ];
+         fhir:Coding.code [ fhir:value "jdn" ];
+         fhir:Coding.display [ fhir:value "Jurisdiction" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "US County" ]
+     ]
+  ];
+  fhir:MeasureReport.status [ fhir:value "complete"];
+  fhir:MeasureReport.type [ fhir:value "individual"];
+  fhir:MeasureReport.measure [
+     fhir:value "http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort";
+     fhir:link <http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort>
+  ];
+  fhir:MeasureReport.subject [
+     fhir:Reference.reference [ fhir:value "#loc" ];
+     fhir:Reference.display [ fhir:value "Marin General Marin, CA 94965" ]
+  ];
+  fhir:MeasureReport.date [ fhir:value "2020-04-12T04:56:03.530613Z"^^xsd:dateTime];
+  fhir:MeasureReport.reporter [
+     fhir:Reference.reference [ fhir:value "#loc" ];
+     fhir:Reference.display [ fhir:value "Marin General Marin, CA 94965" ]
+  ];
+  fhir:MeasureReport.period [
+     fhir:Period.start [ fhir:value "2020-04-04"^^xsd:date ];
+     fhir:Period.end [ fhir:value "2020-04-04"^^xsd:date ]
+  ];
+  fhir:MeasureReport.group [
+     fhir:index 0;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "newDiagnosticTests" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "100"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "100"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "cumulativeDiagnosticTests" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "1000"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "1000"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "cumulativeSpecimensRejected" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "45"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "45"^^xsd:decimal ]
+     ]
+  ] .
+
+<urn:uuid:f3c33324-7c79-11ea-bcad-a4d18ccf5172> a fhir:MeasureReport;
+  fhir:Resource.id [ fhir:value "f3c33324-7c79-11ea-bcad-a4d18ccf5172"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p></div>"
+  ];
+  fhir:DomainResource.contained [
+     a fhir:Location;
+     fhir:index 0;
+     fhir:Resource.id [ fhir:value "loc" ];
+     fhir:Location.identifier [
+       fhir:index 0;
+       fhir:Identifier.system [ fhir:value "urn:oid:2.16.840.1.113883.6.277" ];
+       fhir:Identifier.value [ fhir:value "2.16.840.1.113883.6.277.123" ]
+     ], [
+       fhir:index 1;
+       fhir:Identifier.system [ fhir:value "http://example.org/cms_cert_system" ];
+       fhir:Identifier.value [ fhir:value "1234567" ]
+     ];
+     fhir:Location.name [ fhir:value "Marin General" ];
+     fhir:Location.address [
+       fhir:Address.type [ fhir:value "physical" ];
+       fhir:Address.text [ fhir:value "Marin, CA 94965" ];
+       fhir:Address.district [ fhir:value "Marin" ];
+       fhir:Address.state [ fhir:value "CA" ];
+       fhir:Address.postalCode [ fhir:value "94965" ]
+     ];
+     fhir:Location.physicalType [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/location-physical-type" ];
+         fhir:Coding.code [ fhir:value "jdn" ];
+         fhir:Coding.display [ fhir:value "Jurisdiction" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "US County" ]
+     ]
+  ];
+  fhir:MeasureReport.status [ fhir:value "complete"];
+  fhir:MeasureReport.type [ fhir:value "individual"];
+  fhir:MeasureReport.measure [
+     fhir:value "http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort";
+     fhir:link <http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort>
+  ];
+  fhir:MeasureReport.subject [
+     fhir:Reference.reference [ fhir:value "#loc" ];
+     fhir:Reference.display [ fhir:value "Marin General Marin, CA 94965" ]
+  ];
+  fhir:MeasureReport.date [ fhir:value "2020-04-12T04:56:03.530613Z"^^xsd:dateTime];
+  fhir:MeasureReport.reporter [
+     fhir:Reference.reference [ fhir:value "#loc" ];
+     fhir:Reference.display [ fhir:value "Marin General Marin, CA 94965" ]
+  ];
+  fhir:MeasureReport.period [
+     fhir:Period.start [ fhir:value "2020-04-05"^^xsd:date ];
+     fhir:Period.end [ fhir:value "2020-04-05"^^xsd:date ]
+  ];
+  fhir:MeasureReport.group [
+     fhir:index 0;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "newDiagnosticTests" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "100"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "100"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "cumulativeDiagnosticTests" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "1100"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "1100"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "cumulativeSpecimensRejected" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "55"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "55"^^xsd:decimal ]
+     ]
+  ] .
+
+<urn:uuid:f3e7f75e-7c79-11ea-bcad-a4d18ccf5172> a fhir:MeasureReport;
+  fhir:Resource.id [ fhir:value "f3e7f75e-7c79-11ea-bcad-a4d18ccf5172"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p></div>"
+  ];
+  fhir:DomainResource.contained [
+     a fhir:Location;
+     fhir:index 0;
+     fhir:Resource.id [ fhir:value "loc" ];
+     fhir:Location.identifier [
+       fhir:index 0;
+       fhir:Identifier.system [ fhir:value "urn:oid:2.16.840.1.113883.6.277" ];
+       fhir:Identifier.value [ fhir:value "2.16.840.1.113883.6.277.123" ]
+     ], [
+       fhir:index 1;
+       fhir:Identifier.system [ fhir:value "http://example.org/cms_cert_system" ];
+       fhir:Identifier.value [ fhir:value "1234567" ]
+     ];
+     fhir:Location.name [ fhir:value "Marin General" ];
+     fhir:Location.address [
+       fhir:Address.type [ fhir:value "physical" ];
+       fhir:Address.text [ fhir:value "Marin, CA 94965" ];
+       fhir:Address.district [ fhir:value "Marin" ];
+       fhir:Address.state [ fhir:value "CA" ];
+       fhir:Address.postalCode [ fhir:value "94965" ]
+     ];
+     fhir:Location.physicalType [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/location-physical-type" ];
+         fhir:Coding.code [ fhir:value "jdn" ];
+         fhir:Coding.display [ fhir:value "Jurisdiction" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "US County" ]
+     ]
+  ];
+  fhir:MeasureReport.status [ fhir:value "complete"];
+  fhir:MeasureReport.type [ fhir:value "individual"];
+  fhir:MeasureReport.measure [
+     fhir:value "http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort";
+     fhir:link <http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort>
+  ];
+  fhir:MeasureReport.subject [
+     fhir:Reference.reference [ fhir:value "#loc" ];
+     fhir:Reference.display [ fhir:value "Marin General Marin, CA 94965" ]
+  ];
+  fhir:MeasureReport.date [ fhir:value "2020-04-12T04:56:03.530613Z"^^xsd:dateTime];
+  fhir:MeasureReport.reporter [
+     fhir:Reference.reference [ fhir:value "#loc" ];
+     fhir:Reference.display [ fhir:value "Marin General Marin, CA 94965" ]
+  ];
+  fhir:MeasureReport.period [
+     fhir:Period.start [ fhir:value "2020-04-06"^^xsd:date ];
+     fhir:Period.end [ fhir:value "2020-04-06"^^xsd:date ]
+  ];
+  fhir:MeasureReport.group [
+     fhir:index 0;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "newDiagnosticTests" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "100"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "100"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "cumulativeDiagnosticTests" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "1200"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "1200"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "cumulativeSpecimensRejected" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "65"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "65"^^xsd:decimal ]
+     ]
+  ] .
+
+<urn:uuid:f40ace5a-7c79-11ea-bcad-a4d18ccf5172> a fhir:MeasureReport;
+  fhir:Resource.id [ fhir:value "f40ace5a-7c79-11ea-bcad-a4d18ccf5172"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p></div>"
+  ];
+  fhir:DomainResource.contained [
+     a fhir:Location;
+     fhir:index 0;
+     fhir:Resource.id [ fhir:value "loc" ];
+     fhir:Location.identifier [
+       fhir:index 0;
+       fhir:Identifier.system [ fhir:value "urn:oid:2.16.840.1.113883.6.277" ];
+       fhir:Identifier.value [ fhir:value "2.16.840.1.113883.6.277.123" ]
+     ], [
+       fhir:index 1;
+       fhir:Identifier.system [ fhir:value "http://example.org/cms_cert_system" ];
+       fhir:Identifier.value [ fhir:value "1234567" ]
+     ];
+     fhir:Location.name [ fhir:value "Marin General" ];
+     fhir:Location.address [
+       fhir:Address.type [ fhir:value "physical" ];
+       fhir:Address.text [ fhir:value "Marin, CA 94965" ];
+       fhir:Address.district [ fhir:value "Marin" ];
+       fhir:Address.state [ fhir:value "CA" ];
+       fhir:Address.postalCode [ fhir:value "94965" ]
+     ];
+     fhir:Location.physicalType [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/location-physical-type" ];
+         fhir:Coding.code [ fhir:value "jdn" ];
+         fhir:Coding.display [ fhir:value "Jurisdiction" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "US County" ]
+     ]
+  ];
+  fhir:MeasureReport.status [ fhir:value "complete"];
+  fhir:MeasureReport.type [ fhir:value "individual"];
+  fhir:MeasureReport.measure [
+     fhir:value "http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort";
+     fhir:link <http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort>
+  ];
+  fhir:MeasureReport.subject [
+     fhir:Reference.reference [ fhir:value "#loc" ];
+     fhir:Reference.display [ fhir:value "Marin General Marin, CA 94965" ]
+  ];
+  fhir:MeasureReport.date [ fhir:value "2020-04-12T04:56:03.530613Z"^^xsd:dateTime];
+  fhir:MeasureReport.reporter [
+     fhir:Reference.reference [ fhir:value "#loc" ];
+     fhir:Reference.display [ fhir:value "Marin General Marin, CA 94965" ]
+  ];
+  fhir:MeasureReport.period [
+     fhir:Period.start [ fhir:value "2020-04-07"^^xsd:date ];
+     fhir:Period.end [ fhir:value "2020-04-07"^^xsd:date ]
+  ];
+  fhir:MeasureReport.group [
+     fhir:index 0;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "newDiagnosticTests" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "100"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "100"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "cumulativeDiagnosticTests" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "1300"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "1300"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "cumulativeSpecimensRejected" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "75"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "75"^^xsd:decimal ]
+     ]
+  ] .
+
+<urn:uuid:f42dddbe-7c79-11ea-bcad-a4d18ccf5172> a fhir:MeasureReport;
+  fhir:Resource.id [ fhir:value "f42dddbe-7c79-11ea-bcad-a4d18ccf5172"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p></div>"
+  ];
+  fhir:DomainResource.contained [
+     a fhir:Location;
+     fhir:index 0;
+     fhir:Resource.id [ fhir:value "loc" ];
+     fhir:Location.identifier [
+       fhir:index 0;
+       fhir:Identifier.system [ fhir:value "urn:oid:2.16.840.1.113883.6.277" ];
+       fhir:Identifier.value [ fhir:value "2.16.840.1.113883.6.277.123" ]
+     ], [
+       fhir:index 1;
+       fhir:Identifier.system [ fhir:value "http://example.org/cms_cert_system" ];
+       fhir:Identifier.value [ fhir:value "1234567" ]
+     ];
+     fhir:Location.name [ fhir:value "Marin General" ];
+     fhir:Location.address [
+       fhir:Address.type [ fhir:value "physical" ];
+       fhir:Address.text [ fhir:value "Marin, CA 94965" ];
+       fhir:Address.district [ fhir:value "Marin" ];
+       fhir:Address.state [ fhir:value "CA" ];
+       fhir:Address.postalCode [ fhir:value "94965" ]
+     ];
+     fhir:Location.physicalType [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/location-physical-type" ];
+         fhir:Coding.code [ fhir:value "jdn" ];
+         fhir:Coding.display [ fhir:value "Jurisdiction" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "US County" ]
+     ]
+  ];
+  fhir:MeasureReport.status [ fhir:value "complete"];
+  fhir:MeasureReport.type [ fhir:value "individual"];
+  fhir:MeasureReport.measure [
+     fhir:value "http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort";
+     fhir:link <http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort>
+  ];
+  fhir:MeasureReport.subject [
+     fhir:Reference.reference [ fhir:value "#loc" ];
+     fhir:Reference.display [ fhir:value "Marin General Marin, CA 94965" ]
+  ];
+  fhir:MeasureReport.date [ fhir:value "2020-04-12T04:56:03.530613Z"^^xsd:dateTime];
+  fhir:MeasureReport.reporter [
+     fhir:Reference.reference [ fhir:value "#loc" ];
+     fhir:Reference.display [ fhir:value "Marin General Marin, CA 94965" ]
+  ];
+  fhir:MeasureReport.period [
+     fhir:Period.start [ fhir:value "2020-04-08"^^xsd:date ];
+     fhir:Period.end [ fhir:value "2020-04-08"^^xsd:date ]
+  ];
+  fhir:MeasureReport.group [
+     fhir:index 0;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "newDiagnosticTests" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "100"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "100"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "cumulativeDiagnosticTests" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "1400"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "1400"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "cumulativeSpecimensRejected" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "85"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "85"^^xsd:decimal ]
+     ]
+  ] .
+
+<urn:uuid:f45045ca-7c79-11ea-bcad-a4d18ccf5172> a fhir:MeasureReport;
+  fhir:Resource.id [ fhir:value "f45045ca-7c79-11ea-bcad-a4d18ccf5172"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p></div>"
+  ];
+  fhir:DomainResource.contained [
+     a fhir:Location;
+     fhir:index 0;
+     fhir:Resource.id [ fhir:value "loc" ];
+     fhir:Location.identifier [
+       fhir:index 0;
+       fhir:Identifier.system [ fhir:value "urn:oid:2.16.840.1.113883.6.277" ];
+       fhir:Identifier.value [ fhir:value "2.16.840.1.113883.6.277.123" ]
+     ], [
+       fhir:index 1;
+       fhir:Identifier.system [ fhir:value "http://example.org/cms_cert_system" ];
+       fhir:Identifier.value [ fhir:value "1234567" ]
+     ];
+     fhir:Location.name [ fhir:value "Marin General" ];
+     fhir:Location.address [
+       fhir:Address.type [ fhir:value "physical" ];
+       fhir:Address.text [ fhir:value "Marin, CA 94965" ];
+       fhir:Address.district [ fhir:value "Marin" ];
+       fhir:Address.state [ fhir:value "CA" ];
+       fhir:Address.postalCode [ fhir:value "94965" ]
+     ];
+     fhir:Location.physicalType [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/location-physical-type" ];
+         fhir:Coding.code [ fhir:value "jdn" ];
+         fhir:Coding.display [ fhir:value "Jurisdiction" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "US County" ]
+     ]
+  ];
+  fhir:MeasureReport.status [ fhir:value "complete"];
+  fhir:MeasureReport.type [ fhir:value "individual"];
+  fhir:MeasureReport.measure [
+     fhir:value "http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort";
+     fhir:link <http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort>
+  ];
+  fhir:MeasureReport.subject [
+     fhir:Reference.reference [ fhir:value "#loc" ];
+     fhir:Reference.display [ fhir:value "Marin General Marin, CA 94965" ]
+  ];
+  fhir:MeasureReport.date [ fhir:value "2020-04-12T04:56:03.530613Z"^^xsd:dateTime];
+  fhir:MeasureReport.reporter [
+     fhir:Reference.reference [ fhir:value "#loc" ];
+     fhir:Reference.display [ fhir:value "Marin General Marin, CA 94965" ]
+  ];
+  fhir:MeasureReport.period [
+     fhir:Period.start [ fhir:value "2020-04-09"^^xsd:date ];
+     fhir:Period.end [ fhir:value "2020-04-09"^^xsd:date ]
+  ];
+  fhir:MeasureReport.group [
+     fhir:index 0;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "newDiagnosticTests" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "100"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "100"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "cumulativeDiagnosticTests" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "1500"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "1500"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "cumulativeSpecimensRejected" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "95"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "95"^^xsd:decimal ]
+     ]
+  ] .
+
+<urn:uuid:f479b93c-7c79-11ea-bcad-a4d18ccf5172> a fhir:MeasureReport;
+  fhir:Resource.id [ fhir:value "f479b93c-7c79-11ea-bcad-a4d18ccf5172"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p></div>"
+  ];
+  fhir:DomainResource.contained [
+     a fhir:Location;
+     fhir:index 0;
+     fhir:Resource.id [ fhir:value "loc" ];
+     fhir:Location.identifier [
+       fhir:index 0;
+       fhir:Identifier.system [ fhir:value "urn:oid:2.16.840.1.113883.6.277" ];
+       fhir:Identifier.value [ fhir:value "2.16.840.1.113883.6.277.123" ]
+     ], [
+       fhir:index 1;
+       fhir:Identifier.system [ fhir:value "http://example.org/cms_cert_system" ];
+       fhir:Identifier.value [ fhir:value "1234567" ]
+     ];
+     fhir:Location.name [ fhir:value "Marin General" ];
+     fhir:Location.address [
+       fhir:Address.type [ fhir:value "physical" ];
+       fhir:Address.text [ fhir:value "Marin, CA 94965" ];
+       fhir:Address.district [ fhir:value "Marin" ];
+       fhir:Address.state [ fhir:value "CA" ];
+       fhir:Address.postalCode [ fhir:value "94965" ]
+     ];
+     fhir:Location.physicalType [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/location-physical-type" ];
+         fhir:Coding.code [ fhir:value "jdn" ];
+         fhir:Coding.display [ fhir:value "Jurisdiction" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "US County" ]
+     ]
+  ];
+  fhir:MeasureReport.status [ fhir:value "complete"];
+  fhir:MeasureReport.type [ fhir:value "individual"];
+  fhir:MeasureReport.measure [
+     fhir:value "http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort";
+     fhir:link <http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort>
+  ];
+  fhir:MeasureReport.subject [
+     fhir:Reference.reference [ fhir:value "#loc" ];
+     fhir:Reference.display [ fhir:value "Marin General Marin, CA 94965" ]
+  ];
+  fhir:MeasureReport.date [ fhir:value "2020-04-12T04:56:03.530613Z"^^xsd:dateTime];
+  fhir:MeasureReport.reporter [
+     fhir:Reference.reference [ fhir:value "#loc" ];
+     fhir:Reference.display [ fhir:value "Marin General Marin, CA 94965" ]
+  ];
+  fhir:MeasureReport.period [
+     fhir:Period.start [ fhir:value "2020-04-10"^^xsd:date ];
+     fhir:Period.end [ fhir:value "2020-04-10"^^xsd:date ]
+  ];
+  fhir:MeasureReport.group [
+     fhir:index 0;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "newDiagnosticTests" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "100"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "100"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "cumulativeDiagnosticTests" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "1600"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "1600"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "cumulativeSpecimensRejected" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "105"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "105"^^xsd:decimal ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://www.fhir.org/guides/test4/Bundle/fema-c19-cohort.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

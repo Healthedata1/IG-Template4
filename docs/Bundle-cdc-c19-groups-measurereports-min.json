@@ -1,0 +1,2480 @@
+{
+  "resourceType": "Bundle",
+  "id": "cdc-c19-groups-measurereports-min",
+  "type": "transaction",
+  "timestamp": "2020-04-12T04:51:06.556448Z",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:3a3f8aba-7c79-11ea-bcad-a4d18ccf5172",
+      "resource": {
+        "resourceType": "MeasureReport",
+        "id": "3a3f8aba-7c79-11ea-bcad-a4d18ccf5172",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p></div>"
+        },
+        "contained": [
+          {
+            "resourceType": "Location",
+            "id": "loc",
+            "identifier": [
+              {
+                "system": "urn:oid:2.16.840.1.113883.6.277",
+                "value": "2.16.840.1.113883.6.277.123"
+              },
+              {
+                "system": "http://example.org/cms_cert_system",
+                "value": "1234567"
+              }
+            ],
+            "name": "Marin General",
+            "address": {
+              "type": "physical",
+              "text": "Marin, CA 94965",
+              "district": "Marin",
+              "state": "CA",
+              "postalCode": "94965"
+            },
+            "physicalType": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+                  "code": "jdn",
+                  "display": "Jurisdiction"
+                }
+              ],
+              "text": "US County"
+            }
+          }
+        ],
+        "status": "complete",
+        "type": "individual",
+        "measure": "http://cdcmeasures.example.org/cdc-covid",
+        "subject": {
+          "reference": "#loc",
+          "display": "Marin General Marin, CA 94965"
+        },
+        "date": "2020-04-12T04:51:06.556448Z",
+        "reporter": {
+          "reference": "#loc",
+          "display": "Marin General Marin, CA 94965"
+        },
+        "period": {
+          "start": "2020-03-30",
+          "end": "2020-03-30"
+        },
+        "group": [
+          {
+            "code": {
+              "text": "numVent"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numVentUse"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numTotBeds"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numbeds"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                },
+                "count": 100
+              }
+            ],
+            "measureScore": {
+              "value": 100
+            }
+          },
+          {
+            "code": {
+              "text": "numBedsOcc"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numICUBeds"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numICUBedsOcc"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numC19HospPats"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numC19MechVentPats"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numC19HOPats"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numC19OverflowPats"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numC19OFMechVentPats"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numC19Died"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "surgicalMasks"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "MeasureReport"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:3a6d0d82-7c79-11ea-bcad-a4d18ccf5172",
+      "resource": {
+        "resourceType": "MeasureReport",
+        "id": "3a6d0d82-7c79-11ea-bcad-a4d18ccf5172",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p></div>"
+        },
+        "contained": [
+          {
+            "resourceType": "Location",
+            "id": "loc",
+            "identifier": [
+              {
+                "system": "urn:oid:2.16.840.1.113883.6.277",
+                "value": "2.16.840.1.113883.6.277.123"
+              },
+              {
+                "system": "http://example.org/cms_cert_system",
+                "value": "1234567"
+              }
+            ],
+            "name": "Marin General",
+            "address": {
+              "type": "physical",
+              "text": "Marin, CA 94965",
+              "district": "Marin",
+              "state": "CA",
+              "postalCode": "94965"
+            },
+            "physicalType": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+                  "code": "jdn",
+                  "display": "Jurisdiction"
+                }
+              ],
+              "text": "US County"
+            }
+          }
+        ],
+        "status": "complete",
+        "type": "individual",
+        "measure": "http://cdcmeasures.example.org/cdc-covid",
+        "subject": {
+          "reference": "#loc",
+          "display": "Marin General Marin, CA 94965"
+        },
+        "date": "2020-04-12T04:51:06.556448Z",
+        "reporter": {
+          "reference": "#loc",
+          "display": "Marin General Marin, CA 94965"
+        },
+        "period": {
+          "start": "2020-03-31",
+          "end": "2020-03-31"
+        },
+        "group": [
+          {
+            "code": {
+              "text": "numVent"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numVentUse"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numTotBeds"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numbeds"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                },
+                "count": 100
+              }
+            ],
+            "measureScore": {
+              "value": 100
+            }
+          },
+          {
+            "code": {
+              "text": "numBedsOcc"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numICUBeds"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numICUBedsOcc"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numC19HospPats"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numC19MechVentPats"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numC19HOPats"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numC19OverflowPats"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numC19OFMechVentPats"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numC19Died"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "surgicalMasks"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "MeasureReport"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:3a9a58e6-7c79-11ea-bcad-a4d18ccf5172",
+      "resource": {
+        "resourceType": "MeasureReport",
+        "id": "3a9a58e6-7c79-11ea-bcad-a4d18ccf5172",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p></div>"
+        },
+        "contained": [
+          {
+            "resourceType": "Location",
+            "id": "loc",
+            "identifier": [
+              {
+                "system": "urn:oid:2.16.840.1.113883.6.277",
+                "value": "2.16.840.1.113883.6.277.123"
+              },
+              {
+                "system": "http://example.org/cms_cert_system",
+                "value": "1234567"
+              }
+            ],
+            "name": "Marin General",
+            "address": {
+              "type": "physical",
+              "text": "Marin, CA 94965",
+              "district": "Marin",
+              "state": "CA",
+              "postalCode": "94965"
+            },
+            "physicalType": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+                  "code": "jdn",
+                  "display": "Jurisdiction"
+                }
+              ],
+              "text": "US County"
+            }
+          }
+        ],
+        "status": "complete",
+        "type": "individual",
+        "measure": "http://cdcmeasures.example.org/cdc-covid",
+        "subject": {
+          "reference": "#loc",
+          "display": "Marin General Marin, CA 94965"
+        },
+        "date": "2020-04-12T04:51:06.556448Z",
+        "reporter": {
+          "reference": "#loc",
+          "display": "Marin General Marin, CA 94965"
+        },
+        "period": {
+          "start": "2020-04-01",
+          "end": "2020-04-01"
+        },
+        "group": [
+          {
+            "code": {
+              "text": "numVent"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numVentUse"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numTotBeds"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numbeds"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                },
+                "count": 100
+              }
+            ],
+            "measureScore": {
+              "value": 100
+            }
+          },
+          {
+            "code": {
+              "text": "numBedsOcc"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numICUBeds"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numICUBedsOcc"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numC19HospPats"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numC19MechVentPats"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numC19HOPats"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numC19OverflowPats"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numC19OFMechVentPats"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numC19Died"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "surgicalMasks"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "MeasureReport"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:3acd5372-7c79-11ea-bcad-a4d18ccf5172",
+      "resource": {
+        "resourceType": "MeasureReport",
+        "id": "3acd5372-7c79-11ea-bcad-a4d18ccf5172",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p></div>"
+        },
+        "contained": [
+          {
+            "resourceType": "Location",
+            "id": "loc",
+            "identifier": [
+              {
+                "system": "urn:oid:2.16.840.1.113883.6.277",
+                "value": "2.16.840.1.113883.6.277.123"
+              },
+              {
+                "system": "http://example.org/cms_cert_system",
+                "value": "1234567"
+              }
+            ],
+            "name": "Marin General",
+            "address": {
+              "type": "physical",
+              "text": "Marin, CA 94965",
+              "district": "Marin",
+              "state": "CA",
+              "postalCode": "94965"
+            },
+            "physicalType": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+                  "code": "jdn",
+                  "display": "Jurisdiction"
+                }
+              ],
+              "text": "US County"
+            }
+          }
+        ],
+        "status": "complete",
+        "type": "individual",
+        "measure": "http://cdcmeasures.example.org/cdc-covid",
+        "subject": {
+          "reference": "#loc",
+          "display": "Marin General Marin, CA 94965"
+        },
+        "date": "2020-04-12T04:51:06.556448Z",
+        "reporter": {
+          "reference": "#loc",
+          "display": "Marin General Marin, CA 94965"
+        },
+        "period": {
+          "start": "2020-04-02",
+          "end": "2020-04-02"
+        },
+        "group": [
+          {
+            "code": {
+              "text": "numVent"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numVentUse"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numTotBeds"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numbeds"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                },
+                "count": 100
+              }
+            ],
+            "measureScore": {
+              "value": 100
+            }
+          },
+          {
+            "code": {
+              "text": "numBedsOcc"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numICUBeds"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numICUBedsOcc"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numC19HospPats"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numC19MechVentPats"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numC19HOPats"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numC19OverflowPats"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numC19OFMechVentPats"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numC19Died"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "surgicalMasks"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "MeasureReport"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:3afbafe2-7c79-11ea-bcad-a4d18ccf5172",
+      "resource": {
+        "resourceType": "MeasureReport",
+        "id": "3afbafe2-7c79-11ea-bcad-a4d18ccf5172",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p></div>"
+        },
+        "contained": [
+          {
+            "resourceType": "Location",
+            "id": "loc",
+            "identifier": [
+              {
+                "system": "urn:oid:2.16.840.1.113883.6.277",
+                "value": "2.16.840.1.113883.6.277.123"
+              },
+              {
+                "system": "http://example.org/cms_cert_system",
+                "value": "1234567"
+              }
+            ],
+            "name": "Marin General",
+            "address": {
+              "type": "physical",
+              "text": "Marin, CA 94965",
+              "district": "Marin",
+              "state": "CA",
+              "postalCode": "94965"
+            },
+            "physicalType": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+                  "code": "jdn",
+                  "display": "Jurisdiction"
+                }
+              ],
+              "text": "US County"
+            }
+          }
+        ],
+        "status": "complete",
+        "type": "individual",
+        "measure": "http://cdcmeasures.example.org/cdc-covid",
+        "subject": {
+          "reference": "#loc",
+          "display": "Marin General Marin, CA 94965"
+        },
+        "date": "2020-04-12T04:51:06.556448Z",
+        "reporter": {
+          "reference": "#loc",
+          "display": "Marin General Marin, CA 94965"
+        },
+        "period": {
+          "start": "2020-04-03",
+          "end": "2020-04-03"
+        },
+        "group": [
+          {
+            "code": {
+              "text": "numVent"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numVentUse"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numTotBeds"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numbeds"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                },
+                "count": 100
+              }
+            ],
+            "measureScore": {
+              "value": 100
+            }
+          },
+          {
+            "code": {
+              "text": "numBedsOcc"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numICUBeds"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numICUBedsOcc"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numC19HospPats"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numC19MechVentPats"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numC19HOPats"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numC19OverflowPats"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numC19OFMechVentPats"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numC19Died"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "surgicalMasks"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "MeasureReport"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:3b283936-7c79-11ea-bcad-a4d18ccf5172",
+      "resource": {
+        "resourceType": "MeasureReport",
+        "id": "3b283936-7c79-11ea-bcad-a4d18ccf5172",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p></div>"
+        },
+        "contained": [
+          {
+            "resourceType": "Location",
+            "id": "loc",
+            "identifier": [
+              {
+                "system": "urn:oid:2.16.840.1.113883.6.277",
+                "value": "2.16.840.1.113883.6.277.123"
+              },
+              {
+                "system": "http://example.org/cms_cert_system",
+                "value": "1234567"
+              }
+            ],
+            "name": "Marin General",
+            "address": {
+              "type": "physical",
+              "text": "Marin, CA 94965",
+              "district": "Marin",
+              "state": "CA",
+              "postalCode": "94965"
+            },
+            "physicalType": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+                  "code": "jdn",
+                  "display": "Jurisdiction"
+                }
+              ],
+              "text": "US County"
+            }
+          }
+        ],
+        "status": "complete",
+        "type": "individual",
+        "measure": "http://cdcmeasures.example.org/cdc-covid",
+        "subject": {
+          "reference": "#loc",
+          "display": "Marin General Marin, CA 94965"
+        },
+        "date": "2020-04-12T04:51:06.556448Z",
+        "reporter": {
+          "reference": "#loc",
+          "display": "Marin General Marin, CA 94965"
+        },
+        "period": {
+          "start": "2020-04-04",
+          "end": "2020-04-04"
+        },
+        "group": [
+          {
+            "code": {
+              "text": "numVent"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numVentUse"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numTotBeds"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numbeds"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                },
+                "count": 100
+              }
+            ],
+            "measureScore": {
+              "value": 100
+            }
+          },
+          {
+            "code": {
+              "text": "numBedsOcc"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numICUBeds"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numICUBedsOcc"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numC19HospPats"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numC19MechVentPats"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numC19HOPats"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numC19OverflowPats"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numC19OFMechVentPats"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numC19Died"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "surgicalMasks"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "MeasureReport"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:3b59258c-7c79-11ea-bcad-a4d18ccf5172",
+      "resource": {
+        "resourceType": "MeasureReport",
+        "id": "3b59258c-7c79-11ea-bcad-a4d18ccf5172",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p></div>"
+        },
+        "contained": [
+          {
+            "resourceType": "Location",
+            "id": "loc",
+            "identifier": [
+              {
+                "system": "urn:oid:2.16.840.1.113883.6.277",
+                "value": "2.16.840.1.113883.6.277.123"
+              },
+              {
+                "system": "http://example.org/cms_cert_system",
+                "value": "1234567"
+              }
+            ],
+            "name": "Marin General",
+            "address": {
+              "type": "physical",
+              "text": "Marin, CA 94965",
+              "district": "Marin",
+              "state": "CA",
+              "postalCode": "94965"
+            },
+            "physicalType": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+                  "code": "jdn",
+                  "display": "Jurisdiction"
+                }
+              ],
+              "text": "US County"
+            }
+          }
+        ],
+        "status": "complete",
+        "type": "individual",
+        "measure": "http://cdcmeasures.example.org/cdc-covid",
+        "subject": {
+          "reference": "#loc",
+          "display": "Marin General Marin, CA 94965"
+        },
+        "date": "2020-04-12T04:51:06.556448Z",
+        "reporter": {
+          "reference": "#loc",
+          "display": "Marin General Marin, CA 94965"
+        },
+        "period": {
+          "start": "2020-04-05",
+          "end": "2020-04-05"
+        },
+        "group": [
+          {
+            "code": {
+              "text": "numVent"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numVentUse"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numTotBeds"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numbeds"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                },
+                "count": 100
+              }
+            ],
+            "measureScore": {
+              "value": 100
+            }
+          },
+          {
+            "code": {
+              "text": "numBedsOcc"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numICUBeds"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numICUBedsOcc"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numC19HospPats"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numC19MechVentPats"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numC19HOPats"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numC19OverflowPats"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numC19OFMechVentPats"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numC19Died"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "surgicalMasks"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "MeasureReport"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:3b91342c-7c79-11ea-bcad-a4d18ccf5172",
+      "resource": {
+        "resourceType": "MeasureReport",
+        "id": "3b91342c-7c79-11ea-bcad-a4d18ccf5172",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p></div>"
+        },
+        "contained": [
+          {
+            "resourceType": "Location",
+            "id": "loc",
+            "identifier": [
+              {
+                "system": "urn:oid:2.16.840.1.113883.6.277",
+                "value": "2.16.840.1.113883.6.277.123"
+              },
+              {
+                "system": "http://example.org/cms_cert_system",
+                "value": "1234567"
+              }
+            ],
+            "name": "Marin General",
+            "address": {
+              "type": "physical",
+              "text": "Marin, CA 94965",
+              "district": "Marin",
+              "state": "CA",
+              "postalCode": "94965"
+            },
+            "physicalType": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+                  "code": "jdn",
+                  "display": "Jurisdiction"
+                }
+              ],
+              "text": "US County"
+            }
+          }
+        ],
+        "status": "complete",
+        "type": "individual",
+        "measure": "http://cdcmeasures.example.org/cdc-covid",
+        "subject": {
+          "reference": "#loc",
+          "display": "Marin General Marin, CA 94965"
+        },
+        "date": "2020-04-12T04:51:06.556448Z",
+        "reporter": {
+          "reference": "#loc",
+          "display": "Marin General Marin, CA 94965"
+        },
+        "period": {
+          "start": "2020-04-06",
+          "end": "2020-04-06"
+        },
+        "group": [
+          {
+            "code": {
+              "text": "numVent"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numVentUse"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numTotBeds"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numbeds"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                },
+                "count": 100
+              }
+            ],
+            "measureScore": {
+              "value": 100
+            }
+          },
+          {
+            "code": {
+              "text": "numBedsOcc"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numICUBeds"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numICUBedsOcc"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numC19HospPats"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numC19MechVentPats"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numC19HOPats"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numC19OverflowPats"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numC19OFMechVentPats"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "numC19Died"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "code": {
+              "text": "surgicalMasks"
+            },
+            "population": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                      "code": "initial-population"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "MeasureReport"
+      }
+    }
+  ]
+}

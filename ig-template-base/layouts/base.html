@@ -1,0 +1,122 @@
+---
+# jekyll header
+layout: fhir-artifact
+template: base
+type: {{[type]}}
+id: {{[id]}}
+topofpage: True
+---
+
+<!-- ig template for many conformance resource html pages  ('base' in definitions file)  can not be used for conformance resources that have more that a single base template. e.g.,  sd since there are mapping and definitions templates for it as well  they need to be split out into 3 separate templates -->
+
+<!-- ============ CONTENT CONTENT=============== -->
+<h2 id="root">{{site.data.pages[page.path].title}}</h2>
+
+{% case '{{[type]}}' %} <!-- content depends on type -->
+{% when 'ValueSet' %}
+<!-- ============VAlUESET CONTENT CONTENT=============== -->
+
+<p>
+  <b>Summary</b>
+</p>
+{%include {{[type]}}-{{[id]}}-summary.xhtml%}
+
+<p>
+  <b>References</b>
+</p>
+{%include {{[type]}}-{{[id]}}-xref.xhtml%}
+
+<a name="definition"> </a>
+{%include {{[type]}}-{{[id]}}-cld.xhtml%}
+
+<p>&#160;</p>
+<a name="expansion"> </a>
+<h3 id="expansion">Expansion</h3>
+
+{%include {{[type]}}-{{[id]}}-expansion.xhtml%}
+
+<hr/>
+<p>
+  Explanation of the columns that may appear on this page:
+</p>
+<table class="grid">
+  <tr>
+    <td>Level</td>
+    <td>A few code lists that FHIR defines are hierarchical - each code is assigned a level.
+        In this scheme, some codes are under other codes, and imply that the code they are under also applies</td>
+  </tr>
+  <tr>
+    <td>Source</td>
+    <td>The source of the definition of the code (when the value set draws in codes defined elsewhere)</td>
+  </tr>
+  <tr>
+    <td>Code</td>
+    <td>The code (used as the code in the resource instance)</td>
+  </tr>
+  <tr>
+    <td>Display</td>
+    <td>The display (used in the <i>display</i> element of a <a href="{{site.data.fhir.path}}datatypes.html#Coding">Coding</a>). If there is no display, implementers should not simply display the code, but map the concept into their application</td>
+  </tr>
+  <tr>
+    <td>Definition</td>
+    <td>An explanation of the meaning of the concept</td>
+  </tr>
+  <tr>
+    <td>Comments</td>
+    <td>Additional notes about how to use the code</td>
+  </tr>
+</table>
+
+<!-- ============END VAlUESET CONTENT CONTENT=============== -->
+
+{% when 'CodeSystem' %}
+<!-- ============CODESYSTEM CONTENT CONTENT=============== -->
+
+<p>
+  <b>Summary</b>
+</p>
+
+{% include {{[type]}}-{{[id]}}-summary.xhtml %}
+
+<p>
+This Code system is referenced in the content logical definition of the following value sets:
+</p>
+
+{% include {{[type]}}-{{[id]}}-xref.xhtml %}
+
+{% include {{[type]}}-{{[id]}}-content.xhtml %}
+
+
+  <!-- ============END CODESYSTEM CONTENT CONTENT=============== -->
+
+
+{% when 'CapabilityStatement' %}
+<!-- ============CapabilityStatement CONTENT CONTENT=============== -->
+
+<p>
+<a href="{{[id]}}.openapi.json">OpenAPI-Swagger Definition file</a>
+</p>
+
+  {% include {{[type]}}-{{[name]}}.xhtml %}
+
+<!-- ============End CapabilityStatement CONTENT CONTENT=============== -->
+
+{% else %}
+<!-- ============ConceptMap CapabilityStatement SearchParameter OperationDefinition ...CONTENT CONTENT=============== -->
+
+
+  {% include {{[type]}}-{{[name]}}.xhtml %}
+
+  <!-- ============End CodeSystem ConceptMap CapabilityStatement CONTENT CONTENT=============== -->
+
+{% endcase %}
+
+
+<!--{ %raw %} simple format links
+<p>
+Formats: <a href="{{[type]}}-{{[id]}}.html">Narrative</a>, <a href="{{[type]}}-{{[id]}}.xml.html">XML</a>, <a href="{{[type]}}-{{[id]}}.json.html">JSON</a>, <a href="{{[type]}}-{{[id]}}.ttl.html">Turtle</a>
+</p>
+{ % endraw %} -->
+
+
+  <!-- ==============END CONTENT END CONTENT=================== -->

@@ -1,0 +1,76 @@
+---
+# jekyll header
+level: 2
+template: base
+active: format
+layout: fhir-artifact
+type: OperationDefinition
+id: opdef-test
+topofpage: True
+---
+
+<!-- ig template for many conformance resource html pages  ('base' in definitions file)  can not be used for conformance resources that have more that a single base template. e.g.,  sd since there are mapping and definitions templates for it as well  they need to be split out into 3 separate templates -->
+
+<!-- ============ CONTENT CONTENT=============== -->
+
+{% case 'OperationDefinition' %} <!-- content depends on type -->
+{% when 'ValueSet' %}
+<!-- ============VAlUESET CONTENT CONTENT=============== -->
+
+  {% include OperationDefinition-opdef-test-summary.xhtml %}
+  {% include OperationDefinition-opdef-test-xref.xhtml %}
+  {% include OperationDefinition-opdef-test-cld.xhtml %}
+
+  <h3>Expansion</h3>
+
+  {% include OperationDefinition-opdef-test-expansion.xhtml %}
+<!-- ============VAlUESET CONTENT CONTENT=============== -->
+
+{% when 'CodeSystem' %}
+<!-- ============CODESYSTEM CONTENT CONTENT=============== -->
+
+  {% include OperationDefinition-opdef-test-summary.xhtml %}
+
+  {% include OperationDefinition-opdef-test-html.xhtml %}
+
+  <!-- ============CODESYSTEM CONTENT CONTENT=============== -->
+
+{% when 'OperationDefinition' %}
+<!-- ============OperationDefinition CONTENT CONTENT=============== -->
+
+  {% include OperationDefinition-opdef-test-html.xhtml %}
+
+  {% capture my-include %}{% include opdef-test-example.md %}{% endcapture %}{{ my-include | markdownify }}  <!--add inline examples here -->
+<!-- ============OperationDefinition CONTENT CONTENT=============== -->
+
+
+{% when 'CapabilityStatement' %}
+<!-- ============CapabilityStatement CONTENT CONTENT=============== -->
+
+<p>
+Downloads:  CapabilityStatement: (<a href="OperationDefinition-opdef-test.xml" download>XML</a>, <a href="OperationDefinition-opdef-test.json" download>JSON</a>),<a href="opdef-test.openapi.json">OpenAPI-Swagger Definition file</a>
+</p>
+
+  {% include OperationDefinition-opdef-test-html.xhtml %}
+
+<!-- ============CapabilityStatement CONTENT CONTENT=============== -->
+
+{% else %}
+<!-- ============ConceptMap CapabilityStatement SearchParameter CONTENT CONTENT=============== -->
+
+
+  {% include OperationDefinition-opdef-test-html.xhtml %}
+
+  <!-- ============CodeSystem ConceptMap CapabilityStatement CONTENT CONTENT=============== -->
+
+{% endcase %}
+
+
+<!-- simple format links
+<p>
+Formats: <a href="OperationDefinition-opdef-test.html">Narrative</a>, <a href="OperationDefinition-opdef-test.xml.html">XML</a>, <a href="OperationDefinition-opdef-test.json.html">JSON</a>, <a href="OperationDefinition-opdef-test.ttl.html">Turtle</a>
+</p>
+-->
+
+
+  <!-- ==============END CONTENT END CONTENT=================== -->

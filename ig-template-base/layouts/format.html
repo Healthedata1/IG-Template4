@@ -1,0 +1,28 @@
+---
+# jekyll header
+layout: fhir-artifact
+template: format
+type: {{[type]}}
+id: {{[id]}}
+fmt: {{[fmt]}}
+topofpage: True
+---
+
+<!-- ============ default xml or json view  CONTENT=============== -->
+  <p>
+  Download Raw <a href="{{[type]}}-{{[id]}}.{{page.fmt}}" download>{{page.fmt}}</a>
+  </p>
+
+{% include {{[type]}}-{{[name]}}.xhtml %}
+
+<!-- ============ default xml or json content CONTENT CONTENT=============== -->
+
+
+<!--{% raw %} simple format links
+<p>
+Formats: <a href="{{[type]}}-{{[id]}}.html">Narrative</a>, <a href="{{[type]}}-{{[id]}}.xml.html">XML</a>, <a href="{{[type]}}-{{[id]}}.json.html">JSON</a>, <a href="{{[type]}}-{{[id]}}.ttl.html">Turtle</a>
+</p>
+{% endraw %}-->
+
+
+  <!-- ==============END CONTENT END CONTENT=================== -->

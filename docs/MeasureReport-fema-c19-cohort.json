@@ -1,0 +1,123 @@
+{
+  "resourceType": "MeasureReport",
+  "id": "fema-c19-cohort",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>id</b>: fema-c19-cohort</p><p><b>contained</b>: </p><p><b>status</b>: complete</p><p><b>type</b>: individual</p><p><b>measure</b>: <a href=\"http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort\">http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort</a></p><p><b>subject</b>: Marin General Marin, CA 94965. Generated Summary: unknown resource contained</p><p><b>date</b>: Apr 11, 2020, 9:56:03 PM</p><p><b>reporter</b>: Marin General Marin, CA 94965. Generated Summary: unknown resource contained</p><p><b>period</b>: Apr 4, 2020, 12:00:00 AM --&gt; Apr 4, 2020, 12:00:00 AM</p><blockquote><p><b>group</b></p><p><b>code</b>: <span title=\"Codes: \">newDiagnosticTests</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-population initial-population}\">Initial Population</span></td><td>100</td></tr></table><p><b>measureScore</b>: 100</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: <span title=\"Codes: \">cumulativeDiagnosticTests</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-population initial-population}\">Initial Population</span></td><td>1000</td></tr></table><p><b>measureScore</b>: 1000</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: <span title=\"Codes: \">cumulativeSpecimensRejected</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-population initial-population}\">Initial Population</span></td><td>45</td></tr></table><p><b>measureScore</b>: 45</p></blockquote></div>"
+  },
+  "contained": [
+    {
+      "resourceType": "Location",
+      "id": "loc",
+      "identifier": [
+        {
+          "system": "urn:oid:2.16.840.1.113883.6.277",
+          "value": "2.16.840.1.113883.6.277.123"
+        },
+        {
+          "system": "http://example.org/cms_cert_system",
+          "value": "1234567"
+        }
+      ],
+      "name": "Marin General",
+      "address": {
+        "type": "physical",
+        "text": "Marin, CA 94965",
+        "district": "Marin",
+        "state": "CA",
+        "postalCode": "94965"
+      },
+      "physicalType": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+            "code": "jdn",
+            "display": "Jurisdiction"
+          }
+        ],
+        "text": "US County"
+      }
+    }
+  ],
+  "status": "complete",
+  "type": "individual",
+  "measure": "http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-cohort",
+  "subject": {
+    "reference": "#loc",
+    "display": "Marin General Marin, CA 94965"
+  },
+  "date": "2020-04-12T04:56:03.530613Z",
+  "reporter": {
+    "reference": "#loc",
+    "display": "Marin General Marin, CA 94965"
+  },
+  "period": {
+    "start": "2020-04-04",
+    "end": "2020-04-04"
+  },
+  "group": [
+    {
+      "code": {
+        "text": "newDiagnosticTests"
+      },
+      "population": [
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                "code": "initial-population"
+              }
+            ]
+          },
+          "count": 100
+        }
+      ],
+      "measureScore": {
+        "value": 100
+      }
+    },
+    {
+      "code": {
+        "text": "cumulativeDiagnosticTests"
+      },
+      "population": [
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                "code": "initial-population"
+              }
+            ]
+          },
+          "count": 1000
+        }
+      ],
+      "measureScore": {
+        "value": 1000
+      }
+    },
+    {
+      "code": {
+        "text": "cumulativeSpecimensRejected"
+      },
+      "population": [
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                "code": "initial-population"
+              }
+            ]
+          },
+          "count": 45
+        }
+      ],
+      "measureScore": {
+        "value": 45
+      }
+    }
+  ]
+}

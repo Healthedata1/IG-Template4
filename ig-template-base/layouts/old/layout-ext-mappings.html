@@ -1,0 +1,16 @@
+---
+# jekyll header
+layout: fhir-artifact
+template: mappings
+type: {{[type]}}
+id: {{[id]}}
+topofpage: True
+---
+<!-- div style="counter-reset: section 5" class="col-12" -->
+ <!-- what does the counter reset do -->
+
+  <h2 id="root">Extension: {{[title]}} - Mappings</h2>
+
+  {%include StructureDefinition-{{[id]}}-maps.xhtml%}
+
+{% assign includetabscripts = 'true' %}

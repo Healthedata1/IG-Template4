@@ -1,0 +1,959 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="fema-c19-proportion"/>
+  <type value="transaction"/>
+  <timestamp value="2020-04-12T05:04:34.367019Z"/>
+  <entry>
+    <fullUrl value="urn:uuid:1a044f86-7c7b-11ea-bcad-a4d18ccf5172"/>
+    <resource>
+      <MeasureReport>
+        <id value="1a044f86-7c7b-11ea-bcad-a4d18ccf5172"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p></div>
+        </text>
+        <contained>
+          <Location>
+            <id value="loc"/>
+            <identifier>
+              <system value="urn:oid:2.16.840.1.113883.6.277"/>
+              <value value="2.16.840.1.113883.6.277.123"/>
+            </identifier>
+            <identifier>
+              <system value="http://example.org/cms_cert_system"/>
+              <value value="1234567"/>
+            </identifier>
+            <name value="Marin General"/>
+            <address>
+              <type value="physical"/>
+              <text value="Marin, CA 94965"/>
+              <district value="Marin"/>
+              <state value="CA"/>
+              <postalCode value="94965"/>
+            </address>
+            <physicalType>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/location-physical-type"/>
+                <code value="jdn"/>
+                <display value="Jurisdiction"/>
+              </coding>
+              <text value="US County"/>
+            </physicalType>
+          </Location>
+        </contained>
+        <status value="complete"/>
+        <type value="individual"/>
+        <measure value="http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-proportion"/>
+        <subject>
+          <reference value="#loc"/>
+          <display value="Marin General Marin, CA 94965"/>
+        </subject>
+        <date value="2020-04-12T05:04:34.367019Z"/>
+        <reporter>
+          <reference value="#loc"/>
+          <display value="Marin General Marin, CA 94965"/>
+        </reporter>
+        <period>
+          <start value="2020-04-04"/>
+          <end value="2020-04-04"/>
+        </period>
+        <group>
+          <code>
+            <text value="newPercentPositive"/>
+          </code>
+          <population id="newTestsResulted.initial-population">
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+            <count value="80"/>
+          </population>
+          <population id="newTestsResulted.denominator">
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="denominator"/>
+              </coding>
+            </code>
+            <count value="80"/>
+          </population>
+          <population id="newPositiveC19Tests.numerator">
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="numerator"/>
+              </coding>
+            </code>
+            <count value="8"/>
+          </population>
+          <measureScore>
+            <value value="0.1"/>
+            <unit value="%"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="%"/>
+          </measureScore>
+        </group>
+        <group>
+          <code>
+            <text value="cumulativePercentPositive"/>
+          </code>
+          <population id="cumulativeTestsPerformed.initial-population">
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+            <count value="800"/>
+          </population>
+          <population id="cumulativeTestsPerformed.denominator">
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="denominator"/>
+              </coding>
+            </code>
+            <count value="800"/>
+          </population>
+          <population id="cumulativePositiveC19Tests.numerator">
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="numerator"/>
+              </coding>
+            </code>
+            <count value="80"/>
+          </population>
+          <measureScore>
+            <value value="0.1"/>
+            <unit value="%"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="%"/>
+          </measureScore>
+        </group>
+      </MeasureReport>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="MeasureReport"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:1a3a5d7e-7c7b-11ea-bcad-a4d18ccf5172"/>
+    <resource>
+      <MeasureReport>
+        <id value="1a3a5d7e-7c7b-11ea-bcad-a4d18ccf5172"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p></div>
+        </text>
+        <contained>
+          <Location>
+            <id value="loc"/>
+            <identifier>
+              <system value="urn:oid:2.16.840.1.113883.6.277"/>
+              <value value="2.16.840.1.113883.6.277.123"/>
+            </identifier>
+            <identifier>
+              <system value="http://example.org/cms_cert_system"/>
+              <value value="1234567"/>
+            </identifier>
+            <name value="Marin General"/>
+            <address>
+              <type value="physical"/>
+              <text value="Marin, CA 94965"/>
+              <district value="Marin"/>
+              <state value="CA"/>
+              <postalCode value="94965"/>
+            </address>
+            <physicalType>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/location-physical-type"/>
+                <code value="jdn"/>
+                <display value="Jurisdiction"/>
+              </coding>
+              <text value="US County"/>
+            </physicalType>
+          </Location>
+        </contained>
+        <status value="complete"/>
+        <type value="individual"/>
+        <measure value="http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-proportion"/>
+        <subject>
+          <reference value="#loc"/>
+          <display value="Marin General Marin, CA 94965"/>
+        </subject>
+        <date value="2020-04-12T05:04:34.367019Z"/>
+        <reporter>
+          <reference value="#loc"/>
+          <display value="Marin General Marin, CA 94965"/>
+        </reporter>
+        <period>
+          <start value="2020-04-05"/>
+          <end value="2020-04-05"/>
+        </period>
+        <group>
+          <code>
+            <text value="newPercentPositive"/>
+          </code>
+          <population id="newTestsResulted.initial-population">
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+            <count value="90"/>
+          </population>
+          <population id="newTestsResulted.denominator">
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="denominator"/>
+              </coding>
+            </code>
+            <count value="90"/>
+          </population>
+          <population id="newPositiveC19Tests.numerator">
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="numerator"/>
+              </coding>
+            </code>
+            <count value="9"/>
+          </population>
+          <measureScore>
+            <value value="0.1"/>
+            <unit value="%"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="%"/>
+          </measureScore>
+        </group>
+        <group>
+          <code>
+            <text value="cumulativePercentPositive"/>
+          </code>
+          <population id="cumulativeTestsPerformed.initial-population">
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+            <count value="890"/>
+          </population>
+          <population id="cumulativeTestsPerformed.denominator">
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="denominator"/>
+              </coding>
+            </code>
+            <count value="890"/>
+          </population>
+          <population id="cumulativePositiveC19Tests.numerator">
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="numerator"/>
+              </coding>
+            </code>
+            <count value="89"/>
+          </population>
+          <measureScore>
+            <value value="0.1"/>
+            <unit value="%"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="%"/>
+          </measureScore>
+        </group>
+      </MeasureReport>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="MeasureReport"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:1a5fa3c2-7c7b-11ea-bcad-a4d18ccf5172"/>
+    <resource>
+      <MeasureReport>
+        <id value="1a5fa3c2-7c7b-11ea-bcad-a4d18ccf5172"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p></div>
+        </text>
+        <contained>
+          <Location>
+            <id value="loc"/>
+            <identifier>
+              <system value="urn:oid:2.16.840.1.113883.6.277"/>
+              <value value="2.16.840.1.113883.6.277.123"/>
+            </identifier>
+            <identifier>
+              <system value="http://example.org/cms_cert_system"/>
+              <value value="1234567"/>
+            </identifier>
+            <name value="Marin General"/>
+            <address>
+              <type value="physical"/>
+              <text value="Marin, CA 94965"/>
+              <district value="Marin"/>
+              <state value="CA"/>
+              <postalCode value="94965"/>
+            </address>
+            <physicalType>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/location-physical-type"/>
+                <code value="jdn"/>
+                <display value="Jurisdiction"/>
+              </coding>
+              <text value="US County"/>
+            </physicalType>
+          </Location>
+        </contained>
+        <status value="complete"/>
+        <type value="individual"/>
+        <measure value="http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-proportion"/>
+        <subject>
+          <reference value="#loc"/>
+          <display value="Marin General Marin, CA 94965"/>
+        </subject>
+        <date value="2020-04-12T05:04:34.367019Z"/>
+        <reporter>
+          <reference value="#loc"/>
+          <display value="Marin General Marin, CA 94965"/>
+        </reporter>
+        <period>
+          <start value="2020-04-06"/>
+          <end value="2020-04-06"/>
+        </period>
+        <group>
+          <code>
+            <text value="newPercentPositive"/>
+          </code>
+          <population id="newTestsResulted.initial-population">
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+            <count value="100"/>
+          </population>
+          <population id="newTestsResulted.denominator">
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="denominator"/>
+              </coding>
+            </code>
+            <count value="100"/>
+          </population>
+          <population id="newPositiveC19Tests.numerator">
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="numerator"/>
+              </coding>
+            </code>
+            <count value="9"/>
+          </population>
+          <measureScore>
+            <value value="0.09"/>
+            <unit value="%"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="%"/>
+          </measureScore>
+        </group>
+        <group>
+          <code>
+            <text value="cumulativePercentPositive"/>
+          </code>
+          <population id="cumulativeTestsPerformed.initial-population">
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+            <count value="990"/>
+          </population>
+          <population id="cumulativeTestsPerformed.denominator">
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="denominator"/>
+              </coding>
+            </code>
+            <count value="990"/>
+          </population>
+          <population id="cumulativePositiveC19Tests.numerator">
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="numerator"/>
+              </coding>
+            </code>
+            <count value="98"/>
+          </population>
+          <measureScore>
+            <value value="0.09898989898989899"/>
+            <unit value="%"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="%"/>
+          </measureScore>
+        </group>
+      </MeasureReport>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="MeasureReport"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:1a858b96-7c7b-11ea-bcad-a4d18ccf5172"/>
+    <resource>
+      <MeasureReport>
+        <id value="1a858b96-7c7b-11ea-bcad-a4d18ccf5172"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p></div>
+        </text>
+        <contained>
+          <Location>
+            <id value="loc"/>
+            <identifier>
+              <system value="urn:oid:2.16.840.1.113883.6.277"/>
+              <value value="2.16.840.1.113883.6.277.123"/>
+            </identifier>
+            <identifier>
+              <system value="http://example.org/cms_cert_system"/>
+              <value value="1234567"/>
+            </identifier>
+            <name value="Marin General"/>
+            <address>
+              <type value="physical"/>
+              <text value="Marin, CA 94965"/>
+              <district value="Marin"/>
+              <state value="CA"/>
+              <postalCode value="94965"/>
+            </address>
+            <physicalType>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/location-physical-type"/>
+                <code value="jdn"/>
+                <display value="Jurisdiction"/>
+              </coding>
+              <text value="US County"/>
+            </physicalType>
+          </Location>
+        </contained>
+        <status value="complete"/>
+        <type value="individual"/>
+        <measure value="http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-proportion"/>
+        <subject>
+          <reference value="#loc"/>
+          <display value="Marin General Marin, CA 94965"/>
+        </subject>
+        <date value="2020-04-12T05:04:34.367019Z"/>
+        <reporter>
+          <reference value="#loc"/>
+          <display value="Marin General Marin, CA 94965"/>
+        </reporter>
+        <period>
+          <start value="2020-04-07"/>
+          <end value="2020-04-07"/>
+        </period>
+        <group>
+          <code>
+            <text value="newPercentPositive"/>
+          </code>
+          <population id="newTestsResulted.initial-population">
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+            <count value="100"/>
+          </population>
+          <population id="newTestsResulted.denominator">
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="denominator"/>
+              </coding>
+            </code>
+            <count value="100"/>
+          </population>
+          <population id="newPositiveC19Tests.numerator">
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="numerator"/>
+              </coding>
+            </code>
+            <count value="11"/>
+          </population>
+          <measureScore>
+            <value value="0.11"/>
+            <unit value="%"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="%"/>
+          </measureScore>
+        </group>
+        <group>
+          <code>
+            <text value="cumulativePercentPositive"/>
+          </code>
+          <population id="cumulativeTestsPerformed.initial-population">
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+            <count value="1090"/>
+          </population>
+          <population id="cumulativeTestsPerformed.denominator">
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="denominator"/>
+              </coding>
+            </code>
+            <count value="1090"/>
+          </population>
+          <population id="cumulativePositiveC19Tests.numerator">
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="numerator"/>
+              </coding>
+            </code>
+            <count value="109"/>
+          </population>
+          <measureScore>
+            <value value="0.1"/>
+            <unit value="%"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="%"/>
+          </measureScore>
+        </group>
+      </MeasureReport>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="MeasureReport"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:1aae3ca8-7c7b-11ea-bcad-a4d18ccf5172"/>
+    <resource>
+      <MeasureReport>
+        <id value="1aae3ca8-7c7b-11ea-bcad-a4d18ccf5172"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p></div>
+        </text>
+        <contained>
+          <Location>
+            <id value="loc"/>
+            <identifier>
+              <system value="urn:oid:2.16.840.1.113883.6.277"/>
+              <value value="2.16.840.1.113883.6.277.123"/>
+            </identifier>
+            <identifier>
+              <system value="http://example.org/cms_cert_system"/>
+              <value value="1234567"/>
+            </identifier>
+            <name value="Marin General"/>
+            <address>
+              <type value="physical"/>
+              <text value="Marin, CA 94965"/>
+              <district value="Marin"/>
+              <state value="CA"/>
+              <postalCode value="94965"/>
+            </address>
+            <physicalType>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/location-physical-type"/>
+                <code value="jdn"/>
+                <display value="Jurisdiction"/>
+              </coding>
+              <text value="US County"/>
+            </physicalType>
+          </Location>
+        </contained>
+        <status value="complete"/>
+        <type value="individual"/>
+        <measure value="http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-proportion"/>
+        <subject>
+          <reference value="#loc"/>
+          <display value="Marin General Marin, CA 94965"/>
+        </subject>
+        <date value="2020-04-12T05:04:34.367019Z"/>
+        <reporter>
+          <reference value="#loc"/>
+          <display value="Marin General Marin, CA 94965"/>
+        </reporter>
+        <period>
+          <start value="2020-04-08"/>
+          <end value="2020-04-08"/>
+        </period>
+        <group>
+          <code>
+            <text value="newPercentPositive"/>
+          </code>
+          <population id="newTestsResulted.initial-population">
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+            <count value="90"/>
+          </population>
+          <population id="newTestsResulted.denominator">
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="denominator"/>
+              </coding>
+            </code>
+            <count value="90"/>
+          </population>
+          <population id="newPositiveC19Tests.numerator">
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="numerator"/>
+              </coding>
+            </code>
+            <count value="10"/>
+          </population>
+          <measureScore>
+            <value value="0.1111111111111111"/>
+            <unit value="%"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="%"/>
+          </measureScore>
+        </group>
+        <group>
+          <code>
+            <text value="cumulativePercentPositive"/>
+          </code>
+          <population id="cumulativeTestsPerformed.initial-population">
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+            <count value="1180"/>
+          </population>
+          <population id="cumulativeTestsPerformed.denominator">
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="denominator"/>
+              </coding>
+            </code>
+            <count value="1180"/>
+          </population>
+          <population id="cumulativePositiveC19Tests.numerator">
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="numerator"/>
+              </coding>
+            </code>
+            <count value="119"/>
+          </population>
+          <measureScore>
+            <value value="0.10084745762711865"/>
+            <unit value="%"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="%"/>
+          </measureScore>
+        </group>
+      </MeasureReport>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="MeasureReport"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:1ad74b20-7c7b-11ea-bcad-a4d18ccf5172"/>
+    <resource>
+      <MeasureReport>
+        <id value="1ad74b20-7c7b-11ea-bcad-a4d18ccf5172"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p></div>
+        </text>
+        <contained>
+          <Location>
+            <id value="loc"/>
+            <identifier>
+              <system value="urn:oid:2.16.840.1.113883.6.277"/>
+              <value value="2.16.840.1.113883.6.277.123"/>
+            </identifier>
+            <identifier>
+              <system value="http://example.org/cms_cert_system"/>
+              <value value="1234567"/>
+            </identifier>
+            <name value="Marin General"/>
+            <address>
+              <type value="physical"/>
+              <text value="Marin, CA 94965"/>
+              <district value="Marin"/>
+              <state value="CA"/>
+              <postalCode value="94965"/>
+            </address>
+            <physicalType>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/location-physical-type"/>
+                <code value="jdn"/>
+                <display value="Jurisdiction"/>
+              </coding>
+              <text value="US County"/>
+            </physicalType>
+          </Location>
+        </contained>
+        <status value="complete"/>
+        <type value="individual"/>
+        <measure value="http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-proportion"/>
+        <subject>
+          <reference value="#loc"/>
+          <display value="Marin General Marin, CA 94965"/>
+        </subject>
+        <date value="2020-04-12T05:04:34.367019Z"/>
+        <reporter>
+          <reference value="#loc"/>
+          <display value="Marin General Marin, CA 94965"/>
+        </reporter>
+        <period>
+          <start value="2020-04-09"/>
+          <end value="2020-04-09"/>
+        </period>
+        <group>
+          <code>
+            <text value="newPercentPositive"/>
+          </code>
+          <population id="newTestsResulted.initial-population">
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+            <count value="80"/>
+          </population>
+          <population id="newTestsResulted.denominator">
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="denominator"/>
+              </coding>
+            </code>
+            <count value="80"/>
+          </population>
+          <population id="newPositiveC19Tests.numerator">
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="numerator"/>
+              </coding>
+            </code>
+            <count value="10"/>
+          </population>
+          <measureScore>
+            <value value="0.125"/>
+            <unit value="%"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="%"/>
+          </measureScore>
+        </group>
+        <group>
+          <code>
+            <text value="cumulativePercentPositive"/>
+          </code>
+          <population id="cumulativeTestsPerformed.initial-population">
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+            <count value="1260"/>
+          </population>
+          <population id="cumulativeTestsPerformed.denominator">
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="denominator"/>
+              </coding>
+            </code>
+            <count value="1260"/>
+          </population>
+          <population id="cumulativePositiveC19Tests.numerator">
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="numerator"/>
+              </coding>
+            </code>
+            <count value="129"/>
+          </population>
+          <measureScore>
+            <value value="0.10238095238095238"/>
+            <unit value="%"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="%"/>
+          </measureScore>
+        </group>
+      </MeasureReport>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="MeasureReport"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:1afc0cee-7c7b-11ea-bcad-a4d18ccf5172"/>
+    <resource>
+      <MeasureReport>
+        <id value="1afc0cee-7c7b-11ea-bcad-a4d18ccf5172"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p></div>
+        </text>
+        <contained>
+          <Location>
+            <id value="loc"/>
+            <identifier>
+              <system value="urn:oid:2.16.840.1.113883.6.277"/>
+              <value value="2.16.840.1.113883.6.277.123"/>
+            </identifier>
+            <identifier>
+              <system value="http://example.org/cms_cert_system"/>
+              <value value="1234567"/>
+            </identifier>
+            <name value="Marin General"/>
+            <address>
+              <type value="physical"/>
+              <text value="Marin, CA 94965"/>
+              <district value="Marin"/>
+              <state value="CA"/>
+              <postalCode value="94965"/>
+            </address>
+            <physicalType>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/location-physical-type"/>
+                <code value="jdn"/>
+                <display value="Jurisdiction"/>
+              </coding>
+              <text value="US County"/>
+            </physicalType>
+          </Location>
+        </contained>
+        <status value="complete"/>
+        <type value="individual"/>
+        <measure value="http://build.fhir.org/ig/AudaciousInquiry/saner-ig/fema-proportion"/>
+        <subject>
+          <reference value="#loc"/>
+          <display value="Marin General Marin, CA 94965"/>
+        </subject>
+        <date value="2020-04-12T05:04:34.367019Z"/>
+        <reporter>
+          <reference value="#loc"/>
+          <display value="Marin General Marin, CA 94965"/>
+        </reporter>
+        <period>
+          <start value="2020-04-10"/>
+          <end value="2020-04-10"/>
+        </period>
+        <group>
+          <code>
+            <text value="newPercentPositive"/>
+          </code>
+          <population id="newTestsResulted.initial-population">
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+            <count value="70"/>
+          </population>
+          <population id="newTestsResulted.denominator">
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="denominator"/>
+              </coding>
+            </code>
+            <count value="70"/>
+          </population>
+          <population id="newPositiveC19Tests.numerator">
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="numerator"/>
+              </coding>
+            </code>
+            <count value="8"/>
+          </population>
+          <measureScore>
+            <value value="0.11428571428571428"/>
+            <unit value="%"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="%"/>
+          </measureScore>
+        </group>
+        <group>
+          <code>
+            <text value="cumulativePercentPositive"/>
+          </code>
+          <population id="cumulativeTestsPerformed.initial-population">
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="initial-population"/>
+              </coding>
+            </code>
+            <count value="1330"/>
+          </population>
+          <population id="cumulativeTestsPerformed.denominator">
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="denominator"/>
+              </coding>
+            </code>
+            <count value="1330"/>
+          </population>
+          <population id="cumulativePositiveC19Tests.numerator">
+            <code>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+                <code value="numerator"/>
+              </coding>
+            </code>
+            <count value="137"/>
+          </population>
+          <measureScore>
+            <value value="0.10300751879699248"/>
+            <unit value="%"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="%"/>
+          </measureScore>
+        </group>
+      </MeasureReport>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="MeasureReport"/>
+    </request>
+  </entry>
+</Bundle>

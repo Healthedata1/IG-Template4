@@ -1,0 +1,691 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="healthedatainc.ig-template4"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>IGTest4</h2><p>The official URL for this implementation guide is: </p><pre>http://www.fhir.org/guides/test4/ImplementationGuide/healthedatainc.ig-template4</pre></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-spreadsheet">
+    <valueUri value="patient-on-usprofile-spreadsheet.xml"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-spreadsheet">
+    <valueUri value="template-profile-spreadsheet.xml"/>
+  </extension>
+  <url value="http://www.fhir.org/guides/test4/ImplementationGuide/healthedatainc.ig-template4"/>
+  <version value="0.0.0"/>
+  <name value="IGTest4"/>
+  <title value="IG Test4"/>
+  <status value="draft"/>
+  <date value="2020-01-23T16:30:49-08:00"/>
+  <publisher value="Health eData Inc"/>
+  <contact>
+    <telecom>
+      <system value="email"/>
+      <value value="mailto:ehaas@healthedatainc.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://foobar.com"/>
+    </telecom>
+  </contact>
+  <copyright value="Used by permission of Health eData Inc, all rights reserved Creative Commons License"/>
+  <packageId value="healthedatainc.ig-template4"/>
+  <license value="CC0-1.0"/>
+  <fhirVersion value="4.0.1"/>
+  <dependsOn id="uscore">
+    <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
+    <packageId value="hl7.fhir.us.core"/>
+    <version value="3.1.0"/>
+  </dependsOn>
+  <dependsOn id="qicore">
+    <uri value="http://hl7.org/fhir/us/qicore/ImplementationGuide/hl7.fhir.us.qicore"/>
+    <packageId value="hl7.fhir.us.qicore"/>
+    <version value="current"/>
+  </dependsOn>
+  <definition>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="pat9h-qa"/>
+      </extension>
+      <extension url="value">
+        <valueString value="generated_output/qa"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-temp"/>
+      </extension>
+      <extension url="value">
+        <valueString value="generated_output/temp"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-output"/>
+      </extension>
+      <extension url="value">
+        <valueString value="docs"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-history"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://www.fhir.org/guides/test4/history.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="foo"/>
+      </extension>
+      <extension url="value">
+        <valueString value="bar"/>
+      </extension>
+    </extension>
+    <grouping>
+      <name value="base"/>
+    </grouping>
+    <grouping id="template-profile-spreadsheet.xml">
+      <name value="Template-basic"/>
+    </grouping>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Basic"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Basic-diet.html"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Basic-diet.html"/>
+      </extension>
+      <reference>
+        <reference value="Basic/diet"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Patient-example.html"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Patient-example.html"/>
+      </extension>
+      <reference>
+        <reference value="Patient/example"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Patient-example2.html"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Patient-example2.html"/>
+      </extension>
+      <reference>
+        <reference value="Patient/example2"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Measure"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Measure-cdc-covid.html"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Measure-cdc-covid.html"/>
+      </extension>
+      <reference>
+        <reference value="Measure/cdc-covid"/>
+      </reference>
+      <name value="COVID-19 Patient Impact &amp; Hospital Capacity"/>
+      <description value="CDC, NHSN COVID-19 Patient Impact &amp; Hospital Capacity Hospital Bed/ICU/Ventilator Capacity. The Centers for Disease Control and Prevention&#x2019;s (CDC&#x2019;s) National Healthcare Safety Network (NHSN) is supporting the nation&#x2019;s COVID-19 response by introducing a new COVID-19 Patient Impact and Hospital Capacity Module within NHSN&#x2019;s Patient Safety Component. https://www.cdc.gov/nhsn/acute-care-hospital/covid19/index.html"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Measure"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Measure-fema-cohort.html"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Measure-fema-cohort.html"/>
+      </extension>
+      <reference>
+        <reference value="Measure/fema-cohort"/>
+      </reference>
+      <name value="FEMA Measurement Group Cohorts"/>
+      <description value="COVID-19 results from in-house laboratories. The federal government requests that these results should be reported to the Federal Emergency Management Agency (FEMA) using a standardized template by 5 p.m. ET each day, and reflect the results through midnight of the previous day. This Measure defines the Cohort (IPP only) counts for: - New Diagnostic Tests Ordered/Received - Cumulative Diagnostic Tests Ordered/Reciever - Cumulative Specimens Rejected."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Measure"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Measure-fema-proportion.html"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Measure-fema-proportion.html"/>
+      </extension>
+      <reference>
+        <reference value="Measure/fema-proportion"/>
+      </reference>
+      <name value="FEMA Measurement Group Proportions"/>
+      <description value="COVID-19 results from in-house laboratories. The federal government requests that these results should be reported to the Federal Emergency Management Agency (FEMA) using a standardized template by 5 p.m. ET each day, and reflect the results through midnight of the previous day. This Measure defines the Proportion (IPP,Denominator,Numerator only) counts for:&#xA;- Percent Positive among Newly Resulted Tests&#xA;  - New Tests Resulted&#xA;  - New Positive COVID-19 Tests&#xA;- Cumulative Percent Positive among Resulted Tests&#xA;  - Cumulative Tests Performed&#xA;  - Cumulative Positive COVID-19 Tests"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MeasureReport"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="MeasureReport-c19-groups-measurereport-max.html"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="MeasureReport-c19-groups-measurereport-max.html"/>
+      </extension>
+      <reference>
+        <reference value="MeasureReport/c19-groups-measurereport-max"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MeasureReport"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="MeasureReport-fema-c19-cohort.html"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="MeasureReport-fema-c19-cohort.html"/>
+      </extension>
+      <reference>
+        <reference value="MeasureReport/fema-c19-cohort"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MeasureReport"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="MeasureReport-fema-c19-proportion.html"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="MeasureReport-fema-c19-proportion.html"/>
+      </extension>
+      <reference>
+        <reference value="MeasureReport/fema-c19-proportion"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MeasureReport"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="MeasureReport-c19-groups-measurereport-min.html"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="MeasureReport-c19-groups-measurereport-min.html"/>
+      </extension>
+      <reference>
+        <reference value="MeasureReport/c19-groups-measurereport-min"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Bundle-cdc-c19-groups-measurereports-max.html"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Bundle-cdc-c19-groups-measurereports-max.html"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/cdc-c19-groups-measurereports-max"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Bundle-fema-c19-proportion.html"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Bundle-fema-c19-proportion.html"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/fema-c19-proportion"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Bundle-fema-c19-cohort.html"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Bundle-fema-c19-cohort.html"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/fema-c19-cohort"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Bundle-cdc-c19-groups-measurereports-min.html"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Bundle-cdc-c19-groups-measurereports-min.html"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/cdc-c19-groups-measurereports-min"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-extension-complex.html"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-extension-complex.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/extension-complex"/>
+      </reference>
+      <name value="Complex Extension"/>
+      <description value="an example of a complex extension."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-extension-blah.html"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-extension-blah.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/extension-blah"/>
+      </reference>
+      <name value="Simple Extension"/>
+      <description value="an example of a simple extension."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="OperationDefinition"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="OperationDefinition-opdef-test.html"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="OperationDefinition-opdef-test.html"/>
+      </extension>
+      <reference>
+        <reference value="OperationDefinition/opdef-test"/>
+      </reference>
+      <description value="Limited implementation of the Populate Questionnaire implementation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:complex-type"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-ifr.html"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-ifr.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ifr"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-bar-codes.html"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-bar-codes.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/bar-codes"/>
+      </reference>
+      <name value="Bar Value Set"/>
+      <description value="A bunch of example codes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CapabilityStatement"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CapabilityStatement-server.html"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CapabilityStatement-server.html"/>
+      </extension>
+      <reference>
+        <reference value="CapabilityStatement/server"/>
+      </reference>
+      <description value="This resource defines the expected capabilities "/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CodeSystem-blah-codes.html"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CodeSystem-blah-codes.html"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/blah-codes"/>
+      </reference>
+      <description value="A bunch of example codes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CapabilityStatement"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CapabilityStatement-client.html"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CapabilityStatement-client.html"/>
+      </extension>
+      <reference>
+        <reference value="CapabilityStatement/client"/>
+      </reference>
+      <description value="This resource defines the expected capabilities "/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-template-profile-on-profile.html"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-template-profile-on-profile.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/template-profile-on-profile"/>
+      </reference>
+      <name value="Template Profile on Profile"/>
+      <description value="Template-Profile-on-Profile"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-devdef.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/devdef"/>
+      </reference>
+      <name value="DeviceDefinition Reference Extension"/>
+      <description value="A reference to the [DeviceDefinition](http://build.fhir.org/devicedefinition.html) resource."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-test.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/test"/>
+      </reference>
+      <name value="Test Supply Request"/>
+      <description value="A profile to test implementation of R5 elements."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-foo-codes.html"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-foo-codes.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/foo-codes"/>
+      </reference>
+      <name value="Foo Value Set"/>
+      <description value="A bunch of example codes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-template-basic.html"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-template-basic.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/template-basic"/>
+      </reference>
+      <name value="Health eData Template Profile"/>
+      <description value="This is a simple example Template"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-blah-codes.html"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-blah-codes.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/blah-codes"/>
+      </reference>
+      <description value="A bunch of example codes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-extension-blah2.html"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-extension-blah2.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/extension-blah2"/>
+      </reference>
+      <name value="blah2"/>
+      <description value="an example of a simple extension."/>
+      <groupingId value="template-profile-spreadsheet.xml"/>
+    </resource>
+    <page>
+      <nameUrl value="index.html"/>
+      <title value="Home"/>
+      <generation value="markdown"/>
+      <page>
+        <nameUrl value="guidance.html"/>
+        <title value="General Guidance"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="more-guidance.html"/>
+        <title value="More General Guidance"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="profiles.html"/>
+        <title value="Profiles and Extensions"/>
+        <generation value="markdown"/>
+        <page>
+          <nameUrl value="StructureDefinition-ifr.html"/>
+          <title value="StructureDefinition Ifr"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="StructureDefinition-template-profile-on-profile.html"/>
+          <title value="StructureDefinition Template Profile On Profile"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="StructureDefinition-template-basic.html"/>
+          <title value="StructureDefinition Template Basic"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="StructureDefinition-extension-complex.html"/>
+          <title value="StructureDefinition Extension Complex"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="StructureDefinition-extension-blah.html"/>
+          <title value="StructureDefinition Extension Blah"/>
+          <generation value="generated"/>
+        </page>
+      </page>
+      <page>
+        <nameUrl value="operations.html"/>
+        <title value="Operations"/>
+        <generation value="markdown"/>
+        <page>
+          <nameUrl value="OperationDefinition-opdef-test.html"/>
+          <title value="OperationDefinition Opdef Test"/>
+          <generation value="generated"/>
+        </page>
+      </page>
+      <page>
+        <nameUrl value="terminology.html"/>
+        <title value="Terminology"/>
+        <generation value="markdown"/>
+        <page>
+          <nameUrl value="ValueSet-bar-codes.html"/>
+          <title value="ValueSet Bar Codes"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="ValueSet-foo-codes.html"/>
+          <title value="ValueSet Foo Codes"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="ValueSet-blah-codes.html"/>
+          <title value="ValueSet Blah Codes"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="CodeSystem-blah-codes.html"/>
+          <title value="CodeSystem Blah Codes"/>
+          <generation value="generated"/>
+        </page>
+      </page>
+      <page>
+        <nameUrl value="searchparameters.html"/>
+        <title value="Search Parameters"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="capstatements.html"/>
+        <title value="Capability Statements"/>
+        <generation value="markdown"/>
+        <page>
+          <nameUrl value="CapabilityStatement-server.html"/>
+          <title value="CapabilityStatement Server"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="CapabilityStatement-client.html"/>
+          <title value="CapabilityStatement Client"/>
+          <generation value="generated"/>
+        </page>
+      </page>
+      <page>
+        <nameUrl value="security.html"/>
+        <title value="Security"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="downloads.html"/>
+        <title value="Downloads"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="all-examples.html"/>
+        <title value="All Examples"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="toc.html"/>
+        <title value="Table of Contents"/>
+        <generation value="html"/>
+      </page>
+    </page>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="source/examples"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="source/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="source/pages"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="template/content/pages"/>
+    </parameter>
+    <parameter>
+      <code value="path-tx-cache"/>
+      <value value="generated_output/txCache"/>
+    </parameter>
+  </definition>
+</ImplementationGuide>

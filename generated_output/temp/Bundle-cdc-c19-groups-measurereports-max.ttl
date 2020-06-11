@@ -1,0 +1,2717 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://www.fhir.org/guides/test4/Bundle/cdc-c19-groups-measurereports-max> a fhir:Bundle;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "cdc-c19-groups-measurereports-max"];
+  fhir:Bundle.type [ fhir:value "transaction"];
+  fhir:Bundle.timestamp [ fhir:value "2020-04-12T04:28:36.103826Z"^^xsd:dateTime];
+  fhir:Bundle.entry [
+     fhir:index 0;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:1501bec4-7c76-11ea-bcad-a4d18ccf5172" ];
+     fhir:Bundle.entry.resource <urn:uuid:1501bec4-7c76-11ea-bcad-a4d18ccf5172>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "POST" ];
+       fhir:Bundle.entry.request.url [ fhir:value "MeasureReport" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:1534e97a-7c76-11ea-bcad-a4d18ccf5172" ];
+     fhir:Bundle.entry.resource <urn:uuid:1534e97a-7c76-11ea-bcad-a4d18ccf5172>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "POST" ];
+       fhir:Bundle.entry.request.url [ fhir:value "MeasureReport" ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:15693bc6-7c76-11ea-bcad-a4d18ccf5172" ];
+     fhir:Bundle.entry.resource <urn:uuid:15693bc6-7c76-11ea-bcad-a4d18ccf5172>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "POST" ];
+       fhir:Bundle.entry.request.url [ fhir:value "MeasureReport" ]
+     ]
+  ], [
+     fhir:index 3;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:1598ebdc-7c76-11ea-bcad-a4d18ccf5172" ];
+     fhir:Bundle.entry.resource <urn:uuid:1598ebdc-7c76-11ea-bcad-a4d18ccf5172>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "POST" ];
+       fhir:Bundle.entry.request.url [ fhir:value "MeasureReport" ]
+     ]
+  ], [
+     fhir:index 4;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:15c9cf18-7c76-11ea-bcad-a4d18ccf5172" ];
+     fhir:Bundle.entry.resource <urn:uuid:15c9cf18-7c76-11ea-bcad-a4d18ccf5172>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "POST" ];
+       fhir:Bundle.entry.request.url [ fhir:value "MeasureReport" ]
+     ]
+  ], [
+     fhir:index 5;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:15fa70f0-7c76-11ea-bcad-a4d18ccf5172" ];
+     fhir:Bundle.entry.resource <urn:uuid:15fa70f0-7c76-11ea-bcad-a4d18ccf5172>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "POST" ];
+       fhir:Bundle.entry.request.url [ fhir:value "MeasureReport" ]
+     ]
+  ], [
+     fhir:index 6;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:162f8010-7c76-11ea-bcad-a4d18ccf5172" ];
+     fhir:Bundle.entry.resource <urn:uuid:162f8010-7c76-11ea-bcad-a4d18ccf5172>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "POST" ];
+       fhir:Bundle.entry.request.url [ fhir:value "MeasureReport" ]
+     ]
+  ], [
+     fhir:index 7;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:16624c70-7c76-11ea-bcad-a4d18ccf5172" ];
+     fhir:Bundle.entry.resource <urn:uuid:16624c70-7c76-11ea-bcad-a4d18ccf5172>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "POST" ];
+       fhir:Bundle.entry.request.url [ fhir:value "MeasureReport" ]
+     ]
+  ] .
+
+<urn:uuid:1501bec4-7c76-11ea-bcad-a4d18ccf5172> a fhir:MeasureReport;
+  fhir:Resource.id [ fhir:value "1501bec4-7c76-11ea-bcad-a4d18ccf5172"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p></div>"
+  ];
+  fhir:DomainResource.contained [
+     a fhir:Location;
+     fhir:index 0;
+     fhir:Resource.id [ fhir:value "loc" ];
+     fhir:Location.identifier [
+       fhir:index 0;
+       fhir:Identifier.system [ fhir:value "urn:oid:2.16.840.1.113883.6.277" ];
+       fhir:Identifier.value [ fhir:value "2.16.840.1.113883.6.277.123" ]
+     ], [
+       fhir:index 1;
+       fhir:Identifier.system [ fhir:value "http://example.org/cms_cert_system" ];
+       fhir:Identifier.value [ fhir:value "1234567" ]
+     ];
+     fhir:Location.name [ fhir:value "Marin General" ];
+     fhir:Location.address [
+       fhir:Address.type [ fhir:value "physical" ];
+       fhir:Address.text [ fhir:value "Marin, CA 94965" ];
+       fhir:Address.district [ fhir:value "Marin" ];
+       fhir:Address.state [ fhir:value "CA" ];
+       fhir:Address.postalCode [ fhir:value "94965" ]
+     ];
+     fhir:Location.physicalType [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/location-physical-type" ];
+         fhir:Coding.code [ fhir:value "jdn" ];
+         fhir:Coding.display [ fhir:value "Jurisdiction" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "US County" ]
+     ]
+  ];
+  fhir:MeasureReport.status [ fhir:value "complete"];
+  fhir:MeasureReport.type [ fhir:value "individual"];
+  fhir:MeasureReport.measure [
+     fhir:value "http://cdcmeasures.example.org/cdc-covid";
+     fhir:link <http://cdcmeasures.example.org/cdc-covid>
+  ];
+  fhir:MeasureReport.subject [
+     fhir:Reference.reference [ fhir:value "#loc" ];
+     fhir:Reference.display [ fhir:value "Marin General Marin, CA 94965" ]
+  ];
+  fhir:MeasureReport.date [ fhir:value "2020-04-12T04:28:36.103826Z"^^xsd:dateTime];
+  fhir:MeasureReport.reporter [
+     fhir:Reference.reference [ fhir:value "#loc" ];
+     fhir:Reference.display [ fhir:value "Marin General Marin, CA 94965" ]
+  ];
+  fhir:MeasureReport.period [
+     fhir:Period.start [ fhir:value "2020-03-30"^^xsd:date ];
+     fhir:Period.end [ fhir:value "2020-03-30"^^xsd:date ]
+  ];
+  fhir:MeasureReport.group [
+     fhir:index 0;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numVent" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "20"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "20"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numVentUse" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "3"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "3"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numTotBeds" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "125"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "125"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 3;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numbeds" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "100"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "100"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 4;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numBedsOcc" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "70"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "70"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 5;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numICUBeds" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "20"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "20"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 6;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numICUBedsOcc" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "10"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "10"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 7;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numC19HospPats" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "20"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "20"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 8;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numC19MechVentPats" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "3"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "3"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 9;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numC19HOPats" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "0"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "0"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 10;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numC19OverflowPats" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "0"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "0"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 11;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numC19OFMechVentPats" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "0"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "0"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 12;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numC19Died" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "0"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "0"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 13;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "surgicalMasks" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-alternateScoreType" ];
+         fhir:Extension.valueCodeableConcept [
+           fhir:CodeableConcept.text [ fhir:value "4-14 days" ]
+         ]
+       ]
+     ]
+  ] .
+
+<urn:uuid:1534e97a-7c76-11ea-bcad-a4d18ccf5172> a fhir:MeasureReport;
+  fhir:Resource.id [ fhir:value "1534e97a-7c76-11ea-bcad-a4d18ccf5172"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p></div>"
+  ];
+  fhir:DomainResource.contained [
+     a fhir:Location;
+     fhir:index 0;
+     fhir:Resource.id [ fhir:value "loc" ];
+     fhir:Location.identifier [
+       fhir:index 0;
+       fhir:Identifier.system [ fhir:value "urn:oid:2.16.840.1.113883.6.277" ];
+       fhir:Identifier.value [ fhir:value "2.16.840.1.113883.6.277.123" ]
+     ], [
+       fhir:index 1;
+       fhir:Identifier.system [ fhir:value "http://example.org/cms_cert_system" ];
+       fhir:Identifier.value [ fhir:value "1234567" ]
+     ];
+     fhir:Location.name [ fhir:value "Marin General" ];
+     fhir:Location.address [
+       fhir:Address.type [ fhir:value "physical" ];
+       fhir:Address.text [ fhir:value "Marin, CA 94965" ];
+       fhir:Address.district [ fhir:value "Marin" ];
+       fhir:Address.state [ fhir:value "CA" ];
+       fhir:Address.postalCode [ fhir:value "94965" ]
+     ];
+     fhir:Location.physicalType [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/location-physical-type" ];
+         fhir:Coding.code [ fhir:value "jdn" ];
+         fhir:Coding.display [ fhir:value "Jurisdiction" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "US County" ]
+     ]
+  ];
+  fhir:MeasureReport.status [ fhir:value "complete"];
+  fhir:MeasureReport.type [ fhir:value "individual"];
+  fhir:MeasureReport.measure [
+     fhir:value "http://cdcmeasures.example.org/cdc-covid";
+     fhir:link <http://cdcmeasures.example.org/cdc-covid>
+  ];
+  fhir:MeasureReport.subject [
+     fhir:Reference.reference [ fhir:value "#loc" ];
+     fhir:Reference.display [ fhir:value "Marin General Marin, CA 94965" ]
+  ];
+  fhir:MeasureReport.date [ fhir:value "2020-04-12T04:28:36.103826Z"^^xsd:dateTime];
+  fhir:MeasureReport.reporter [
+     fhir:Reference.reference [ fhir:value "#loc" ];
+     fhir:Reference.display [ fhir:value "Marin General Marin, CA 94965" ]
+  ];
+  fhir:MeasureReport.period [
+     fhir:Period.start [ fhir:value "2020-03-31"^^xsd:date ];
+     fhir:Period.end [ fhir:value "2020-03-31"^^xsd:date ]
+  ];
+  fhir:MeasureReport.group [
+     fhir:index 0;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numVent" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "20"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "20"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numVentUse" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "3"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "3"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numTotBeds" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "125"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "125"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 3;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numbeds" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "100"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "100"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 4;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numBedsOcc" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "72"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "72"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 5;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numICUBeds" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "20"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "20"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 6;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numICUBedsOcc" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "11"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "11"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 7;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numC19HospPats" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "21"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "21"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 8;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numC19MechVentPats" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "3"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "3"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 9;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numC19HOPats" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "0"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "0"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 10;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numC19OverflowPats" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "0"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "0"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 11;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numC19OFMechVentPats" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "0"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "0"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 12;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numC19Died" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "0"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "0"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 13;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "surgicalMasks" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-alternateScoreType" ];
+         fhir:Extension.valueCodeableConcept [
+           fhir:CodeableConcept.text [ fhir:value "4-14 days" ]
+         ]
+       ]
+     ]
+  ] .
+
+<urn:uuid:15693bc6-7c76-11ea-bcad-a4d18ccf5172> a fhir:MeasureReport;
+  fhir:Resource.id [ fhir:value "15693bc6-7c76-11ea-bcad-a4d18ccf5172"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p></div>"
+  ];
+  fhir:DomainResource.contained [
+     a fhir:Location;
+     fhir:index 0;
+     fhir:Resource.id [ fhir:value "loc" ];
+     fhir:Location.identifier [
+       fhir:index 0;
+       fhir:Identifier.system [ fhir:value "urn:oid:2.16.840.1.113883.6.277" ];
+       fhir:Identifier.value [ fhir:value "2.16.840.1.113883.6.277.123" ]
+     ], [
+       fhir:index 1;
+       fhir:Identifier.system [ fhir:value "http://example.org/cms_cert_system" ];
+       fhir:Identifier.value [ fhir:value "1234567" ]
+     ];
+     fhir:Location.name [ fhir:value "Marin General" ];
+     fhir:Location.address [
+       fhir:Address.type [ fhir:value "physical" ];
+       fhir:Address.text [ fhir:value "Marin, CA 94965" ];
+       fhir:Address.district [ fhir:value "Marin" ];
+       fhir:Address.state [ fhir:value "CA" ];
+       fhir:Address.postalCode [ fhir:value "94965" ]
+     ];
+     fhir:Location.physicalType [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/location-physical-type" ];
+         fhir:Coding.code [ fhir:value "jdn" ];
+         fhir:Coding.display [ fhir:value "Jurisdiction" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "US County" ]
+     ]
+  ];
+  fhir:MeasureReport.status [ fhir:value "complete"];
+  fhir:MeasureReport.type [ fhir:value "individual"];
+  fhir:MeasureReport.measure [
+     fhir:value "http://cdcmeasures.example.org/cdc-covid";
+     fhir:link <http://cdcmeasures.example.org/cdc-covid>
+  ];
+  fhir:MeasureReport.subject [
+     fhir:Reference.reference [ fhir:value "#loc" ];
+     fhir:Reference.display [ fhir:value "Marin General Marin, CA 94965" ]
+  ];
+  fhir:MeasureReport.date [ fhir:value "2020-04-12T04:28:36.103826Z"^^xsd:dateTime];
+  fhir:MeasureReport.reporter [
+     fhir:Reference.reference [ fhir:value "#loc" ];
+     fhir:Reference.display [ fhir:value "Marin General Marin, CA 94965" ]
+  ];
+  fhir:MeasureReport.period [
+     fhir:Period.start [ fhir:value "2020-04-01"^^xsd:date ];
+     fhir:Period.end [ fhir:value "2020-04-01"^^xsd:date ]
+  ];
+  fhir:MeasureReport.group [
+     fhir:index 0;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numVent" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "20"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "20"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numVentUse" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "5"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "5"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numTotBeds" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "125"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "125"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 3;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numbeds" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "100"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "100"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 4;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numBedsOcc" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "74"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "74"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 5;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numICUBeds" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "20"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "20"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 6;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numICUBedsOcc" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "12"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "12"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 7;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numC19HospPats" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "22"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "22"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 8;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numC19MechVentPats" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "5"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "5"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 9;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numC19HOPats" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "0"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "0"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 10;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numC19OverflowPats" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "0"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "0"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 11;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numC19OFMechVentPats" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "0"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "0"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 12;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numC19Died" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "0"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "0"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 13;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "surgicalMasks" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-alternateScoreType" ];
+         fhir:Extension.valueCodeableConcept [
+           fhir:CodeableConcept.text [ fhir:value "4-14 days" ]
+         ]
+       ]
+     ]
+  ] .
+
+<urn:uuid:1598ebdc-7c76-11ea-bcad-a4d18ccf5172> a fhir:MeasureReport;
+  fhir:Resource.id [ fhir:value "1598ebdc-7c76-11ea-bcad-a4d18ccf5172"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p></div>"
+  ];
+  fhir:DomainResource.contained [
+     a fhir:Location;
+     fhir:index 0;
+     fhir:Resource.id [ fhir:value "loc" ];
+     fhir:Location.identifier [
+       fhir:index 0;
+       fhir:Identifier.system [ fhir:value "urn:oid:2.16.840.1.113883.6.277" ];
+       fhir:Identifier.value [ fhir:value "2.16.840.1.113883.6.277.123" ]
+     ], [
+       fhir:index 1;
+       fhir:Identifier.system [ fhir:value "http://example.org/cms_cert_system" ];
+       fhir:Identifier.value [ fhir:value "1234567" ]
+     ];
+     fhir:Location.name [ fhir:value "Marin General" ];
+     fhir:Location.address [
+       fhir:Address.type [ fhir:value "physical" ];
+       fhir:Address.text [ fhir:value "Marin, CA 94965" ];
+       fhir:Address.district [ fhir:value "Marin" ];
+       fhir:Address.state [ fhir:value "CA" ];
+       fhir:Address.postalCode [ fhir:value "94965" ]
+     ];
+     fhir:Location.physicalType [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/location-physical-type" ];
+         fhir:Coding.code [ fhir:value "jdn" ];
+         fhir:Coding.display [ fhir:value "Jurisdiction" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "US County" ]
+     ]
+  ];
+  fhir:MeasureReport.status [ fhir:value "complete"];
+  fhir:MeasureReport.type [ fhir:value "individual"];
+  fhir:MeasureReport.measure [
+     fhir:value "http://cdcmeasures.example.org/cdc-covid";
+     fhir:link <http://cdcmeasures.example.org/cdc-covid>
+  ];
+  fhir:MeasureReport.subject [
+     fhir:Reference.reference [ fhir:value "#loc" ];
+     fhir:Reference.display [ fhir:value "Marin General Marin, CA 94965" ]
+  ];
+  fhir:MeasureReport.date [ fhir:value "2020-04-12T04:28:36.103826Z"^^xsd:dateTime];
+  fhir:MeasureReport.reporter [
+     fhir:Reference.reference [ fhir:value "#loc" ];
+     fhir:Reference.display [ fhir:value "Marin General Marin, CA 94965" ]
+  ];
+  fhir:MeasureReport.period [
+     fhir:Period.start [ fhir:value "2020-04-02"^^xsd:date ];
+     fhir:Period.end [ fhir:value "2020-04-02"^^xsd:date ]
+  ];
+  fhir:MeasureReport.group [
+     fhir:index 0;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numVent" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "20"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "20"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numVentUse" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "5"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "5"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numTotBeds" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "125"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "125"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 3;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numbeds" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "100"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "100"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 4;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numBedsOcc" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "76"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "76"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 5;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numICUBeds" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "20"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "20"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 6;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numICUBedsOcc" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "13"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "13"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 7;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numC19HospPats" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "23"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "23"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 8;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numC19MechVentPats" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "5"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "5"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 9;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numC19HOPats" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "0"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "0"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 10;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numC19OverflowPats" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "0"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "0"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 11;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numC19OFMechVentPats" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "0"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "0"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 12;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numC19Died" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "0"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "0"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 13;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "surgicalMasks" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-alternateScoreType" ];
+         fhir:Extension.valueCodeableConcept [
+           fhir:CodeableConcept.text [ fhir:value "1-3 days" ]
+         ]
+       ]
+     ]
+  ] .
+
+<urn:uuid:15c9cf18-7c76-11ea-bcad-a4d18ccf5172> a fhir:MeasureReport;
+  fhir:Resource.id [ fhir:value "15c9cf18-7c76-11ea-bcad-a4d18ccf5172"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p></div>"
+  ];
+  fhir:DomainResource.contained [
+     a fhir:Location;
+     fhir:index 0;
+     fhir:Resource.id [ fhir:value "loc" ];
+     fhir:Location.identifier [
+       fhir:index 0;
+       fhir:Identifier.system [ fhir:value "urn:oid:2.16.840.1.113883.6.277" ];
+       fhir:Identifier.value [ fhir:value "2.16.840.1.113883.6.277.123" ]
+     ], [
+       fhir:index 1;
+       fhir:Identifier.system [ fhir:value "http://example.org/cms_cert_system" ];
+       fhir:Identifier.value [ fhir:value "1234567" ]
+     ];
+     fhir:Location.name [ fhir:value "Marin General" ];
+     fhir:Location.address [
+       fhir:Address.type [ fhir:value "physical" ];
+       fhir:Address.text [ fhir:value "Marin, CA 94965" ];
+       fhir:Address.district [ fhir:value "Marin" ];
+       fhir:Address.state [ fhir:value "CA" ];
+       fhir:Address.postalCode [ fhir:value "94965" ]
+     ];
+     fhir:Location.physicalType [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/location-physical-type" ];
+         fhir:Coding.code [ fhir:value "jdn" ];
+         fhir:Coding.display [ fhir:value "Jurisdiction" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "US County" ]
+     ]
+  ];
+  fhir:MeasureReport.status [ fhir:value "complete"];
+  fhir:MeasureReport.type [ fhir:value "individual"];
+  fhir:MeasureReport.measure [
+     fhir:value "http://cdcmeasures.example.org/cdc-covid";
+     fhir:link <http://cdcmeasures.example.org/cdc-covid>
+  ];
+  fhir:MeasureReport.subject [
+     fhir:Reference.reference [ fhir:value "#loc" ];
+     fhir:Reference.display [ fhir:value "Marin General Marin, CA 94965" ]
+  ];
+  fhir:MeasureReport.date [ fhir:value "2020-04-12T04:28:36.103826Z"^^xsd:dateTime];
+  fhir:MeasureReport.reporter [
+     fhir:Reference.reference [ fhir:value "#loc" ];
+     fhir:Reference.display [ fhir:value "Marin General Marin, CA 94965" ]
+  ];
+  fhir:MeasureReport.period [
+     fhir:Period.start [ fhir:value "2020-04-03"^^xsd:date ];
+     fhir:Period.end [ fhir:value "2020-04-03"^^xsd:date ]
+  ];
+  fhir:MeasureReport.group [
+     fhir:index 0;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numVent" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "20"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "20"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numVentUse" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "7"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "7"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numTotBeds" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "125"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "125"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 3;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numbeds" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "100"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "100"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 4;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numBedsOcc" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "78"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "78"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 5;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numICUBeds" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "20"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "20"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 6;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numICUBedsOcc" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "14"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "14"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 7;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numC19HospPats" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "24"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "24"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 8;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numC19MechVentPats" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "7"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "7"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 9;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numC19HOPats" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "0"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "0"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 10;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numC19OverflowPats" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "0"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "0"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 11;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numC19OFMechVentPats" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "0"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "0"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 12;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numC19Died" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "1"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "1"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 13;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "surgicalMasks" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-alternateScoreType" ];
+         fhir:Extension.valueCodeableConcept [
+           fhir:CodeableConcept.text [ fhir:value "1-3 days" ]
+         ]
+       ]
+     ]
+  ] .
+
+<urn:uuid:15fa70f0-7c76-11ea-bcad-a4d18ccf5172> a fhir:MeasureReport;
+  fhir:Resource.id [ fhir:value "15fa70f0-7c76-11ea-bcad-a4d18ccf5172"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p></div>"
+  ];
+  fhir:DomainResource.contained [
+     a fhir:Location;
+     fhir:index 0;
+     fhir:Resource.id [ fhir:value "loc" ];
+     fhir:Location.identifier [
+       fhir:index 0;
+       fhir:Identifier.system [ fhir:value "urn:oid:2.16.840.1.113883.6.277" ];
+       fhir:Identifier.value [ fhir:value "2.16.840.1.113883.6.277.123" ]
+     ], [
+       fhir:index 1;
+       fhir:Identifier.system [ fhir:value "http://example.org/cms_cert_system" ];
+       fhir:Identifier.value [ fhir:value "1234567" ]
+     ];
+     fhir:Location.name [ fhir:value "Marin General" ];
+     fhir:Location.address [
+       fhir:Address.type [ fhir:value "physical" ];
+       fhir:Address.text [ fhir:value "Marin, CA 94965" ];
+       fhir:Address.district [ fhir:value "Marin" ];
+       fhir:Address.state [ fhir:value "CA" ];
+       fhir:Address.postalCode [ fhir:value "94965" ]
+     ];
+     fhir:Location.physicalType [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/location-physical-type" ];
+         fhir:Coding.code [ fhir:value "jdn" ];
+         fhir:Coding.display [ fhir:value "Jurisdiction" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "US County" ]
+     ]
+  ];
+  fhir:MeasureReport.status [ fhir:value "complete"];
+  fhir:MeasureReport.type [ fhir:value "individual"];
+  fhir:MeasureReport.measure [
+     fhir:value "http://cdcmeasures.example.org/cdc-covid";
+     fhir:link <http://cdcmeasures.example.org/cdc-covid>
+  ];
+  fhir:MeasureReport.subject [
+     fhir:Reference.reference [ fhir:value "#loc" ];
+     fhir:Reference.display [ fhir:value "Marin General Marin, CA 94965" ]
+  ];
+  fhir:MeasureReport.date [ fhir:value "2020-04-12T04:28:36.103826Z"^^xsd:dateTime];
+  fhir:MeasureReport.reporter [
+     fhir:Reference.reference [ fhir:value "#loc" ];
+     fhir:Reference.display [ fhir:value "Marin General Marin, CA 94965" ]
+  ];
+  fhir:MeasureReport.period [
+     fhir:Period.start [ fhir:value "2020-04-04"^^xsd:date ];
+     fhir:Period.end [ fhir:value "2020-04-04"^^xsd:date ]
+  ];
+  fhir:MeasureReport.group [
+     fhir:index 0;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numVent" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "20"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "20"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numVentUse" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "7"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "7"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numTotBeds" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "125"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "125"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 3;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numbeds" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "100"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "100"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 4;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numBedsOcc" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "80"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "80"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 5;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numICUBeds" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "20"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "20"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 6;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numICUBedsOcc" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "15"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "15"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 7;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numC19HospPats" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "25"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "25"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 8;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numC19MechVentPats" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "7"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "7"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 9;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numC19HOPats" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "0"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "0"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 10;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numC19OverflowPats" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "0"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "0"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 11;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numC19OFMechVentPats" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "0"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "0"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 12;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numC19Died" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "0"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "0"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 13;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "surgicalMasks" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-alternateScoreType" ];
+         fhir:Extension.valueCodeableConcept [
+           fhir:CodeableConcept.text [ fhir:value "1-3 days" ]
+         ]
+       ]
+     ]
+  ] .
+
+<urn:uuid:162f8010-7c76-11ea-bcad-a4d18ccf5172> a fhir:MeasureReport;
+  fhir:Resource.id [ fhir:value "162f8010-7c76-11ea-bcad-a4d18ccf5172"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p></div>"
+  ];
+  fhir:DomainResource.contained [
+     a fhir:Location;
+     fhir:index 0;
+     fhir:Resource.id [ fhir:value "loc" ];
+     fhir:Location.identifier [
+       fhir:index 0;
+       fhir:Identifier.system [ fhir:value "urn:oid:2.16.840.1.113883.6.277" ];
+       fhir:Identifier.value [ fhir:value "2.16.840.1.113883.6.277.123" ]
+     ], [
+       fhir:index 1;
+       fhir:Identifier.system [ fhir:value "http://example.org/cms_cert_system" ];
+       fhir:Identifier.value [ fhir:value "1234567" ]
+     ];
+     fhir:Location.name [ fhir:value "Marin General" ];
+     fhir:Location.address [
+       fhir:Address.type [ fhir:value "physical" ];
+       fhir:Address.text [ fhir:value "Marin, CA 94965" ];
+       fhir:Address.district [ fhir:value "Marin" ];
+       fhir:Address.state [ fhir:value "CA" ];
+       fhir:Address.postalCode [ fhir:value "94965" ]
+     ];
+     fhir:Location.physicalType [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/location-physical-type" ];
+         fhir:Coding.code [ fhir:value "jdn" ];
+         fhir:Coding.display [ fhir:value "Jurisdiction" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "US County" ]
+     ]
+  ];
+  fhir:MeasureReport.status [ fhir:value "complete"];
+  fhir:MeasureReport.type [ fhir:value "individual"];
+  fhir:MeasureReport.measure [
+     fhir:value "http://cdcmeasures.example.org/cdc-covid";
+     fhir:link <http://cdcmeasures.example.org/cdc-covid>
+  ];
+  fhir:MeasureReport.subject [
+     fhir:Reference.reference [ fhir:value "#loc" ];
+     fhir:Reference.display [ fhir:value "Marin General Marin, CA 94965" ]
+  ];
+  fhir:MeasureReport.date [ fhir:value "2020-04-12T04:28:36.103826Z"^^xsd:dateTime];
+  fhir:MeasureReport.reporter [
+     fhir:Reference.reference [ fhir:value "#loc" ];
+     fhir:Reference.display [ fhir:value "Marin General Marin, CA 94965" ]
+  ];
+  fhir:MeasureReport.period [
+     fhir:Period.start [ fhir:value "2020-04-05"^^xsd:date ];
+     fhir:Period.end [ fhir:value "2020-04-05"^^xsd:date ]
+  ];
+  fhir:MeasureReport.group [
+     fhir:index 0;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numVent" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "20"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "20"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numVentUse" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "9"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "9"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numTotBeds" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "125"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "125"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 3;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numbeds" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "100"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "100"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 4;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numBedsOcc" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "82"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "82"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 5;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numICUBeds" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "20"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "20"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 6;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numICUBedsOcc" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "16"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "16"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 7;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numC19HospPats" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "26"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "26"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 8;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numC19MechVentPats" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "9"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "9"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 9;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numC19HOPats" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "0"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "0"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 10;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numC19OverflowPats" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "0"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "0"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 11;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numC19OFMechVentPats" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "0"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "0"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 12;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numC19Died" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "0"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "0"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 13;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "surgicalMasks" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-alternateScoreType" ];
+         fhir:Extension.valueCodeableConcept [
+           fhir:CodeableConcept.text [ fhir:value "1-3 days" ]
+         ]
+       ]
+     ]
+  ] .
+
+<urn:uuid:16624c70-7c76-11ea-bcad-a4d18ccf5172> a fhir:MeasureReport;
+  fhir:Resource.id [ fhir:value "16624c70-7c76-11ea-bcad-a4d18ccf5172"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p></div>"
+  ];
+  fhir:DomainResource.contained [
+     a fhir:Location;
+     fhir:index 0;
+     fhir:Resource.id [ fhir:value "loc" ];
+     fhir:Location.identifier [
+       fhir:index 0;
+       fhir:Identifier.system [ fhir:value "urn:oid:2.16.840.1.113883.6.277" ];
+       fhir:Identifier.value [ fhir:value "2.16.840.1.113883.6.277.123" ]
+     ], [
+       fhir:index 1;
+       fhir:Identifier.system [ fhir:value "http://example.org/cms_cert_system" ];
+       fhir:Identifier.value [ fhir:value "1234567" ]
+     ];
+     fhir:Location.name [ fhir:value "Marin General" ];
+     fhir:Location.address [
+       fhir:Address.type [ fhir:value "physical" ];
+       fhir:Address.text [ fhir:value "Marin, CA 94965" ];
+       fhir:Address.district [ fhir:value "Marin" ];
+       fhir:Address.state [ fhir:value "CA" ];
+       fhir:Address.postalCode [ fhir:value "94965" ]
+     ];
+     fhir:Location.physicalType [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/location-physical-type" ];
+         fhir:Coding.code [ fhir:value "jdn" ];
+         fhir:Coding.display [ fhir:value "Jurisdiction" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "US County" ]
+     ]
+  ];
+  fhir:MeasureReport.status [ fhir:value "complete"];
+  fhir:MeasureReport.type [ fhir:value "individual"];
+  fhir:MeasureReport.measure [
+     fhir:value "http://cdcmeasures.example.org/cdc-covid";
+     fhir:link <http://cdcmeasures.example.org/cdc-covid>
+  ];
+  fhir:MeasureReport.subject [
+     fhir:Reference.reference [ fhir:value "#loc" ];
+     fhir:Reference.display [ fhir:value "Marin General Marin, CA 94965" ]
+  ];
+  fhir:MeasureReport.date [ fhir:value "2020-04-12T04:28:36.103826Z"^^xsd:dateTime];
+  fhir:MeasureReport.reporter [
+     fhir:Reference.reference [ fhir:value "#loc" ];
+     fhir:Reference.display [ fhir:value "Marin General Marin, CA 94965" ]
+  ];
+  fhir:MeasureReport.period [
+     fhir:Period.start [ fhir:value "2020-04-06"^^xsd:date ];
+     fhir:Period.end [ fhir:value "2020-04-06"^^xsd:date ]
+  ];
+  fhir:MeasureReport.group [
+     fhir:index 0;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numVent" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "20"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "20"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numVentUse" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "9"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "9"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numTotBeds" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "125"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "125"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 3;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numbeds" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "100"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "100"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 4;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numBedsOcc" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "84"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "84"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 5;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numICUBeds" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "20"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "20"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 6;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numICUBedsOcc" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "17"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "17"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 7;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numC19HospPats" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "27"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "27"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 8;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numC19MechVentPats" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "9"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "9"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 9;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numC19HOPats" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "0"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "0"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 10;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numC19OverflowPats" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "0"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "0"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 11;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numC19OFMechVentPats" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "0"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "0"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 12;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "numC19Died" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:MeasureReport.group.population.count [ fhir:value "1"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "1"^^xsd:decimal ]
+     ]
+  ], [
+     fhir:index 13;
+     fhir:MeasureReport.group.code [
+       fhir:CodeableConcept.text [ fhir:value "surgicalMasks" ]
+     ];
+     fhir:MeasureReport.group.population [
+       fhir:index 0;
+       fhir:MeasureReport.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-alternateScoreType" ];
+         fhir:Extension.valueCodeableConcept [
+           fhir:CodeableConcept.text [ fhir:value "1-3 days" ]
+         ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://www.fhir.org/guides/test4/Bundle/cdc-c19-groups-measurereports-max.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

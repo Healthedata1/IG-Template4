@@ -1,0 +1,302 @@
+{
+  "resourceType": "MeasureReport",
+  "id": "c19-groups-measurereport-min",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>id</b>: c19-groups-measurereport-min</p><p><b>contained</b>: </p><p><b>status</b>: complete</p><p><b>type</b>: individual</p><p><b>measure</b>: <a href=\"http://cdcmeasures.example.org/cdc-covid\">http://cdcmeasures.example.org/cdc-covid</a></p><p><b>subject</b>: Marin General Marin, CA 94965. Generated Summary: unknown resource contained</p><p><b>date</b>: Apr 11, 2020, 9:51:06 PM</p><p><b>reporter</b>: Marin General Marin, CA 94965. Generated Summary: unknown resource contained</p><p><b>period</b>: Mar 31, 2020, 12:00:00 AM --&gt; Mar 31, 2020, 12:00:00 AM</p><blockquote><p><b>group</b></p><p><b>code</b>: <span title=\"Codes: \">numVent</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-population initial-population}\">Initial Population</span></td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: <span title=\"Codes: \">numVentUse</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-population initial-population}\">Initial Population</span></td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: <span title=\"Codes: \">numTotBeds</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-population initial-population}\">Initial Population</span></td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: <span title=\"Codes: \">numbeds</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Count</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-population initial-population}\">Initial Population</span></td><td>100</td></tr></table><p><b>measureScore</b>: 100</p></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: <span title=\"Codes: \">numBedsOcc</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-population initial-population}\">Initial Population</span></td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: <span title=\"Codes: \">numICUBeds</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-population initial-population}\">Initial Population</span></td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: <span title=\"Codes: \">numICUBedsOcc</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-population initial-population}\">Initial Population</span></td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: <span title=\"Codes: \">numC19HospPats</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-population initial-population}\">Initial Population</span></td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: <span title=\"Codes: \">numC19MechVentPats</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-population initial-population}\">Initial Population</span></td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: <span title=\"Codes: \">numC19HOPats</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-population initial-population}\">Initial Population</span></td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: <span title=\"Codes: \">numC19OverflowPats</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-population initial-population}\">Initial Population</span></td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: <span title=\"Codes: \">numC19OFMechVentPats</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-population initial-population}\">Initial Population</span></td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: <span title=\"Codes: \">numC19Died</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-population initial-population}\">Initial Population</span></td></tr></table></blockquote><blockquote><p><b>group</b></p><p><b>code</b>: <span title=\"Codes: \">surgicalMasks</span></p><h3>Populations</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-population initial-population}\">Initial Population</span></td></tr></table></blockquote></div>"
+  },
+  "contained": [
+    {
+      "resourceType": "Location",
+      "id": "loc",
+      "identifier": [
+        {
+          "system": "urn:oid:2.16.840.1.113883.6.277",
+          "value": "2.16.840.1.113883.6.277.123"
+        },
+        {
+          "system": "http://example.org/cms_cert_system",
+          "value": "1234567"
+        }
+      ],
+      "name": "Marin General",
+      "address": {
+        "type": "physical",
+        "text": "Marin, CA 94965",
+        "district": "Marin",
+        "state": "CA",
+        "postalCode": "94965"
+      },
+      "physicalType": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+            "code": "jdn",
+            "display": "Jurisdiction"
+          }
+        ],
+        "text": "US County"
+      }
+    }
+  ],
+  "status": "complete",
+  "type": "individual",
+  "measure": "http://cdcmeasures.example.org/cdc-covid",
+  "subject": {
+    "reference": "#loc",
+    "display": "Marin General Marin, CA 94965"
+  },
+  "date": "2020-04-12T04:51:06.556448Z",
+  "reporter": {
+    "reference": "#loc",
+    "display": "Marin General Marin, CA 94965"
+  },
+  "period": {
+    "start": "2020-03-31",
+    "end": "2020-03-31"
+  },
+  "group": [
+    {
+      "code": {
+        "text": "numVent"
+      },
+      "population": [
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                "code": "initial-population"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "code": {
+        "text": "numVentUse"
+      },
+      "population": [
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                "code": "initial-population"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "code": {
+        "text": "numTotBeds"
+      },
+      "population": [
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                "code": "initial-population"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "code": {
+        "text": "numbeds"
+      },
+      "population": [
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                "code": "initial-population"
+              }
+            ]
+          },
+          "count": 100
+        }
+      ],
+      "measureScore": {
+        "value": 100
+      }
+    },
+    {
+      "code": {
+        "text": "numBedsOcc"
+      },
+      "population": [
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                "code": "initial-population"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "code": {
+        "text": "numICUBeds"
+      },
+      "population": [
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                "code": "initial-population"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "code": {
+        "text": "numICUBedsOcc"
+      },
+      "population": [
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                "code": "initial-population"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "code": {
+        "text": "numC19HospPats"
+      },
+      "population": [
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                "code": "initial-population"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "code": {
+        "text": "numC19MechVentPats"
+      },
+      "population": [
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                "code": "initial-population"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "code": {
+        "text": "numC19HOPats"
+      },
+      "population": [
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                "code": "initial-population"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "code": {
+        "text": "numC19OverflowPats"
+      },
+      "population": [
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                "code": "initial-population"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "code": {
+        "text": "numC19OFMechVentPats"
+      },
+      "population": [
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                "code": "initial-population"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "code": {
+        "text": "numC19Died"
+      },
+      "population": [
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                "code": "initial-population"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "code": {
+        "text": "surgicalMasks"
+      },
+      "population": [
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                "code": "initial-population"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
