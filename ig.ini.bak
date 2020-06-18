@@ -3,7 +3,7 @@
 # see comments below for instructions
 
 ig = input/ig.json
-template = hl7.base.template
+template = fhir.base.template
 
 ##########################
 ### ig.ini parameters: ###

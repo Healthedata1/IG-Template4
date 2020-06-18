@@ -208,6 +208,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         <li>
           <p>IG Publisher name (defined in ig.xml) - {{site.data.fhir.ig.publisher}}  = Health eData Inc</p>
         </li>
+      </ul>
+
+      <h4 id="dependencies">Dependencies</h4>
+
+      <ul>
         <li>
           <p>dependency url - e.g. “uscore” : Base url of a dependency implementation Guide (defined in ig.json) -   {{site.data.fhir.uscore}} = http://hl7.org/fhir/us/core</p>
 
@@ -216,10 +221,27 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
               <p>link to http://hl7.org/fhir/us/core in markdown is  [{{site.data.fhir.uscore}}]({{site.data.fhir.uscore}}) = <a href="http://hl7.org/fhir/us/core">http://hl7.org/fhir/us/core</a></p>
             </li>
             <li>
-              <p>current link to http://hl7.org/fhir/us/core home in markdown is  [{{site.data.fhir.uscore}}index.html]({{site.data.fhir.uscore}}index.html) = <a href="http://hl7.org/fhir/us/coreindex.html">http://hl7.org/fhir/us/coreindex.html</a></p>
+              <p>current link to http://hl7.org/fhir/us/core home in markdown is  [{{site.data.fhir.uscore}}/index.html]({{site.data.fhir.uscore}}/index.html) = <a href="http://hl7.org/fhir/us/core/index.html">http://hl7.org/fhir/us/core/index.html</a></p>
             </li>
           </ul>
         </li>
+        <li>
+          <p>dependency url - e.g. “qicore” : Base url of a dependency implementation Guide (defined in ig.json) -   {{site.data.fhir.qicore}} = http://hl7.org/fhir/us/qicore</p>
+
+          <ul>
+            <li>
+              <p>link to http://hl7.org/fhir/us/qicore in markdown is  [{{site.data.fhir.qicore}}]({{site.data.fhir.qicore}}) = <a href="http://hl7.org/fhir/us/qicore">http://hl7.org/fhir/us/qicore</a></p>
+            </li>
+            <li>
+              <p>current link to http://hl7.org/fhir/us/qicore home in markdown is  [{{site.data.fhir.qicore}}/index.html]({{site.data.fhir.qicore}}/index.html) = <a href="http://hl7.org/fhir/us/qicore/index.html">http://hl7.org/fhir/us/qicore/index.html</a></p>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <hr />
+
+      <ul>
         <li>
           <p>ig Name : computer friendly name of the implementation Guide - used as human friendly name in STU3 (defined in ig.xml) -   {{site.data.fhir.ig.name}} = IGTest4</p>
         </li>
@@ -259,7 +281,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
           <p>processedFiles : number of files genrated by the build -   {{site.data.fhir.processedFiles}}  = 94</p>
         </li>
         <li>
-          <p>genDate : date of generation (so date stamps in the pages can match those in the conformance resources) -   {{site.data.fhir.genDate}}  = Thu, Jun 11, 2020 13:16-0700</p>
+          <p>genDate : date of generation (so date stamps in the pages can match those in the conformance resources) -   {{site.data.fhir.genDate}}  = Thu, Jun 18, 2020 08:27-0700</p>
         </li>
       </ul>
 
@@ -291,7 +313,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package healthedatainc.ig-template4#0.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jun 11, 2020 13:16-0700">2020-06-11</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package healthedatainc.ig-template4#0.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jun 18, 2020 08:27-0700">2020-06-18</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

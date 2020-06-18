@@ -30,12 +30,21 @@ These are the site variables defined [here](http://wiki.hl7.org/index.php?title=
 
 - IG Publisher name (defined in ig.xml) - {% raw %}{{site.data.fhir.ig.publisher}} {% endraw %} = {{site.data.fhir.ig.publisher}}
 
+#### Dependencies
+
 - dependency url - e.g. "uscore" : Base url of a dependency implementation Guide (defined in ig.json) -  {% raw %} {{site.data.fhir.uscore}} {% endraw %}= {{site.data.fhir.uscore}}
 
      - link to {{site.data.fhir.uscore}} in markdown is  {% raw %}\[{{site.data.fhir.uscore}}\]({{site.data.fhir.uscore}}){% endraw %} = [{{site.data.fhir.uscore}}]({{site.data.fhir.uscore}})
 
-     - current link to {{site.data.fhir.uscore}} home in markdown is  {% raw %}\[{{site.data.fhir.uscore}}index.html\]({{site.data.fhir.uscore}}index.html){% endraw %} = [{{site.data.fhir.uscore}}index.html]({{site.data.fhir.uscore}}index.html)
+     - current link to {{site.data.fhir.uscore}} home in markdown is  {% raw %}\[{{site.data.fhir.uscore}}/index.html\]({{site.data.fhir.uscore}}/index.html){% endraw %} = [{{site.data.fhir.uscore}}/index.html]({{site.data.fhir.uscore}}/index.html)
 
+ - dependency url - e.g. "qicore" : Base url of a dependency implementation Guide (defined in ig.json) -  {% raw %} {{site.data.fhir.qicore}} {% endraw %}= {{site.data.fhir.qicore}}
+
+      - link to {{site.data.fhir.qicore}} in markdown is  {% raw %}\[{{site.data.fhir.qicore}}\]({{site.data.fhir.qicore}}){% endraw %} = [{{site.data.fhir.qicore}}]({{site.data.fhir.qicore}})
+
+      - current link to {{site.data.fhir.qicore}} home in markdown is  {% raw %}\[{{site.data.fhir.qicore}}/index.html\]({{site.data.fhir.qicore}}/index.html){% endraw %} = [{{site.data.fhir.qicore}}/index.html]({{site.data.fhir.qicore}}/index.html)
+
+---
 
 - ig Name : computer friendly name of the implementation Guide - used as human friendly name in STU3 (defined in ig.xml) -  {% raw %} {{site.data.fhir.ig.name}} {% endraw %}= {{site.data.fhir.ig.name}}
 
