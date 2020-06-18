@@ -51,15 +51,15 @@ These are the site variables defined [here](http://wiki.hl7.org/index.php?title=
 
   - **US Core** links!
 
-     - link to {{site.data.fhir.uscore}} in markdown is  {% raw %}\[{{site.data.fhir.uscore}}\]({{site.data.fhir.uscore}}){% endraw %} = [US Core]({{site.data.fhir.uscore}})
+     - link to {{site.data.fhir.uscore}} in markdown is  {% raw %}\[{{site.data.fhir.uscore}}\]({{site.data.fhir.uscore}}){% endraw %} = [{{site.data.fhir.uscore}}]({{site.data.fhir.uscore}})
 
-     - current link to {{site.data.fhir.uscore}} home in markdown is  {% raw %}\[{{site.data.fhir.uscore}}index.html\]({{site.data.fhir.uscore}}index.html){% endraw %} = [US Core]({{site.data.fhir.uscore}}index.html)
+     - current link to {{site.data.fhir.uscore}} home in markdown is  {% raw %}\[{{site.data.fhir.uscore}}index.html\]({{site.data.fhir.uscore}}index.html){% endraw %} = [{{site.data.fhir.uscore}}index.html\({{site.data.fhir.uscore}}index.html)
 
   - **QI Core** no link
 
-     - link to {{site.data.fhir.qicore}} in markdown is  {% raw %}\[{{site.data.fhir.qicore}}\]({{site.data.fhir.qicore}}){% endraw %} = [QI Core]({{site.data.fhir.qicore}})
+     - link to {{site.data.fhir.qicore}} in markdown is  {% raw %}\[{{site.data.fhir.qicore}}\]({{site.data.fhir.qicore}}){% endraw %} = [{{site.data.fhir.qicore}}]({{site.data.fhir.qicore}})
 
-     - current link to {{site.data.fhir.qicore}} home in markdown is  {% raw %}\[{{site.data.fhir.qicore}}index.html\]({{site.data.fhir.qicore}}index.html){% endraw %} = [QI Core]({{site.data.fhir.qicore}}index.html)
+     - current link to {{site.data.fhir.qicore}} home in markdown is  {% raw %}\[{{site.data.fhir.qicore}}index.html\]({{site.data.fhir.qicore}}index.html){% endraw %} = [{{site.data.fhir.qicore}}index.html]({{site.data.fhir.qicore}}index.html)
 
   - **CQFM** links!
 

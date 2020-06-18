@@ -188,7 +188,7 @@
             "name": "uscore",
             "package": "hl7.fhir.us.core",
             "location": "http://hl7.org/fhir/us/core",
-            "version": "current"
+            "version": "3.1.0"
         },
         {
             "name": "cqfm",

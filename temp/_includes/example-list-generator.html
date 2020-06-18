@@ -1,9 +1,0 @@
-<h4>FOO</h4>
-<ul>
-{% for p in site.data.ig.definition.resource %}
-{% if p.exampleBoolean %}
-<li><a href="{{p.reference.reference | replace: '/','-'}}.html">{{p.name}}</a></li>
- {% endif %}
- {% endfor %}
-</ul>
-<!-- next step is to sort by type see https://shopify.github.io/liquid/filters/sort/ -->
