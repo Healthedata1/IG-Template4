@@ -204,7 +204,7 @@ can only resize using html  or css ;-(
 <!-- ============Publish box=============== -->
 
 
-<!--ReleaseHeader--><p id="publish-box">IG Test3 - Local Development build (v0.0.0). See the <a href="http://www.fhir.org/guides/test3/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
 <!-- 
 This is the {% if {{site.build}} == "ci" %}
     Continuous Integration Build
@@ -311,6 +311,8 @@ This is the {% if {{site.build}} == "ci" %}
  <tbody><tr><td>Defining URL:</td><td>http://www.fhir.org/guides/test3/ValueSet/bar-codes</td></tr>
  <tr><td>Version:</td><td>0.0.0</td></tr>
  <tr><td>Name:</td><td>BarCodes</td></tr>
+ <tr><td>Status:</td><td>draft</td></tr>
+ <tr><td>Title:</td><td>Bar Value Set</td></tr>
  <tr><td>Definition:</td><td><p>A bunch of example codes</p>
 </td></tr>
  <tr><td>Copyright:</td><td><p>markdown link: <a href="https://www.ama-assn.org/">American Medical Association</a></p>
@@ -335,29 +337,14 @@ unordered markdown list:</p>
 </tbody></table>
 
   
-<p>This value set is not used</p>
+<p>This value set is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)</p>
 
-  <div xmlns="http://www.w3.org/1999/xhtml"><h2>Bar Value Set</h2><div><p>A bunch of example codes</p>
-</div><p><b>Copyright Statement:</b> markdown link: [American Medical Association](https://www.ama-assn.org/)
-
-  use &amp;#xA; to create a new line for markdown.. markdown new paragraph: All rights reserved. This value set includes content from SNOMED CT, which is copyright &copy; 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement
-
-  ## header2
-  ### header3
-  ### header4 
- *emphasis* 
- **bold** 
- unordered markdown list:
- - list 1
- - list 2
-
-  ordered markdown list:
- 1. list1
- 1. list2</p><p>This value set includes codes from the following code systems:</p><ul><li>Include these codes as defined in <a href="CodeSystem-blah-codes.html"><code>http://www.fhir.org/guides/test3/CodeSystem/blah-codes</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-blah-codes.html#blah-codes-bar">bar</a></td><td>Bar</td><td>example code 3</td></tr></table></li></ul></div>
+  <h3>Logical Definition (CLD)</h3>
+<div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="CodeSystem-blah-codes.html"><code>http://www.fhir.org/guides/test3/CodeSystem/blah-codes</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-blah-codes.html#blah-codes-bar">bar</a></td><td>Bar</td><td>example code 3</td></tr></table></li></ul></div>
 
   <h3>Expansion</h3>
 
-  <div xmlns="http://www.w3.org/1999/xhtml"><p>This value set contains 1 concepts</p><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px">Expansion based on http://www.fhir.org/guides/test3/CodeSystem/blah-codes version 0.0.0</p><p>All codes from system <a href="CodeSystem-blah-codes.html"><code>http://www.fhir.org/guides/test3/CodeSystem/blah-codes</code></a></p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap"><a name="http---www.fhir.org-guides-test3-CodeSystem-blah-codes-bar"> </a><a href="CodeSystem-blah-codes.html#blah-codes-bar">bar</a></td><td>Bar</td><td>example code 3</td></tr></table></div>
+  <div xmlns="http://www.w3.org/1999/xhtml"><p>This value set contains 1 concepts</p><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on <a href="CodeSystem-blah-codes.html">BlahCodes v0.0.0 (CodeSystem)</a></p><p>All codes from system <a href="CodeSystem-blah-codes.html"><code>http://www.fhir.org/guides/test3/CodeSystem/blah-codes</code></a></p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap"><a name="http---www.fhir.org-guides-test3-CodeSystem-blah-codes-bar"> </a><a href="CodeSystem-blah-codes.html#blah-codes-bar">bar</a></td><td>Bar</td><td>example code 3</td></tr></table></div>
 <!-- ============VAlUESET CONTENT CONTENT=============== -->
 
 
@@ -407,7 +394,7 @@ Formats: <a href="ValueSet-bar-codes.html">Narrative</a>, <a href="ValueSet-bar-
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-     <a href="mailto:ehaas@healthedatainc.com">Health eData Inc </a> healthedatainc.ig-template2#0.0.0 based on <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR 4.0.0</a> created <span href="#" data-toggle="tooltip" data-placement="top" title="Wed, Oct 30, 2019 17:56-0700">2019-10-30</span>. <br/>
+     <a href="mailto:ehaas@healthedatainc.com">Health eData Inc </a> healthedatainc.ig-template2#0.0.0 based on <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR 4.0.1</a> created <span href="#" data-toggle="tooltip" data-placement="top" title="Wed, Jun 17, 2020 17:02-0700">2020-06-17</span>. <br/>
       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a>
       | <a style="color: #81BEF7" href="qa.html">QA Report</a>
       | <a style="color: #81BEF7" href="#">Version History</a>

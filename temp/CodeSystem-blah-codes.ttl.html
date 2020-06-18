@@ -1,0 +1,25 @@
+---
+---
+{% include fragment-pagebegin.html %}
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
+  {% include fragment-base-navtabs.html type='CodeSystem' id='blah-codes' active='ttl' %}
+  <a name="root"> </a>
+{% if site.data.artifacts[page.path].example %}
+  {% assign example = 'Example ' %}
+{% endif %}
+{% assign prefix = site.data.artifacts[page.path].type %}
+  <h2 id="root">{{example}}{{prefix}}: {{site.data.pages[page.path].title}}</h2>
+
+  <p><a href="CodeSystem-blah-codes.ttl">Raw ttl</a></p>
+
+  <!-- insert intro if present -->
+  {% include fragment-intro.html %}
+
+  {% include CodeSystem-blah-codes-ttl-html.xhtml %}
+
+  <!-- insert notes if present -->
+  {% include fragment-notes.html %}
+
+</div>
+{% include fragment-pageend.html %}

@@ -4,10 +4,11 @@ set -e
 path1=/Users/ehaas/Downloads/org.hl7.fhir.igpublisher.jar
 path2=/Users/ehaas/Downloads/org.hl7.fhir.igpublisher-old.jar
 path3=/Users/ehaas/Documents/FHIR/IG-tools/
-while getopts ds:tonpw option
+while getopts yds:tonpw option
 do
  case "${option}"
  in
+ y) RECONFIG=1;;
  d) DEFN=1;;
  s) SOURCE=${OPTARG};;
  t) NA='N/A';;
@@ -21,6 +22,8 @@ echo "================================================================="
 echo === Publish $SOURCE IG!!! $(date -u) ===
 echo see 'local workflow.md' file for how to use
 echo "Optional Parameters"
+echo '-y parameter for updating ig.json file from ig.yml config file (use when changing IG config parameters)= ' $RECONFIG
+echo ' for -y parameter need python 3.7 and PyYAML, json and sys modules installed in your environment'
 echo '-d parameter = create definitions files  = ' $DEFN
 echo '-n parameter = use definitions source directory definition files  = ' $USEDEF
 echo '-s parameter = source directory = ' $SOURCE
@@ -40,8 +43,16 @@ echo === get the latest ig-pub file ===
 echo "================================================================="
 mv /Users/ehaas/Downloads/org.hl7.fhir.igpublisher.jar /Users/ehaas/Downloads/org.hl7.fhir.igpublisher-old.jar
 # _L flag for redirects
-curl -L https://github.com/FHIR/latest-ig-publisher/raw/master/org.hl7.fhir.publisher.jar -o /Users/ehaas/Downloads/org.hl7.fhir.igpublisher.jar
+curl -L https://storage.googleapis.com/ig-build/org.hl7.fhir.publisher.jar -o /Users/ehaas/Downloads/org.hl7.fhir.igpublisher.jar
 sleep 3
+fi
+
+if [[ $RECONFIG ]]; then
+echo "========================================================================"
+echo "updating ig.json file from ig.yml config file"
+echo "Python 3.7 and PyYAML, json and sys modules are required"
+python3.7 -c 'import sys, yaml, json; json.dump(yaml.full_load(sys.stdin), sys.stdout, indent=4)' < ig.yml > ig.json
+echo "========================================================================"
 fi
 
 if [[ $DEFN ]]; then

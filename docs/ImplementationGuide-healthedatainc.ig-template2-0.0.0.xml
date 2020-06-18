@@ -3,14 +3,14 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="healthedatainc.ig-template2-0.0.0"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>IGTest3</h2><p>The official URL for this implementation guide is: </p><pre>http://www.fhir.org/guides/test3/ImplementationGuide/healthedatainc.ig-template2-0.0.0</pre></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>IGTest3</h2><p>The official URL for this implementation guide is: </p><pre>http://www.fhir.org/guides/test3/ImplementationGuide/healthedatainc.ig-template2-0.0.0</pre></div>
   </text>
   <url value="http://www.fhir.org/guides/test3/ImplementationGuide/healthedatainc.ig-template2-0.0.0"/>
   <version value="0.0.0"/>
   <name value="IGTest3"/>
   <title value="IG Test3"/>
   <status value="draft"/>
-  <date value="2019-10-30T17:56:53-07:00"/>
+  <date value="2020-06-17T16:58:50-07:00"/>
   <publisher value="Health eData Inc"/>
   <contact>
     <telecom>
@@ -28,6 +28,21 @@
   <packageId value="healthedatainc.ig-template2"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.0"/>
+  <dependsOn>
+    <uri value="http://hl7.org/fhir/us/qicore"/>
+    <packageId value="hl7.fhir.us.qicore"/>
+    <version value="4.9.0"/>
+  </dependsOn>
+  <dependsOn>
+    <uri value="http://hl7.org/fhir/us/core"/>
+    <packageId value="hl7.fhir.us.core"/>
+    <version value="1.1.0"/>
+  </dependsOn>
+  <dependsOn>
+    <uri value="http://hl7.org/fhir/us/cqfmeasures"/>
+    <packageId value="hl7.fhir.us.cqfmeasures"/>
+    <version value="2.0.0"/>
+  </dependsOn>
   <definition>
     <grouping>
       <name value="base"/>
@@ -226,6 +241,7 @@
         <reference value="StructureDefinition/extension-blah2"/>
       </reference>
       <name value="blah2"/>
+      <description value="an example of a simple extension."/>
       <groupingId value="template-profile-spreadsheet.xml"/>
     </resource>
     <page>
