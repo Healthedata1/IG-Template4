@@ -46,20 +46,28 @@ These are the site variables defined [here](http://wiki.hl7.org/index.php?title=
 
 - dependency url - e.g. "uscore" : Base url of a dependency implementation Guide (defined in ig.json) -  {% raw %} {{site.data.fhir.uscore}} {% endraw %}= {{site.data.fhir.uscore}}
 
-**US Core**
-   - link to {{site.data.fhir.uscore}} in markdown is  {% raw %}\[{{site.data.fhir.uscore}}\]({{site.data.fhir.uscore}}){% endraw %} = [US Core]({{site.data.fhir.uscore}})
+---
+#### Dependencies
 
-   - current link to {{site.data.fhir.uscore}} home in markdown is  {% raw %}\[{{site.data.fhir.uscore}}index.html\]({{site.data.fhir.uscore}}index.html){% endraw %} = [US Core]({{site.data.fhir.uscore}}index.html)
+  - **US Core** links!
 
-**QI Core**
-   - link to {{site.data.fhir.qicore}} in markdown is  {% raw %}\[{{site.data.fhir.qicore}}\]({{site.data.fhir.qicore}}){% endraw %} = [QI Core]({{site.data.fhir.qicore}})
+     - link to {{site.data.fhir.uscore}} in markdown is  {% raw %}\[{{site.data.fhir.uscore}}\]({{site.data.fhir.uscore}}){% endraw %} = [US Core]({{site.data.fhir.uscore}})
 
-   - current link to {{site.data.fhir.qicore}} home in markdown is  {% raw %}\[{{site.data.fhir.qicore}}index.html\]({{site.data.fhir.qicore}}index.html){% endraw %} = [QI Core]({{site.data.fhir.qicore}}index.html)
+     - current link to {{site.data.fhir.uscore}} home in markdown is  {% raw %}\[{{site.data.fhir.uscore}}index.html\]({{site.data.fhir.uscore}}index.html){% endraw %} = [US Core]({{site.data.fhir.uscore}}index.html)
 
-**CQFM**
-  - link to {{site.data.fhir.cqfm}} in markdown is  {% raw %}\[{{site.data.fhir.cqfm}}\]({{site.data.fhir.cqfm}}){% endraw %} = [CQFM]({{site.data.fhir.cqfm}})
+  - **QI Core** no link
 
-  - current link to {{site.data.fhir.cqfm}} home in markdown is  {% raw %}\[{{site.data.fhir.cqfm}}index.html\]({{site.data.fhir.cqfm}}index.html){% endraw %} = [CQFM]({{site.data.fhir.cqfm}}index.html)
+     - link to {{site.data.fhir.qicore}} in markdown is  {% raw %}\[{{site.data.fhir.qicore}}\]({{site.data.fhir.qicore}}){% endraw %} = [QI Core]({{site.data.fhir.qicore}})
+
+     - current link to {{site.data.fhir.qicore}} home in markdown is  {% raw %}\[{{site.data.fhir.qicore}}index.html\]({{site.data.fhir.qicore}}index.html){% endraw %} = [QI Core]({{site.data.fhir.qicore}}index.html)
+
+  - **CQFM** links!
+
+    - link to {{site.data.fhir.cqfm}} in markdown is  {% raw %}\[{{site.data.fhir.cqfm}}\]({{site.data.fhir.cqfm}}){% endraw %} = [CQFM]({{site.data.fhir.cqfm}})
+
+    - current link to {{site.data.fhir.cqfm}} home in markdown is  {% raw %}\[{{site.data.fhir.cqfm}}index.html\]({{site.data.fhir.cqfm}}index.html){% endraw %} = [CQFM]({{site.data.fhir.cqfm}}index.html)
+
+---
 
 - ig Name : computer friendly name of the implementation Guide - used as human friendly name in STU3 (defined in ig.xml) -  {% raw %} {{site.data.fhir.ig.name}} {% endraw %}= {{site.data.fhir.ig.name}}
 

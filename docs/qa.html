@@ -1,0 +1,716 @@
+﻿<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- broken links = 65, errors = 38, warn = 14, info = 2 -->
+<head>
+  <title>IGTest3 : Validation Results</title>
+  <link href="fhir.css" rel="stylesheet"/>
+  <style>
+    span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
+  </style>
+  <script>
+    function flip(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Reasoning') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Reasoning';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Reasoning';
+      }
+    }
+  </script>
+</head>
+<body style="margin: 20px; background-color: #ffffff">
+ <h1>Validation Results for IGTest3</h1>
+ <p>Generated Wed Jun 17 17:17:47 PDT 2020, FHIR version 4.0.1 for healthedatainc.ig-template2#0.0.0 (canonical = <a href="http://www.fhir.org/guides/test3">http://www.fhir.org/guides/test3</a> (<a href="http://www.fhir.org/guides/test3/history.html">history</a>))</p>
+<p>IG Publisher Version: v1.0.100-SNAPSHOT</p>
+<p>No Suppressed Errors</p>
+ <p>HL7 Publication check:</p> <ul>
+  <li>History Page 'http://hl7.org/fhir/us/davinci-alerts/history.cfml' is wrong (ig.json#paths/history) - must be 'http://www.fhir.org/guides/test3/history.html'</li>
+  <li>package-list.json: file not found in /Users/ehaas/Documents/FHIR/IG-Template4</li>
+</ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Information messages &amp; Warnings</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>66</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_ehaas_Documents_FHIR_IG-Template4_source_examples_basic-example1"><b>/Users/ehaas/Documents/FHIR/IG-Template4/source/examples/basic-example1</b></a></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_ehaas_Documents_FHIR_IG-Template4_source_examples_patient-example"><b>/Users/ehaas/Documents/FHIR/IG-Template4/source/examples/patient-example</b></a></td><td><b>3</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_ehaas_Documents_FHIR_IG-Template4_source_examples_patient-example2"><b>/Users/ehaas/Documents/FHIR/IG-Template4/source/examples/patient-example2</b></a></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_ehaas_Documents_FHIR_IG-Template4_source_resources_CodeSystem-blah-codes"><b>/Users/ehaas/Documents/FHIR/IG-Template4/source/resources/CodeSystem-blah-codes</b></a></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_ehaas_Documents_FHIR_IG-Template4_source_resources_StructureDefinition-ifr"><b>/Users/ehaas/Documents/FHIR/IG-Template4/source/resources/StructureDefinition-ifr</b></a></td><td><b>0</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_ehaas_Documents_FHIR_IG-Template4_source_resources_ValueSet-bar-codes"><b>/Users/ehaas/Documents/FHIR/IG-Template4/source/resources/ValueSet-bar-codes</b></a></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_ehaas_Documents_FHIR_IG-Template4_source_resources_ValueSet-blah-codes"><b>/Users/ehaas/Documents/FHIR/IG-Template4/source/resources/ValueSet-blah-codes</b></a></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_ehaas_Documents_FHIR_IG-Template4_source_resources_ValueSet-foo-codes"><b>/Users/ehaas/Documents/FHIR/IG-Template4/source/resources/ValueSet-foo-codes</b></a></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_ehaas_Documents_FHIR_IG-Template4_source_resources_capabilitystatement-client"><b>/Users/ehaas/Documents/FHIR/IG-Template4/source/resources/capabilitystatement-client</b></a></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_ehaas_Documents_FHIR_IG-Template4_source_resources_capabilitystatement-server"><b>/Users/ehaas/Documents/FHIR/IG-Template4/source/resources/capabilitystatement-server</b></a></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_ehaas_Documents_FHIR_IG-Template4_source_resources_ig"><b>/Users/ehaas/Documents/FHIR/IG-Template4/source/resources/ig</b></a></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_ehaas_Documents_FHIR_IG-Template4_source_resources_operationdefinition-example"><b>/Users/ehaas/Documents/FHIR/IG-Template4/source/resources/operationdefinition-example</b></a></td><td><b>2</b></td><td><b>3</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_ehaas_Documents_FHIR_IG-Template4_source_resources_patient-on-usprofile-spreadsheet"><b>/Users/ehaas/Documents/FHIR/IG-Template4/source/resources/patient-on-usprofile-spreadsheet</b></a></td><td><b>27</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#Template-basic"><b>Template-basic</b></a></td><td><b>0</b></td><td><b>7</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="internal"> </a>
+<h2><a href="">n/a</a></h2>
+ <table class="grid">
+   <tr style="background-color: #ffebcc">
+     <td><b>ImplementationGuide.id</b></td><td><b>warning</b></td><td><b>The Implementation Guide Resource id should be healthedatainc.ig-template2</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Patient.contact.relationship</b></td><td><b>error</b></td><td><b>The reference http://hl7.org/fhir/ValueSet/v2-0131 could not be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-example2.html#30ea3e4a-9c80-41fe-9466-674699d42e09">Patient-example2.html#/html/head/body/div/div/div/div/div/div/div/p/a at Line 270, column 1093</a></b></td><td><b>error</b></td><td><b>The link 'Organization/1' for &quot;Organization/1&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-extension-blah.html#263a98ad-f825-4b76-b641-60f7d4209d87">StructureDefinition-extension-blah.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/a at Line 454, column 8</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-extension-blah.html#Extension.valueCode' for &quot;valueCode&quot; cannot be resolved (valid targets: 32 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-extension-blah.html#4bd34ec0-0a09-4ba0-a4a6-823db35d2cb5">StructureDefinition-extension-blah.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/span/a at Line 454, column 604</a></b></td><td><b>error</b></td><td><b>The link 'http://build.fhir.org/null.html' for &quot;Value of extension&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-extension-blah2.html#9ba26982-15b3-43ee-8ec9-8e6e3ac3d340">StructureDefinition-extension-blah2.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/a at Line 416, column 8</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition/extension-blah2.html#Extension.id' for &quot;id&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-extension-blah2.html#9ba26982-15b3-43ee-8ec9-8e6e3ac3d340">StructureDefinition-extension-blah2.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/a at Line 419, column 8</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition/extension-blah2.html#Extension.url' for &quot;url&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-extension-blah2.html#9ba26982-15b3-43ee-8ec9-8e6e3ac3d340">StructureDefinition-extension-blah2.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/a at Line 420, column 8</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition/extension-blah2.html#Extension.valueCode' for &quot;valueCode&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-extension-blah2.html#a7662a65-a976-407e-89f5-44a469faeac1">StructureDefinition-extension-blah2.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/span/a at Line 420, column 605</a></b></td><td><b>error</b></td><td><b>The link 'http://build.fhir.org/null.html' for &quot;Value of extension&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-extension-complex.html#124cbbaf-4b13-47f4-bcf9-7f0eecaab29a">StructureDefinition-extension-complex.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/a at Line 577, column 12</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-extension-complex.html#Extension.extension.valueCode' for &quot;valueCode&quot; cannot be resolved (valid targets: 40 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-extension-complex.html#0042ef18-cb80-4eac-a9b4-5e979404c94b">StructureDefinition-extension-complex.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/span/a at Line 577, column 621</a></b></td><td><b>error</b></td><td><b>The link 'http://build.fhir.org/null.html' for &quot;Value of extension&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-extension-complex.html#124cbbaf-4b13-47f4-bcf9-7f0eecaab29a">StructureDefinition-extension-complex.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/a at Line 581, column 12</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-extension-complex.html#Extension.extension.valueString' for &quot;valueString&quot; cannot be resolved (valid targets: 40 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-template-basic.html#f5bf5724-05a0-4d7b-9fb0-795303e37887">StructureDefinition-template-basic.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/span/a at Line 521, column 503</a></b></td><td><b>error</b></td><td><b>The link 'http://build.fhir.org/null.html' for &quot;Language of the resource content&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-template-basic.html#8fce2214-effc-4f1d-a0e9-16151ad028be">StructureDefinition-template-basic.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/a at Line 527, column 12</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-template-basic.html#Basic.extension.valueCode' for &quot;valueCode&quot; cannot be resolved (valid targets: 62 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-template-basic.html#44b17a55-4a10-426f-8987-e980f29a2020">StructureDefinition-template-basic.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/span/a at Line 527, column 614</a></b></td><td><b>error</b></td><td><b>The link 'http://build.fhir.org/null.html' for &quot;Value of extension&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-template-basic.html#dbc779ea-6dd4-4749-a85d-6b0f82aed43d">StructureDefinition-template-basic.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/span/a at Line 535, column 555</a></b></td><td><b>error</b></td><td><b>The link 'http://build.fhir.org/null.html' for &quot;Kind of Resource&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-template-profile-on-profile-definitions.html#144e0915-e97f-4bd7-960b-05bed51881a7">StructureDefinition-template-profile-on-profile-definitions.html#/html/head/body/div/div/div/div/div/div/table/tr/td/a at Line 689, column 206</a></b></td><td><b>error</b></td><td><b>The link 'v2-0131.html' for &quot;v2-0131&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-template-profile-on-profile.html#9b5dfbc6-945b-4e94-afd1-0753c594d913">StructureDefinition-template-profile-on-profile.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/table/tr/td/a at Line 504, column 1713</a></b></td><td><b>error</b></td><td><b>The link 'v2-0131.html' for &quot;v2-0131&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-template-profile-on-profile.html#463533eb-672a-412e-ab47-ab70a7979e4e">StructureDefinition-template-profile-on-profile.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/span/a at Line 545, column 410</a></b></td><td><b>error</b></td><td><b>The link 'http://build.fhir.org/null.html' for &quot;Language of the resource content&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-template-profile-on-profile.html#aedc5bd5-8e4c-4967-acec-4e9fce4e7744">StructureDefinition-template-profile-on-profile.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/a at Line 559, column 12</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-template-profile-on-profile.html#Patient.extension.valueCode' for &quot;valueCode&quot; cannot be resolved (valid targets: 99 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-template-profile-on-profile.html#ec353091-4cb8-4be0-948c-113a12559998">StructureDefinition-template-profile-on-profile.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/span/a at Line 559, column 500</a></b></td><td><b>error</b></td><td><b>The link 'http://build.fhir.org/null.html' for &quot;Value of extension&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-template-profile-on-profile.html#5ee76955-834b-4475-a5d7-f294aafda289">StructureDefinition-template-profile-on-profile.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/span/a at Line 565, column 447</a></b></td><td><b>error</b></td><td><b>The link 'http://build.fhir.org/null.html' for &quot;usual | official | temp | secondary (If known)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-template-profile-on-profile.html#d95fc8fe-a72e-46e6-abcc-e0e0eecd3947">StructureDefinition-template-profile-on-profile.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/span/a at Line 566, column 487</a></b></td><td><b>error</b></td><td><b>The link 'http://build.fhir.org/null.html' for &quot;Description of identifier&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-template-profile-on-profile.html#1bd6ec3e-ec14-445f-9562-edaf2940b3d2">StructureDefinition-template-profile-on-profile.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/span/a at Line 576, column 447</a></b></td><td><b>error</b></td><td><b>The link 'http://build.fhir.org/null.html' for &quot;usual | official | temp | nickname | anonymous | old | maiden&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-template-profile-on-profile.html#fd82a3c0-6051-4fc3-af29-68077023bb58">StructureDefinition-template-profile-on-profile.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/span/a at Line 585, column 586</a></b></td><td><b>error</b></td><td><b>The link 'http://build.fhir.org/null.html' for &quot;male | female | other | unknown&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-template-profile-on-profile.html#aedc5bd5-8e4c-4967-acec-4e9fce4e7744">StructureDefinition-template-profile-on-profile.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/a at Line 588, column 8</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-template-profile-on-profile.html#Patient.deceasedBoolean' for &quot;deceasedBoolean&quot; cannot be resolved (valid targets: 99 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-template-profile-on-profile.html#aedc5bd5-8e4c-4967-acec-4e9fce4e7744">StructureDefinition-template-profile-on-profile.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/a at Line 589, column 8</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-template-profile-on-profile.html#Patient.deceasedDateTime' for &quot;deceasedDateTime&quot; cannot be resolved (valid targets: 99 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-template-profile-on-profile.html#17a15ba8-bcba-4bfc-b8fe-6a92fccbb34f">StructureDefinition-template-profile-on-profile.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/span/a at Line 591, column 450</a></b></td><td><b>error</b></td><td><b>The link 'http://build.fhir.org/null.html' for &quot;Marital (civil) status of a patient&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-template-profile-on-profile.html#aedc5bd5-8e4c-4967-acec-4e9fce4e7744">StructureDefinition-template-profile-on-profile.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/a at Line 593, column 8</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-template-profile-on-profile.html#Patient.multipleBirthBoolean' for &quot;multipleBirthBoolean&quot; cannot be resolved (valid targets: 99 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-template-profile-on-profile.html#aedc5bd5-8e4c-4967-acec-4e9fce4e7744">StructureDefinition-template-profile-on-profile.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/a at Line 594, column 8</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-template-profile-on-profile.html#Patient.multipleBirthInteger' for &quot;multipleBirthInteger&quot; cannot be resolved (valid targets: 99 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-template-profile-on-profile.html#c76131e3-d813-446c-937f-061cf02d5391">StructureDefinition-template-profile-on-profile.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/span/a at Line 603, column 493</a></b></td><td><b>error</b></td><td><b>The link 'http://build.fhir.org/null.html' for &quot;male | female | other | unknown&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-template-profile-on-profile.html#978670ef-1d1d-412a-b58b-0060be322900">StructureDefinition-template-profile-on-profile.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/span/a at Line 610, column 772</a></b></td><td><b>error</b></td><td><b>The link 'http://build.fhir.org/null.html' for &quot;The language which can be used to communicate with the patient about his or her health&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-template-profile-on-profile.html#442b1ee6-c91f-431c-aeb1-9190a834732c">StructureDefinition-template-profile-on-profile.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/pre/span/a at Line 619, column 511</a></b></td><td><b>error</b></td><td><b>The link 'http://build.fhir.org/null.html' for &quot;replaced-by | replaces | refer | seealso - type of link&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-template-profile-on-profile.html#8fccaa07-4e9a-4755-a215-1416b7a6cbca">StructureDefinition-template-profile-on-profile.html#/html/head/body/div/div/div/div/div/div/hr/div/div/div/div/table/tr/td/a at Line 716, column 1713</a></b></td><td><b>error</b></td><td><b>The link 'v2-0131.html' for &quot;v2-0131&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-blah-codes.html#55f2367d-c251-4d96-bedd-ff1d4bf7ebe0">ValueSet-blah-codes.html#/html/head/body/div/div/div/div/div/div/ul/li/a at Line 325, column 8</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition/extension-blah2.html' for &quot;Simple Extension&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>html_pages.html</b></td><td><b>information</b></td><td><b>The html source does not contain the publish box; this is recommended for publishing support  (see note at http://wiki.hl7.org/index.php?title=FHIR_Implementation_Guide_Publishing_Requirements#HL7_HTML_Standards_considerations). Note that this is mandatory for HL7 specifications, and on the ci-build, but in other cases it's still recommended (this is only reported once, but applies for all pages)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="html_pages.html#dbefcb03-d2ec-4cdb-94b9-c788cebbabe5">html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 3452, column 18</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Any&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="html_pages.html#dbefcb03-d2ec-4cdb-94b9-c788cebbabe5">html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 3470, column 18</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Basic Diet&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="html_pages.html#dbefcb03-d2ec-4cdb-94b9-c788cebbabe5">html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 3500, column 18</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Capabilitystatement Client&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="html_pages.html#dbefcb03-d2ec-4cdb-94b9-c788cebbabe5">html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 3530, column 18</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Capabilitystatement Server&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="html_pages.html#dbefcb03-d2ec-4cdb-94b9-c788cebbabe5">html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 3560, column 18</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Codesystem Blah Codes&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="html_pages.html#dbefcb03-d2ec-4cdb-94b9-c788cebbabe5">html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 3590, column 18</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Implementationguide Healthedatainc.ig Template2 0.0.0&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="html_pages.html#dbefcb03-d2ec-4cdb-94b9-c788cebbabe5">html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 3620, column 18</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Operationdefinition Opdef Test&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="html_pages.html#dbefcb03-d2ec-4cdb-94b9-c788cebbabe5">html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 3650, column 18</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Patient Example&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="html_pages.html#dbefcb03-d2ec-4cdb-94b9-c788cebbabe5">html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 3680, column 18</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Patient Example2&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="html_pages.html#dbefcb03-d2ec-4cdb-94b9-c788cebbabe5">html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 3718, column 18</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Structuredefinition Extension Blah&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="html_pages.html#dbefcb03-d2ec-4cdb-94b9-c788cebbabe5">html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 3756, column 18</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Structuredefinition Extension Blah2&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="html_pages.html#dbefcb03-d2ec-4cdb-94b9-c788cebbabe5">html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 3794, column 18</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Structuredefinition Extension Complex&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="html_pages.html#dbefcb03-d2ec-4cdb-94b9-c788cebbabe5">html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 3832, column 18</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Structuredefinition Ifr&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="html_pages.html#dbefcb03-d2ec-4cdb-94b9-c788cebbabe5">html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 3870, column 18</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Structuredefinition Template Basic&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="html_pages.html#dbefcb03-d2ec-4cdb-94b9-c788cebbabe5">html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 3908, column 18</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Structuredefinition Template Profile On Profile&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="html_pages.html#dbefcb03-d2ec-4cdb-94b9-c788cebbabe5">html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 3938, column 18</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Valueset Bar Codes&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="html_pages.html#dbefcb03-d2ec-4cdb-94b9-c788cebbabe5">html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 3968, column 18</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Valueset Blah Codes&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="html_pages.html#dbefcb03-d2ec-4cdb-94b9-c788cebbabe5">html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 3998, column 18</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Valueset Foo Codes&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="html_pages.html#dbefcb03-d2ec-4cdb-94b9-c788cebbabe5">html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 4028, column 18</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;All Examples&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="html_pages.html#dbefcb03-d2ec-4cdb-94b9-c788cebbabe5">html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 4046, column 18</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Capstatements&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="html_pages.html#dbefcb03-d2ec-4cdb-94b9-c788cebbabe5">html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 4064, column 18</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Downloads&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="html_pages.html#dbefcb03-d2ec-4cdb-94b9-c788cebbabe5">html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 4082, column 18</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Guidance&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="html_pages.html#dbefcb03-d2ec-4cdb-94b9-c788cebbabe5">html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 4100, column 18</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Html_pages&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="html_pages.html#dbefcb03-d2ec-4cdb-94b9-c788cebbabe5">html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 4118, column 18</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Index&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="html_pages.html#dbefcb03-d2ec-4cdb-94b9-c788cebbabe5">html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 4136, column 18</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Operations&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="html_pages.html#dbefcb03-d2ec-4cdb-94b9-c788cebbabe5">html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 4154, column 18</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Profiles&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="html_pages.html#dbefcb03-d2ec-4cdb-94b9-c788cebbabe5">html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 4172, column 18</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Searchparameters&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="html_pages.html#dbefcb03-d2ec-4cdb-94b9-c788cebbabe5">html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 4190, column 18</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Security&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="html_pages.html#dbefcb03-d2ec-4cdb-94b9-c788cebbabe5">html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 4208, column 18</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Terminology&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="html_pages.html#dbefcb03-d2ec-4cdb-94b9-c788cebbabe5">html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 4226, column 18</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Toc&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="html_pages.html#dbefcb03-d2ec-4cdb-94b9-c788cebbabe5">html_pages.html#/html/head/body/div/div/div/div/div/div/a at Line 4244, column 18</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Todo&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="index.html#3f62059f-7f61-477c-bded-4e2dbf0d00f0">index.html#/html/head/body/div/div/div/div/div/div/ul/li/ul/li/p/a at Line 369, column 144</a></b></td><td><b>error</b></td><td><b>The link 'file://C:\GitHub\hl7.fhir.us.qicore#4.0.0\output/' for &quot;QI Core&quot; cannot be resolved</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_ehaas_Documents_FHIR_IG-Template4_source_examples_basic-example1"> </a>
+<h2><a href="Basic-diet.html">/Users/ehaas/Documents/FHIR/IG-Template4/source/examples/basic-example1.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Basic/diet: Basic (l1/c74)</b></td><td><b>error</b></td><td><b>temp-1: Identifier SHALL be greater than 5 characters [Identifier.value.length() &gt; 5]</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_ehaas_Documents_FHIR_IG-Template4_source_examples_patient-example"> </a>
+<h2><a href="Patient-example.html">/Users/ehaas/Documents/FHIR/IG-Template4/source/examples/patient-example.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Patient/example: Patient.extension[2].value.ofType(code) (l74/c25)</b></td><td><b>error</b></td><td><b>The value provided (&quot;F&quot;) is not in the value set http://hl7.org/fhir/us/core/ValueSet/us-core-birthsex (http://hl7.org/fhir/us/core/ValueSet/us-core-birthsex), and a code is required from this value set) (error message = CodeSystem uri 'http://hl7.org/fhir/v3/AdministrativeGender' is unknown)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Patient/example: Patient.identifier[0].type.coding[0] (l79/c12)</b></td><td><b>error</b></td><td><b>Unknown Code System &quot;http://hl7.org/fhir/v2/0203&quot;</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Patient/example: Patient.identifier[0].type.coding[0].system (l80/c50)</b></td><td><b>error</b></td><td><b>URL value &quot;http://hl7.org/fhir/v2/0203&quot; does not resolve</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_ehaas_Documents_FHIR_IG-Template4_source_examples_patient-example2"> </a>
+<h2><a href="Patient-example2.html">/Users/ehaas/Documents/FHIR/IG-Template4/source/examples/patient-example2.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Patient/example2: Patient.managingOrganization (l127/c25)</b></td><td><b>error</b></td><td><b>Unable to resolve resource &quot;Organization/1&quot;</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_ehaas_Documents_FHIR_IG-Template4_source_resources_CodeSystem-blah-codes"> </a>
+<h2><a href="CodeSystem-blah-codes.html">/Users/ehaas/Documents/FHIR/IG-Template4/source/resources/CodeSystem-blah-codes.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_ehaas_Documents_FHIR_IG-Template4_source_resources_StructureDefinition-ifr"> </a>
+<h2><a href="StructureDefinition-ifr.html">/Users/ehaas/Documents/FHIR/IG-Template4/source/resources/StructureDefinition-ifr.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/ifr: StructureDefinition</b></td><td><b>warning</b></td><td><b>sdf-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'http://www.fhir.org/guides/test3/StructureDefinition/ifr')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this data type profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_ehaas_Documents_FHIR_IG-Template4_source_resources_ValueSet-bar-codes"> </a>
+<h2><a href="ValueSet-bar-codes.html">/Users/ehaas/Documents/FHIR/IG-Template4/source/resources/ValueSet-bar-codes.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet/bar-codes: ValueSet.jurisdiction[0] (l40/c15)</b></td><td><b>error</b></td><td><b>As specified by profile http://hl7.org/fhir/StructureDefinition/ValueSet, Element &quot;jurisdiction&quot; is out of order</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_ehaas_Documents_FHIR_IG-Template4_source_resources_ValueSet-blah-codes"> </a>
+<h2><a href="ValueSet-blah-codes.html">/Users/ehaas/Documents/FHIR/IG-Template4/source/resources/ValueSet-blah-codes.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet/blah-codes: ValueSet.jurisdiction[0] (l36/c15)</b></td><td><b>error</b></td><td><b>As specified by profile http://hl7.org/fhir/StructureDefinition/ValueSet, Element &quot;jurisdiction&quot; is out of order</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_ehaas_Documents_FHIR_IG-Template4_source_resources_ValueSet-foo-codes"> </a>
+<h2><a href="ValueSet-foo-codes.html">/Users/ehaas/Documents/FHIR/IG-Template4/source/resources/ValueSet-foo-codes.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet/foo-codes: ValueSet.jurisdiction[0] (l37/c15)</b></td><td><b>error</b></td><td><b>As specified by profile http://hl7.org/fhir/StructureDefinition/ValueSet, Element &quot;jurisdiction&quot; is out of order</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_ehaas_Documents_FHIR_IG-Template4_source_resources_capabilitystatement-client"> </a>
+<h2><a href="CapabilityStatement-client.html">/Users/ehaas/Documents/FHIR/IG-Template4/source/resources/capabilitystatement-client.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_ehaas_Documents_FHIR_IG-Template4_source_resources_capabilitystatement-server"> </a>
+<h2><a href="CapabilityStatement-server.html">/Users/ehaas/Documents/FHIR/IG-Template4/source/resources/capabilitystatement-server.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_ehaas_Documents_FHIR_IG-Template4_source_resources_ig"> </a>
+<h2><a href="ImplementationGuide-healthedatainc.ig-template2-0.0.0.html">/Users/ehaas/Documents/FHIR/IG-Template4/source/resources/ig.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_ehaas_Documents_FHIR_IG-Template4_source_resources_operationdefinition-example"> </a>
+<h2><a href="OperationDefinition-opdef-test.html">/Users/ehaas/Documents/FHIR/IG-Template4/source/resources/operationdefinition-example.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>OperationDefinition.url</b></td><td><b>error</b></td><td><b>Resource id/url mismatch: opdef-test/http://www.fhir.org/guides/test3/OperationDefinition/example</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>OperationDefinition/opdef-test: OperationDefinition</b></td><td><b>warning</b></td><td><b>opd-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>OperationDefinition/opdef-test: OperationDefinition.useContext[0].code</b></td><td><b>information</b></td><td><b>Code System URI &quot;http://build.fhir.org/codesystem-usage-context-type&quot; is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>OperationDefinition/opdef-test: OperationDefinition.jurisdiction[0]</b></td><td><b>warning</b></td><td><b>The display &quot;United Kingdom of Great Britain and Northern Ireland (the)&quot; is not a valid display for the code {urn:iso:std:iso:3166}GB - should be one of [&quot;United Kingdom of Great Britain and Northern Ireland&quot;]</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>OperationDefinition/opdef-test: OperationDefinition.base</b></td><td><b>error</b></td><td><b>Canonical URLs must be absolute URLs if they are not fragment references (OperationDefinition/Questionnaire-populate) </b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_ehaas_Documents_FHIR_IG-Template4_source_resources_patient-on-usprofile-spreadsheet"> </a>
+<h2><a href="StructureDefinition-template-profile-on-profile.html">/Users/ehaas/Documents/FHIR/IG-Template4/source/resources/patient-on-usprofile-spreadsheet.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/template-profile-on-profile: StructureDefinition</b></td><td><b>warning</b></td><td><b>sdf-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition/template-profile-on-profile: StructureDefinition.snapshot.element[4].binding.valueSet</b></td><td><b>error</b></td><td><b>The extension http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type is not allowed to be used at this point (allowed = e:ElementDefinition.type; this element is [[StructureDefinition.snapshot.element.binding.valueSet, BackboneElement.element.binding.valueSet, ElementDefinition.binding.valueSet, Element.valueSet, canonical])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition/template-profile-on-profile: StructureDefinition.snapshot.element[4].binding.valueSet.extension[0]</b></td><td><b>error</b></td><td><b>The Extension &quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type&quot; definition allows for the types [url] but found type uri</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition/template-profile-on-profile: StructureDefinition.snapshot.element[15].binding.valueSet</b></td><td><b>error</b></td><td><b>The extension http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type is not allowed to be used at this point (allowed = e:ElementDefinition.type; this element is [[StructureDefinition.snapshot.element.binding.valueSet, BackboneElement.element.binding.valueSet, ElementDefinition.binding.valueSet, Element.valueSet, canonical])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition/template-profile-on-profile: StructureDefinition.snapshot.element[15].binding.valueSet.extension[0]</b></td><td><b>error</b></td><td><b>The Extension &quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type&quot; definition allows for the types [url] but found type uri</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition/template-profile-on-profile: StructureDefinition.snapshot.element[16].binding.valueSet</b></td><td><b>error</b></td><td><b>The extension http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type is not allowed to be used at this point (allowed = e:ElementDefinition.type; this element is [[StructureDefinition.snapshot.element.binding.valueSet, BackboneElement.element.binding.valueSet, ElementDefinition.binding.valueSet, Element.valueSet, canonical])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition/template-profile-on-profile: StructureDefinition.snapshot.element[16].binding.valueSet.extension[0]</b></td><td><b>error</b></td><td><b>The Extension &quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type&quot; definition allows for the types [url] but found type uri</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition/template-profile-on-profile: StructureDefinition.snapshot.element[25].binding.valueSet</b></td><td><b>error</b></td><td><b>The extension http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type is not allowed to be used at this point (allowed = e:ElementDefinition.type; this element is [[StructureDefinition.snapshot.element.binding.valueSet, BackboneElement.element.binding.valueSet, ElementDefinition.binding.valueSet, Element.valueSet, canonical])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition/template-profile-on-profile: StructureDefinition.snapshot.element[25].binding.valueSet.extension[0]</b></td><td><b>error</b></td><td><b>The Extension &quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type&quot; definition allows for the types [url] but found type uri</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition/template-profile-on-profile: StructureDefinition.snapshot.element[33].binding.valueSet</b></td><td><b>error</b></td><td><b>The extension http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type is not allowed to be used at this point (allowed = e:ElementDefinition.type; this element is [[StructureDefinition.snapshot.element.binding.valueSet, BackboneElement.element.binding.valueSet, ElementDefinition.binding.valueSet, Element.valueSet, canonical])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition/template-profile-on-profile: StructureDefinition.snapshot.element[33].binding.valueSet.extension[0]</b></td><td><b>error</b></td><td><b>The Extension &quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type&quot; definition allows for the types [url] but found type uri</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition/template-profile-on-profile: StructureDefinition.snapshot.element[37].binding.valueSet</b></td><td><b>error</b></td><td><b>The extension http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type is not allowed to be used at this point (allowed = e:ElementDefinition.type; this element is [[StructureDefinition.snapshot.element.binding.valueSet, BackboneElement.element.binding.valueSet, ElementDefinition.binding.valueSet, Element.valueSet, canonical])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition/template-profile-on-profile: StructureDefinition.snapshot.element[37].binding.valueSet.extension[0]</b></td><td><b>error</b></td><td><b>The Extension &quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type&quot; definition allows for the types [url] but found type uri</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition/template-profile-on-profile: StructureDefinition.snapshot.element[44].binding.valueSet</b></td><td><b>error</b></td><td><b>URL value &quot;http://hl7.org/fhir/ValueSet/v2-0131&quot; does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition/template-profile-on-profile: StructureDefinition.snapshot.element[44].binding.valueSet</b></td><td><b>error</b></td><td><b>The extension http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type is not allowed to be used at this point (allowed = e:ElementDefinition.type; this element is [[StructureDefinition.snapshot.element.binding.valueSet, BackboneElement.element.binding.valueSet, ElementDefinition.binding.valueSet, Element.valueSet, canonical])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition/template-profile-on-profile: StructureDefinition.snapshot.element[44].binding.valueSet.extension[0]</b></td><td><b>error</b></td><td><b>The Extension &quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type&quot; definition allows for the types [url] but found type uri</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition/template-profile-on-profile: StructureDefinition.snapshot.element[48].binding.valueSet</b></td><td><b>error</b></td><td><b>The extension http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type is not allowed to be used at this point (allowed = e:ElementDefinition.type; this element is [[StructureDefinition.snapshot.element.binding.valueSet, BackboneElement.element.binding.valueSet, ElementDefinition.binding.valueSet, Element.valueSet, canonical])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition/template-profile-on-profile: StructureDefinition.snapshot.element[48].binding.valueSet.extension[0]</b></td><td><b>error</b></td><td><b>The Extension &quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type&quot; definition allows for the types [url] but found type uri</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition/template-profile-on-profile: StructureDefinition.snapshot.element[55].binding.valueSet</b></td><td><b>error</b></td><td><b>The extension http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type is not allowed to be used at this point (allowed = e:ElementDefinition.type; this element is [[StructureDefinition.snapshot.element.binding.valueSet, BackboneElement.element.binding.valueSet, ElementDefinition.binding.valueSet, Element.valueSet, canonical])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition/template-profile-on-profile: StructureDefinition.snapshot.element[55].binding.valueSet.extension[0]</b></td><td><b>error</b></td><td><b>The Extension &quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type&quot; definition allows for the types [url] but found type uri</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition/template-profile-on-profile: StructureDefinition.snapshot.element[56].binding.valueSet</b></td><td><b>error</b></td><td><b>The extension http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type is not allowed to be used at this point (allowed = e:ElementDefinition.type; this element is [[StructureDefinition.snapshot.element.binding.valueSet, BackboneElement.element.binding.valueSet, ElementDefinition.binding.valueSet, Element.valueSet, canonical])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition/template-profile-on-profile: StructureDefinition.snapshot.element[56].binding.valueSet.extension[0]</b></td><td><b>error</b></td><td><b>The Extension &quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type&quot; definition allows for the types [url] but found type uri</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition/template-profile-on-profile: StructureDefinition.snapshot.element[57].binding.valueSet</b></td><td><b>error</b></td><td><b>The extension http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type is not allowed to be used at this point (allowed = e:ElementDefinition.type; this element is [[StructureDefinition.snapshot.element.binding.valueSet, BackboneElement.element.binding.valueSet, ElementDefinition.binding.valueSet, Element.valueSet, canonical])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition/template-profile-on-profile: StructureDefinition.snapshot.element[57].binding.valueSet.extension[0]</b></td><td><b>error</b></td><td><b>The Extension &quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type&quot; definition allows for the types [url] but found type uri</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition/template-profile-on-profile: StructureDefinition.snapshot.element[62].binding.valueSet</b></td><td><b>error</b></td><td><b>The extension http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type is not allowed to be used at this point (allowed = e:ElementDefinition.type; this element is [[StructureDefinition.snapshot.element.binding.valueSet, BackboneElement.element.binding.valueSet, ElementDefinition.binding.valueSet, Element.valueSet, canonical])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition/template-profile-on-profile: StructureDefinition.snapshot.element[62].binding.valueSet.extension[0]</b></td><td><b>error</b></td><td><b>The Extension &quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type&quot; definition allows for the types [url] but found type uri</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition/template-profile-on-profile: StructureDefinition.snapshot.element[71].binding.valueSet</b></td><td><b>error</b></td><td><b>The extension http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type is not allowed to be used at this point (allowed = e:ElementDefinition.type; this element is [[StructureDefinition.snapshot.element.binding.valueSet, BackboneElement.element.binding.valueSet, ElementDefinition.binding.valueSet, Element.valueSet, canonical])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition/template-profile-on-profile: StructureDefinition.snapshot.element[71].binding.valueSet.extension[0]</b></td><td><b>error</b></td><td><b>The Extension &quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type&quot; definition allows for the types [url] but found type uri</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'http://www.fhir.org/guides/test3/StructureDefinition/template-profile-on-profile')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Template-basic"> </a>
+<h2><a href="StructureDefinition-extension-blah.html">/Users/ehaas/Documents/FHIR/IG-Template4/source/resources/template-profile-spreadsheet.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/extension-blah: StructureDefinition</b></td><td><b>warning</b></td><td><b>sdf-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/extension-complex: StructureDefinition</b></td><td><b>warning</b></td><td><b>sdf-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/extension-blah2: StructureDefinition</b></td><td><b>warning</b></td><td><b>sdf-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/template-basic: StructureDefinition</b></td><td><b>warning</b></td><td><b>sdf-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'http://www.fhir.org/guides/test3/StructureDefinition/extension-blah')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this extension</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'http://www.fhir.org/guides/test3/StructureDefinition/extension-complex')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this extension</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'http://www.fhir.org/guides/test3/StructureDefinition/extension-blah2')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this extension</b></td>
+   </tr>
+</table>
+<a name="suppressed"> </a>
+<p><b>Suppressed Messages (Warnings, hints, broken links)</b></p>
+<p>No suppressed messsages</p><a name="sorted"> </a>
+<p><b>Errors sorted by type</b></p>
+<hr/>
+<a name="Extension_EXT_Context_Wrong"> </a>
+<h2>Extension_EXT_Context_Wrong</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-template-profile-on-profile.html">/Users/ehaas/Documents/FHIR/IG-Template4/source/resources/patient-on-usprofile-spreadsheet.xml</a></td><td><b>The extension http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type is not allowed to be used at this point (allowed = e:ElementDefinition.type; this element is [[StructureDefinition.snapshot.element.binding.valueSet, BackboneElement.element.binding.valueSet, ElementDefinition.binding.valueSet, Element.valueSet, canonical])</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-template-profile-on-profile.html">/Users/ehaas/Documents/FHIR/IG-Template4/source/resources/patient-on-usprofile-spreadsheet.xml</a></td><td><b>The extension http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type is not allowed to be used at this point (allowed = e:ElementDefinition.type; this element is [[StructureDefinition.snapshot.element.binding.valueSet, BackboneElement.element.binding.valueSet, ElementDefinition.binding.valueSet, Element.valueSet, canonical])</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-template-profile-on-profile.html">/Users/ehaas/Documents/FHIR/IG-Template4/source/resources/patient-on-usprofile-spreadsheet.xml</a></td><td><b>The extension http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type is not allowed to be used at this point (allowed = e:ElementDefinition.type; this element is [[StructureDefinition.snapshot.element.binding.valueSet, BackboneElement.element.binding.valueSet, ElementDefinition.binding.valueSet, Element.valueSet, canonical])</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-template-profile-on-profile.html">/Users/ehaas/Documents/FHIR/IG-Template4/source/resources/patient-on-usprofile-spreadsheet.xml</a></td><td><b>The extension http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type is not allowed to be used at this point (allowed = e:ElementDefinition.type; this element is [[StructureDefinition.snapshot.element.binding.valueSet, BackboneElement.element.binding.valueSet, ElementDefinition.binding.valueSet, Element.valueSet, canonical])</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-template-profile-on-profile.html">/Users/ehaas/Documents/FHIR/IG-Template4/source/resources/patient-on-usprofile-spreadsheet.xml</a></td><td><b>The extension http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type is not allowed to be used at this point (allowed = e:ElementDefinition.type; this element is [[StructureDefinition.snapshot.element.binding.valueSet, BackboneElement.element.binding.valueSet, ElementDefinition.binding.valueSet, Element.valueSet, canonical])</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-template-profile-on-profile.html">/Users/ehaas/Documents/FHIR/IG-Template4/source/resources/patient-on-usprofile-spreadsheet.xml</a></td><td><b>The extension http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type is not allowed to be used at this point (allowed = e:ElementDefinition.type; this element is [[StructureDefinition.snapshot.element.binding.valueSet, BackboneElement.element.binding.valueSet, ElementDefinition.binding.valueSet, Element.valueSet, canonical])</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-template-profile-on-profile.html">/Users/ehaas/Documents/FHIR/IG-Template4/source/resources/patient-on-usprofile-spreadsheet.xml</a></td><td><b>The extension http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type is not allowed to be used at this point (allowed = e:ElementDefinition.type; this element is [[StructureDefinition.snapshot.element.binding.valueSet, BackboneElement.element.binding.valueSet, ElementDefinition.binding.valueSet, Element.valueSet, canonical])</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-template-profile-on-profile.html">/Users/ehaas/Documents/FHIR/IG-Template4/source/resources/patient-on-usprofile-spreadsheet.xml</a></td><td><b>The extension http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type is not allowed to be used at this point (allowed = e:ElementDefinition.type; this element is [[StructureDefinition.snapshot.element.binding.valueSet, BackboneElement.element.binding.valueSet, ElementDefinition.binding.valueSet, Element.valueSet, canonical])</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-template-profile-on-profile.html">/Users/ehaas/Documents/FHIR/IG-Template4/source/resources/patient-on-usprofile-spreadsheet.xml</a></td><td><b>The extension http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type is not allowed to be used at this point (allowed = e:ElementDefinition.type; this element is [[StructureDefinition.snapshot.element.binding.valueSet, BackboneElement.element.binding.valueSet, ElementDefinition.binding.valueSet, Element.valueSet, canonical])</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-template-profile-on-profile.html">/Users/ehaas/Documents/FHIR/IG-Template4/source/resources/patient-on-usprofile-spreadsheet.xml</a></td><td><b>The extension http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type is not allowed to be used at this point (allowed = e:ElementDefinition.type; this element is [[StructureDefinition.snapshot.element.binding.valueSet, BackboneElement.element.binding.valueSet, ElementDefinition.binding.valueSet, Element.valueSet, canonical])</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-template-profile-on-profile.html">/Users/ehaas/Documents/FHIR/IG-Template4/source/resources/patient-on-usprofile-spreadsheet.xml</a></td><td><b>The extension http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type is not allowed to be used at this point (allowed = e:ElementDefinition.type; this element is [[StructureDefinition.snapshot.element.binding.valueSet, BackboneElement.element.binding.valueSet, ElementDefinition.binding.valueSet, Element.valueSet, canonical])</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-template-profile-on-profile.html">/Users/ehaas/Documents/FHIR/IG-Template4/source/resources/patient-on-usprofile-spreadsheet.xml</a></td><td><b>The extension http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type is not allowed to be used at this point (allowed = e:ElementDefinition.type; this element is [[StructureDefinition.snapshot.element.binding.valueSet, BackboneElement.element.binding.valueSet, ElementDefinition.binding.valueSet, Element.valueSet, canonical])</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-template-profile-on-profile.html">/Users/ehaas/Documents/FHIR/IG-Template4/source/resources/patient-on-usprofile-spreadsheet.xml</a></td><td><b>The extension http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type is not allowed to be used at this point (allowed = e:ElementDefinition.type; this element is [[StructureDefinition.snapshot.element.binding.valueSet, BackboneElement.element.binding.valueSet, ElementDefinition.binding.valueSet, Element.valueSet, canonical])</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Extension_EXT_Type"> </a>
+<h2>Extension_EXT_Type</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-template-profile-on-profile.html">/Users/ehaas/Documents/FHIR/IG-Template4/source/resources/patient-on-usprofile-spreadsheet.xml</a></td><td><b>The Extension &quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type&quot; definition allows for the types [url] but found type uri</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-template-profile-on-profile.html">/Users/ehaas/Documents/FHIR/IG-Template4/source/resources/patient-on-usprofile-spreadsheet.xml</a></td><td><b>The Extension &quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type&quot; definition allows for the types [url] but found type uri</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-template-profile-on-profile.html">/Users/ehaas/Documents/FHIR/IG-Template4/source/resources/patient-on-usprofile-spreadsheet.xml</a></td><td><b>The Extension &quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type&quot; definition allows for the types [url] but found type uri</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-template-profile-on-profile.html">/Users/ehaas/Documents/FHIR/IG-Template4/source/resources/patient-on-usprofile-spreadsheet.xml</a></td><td><b>The Extension &quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type&quot; definition allows for the types [url] but found type uri</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-template-profile-on-profile.html">/Users/ehaas/Documents/FHIR/IG-Template4/source/resources/patient-on-usprofile-spreadsheet.xml</a></td><td><b>The Extension &quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type&quot; definition allows for the types [url] but found type uri</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-template-profile-on-profile.html">/Users/ehaas/Documents/FHIR/IG-Template4/source/resources/patient-on-usprofile-spreadsheet.xml</a></td><td><b>The Extension &quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type&quot; definition allows for the types [url] but found type uri</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-template-profile-on-profile.html">/Users/ehaas/Documents/FHIR/IG-Template4/source/resources/patient-on-usprofile-spreadsheet.xml</a></td><td><b>The Extension &quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type&quot; definition allows for the types [url] but found type uri</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-template-profile-on-profile.html">/Users/ehaas/Documents/FHIR/IG-Template4/source/resources/patient-on-usprofile-spreadsheet.xml</a></td><td><b>The Extension &quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type&quot; definition allows for the types [url] but found type uri</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-template-profile-on-profile.html">/Users/ehaas/Documents/FHIR/IG-Template4/source/resources/patient-on-usprofile-spreadsheet.xml</a></td><td><b>The Extension &quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type&quot; definition allows for the types [url] but found type uri</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-template-profile-on-profile.html">/Users/ehaas/Documents/FHIR/IG-Template4/source/resources/patient-on-usprofile-spreadsheet.xml</a></td><td><b>The Extension &quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type&quot; definition allows for the types [url] but found type uri</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-template-profile-on-profile.html">/Users/ehaas/Documents/FHIR/IG-Template4/source/resources/patient-on-usprofile-spreadsheet.xml</a></td><td><b>The Extension &quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type&quot; definition allows for the types [url] but found type uri</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-template-profile-on-profile.html">/Users/ehaas/Documents/FHIR/IG-Template4/source/resources/patient-on-usprofile-spreadsheet.xml</a></td><td><b>The Extension &quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type&quot; definition allows for the types [url] but found type uri</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-template-profile-on-profile.html">/Users/ehaas/Documents/FHIR/IG-Template4/source/resources/patient-on-usprofile-spreadsheet.xml</a></td><td><b>The Extension &quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type&quot; definition allows for the types [url] but found type uri</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="RESOURCE_ID_MISMATCH"> </a>
+<h2>RESOURCE_ID_MISMATCH</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="OperationDefinition-opdef-test.html">/Users/ehaas/Documents/FHIR/IG-Template4/source/resources/operationdefinition-example.json</a></td><td><b>Resource id/url mismatch: opdef-test/http://www.fhir.org/guides/test3/OperationDefinition/example</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Reference_REF_CantResolve"> </a>
+<h2>Reference_REF_CantResolve</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Patient-example2.html">/Users/ehaas/Documents/FHIR/IG-Template4/source/examples/patient-example2.xml</a></td><td><b>Unable to resolve resource &quot;Organization/1&quot;</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="TYPE_SPECIFIC_CHECKS_CANONICAL_ABSOLUTE"> </a>
+<h2>TYPE_SPECIFIC_CHECKS_CANONICAL_ABSOLUTE</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="OperationDefinition-opdef-test.html">/Users/ehaas/Documents/FHIR/IG-Template4/source/resources/operationdefinition-example.json</a></td><td><b>Canonical URLs must be absolute URLs if they are not fragment references (OperationDefinition/Questionnaire-populate) </b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Terminology_TX_System_NotKnown"> </a>
+<h2>Terminology_TX_System_NotKnown</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="OperationDefinition-opdef-test.html">/Users/ehaas/Documents/FHIR/IG-Template4/source/resources/operationdefinition-example.json</a></td><td><b>Code System URI &quot;http://build.fhir.org/codesystem-usage-context-type&quot; is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Terminology_TX_System_Unknown"> </a>
+<h2>Terminology_TX_System_Unknown</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Patient-example.html">/Users/ehaas/Documents/FHIR/IG-Template4/source/examples/patient-example.xml</a></td><td><b>Unknown Code System &quot;http://hl7.org/fhir/v2/0203&quot;</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Type_Specific_Checks_DT_URL_Resolve"> </a>
+<h2>Type_Specific_Checks_DT_URL_Resolve</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Patient-example.html">/Users/ehaas/Documents/FHIR/IG-Template4/source/examples/patient-example.xml</a></td><td><b>URL value &quot;http://hl7.org/fhir/v2/0203&quot; does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-template-profile-on-profile.html">/Users/ehaas/Documents/FHIR/IG-Template4/source/resources/patient-on-usprofile-spreadsheet.xml</a></td><td><b>URL value &quot;http://hl7.org/fhir/ValueSet/v2-0131&quot; does not resolve</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Validation_VAL_Profile_OutOfOrder"> </a>
+<h2>Validation_VAL_Profile_OutOfOrder</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="ValueSet-bar-codes.html">/Users/ehaas/Documents/FHIR/IG-Template4/source/resources/ValueSet-bar-codes.xml</a></td><td><b>As specified by profile http://hl7.org/fhir/StructureDefinition/ValueSet, Element &quot;jurisdiction&quot; is out of order</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="ValueSet-blah-codes.html">/Users/ehaas/Documents/FHIR/IG-Template4/source/resources/ValueSet-blah-codes.xml</a></td><td><b>As specified by profile http://hl7.org/fhir/StructureDefinition/ValueSet, Element &quot;jurisdiction&quot; is out of order</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="ValueSet-foo-codes.html">/Users/ehaas/Documents/FHIR/IG-Template4/source/resources/ValueSet-foo-codes.xml</a></td><td><b>As specified by profile http://hl7.org/fhir/StructureDefinition/ValueSet, Element &quot;jurisdiction&quot; is out of order</b></td>
+   </tr>
+</table>
+</body>
+</html>

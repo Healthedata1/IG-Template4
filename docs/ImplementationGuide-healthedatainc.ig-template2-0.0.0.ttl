@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "IGTest3"];
   fhir:ImplementationGuide.title [ fhir:value "IG Test3"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2020-06-17T16:58:50-07:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2020-06-17T17:16:59-07:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "Health eData Inc"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -64,7 +64,7 @@
        fhir:link <http://hl7.org/fhir/us/cqfmeasures>
      ];
      fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.us.cqfmeasures" ];
-     fhir:ImplementationGuide.dependsOn.version [ fhir:value "2.0.0" ]
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "current" ]
   ];
   fhir:ImplementationGuide.definition [
      fhir:ImplementationGuide.definition.grouping [
