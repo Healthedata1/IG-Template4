@@ -197,8 +197,8 @@ Zip Code","",0,1,"Y","","Y","string {[]} {[]}
 ","AD.part[parttype = CNT]","XAD.6"
 "Patient.address.period","","","",0,1,"Y","","Y","Period {[]} {[]}
 ","Time period when address was/is in use","Time period when address was/is in use.","","Allows addresses to be placed in historical context.","","","","","<valuePeriod xmlns=""http://hl7.org/fhir"">
-  <start value=""2010-03-22T06:00:00-07:00""/>
-  <end value=""2010-06-30T07:00:00-07:00""/>
+  <start value=""2010-03-23T00:00:00+11:00""/>
+  <end value=""2010-07-01T00:00:00+10:00""/>
 </valuePeriod>","","",,,,,"",,,,"Address.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","NA","./usablePeriod[type=""IVL<TS>""]","XAD.12 / XAD.13 + XAD.14"
 "Patient.maritalStatus","","","",0,1,"","","","CodeableConcept {[]} {[]}

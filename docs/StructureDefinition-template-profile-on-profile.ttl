@@ -3006,8 +3006,8 @@
          fhir:index 0;
          fhir:ElementDefinition.example.label [ fhir:value "General" ];
          fhir:ElementDefinition.example.valuePeriod [
-           fhir:Period.start [ fhir:value "2010-03-22T06:00:00-07:00"^^xsd:dateTime ];
-           fhir:Period.end [ fhir:value "2010-06-30T07:00:00-07:00"^^xsd:dateTime ]
+           fhir:Period.start [ fhir:value "2010-03-23T00:00:00+11:00"^^xsd:dateTime ];
+           fhir:Period.end [ fhir:value "2010-07-01T00:00:00+10:00"^^xsd:dateTime ]
          ]
        ];
        fhir:ElementDefinition.constraint [

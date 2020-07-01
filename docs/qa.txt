@@ -1,27 +1,27 @@
 ﻿IGTest4 : Validation Results
 =========================================
 
-err = 3, warn = 10, info = 7
-IG Publisher Version: v1.0.100-SNAPSHOT
-Generated Sun Jun 28 20:44:25 PDT 2020. FHIR version 4.0.1 for healthedatainc.ig-template4#0.0.0 (canonical = http://www.fhir.org/guides/test3)
+err = 3, warn = 10, info = 2
+IG Publisher Version: v1.1.0 Out of date - current version is v1.0.101-SNAPSHOT
+Generated Tue Jun 30 21:16:37 PDT 2020. FHIR version 4.0.1 for healthedatainc.ig-template4#0.0.0 (canonical = http://www.fhir.org/guides/test3)
 
  Build Errors : 4 / 4
  /Users/ehaas/Documents/FHIR/IG-Template4/input/examples/diet-example1 : 1 / 0
  /Users/ehaas/Documents/FHIR/IG-Template4/input/examples/example1 : 0 / 0
  /Users/ehaas/Documents/FHIR/IG-Template4/input/examples/example2 : 0 / 0
  /Users/ehaas/Documents/FHIR/IG-Template4/input/ig : 0 / 0
- /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/CodeSystem-blah-codes : 0 / 1
+ /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/CodeSystem-blah-codes : 0 / 0
  /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/StructureDefinition-extension-blah : 0 / 2
  /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/StructureDefinition-extension-complex : 0 / 2
  /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/StructureDefinition-foo : 0 / 0
  /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/StructureDefinition-ifr : 0 / 2
  /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/StructureDefinition-template-profile-on-profile : 0 / 2
- /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/ValueSet-bar-codes : 0 / 1
- /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/ValueSet-blah-codes : 0 / 1
- /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/ValueSet-foo-codes : 0 / 1
+ /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/ValueSet-bar-codes : 0 / 0
+ /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/ValueSet-blah-codes : 0 / 0
+ /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/ValueSet-foo-codes : 0 / 0
  /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/capabilitystatement-client : 0 / 0
  /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/capabilitystatement-server : 0 / 0
- /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/operationdefinition-example : 1 / 1
+ /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/operationdefinition-example : 1 / 0
 </table>
 == n/a ==
 ERROR: ImplementationGuide.definition.parameter[38].value: Supressed messages file not found
@@ -38,7 +38,6 @@ ERROR: Basic/diet-example1: Basic: temp-1: Identifier SHALL be greater than 5 ch
 == /Users/ehaas/Documents/FHIR/IG-Template4/input/examples/example2.xml ==
 == /Users/ehaas/Documents/FHIR/IG-Template4/input/ig.json ==
 == /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/CodeSystem-blah-codes.xml ==
-INFORMATION: CodeSystem/blah-codes: CodeSystem.jurisdiction[0].coding[0]: Code System URI "urn:iso:std:iso:3166" is unknown so the code cannot be validated
 == /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/StructureDefinition-extension-blah.json ==
 WARNING: StructureDefinition/extension-blah: StructureDefinition: sdf-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
 WARNING: StructureDefinition.where(url = 'http://www.fhir.org/guides/test3/StructureDefinition/extension-blah'): The Implementation Guide contains no examples for this extension
@@ -53,13 +52,9 @@ WARNING: StructureDefinition.where(url = 'http://www.fhir.org/guides/test3/Struc
 WARNING: StructureDefinition/template-profile-on-profile: StructureDefinition: sdf-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
 WARNING: StructureDefinition.where(url = 'http://www.fhir.org/guides/test3/StructureDefinition/template-profile-on-profile'): The Implementation Guide contains no examples for this profile
 == /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/ValueSet-bar-codes.xml ==
-INFORMATION: ValueSet/bar-codes: ValueSet.jurisdiction[0].coding[0]: Code System URI "urn:iso:std:iso:3166" is unknown so the code cannot be validated
 == /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/ValueSet-blah-codes.xml ==
-INFORMATION: ValueSet/blah-codes: ValueSet.jurisdiction[0].coding[0]: Code System URI "urn:iso:std:iso:3166" is unknown so the code cannot be validated
 == /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/ValueSet-foo-codes.xml ==
-INFORMATION: ValueSet/foo-codes: ValueSet.jurisdiction[0].coding[0]: Code System URI "urn:iso:std:iso:3166" is unknown so the code cannot be validated
 == /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/capabilitystatement-client.xml ==
 == /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/capabilitystatement-server.xml ==
 == /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/operationdefinition-example.json ==
-INFORMATION: OperationDefinition/example: OperationDefinition.jurisdiction[0].coding[0]: Code System URI "urn:iso:std:iso:3166" is unknown so the code cannot be validated
 ERROR: OperationDefinition/example: OperationDefinition.base: URL value "http://hl7.org/fhir/uv/sdc/OperationDefinition/Questionnaire-populate" does not resolve

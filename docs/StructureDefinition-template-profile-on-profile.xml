@@ -2408,8 +2408,8 @@
       <example>
         <label value="General"/>
         <valuePeriod>
-          <start value="2010-03-22T06:00:00-07:00"/>
-          <end value="2010-06-30T07:00:00-07:00"/>
+          <start value="2010-03-23T00:00:00+11:00"/>
+          <end value="2010-07-01T00:00:00+10:00"/>
         </valuePeriod>
       </example>
       <constraint>

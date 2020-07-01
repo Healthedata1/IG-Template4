@@ -1,6 +1,11 @@
 #!/bin/bash
 # exit when any command fails
 set -e
+puburl=https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar
+path1=~/Downloads/org.hl7.fhir.igpublisher.jar
+path2=~/Downloads/org.hl7.fhir.igpublisher-old.jar
+path3=../../../Downloads/org.hl7.fhir.igpublisher.jar
+path4=../../../Downloads/org.hl7.fhir.igpublisher-old.jar
 while getopts drytwophbu: option
 do
  case "${option}"
@@ -54,12 +59,8 @@ echo "Downloading most recent publisher to:"
 echo ~/Downloads/org.hl7.fhir.igpublisher.jar
 echo "... it's ~100 MB, so this may take a bit"
 echo "========================================================================"
-mv ~/Downloads/org.hl7.fhir.igpublisher.jar ~/Downloads/org.hl7.fhir.igpublisher-old.jar \
-|| mv ../../../Downloads/org.hl7.fhir.igpublisher.jar ../../../Downloads/org.hl7.fhir.igpublisher-old.jar
-curl -L https://storage.googleapis.com/ig-build/org.hl7.fhir.publisher.jar \
--o ~/Downloads/org.hl7.fhir.igpublisher.jar \
-|| curl -L https://storage.googleapis.com/ig-build/org.hl7.fhir.publisher.jar \
--o ../../../Downloads/org.hl7.fhir.igpublisher.jar
+mv $path1 $path2 || mv $path3 $path4
+curl -L $puburl -o $path1 || curl -L $puburl -o $path3
 echo "===========================   Done  ===================================="
 sleep 3
 fi
