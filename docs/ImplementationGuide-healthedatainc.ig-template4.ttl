@@ -45,8 +45,8 @@
      fhir:index 0;
      fhir:Element.id [ fhir:value "uscore" ];
      fhir:ImplementationGuide.dependsOn.uri [
-       fhir:value "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core";
-       fhir:link <http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core>
+       fhir:value "http://hl7.org/fhir/us/core";
+       fhir:link <http://hl7.org/fhir/us/core>
      ];
      fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.us.core" ];
      fhir:ImplementationGuide.dependsOn.version [ fhir:value "3.1.0" ]
@@ -54,11 +54,11 @@
      fhir:index 1;
      fhir:Element.id [ fhir:value "qicore" ];
      fhir:ImplementationGuide.dependsOn.uri [
-       fhir:value "http://hl7.org/fhir/us/qicore/ImplementationGuide/hl7.fhir.us.qicore";
-       fhir:link <http://hl7.org/fhir/us/qicore/ImplementationGuide/hl7.fhir.us.qicore>
+       fhir:value "http://hl7.org/fhir/us/qicore";
+       fhir:link <http://hl7.org/fhir/us/qicore>
      ];
      fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.us.qicore" ];
-     fhir:ImplementationGuide.dependsOn.version [ fhir:value "current" ]
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "4.0.0" ]
   ];
   fhir:ImplementationGuide.definition [
      fhir:Element.extension [
@@ -744,12 +744,12 @@
            fhir:ImplementationGuide.definition.page.generation [ fhir:value "generated" ]
          ], [
            fhir:index 3;
-           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "StructureDefinition-extension-complex.html" ];
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "StructureDefinition-complex.html" ];
            fhir:ImplementationGuide.definition.page.title [ fhir:value "StructureDefinition Extension Complex" ];
            fhir:ImplementationGuide.definition.page.generation [ fhir:value "generated" ]
          ], [
            fhir:index 4;
-           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "StructureDefinition-extension-blah.html" ];
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "StructureDefinition-blah.html" ];
            fhir:ImplementationGuide.definition.page.title [ fhir:value "StructureDefinition Extension Blah" ];
            fhir:ImplementationGuide.definition.page.generation [ fhir:value "generated" ]
          ]

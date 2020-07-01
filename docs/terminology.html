@@ -41,7 +41,8 @@
     h3,h4,h5,h6{--heading-prefix:"5.0"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
-        
+        <!-- Placeholder for child template header declarations -->
+
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">IG Test4</span><br/>0.0.0 - CI Build</p>
@@ -170,67 +171,53 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>results in:</p>
 
-<li>
-  <p><a href="ValueSet-blah-codes.html">BlahCodes</a>&lt;/li&gt;</p>
-  <li>
-    <p><a href="ValueSet-foo-codes.html">Foo Value Set</a>&lt;/li&gt;</p>
-    <li>
-      <p><a href="ValueSet-bar-codes.html">Bar Value Set</a>&lt;/li&gt;</p>
+<li><a href="ValueSet-blah-codes.html">BlahCodes</a></li>
+<li><a href="ValueSet-foo-codes.html">Foo Value Set</a></li>
+<li><a href="ValueSet-bar-codes.html">Bar Value Set</a></li>
 
-      <h4 id="method-2-is-to-render-a-sorted-list-using-a-custom-liquid-script">Method 2 is to render a sorted list using a custom liquid script:</h4>
+<h4 id="method-2-is-to-render-a-sorted-list-using-a-custom-liquid-script">Method 2 is to render a sorted list using a custom liquid script:</h4>
 
-      <p>This liquid syntax:</p>
+<p>This liquid syntax:</p>
 
-      <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{% assign html_pages = site.html_pages | sort: 'name' %}
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{% assign html_pages = site.html_pages | sort: 'name' %}
 {% for p in html_pages %}
   {% assign html_frag = p.name | split: '.' | size %}
   {% if p.name contains "ValueSet" and html_frag == 2 %}
       &lt;li&gt;&lt;a href="{{p.name}}"&gt;{{p.name |  remove: ".html" | replace: '-', ' ' }}&lt;/a&gt;&lt;/li&gt;
   {% endif %}
 {% endfor %}
-</code></pre></div>      </div>
+</code></pre></div></div>
 
-      <p>results in:</p>
+<p>results in:</p>
 
-      <li>
-        <p><a href="ValueSet-bar-codes.html">ValueSet bar codes</a>&lt;/li&gt;</p>
+<li><a href="ValueSet-bar-codes.html">ValueSet bar codes</a></li>
 
-        <li>
-          <p><a href="ValueSet-blah-codes.html">ValueSet blah codes</a>&lt;/li&gt;</p>
+<li><a href="ValueSet-blah-codes.html">ValueSet blah codes</a></li>
 
-          <li>
-            <p><a href="ValueSet-foo-codes.html">ValueSet foo codes</a>&lt;/li&gt;</p>
+<li><a href="ValueSet-foo-codes.html">ValueSet foo codes</a></li>
 
-            <h4 id="method-3-is-to-render-a-custom-list-by-manually-creating-the-list-using-markdown">Method 3 is to render a custom list by manually creating the list using Markdown:</h4>
+<h4 id="method-3-is-to-render-a-custom-list-by-manually-creating-the-list-using-markdown">Method 3 is to render a custom list by manually creating the list using Markdown:</h4>
 
-            <p>This markdown:</p>
+<p>This markdown:</p>
 
-            <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- [Foo Value Set](ValueSet-foo-codes.html)
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- [Foo Value Set](ValueSet-foo-codes.html)
 - [Bar Value Set](ValueSet-bar-codes.html)
 - [Blah Value Set](ValueSet-blah-codes.html)
-</code></pre></div>            </div>
+</code></pre></div></div>
 
-            <p>results in:</p>
+<p>results in:</p>
 
-            <ul>
-              <li><a href="#">Foo Value Set</a></li>
-              <li><a href="#">Bar Value Set</a></li>
-              <li><a href="#">Blah Value Set</a></li>
-            </ul>
+<ul>
+  <li><a href="#">Foo Value Set</a></li>
+  <li><a href="#">Bar Value Set</a></li>
+  <li><a href="#">Blah Value Set</a></li>
+</ul>
 
-            <h3 id="code-systems">Code Systems</h3>
+<h3 id="code-systems">Code Systems</h3>
 
-            <p><strong>Code systems published in this IG</strong> - Includes US Core defined code systems and externally defined code systems</p>
-            <li>
-              <p><a href="CodeSystem-blah-codes.html">BlahCodes</a>&lt;/li&gt;</p>
+<p><strong>Code systems published in this IG</strong> - Includes US Core defined code systems and externally defined code systems</p>
+<li><a href="CodeSystem-blah-codes.html">BlahCodes</a></li>
 
-            </li>
-          </li>
-        </li>
-      </li>
-    </li>
-  </li>
-</li>
 
 </div>
         </div>  <!-- /inner-wrapper -->
@@ -238,12 +225,21 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     </div>  <!-- /container -->
   </div>  <!-- /segment-content -->
 
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package healthedatainc.ig-template4#0.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jun 18, 2020 08:27-0700">2020-06-18</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package healthedatainc.ig-template4#0.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Jun 28, 2020 20:43-0700">2020-06-28</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
@@ -263,7 +259,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <!-- Bootstrap core JavaScript
   ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
-  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
   <script type="text/javascript" src="assets/js/respond.min.js"> </script>
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>

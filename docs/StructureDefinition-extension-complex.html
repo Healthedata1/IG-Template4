@@ -41,7 +41,8 @@
     h3,h4,h5,h6{--heading-prefix:"11.7"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
-        
+        <!-- Placeholder for child template header declarations -->
+
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">IG Test4</span><br/>0.0.0 - CI Build</p>
@@ -138,40 +139,65 @@
       <div class="container">  <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
-
-
-
-
 <div class="col-12">
   <!--ReleaseHeader--><p id="publish-box">IG Test4 - Local Development build (v0.0.0). See the <a href="http://www.fhir.org/guides/test3/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
-  <ul class="nav nav-tabs">
-    <li class="active">
-      <a href="#">Content</a>
-    </li>
-    <li>
-      <a href="StructureDefinition-extension-complex-definitions.html">Detailed Descriptions</a>
-    </li>
+  
 
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Content</a>
+  </li>
+
+
+
+  <li>
+    <a href="StructureDefinition-extension-complex-definitions.html">Detailed Descriptions</a>
+  </li>
+
+
+
+  
     <li>
       <a href="StructureDefinition-extension-complex-mappings.html">Mappings</a>
     </li>
+  
 
 
+
+
+
+  
     <li>
       <a href="StructureDefinition-extension-complex.profile.xml.html">XML</a>
     </li>
+  
 
 
+  
     <li>
       <a href="StructureDefinition-extension-complex.profile.json.html">JSON</a>
     </li>
+  
 
 
+  
     <li>
-      <a href="StructureDefinition-extension-complex.profile.ttl.html">Turtle</a>
+      <a href="StructureDefinition-extension-complex.profile.ttl.html">TTL</a>
     </li>
+  
 
-  </ul>
+
+</ul>
+
   <a name="root"> </a>
   <h2 id="root">Extension: complex</h2>
   <p><p>an example of a complex extension.</p>
@@ -187,12 +213,43 @@
   <p>This extension may be used on the following  element(s):</p>
   <ul>
     
-    <li>{"type"=>"Basic"}</li>
+    <li>Basic</li>
     
   </ul>
+
+  <!-- insert intro if present -->
   
-  
-  
+
+
+
+<div style="display:inline-block" markdown="1">
+
+<p>source: extension-complex.md file</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>This is the introduction markdown file that gets inserted into the sd.html template.
+
+This profile sets minimum expectations for blah blah blah
+
+##### Mandatory Data Elements and Terminology
+
+The following data-elements are mandatory (i.e data MUST be present). blah blah blah
+
+**must have:**
+
+1. blah
+1. blah
+1. blah
+
+**Additional Profile specific implementation guidance:**
+
+#### Examples
+</code></pre></div></div>
+
+
+</div>
+
+
+
 
   <p><b>Usage info</b></p>
   <p><b>Usage:</b></p>
@@ -200,7 +257,7 @@
  <li>Use this Extension: <a href="StructureDefinition-template-basic.html">Health eData Template Profile</a></li>
 </ul>
 
-  
+
   <!-- no uri -->
   <a name="profile"> </a>
   <h3 id="profile">Formal Views of Extension Content</h3>
@@ -663,16 +720,16 @@ Summary
   <p>Other representations of extension: <a href="StructureDefinition-extension-complex.sch">Schematron</a>
   </p>
   <a name="tx"> </a>
-  <h3 id="tx">Terminology Bindings</h3>
+  <!--Terminology Bindings heading in the fragment -->
   <h4>Terminology Bindings</h4>
 <table class="list">
 <tr><td><b>Path</b></td><td><b>Conformance</b></td><td><b>ValueSet</b></td></tr>
 <tr><td>Extension.extension:code.value[x]</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="A bunch of example codes"><a style="opacity: 1.0" href="ValueSet-blah-codes.html">BlahCodes</a></td></tr>
 </table>
 
-  
+
   <a name="inv"> </a>
-  <h3 id="inv">Constraints</h3>
+  <!--Constraints  heading in the fragment -->
   <h4>Constraints</h4>
 <table class="list">
 <tr><td width="60"><b>Id</b></td><td><b>Path</b></td><td><b>Details</b></td><td><b>Requirements</b></td></tr>
@@ -699,9 +756,41 @@ Summary
 </table>
 
 
+  <!-- insert notes if present -->
   
-  
-  
+
+<h3>Notes:</h3>
+
+
+<div style="display:inline-block" markdown="1">
+
+<p>source: extension-complex.md file</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>This is the introduction markdown file that gets inserted into the sd.html template.
+
+This profile sets minimum expectations for blah blah blah
+
+##### Mandatory Data Elements and Terminology
+
+The following data-elements are mandatory (i.e data MUST be present). blah blah blah
+
+**must have:**
+
+1. blah
+1. blah
+1. blah
+
+**Additional Profile specific implementation guidance:**
+
+#### Examples
+</code></pre></div></div>
+
+
+</div>
+
+
+
+
 </div>
 
         </div>  <!-- /inner-wrapper -->
@@ -709,9 +798,9 @@ Summary
     </div>  <!-- /container -->
   </div>  <!-- /segment-content -->
 
-
-  <script type="text/javascript" src="jquery.js"> </script>
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
   <script type="text/javascript">
     try {
       var currentTabIndex = sessionStorage.getItem('fhir-resource-tab-index');
@@ -735,11 +824,18 @@ Summary
     });
   </script>
 
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package healthedatainc.ig-template4#0.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jun 18, 2020 08:27-0700">2020-06-18</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package healthedatainc.ig-template4#0.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Jun 28, 2020 20:43-0700">2020-06-28</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
@@ -759,7 +855,6 @@ Summary
   <!-- Bootstrap core JavaScript
   ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
-  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
   <script type="text/javascript" src="assets/js/respond.min.js"> </script>
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>

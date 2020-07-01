@@ -1,5 +1,15 @@
 
-{% assign id = {{page.id}} %}
+#### MY INTRO
+
+{% assign id = include.id %}
+
+include.id = {{include.id}}<br />
+include.type = {{include.type}}<br />
+
+{%raw%}{% assign id = include.id %}{%endraw%}
+{% assign id = include.id %}
+id = {{id}}<br />
+
 source file: source/pages/\_includes/{{id}}-intro.md
 
 {{site.data.structuredefinitions.[id].description}}

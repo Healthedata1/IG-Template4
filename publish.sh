@@ -1,18 +1,20 @@
 #!/bin/bash
 # exit when any command fails
 set -e
-while getopts dtwophbu: option
+while getopts drytwophbu: option
 do
  case "${option}"
  in
 
- d) RECONFIG=1;;
+ y) RECONFIG=1;;
  t) NA='N/A';;
  w) WATCH=1;;
  o) PUB=1;;
  p) UPDATE=1;;
+ d) LOAD_DVTEMPLATE=1;;
  h) LOAD_HL7TEMPLATE=1;;
  b) LOAD_BASETEMPLATE=1;;
+ r) REFRESH_TEMPLATE=1;;
  u) TEST_TEMPLATE=$OPTARG;;
  esac
 done
@@ -20,14 +22,16 @@ echo "================================================================="
 echo === Publish $SOURCE IG!!! $(date -u) ===
 echo see 'local workflow.md' file for how to use
 echo "Optional Parameters"
-echo '-d parameter for updating ig.json file from input/data/ig.yml config file  (use when changing IG config parameters)= ' $RECONFIG
-echo ' for -d parameter need python 3.7 and PyYAML, json and sys modules installed in your environment'
+echo '-y parameter for updating ig.json file from input/data/ig.yml config file  (use when changing IG config parameters)= ' $RECONFIG
+echo ' for -y parameter need python 3.7 and PyYAML, json and sys modules installed in your environment'
 echo '-t parameter for no terminology server (run faster and offline)= ' $NA
 echo '-w parameter for using watch on igpublisher from source default is off = ' $WATCH
 echo '-o parameter for running previous version of the igpublisher= ' $PUB
 echo '-p parameter for downloading latest version of the igpublisher from source = ' $UPDATE
+echo '-d parameter for downloading Da Vinci ig template from source = ' $LOAD_DVTEMPLATE
 echo '-h parameter for downloading HL7 ig template from source = ' $LOAD_HL7TEMPLATE
 echo '-b parameter for downloading BASE ig template from source = ' $LOAD_BASETEMPLATE
+echo '-r parameter for refreshing BASE ig template from source into local cache = ' $REFRESH_TEMPLATE
 echo '-u parameter for downloading test ig template from source or file= ' $TEST_TEMPLATE
 echo ' current directory =' $PWD
 echo "================================================================="
@@ -61,16 +65,27 @@ sleep 3
 fi
 # default is to use local my_framework as template
 template=$PWD/my_framework
+
+if [[ $LOAD_DVTEMPLATE ]]; then
+template=hl7.davinci.template#current
+fi
+
 if [[ $LOAD_HL7TEMPLATE ]]; then
-template=hl7.fhir.template
+template=hl7.fhir.template\#current
 fi
 
 if [[ $LOAD_BASETEMPLATE ]]; then
-template=fhir.base.template
+template=fhir.base.template\#current
 fi
 
 if [[ $TEST_TEMPLATE ]]; then
 template=$TEST_TEMPLATE
+fi
+
+if [[ $REFRESH_TEMPLATE ]]; then
+echo "===rm template: /Users/ehaas/.fhir/packages/fhir.base.template#current===="
+rm  -rf /Users/ehaas/.fhir/packages/fhir.base.template\#current
+echo "========================================================================"
 fi
 
 echo "================================================================="

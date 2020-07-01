@@ -41,7 +41,8 @@
     h3,h4,h5,h6{--heading-prefix:"2"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
-        
+        <!-- Placeholder for child template header declarations -->
+
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">IG Test4</span><br/>0.0.0 - CI Build</p>
@@ -154,6 +155,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <div class="markdown-toc">
 <ul id="markdown-toc">
   <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
+  <li><a href="#my-list" id="markdown-toc-my-list">My list</a></li>
   <li><a href="#more-stuff" id="markdown-toc-more-stuff">More Stuff</a></li>
 </ul>
 
@@ -170,11 +172,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <div class="collapse" id="example">
   <div class="card card-body">
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  &lt;h2 id="foo"&gt;foo&lt;/h2&gt;
-</code></pre></div>    </div>
-    <div class="highlighter-rouge">
-      <div class="highlight">
-        <pre class="highlight"><code>example for button bar
+      
+<h2 id="foo">foo</h2>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>example for button bar
 example for button bar
 example for button bar
 example for button bar
@@ -206,13 +206,29 @@ example for button bar
 example for button bar
 example for button bar
 example for button bar
-</code></pre>
-      </div>
-    </div>
+</code></pre></div></div>
 
   </div>
 </div>
 <p><br /></p>
+
+<h3 id="my-list">My list</h3>
+
+<ul>
+  <li>list 1</li>
+  <li>list 2
+    <ul>
+      <li>foo</li>
+    </ul>
+  </li>
+  <li>
+    <p>bar</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- foo
+</code></pre></div>    </div>
+  </li>
+  <li>bar</li>
+</ul>
 
 <p>blah blah blah</p>
 
@@ -235,12 +251,21 @@ example for button bar
     </div>  <!-- /container -->
   </div>  <!-- /segment-content -->
 
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package healthedatainc.ig-template4#0.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jun 18, 2020 08:27-0700">2020-06-18</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package healthedatainc.ig-template4#0.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Jun 28, 2020 20:43-0700">2020-06-28</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
@@ -260,7 +285,6 @@ example for button bar
   <!-- Bootstrap core JavaScript
   ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
-  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
   <script type="text/javascript" src="assets/js/respond.min.js"> </script>
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>

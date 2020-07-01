@@ -145,10 +145,10 @@ definition:
           - nameUrl: StructureDefinition-template-basic.html
             title: StructureDefinition Template Basic
             generation: generated
-          - nameUrl: StructureDefinition-extension-complex.html
+          - nameUrl: StructureDefinition-complex.html
             title: StructureDefinition Extension Complex
             generation: generated
-          - nameUrl: StructureDefinition-extension-blah.html
+          - nameUrl: StructureDefinition-blah.html
             title: StructureDefinition Extension Blah
             generation: generated
       - nameUrl: operations.html

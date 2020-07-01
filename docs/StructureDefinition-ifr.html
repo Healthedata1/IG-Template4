@@ -1,3 +1,7 @@
+<!-- get modelType -->
+
+
+
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
@@ -41,7 +45,8 @@
     h3,h4,h5,h6{--heading-prefix:"11.6"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
-        
+        <!-- Placeholder for child template header declarations -->
+
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">IG Test4</span><br/>0.0.0 - CI Build</p>
@@ -138,45 +143,68 @@
       <div class="container">  <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
-
-
-
-
 <div class="col-12">
   <!--ReleaseHeader--><p id="publish-box">IG Test4 - Local Development build (v0.0.0). See the <a href="http://www.fhir.org/guides/test3/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
-  <ul class="nav nav-tabs">
-    <li class="active">
-      <a href="#">Content</a>
-    </li>
-    <li>
-      <a href="StructureDefinition-ifr-definitions.html">Detailed Descriptions</a>
-    </li>
+  
 
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Content</a>
+  </li>
+
+
+
+  <li>
+    <a href="StructureDefinition-ifr-definitions.html">Detailed Descriptions</a>
+  </li>
+
+
+
+  
     <li>
       <a href="StructureDefinition-ifr-mappings.html">Mappings</a>
     </li>
+  
 
-    <li>
-      <a href="StructureDefinition-ifr-examples.html">Examples</a>
-    </li>
 
+
+
+
+  
     <li>
       <a href="StructureDefinition-ifr.profile.xml.html">XML</a>
     </li>
+  
 
 
+  
     <li>
       <a href="StructureDefinition-ifr.profile.json.html">JSON</a>
     </li>
+  
 
 
+  
     <li>
-      <a href="StructureDefinition-ifr.profile.ttl.html">Turtle</a>
+      <a href="StructureDefinition-ifr.profile.ttl.html">TTL</a>
     </li>
+  
 
-  </ul>
+
+</ul>
+
+
   <a name="root"> </a>
-  <h2 id="root">StructureDefinition: Identifer Free Reference Data Type</h2>
+  <h2 id="root">Data Type Profile: Identifer Free Reference Data Type</h2>
   <p>
 </p>
   <p>
@@ -184,8 +212,11 @@
   </p>
   <pre>http://www.fhir.org/guides/test3/StructureDefinition/ifr</pre>
 
-  
-  
+<!-- insert intro if present -->
+
+
+
+
   <!-- no uri -->
   <a name="profile"> </a>
   <h3 id="profile">Formal Views of Profile Content</h3>
@@ -202,6 +233,9 @@
       </li>
       <li>
         <a href="#tabs-snap">Snapshot Table</a>
+      </li>
+      <li>
+        <a href="#tabs-snapms">Snapshot Table (Must Support)</a>
       </li>
 
 <!--      <li>
@@ -308,6 +342,15 @@ The type is the Canonical URL of Resource Definition that is the type this refer
       </div>
     </div>-->
 
+    <a name="tabs-snapms"> </a>
+    <div id="tabs-snapms">
+      <div id="tbl-snap">
+        <div id="tbl-snap-inner">
+          <table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="The logical name of the element">Name</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Information about the use of the element">Flags</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Minimum and Maximum # of times the the element can appear in the instance">Card.</a></th><th style="width: 100px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Reference to the type of the element">Type</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white;"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-ifr-definitions.html#Reference" title="This is a simple profile on a datatype.  In this case to create a Identifier free Reference.">Reference</a><a name="Reference"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element has or is affected by some invariants (ele-1, ref-1, ele-1)">I</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">A reference from one resource to another<br/></td></tr>
+<tr><td colspan="5" class="hierarchy"><br/><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table>
+        </div>
+      </div>
+    </div>
     <a name="tabs-all"> </a>
     <div id="tabs-all">
       <div id="all-summ">
@@ -398,7 +441,7 @@ The type is the Canonical URL of Resource Definition that is the type this refer
   <p>Other representations of profile: <a href="StructureDefinition-ifr.sch">Schematron</a>
   </p>
   <a name="tx"> </a>
-  <h3 id="tx">Terminology Bindings</h3>
+  <!--Terminology Bindings heading in the fragment -->
   <h4>Terminology Bindings</h4>
 <table class="list">
 <tr><td><b>Path</b></td><td><b>Conformance</b></td><td><b>ValueSet</b></td></tr>
@@ -407,7 +450,7 @@ The type is the Canonical URL of Resource Definition that is the type this refer
 
 
   <a name="inv"> </a>
-  <h3 id="inv">Constraints</h3>
+  <!--Constraints  heading in the fragment -->
   <h4>Constraints</h4>
 <table class="list">
 <tr><td width="60"><b>Id</b></td><td><b>Path</b></td><td><b>Details</b></td><td><b>Requirements</b></td></tr>
@@ -421,10 +464,11 @@ The type is the Canonical URL of Resource Definition that is the type this refer
 </table>
 
 
-  
-  
+<!-- insert notes if present -->
 
-  
+
+
+
 </div>
 
         </div>  <!-- /inner-wrapper -->
@@ -432,9 +476,9 @@ The type is the Canonical URL of Resource Definition that is the type this refer
     </div>  <!-- /container -->
   </div>  <!-- /segment-content -->
 
-
-  <script type="text/javascript" src="jquery.js"> </script>
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
   <script type="text/javascript">
     try {
       var currentTabIndex = sessionStorage.getItem('fhir-resource-tab-index');
@@ -458,11 +502,18 @@ The type is the Canonical URL of Resource Definition that is the type this refer
     });
   </script>
 
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package healthedatainc.ig-template4#0.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jun 18, 2020 08:27-0700">2020-06-18</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package healthedatainc.ig-template4#0.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Jun 28, 2020 20:43-0700">2020-06-28</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
@@ -482,7 +533,6 @@ The type is the Canonical URL of Resource Definition that is the type this refer
   <!-- Bootstrap core JavaScript
   ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
-  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
   <script type="text/javascript" src="assets/js/respond.min.js"> </script>
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>

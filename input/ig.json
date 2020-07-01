@@ -35,15 +35,15 @@
     "dependsOn": [
         {
             "id": "uscore",
-            "uri": "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core",
+            "uri": "http://hl7.org/fhir/us/core",
             "packageId": "hl7.fhir.us.core",
             "version": "3.1.0"
         },
         {
             "id": "qicore",
-            "uri": "http://hl7.org/fhir/us/qicore/ImplementationGuide/hl7.fhir.us.qicore",
+            "uri": "http://hl7.org/fhir/us/qicore",
             "packageId": "hl7.fhir.us.qicore",
-            "version": "current"
+            "version": "4.0.0"
         }
     ],
     "definition": {
@@ -209,12 +209,12 @@
                             "generation": "generated"
                         },
                         {
-                            "nameUrl": "StructureDefinition-extension-complex.html",
+                            "nameUrl": "StructureDefinition-complex.html",
                             "title": "StructureDefinition Extension Complex",
                             "generation": "generated"
                         },
                         {
-                            "nameUrl": "StructureDefinition-extension-blah.html",
+                            "nameUrl": "StructureDefinition-blah.html",
                             "title": "StructureDefinition Extension Blah",
                             "generation": "generated"
                         }

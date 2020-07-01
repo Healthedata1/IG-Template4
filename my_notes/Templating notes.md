@@ -222,6 +222,8 @@ commit PR for for ig-template-base !!!
 - [ ] add front matter to templates so can reference the {{[id]}} and {{[type]}} parameters or and as include variables.  e.g description.. ( description in ig.yml = description in SD )
 - [ ] ie section numbering broken
 - [ ] addin open api
+- [ ] add note to balloters, stu note and pink highlighted sections
+- [ ] fix numbering
 
 
 
@@ -283,3 +285,28 @@ assume if marked false in ig.json then is defaulting to base.
   name: Populate Questionnaire
   exampleBoolean: false
 ~~~
+
+
+steps to convert
+
+1. rename source to input
+1. rename pages to pagecontent
+1. remove all front matter and toc from pages ( script to this is buggy easier to just do it manually for now )
+1. rename _includes to includes and move to input folder
+1. images folder to input folder
+1. use shell script to find and move all *-intro.md and *-search.md folder to input  - rename: ( use finder for now can create bash scripts in future )
+   - extension-*-search.md to StrucureDefinition-ext-*-notes.md
+   - extension-*-intro.md to StrucureDefinition-ext-*-intro.md
+   - *-search.md to StrucureDefinition-*-notes.md
+   - *-intro.md to StrucureDefinition-*-intro.md
+1. remove toc.html and remove from ig.json file
+1. create input/data file and add in ig.yml, my_params.yml, and types.yml
+1. move: custom framework/_include files see ig Template4 for list  ( img, example files)
+1. change path to images to root  ( get rid of assets/images)
+
+
+***NOTE***
+
+need to clear the cache to get latest template
+
+********

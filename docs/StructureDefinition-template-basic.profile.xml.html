@@ -1,3 +1,11 @@
+<!-- get modelType -->
+
+
+
+
+
+
+
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
@@ -41,7 +49,8 @@
     h3,h4,h5,h6{--heading-prefix:"11.5"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
-        
+        <!-- Placeholder for child template header declarations -->
+
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">IG Test4</span><br/>0.0.0 - CI Build</p>
@@ -138,49 +147,87 @@
       <div class="container">  <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
-
-
-
 <div style="counter-reset: section 7" class="col-12">
   <!--ReleaseHeader--><p id="publish-box">IG Test4 - Local Development build (v0.0.0). See the <a href="http://www.fhir.org/guides/test3/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
-  <ul class="nav nav-tabs">
-    <li>
-      <a href="StructureDefinition-template-basic.html">Content</a>
-    </li>
-    <li>
-      <a href="StructureDefinition-template-basic-definitions.html">Detailed Descriptions</a>
-    </li>
+  
 
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="StructureDefinition-template-basic.html">Content</a>
+  </li>
+
+
+
+  <li>
+    <a href="StructureDefinition-template-basic-definitions.html">Detailed Descriptions</a>
+  </li>
+
+
+
+  
     <li>
       <a href="StructureDefinition-template-basic-mappings.html">Mappings</a>
     </li>
+  
 
-    <li>
-      <a href="StructureDefinition-template-basic-examples.html">Examples</a>
-    </li>
+
+
+
+  
+    
+      <li>
+        <a href="StructureDefinition-template-basic-examples.html">Examples</a>
+      </li>
+    
+  
+
+
+
+
+  
     <li class="active">
       <a href="#">XML</a>
     </li>
+  
 
+
+  
     <li>
       <a href="StructureDefinition-template-basic.profile.json.html">JSON</a>
     </li>
+  
 
 
+  
     <li>
-      <a href="StructureDefinition-template-basic.profile.ttl.html">Turtle</a>
+      <a href="StructureDefinition-template-basic.profile.ttl.html">TTL</a>
     </li>
-
-  </ul>
-  <a name="root"> </a>
-  <h2 id="root">StructureDefinition: TemplateBasic - XML Profile</h2>
-  <p>XML representation of the template-basic Profile.</p>
-  
   
 
-  <p>
-    <b>Narrative view of the profile</b>
-  </p>
+
+</ul>
+
+
+<a name="root"> </a>
+<h2 id="root">Resource Profile: TemplateBasic - XML Profile</h2>
+
+<p>XML representation of the template-basic resource profile.</p>
+
+<p><a href="StructureDefinition-template-basic.xml" no-download="true">Raw xml</a> | <a href="StructureDefinition-template-basic.xml" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
 
   <pre class="xml">
 
@@ -1448,8 +1495,11 @@ This element is labeled as a modifier because it defines the meaning of the reso
 &lt;/StructureDefinition&gt;</pre>
 
 
+  <!-- insert notes if present -->
   
-  
+
+
+
 </div>
 
         </div>  <!-- /inner-wrapper -->
@@ -1457,9 +1507,9 @@ This element is labeled as a modifier because it defines the meaning of the reso
     </div>  <!-- /container -->
   </div>  <!-- /segment-content -->
 
-
-  <script type="text/javascript" src="jquery.js"> </script>
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
   <script type="text/javascript">
     try {
       var currentTabIndex = sessionStorage.getItem('fhir-resource-tab-index');
@@ -1483,11 +1533,18 @@ This element is labeled as a modifier because it defines the meaning of the reso
     });
   </script>
 
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package healthedatainc.ig-template4#0.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jun 18, 2020 08:27-0700">2020-06-18</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package healthedatainc.ig-template4#0.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Jun 28, 2020 20:43-0700">2020-06-28</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
@@ -1507,7 +1564,6 @@ This element is labeled as a modifier because it defines the meaning of the reso
   <!-- Bootstrap core JavaScript
   ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
-  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
   <script type="text/javascript" src="assets/js/respond.min.js"> </script>
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>

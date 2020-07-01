@@ -41,7 +41,8 @@
     h3,h4,h5,h6{--heading-prefix:"11.3"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
-        
+        <!-- Placeholder for child template header declarations -->
+
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">IG Test4</span><br/>0.0.0 - CI Build</p>
@@ -138,40 +139,61 @@
       <div class="container">  <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
-
-
-
 <div class="col-12">
   <!--ReleaseHeader--><p id="publish-box">IG Test4 - Local Development build (v0.0.0). See the <a href="http://www.fhir.org/guides/test3/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
-  <a name="root"> </a>
-  <h2 id="root">Populate Questionnaire</h2>
-  <p>
-    Format(s):
-  </p>
-  <ul>
 
+  
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+  
     <li>
       <a href="OperationDefinition-example.xml.html">XML</a>
     </li>
-
-
-    <li>
-      <a href="OperationDefinition-example.json.html">JSON</a> 
-    </li>
-
-
-    <li>
-      <a href="OperationDefinition-example.ttl.html">Turtle</a>
-    </li>
-
-  </ul>
-
-  
   
 
-  <p>
-    <b>Narrative view</b>
-  </p>
+
+  
+    <li>
+      <a href="OperationDefinition-example.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="OperationDefinition-example.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+  <a name="root"> </a>
+
+
+  <h2 id="root">OperationDefinition: Populate Questionnaire</h2>
+
+
+  
+
+
+  <!-- insert intro if present -->
+  
+
+
+
   <div xmlns="http://www.w3.org/1999/xhtml"><h2>PopulateQuestionnaire</h2><p>OPERATION: PopulateQuestionnaire</p><p>The official URL for this operation definition is: </p><pre>http://www.fhir.org/guides/test3/OperationDefinition/example</pre><div><p>Limited implementation of the Populate Questionnaire implementation</p>
 </div><p>URL: [base]/Questionnaire/[id]/$populate</p><p>Parameters</p><table class="grid"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>subject</td><td>1..1</td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></td><td/><td><div><p>The resource that is to be the <em>QuestionnaireResponse.subject</em>. The <a href="http://hl7.org/fhir/R4/questionnaireresponse.html">QuestionnaireResponse</a>      instance will reference the provided subject.  In addition, if the <em>local</em> parameter is      set to true, server information about the specified subject will be used to populate the      instance.</p>
 </div></td></tr><tr><td>IN</td><td>local</td><td>0..1</td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></td><td/><td><div><p>If the <em>local</em> parameter is set to true, server information about the specified subject will be used to populate the instance.</p>
@@ -179,30 +201,46 @@
 </div></td></tr></table><div><p>Only implemented for Labs and Medications so far</p>
 </div></div>
 
+  <!-- insert notes if present -->
   
-  
-  <div style="display:inline-block">
-  source: input/pagecontents/operationdefinition-example-notes.md file
+
+<h3>Notes:</h3>
+
+
+<div style="display:inline-block" markdown="1">
+
+<p>source: input/pagecontents/operationdefinition-example-notes.md file</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>This is the  markdown file that gets inserted into the op.html template.
+</code></pre></div></div>
+
+
+</div>
 
 
 
-    This is the  markdown file that gets inserted into the op.html template.
 
-  </div>
-  
-  
 </div>
         </div>  <!-- /inner-wrapper -->
       </div>  <!-- /row -->
     </div>  <!-- /container -->
   </div>  <!-- /segment-content -->
 
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package healthedatainc.ig-template4#0.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jun 18, 2020 08:27-0700">2020-06-18</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package healthedatainc.ig-template4#0.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Jun 28, 2020 20:43-0700">2020-06-28</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
@@ -222,7 +260,6 @@
   <!-- Bootstrap core JavaScript
   ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
-  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
   <script type="text/javascript" src="assets/js/respond.min.js"> </script>
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>

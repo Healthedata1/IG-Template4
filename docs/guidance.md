@@ -7,6 +7,13 @@ This is based on {{page.f}}index.html
 {% include examplebutton.html example="example" b_title = "Example Button bar" %}
 
 
+### My list
+
+- list 1
+- list 2
+  {% include nestedlist3.md %}
+      {% include nestedlist3.md %}
+
 
 blah blah blah
 
