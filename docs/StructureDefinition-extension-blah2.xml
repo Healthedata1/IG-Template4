@@ -14,7 +14,7 @@
   <title value="Simple Extension"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2017-02-15T00:00:00-08:00"/>
+  <date value="2017-02-15"/>
   <publisher value="Health eData Inc"/>
   <description value="an example of a simple extension."/>
   <fhirVersion value="4.0.1"/>

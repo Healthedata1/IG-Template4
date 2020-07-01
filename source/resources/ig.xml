@@ -27,7 +27,27 @@
   <!-- 0..1 Use and/or publishing restrictions -->
  <packageId value="healthedatainc.ig-template2"/> <!-- 0..1 NPM Package name for IG -->
 <license value="CC0-1.0"/> <!--*****HARDCODED********* 0..1 SPDX license code for this IG (or not-open-source) -->
-<fhirVersion value="4.0.0"/> <!-- 0..1 FHIR Version this Implementation Guide targets -->
+<fhirVersion value="4.0.1"/> <!-- 0..1 FHIR Version this Implementation Guide targets -->
+ <!-- <dependsOn>   0..* Another Implementation guide this depends on
+  <uri> 1..1 canonical(ImplementationGuide) Identity of the IG that this depends on </uri>
+  <packageId value="[id]"/> 0..1 NPM Package name for IG this depends on
+  <version value="[string]"/> 0..1 Version of the IG
+ </dependsOn> -->
+ <!-- insert dependency -->
+<dependsOn id="uscore">  <!-- 0..* Another Implementation guide this depends on -->
+  <uri value="http://hl7.org/fhir/us/core"><!-- 1..1 canonical(ImplementationGuide) Identity of the IG that this depends on --></uri>
+  <packageId value="hl7.fhir.us.core"/><!-- 0..1 NPM Package name for IG this depends on -->
+  <version value="current"/><!-- 0..1 Version of the IG -->
+ </dependsOn>
+<dependsOn id="qicore">  <!-- 0..* Another Implementation guide this depends on -->
+  <uri value="http://hl7.org/fhir/us/qicore"><!-- 1..1 canonical(ImplementationGuide) Identity of the IG that this depends on --></uri>
+  <packageId value="hl7.fhir.us.qicore"/><!-- 0..1 NPM Package name for IG this depends on -->
+  <version value="current"/><!-- 0..1 Version of the IG -->
+ </dependsOn>
+ <!-- <global>  0..* Profiles that apply globally
+  <type value="[code]"/> 1..1 Type this profile applies to
+  <profile> 1..1 canonical(StructureDefinition) Profile that all resources must conform to</profile>
+ </global> -->
  <definition>
   <!--  <grouping>  0..* Grouping used to present related resources in the IG -->
   <!-- <name value="[string]"/> 1..1 Descriptive name for the package -->
@@ -45,7 +65,7 @@
     <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/patient"/>|<exampleBoolean value="true|false"/>
   </resource>   -->
   <!--  <groupingId value="[id]"/>  0..1 Grouping this is part of -->
-  <!-- insert resources --><resource><reference><reference value="Basic/diet"/></reference><exampleBoolean value="true"/></resource><resource><reference><reference value="Patient/example"/></reference><exampleBoolean value="true"/></resource><resource><reference><reference value="Patient/example2"/></reference><exampleBoolean value="true"/></resource><resource><reference><reference value="StructureDefinition/extension-complex"/></reference><exampleBoolean value="false"/></resource><resource><reference><reference value="StructureDefinition/extension-blah"/></reference><exampleBoolean value="false"/></resource><resource><reference><reference value="OperationDefinition/opdef-test"/></reference><exampleBoolean value="false"/></resource><resource><reference><reference value="StructureDefinition/ifr"/></reference><exampleBoolean value="false"/></resource><resource><reference><reference value="ValueSet/bar-codes"/></reference><exampleBoolean value="false"/></resource><resource><reference><reference value="CapabilityStatement/server"/></reference><exampleBoolean value="false"/></resource><resource><reference><reference value="CodeSystem/blah-codes"/></reference><exampleBoolean value="false"/></resource><resource><reference><reference value="CapabilityStatement/client"/></reference><exampleBoolean value="false"/></resource><resource><reference><reference value="StructureDefinition/template-profile-on-profile"/></reference><exampleBoolean value="false"/></resource><resource><reference><reference value="ValueSet/foo-codes"/></reference><exampleBoolean value="false"/></resource><resource><reference><reference value="StructureDefinition/template-basic"/></reference><exampleBoolean value="false"/></resource><resource><reference><reference value="ValueSet/blah-codes"/></reference><exampleBoolean value="false"/></resource>
+  <!-- insert resources --><resource><reference><reference value="Basic/diet"/></reference><exampleBoolean value="true"/></resource><resource><reference><reference value="Patient/example"/></reference><exampleBoolean value="true"/></resource><resource><reference><reference value="Patient/example2"/></reference><exampleBoolean value="true"/></resource><resource><reference><reference value="StructureDefinition/extension-populationReference"/></reference><exampleBoolean value="false"/></resource><resource><reference><reference value="StructureDefinition/extension-complex"/></reference><exampleBoolean value="false"/></resource><resource><reference><reference value="StructureDefinition/extension-blah"/></reference><exampleBoolean value="false"/></resource><resource><reference><reference value="OperationDefinition/opdef-test"/></reference><exampleBoolean value="false"/></resource><resource><reference><reference value="StructureDefinition/ifr"/></reference><exampleBoolean value="false"/></resource><resource><reference><reference value="ValueSet/bar-codes"/></reference><exampleBoolean value="false"/></resource><resource><reference><reference value="CapabilityStatement/server"/></reference><exampleBoolean value="false"/></resource><resource><reference><reference value="CodeSystem/blah-codes"/></reference><exampleBoolean value="false"/></resource><resource><reference><reference value="CapabilityStatement/client"/></reference><exampleBoolean value="false"/></resource><resource><reference><reference value="StructureDefinition/template-profile-on-profile"/></reference><exampleBoolean value="false"/></resource><resource><reference><reference value="ValueSet/foo-codes"/></reference><exampleBoolean value="false"/></resource><resource><reference><reference value="StructureDefinition/gaps-indv-measurereport-deqm"/></reference><exampleBoolean value="false"/></resource><resource><reference><reference value="StructureDefinition/template-basic"/></reference><exampleBoolean value="false"/></resource><resource><reference><reference value="ValueSet/blah-codes"/></reference><exampleBoolean value="false"/></resource>
 
     <!-- ============ Home Page =============== -->
   <page><nameUrl value="index.html"/><title value="Home"/><generation value="markdown"/>
@@ -57,14 +77,28 @@
     <page><nameUrl value="profiles.html"/><title value="Profiles and Extensions"/><generation value="markdown"/>
 
      <!-- ============ Profiles and examples=============== -->
-     <!-- insert profiles --><page><nameUrl value="StructureDefinition-ifr.html"/><title value="StructureDefinition Ifr"/><generation value="generated"/></page><page><nameUrl value="StructureDefinition-template-profile-on-profile.html"/><title value="StructureDefinition Template Profile On Profile"/><generation value="generated"/></page><page><nameUrl value="StructureDefinition-template-basic.html"/><title value="StructureDefinition Template Basic"/><generation value="generated"/></page>
+     <!-- insert profiles --><page><nameUrl value="StructureDefinition-ifr.html"/><title value="StructureDefinition Ifr"/><generation value="generated"/></page><page><nameUrl value="StructureDefinition-template-profile-on-profile.html"/><title value="StructureDefinition Template Profile On Profile"/><generation value="generated"/></page><page><nameUrl value="StructureDefinition-gaps-indv-measurereport-deqm.html"/><title value="StructureDefinition Gaps Indv MeasureReport Deqm"/><generation value="generated"/></page><page><nameUrl value="StructureDefinition-template-basic.html"/><title value="StructureDefinition Template Basic"/><generation value="generated"/></page>
     <!-- ============ End Profiles and examples=============== -->
 
     <!-- ============ Extensions and examples =============== -->
-    <!-- insert extensions --><page><nameUrl value="StructureDefinition-extension-complex.html"/><title value="StructureDefinition Extension Complex"/><generation value="generated"/></page><page><nameUrl value="StructureDefinition-extension-blah.html"/><title value="StructureDefinition Extension Blah"/><generation value="generated"/></page>
+    <!-- insert extensions --><page><nameUrl value="StructureDefinition-extension-populationReference.html"/><title value="StructureDefinition Extension populationReference"/><generation value="generated"/></page><page><nameUrl value="StructureDefinition-extension-complex.html"/><title value="StructureDefinition Extension Complex"/><generation value="generated"/></page><page><nameUrl value="StructureDefinition-extension-blah.html"/><title value="StructureDefinition Extension Blah"/><generation value="generated"/></page>
     <!-- ============ End Extensions and examples =============== -->
 
       </page>
+
+     <!-- ============ Bundle Definitions Page =============== -->
+     <page><nameUrl value="bundles.html"/><title value="Bundle Definitions"/><generation value="markdown"/>
+
+     <!-- ============ MessagedDefinitions  =============== -->
+     <!-- insert messagedefinitions -->
+     <!-- ============ End MessagedDefinitions  =============== -->
+
+      <!-- ============ GraphDefinitions  =============== -->
+      <!-- insert graphdefinitions -->
+      <!-- ============ EndGraphDefinitions  =============== -->
+
+     </page>
+
     <!-- ============ Operations Page =============== -->
     <page><nameUrl value="operations.html"/><title value="Operations"/><generation value="markdown"/>
 
@@ -109,11 +143,11 @@
     <!-- ============ Security Page =============== -->
     <page><nameUrl value="security.html"/><title value="Security"/><generation value="markdown"/></page>
 
-    <!-- ============ Downloads Page =============== -->
-    <page><nameUrl value="downloads.html"/><title value="Downloads"/><generation value="markdown"/></page>
-
     <!-- ============ Examples Page=============== -->
     <page><nameUrl value="all-examples.html"/><title value="All Examples"/><generation value="markdown"/></page>
+
+    <!-- ============ Downloads Page =============== -->
+    <page><nameUrl value="downloads.html"/><title value="Downloads"/><generation value="markdown"/></page>
 
     <!-- ============ Table of Contents =============== -->
     <page><nameUrl value="toc.html"/><title value="Table of Contents"/><generation value="html"/></page>

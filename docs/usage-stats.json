@@ -1,7 +1,7 @@
 {
   "package": "healthedatainc.ig-template2",
   "version": "0.0.0",
-  "fhirVersion": "4.0.0",
+  "fhirVersion": "4.0.1",
   "extensions": [
     {
       "url": "http://www.fhir.org/guides/test3/StructureDefinition/extension-blah",
@@ -174,9 +174,22 @@
         "Dosage",
         "Meta"
       ]
+    },
+    {
+      "url": "http://www.fhir.org/guides/test3/StructureDefinition/extension-populationReference",
+      "title": "DEQM Population Reference Extension",
+      "types": [
+        "CodeableConcept"
+      ]
     }
   ],
   "profiles": {
+    "MeasureReport": [
+      {
+        "url": "http://www.fhir.org/guides/test3/StructureDefinition/gaps-indv-measurereport-deqm",
+        "title": "DEQM Gaps Individual MeasureReport Profile"
+      }
+    ],
     "Basic": [
       {
         "url": "http://www.fhir.org/guides/test3/StructureDefinition/template-basic",
@@ -222,9 +235,7 @@
       "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
-      "StructureDefinition.snapshot.element.type"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
+      "StructureDefinition.snapshot.element.binding.valueSet",
       "StructureDefinition.snapshot.element.type"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
@@ -244,6 +255,9 @@
     ],
     "http://www.fhir.org/guides/test3/StructureDefinition/extension-complex": [
       "Basic"
+    ],
+    "http://www.fhir.org/guides/test3/StructureDefinition/extension-populationReference": [
+      "MeasureReport.evaluatedResource"
     ]
   }
 }

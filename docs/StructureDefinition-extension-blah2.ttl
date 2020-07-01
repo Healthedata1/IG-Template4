@@ -18,7 +18,7 @@
   fhir:StructureDefinition.title [ fhir:value "Simple Extension"];
   fhir:StructureDefinition.status [ fhir:value "active"];
   fhir:StructureDefinition.experimental [ fhir:value "false"^^xsd:boolean];
-  fhir:StructureDefinition.date [ fhir:value "2017-02-15T00:00:00-08:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2017-02-15"^^xsd:date];
   fhir:StructureDefinition.publisher [ fhir:value "Health eData Inc"];
   fhir:StructureDefinition.description [ fhir:value "an example of a simple extension."];
   fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"];

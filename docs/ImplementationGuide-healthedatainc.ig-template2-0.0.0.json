@@ -10,7 +10,7 @@
   "name": "IGTest3",
   "title": "IG Test3",
   "status": "draft",
-  "date": "2020-06-18T07:50:50-07:00",
+  "date": "2020-06-30T20:41:01-07:00",
   "publisher": "Health eData Inc",
   "contact": [
     {
@@ -34,22 +34,19 @@
   "packageId": "healthedatainc.ig-template2",
   "license": "CC0-1.0",
   "fhirVersion": [
-    "4.0.0"
+    "4.0.1"
   ],
   "dependsOn": [
     {
-      "uri": "http://hl7.org/fhir/us/qicore",
-      "packageId": "hl7.fhir.us.qicore",
-      "version": "4.0.0"
-    },
-    {
+      "id": "uscore",
       "uri": "http://hl7.org/fhir/us/core",
       "packageId": "hl7.fhir.us.core",
-      "version": "3.1.0"
+      "version": "1.1.0"
     },
     {
-      "uri": "http://hl7.org/fhir/us/cqfmeasures",
-      "packageId": "hl7.fhir.us.cqfmeasures",
+      "id": "qicore",
+      "uri": "http://hl7.org/fhir/us/qicore",
+      "packageId": "hl7.fhir.us.qicore",
       "version": "current"
     }
   ],
@@ -111,6 +108,22 @@
           "reference": "Patient/example2"
         },
         "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-extension-populationReference.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/extension-populationReference"
+        },
+        "exampleBoolean": false
       },
       {
         "extension": [
@@ -280,6 +293,22 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-gaps-indv-measurereport-deqm.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/gaps-indv-measurereport-deqm"
+        },
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "StructureDefinition-template-basic.html"
           }
         ],
@@ -349,8 +378,18 @@
               "generation": "generated"
             },
             {
+              "nameUrl": "StructureDefinition-gaps-indv-measurereport-deqm.html",
+              "title": "StructureDefinition Gaps Indv MeasureReport Deqm",
+              "generation": "generated"
+            },
+            {
               "nameUrl": "StructureDefinition-template-basic.html",
               "title": "StructureDefinition Template Basic",
+              "generation": "generated"
+            },
+            {
+              "nameUrl": "StructureDefinition-extension-populationReference.html",
+              "title": "StructureDefinition Extension populationReference",
               "generation": "generated"
             },
             {
@@ -364,6 +403,11 @@
               "generation": "generated"
             }
           ]
+        },
+        {
+          "nameUrl": "bundles.html",
+          "title": "Bundle Definitions",
+          "generation": "markdown"
         },
         {
           "nameUrl": "operations.html",
@@ -432,13 +476,13 @@
           "generation": "markdown"
         },
         {
-          "nameUrl": "downloads.html",
-          "title": "Downloads",
+          "nameUrl": "all-examples.html",
+          "title": "All Examples",
           "generation": "markdown"
         },
         {
-          "nameUrl": "all-examples.html",
-          "title": "All Examples",
+          "nameUrl": "downloads.html",
+          "title": "Downloads",
           "generation": "markdown"
         },
         {

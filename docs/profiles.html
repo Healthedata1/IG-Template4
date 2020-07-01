@@ -280,6 +280,7 @@ This is the {% if {{site.build}} == "ci" %}
 
 <p>The following Profiles for FHIR <em>resources</em> have been defined for this implementation guide.</p>
 
+<li><a href="StructureDefinition-gaps-indv-measurereport-deqm.html">DEQM Gaps Individual MeasureReport Profile</a> [MeasureReport] is used as an organizer for both data exchange for measure and for measure reporting.  Four profiles on the MeasureReport resource are defined in this guide to delineate these different uses.     The **DEQM Gaps Individual MeasureReport Profile** defined here based on the **DEQM Individual MeasureReport Profile**. It is used when a measure is reported to an aggregator for one specific patient. It contains all of the data that is relevant to generate the gaps in care report including the measure outcome and is similar to a QRDA Category 1 report. In addition, it also allows an evaluated resource to reference a specific measure population of the measure that is evaluated against.</li>
 <li><a href="StructureDefinition-template-basic.html">Health eData Template Profile</a> This is a simple example Template</li>
 <li><a href="StructureDefinition-template-profile-on-profile.html">Template Profile on Profile</a> Template-Profile-on-Profile</li>
 
@@ -300,6 +301,7 @@ This is the {% if {{site.build}} == "ci" %}
 <li><a href="StructureDefinition-extension-blah.html">Simple Extension</a> an example of a simple extension.</li>
 <li><a href="StructureDefinition-extension-complex.html">Complex Extension</a> an example of a complex extension.</li>
 <li><a href="StructureDefinition-extension-blah2.html">Simple Extension</a> an example of a simple extension.</li>
+<li><a href="StructureDefinition-extension-populationReference.html">DEQM Population Reference Extension</a> TODO:.</li>
 
 <p><br /></p>
 
@@ -332,7 +334,7 @@ This is the {% if {{site.build}} == "ci" %}
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-     <a href="mailto:ehaas@healthedatainc.com">Health eData Inc </a> healthedatainc.ig-template2#0.0.0 based on <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR 4.0.1</a> created <span href="#" data-toggle="tooltip" data-placement="top" title="Thu, Jun 18, 2020 07:50-0700">2020-06-18</span>. <br/>
+     <a href="mailto:ehaas@healthedatainc.com">Health eData Inc </a> healthedatainc.ig-template2#0.0.0 based on <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR 4.0.1</a> created <span href="#" data-toggle="tooltip" data-placement="top" title="Tue, Jun 30, 2020 20:41-0700">2020-06-30</span>. <br/>
       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a>
       | <a style="color: #81BEF7" href="qa.html">QA Report</a>
       | <a style="color: #81BEF7" href="#">Version History</a>

@@ -1,0 +1,114 @@
+[
+  {
+    "url": "http://www.fhir.org/guides/test3/CapabilityStatement/client",
+    "id": "client",
+    "type": "CapabilityStatement",
+    "version": "0.0.0",
+    "name": "Client"
+  },
+  {
+    "url": "http://www.fhir.org/guides/test3/CapabilityStatement/server",
+    "id": "server",
+    "type": "CapabilityStatement",
+    "version": "0.0.0",
+    "name": "Server"
+  },
+  {
+    "url": "http://www.fhir.org/guides/test3/CodeSystem/blah-codes",
+    "id": "blah-codes",
+    "type": "CodeSystem",
+    "version": "0.0.0",
+    "name": "BlahCodes"
+  },
+  {
+    "url": "http://www.fhir.org/guides/test3/ImplementationGuide/healthedatainc.ig-template2-0.0.0",
+    "id": "healthedatainc.ig-template2-0.0.0",
+    "type": "ImplementationGuide",
+    "version": "0.0.0",
+    "name": "IGTest3"
+  },
+  {
+    "url": "http://www.fhir.org/guides/test3/OperationDefinition/example",
+    "id": "opdef-test",
+    "type": "OperationDefinition",
+    "version": "0.0.0",
+    "name": "Populate Questionnaire"
+  },
+  {
+    "url": "http://www.fhir.org/guides/test3/StructureDefinition/extension-blah",
+    "id": "extension-blah",
+    "type": "StructureDefinition",
+    "version": "0.0.0",
+    "name": "blah"
+  },
+  {
+    "url": "http://www.fhir.org/guides/test3/StructureDefinition/extension-blah2",
+    "id": "extension-blah2",
+    "type": "StructureDefinition",
+    "version": "0.0.0",
+    "name": "blah2"
+  },
+  {
+    "url": "http://www.fhir.org/guides/test3/StructureDefinition/extension-complex",
+    "id": "extension-complex",
+    "type": "StructureDefinition",
+    "version": "0.0.0",
+    "name": "complex"
+  },
+  {
+    "url": "http://www.fhir.org/guides/test3/StructureDefinition/extension-populationReference",
+    "id": "extension-populationReference",
+    "type": "StructureDefinition",
+    "version": "0.0.0",
+    "name": "DEQMPopulationReferenceExtension"
+  },
+  {
+    "url": "http://www.fhir.org/guides/test3/StructureDefinition/gaps-indv-measurereport-deqm",
+    "id": "gaps-indv-measurereport-deqm",
+    "type": "StructureDefinition",
+    "version": "0.0.0",
+    "name": "DEQMGapsIndividualMeasureReportProfile"
+  },
+  {
+    "url": "http://www.fhir.org/guides/test3/StructureDefinition/ifr",
+    "id": "ifr",
+    "type": "StructureDefinition",
+    "version": "0.0.0",
+    "name": "Identifer Free Reference Data Type"
+  },
+  {
+    "url": "http://www.fhir.org/guides/test3/StructureDefinition/template-basic",
+    "id": "template-basic",
+    "type": "StructureDefinition",
+    "version": "0.0.0",
+    "name": "Template-basic"
+  },
+  {
+    "url": "http://www.fhir.org/guides/test3/StructureDefinition/template-profile-on-profile",
+    "id": "template-profile-on-profile",
+    "type": "StructureDefinition",
+    "version": "0.0.0",
+    "name": "Template-Profile-on-Profile"
+  },
+  {
+    "url": "http://www.fhir.org/guides/test3/ValueSet/bar-codes",
+    "id": "bar-codes",
+    "type": "ValueSet",
+    "version": "0.0.0",
+    "name": "BarCodes"
+  },
+  {
+    "url": "http://www.fhir.org/guides/test3/ValueSet/blah-codes",
+    "id": "blah-codes",
+    "type": "ValueSet",
+    "version": "0.0.0",
+    "name": "BlahCodes"
+  },
+  {
+    "url": "http://www.fhir.org/guides/test3/ValueSet/foo-codes",
+    "id": "foo-codes",
+    "type": "ValueSet",
+    "version": "0.0.0",
+    "name": "FooCodes"
+  }
+]

@@ -8,7 +8,7 @@ publisher,Health eData Inc
 contact.system,email|url
 contact.value,mailto:ehaas@healthedatainc.com|http://foobar.com
 license,
-extensions,extension-blah|extension-complex
+extensions,extension-blah|extension-complex|extension-populationReference
 searches,
 codesystems,
 valuesets,
@@ -40,4 +40,4 @@ logging,progress
 topofpage,TRUE
 allviews,TRUE
 npm-name,healthedatainc.ig-template2
-version,4.0.0
+version,4.0.1

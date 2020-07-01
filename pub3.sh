@@ -1,6 +1,7 @@
 #!/bin/bash
 # exit when any command fails
 set -e
+puburl=https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar
 path1=/Users/ehaas/Downloads/org.hl7.fhir.igpublisher.jar
 path2=/Users/ehaas/Downloads/org.hl7.fhir.igpublisher-old.jar
 path3=/Users/ehaas/Documents/FHIR/IG-tools/
@@ -41,9 +42,10 @@ if [[ $UPDATE ]]; then
 echo "================================================================="
 echo === get the latest ig-pub file ===
 echo "================================================================="
-mv /Users/ehaas/Downloads/org.hl7.fhir.igpublisher.jar /Users/ehaas/Downloads/org.hl7.fhir.igpublisher-old.jar
+mv $path1 $path2
 # _L flag for redirects
-curl -L https://storage.googleapis.com/ig-build/org.hl7.fhir.publisher.jar -o /Users/ehaas/Downloads/org.hl7.fhir.igpublisher.jar
+# curl -L https://storage.googleapis.com/ig-build/org.hl7.fhir.publisher.jar -o /Users/ehaas/Downloads/org.hl7.fhir.igpublisher.jar
+curl -L $puburl -o $path1
 sleep 3
 fi
 

@@ -17,7 +17,7 @@
   fhir:OperationDefinition.name [ fhir:value "Populate Questionnaire"];
   fhir:OperationDefinition.status [ fhir:value "draft"];
   fhir:OperationDefinition.kind [ fhir:value "operation"];
-  fhir:OperationDefinition.date [ fhir:value "2015-08-04T00:00:00-07:00"^^xsd:dateTime];
+  fhir:OperationDefinition.date [ fhir:value "2015-08-04"^^xsd:date];
   fhir:OperationDefinition.publisher [ fhir:value "Acme Healthcare Services"];
   fhir:OperationDefinition.contact [
      fhir:index 0;

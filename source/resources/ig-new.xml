@@ -35,21 +35,16 @@
   <copyright value="Used by permission of Health eData Inc, all rights reserved Creative Commons License"/>
   <packageId value="healthedatainc.ig-template2"/>
   <license value="CC0-1.0"/>
-  <fhirVersion value="4.0.0"/>
+  <fhirVersion value="4.0.1"/>
   <fhirVersion value="4.0.1"/>
   <dependsOn id="qicore">
     <uri value="http://hl7.org/fhir/us/qicore"/>
     <packageId value="hl7.fhir.us.qicore"/>
-    <version value="4.0.0"/>
+    <version value="current"/>
   </dependsOn>
   <dependsOn id="uscore">
     <uri value="http://hl7.org/fhir/us/core"/>
     <packageId value="hl7.fhir.us.core"/>
-    <version value="3.1.0"/>
-  </dependsOn>
-  <dependsOn id="cqfm">
-    <uri value="http://hl7.org/fhir/us/cqfmeasures"/>
-    <packageId value="hl7.fhir.us.cqfmeasures"/>
     <version value="current"/>
   </dependsOn>
   <definition>
@@ -73,6 +68,12 @@
         <reference value="Patient/example2"/>
       </reference>
       <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/extension-populationReference"/>
+      </reference>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <reference>
@@ -136,6 +137,12 @@
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/gaps-indv-measurereport-deqm"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/template-basic"/>
       </reference>
       <exampleBoolean value="false"/>
@@ -170,8 +177,18 @@
           <generation value="generated"/>
         </page>
         <page>
+          <nameUrl value="StructureDefinition-gaps-indv-measurereport-deqm.html"/>
+          <title value="StructureDefinition Gaps Indv MeasureReport Deqm"/>
+          <generation value="generated"/>
+        </page>
+        <page>
           <nameUrl value="StructureDefinition-template-basic.html"/>
           <title value="StructureDefinition Template Basic"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="StructureDefinition-extension-populationReference.html"/>
+          <title value="StructureDefinition Extension populationReference"/>
           <generation value="generated"/>
         </page>
         <page>
@@ -184,6 +201,11 @@
           <title value="StructureDefinition Extension Blah"/>
           <generation value="generated"/>
         </page>
+      </page>
+      <page>
+        <nameUrl value="bundles.html"/>
+        <title value="Bundle Definitions"/>
+        <generation value="markdown"/>
       </page>
       <page>
         <nameUrl value="operations.html"/>
@@ -246,13 +268,13 @@
         <generation value="markdown"/>
       </page>
       <page>
-        <nameUrl value="downloads.html"/>
-        <title value="Downloads"/>
+        <nameUrl value="all-examples.html"/>
+        <title value="All Examples"/>
         <generation value="markdown"/>
       </page>
       <page>
-        <nameUrl value="all-examples.html"/>
-        <title value="All Examples"/>
+        <nameUrl value="downloads.html"/>
+        <title value="Downloads"/>
         <generation value="markdown"/>
       </page>
       <page>
