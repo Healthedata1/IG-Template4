@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="bundle-example"/>
+  <meta>
+    <lastUpdated value="2019-07-09T18:49:01.235+00:00"/>
+  </meta>
+  <type value="searchset"/>
+  <total value="1"/>
+  <link>
+    <relation value="self"/>
+    <url value="http://example.org/fhir/AllergyIntolerance?_revinclude=Provenance%3Atarget&amp;patient=Examples"/>
+  </link>
+  <entry>
+    <fullUrl value="https://example.com/base/Provenance/3123"/>
+    <resource>
+      <Provenance>
+        <id value="3123"/>
+        <meta>
+          <versionId value="1"/>
+          <lastUpdated value="2019-07-09T15:26:23.217+00:00"/>
+          <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-provenance"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p></div>
+        </text>
+        <target>
+          <reference value="AllergyIntolerance/3124"/>
+        </target>
+        <recorded value="2019-07-09T15:26:23.217+00:00"/>
+        <agent>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/provenance-participant-type"/>
+              <code value="author"/>
+              <display value="Author"/>
+            </coding>
+          </type>
+          <who>
+            <display value="Practitioner/practitioner-1"/>
+          </who>
+          <onBehalfOf>
+            <display value="Organization/saint-luke-w-endpoint"/>
+          </onBehalfOf>
+        </agent>
+      </Provenance>
+    </resource>
+    <search>
+      <mode value="include"/>
+    </search>
+  </entry>
+  <entry>
+    <fullUrl value="https://example.com/base/AllergyIntolerance/3124"/>
+    <resource>
+      <AllergyIntolerance>
+        <id value="3124"/>
+        <meta>
+          <versionId value="1"/>
+          <lastUpdated value="2019-07-09T15:26:23.217+00:00"/>
+          <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-allergyintolerance"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p></div>
+        </text>
+        <clinicalStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"/>
+            <code value="active"/>
+            <display value="Active"/>
+          </coding>
+        </clinicalStatus>
+        <verificationStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"/>
+            <code value="confirmed"/>
+            <display value="Confirmed"/>
+          </coding>
+        </verificationStatus>
+        <category value="medication"/>
+        <criticality value="high"/>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="762952008"/>
+            <display value="Peanuts"/>
+          </coding>
+          <text value="Peanuts"/>
+        </code>
+        <patient>
+          <reference value="Patient/example1"/>
+        </patient>
+        <onsetDateTime value="2017-06-09"/>
+        <reaction>
+          <manifestation>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="247472004"/>
+              <display value="Hives"/>
+            </coding>
+          </manifestation>
+          <onset value="2017-06-09"/>
+        </reaction>
+      </AllergyIntolerance>
+    </resource>
+    <search>
+      <mode value="match"/>
+    </search>
+  </entry>
+</Bundle>

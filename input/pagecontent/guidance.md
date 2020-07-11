@@ -5,7 +5,9 @@ This is based on {{page.f}}index.html
 
 
 {% include examplebutton.html example="example" b_title = "Example Button bar" %}
-
+#### h4
+##### h5
+##### h6
 
 ### My list
 
@@ -28,4 +30,4 @@ inline json example exploiting Rouge to highlight inline comment (errors in json
 }
 ~~~
 
-#### And More Stuff
+### And More Stuff

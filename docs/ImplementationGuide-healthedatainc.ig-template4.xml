@@ -295,48 +295,6 @@
     </grouping>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Basic"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Basic-diet-example1.html"/>
-      </extension>
-      <reference>
-        <reference value="Basic/diet-example1"/>
-      </reference>
-      <name value="Basic Example"/>
-      <description value="an example of a of Basic Profile."/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Patient"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Patient-example1.html"/>
-      </extension>
-      <reference>
-        <reference value="Patient/example1"/>
-      </reference>
-      <name value="Patient Example"/>
-      <description value="an example of a of Patient Profile."/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Patient"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Patient-example2.html"/>
-      </extension>
-      <reference>
-        <reference value="Patient/example2"/>
-      </reference>
-      <name value="Another Patient Example"/>
-      <description value="Another example of a of Patient Profile."/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
@@ -503,6 +461,63 @@
       <description value="A bunch of example codes"/>
       <exampleBoolean value="false"/>
     </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="MedicationRequest-example1.html"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/example1"/>
+      </reference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Patient-example1.html"/>
+      </extension>
+      <reference>
+        <reference value="Patient/example1"/>
+      </reference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Bundle-bundle-example.html"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/bundle-example"/>
+      </reference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Patient-example2.html"/>
+      </extension>
+      <reference>
+        <reference value="Patient/example2"/>
+      </reference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Basic"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Basic-diet-example1.html"/>
+      </extension>
+      <reference>
+        <reference value="Basic/diet-example1"/>
+      </reference>
+      <name value="Example Basic - diet-example1"/>
+      <exampleCanonical value="http://www.fhir.org/guides/test3/StructureDefinition/template-basic"/>
+    </resource>
     <page>
       <nameUrl value="index.html"/>
       <title value="Home"/>
@@ -660,6 +675,10 @@
     <parameter>
       <code value="path-tx-cache"/>
       <value value="input-cache/txcache"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/history"/>
     </parameter>
     <parameter>
       <code value="path-pages"/>

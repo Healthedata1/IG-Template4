@@ -59,30 +59,6 @@
         "resource": [
             {
                 "reference": {
-                    "reference": "Basic/diet-example1"
-                },
-                "name": "Basic Example",
-                "description": "an example of a of Basic Profile.",
-                "exampleBoolean": true
-            },
-            {
-                "reference": {
-                    "reference": "Patient/example1"
-                },
-                "name": "Patient Example",
-                "description": "an example of a of Patient Profile.",
-                "exampleBoolean": true
-            },
-            {
-                "reference": {
-                    "reference": "Patient/example2"
-                },
-                "name": "Another Patient Example",
-                "description": "Another example of a of Patient Profile.",
-                "exampleBoolean": true
-            },
-            {
-                "reference": {
                     "reference": "StructureDefinition/extension-complex"
                 },
                 "name": "Complex Extension",

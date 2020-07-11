@@ -1,92 +1,92 @@
 [
   {
-    "url": "http://www.fhir.org/guides/test3/CapabilityStatement/client",
     "id": "client",
     "type": "CapabilityStatement",
+    "url": "http://www.fhir.org/guides/test3/CapabilityStatement/client",
     "version": "0.0.0",
     "name": "Client"
   },
   {
-    "url": "http://www.fhir.org/guides/test3/CapabilityStatement/server",
     "id": "server",
     "type": "CapabilityStatement",
+    "url": "http://www.fhir.org/guides/test3/CapabilityStatement/server",
     "version": "0.0.0",
     "name": "Server"
   },
   {
-    "url": "http://www.fhir.org/guides/test3/CodeSystem/blah-codes",
     "id": "blah-codes",
     "type": "CodeSystem",
+    "url": "http://www.fhir.org/guides/test3/CodeSystem/blah-codes",
     "version": "0.0.0",
     "name": "BlahCodes"
   },
   {
-    "url": "http://www.fhir.org/guides/test3/ImplementationGuide/healthedatainc.ig-template4",
     "id": "healthedatainc.ig-template4",
     "type": "ImplementationGuide",
+    "url": "http://www.fhir.org/guides/test3/ImplementationGuide/healthedatainc.ig-template4",
     "version": "0.0.0",
     "name": "IGTest4"
   },
   {
-    "url": "http://www.fhir.org/guides/test3/OperationDefinition/example",
     "id": "example",
     "type": "OperationDefinition",
+    "url": "http://www.fhir.org/guides/test3/OperationDefinition/example",
     "version": "0.0.0",
     "name": "PopulateQuestionnaire"
   },
   {
-    "url": "http://www.fhir.org/guides/test3/StructureDefinition/extension-blah",
     "id": "extension-blah",
     "type": "StructureDefinition",
+    "url": "http://www.fhir.org/guides/test3/StructureDefinition/extension-blah",
     "version": "0.0.0",
     "name": "blah"
   },
   {
-    "url": "http://www.fhir.org/guides/test3/StructureDefinition/extension-complex",
     "id": "extension-complex",
     "type": "StructureDefinition",
+    "url": "http://www.fhir.org/guides/test3/StructureDefinition/extension-complex",
     "version": "0.0.0",
     "name": "complex"
   },
   {
-    "url": "http://www.fhir.org/guides/test3/StructureDefinition/ifr",
     "id": "ifr",
     "type": "StructureDefinition",
+    "url": "http://www.fhir.org/guides/test3/StructureDefinition/ifr",
     "version": "0.0.0",
     "name": "Identifer Free Reference Data Type"
   },
   {
-    "url": "http://www.fhir.org/guides/test3/StructureDefinition/template-basic",
     "id": "template-basic",
     "type": "StructureDefinition",
+    "url": "http://www.fhir.org/guides/test3/StructureDefinition/template-basic",
     "version": "0.0.0",
     "name": "TemplateBasic"
   },
   {
-    "url": "http://www.fhir.org/guides/test3/StructureDefinition/template-profile-on-profile",
     "id": "template-profile-on-profile",
     "type": "StructureDefinition",
+    "url": "http://www.fhir.org/guides/test3/StructureDefinition/template-profile-on-profile",
     "version": "0.0.0",
     "name": "Template-Profile-on-Profile"
   },
   {
-    "url": "http://www.fhir.org/guides/test3/ValueSet/bar-codes",
     "id": "bar-codes",
     "type": "ValueSet",
+    "url": "http://www.fhir.org/guides/test3/ValueSet/bar-codes",
     "version": "0.0.0",
     "name": "BarCodes"
   },
   {
-    "url": "http://www.fhir.org/guides/test3/ValueSet/blah-codes",
     "id": "blah-codes",
     "type": "ValueSet",
+    "url": "http://www.fhir.org/guides/test3/ValueSet/blah-codes",
     "version": "0.0.0",
     "name": "BlahCodes"
   },
   {
-    "url": "http://www.fhir.org/guides/test3/ValueSet/foo-codes",
     "id": "foo-codes",
     "type": "ValueSet",
+    "url": "http://www.fhir.org/guides/test3/ValueSet/foo-codes",
     "version": "0.0.0",
     "name": "FooCodes"
   }

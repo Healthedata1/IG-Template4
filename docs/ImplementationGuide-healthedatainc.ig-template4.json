@@ -470,60 +470,6 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Basic"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "Basic-diet-example1.html"
-          }
-        ],
-        "reference": {
-          "reference": "Basic/diet-example1"
-        },
-        "name": "Basic Example",
-        "description": "an example of a of Basic Profile.",
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Patient"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "Patient-example1.html"
-          }
-        ],
-        "reference": {
-          "reference": "Patient/example1"
-        },
-        "name": "Patient Example",
-        "description": "an example of a of Patient Profile.",
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Patient"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "Patient-example2.html"
-          }
-        ],
-        "reference": {
-          "reference": "Patient/example2"
-        },
-        "name": "Another Patient Example",
-        "description": "Another example of a of Patient Profile.",
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:extension"
           },
           {
@@ -735,6 +681,83 @@
         "name": "BlahCodes",
         "description": "A bunch of example codes",
         "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationRequest"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "MedicationRequest-example1.html"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationRequest/example1"
+        }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Patient"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Patient-example1.html"
+          }
+        ],
+        "reference": {
+          "reference": "Patient/example1"
+        }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Bundle"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Bundle-bundle-example.html"
+          }
+        ],
+        "reference": {
+          "reference": "Bundle/bundle-example"
+        }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Patient"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Patient-example2.html"
+          }
+        ],
+        "reference": {
+          "reference": "Patient/example2"
+        }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Basic"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Basic-diet-example1.html"
+          }
+        ],
+        "reference": {
+          "reference": "Basic/diet-example1"
+        },
+        "name": "Example Basic - diet-example1",
+        "exampleCanonical": "http://www.fhir.org/guides/test3/StructureDefinition/template-basic"
       }
     ],
     "page": {
@@ -905,6 +928,10 @@
       {
         "code": "path-tx-cache",
         "value": "input-cache/txcache"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/history"
       },
       {
         "code": "path-pages",
