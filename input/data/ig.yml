@@ -31,11 +31,11 @@ fhirVersion:
   - 4.0.1
 dependsOn:
   - id: uscore
-    uri: 'http://hl7.org/fhir/us/core'
+    uri: 'http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core'
     packageId: hl7.fhir.us.core
     version: 3.1.0
   - id: qicore
-    uri: 'http://hl7.org/fhir/us/qicore'
+    uri: 'http://hl7.org/fhir/us/qicore/ImplementationGuide/hl7.fhir.us.qicore'
     packageId: hl7.fhir.us.qicore
     version: 4.0.0
 definition:
@@ -59,16 +59,21 @@ definition:
       #name: Another Patient Example
       #description: Another example of a of Patient Profile.
       #exampleBoolean: true
-    #- reference:
-        #reference: Bundle/bundle-example
-      #name: AI Prov Example
-      #description: AI Prov Example.
-      #exampleBoolean: true
-    #- reference:
-        #reference: MedicationRequest/example1
-      #name: Contained meds example
-      #description: Contained meds example
-      #exampleBoolean: true
+    - reference:
+        reference: Bundle/bundle-example
+      name:  Example
+      description: Example.
+      exampleBoolean: true
+    - reference:
+        reference: MedicationRequest/example1
+      name: Contained meds example
+      description: Contained meds example
+      exampleBoolean: true
+    - reference:
+        reference: Condition/contained-example
+      name: Contained pract example
+      description: Contained pract example
+      exampleBoolean: true
     - reference:
         reference: StructureDefinition/extension-complex
       name: Complex Extension

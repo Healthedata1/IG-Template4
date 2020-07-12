@@ -29,12 +29,12 @@
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.1"/>
   <dependsOn id="uscore">
-    <uri value="http://hl7.org/fhir/us/core"/>
+    <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
     <packageId value="hl7.fhir.us.core"/>
     <version value="3.1.0"/>
   </dependsOn>
   <dependsOn id="qicore">
-    <uri value="http://hl7.org/fhir/us/qicore"/>
+    <uri value="http://hl7.org/fhir/us/qicore/ImplementationGuide/hl7.fhir.us.qicore"/>
     <packageId value="hl7.fhir.us.qicore"/>
     <version value="4.0.0"/>
   </dependsOn>
@@ -295,6 +295,48 @@
     </grouping>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Bundle-bundle-example.html"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/bundle-example"/>
+      </reference>
+      <name value="Example"/>
+      <description value="Example."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="MedicationRequest-example1.html"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/example1"/>
+      </reference>
+      <name value="Contained meds example"/>
+      <description value="Contained meds example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Condition-contained-example.html"/>
+      </extension>
+      <reference>
+        <reference value="Condition/contained-example"/>
+      </reference>
+      <name value="Contained pract example"/>
+      <description value="Contained pract example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
@@ -460,63 +502,6 @@
       <name value="BlahCodes"/>
       <description value="A bunch of example codes"/>
       <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="MedicationRequest"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="MedicationRequest-example1.html"/>
-      </extension>
-      <reference>
-        <reference value="MedicationRequest/example1"/>
-      </reference>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Patient"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Patient-example1.html"/>
-      </extension>
-      <reference>
-        <reference value="Patient/example1"/>
-      </reference>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Bundle"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Bundle-bundle-example.html"/>
-      </extension>
-      <reference>
-        <reference value="Bundle/bundle-example"/>
-      </reference>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Patient"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Patient-example2.html"/>
-      </extension>
-      <reference>
-        <reference value="Patient/example2"/>
-      </reference>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Basic"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Basic-diet-example1.html"/>
-      </extension>
-      <reference>
-        <reference value="Basic/diet-example1"/>
-      </reference>
-      <name value="Example Basic - diet-example1"/>
-      <exampleCanonical value="http://www.fhir.org/guides/test3/StructureDefinition/template-basic"/>
     </resource>
     <page>
       <nameUrl value="index.html"/>

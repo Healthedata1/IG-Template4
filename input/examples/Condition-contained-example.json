@@ -1,0 +1,31 @@
+{
+  "resourceType": "Condition",
+  "id": "contained-example",
+  "contained": [
+    {
+      "resourceType": "Practitioner",
+      "id": "p1",
+      "name": [
+        {
+          "family": "Person",
+          "given": [
+            "Patricia"
+          ]
+        }
+      ]
+    }
+  ],
+  "asserter": {
+    "reference": "#p1"
+  },
+  "subject": {
+    "display": "Amy Shaw"
+  },
+  "clinicalStatus": {
+    "coding": [
+      {
+        "code": "active"
+      }
+    ]
+  }
+}

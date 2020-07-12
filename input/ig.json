@@ -35,13 +35,13 @@
     "dependsOn": [
         {
             "id": "uscore",
-            "uri": "http://hl7.org/fhir/us/core",
+            "uri": "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core",
             "packageId": "hl7.fhir.us.core",
             "version": "3.1.0"
         },
         {
             "id": "qicore",
-            "uri": "http://hl7.org/fhir/us/qicore",
+            "uri": "http://hl7.org/fhir/us/qicore/ImplementationGuide/hl7.fhir.us.qicore",
             "packageId": "hl7.fhir.us.qicore",
             "version": "4.0.0"
         }
@@ -57,6 +57,30 @@
             }
         ],
         "resource": [
+            {
+                "reference": {
+                    "reference": "Bundle/bundle-example"
+                },
+                "name": "Example",
+                "description": "Example.",
+                "exampleBoolean": true
+            },
+            {
+                "reference": {
+                    "reference": "MedicationRequest/example1"
+                },
+                "name": "Contained meds example",
+                "description": "Contained meds example",
+                "exampleBoolean": true
+            },
+            {
+                "reference": {
+                    "reference": "Condition/contained-example"
+                },
+                "name": "Contained pract example",
+                "description": "Contained pract example",
+                "exampleBoolean": true
+            },
             {
                 "reference": {
                     "reference": "StructureDefinition/extension-complex"

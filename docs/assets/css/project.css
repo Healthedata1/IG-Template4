@@ -1,4 +1,4 @@
-=/*
+/*
 
     Specific layout and styling, project based
 
@@ -608,8 +608,7 @@ li a[href^="http://"]:not([no-external^="true"]):after, a[href^="https://"]:not(
     padding-left: 3px;
 }
 
-
-/* ========== New content for ballot highlighting ======*/
+/* ----------New content for ballot styling------*/
 
 .new-content::before {
   white-space: pre;
@@ -623,14 +622,6 @@ li a[href^="http://"]:not([no-external^="true"]):after, a[href^="https://"]:not(
     background-color: #dff0d8;
     border-color: #d6e9c6;
 }
-
-/* ========== Basic highlighting in yellow ======*/
-.highlight{
-    background-color: yellow;
-    border-color: #0A0008;
-}
-
-/* ========== Other highlighting styles ======*/
 
 .bg-success{
     color: #3c763d;

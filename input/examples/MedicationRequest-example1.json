@@ -9,7 +9,7 @@
   "contained": [
     {
       "resourceType": "Medication",
-      "id": "med2",
+      "id": "m1",
       "code": {
         "coding": [
           {
@@ -25,16 +25,14 @@
   "status": "active",
   "intent": "order",
   "medicationReference": {
-    "reference": "#med2",
+    "reference": "#m1",
     "display": "Nizatidine 15 MG/ML Oral Solution [Axid]"
   },
   "subject": {
-    "reference": "Patient/example",
     "display": "Amy Shaw"
   },
   "authoredOn": "2008-04-05",
   "requester": {
-    "reference": "Practitioner/practitioner-1",
     "display": "Ronald Bone, MD"
   },
   "dosageInstruction": [
