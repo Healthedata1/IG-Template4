@@ -1,0 +1,47 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://www.fhir.org/guides/test3/Condition/contained-example> a fhir:Condition;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "contained-example"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>id</b>: contained-example</p><p><b>contained</b>: </p><p><b>clinicalStatus</b>: <span title=\"Codes: \">active</span></p><p><b>subject</b>: <span>Amy Shaw</span></p><p><b>asserter</b>: <a href=\"#p1\">unknown resource contained</a></p></div>"
+  ];
+  fhir:DomainResource.contained [
+     a fhir:Practitioner;
+     fhir:index 0;
+     fhir:Resource.id [ fhir:value "p1" ];
+     fhir:Practitioner.name [
+       fhir:index 0;
+       fhir:HumanName.family [ fhir:value "Person" ];
+       fhir:HumanName.given [
+         fhir:value "Patricia";
+         fhir:index 0
+       ]
+     ]
+  ];
+  fhir:Condition.clinicalStatus [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.code [ fhir:value "active" ]
+     ]
+  ];
+  fhir:Condition.subject [
+     fhir:Reference.display [ fhir:value "Amy Shaw" ]
+  ];
+  fhir:Condition.asserter [
+     fhir:Reference.reference [ fhir:value "#p1" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://www.fhir.org/guides/test3/Condition/contained-example.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

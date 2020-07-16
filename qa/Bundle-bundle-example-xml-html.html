@@ -1,0 +1,67 @@
+﻿<html>
+<head>
+  <title>Bundle-bundle-example-xml-html</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<pre class="xml">
+
+&lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle">Bundle</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;bundle-example&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.meta">meta</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.lastUpdated">lastUpdated</a> <a href="http://hl7.org/fhir/R4/datatypes.html#instant">value</a>=&quot;2014-08-18T01:43:30Z&quot;/&gt;
+  &lt;/meta&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;searchset&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.total">total</a> <a href="http://hl7.org/fhir/R4/datatypes.html#unsignedInt">value</a>=&quot;3&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.link">link</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.link.relation">relation</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;self&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.link.url">url</a>
+         <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://example.com/base/MedicationRequest?patient=347&amp;amp;_include=MedicationRequest.medication&amp;amp;_count=2&quot;/&gt;
+  &lt;/link&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.link">link</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.link.relation">relation</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;next&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.link.url">url</a>
+         <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://example.com/base/MedicationRequest?patient=347&amp;amp;searchId=ff15fd40-ff71-4b48-b366-09c706bed9d0&amp;amp;page=2&quot;/&gt;
+  &lt;/link&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://example.com/base/MedicationRequest/3123&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest">MedicationRequest</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;3123&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+          &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+        &lt;/text&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;unknown&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.intent">intent</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;order&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.medication[x]">medicationReference</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Medication/example&quot;/&gt;
+        &lt;/medicationReference&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.subject">subject</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Patient/347&quot;/&gt;
+        &lt;/subject&gt;
+      &lt;/MedicationRequest&gt;
+    &lt;/resource&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.search">search</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.search.mode">mode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;match&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.search.score">score</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;1&quot;/&gt;
+    &lt;/search&gt;
+  &lt;/entry&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://example.com/base/Medication/example&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/medication.html#Medication">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/medication.html#Medication">Medication</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/medication.html#Medication.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;example&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/medication.html#Medication.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+          &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+        &lt;/text&gt;
+      &lt;/Medication&gt;
+    &lt;/resource&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.search">search</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.search.mode">mode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;include&quot;/&gt;
+    &lt;/search&gt;
+  &lt;/entry&gt;
+&lt;/Bundle&gt;</pre>
+</body>
+</html>

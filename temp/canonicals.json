@@ -1,0 +1,93 @@
+[
+  {
+    "id": "client",
+    "type": "CapabilityStatement",
+    "url": "http://www.fhir.org/guides/test3/CapabilityStatement/client",
+    "version": "0.0.0",
+    "name": "Client"
+  },
+  {
+    "id": "server",
+    "type": "CapabilityStatement",
+    "url": "http://www.fhir.org/guides/test3/CapabilityStatement/server",
+    "version": "0.0.0",
+    "name": "Server"
+  },
+  {
+    "id": "blah-codes",
+    "type": "CodeSystem",
+    "url": "http://www.fhir.org/guides/test3/CodeSystem/blah-codes",
+    "version": "0.0.0",
+    "name": "BlahCodes"
+  },
+  {
+    "id": "healthedatainc.ig-template4",
+    "type": "ImplementationGuide",
+    "url": "http://www.fhir.org/guides/test3/ImplementationGuide/healthedatainc.ig-template4",
+    "version": "0.0.0",
+    "name": "IGTest4"
+  },
+  {
+    "id": "example",
+    "type": "OperationDefinition",
+    "url": "http://www.fhir.org/guides/test3/OperationDefinition/example",
+    "version": "0.0.0",
+    "name": "PopulateQuestionnaire"
+  },
+  {
+    "id": "extension-blah",
+    "type": "StructureDefinition",
+    "url": "http://www.fhir.org/guides/test3/StructureDefinition/extension-blah",
+    "version": "0.0.0",
+    "name": "blah"
+  },
+  {
+    "id": "extension-complex",
+    "type": "StructureDefinition",
+    "url": "http://www.fhir.org/guides/test3/StructureDefinition/extension-complex",
+    "version": "0.0.0",
+    "name": "complex"
+  },
+  {
+    "id": "ifr",
+    "type": "StructureDefinition",
+    "url": "http://www.fhir.org/guides/test3/StructureDefinition/ifr",
+    "version": "0.0.0",
+    "name": "Identifer Free Reference Data Type"
+  },
+  {
+    "id": "template-basic",
+    "type": "StructureDefinition",
+    "url": "http://www.fhir.org/guides/test3/StructureDefinition/template-basic",
+    "version": "0.0.0",
+    "name": "TemplateBasic"
+  },
+  {
+    "id": "template-profile-on-profile",
+    "type": "StructureDefinition",
+    "url": "http://www.fhir.org/guides/test3/StructureDefinition/template-profile-on-profile",
+    "version": "0.0.0",
+    "name": "Template-Profile-on-Profile"
+  },
+  {
+    "id": "bar-codes",
+    "type": "ValueSet",
+    "url": "http://www.fhir.org/guides/test3/ValueSet/bar-codes",
+    "version": "0.0.0",
+    "name": "BarCodes"
+  },
+  {
+    "id": "blah-codes",
+    "type": "ValueSet",
+    "url": "http://www.fhir.org/guides/test3/ValueSet/blah-codes",
+    "version": "0.0.0",
+    "name": "BlahCodes"
+  },
+  {
+    "id": "foo-codes",
+    "type": "ValueSet",
+    "url": "http://www.fhir.org/guides/test3/ValueSet/foo-codes",
+    "version": "0.0.0",
+    "name": "FooCodes"
+  }
+]

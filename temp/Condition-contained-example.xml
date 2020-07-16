@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Condition xmlns="http://hl7.org/fhir">
+  <id value="contained-example"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>id</b>: contained-example</p><p><b>contained</b>: </p><p><b>clinicalStatus</b>: <span title="Codes: ">active</span></p><p><b>subject</b>: <span>Amy Shaw</span></p><p><b>asserter</b>: <a href="#p1">unknown resource contained</a></p></div>
+  </text>
+  <contained>
+    <Practitioner>
+      <id value="p1"/>
+      <name>
+        <family value="Person"/>
+        <given value="Patricia"/>
+      </name>
+    </Practitioner>
+  </contained>
+  <clinicalStatus>
+    <coding>
+      <code value="active"/>
+    </coding>
+  </clinicalStatus>
+  <subject>
+    <display value="Amy Shaw"/>
+  </subject>
+  <asserter>
+    <reference value="#p1"/>
+  </asserter>
+</Condition>

@@ -1,0 +1,70 @@
+{% raw %}<pre class="rdf">
+@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+# - resource -------------------------------------------------------------------
+
+ a fhir:Bundle;
+  <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot;
+  <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;bundle-example&quot;];
+  <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.meta">fhir:Resource.meta</a> [
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.lastUpdated">fhir:Meta.lastUpdated</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#instant">fhir:value</a> &quot;2014-08-18T01:43:30Z&quot;^^xsd:dateTime ]
+  ];
+  <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.type">fhir:Bundle.type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;searchset&quot;];
+  <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.total">fhir:Bundle.total</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#unsignedInt">fhir:value</a> &quot;3&quot;^^xsd:nonNegativeInteger];
+  <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.link">fhir:Bundle.link</a> [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+     <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.link.relation">fhir:Bundle.link.relation</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;self&quot; ];
+     <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.link.url">fhir:Bundle.link.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://example.com/base/MedicationRequest?patient=347&amp;_include=MedicationRequest.medication&amp;_count=2&quot; ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1;
+     <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.link.relation">fhir:Bundle.link.relation</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;next&quot; ];
+     <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.link.url">fhir:Bundle.link.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://example.com/base/MedicationRequest?patient=347&amp;searchId=ff15fd40-ff71-4b48-b366-09c706bed9d0&amp;page=2&quot; ]
+  ];
+  <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">fhir:Bundle.entry</a> [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+     <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:Bundle.entry.fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://example.com/base/MedicationRequest/3123&quot; ];
+     <a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest">fhir:Bundle.entry.resource</a> &lt;https://example.com/base/MedicationRequest/3123&gt;;
+     <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.search">fhir:Bundle.entry.search</a> [
+       <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.search.mode">fhir:Bundle.entry.search.mode</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;match&quot; ];
+       <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.search.score">fhir:Bundle.entry.search.score</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">fhir:value</a> &quot;1&quot;^^xsd:decimal ]     ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1;
+     <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:Bundle.entry.fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://example.com/base/Medication/example&quot; ];
+     <a href="http://hl7.org/fhir/R4/medication.html#Medication">fhir:Bundle.entry.resource</a> &lt;https://example.com/base/Medication/example&gt;;
+     <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.search">fhir:Bundle.entry.search</a> [
+       <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.search.mode">fhir:Bundle.entry.search.mode</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;include&quot; ]     ]
+  ].
+
+&lt;https://example.com/base/MedicationRequest/3123&gt; <a href="http://hl7.org/fhir/R4/medicationrequest.html">a</a> fhir:MedicationRequest;
+  <a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;3123&quot;];
+  <a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.text">fhir:DomainResource.text</a> [
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;/div&gt;&quot;
+  ];
+  <a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.status">fhir:MedicationRequest.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;unknown&quot;];
+  <a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.intent">fhir:MedicationRequest.intent</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;order&quot;];
+  <a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.medication[x]">fhir:MedicationRequest.medicationReference</a> [
+     <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Medication/example&quot; ]
+  ];
+  <a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.subject">fhir:MedicationRequest.subject</a> [
+     <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:Reference.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Patient/347&quot; ]
+  ].
+
+&lt;https://example.com/base/Medication/example&gt; <a href="http://hl7.org/fhir/R4/medication.html">a</a> fhir:Medication;
+  <a href="http://hl7.org/fhir/R4/medication.html#Medication.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;example&quot;];
+  <a href="http://hl7.org/fhir/R4/medication.html#Medication.text">fhir:DomainResource.text</a> [
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;/div&gt;&quot;
+  ].
+
+# - ontology header ------------------------------------------------------------
+
+ a owl:Ontology;
+  owl:imports fhir:fhir.ttl.
+
+</pre>
+
+{% endraw %}

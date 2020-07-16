@@ -1,0 +1,35 @@
+{
+  "resourceType": "Condition",
+  "id": "contained-example",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>id</b>: contained-example</p><p><b>contained</b>: </p><p><b>clinicalStatus</b>: <span title=\"Codes: \">active</span></p><p><b>subject</b>: <span>Amy Shaw</span></p><p><b>asserter</b>: <a href=\"#p1\">unknown resource contained</a></p></div>"
+  },
+  "contained": [
+    {
+      "resourceType": "Practitioner",
+      "id": "p1",
+      "name": [
+        {
+          "family": "Person",
+          "given": [
+            "Patricia"
+          ]
+        }
+      ]
+    }
+  ],
+  "clinicalStatus": {
+    "coding": [
+      {
+        "code": "active"
+      }
+    ]
+  },
+  "subject": {
+    "display": "Amy Shaw"
+  },
+  "asserter": {
+    "reference": "#p1"
+  }
+}

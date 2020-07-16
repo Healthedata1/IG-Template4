@@ -1,0 +1,8 @@
+{% raw %}<table class="grid">
+<tr><td><b>Level</b></td><td><b>Type</b></td><td><b>Location</b></td><td><b>Message</b></td></tr>
+<tr><td>error</td><td>code-invalid</td><td>Condition/contained-example: Condition.clinicalStatus</td><td>None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/condition-clinical|4.0.1 (http://hl7.org/fhir/ValueSet/condition-clinical), and a code from this value set is required) (codes = null#active)</td><td></td></tr>
+<tr><td>warning</td><td>code-invalid</td><td>Condition/contained-example: Condition.clinicalStatus.coding[0]</td><td>A code with no system has no defined meaning. A system should be provided</td><td></td></tr>
+<tr><td>information</td><td>informational</td><td>Condition/contained-example: Condition</td><td>Validate resource against profile http://hl7.org/fhir/StructureDefinition/Condition</td><td></td></tr>
+<tr><td>information</td><td>informational</td><td>Condition/contained-example: Condition.contained.ofType(Practitioner)</td><td>Validate resource against profile http://hl7.org/fhir/StructureDefinition/Practitioner</td><td></td></tr>
+</table>
+{% endraw %}

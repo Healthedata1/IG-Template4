@@ -1,0 +1,26 @@
+I"R
+<p>source file: source/pages/_includes/template-profile-on-profile-intro.md</p>
+
+<p>Template-Profile-on-Profile</p>
+
+<h4 id="scope-and-usage">Scope and Usage</h4>
+
+<p>scope and usage text here</p>
+
+<h4 id="mandatory-data-elements-and-terminology">Mandatory Data Elements and Terminology</h4>
+
+<p>The following data-elements are mandatory (i.e data MUST be present). blah blah blah</p>
+
+<p><strong>must have:</strong></p>
+
+<ol>
+  <li>blah</li>
+  <li>blah</li>
+  <li>blah</li>
+</ol>
+
+<p><strong>Additional Profile specific implementation guidance:</strong></p>
+
+<h4 id="examples">Examples</h4>
+
+:ET

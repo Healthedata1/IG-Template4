@@ -1,0 +1,67 @@
+﻿<html>
+<head>
+  <title>Bundle-bundle-example-json-html</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<pre class="json">
+{
+  "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle">resourceType</a>" : "Bundle",
+  "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.id">id</a>" : "bundle-example",
+  "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.meta">meta</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.lastUpdated">lastUpdated</a>" : "2014-08-18T01:43:30Z"
+  },
+  "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.type">type</a>" : "searchset",
+  "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.total">total</a>" : 3,
+  "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.link">link</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.link.relation">relation</a>" : "self",
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.link.url">url</a>" : "https://example.com/base/MedicationRequest?patient=347&amp;_include=MedicationRequest.medication&amp;_count=2"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.link.relation">relation</a>" : "next",
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.link.url">url</a>" : "https://example.com/base/MedicationRequest?patient=347&amp;searchId=ff15fd40-ff71-4b48-b366-09c706bed9d0&amp;page=2"
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "https://example.com/base/MedicationRequest/3123",
+      "<a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R4/medicationrequest.html">resourceType</a>" : "MedicationRequest",
+        "<a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.id">id</a>" : "3123",
+        "<a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+        },
+        "<a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.status">status</a>" : "unknown",
+        "<a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.intent">intent</a>" : "order",
+        "<a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.medication[x]">medicationReference</a>" : {
+          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Medication/example"
+        },
+        "<a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.subject">subject</a>" : {
+          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a>" : "Patient/347"
+        }
+      },
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.search">search</a>" : {
+        "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.search.mode">mode</a>" : "match",
+        "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.search.score">score</a>" : 1
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "https://example.com/base/Medication/example",
+      "<a href="http://hl7.org/fhir/R4/medication.html#Medication">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R4/medication.html">resourceType</a>" : "Medication",
+        "<a href="http://hl7.org/fhir/R4/medication.html#Medication.id">id</a>" : "example",
+        "<a href="http://hl7.org/fhir/R4/medication.html#Medication.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+        }
+      },
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.search">search</a>" : {
+        "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.search.mode">mode</a>" : "include"
+      }
+    }
+  ]
+}</pre>
+</body>
+</html>
