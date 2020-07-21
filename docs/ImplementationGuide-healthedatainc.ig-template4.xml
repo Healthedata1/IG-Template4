@@ -323,6 +323,20 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Bundle-example1.html"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/example1"/>
+      </reference>
+      <name value="Bundle Example"/>
+      <description value="an example of a of Bundle."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Patient"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
@@ -660,6 +674,10 @@
     <parameter>
       <code value="path-tx-cache"/>
       <value value="input-cache/txcache"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/history"/>
     </parameter>
     <parameter>
       <code value="path-pages"/>

@@ -79,7 +79,26 @@ blah blah blah
 
 ### More Stuff
 
-and more stuff
+accessing custom variable from the `input/data` folder
+
+{% include img.html img="folder_tree.png" caption="Folder Tree" %}
+
+for the yaml file `my_params.yml` containing:
+
+~~~yaml
+foo: bar
+foo_list:
+  - item1
+  - item2
+foo_object:
+  biz: baz
+~~~
+
+- you can access foo using {% raw %}{{site.data.my_params.foo}}{% endraw %} = {{site.data.my_params.foo}}
+
+- you can access foo_list[0] = item1  using {% raw %}{{site.data.my_params.foo_list[0]}}{% endraw %} = {{site.data.my_params.foo_list[0]}}
+
+- you can access biz using {% raw %}{{site.data.my_params.foo_object.biz}}{% endraw %} = {{site.data.my_params.foo_object.biz}}
 
 #### And More Stuff
 

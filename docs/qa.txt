@@ -1,11 +1,12 @@
 ﻿IGTest4 : Validation Results
 =========================================
 
-err = 3, warn = 10, info = 2
-IG Publisher Version: v1.1.0 Out of date - current version is v1.0.101-SNAPSHOT
-Generated Tue Jun 30 21:16:37 PDT 2020. FHIR version 4.0.1 for healthedatainc.ig-template4#0.0.0 (canonical = http://www.fhir.org/guides/test3)
+err = 4, warn = 12, info = 2
+IG Publisher Version: v1.1.3 Out of date - current version is 1.1.3
+Generated Tue Jul 21 13:52:59 PDT 2020. FHIR version 4.0.1 for healthedatainc.ig-template4#0.0.0 (canonical = http://www.fhir.org/guides/test3)
 
- Build Errors : 4 / 4
+ Build Errors : 5 / 4
+ /Users/ehaas/Documents/FHIR/IG-Template4/input/examples/bundle-example1 : 1 / 2
  /Users/ehaas/Documents/FHIR/IG-Template4/input/examples/diet-example1 : 1 / 0
  /Users/ehaas/Documents/FHIR/IG-Template4/input/examples/example1 : 0 / 0
  /Users/ehaas/Documents/FHIR/IG-Template4/input/examples/example2 : 0 / 0
@@ -24,37 +25,63 @@ Generated Tue Jun 30 21:16:37 PDT 2020. FHIR version 4.0.1 for healthedatainc.ig
  /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/operationdefinition-example : 1 / 0
 </table>
 == n/a ==
-ERROR: ImplementationGuide.definition.parameter[38].value: Supressed messages file not found
+ERROR: ImplementationGuide.definition.parameter[39].value: Supressed messages file not found
 WARNING: ImplementationGuide.dependency[0].url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
 INFORMATION: ImplementationGuide.dependency[0].url: The correct canonical URL for this dependency is http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core
 WARNING: ImplementationGuide.dependency[1].url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
 INFORMATION: ImplementationGuide.dependency[1].url: The correct canonical URL for this dependency is http://hl7.org/fhir/us/qicore/ImplementationGuide/hl7.fhir.us.qicore
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/Bundle-example1.html#/html/body/div/div/div/div/div/div/blockquote/p/a at Line 196, column 517: The link 'Procedure/1153' for "Procedure/1153" cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/toc.html#/html/body/div/div/div/div/div/div/table/tbody/tr/td/a at Line 153, column 5381: The link 'StructureDefinition-complex.html' for "3.4 StructureDefinition Extension Complex" cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/toc.html#/html/body/div/div/div/div/div/div/table/tbody/tr/td/a at Line 153, column 6137: The link 'StructureDefinition-blah.html' for "3.5 StructureDefinition Extension Blah" cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/toc.html#/html/body/div/div/div/div/div/div/table/tbody/tr/td/a at Line 153, column 7478: The link 'OperationDefinition-opdef-test.html' for "4.1 OperationDefinition Opdef Test" cannot be resolved
+== /Users/ehaas/Documents/FHIR/IG-Template4/input/examples/bundle-example1.json ==
+INFORMATION: Bundle/example1: Bundle: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Bundle
+INFORMATION: Bundle/example1: Bundle.entry[0].resource.ofType(Procedure): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Procedure
+WARNING: Bundle/example1: Bundle.entry[0].resource.ofType(Procedure).code.coding[0]: Internal error: The display "Cig smoking" is not a valid display for the code {http://snomed.info/sct}230056004 - should be one of ["Cigarette consumption","Cigarette consumption (observable entity)"]
+ERROR: Bundle/example1: Bundle.entry[0].resource.ofType(Procedure).subject: Unable to resolve resource "Patient/1139"
+WARNING: Bundle/example1: Bundle.entry[0].resource.ofType(Procedure).reasonCode[0].coding[0]: Internal error: The display "deafult reason code" is not a valid display for the code {http://snomed.info/sct}104001 - should be one of ["Excision of lesion of patella","Local excision of lesion or tissue of patella","Excision of lesion of patella (procedure)"]
+INFORMATION: Bundle/example1: Bundle.entry[1].resource.ofType(Provenance): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Provenance
 == /Users/ehaas/Documents/FHIR/IG-Template4/input/examples/diet-example1.xml ==
+INFORMATION: Basic/diet-example1: Basic: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Basic
+INFORMATION: Basic/diet-example1: Basic: Validate resource against profile http://www.fhir.org/guides/test3/StructureDefinition/template-basic - listed in meta
 ERROR: Basic/diet-example1: Basic: temp-1: Identifier SHALL be greater than 5 characters [Identifier.value.length() > 5]
 == /Users/ehaas/Documents/FHIR/IG-Template4/input/examples/example1.xml ==
+INFORMATION: Patient/example1: Patient: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Patient
+INFORMATION: Patient/example1: Patient: Validate resource against profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient - listed in meta
 == /Users/ehaas/Documents/FHIR/IG-Template4/input/examples/example2.xml ==
+INFORMATION: Patient/example2: Patient: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Patient
 == /Users/ehaas/Documents/FHIR/IG-Template4/input/ig.json ==
+INFORMATION: ImplementationGuide/healthedatainc.ig-template4: ImplementationGuide: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide
 == /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/CodeSystem-blah-codes.xml ==
+INFORMATION: CodeSystem/blah-codes: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
 == /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/StructureDefinition-extension-blah.json ==
+INFORMATION: StructureDefinition/extension-blah: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition/extension-blah: StructureDefinition: sdf-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
 WARNING: StructureDefinition.where(url = 'http://www.fhir.org/guides/test3/StructureDefinition/extension-blah'): The Implementation Guide contains no examples for this extension
 == /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/StructureDefinition-extension-complex.json ==
+INFORMATION: StructureDefinition/extension-complex: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition/extension-complex: StructureDefinition: sdf-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
 WARNING: StructureDefinition.where(url = 'http://www.fhir.org/guides/test3/StructureDefinition/extension-complex'): The Implementation Guide contains no examples for this extension
 == /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/StructureDefinition-foo.json ==
+INFORMATION: StructureDefinition/template-basic: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 == /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/StructureDefinition-ifr.xml ==
+INFORMATION: StructureDefinition/ifr: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition/ifr: StructureDefinition: sdf-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
 WARNING: StructureDefinition.where(url = 'http://www.fhir.org/guides/test3/StructureDefinition/ifr'): The Implementation Guide contains no examples for this data type profile
 == /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/StructureDefinition-template-profile-on-profile.json ==
+INFORMATION: StructureDefinition/template-profile-on-profile: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition/template-profile-on-profile: StructureDefinition: sdf-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
 WARNING: StructureDefinition.where(url = 'http://www.fhir.org/guides/test3/StructureDefinition/template-profile-on-profile'): The Implementation Guide contains no examples for this profile
 == /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/ValueSet-bar-codes.xml ==
+INFORMATION: ValueSet/bar-codes: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
 == /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/ValueSet-blah-codes.xml ==
+INFORMATION: ValueSet/blah-codes: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
 == /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/ValueSet-foo-codes.xml ==
+INFORMATION: ValueSet/foo-codes: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
 == /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/capabilitystatement-client.xml ==
+INFORMATION: CapabilityStatement/client: CapabilityStatement: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CapabilityStatement
 == /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/capabilitystatement-server.xml ==
+INFORMATION: CapabilityStatement/server: CapabilityStatement: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CapabilityStatement
 == /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/operationdefinition-example.json ==
+INFORMATION: OperationDefinition/example: OperationDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/OperationDefinition
 ERROR: OperationDefinition/example: OperationDefinition.base: URL value "http://hl7.org/fhir/uv/sdc/OperationDefinition/Questionnaire-populate" does not resolve

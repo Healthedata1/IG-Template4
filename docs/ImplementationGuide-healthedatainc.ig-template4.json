@@ -506,6 +506,24 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Bundle"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Bundle-example1.html"
+          }
+        ],
+        "reference": {
+          "reference": "Bundle/example1"
+        },
+        "name": "Bundle Example",
+        "description": "an example of a of Bundle.",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Patient"
           },
           {
@@ -905,6 +923,10 @@
       {
         "code": "path-tx-cache",
         "value": "input-cache/txcache"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/history"
       },
       {
         "code": "path-pages",

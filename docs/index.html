@@ -150,8 +150,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <!--ReleaseHeader--><p id="publish-box">IG Test4 - Local Development build (v0.0.0). See the <a href="http://www.fhir.org/guides/test3/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Home</h2>
   
-  
-  
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
   <li><a href="#cat-facts" id="markdown-toc-cat-facts">Cat Facts (To Show How the Text Wraps around the Contents Block)</a></li>
@@ -263,7 +271,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     </ul>
   </li>
   <li>
-    <p>errorCount : number of errors in the build file (not including HTML validation errors) -   {{site.data.fhir.errorCount}}  = 3</p>
+    <p>errorCount : number of errors in the build file (not including HTML validation errors) -   {{site.data.fhir.errorCount}}  = 4</p>
   </li>
   <li>
     <p>version : version of FHIR -   {{site.data.fhir.version}}  = 4.0.1</p>
@@ -275,13 +283,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p>versionFull : version-revision -   {{site.data.fhir.versionFull}}  = 4.0.1-a53ec6ee1b</p>
   </li>
   <li>
-    <p>totalFiles : total number of files found by the build -   {{site.data.fhir.totalFiles}}  = 16</p>
+    <p>totalFiles : total number of files found by the build -   {{site.data.fhir.totalFiles}}  = 17</p>
   </li>
   <li>
-    <p>processedFiles : number of files genrated by the build -   {{site.data.fhir.processedFiles}}  = 98</p>
+    <p>processedFiles : number of files genrated by the build -   {{site.data.fhir.processedFiles}}  = 99</p>
   </li>
   <li>
-    <p>genDate : date of generation (so date stamps in the pages can match those in the conformance resources) -   {{site.data.fhir.genDate}}  = Tue, Jun 30, 2020 21:15-0700</p>
+    <p>genDate : date of generation (so date stamps in the pages can match those in the conformance resources) -   {{site.data.fhir.genDate}}  = Tue, Jul 21, 2020 13:52-0700</p>
   </li>
 </ul>
 
@@ -291,12 +299,49 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h3 id="more-stuff">More Stuff</h3>
 
-<p>and more stuff</p>
+<p>accessing custom variable from the <code class="highlighter-rouge">input/data</code> folder</p>
+
+<!-- all this Bootstrap html for getting an narrow image to fit nicely in text - 640 pix wide -->
+
+<!-- file:///assets/images/folder_tree.png -->
+
+<div>
+<figure class="figure">
+<figcaption class="figure-caption"><strong>Folder Tree</strong></figcaption>
+  <img src="folder_tree.png" class="figure-img img-responsive img-rounded center-block" alt="folder_tree.png" />
+</figure>
+
+<p></p>
+</div>
+
+<p>for the yaml file <code class="highlighter-rouge">my_params.yml</code> containing:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">foo</span><span class="pi">:</span> <span class="s">bar</span>
+<span class="na">foo_list</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s">item1</span>
+  <span class="pi">-</span> <span class="s">item2</span>
+<span class="na">foo_object</span><span class="pi">:</span>
+  <span class="na">biz</span><span class="pi">:</span> <span class="s">baz</span>
+</code></pre></div></div>
+
+<ul>
+  <li>
+    <p>you can access foo using {{site.data.my_params.foo}} = bar</p>
+  </li>
+  <li>
+    <p>you can access foo_list[0] = item1  using {{site.data.my_params.foo_list[0]}} = item1</p>
+  </li>
+  <li>
+    <p>you can access biz using {{site.data.my_params.foo_object.biz}} = baz</p>
+  </li>
+</ul>
 
 <h4 id="and-more-stuff">And More Stuff</h4>
 
 <p>add link list to bottom of each page….
 <!-- >{% include link-list.md %} --></p>
+
+
 
 
 </div>
@@ -319,7 +364,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package healthedatainc.ig-template4#0.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jun 30, 2020 21:15-0700">2020-06-30</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package healthedatainc.ig-template4#0.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jul 21, 2020 13:52-0700">2020-07-21</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

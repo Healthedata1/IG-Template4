@@ -75,6 +75,14 @@
             },
             {
                 "reference": {
+                    "reference": "Bundle/example1"
+                },
+                "name": "Bundle Example",
+                "description": "an example of a of Bundle.",
+                "exampleBoolean": true
+            },
+            {
+                "reference": {
                     "reference": "Patient/example2"
                 },
                 "name": "Another Patient Example",
