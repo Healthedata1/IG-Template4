@@ -3,10 +3,10 @@
   "name": "IGTest4",
   "package-id": "healthedatainc.ig-template4",
   "ig-ver": "0.0.0",
-  "date": "Tue, 21 Jul, 2020 13:52:16 -0700",
+  "date": "Mon, 27 Jul, 2020 08:16:19 -0700",
   "errs": 4,
-  "warnings": 12,
-  "hints": 2,
+  "warnings": 10,
+  "hints": 7,
   "version": "4.0.1",
   "tool": "4.4.0 (3)"
 }

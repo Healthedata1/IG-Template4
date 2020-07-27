@@ -409,7 +409,7 @@
             },
             {
                 "code": "show-inherited-invariants",
-                "value": "true"
+                "value": "false"
             },
             {
                 "code": "usage-stats-opt-out",

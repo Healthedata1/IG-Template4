@@ -1,0 +1,12 @@
+I"¸<p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+</div>
+<li><a href="CapabilityStatement-client.html">Client</a> <p>This resource defines the expected capabilities</p>
+</li>
+<li><a href="CapabilityStatement-server.html">Server</a> <p>This resource defines the expected capabilities</p>
+</li>
+
+<p><br /></p>
+
+:ET

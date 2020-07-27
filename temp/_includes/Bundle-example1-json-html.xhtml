@@ -1,0 +1,132 @@
+{% raw %}<pre class="json">
+{
+  "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle">resourceType</a>" : "Bundle",
+  "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.id">id</a>" : "example1",
+  "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.type">type</a>" : "searchset",
+  "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "http://hapi.fhir.org/baseR4/Procedure/1153",
+      "<a href="http://hl7.org/fhir/R4/procedure.html#Procedure">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R4/procedure.html">resourceType</a>" : "Procedure",
+        "<a href="http://hl7.org/fhir/R4/procedure.html#Procedure.id">id</a>" : "1153",
+        "<a href="http://hl7.org/fhir/R4/procedure.html#Procedure.meta">meta</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.versionId">versionId</a>" : "1",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.lastUpdated">lastUpdated</a>" : "2019-09-19T13:25:02.213+00:00",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.source">source</a>" : "#2f33968e3e63f2c5"
+        },
+        "<a href="http://hl7.org/fhir/R4/procedure.html#Procedure.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: 1153&lt;/p&gt;&lt;p&gt;&lt;b&gt;meta&lt;/b&gt;: &lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: completed&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes: {http://snomed.info/sct 230056004}\&quot;&gt;230056004&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient/1139\&quot;&gt;Patient/1139&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;reasonCode&lt;/b&gt;: &lt;span title=\&quot;Codes: {http://snomed.info/sct 104001}\&quot;&gt;deafult reason code&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+        },
+        "<a href="http://hl7.org/fhir/R4/procedure.html#Procedure.status">status</a>" : "completed",
+        "<a href="http://hl7.org/fhir/R4/procedure.html#Procedure.code">code</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "230056004",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Cig smoking"
+            }
+          ],
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "230056004"
+        },
+        "<a href="http://hl7.org/fhir/R4/procedure.html#Procedure.subject">subject</a>" : {
+          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/1139"
+        },
+        "<a href="http://hl7.org/fhir/R4/procedure.html#Procedure.reasonCode">reasonCode</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "104001",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "deafult reason code"
+              }
+            ]
+          }
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.search">search</a>" : {
+        "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.search.mode">mode</a>" : "match"
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "http://hapi.fhir.org/baseR4/Provenance/1163",
+      "<a href="http://hl7.org/fhir/R4/provenance.html#Provenance">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R4/provenance.html">resourceType</a>" : "Provenance",
+        "<a href="http://hl7.org/fhir/R4/provenance.html#Provenance.id">id</a>" : "1163",
+        "<a href="http://hl7.org/fhir/R4/provenance.html#Provenance.meta">meta</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.versionId">versionId</a>" : "1",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.lastUpdated">lastUpdated</a>" : "2019-09-19T13:25:02.213+00:00",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.source">source</a>" : "#2f33968e3e63f2c5"
+        },
+        "<a href="http://hl7.org/fhir/R4/provenance.html#Provenance.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: 1163&lt;/p&gt;&lt;p&gt;&lt;b&gt;meta&lt;/b&gt;: &lt;/p&gt;&lt;p&gt;&lt;b&gt;target&lt;/b&gt;: &lt;a href=\&quot;Procedure/1153\&quot;&gt;Procedure/1153&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;occurred&lt;/b&gt;: 2017-04-07 --&amp;gt; 2017-04-07&lt;/p&gt;&lt;p&gt;&lt;b&gt;recorded&lt;/b&gt;: Sep 19, 2019, 12:55:01 AM&lt;/p&gt;&lt;p&gt;&lt;b&gt;reason&lt;/b&gt;: &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/v3-ActReason RECORDMGT}\&quot;&gt;records management&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;activity&lt;/b&gt;: &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/v3-DataOperation CREATE}\&quot;&gt;create&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Agents&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Role&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Who&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/contractsignertypecodes REVIEWER}\&quot;&gt;Reviewer&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&lt;span&gt;IOBridge&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;h3&gt;Entities&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Role&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;What&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;source&lt;/td&gt;&lt;td&gt;&lt;span&gt;IOBridge_EMR_A&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+        },
+        "<a href="http://hl7.org/fhir/R4/provenance.html#Provenance.target">target</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Procedure/1153"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/provenance.html#Provenance.occurred[x]">occurredPeriod</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">start</a>" : "2017-04-07",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.end">end</a>" : "2017-04-07"
+        },
+        "<a href="http://hl7.org/fhir/R4/provenance.html#Provenance.recorded">recorded</a>" : "2019-09-19T13:25:01+05:30",
+        "<a href="http://hl7.org/fhir/R4/provenance.html#Provenance.reason">reason</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "RECORDMGT",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "records management"
+              }
+            ]
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/provenance.html#Provenance.activity">activity</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/v3-DataOperation",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "CREATE",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "create"
+            }
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/provenance.html#Provenance.agent">agent</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/provenance.html#Provenance.agent.role">role</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                  {
+                    "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/contractsignertypecodes",
+                    "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "REVIEWER",
+                    "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Reviewer"
+                  }
+                ]
+              }
+            ],
+            "<a href="http://hl7.org/fhir/R4/provenance.html#Provenance.agent.who">who</a>" : {
+              "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a>" : "IOBridge"
+            }
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/provenance.html#Provenance.entity">entity</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/provenance.html#Provenance.entity.role">role</a>" : "source",
+            "<a href="http://hl7.org/fhir/R4/provenance.html#Provenance.entity.what">what</a>" : {
+              "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.identifier">identifier</a>" : {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "http://www.hl7.org/fhir/ProvenanceIdentifier",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "IOBridge_EMR_A"
+              },
+              "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a>" : "IOBridge_EMR_A"
+            }
+          }
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.search">search</a>" : {
+        "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.search.mode">mode</a>" : "include"
+      }
+    }
+  ]
+}</pre>
+{% endraw %}

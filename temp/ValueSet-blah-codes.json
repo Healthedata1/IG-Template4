@@ -1,0 +1,53 @@
+{
+  "resourceType": "ValueSet",
+  "id": "blah-codes",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-blah-codes.html\"><code>http://www.fhir.org/guides/test3/CodeSystem/blah-codes</code></a></li></ul></div>"
+  },
+  "url": "http://www.fhir.org/guides/test3/ValueSet/blah-codes",
+  "version": "0.0.0",
+  "name": "BlahCodes",
+  "status": "draft",
+  "date": "2018-03-13T08:16:34-07:00",
+  "publisher": "Health eData Inc",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email",
+          "value": "mailto:ehaas@healthedatainc.com"
+        }
+      ]
+    },
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://foobar.com"
+        }
+      ]
+    }
+  ],
+  "description": "A bunch of example codes",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "US",
+          "display": "United States of America"
+        }
+      ]
+    }
+  ],
+  "immutable": true,
+  "copyright": "markdown link: [American Medical Association](https://www.ama-assn.org/)  markdown new paragraph: All rights reserved. This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement  ## header2 ### header3 ### header4  *emphasis*  **bold**  markdown list: - list 1 - list 2  1. list1 1. list2",
+  "compose": {
+    "include": [
+      {
+        "system": "http://www.fhir.org/guides/test3/CodeSystem/blah-codes"
+      }
+    ]
+  }
+}

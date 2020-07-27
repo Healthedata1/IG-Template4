@@ -102,7 +102,50 @@ foo_object:
 
 #### And More Stuff
 
+string size
+
+{% raw %}{{ "Ground control to Major Tom." \| size }}{% endraw %} = {{ "Ground control to Major Tom." | size }}
+
+{% capture invariants %} <!-- white space is critical inside of capture -->
+{% include StructureDefinition-extension-blah-inv.xhtml %}
+{% endcapture %}
+
+{% raw %}{% include StructureDefinition-extension-blah-inv.xhtml %}{% endraw %}   = the following...
+
+{% include StructureDefinition-extension-blah-inv.xhtml %}
+
+{% raw %}{{ invariants \| size }}{% endraw %} = {{ invariants | size }}
+{% raw %}
+{% unless invariants.size <= 218 %}
+{% include StructureDefinition-extension-blah-inv.xhtml %}
+{% endunless%}
+{% endraw %} = the following...
+{% unless invariants.size <= 218 %}
+{% include StructureDefinition-extension-blah-inv.xhtml %}
+{% endunless%}
+
+{% raw %}{% include StructureDefinition-template-basic-inv.xhtml %}{% endraw %}   = the following...
+
+{% capture invariants %} <!-- white space is critical inside of capture -->
+{% include StructureDefinition-template-basic-inv.xhtml %}
+{% endcapture %}
+
+{% include StructureDefinition-template-basic-inv.xhtml %}
+
+{% raw %}{{ invariants \| size }}{% endraw %} = {{ invariants | size }}
+{% raw %}
+{% unless invariants.size <= 218 %}
+{% include StructureDefinition-template-basic-inv.xhtml %}
+{% endunless%}
+{% endraw %} = the following...
+{% unless invariants.size <= 218 %}
+{% include StructureDefinition-template-basic-inv.xhtml %}
+{% endunless%}
+
+
 add link list to bottom of each page....
 <!-- {% raw %}>{% include link-list.md %} {% endraw %}-->
+
+
 
 {% include link-list.md %}
