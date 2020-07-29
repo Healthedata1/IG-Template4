@@ -29,12 +29,12 @@
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.1"/>
   <dependsOn id="uscore">
-    <uri value="http://hl7.org/fhir/us/core"/>
+    <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
     <packageId value="hl7.fhir.us.core"/>
     <version value="3.1.0"/>
   </dependsOn>
   <dependsOn id="qicore">
-    <uri value="http://hl7.org/fhir/us/qicore"/>
+    <uri value="http://hl7.org/fhir/us/qicore/ImplementationGuide/hl7.fhir.us.qicore"/>
     <packageId value="hl7.fhir.us.qicore"/>
     <version value="4.0.0"/>
   </dependsOn>
@@ -546,12 +546,12 @@
           <generation value="generated"/>
         </page>
         <page>
-          <nameUrl value="StructureDefinition-complex.html"/>
+          <nameUrl value="StructureDefinition-extension-complex.html"/>
           <title value="StructureDefinition Extension Complex"/>
           <generation value="generated"/>
         </page>
         <page>
-          <nameUrl value="StructureDefinition-blah.html"/>
+          <nameUrl value="StructureDefinition-extension-blah.html"/>
           <title value="StructureDefinition Extension Blah"/>
           <generation value="generated"/>
         </page>
@@ -561,7 +561,7 @@
         <title value="Operations"/>
         <generation value="markdown"/>
         <page>
-          <nameUrl value="OperationDefinition-opdef-test.html"/>
+          <nameUrl value="OperationDefinition-example.html"/>
           <title value="OperationDefinition Opdef Test"/>
           <generation value="generated"/>
         </page>

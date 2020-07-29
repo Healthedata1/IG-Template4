@@ -39,13 +39,13 @@
   "dependsOn": [
     {
       "id": "uscore",
-      "uri": "http://hl7.org/fhir/us/core",
+      "uri": "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core",
       "packageId": "hl7.fhir.us.core",
       "version": "3.1.0"
     },
     {
       "id": "qicore",
-      "uri": "http://hl7.org/fhir/us/qicore",
+      "uri": "http://hl7.org/fhir/us/qicore/ImplementationGuide/hl7.fhir.us.qicore",
       "packageId": "hl7.fhir.us.qicore",
       "version": "4.0.0"
     }
@@ -786,12 +786,12 @@
               "generation": "generated"
             },
             {
-              "nameUrl": "StructureDefinition-complex.html",
+              "nameUrl": "StructureDefinition-extension-complex.html",
               "title": "StructureDefinition Extension Complex",
               "generation": "generated"
             },
             {
-              "nameUrl": "StructureDefinition-blah.html",
+              "nameUrl": "StructureDefinition-extension-blah.html",
               "title": "StructureDefinition Extension Blah",
               "generation": "generated"
             }
@@ -803,7 +803,7 @@
           "generation": "markdown",
           "page": [
             {
-              "nameUrl": "OperationDefinition-opdef-test.html",
+              "nameUrl": "OperationDefinition-example.html",
               "title": "OperationDefinition Opdef Test",
               "generation": "generated"
             }
