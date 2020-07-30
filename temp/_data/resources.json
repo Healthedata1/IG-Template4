@@ -15,24 +15,34 @@
     "index": 1,
     "source": "input/examples/bundle-example1.json"
   },
-  "Patient/example1": {
+  "DiagnosticReport/urinalysis": {
     "history": false,
     "index": 2,
+    "source": "input/examples/urinalysis.json"
+  },
+  "Patient/example1": {
+    "history": false,
+    "index": 3,
     "source": "input/examples/example1.xml"
   },
   "Patient/example2": {
     "history": false,
-    "index": 3,
+    "index": 4,
     "source": "input/examples/example2.xml"
   },
   "Basic/diet-example1": {
     "history": false,
-    "index": 4,
+    "index": 5,
     "source": "input/examples/diet-example1.xml"
+  },
+  "Bundle/example2": {
+    "history": false,
+    "index": 6,
+    "source": "input/examples/bundle-example2.xml"
   },
   "ValueSet/blah-codes": {
     "history": false,
-    "index": 5,
+    "index": 7,
     "source": "input/resources/ValueSet-blah-codes.xml",
     "url": "http://www.fhir.org/guides/test3/ValueSet/blah-codes",
     "name": "BlahCodes",
@@ -42,7 +52,7 @@
   },
   "ValueSet/foo-codes": {
     "history": false,
-    "index": 6,
+    "index": 8,
     "source": "input/resources/ValueSet-foo-codes.xml",
     "url": "http://www.fhir.org/guides/test3/ValueSet/foo-codes",
     "name": "FooCodes",
@@ -53,7 +63,7 @@
   },
   "StructureDefinition/extension-complex": {
     "history": false,
-    "index": 7,
+    "index": 9,
     "source": "input/resources/StructureDefinition-extension-complex.json",
     "url": "http://www.fhir.org/guides/test3/StructureDefinition/extension-complex",
     "name": "complex",
@@ -64,7 +74,7 @@
   },
   "CapabilityStatement/client": {
     "history": false,
-    "index": 8,
+    "index": 10,
     "source": "input/resources/capabilitystatement-client.xml",
     "url": "http://www.fhir.org/guides/test3/CapabilityStatement/client",
     "name": "Client",
@@ -74,7 +84,7 @@
   },
   "StructureDefinition/extension-blah": {
     "history": false,
-    "index": 9,
+    "index": 11,
     "source": "input/resources/StructureDefinition-extension-blah.json",
     "url": "http://www.fhir.org/guides/test3/StructureDefinition/extension-blah",
     "name": "blah",
@@ -85,7 +95,7 @@
   },
   "CodeSystem/blah-codes": {
     "history": false,
-    "index": 10,
+    "index": 12,
     "source": "input/resources/CodeSystem-blah-codes.xml",
     "url": "http://www.fhir.org/guides/test3/CodeSystem/blah-codes",
     "name": "BlahCodes",
@@ -95,7 +105,7 @@
   },
   "CapabilityStatement/server": {
     "history": false,
-    "index": 11,
+    "index": 13,
     "source": "input/resources/capabilitystatement-server.xml",
     "url": "http://www.fhir.org/guides/test3/CapabilityStatement/server",
     "name": "Server",
@@ -105,7 +115,7 @@
   },
   "StructureDefinition/template-basic": {
     "history": false,
-    "index": 12,
+    "index": 14,
     "source": "input/resources/StructureDefinition-foo.json",
     "url": "http://www.fhir.org/guides/test3/StructureDefinition/template-basic",
     "name": "TemplateBasic",
@@ -116,7 +126,7 @@
   },
   "ValueSet/bar-codes": {
     "history": false,
-    "index": 13,
+    "index": 15,
     "source": "input/resources/ValueSet-bar-codes.xml",
     "url": "http://www.fhir.org/guides/test3/ValueSet/bar-codes",
     "name": "BarCodes",
@@ -127,7 +137,7 @@
   },
   "StructureDefinition/ifr": {
     "history": false,
-    "index": 14,
+    "index": 16,
     "source": "input/resources/StructureDefinition-ifr.xml",
     "url": "http://www.fhir.org/guides/test3/StructureDefinition/ifr",
     "name": "Identifer Free Reference Data Type",
@@ -137,7 +147,7 @@
   },
   "OperationDefinition/example": {
     "history": false,
-    "index": 15,
+    "index": 17,
     "source": "input/resources/operationdefinition-example.json",
     "url": "http://www.fhir.org/guides/test3/OperationDefinition/example",
     "name": "PopulateQuestionnaire",
@@ -147,7 +157,7 @@
   },
   "StructureDefinition/template-profile-on-profile": {
     "history": false,
-    "index": 16,
+    "index": 18,
     "source": "input/resources/StructureDefinition-template-profile-on-profile.json",
     "url": "http://www.fhir.org/guides/test3/StructureDefinition/template-profile-on-profile",
     "name": "Template-Profile-on-Profile",

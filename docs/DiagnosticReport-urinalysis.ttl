@@ -1,0 +1,151 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://www.fhir.org/guides/test3/DiagnosticReport/urinalysis> a fhir:DiagnosticReport;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "urinalysis"];
+  fhir:Resource.meta [
+     fhir:Meta.versionId [ fhir:value "209563" ];
+     fhir:Meta.lastUpdated [ fhir:value "2016-04-19T17:28:11.308+00:00"^^xsd:dateTime ];
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-lab";
+       fhir:index 0;
+       fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-lab>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>to do (to do) to do</h2><table class=\"grid\"><tr><td>Unable to get Patient Details</td><td><b>Report Details</b><br/> to do to do to do to do to do to do to do to do to do to do to do to do to do to do to do to do to do</td></tr></table><table class=\"none\"><tr><td>Unable to resolve Observation: Observation-urine-color.html</td></tr><tr><td>Unable to resolve Observation: Observation-urine-clarity.html</td></tr><tr><td>Unable to resolve Observation: Observation-urine-glucose.html</td></tr><tr><td>Unable to resolve Observation: Observation-urine-bilirubin.html</td></tr><tr><td>Unable to resolve Observation: Observation-urine-ketone.html</td></tr><tr><td>Unable to resolve Observation: Observation-usg.html</td></tr><tr><td>Unable to resolve Observation: Observation-urine-ph.html</td></tr><tr><td>Unable to resolve Observation: Observation-urine-protein.html</td></tr><tr><td>Unable to resolve Observation: Observation-urobilinogen.html</td></tr><tr><td>Unable to resolve Observation: Observation-urine-nitrite.html</td></tr><tr><td>Unable to resolve Observation: Observation-urine-hemoglobin.html</td></tr><tr><td>Unable to resolve Observation: Observation-urine-leukocyte-esterase.html</td></tr><tr><td>Unable to resolve Observation: Observation-urine-sediment.html</td></tr><tr><td>Unable to resolve Observation: Observation-urine-bacteria.html</td></tr><tr><td>Unable to resolve Observation: Observation-urine-epi-cells.html</td></tr><tr><td>Unable to resolve Observation: Observation-urine-wbcs.html</td></tr><tr><td>Unable to resolve Observation: Observation-urine-rbcs.html</td></tr></table><p><b>Coded Diagnoses :</b></p></div>"
+  ];
+  fhir:DiagnosticReport.status [ fhir:value "final"];
+  fhir:DiagnosticReport.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0074" ];
+       fhir:Coding.code [ fhir:value "LAB" ];
+       fhir:Coding.display [ fhir:value "Laboratory" ]
+     ]
+  ];
+  fhir:DiagnosticReport.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:24356-8;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "24356-8" ];
+       fhir:Coding.display [ fhir:value "Urinalysis complete panel - Urine" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Complete Urinalysis" ]
+  ];
+  fhir:DiagnosticReport.subject [
+     fhir:link <http://www.fhir.org/guides/test3/Patient/example>;
+     fhir:Reference.reference [ fhir:value "Patient/example" ];
+     fhir:Reference.display [ fhir:value "Amy Shaw" ]
+  ];
+  fhir:DiagnosticReport.effectiveDateTime [ fhir:value "2005-07-05"^^xsd:date];
+  fhir:DiagnosticReport.issued [ fhir:value "2005-07-06T11:45:33+11:00"^^xsd:dateTime];
+  fhir:DiagnosticReport.performer [
+     fhir:index 0;
+     fhir:link <http://www.fhir.org/guides/test3/Organization/acme-lab>;
+     fhir:Reference.reference [ fhir:value "Organization/acme-lab" ];
+     fhir:Reference.display [ fhir:value "Acme Laboratory, Inc" ]
+  ];
+  fhir:DiagnosticReport.result [
+     fhir:index 0;
+     fhir:link <http://www.fhir.org/guides/test3/Observation/urine-color>;
+     fhir:Reference.reference [ fhir:value "Observation/urine-color" ];
+     fhir:Reference.display [ fhir:value "COLOR=Yellow" ]
+  ], [
+     fhir:index 1;
+     fhir:link <http://www.fhir.org/guides/test3/Observation/urine-clarity>;
+     fhir:Reference.reference [ fhir:value "Observation/urine-clarity" ];
+     fhir:Reference.display [ fhir:value "APPEARANCE=Hazy" ]
+  ], [
+     fhir:index 2;
+     fhir:link <http://www.fhir.org/guides/test3/Observation/urine-glucose>;
+     fhir:Reference.reference [ fhir:value "Observation/urine-glucose" ];
+     fhir:Reference.display [ fhir:value "GLUCOSE=Negative" ]
+  ], [
+     fhir:index 3;
+     fhir:link <http://www.fhir.org/guides/test3/Observation/urine-bilirubin>;
+     fhir:Reference.reference [ fhir:value "Observation/urine-bilirubin" ];
+     fhir:Reference.display [ fhir:value "BILIRUBIN=Negative" ]
+  ], [
+     fhir:index 4;
+     fhir:link <http://www.fhir.org/guides/test3/Observation/urine-ketone>;
+     fhir:Reference.reference [ fhir:value "Observation/urine-ketone" ];
+     fhir:Reference.display [ fhir:value "KETONE=Negative" ]
+  ], [
+     fhir:index 5;
+     fhir:link <http://www.fhir.org/guides/test3/Observation/usg>;
+     fhir:Reference.reference [ fhir:value "Observation/usg" ];
+     fhir:Reference.display [ fhir:value "SPEC GRAV=1.017" ]
+  ], [
+     fhir:index 6;
+     fhir:link <http://www.fhir.org/guides/test3/Observation/urine-ph>;
+     fhir:Reference.reference [ fhir:value "Observation/urine-ph" ];
+     fhir:Reference.display [ fhir:value "PH=6 (pH)" ]
+  ], [
+     fhir:index 7;
+     fhir:link <http://www.fhir.org/guides/test3/Observation/urine-protein>;
+     fhir:Reference.reference [ fhir:value "Observation/urine-protein" ];
+     fhir:Reference.display [ fhir:value "PROTEIN=Negative" ]
+  ], [
+     fhir:index 8;
+     fhir:link <http://www.fhir.org/guides/test3/Observation/urobilinogen>;
+     fhir:Reference.reference [ fhir:value "Observation/urobilinogen" ];
+     fhir:Reference.display [ fhir:value "UROBILINOGEN=0.3 mg/dL" ]
+  ], [
+     fhir:index 9;
+     fhir:link <http://www.fhir.org/guides/test3/Observation/urine-nitrite>;
+     fhir:Reference.reference [ fhir:value "Observation/urine-nitrite" ];
+     fhir:Reference.display [ fhir:value "NITRITE=Positive" ]
+  ], [
+     fhir:index 10;
+     fhir:link <http://www.fhir.org/guides/test3/Observation/urine-hemoglobin>;
+     fhir:Reference.reference [ fhir:value "Observation/urine-hemoglobin" ];
+     fhir:Reference.display [ fhir:value "BLOOD=Trace" ]
+  ], [
+     fhir:index 11;
+     fhir:link <http://www.fhir.org/guides/test3/Observation/urine-leukocyte-esterase>;
+     fhir:Reference.reference [ fhir:value "Observation/urine-leukocyte-esterase" ];
+     fhir:Reference.display [ fhir:value "LEUK ESTERASE=2+e" ]
+  ], [
+     fhir:index 12;
+     fhir:link <http://www.fhir.org/guides/test3/Observation/urine-sediment>;
+     fhir:Reference.reference [ fhir:value "Observation/urine-sediment" ];
+     fhir:Reference.display [ fhir:value "COMMENT=Recommend Urine Culture" ]
+  ], [
+     fhir:index 13;
+     fhir:link <http://www.fhir.org/guides/test3/Observation/urine-bacteria>;
+     fhir:Reference.reference [ fhir:value "Observation/urine-bacteria" ];
+     fhir:Reference.display [ fhir:value "BACTERIA=4+" ]
+  ], [
+     fhir:index 14;
+     fhir:link <http://www.fhir.org/guides/test3/Observation/urine-epi-cells>;
+     fhir:Reference.reference [ fhir:value "Observation/urine-epi-cells" ];
+     fhir:Reference.display [ fhir:value "EPITHELIAL CELLS=1-5 cells/HPF" ]
+  ], [
+     fhir:index 15;
+     fhir:link <http://www.fhir.org/guides/test3/Observation/urine-wbcs>;
+     fhir:Reference.reference [ fhir:value "Observation/urine-wbcs" ];
+     fhir:Reference.display [ fhir:value "WBC=20-30 cells/HPF" ]
+  ], [
+     fhir:index 16;
+     fhir:link <http://www.fhir.org/guides/test3/Observation/urine-rbcs>;
+     fhir:Reference.reference [ fhir:value "Observation/urine-rbcs" ];
+     fhir:Reference.display [ fhir:value "RBC=Occasional cells/HPF" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://www.fhir.org/guides/test3/DiagnosticReport/urinalysis.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

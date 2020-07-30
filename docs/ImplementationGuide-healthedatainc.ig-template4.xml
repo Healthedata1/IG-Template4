@@ -337,6 +337,34 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Bundle-example2.html"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/example2"/>
+      </reference>
+      <name value="Bundle Example2"/>
+      <description value="another example of a of Bundle."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DiagnosticReport"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="DiagnosticReport-urinalysis.html"/>
+      </extension>
+      <reference>
+        <reference value="DiagnosticReport/urinalysis"/>
+      </reference>
+      <name value="DR Example"/>
+      <description value="an example of a of DR for UA."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Patient"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">

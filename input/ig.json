@@ -83,6 +83,22 @@
             },
             {
                 "reference": {
+                    "reference": "Bundle/example2"
+                },
+                "name": "Bundle Example2",
+                "description": "another example of a of Bundle.",
+                "exampleBoolean": true
+            },
+            {
+                "reference": {
+                    "reference": "DiagnosticReport/urinalysis"
+                },
+                "name": "DR Example",
+                "description": "an example of a of DR for UA.",
+                "exampleBoolean": true
+            },
+            {
+                "reference": {
                     "reference": "Patient/example2"
                 },
                 "name": "Another Patient Example",

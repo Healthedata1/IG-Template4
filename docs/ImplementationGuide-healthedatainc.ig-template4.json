@@ -524,6 +524,42 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Bundle"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Bundle-example2.html"
+          }
+        ],
+        "reference": {
+          "reference": "Bundle/example2"
+        },
+        "name": "Bundle Example2",
+        "description": "another example of a of Bundle.",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "DiagnosticReport"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "DiagnosticReport-urinalysis.html"
+          }
+        ],
+        "reference": {
+          "reference": "DiagnosticReport/urinalysis"
+        },
+        "name": "DR Example",
+        "description": "an example of a of DR for UA.",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Patient"
           },
           {

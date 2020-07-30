@@ -1,15 +1,17 @@
 ﻿IGTest4 : Validation Results
 =========================================
 
-err = 3, warn = 10, info = 0
-IG Publisher Version: 1.1.4 Out of date - current version is 1.1.5
-Generated Tue Jul 28 21:47:17 PDT 2020. FHIR version 4.0.1 for healthedatainc.ig-template4#0.0.0 (canonical = http://www.fhir.org/guides/test3)
+err = 27, warn = 10, info = 7
+IG Publisher Version: 1.1.5
+Generated Wed Jul 29 15:37:03 PDT 2020. FHIR version 4.0.1 for healthedatainc.ig-template4#0.0.0 (canonical = http://www.fhir.org/guides/test3)
 
- Build Errors : 0 / 0
+ Build Errors : 1 / 0
  /Users/ehaas/Documents/FHIR/IG-Template4/input/examples/bundle-example1 : 1 / 2
+ /Users/ehaas/Documents/FHIR/IG-Template4/input/examples/bundle-example2 : 5 / 7
  /Users/ehaas/Documents/FHIR/IG-Template4/input/examples/diet-example1 : 1 / 0
  /Users/ehaas/Documents/FHIR/IG-Template4/input/examples/example1 : 0 / 0
  /Users/ehaas/Documents/FHIR/IG-Template4/input/examples/example2 : 0 / 0
+ /Users/ehaas/Documents/FHIR/IG-Template4/input/examples/urinalysis : 19 / 0
  /Users/ehaas/Documents/FHIR/IG-Template4/input/ig : 0 / 0
  /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/CodeSystem-blah-codes : 0 / 0
  /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/StructureDefinition-extension-blah : 0 / 2
@@ -25,6 +27,7 @@ Generated Tue Jul 28 21:47:17 PDT 2020. FHIR version 4.0.1 for healthedatainc.ig
  /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/operationdefinition-example : 1 / 0
 </table>
 == n/a ==
+ERROR: /Users/ehaas/Documents/FHIR/IG-Template4/docs/Bundle-example1.html#/html/body/div/div/div/div/div/div/blockquote/p/a at Line 197, column 517: The link 'Procedure/1153' for "Procedure/1153" cannot be resolved
 == /Users/ehaas/Documents/FHIR/IG-Template4/input/examples/bundle-example1.json ==
 INFORMATION: Bundle/example1: Bundle: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Bundle
 INFORMATION: Bundle/example1: Bundle.entry[0].resource.ofType(Procedure): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Procedure
@@ -32,6 +35,25 @@ WARNING: Bundle/example1: Bundle.entry[0].resource.ofType(Procedure).code.coding
 ERROR: Bundle/example1: Bundle.entry[0].resource.ofType(Procedure).subject: Unable to resolve resource "Patient/1139"
 WARNING: Bundle/example1: Bundle.entry[0].resource.ofType(Procedure).reasonCode[0].coding[0]: Internal error: The display "deafult reason code" is not a valid display for the code {http://snomed.info/sct}104001 - should be one of ["Excision of lesion of patella","Local excision of lesion or tissue of patella","Excision of lesion of patella (procedure)"]
 INFORMATION: Bundle/example1: Bundle.entry[1].resource.ofType(Provenance): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Provenance
+== /Users/ehaas/Documents/FHIR/IG-Template4/input/examples/bundle-example2.xml ==
+INFORMATION: Bundle/example2: Bundle: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Bundle
+INFORMATION: Bundle/example2: Bundle.entry[0].resource.ofType(PractitionerRole): Validate resource against profile http://hl7.org/fhir/StructureDefinition/PractitionerRole
+ERROR: Bundle/example2: Bundle.entry[0].resource.ofType(PractitionerRole).organization: Unable to resolve resource "Organization/acme-lab"
+ERROR: Bundle/example2: Bundle.entry[0].resource.ofType(PractitionerRole).code[0].coding[0]: Unknown Code http://nucc.org/provider-taxonomy#261QP2300X in http://nucc.org/provider-taxonomy for "http://nucc.org/provider-taxonomy#261QP2300X"
+INFORMATION: Bundle/example2: Bundle.entry[0].resource.ofType(PractitionerRole).specialty[0]: None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/c80-practice-codes (http://hl7.org/fhir/ValueSet/c80-practice-codes), and a code is recommended to come from this value set) (codes = http://nucc.org/provider-taxonomy#208D00000X)
+ERROR: Bundle/example2: Bundle.entry[0].resource.ofType(PractitionerRole).specialty[0].coding[0]: Unknown Code http://nucc.org/provider-taxonomy#208D00000X in http://nucc.org/provider-taxonomy for "http://nucc.org/provider-taxonomy#208D00000X"
+ERROR: Bundle/example2: Bundle.entry[0].resource.ofType(PractitionerRole).location[0]: Unable to resolve resource "Location/hl7east"
+INFORMATION: Bundle/example2: Bundle.entry[0].resource.ofType(PractitionerRole).endpoint[0]: Details for http://52.90.126.238:8080/fhir/baseDstu3/Endpoint/Endpoint-71 matching against Profilehttp://hl7.org/fhir/StructureDefinition/Endpoint
+INFORMATION: Bundle/example2: Bundle.entry[0].resource.ofType(PractitionerRole).endpoint[1]: Details for http://52.90.126.238:8080/fhir/baseDstu3/Endpoint/Endpoint-71 matching against Profilehttp://hl7.org/fhir/StructureDefinition/Endpoint
+INFORMATION: Bundle/example2: Bundle.entry[0].resource.ofType(PractitionerRole): Validate resource against profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole - listed in meta
+INFORMATION: Bundle/example2: Bundle.entry[1].resource.ofType(Practitioner): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Practitioner
+INFORMATION: Bundle/example2: Bundle.entry[1].resource.ofType(Practitioner).qualification[0].code.coding[0]: Code System URI "http://michigan.gov/lara/license-type" is unknown so the code cannot be validated
+INFORMATION: Bundle/example2: Bundle.entry[1].resource.ofType(Practitioner): Validate resource against profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner - listed in meta
+INFORMATION: Bundle/example2: Bundle.entry[1].resource.ofType(Practitioner).identifier[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner
+INFORMATION: Bundle/example2: Bundle.entry[1].resource.ofType(Practitioner).identifier[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner
+INFORMATION: Bundle/example2: Bundle.entry[2].resource.ofType(Endpoint): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Endpoint
+ERROR: Bundle/example2: Bundle.entry[2].resource.ofType(Endpoint).managingOrganization: Unable to resolve resource "Organization/acme-lab"
+INFORMATION: Bundle/example2: Bundle.entry[2].resource.ofType(Endpoint).payloadType[0].coding[0]: Code System URI "urn:oid:1.3.6.1.4.1.19376.1.2.3" is unknown so the code cannot be validated
 == /Users/ehaas/Documents/FHIR/IG-Template4/input/examples/diet-example1.xml ==
 INFORMATION: Basic/diet-example1: Basic: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Basic
 INFORMATION: Basic/diet-example1: Basic: Validate resource against profile http://www.fhir.org/guides/test3/StructureDefinition/template-basic - listed in meta
@@ -41,6 +63,28 @@ INFORMATION: Patient/example1: Patient: Validate resource against profile http:/
 INFORMATION: Patient/example1: Patient: Validate resource against profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient - listed in meta
 == /Users/ehaas/Documents/FHIR/IG-Template4/input/examples/example2.xml ==
 INFORMATION: Patient/example2: Patient: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Patient
+== /Users/ehaas/Documents/FHIR/IG-Template4/input/examples/urinalysis.json ==
+INFORMATION: DiagnosticReport/urinalysis: DiagnosticReport: Validate resource against profile http://hl7.org/fhir/StructureDefinition/DiagnosticReport
+ERROR: DiagnosticReport/urinalysis: DiagnosticReport.subject: Unable to resolve resource "Patient/example"
+ERROR: DiagnosticReport/urinalysis: DiagnosticReport.performer[0]: Unable to resolve resource "Organization/acme-lab"
+ERROR: DiagnosticReport/urinalysis: DiagnosticReport.result[0]: Unable to resolve resource "Observation/urine-color"
+ERROR: DiagnosticReport/urinalysis: DiagnosticReport.result[1]: Unable to resolve resource "Observation/urine-clarity"
+ERROR: DiagnosticReport/urinalysis: DiagnosticReport.result[2]: Unable to resolve resource "Observation/urine-glucose"
+ERROR: DiagnosticReport/urinalysis: DiagnosticReport.result[3]: Unable to resolve resource "Observation/urine-bilirubin"
+ERROR: DiagnosticReport/urinalysis: DiagnosticReport.result[4]: Unable to resolve resource "Observation/urine-ketone"
+ERROR: DiagnosticReport/urinalysis: DiagnosticReport.result[5]: Unable to resolve resource "Observation/usg"
+ERROR: DiagnosticReport/urinalysis: DiagnosticReport.result[6]: Unable to resolve resource "Observation/urine-ph"
+ERROR: DiagnosticReport/urinalysis: DiagnosticReport.result[7]: Unable to resolve resource "Observation/urine-protein"
+ERROR: DiagnosticReport/urinalysis: DiagnosticReport.result[8]: Unable to resolve resource "Observation/urobilinogen"
+ERROR: DiagnosticReport/urinalysis: DiagnosticReport.result[9]: Unable to resolve resource "Observation/urine-nitrite"
+ERROR: DiagnosticReport/urinalysis: DiagnosticReport.result[10]: Unable to resolve resource "Observation/urine-hemoglobin"
+ERROR: DiagnosticReport/urinalysis: DiagnosticReport.result[11]: Unable to resolve resource "Observation/urine-leukocyte-esterase"
+ERROR: DiagnosticReport/urinalysis: DiagnosticReport.result[12]: Unable to resolve resource "Observation/urine-sediment"
+ERROR: DiagnosticReport/urinalysis: DiagnosticReport.result[13]: Unable to resolve resource "Observation/urine-bacteria"
+ERROR: DiagnosticReport/urinalysis: DiagnosticReport.result[14]: Unable to resolve resource "Observation/urine-epi-cells"
+ERROR: DiagnosticReport/urinalysis: DiagnosticReport.result[15]: Unable to resolve resource "Observation/urine-wbcs"
+ERROR: DiagnosticReport/urinalysis: DiagnosticReport.result[16]: Unable to resolve resource "Observation/urine-rbcs"
+INFORMATION: DiagnosticReport/urinalysis: DiagnosticReport: Validate resource against profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-lab - listed in meta
 == /Users/ehaas/Documents/FHIR/IG-Template4/input/ig.json ==
 INFORMATION: ImplementationGuide/healthedatainc.ig-template4: ImplementationGuide: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide
 == /Users/ehaas/Documents/FHIR/IG-Template4/input/resources/CodeSystem-blah-codes.xml ==

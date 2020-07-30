@@ -210,6 +210,19 @@
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="Bundle-example2.html" title="Bundle/example2">Bundle Example2</a>
+               </td>
+               <td>another example of a of Bundle.</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="DiagnosticReport-urinalysis.html"
+                     title="DiagnosticReport/urinalysis">DR Example</a>
+               </td>
+               <td>an example of a of DR for UA.</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="Patient-example2.html" title="Patient/example2">Another Patient Example</a>
                </td>
                <td>Another example of a of Patient Profile.</td>
