@@ -1,6 +1,0 @@
-foo: bar
-foo_list:
-  - item1
-  - item2
-foo_object:
-  biz: baz

@@ -1,5 +1,10 @@
 ### Cat Facts (To Show How the Text Wraps around the Contents Block) {#cat-facts}
 
+
+\[source\]\(https://en.wikipedia.org/wiki/Cat\) = [source](https://en.wikipedia.org/wiki/Cat) <-- external link icon
+
+\[source\]\(https://en.wikipedia.org/wiki/Cat\)\{: no-external="true"\} = [source](https://en.wikipedia.org/wiki/Cat){: no-external="true"}  <-- no external link icon
+
  The domestic cat[1][5] (Latin: Felis catus) is a small, typically furry, carnivorous mammal. They are often called house cats when kept as indoor pets or simply cats when there is no need to distinguish them from other felids and felines.[6] Cats are often valued by humans for companionship and for their ability to hunt vermin. There are more than 70 cat breeds, though different associations proclaim different numbers according to their standards.
 
 Cats are similar in anatomy to the other felids, with a strong flexible body, quick reflexes, sharp retractable claws, and teeth adapted to killing small prey. Cat senses fit a crepuscular and predatory ecological niche. Cats can hear sounds too faint or too high in frequency for human ears, such as those made by mice and other small animals. They can see in near darkness. Like most other mammals, cats have poorer color vision and a better sense of smell than humans. Cats, despite being solitary hunters, are a social species and cat communication includes the use of a variety of vocalizations (mewing, purring, trilling, hissing, growling, and grunting), as well as cat pheromones and types of cat-specific body language.[7]
